@@ -1,0 +1,14 @@
+[project]
+name = "pwscup2026-opendp-aim"
+version = "0.1.0"
+description = "OpenDP AIM experiments for PWS Cup 2026"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "opendp[mbi]==0.15.1",
+    # mbi 1.1.0 imports pandas when materializing synthetic records,
+    # but does not currently declare it as a runtime dependency.
+    "pandas==2.3.3",
+]
+
+[tool.uv]
+package = false
