@@ -1,9 +1,16 @@
 # 参加者がキットを動かすと出来るもの
 starter/.venv/
-notebooks/.ipynb_checkpoints/
+/opendp_aim/.venv/
+**/.ipynb_checkpoints/
 **/__pycache__/
 *.py[cod]
 *.egg-info/
+
+# ローカル実行用（setup-local.ps1 / run-practice.ps1 が作成）
+/.tools/
+/.uv-cache/
+/work/
+/local-output/
 
 # 自分の提出物（リポジトリ直下に作られるもの）。
 # ★先頭の / を外すと participant_data/sample_submissions/ の実例まで無視されるので注意。
