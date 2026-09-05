@@ -1,0 +1,205 @@
+{
+  "purpose": "conditional null-shadow complement sensitivity; not a leaderboard forecast",
+  "discovery_seeds": [
+    20261201,
+    20261202,
+    20261203,
+    20261204,
+    20261205,
+    20261206
+  ],
+  "validation_seeds": [
+    20261211,
+    20261212,
+    20261213,
+    20261214,
+    20261215,
+    20261216
+  ],
+  "condition_exact": "v4, independent, and routed clipped per-target AIA power all equal 0",
+  "condition_near": "v4, independent, and routed per-target AIA power all <= 0.02",
+  "exact_summary": [
+    {
+      "split": "discovery",
+      "strategy": "complement_routed_active",
+      "eligible_blocks": 10,
+      "mean": 0.0996729632373179,
+      "median": 0.1033980582524272,
+      "p10": 0.009473684210526348,
+      "p90": 0.16741161384869024,
+      "mean_delta_vs_routed_complement": 0.0,
+      "win_rate_vs_routed_complement": 0.0
+    },
+    {
+      "split": "discovery",
+      "strategy": "inverse_consensus",
+      "eligible_blocks": 10,
+      "mean": 0.08346828644729451,
+      "median": 0.08462616354719252,
+      "p10": 0.0,
+      "p90": 0.1547169811320755,
+      "mean_delta_vs_routed_complement": -0.016204676790023395,
+      "win_rate_vs_routed_complement": 0.1
+    },
+    {
+      "split": "discovery",
+      "strategy": "complement_independent_active",
+      "eligible_blocks": 10,
+      "mean": 0.06597531113052056,
+      "median": 0.06008692136648471,
+      "p10": 0.018556701030927814,
+      "p90": 0.13153756552125798,
+      "mean_delta_vs_routed_complement": -0.03369765210679734,
+      "win_rate_vs_routed_complement": 0.3
+    },
+    {
+      "split": "discovery",
+      "strategy": "complement_v4_active",
+      "eligible_blocks": 10,
+      "mean": 0.05530188554569741,
+      "median": 0.05574463696369633,
+      "p10": 0.0,
+      "p90": 0.12476190476190473,
+      "mean_delta_vs_routed_complement": -0.04437107769162049,
+      "win_rate_vs_routed_complement": 0.2
+    },
+    {
+      "split": "validation",
+      "strategy": "complement_routed_active",
+      "eligible_blocks": 4,
+      "mean": 0.10833265139116202,
+      "median": 0.12,
+      "p10": 0.04044680851063833,
+      "p90": 0.16688461538461538,
+      "mean_delta_vs_routed_complement": 0.0,
+      "win_rate_vs_routed_complement": 0.0
+    },
+    {
+      "split": "validation",
+      "strategy": "inverse_consensus",
+      "eligible_blocks": 4,
+      "mean": 0.10567307692307691,
+      "median": 0.12,
+      "p10": 0.03300000000000001,
+      "p90": 0.16688461538461538,
+      "mean_delta_vs_routed_complement": -0.002659574468085115,
+      "win_rate_vs_routed_complement": 0.0
+    },
+    {
+      "split": "validation",
+      "strategy": "complement_v4_active",
+      "eligible_blocks": 4,
+      "mean": 0.08587436413544267,
+      "median": 0.0930981447659329,
+      "p10": 0.06208620862086205,
+      "p90": 0.10388349514563108,
+      "mean_delta_vs_routed_complement": -0.022458287255719366,
+      "win_rate_vs_routed_complement": 0.25
+    },
+    {
+      "split": "validation",
+      "strategy": "complement_independent_active",
+      "eligible_blocks": 4,
+      "mean": 0.06184156831049252,
+      "median": 0.06922769107643058,
+      "p10": 0.009183673469387758,
+      "p90": 0.10859056493884683,
+      "mean_delta_vs_routed_complement": -0.046491083080669515,
+      "win_rate_vs_routed_complement": 0.0
+    }
+  ],
+  "near_summary": [
+    {
+      "split": "discovery",
+      "strategy": "complement_routed_active",
+      "eligible_blocks": 10,
+      "mean": 0.0996729632373179,
+      "median": 0.1033980582524272,
+      "p10": 0.009473684210526348,
+      "p90": 0.16741161384869024,
+      "mean_delta_vs_routed_complement": 0.0,
+      "win_rate_vs_routed_complement": 0.0
+    },
+    {
+      "split": "discovery",
+      "strategy": "inverse_consensus",
+      "eligible_blocks": 10,
+      "mean": 0.08346828644729451,
+      "median": 0.08462616354719252,
+      "p10": 0.0,
+      "p90": 0.1547169811320755,
+      "mean_delta_vs_routed_complement": -0.016204676790023395,
+      "win_rate_vs_routed_complement": 0.1
+    },
+    {
+      "split": "discovery",
+      "strategy": "complement_independent_active",
+      "eligible_blocks": 10,
+      "mean": 0.06597531113052056,
+      "median": 0.06008692136648471,
+      "p10": 0.018556701030927814,
+      "p90": 0.13153756552125798,
+      "mean_delta_vs_routed_complement": -0.03369765210679734,
+      "win_rate_vs_routed_complement": 0.3
+    },
+    {
+      "split": "discovery",
+      "strategy": "complement_v4_active",
+      "eligible_blocks": 10,
+      "mean": 0.05530188554569741,
+      "median": 0.05574463696369633,
+      "p10": 0.0,
+      "p90": 0.12476190476190473,
+      "mean_delta_vs_routed_complement": -0.04437107769162049,
+      "win_rate_vs_routed_complement": 0.2
+    },
+    {
+      "split": "validation",
+      "strategy": "complement_routed_active",
+      "eligible_blocks": 7,
+      "mean": 0.1107169269483814,
+      "median": 0.12000000000000002,
+      "p10": 0.045839477564777756,
+      "p90": 0.16450549450549448,
+      "mean_delta_vs_routed_complement": 0.0,
+      "win_rate_vs_routed_complement": 0.0
+    },
+    {
+      "split": "validation",
+      "strategy": "inverse_consensus",
+      "eligible_blocks": 7,
+      "mean": 0.1091971701094756,
+      "median": 0.12000000000000002,
+      "p10": 0.041584158415841566,
+      "p90": 0.16450549450549448,
+      "mean_delta_vs_routed_complement": -0.00151975683890578,
+      "win_rate_vs_routed_complement": 0.0
+    },
+    {
+      "split": "validation",
+      "strategy": "complement_v4_active",
+      "eligible_blocks": 7,
+      "mean": 0.08109864548312731,
+      "median": 0.09615384615384612,
+      "p10": 0.042303030303030294,
+      "p90": 0.10154197601370643,
+      "mean_delta_vs_routed_complement": -0.029618281465254075,
+      "win_rate_vs_routed_complement": 0.14285714285714285
+    },
+    {
+      "split": "validation",
+      "strategy": "complement_independent_active",
+      "eligible_blocks": 7,
+      "mean": 0.06351007442921544,
+      "median": 0.03157894736842106,
+      "p10": 0.017821782178217775,
+      "p90": 0.1197154666923003,
+      "mean_delta_vs_routed_complement": -0.04720685251916595,
+      "win_rate_vs_routed_complement": 0.14285714285714285
+    }
+  ],
+  "caveat": "Conditioning under an independent null is post-selection sensitivity analysis and cannot reconstruct private truth.",
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false
+}

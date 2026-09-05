@@ -1,0 +1,7 @@
+outcome,left_target,right_target,left_positive_slots,right_positive_slots,observed_slot_intersection,null_intersection_mean,null_intersection_p95,intersection_p_upper
+onset,1,2,16,16,0,0.692,2.0,1.0
+onset,1,24,16,16,1,0.796,2.0,0.5744255744255744
+onset,2,24,16,16,2,0.877,2.0499999999999545,0.20679320679320679
+rare,1,2,14,16,1,0.601,2.0,0.4855144855144855
+rare,1,24,14,13,1,0.567,2.0,0.44655344655344653
+rare,2,24,16,13,0,0.648,2.0,1.0

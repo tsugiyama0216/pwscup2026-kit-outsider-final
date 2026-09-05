@@ -1,0 +1,7 @@
+subset,cases,seeds,mean_baseline,mean_delta,p10_delta,min_delta,win_rate,loss_rate,mean_delta_all,p10_delta_all,mean_delta_rare,p10_delta_rare,score1_mean_delta_if_divide_20,scenario_group
+all_worlds,64,8.0,0.0,0.051762970699197164,0.0,0.0,0.484375,0.0,0.0,0.0,0.051762970699197164,0.0,0.0025881485349598583,preserving
+baseline_positive,0,,,,,,,,,,,,,preserving
+direct_all_zero,0,,,,,,,,,,,,,preserving
+all_worlds,32,8.0,0.0,0.048631061866680744,0.0,0.0,0.46875,0.0,0.0,0.0,0.048631061866680744,0.0,0.002431553093334037,time_shuffled
+baseline_positive,0,,,,,,,,,,,,,time_shuffled
+direct_all_zero,0,,,,,,,,,,,,,time_shuffled

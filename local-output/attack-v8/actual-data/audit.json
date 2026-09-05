@@ -1,0 +1,166 @@
+{
+  "actual_dir": "C:\\Users\\takut\\Downloads\\PWSCup2026_prelim_team24_アウトサイダー_outsider",
+  "input_hashes": {
+    "B.csv": "7A7AA39E16FA5C76EE9C8DC009928373AEC6CF47E7B1BD10DC4E6899B5D2AB3A",
+    "B_self.csv": "297354A3C909FBA6BF4D33053CF91EFA9139892BF5269050A5607B86E0F33E35",
+    "A_bg.csv": "F4817FBA6C1434D6B74221C2B5ABE90E4A53E80D8FA17E12602D43ADAE0A3126",
+    "schema.json": "D0698EB89CDE0901B28DDAF72CB57270D744BDB72B45F8315F75B3199F024128",
+    "utility_ref.json": "C26FC822C2AA5BE054B3E187F3EAD2C51170917F3F2235FE20AB23C595D46E3F",
+    "README.txt": "CD5047CA5091303E1BFA9A30E13E466170546E2602C30EFE677E755EB6CD957A"
+  },
+  "checks": {
+    "B_rows_1049": true,
+    "B_self_equals_B": true,
+    "B_keys_unique": true,
+    "bg_keys_unique": true,
+    "B_bg_full_records_disjoint": true,
+    "B_no_missing": true,
+    "bg_no_missing": true,
+    "B_finite_numeric": true,
+    "bg_finite_numeric": true,
+    "B_keys_equal_v4": true,
+    "own_challenge_matches_163": true,
+    "eligible_rare_equals_11": true
+  },
+  "record_id_scope_note": "record_id is a table-local pseudonym, not a global population key; overlapping ID strings do not imply overlapping people",
+  "B_bg_record_id_strings_overlap": 1049,
+  "rows": {
+    "B": 1049,
+    "B_self": 1049,
+    "A_bg": 5143
+  },
+  "rare": {
+    "B_true": 24,
+    "known_private": 13
+  },
+  "known_private_diagnostics": {
+    "key_columns": [
+      "age",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "sex",
+      "prefecture"
+    ],
+    "candidate_rows": 1049,
+    "challenge_rows": 326,
+    "expected_matches": 163,
+    "matched_rows": 163,
+    "unmatched_controls": 163,
+    "candidate_key_duplicates": 0,
+    "challenge_key_duplicates": 0,
+    "matched_record_ids_unique": true
+  },
+  "actual_vs_retained": {
+    "B_equals_B_practice": false,
+    "A_bg_equal": false,
+    "rare_detector_equal": false
+  },
+  "release_background_matches": [
+    {
+      "target": 1,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 2,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 3,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 4,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 5,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 6,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 7,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 8,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 9,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 10,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 12,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 13,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 17,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 18,
+      "exact_actual_bg_qi": 1003,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 19,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 275
+    },
+    {
+      "target": 20,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 22,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 23,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 26,
+      "exact_actual_bg_qi": 0,
+      "exact_toy_bg_qi": 0
+    },
+    {
+      "target": 29,
+      "exact_actual_bg_qi": 865,
+      "exact_toy_bg_qi": 159
+    }
+  ],
+  "token_read": false,
+  "network_access": false,
+  "source_data_modified": false,
+  "production_candidate_changed": false
+}

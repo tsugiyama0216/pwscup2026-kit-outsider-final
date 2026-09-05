@@ -1,0 +1,90 @@
+{
+  "decision": "reject",
+  "rule": "target 19 only: set ExtraTrees public-feature rare-proxy top 26 to 11.0",
+  "seeds": [
+    20270331,
+    20270332,
+    20270333,
+    20270334,
+    20270335,
+    20270336,
+    20270337,
+    20270338
+  ],
+  "summaries": [
+    {
+      "subset": "all_worlds",
+      "cases": 64,
+      "seeds": 8,
+      "mean_baseline": 0.0,
+      "mean_delta": 0.051762970699197164,
+      "p10_delta": 0.0,
+      "min_delta": 0.0,
+      "win_rate": 0.484375,
+      "loss_rate": 0.0,
+      "mean_delta_all": 0.0,
+      "p10_delta_all": 0.0,
+      "mean_delta_rare": 0.051762970699197164,
+      "p10_delta_rare": 0.0,
+      "score1_mean_delta_if_divide_20": 0.0025881485349598583,
+      "scenario_group": "preserving"
+    },
+    {
+      "subset": "baseline_positive",
+      "cases": 0,
+      "scenario_group": "preserving"
+    },
+    {
+      "subset": "direct_all_zero",
+      "cases": 0,
+      "scenario_group": "preserving"
+    },
+    {
+      "subset": "all_worlds",
+      "cases": 32,
+      "seeds": 8,
+      "mean_baseline": 0.0,
+      "mean_delta": 0.048631061866680744,
+      "p10_delta": 0.0,
+      "min_delta": 0.0,
+      "win_rate": 0.46875,
+      "loss_rate": 0.0,
+      "mean_delta_all": 0.0,
+      "p10_delta_all": 0.0,
+      "mean_delta_rare": 0.048631061866680744,
+      "p10_delta_rare": 0.0,
+      "score1_mean_delta_if_divide_20": 0.002431553093334037,
+      "scenario_group": "time_shuffled"
+    },
+    {
+      "subset": "baseline_positive",
+      "cases": 0,
+      "scenario_group": "time_shuffled"
+    },
+    {
+      "subset": "direct_all_zero",
+      "cases": 0,
+      "scenario_group": "time_shuffled"
+    }
+  ],
+  "checks": {
+    "preserving_mean_gt_0": true,
+    "preserving_win_rate_gte_0p60": false,
+    "preserving_p10_gte_0": true,
+    "preserving_all_mean_gte_0": true,
+    "stress_mean_gte_0": true,
+    "baseline_positive_preserving_mean_gte_0": false,
+    "baseline_positive_preserving_p10_gte_0": false,
+    "baseline_positive_stress_mean_gte_0": false,
+    "normal_format": true
+  },
+  "production_audit": {
+    "proxy_rows": 26,
+    "changed_rows": 25,
+    "v7_active_inside_proxy": 25,
+    "v7_unanimous_inside_proxy": 1
+  },
+  "production_candidate_changed": false,
+  "token_read": false,
+  "submission_performed": false
+}

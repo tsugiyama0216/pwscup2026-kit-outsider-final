@@ -1,0 +1,8 @@
+sha256,file_count,candidates
+D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B,7,attack-candidate-v4;attack-candidate-v5-probe-independent;attack-candidate-v5-structured;attack-candidate-v6-feedback-v4-probe;attack-candidate-v6-final-aggressive-complements;attack-candidate-v6-final-feedback-winners;attack-candidate-v6-routed-probe
+8236A9A572306C79BE2D417FCA8F6BA395BCA1F93BA3E90DC99642A2010A4BB2,2,attack-candidate-daybreak-blue;attack-candidate-v3
+B91D8EEAA732DDE2A2EE37B1A9F4B0A2023F38806AD6AC9759746A32D0B17B1E,2,attack-candidate-v1;attack-candidate-v2
+1C580DA6A75CF068D752BE6916E4B1DDFE624AFEEF3B7CB0A97CC0D2AFD48869,1,attack-candidate-v6-feedback-tail15
+70E8E689E476E9EEF54F5821846EC1B93DE04FD6A63B680849D34F720DB78AFA,1,attack-candidate-v6-routed-guided-probe
+760D4FE12B4296DE4712D2AF133E6165F93446E9A9794CDA56BADF6868F68294,1,attack-candidate-daybreak-independent
+D47457F5A7CA3BB31599649496963F1D3EE5F05B587F1A4DC7E3B99F3F269872,1,attack-candidate-v5-tail12

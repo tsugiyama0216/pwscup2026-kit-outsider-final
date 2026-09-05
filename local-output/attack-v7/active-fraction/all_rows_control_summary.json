@@ -1,0 +1,70 @@
+{
+  "purpose": "fresh-seed all-rows control after the Boolean strategy was locked; not a leaderboard forecast",
+  "seeds": [
+    20261601,
+    20261602,
+    20261603,
+    20261604,
+    20261605,
+    20261606,
+    20261607,
+    20261608,
+    20261609,
+    20261610,
+    20261611,
+    20261612,
+    20261613,
+    20261614,
+    20261615,
+    20261616,
+    20261617,
+    20261618,
+    20261619,
+    20261620,
+    20261621,
+    20261622,
+    20261623,
+    20261624,
+    20261625,
+    20261626,
+    20261627,
+    20261628,
+    20261629,
+    20261630
+  ],
+  "eligible_exact_zero_blocks": 25,
+  "mean_power": {
+    "full_complement_edge": 0.11839496648576374,
+    "inverse_votes_at_most_two_edge": 0.17711656470641327,
+    "all_rows_edge": 0.1455132701096321
+  },
+  "delta_vs_full_complement": {
+    "inverse_votes_at_most_two_edge": {
+      "mean": 0.05872159822064951,
+      "median": 0.07785547785547789,
+      "p10": -0.05062745098039217,
+      "minimum": -0.15769230769230747,
+      "win_rate": 0.68,
+      "loss_rate": 0.32
+    },
+    "all_rows_edge": {
+      "mean": 0.02711830362386836,
+      "median": 0.02578616352201299,
+      "p10": -0.06274612484289913,
+      "minimum": -0.18867924528301888,
+      "win_rate": 0.6,
+      "loss_rate": 0.36
+    }
+  },
+  "locked_minus_all_rows": {
+    "mean": 0.03160329459678115,
+    "median": 0.019230769230769745,
+    "p10": -0.05636123136123159,
+    "minimum": -0.17816377171215866,
+    "win_rate": 0.56,
+    "loss_rate": 0.44
+  },
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false
+}

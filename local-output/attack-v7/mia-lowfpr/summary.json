@@ -1,0 +1,158 @@
+{
+  "purpose": "normal-format MIA low-FPR research; local shadow values are not leaderboard predictions",
+  "predeclared_candidate": "daybreak_v4_rarelock",
+  "official_evidence": {
+    "v3": {
+      "all": 0.09266381766381768,
+      "rare": 0.3333333333333333,
+      "auc": 0.6434884498600183
+    },
+    "v4": {
+      "all": 0.10236752136752136,
+      "rare": 0.3333333333333333,
+      "auc": 0.6493386125210912
+    },
+    "daybreak": {
+      "all": 0.1062193732193732,
+      "rare": 0.16666666666666666,
+      "auc": 0.6356009225541036
+    },
+    "guided": {
+      "all": 0.10236752136752136,
+      "rare": 0.3333333333333333,
+      "auc": 0.6493444718960911
+    }
+  },
+  "parameters": {
+    "discovery_seeds": [
+      20261702,
+      20261704,
+      20261705,
+      20261709
+    ],
+    "validation_seeds": [
+      20261803,
+      20261805,
+      20261806,
+      20261809,
+      20261814,
+      20261816
+    ],
+    "scenarios": [
+      "noise_0p10",
+      "noise_0p40"
+    ],
+    "shadow_counts": {
+      "25": 13,
+      "26": 6,
+      "27": 1,
+      "total": 508
+    },
+    "known_private": {
+      "total": 163,
+      "rare": 13,
+      "common": 150
+    },
+    "production_eligible_rare": 11,
+    "domias": false
+  },
+  "selection_gate": {
+    "checks": {
+      "discovery_mean_delta_power_gt_0": false,
+      "validation_mean_delta_power_gt_0": false,
+      "validation_median_delta_power_gt_0": false,
+      "validation_win_rate_gte_0p60": false,
+      "validation_p10_delta_power_gte_minus_0p002": false,
+      "validation_minimum_delta_rare_gte_0": true,
+      "production_rare_order_exact_v4": true,
+      "production_private_bottom_preserved": true,
+      "official_all_lower_bound_gt_v4": true
+    },
+    "passed": false,
+    "decision": "retain_v4"
+  },
+  "discovery": {
+    "split": "discovery",
+    "variant": "daybreak_v4_rarelock",
+    "observations": 8,
+    "mean_power": 0.7243867521367521,
+    "mean_delta_power": -0.04557727920227924,
+    "median_delta_power": -0.04517378917378928,
+    "p10_delta_power": -0.08133019943019938,
+    "minimum_delta_power": -0.09248433048433047,
+    "win_rate": 0.0,
+    "loss_rate": 1.0,
+    "mean_delta_all": -0.07510897435897437,
+    "mean_delta_rare": 0.0,
+    "minimum_delta_rare": 0.0,
+    "mean_delta_auc": -0.014740937229515014
+  },
+  "validation": {
+    "split": "validation",
+    "variant": "daybreak_v4_rarelock",
+    "observations": 12,
+    "mean_power": 0.7026160968660968,
+    "mean_delta_power": -0.052849240265906906,
+    "median_delta_power": -0.047088319088319036,
+    "p10_delta_power": -0.08938005698005698,
+    "minimum_delta_power": -0.09663247863247859,
+    "win_rate": 0.0,
+    "loss_rate": 1.0,
+    "mean_delta_all": -0.08060161443494775,
+    "mean_delta_rare": 0.0,
+    "minimum_delta_rare": 0.0,
+    "mean_delta_auc": -0.014026773740033202
+  },
+  "production": {
+    "variant": "daybreak_v4_rarelock",
+    "sha256": "D5285EF7F57AB743665284CEE666179185DE84D52B5CEC353DFAEFD5E1C6758F",
+    "changed_cells_vs_v4": 17631,
+    "changed_cells_vs_daybreak": 179,
+    "rare_order_equal_v4": true,
+    "private_bottom_set_preserved": true,
+    "top16_set_changes_vs_daybreak": 2,
+    "top37_set_changes_vs_daybreak": 1,
+    "path": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\local-output\\attack-v7\\mia-lowfpr\\production_variants\\F_mia_daybreak_v4_rarelock.csv"
+  },
+  "official_structural_bound": {
+    "daybreak_official_all": 0.1062193732193732,
+    "v4_official_all": 0.10236752136752136,
+    "candidate_changed_slots_that_can_cross_an_official_operating_prefix": {
+      "19": [
+        12
+      ]
+    },
+    "changed_slots_always_inside_band4_prefix": {
+      "1": [
+        7,
+        25
+      ]
+    },
+    "conservative_max_abs_delta_vs_daybreak_all": 0.002,
+    "candidate_all_lower_bound": 0.1042193732193732,
+    "candidate_all_upper_bound": 0.10821937321937321,
+    "lower_bound_delta_vs_v4_all": 0.0018518518518518406,
+    "rare_tpr_exactly_v4_by_order_invariance": 0.3333333333333333,
+    "note": "This is an aggregate-all bound, not a bound on mean target-wise max(all, rare)."
+  },
+  "limitations": [
+    "The local B_practice/B_self rows are a toy world, not the production B used to generate the existing rank matrices.",
+    "Accordingly production row features were not recomputed from local B; only existing production ranks were transformed.",
+    "The official aggregate-all lower bound does not by itself guarantee a lift in mean target-wise max(all, rare).",
+    "Discovery and validation seeds are disjoint, and validation does not select a different recipe."
+  ],
+  "qa": {
+    "aggregate_rows": 140,
+    "target_rows": 2800,
+    "aggregate_key_unique": true,
+    "target_key_unique": true,
+    "world_count": 10,
+    "all_world_checks_pass": true
+  },
+  "elapsed_seconds": 402.2647560999976,
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false,
+  "archive_created": false,
+  "submission_performed": false
+}

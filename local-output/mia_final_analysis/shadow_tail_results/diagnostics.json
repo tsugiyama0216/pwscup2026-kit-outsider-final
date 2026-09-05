@@ -1,0 +1,1169 @@
+{
+  "elapsed": 299.9005532999945,
+  "runs": [
+    {
+      "run": "20260902:1:noise_0p03",
+      "counts": [
+        26,
+        27,
+        25,
+        25,
+        25,
+        26,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        26,
+        26,
+        26,
+        25
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260902:1:noise_0p10",
+      "counts": [
+        26,
+        27,
+        25,
+        25,
+        25,
+        26,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        26,
+        26,
+        26,
+        25
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260904:1:noise_0p03",
+      "counts": [
+        27,
+        26,
+        26,
+        25,
+        26,
+        25,
+        26,
+        25,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        26,
+        25,
+        25,
+        25
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260904:1:noise_0p10",
+      "counts": [
+        27,
+        26,
+        26,
+        25,
+        26,
+        25,
+        26,
+        25,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        26,
+        25,
+        25,
+        25
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260905:1:noise_0p03",
+      "counts": [
+        25,
+        27,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        27,
+        25,
+        25,
+        25,
+        26,
+        25,
+        25,
+        26,
+        25,
+        25,
+        26
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260905:1:noise_0p10",
+      "counts": [
+        25,
+        27,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        27,
+        25,
+        25,
+        25,
+        26,
+        25,
+        25,
+        26,
+        25,
+        25,
+        26
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260906:1:noise_0p03",
+      "counts": [
+        26,
+        27,
+        25,
+        25,
+        25,
+        26,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        27,
+        25,
+        26
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260906:1:noise_0p10",
+      "counts": [
+        26,
+        27,
+        25,
+        25,
+        25,
+        26,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        27,
+        25,
+        26
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260907:1:noise_0p03",
+      "counts": [
+        27,
+        25,
+        27,
+        26,
+        26,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260907:1:noise_0p10",
+      "counts": [
+        27,
+        25,
+        27,
+        26,
+        26,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        26,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260908:1:noise_0p03",
+      "counts": [
+        27,
+        26,
+        27,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        26,
+        25,
+        26,
+        26
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    },
+    {
+      "run": "20260908:1:noise_0p10",
+      "counts": [
+        27,
+        26,
+        27,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        26,
+        25,
+        26,
+        26
+      ],
+      "repair": {
+        "7": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "8": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "9": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "10": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "11": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "12": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "13": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "14": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "15": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "16": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "17": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "18": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "19": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        },
+        "20": {
+          "duplicates": 0,
+          "changed": 0,
+          "changed_targets": []
+        }
+      }
+    }
+  ]
+}

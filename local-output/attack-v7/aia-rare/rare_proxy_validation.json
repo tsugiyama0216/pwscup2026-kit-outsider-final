@@ -1,0 +1,158 @@
+{
+  "scope": "rare-proxy validation using public data only",
+  "visible_columns": [
+    "age",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT"
+  ],
+  "missing_detector_columns_in_aia_challenge": [
+    "BMI",
+    "FPG"
+  ],
+  "background_oof": {
+    "partial_mahal": {
+      "rows": 5143,
+      "positives": 310,
+      "roc_auc": 0.9578836360238416,
+      "average_precision": 0.8575557102113869,
+      "top_k": 310,
+      "top_k_true_positive": 241,
+      "top_k_precision": 0.7774193548387097,
+      "top_k_recall": 0.7774193548387097
+    },
+    "quadratic_logit": {
+      "rows": 5143,
+      "positives": 310,
+      "roc_auc": 0.9535084733318651,
+      "average_precision": 0.8088121481657252,
+      "top_k": 310,
+      "top_k_true_positive": 228,
+      "top_k_precision": 0.7354838709677419,
+      "top_k_recall": 0.7354838709677419
+    },
+    "extra_trees": {
+      "rows": 5143,
+      "positives": 310,
+      "roc_auc": 0.9600295014784113,
+      "average_precision": 0.8066131166764595,
+      "top_k": 310,
+      "top_k_true_positive": 225,
+      "top_k_precision": 0.7258064516129032,
+      "top_k_recall": 0.7258064516129032
+    },
+    "ensemble": {
+      "rows": 5143,
+      "positives": 310,
+      "roc_auc": 0.9623025169700247,
+      "average_precision": 0.833893835292672,
+      "top_k": 310,
+      "top_k_true_positive": 234,
+      "top_k_precision": 0.7548387096774194,
+      "top_k_recall": 0.7548387096774194
+    }
+  },
+  "candidate_vs_full_public_detector": {
+    "partial_mahal": {
+      "rows": 1049,
+      "positives": 56,
+      "roc_auc": 0.9319882031362394,
+      "average_precision": 0.8110946696819747,
+      "top_k": 56,
+      "top_k_true_positive": 41,
+      "top_k_precision": 0.7321428571428571,
+      "top_k_recall": 0.7321428571428571
+    },
+    "quadratic_logit": {
+      "rows": 1049,
+      "positives": 56,
+      "roc_auc": 0.92752841317796,
+      "average_precision": 0.7609729770651675,
+      "top_k": 56,
+      "top_k_true_positive": 39,
+      "top_k_precision": 0.6964285714285714,
+      "top_k_recall": 0.6964285714285714
+    },
+    "extra_trees": {
+      "rows": 1049,
+      "positives": 56,
+      "roc_auc": 0.9421486117105452,
+      "average_precision": 0.7554304190069923,
+      "top_k": 56,
+      "top_k_true_positive": 37,
+      "top_k_precision": 0.6607142857142857,
+      "top_k_recall": 0.6607142857142857
+    },
+    "ensemble": {
+      "rows": 1049,
+      "positives": 56,
+      "roc_auc": 0.9407369443245576,
+      "average_precision": 0.782027076867986,
+      "top_k": 56,
+      "top_k_true_positive": 39,
+      "top_k_precision": 0.6964285714285714,
+      "top_k_recall": 0.6964285714285714
+    }
+  },
+  "candidate_vs_B_self_true_rare": {
+    "partial_mahal": {
+      "rows": 1049,
+      "positives": 24,
+      "roc_auc": 0.8249593495934959,
+      "average_precision": 0.14470631703886397,
+      "top_k": 24,
+      "top_k_true_positive": 3,
+      "top_k_precision": 0.125,
+      "top_k_recall": 0.125
+    },
+    "quadratic_logit": {
+      "rows": 1049,
+      "positives": 24,
+      "roc_auc": 0.8180081300813009,
+      "average_precision": 0.1258540895359751,
+      "top_k": 24,
+      "top_k_true_positive": 4,
+      "top_k_precision": 0.16666666666666666,
+      "top_k_recall": 0.16666666666666666
+    },
+    "extra_trees": {
+      "rows": 1049,
+      "positives": 24,
+      "roc_auc": 0.8470325203252033,
+      "average_precision": 0.15968419071118356,
+      "top_k": 24,
+      "top_k_true_positive": 7,
+      "top_k_precision": 0.2916666666666667,
+      "top_k_recall": 0.2916666666666667
+    },
+    "ensemble": {
+      "rows": 1049,
+      "positives": 24,
+      "roc_auc": 0.8425813008130082,
+      "average_precision": 0.14012374758778035,
+      "top_k": 24,
+      "top_k_true_positive": 4,
+      "top_k_precision": 0.16666666666666666,
+      "top_k_recall": 0.16666666666666666
+    }
+  },
+  "self_challenge": {
+    "available": false,
+    "reason": "The retained B_practice/B_self cohort is not the cohort behind the preliminary team-shared target-24 challenge; no exact public-QI links are present. Shadow validation is used instead."
+  },
+  "selection": {
+    "method": "extra_trees",
+    "criterion": "B_self top-prevalence recall + 0.25*A_bg OOF AUC",
+    "values": {
+      "partial_mahal": 0.3644709090059604,
+      "quadratic_logit": 0.4050437849996329,
+      "extra_trees": 0.5316740420362696,
+      "ensemble": 0.4072422959091728
+    }
+  },
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false,
+  "submission_performed": false
+}

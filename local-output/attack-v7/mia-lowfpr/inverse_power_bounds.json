@@ -1,0 +1,42 @@
+{
+  "candidate": "daybreak_v4_rarelock",
+  "assumptions": {
+    "target_sizes": {
+      "25": 13,
+      "26": 6,
+      "27": 1
+    },
+    "exclusive_membership": true,
+    "eligible_rare_members": 6,
+    "at_most_one_rare_member_per_target": true,
+    "official_all_equalities": {
+      "v3": 32525,
+      "v4": 35931,
+      "day": 37283,
+      "guided": 35931
+    },
+    "official_rare_win_counts": {
+      "v3": 2,
+      "v4": 2,
+      "day": 1,
+      "guided": 2
+    },
+    "v4_and_guided_displayed_total_intervals": true,
+    "auc_constraints": false
+  },
+  "variables": 7010,
+  "constraints": 17899,
+  "runs": {
+    "minimum": {
+      "success": false,
+      "status": 1,
+      "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+    },
+    "maximum": {
+      "success": false,
+      "status": 1,
+      "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+    }
+  },
+  "warning": "Feasible extrema are ambiguity bounds, never individual-label inferences."
+}

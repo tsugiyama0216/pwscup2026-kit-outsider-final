@@ -1,0 +1,282 @@
+{
+  "audit_scope": "read-only v7 candidate, generator gates, official logical validator and scoring",
+  "checks": {
+    "candidate_file_set_exact": true,
+    "output_hashes_match_generator_lock": true,
+    "output_hashes_match_saved_diagnostics": true,
+    "all_generator_inputs_match_hash_lock": true,
+    "all_manifest_entries_match": true,
+    "mia_byte_identical_to_v4": true,
+    "mia_byte_identical_to_v6_base": true,
+    "aia_columns_exact": true,
+    "aia_rows_20_x_326": true,
+    "target_set_exact": true,
+    "no_duplicate_composite_keys": true,
+    "all_target_key_blocks_exact": true,
+    "key_sequence_equal_v6_base": true,
+    "only_expected_targets_change_values": true,
+    "time_hat_finite_nonnegative": true,
+    "official_mia_logical_validator_pass": true,
+    "official_aia_logical_validator_pass": true,
+    "strict_variable_cardinality_validator_pass": true,
+    "over_163_counts_match_lock": true,
+    "official_validator_accepts_326_active_each_target": true,
+    "time_11_is_guaranteed_miss_at_horizon": true,
+    "scoring_target_count_is_20": true
+  },
+  "all_checks_pass": true,
+  "candidate": {
+    "directory": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\submissions\\prelim\\team24\\attack-candidate-v7-feedback-stack",
+    "files": [
+      "F_aia.csv",
+      "F_mia.csv"
+    ],
+    "hashes": {
+      "F_mia.csv": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "F_aia.csv": "65AD898E8E24497AA1C415BBCBE14D8360BC35676903A069162F4F20F115EAA0"
+    },
+    "rows": {
+      "F_mia.csv": 1049,
+      "F_aia.csv": 6520
+    },
+    "target_count": 20,
+    "rows_per_target": {
+      "1": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "2": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "3": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "4": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "5": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "6": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "7": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "8": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "9": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "10": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "12": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "13": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "17": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "18": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "19": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "20": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "22": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "23": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "26": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      },
+      "29": {
+        "rows": 326,
+        "unique_composite_keys": 326,
+        "challenge_set_exact": true
+      }
+    },
+    "active_counts": {
+      "1": 163,
+      "2": 163,
+      "3": 163,
+      "4": 163,
+      "5": 163,
+      "6": 217,
+      "7": 253,
+      "8": 211,
+      "9": 274,
+      "10": 163,
+      "12": 163,
+      "13": 163,
+      "17": 223,
+      "18": 236,
+      "19": 268,
+      "20": 163,
+      "22": 163,
+      "23": 163,
+      "26": 163,
+      "29": 163
+    },
+    "targets_over_163": {
+      "6": 217,
+      "7": 253,
+      "8": 211,
+      "9": 274,
+      "17": 223,
+      "18": 236,
+      "19": 268
+    },
+    "changed_rows_vs_v6_base": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 54,
+      "7": 90,
+      "8": 48,
+      "9": 111,
+      "10": 0,
+      "12": 0,
+      "13": 0,
+      "17": 60,
+      "18": 73,
+      "19": 105,
+      "20": 7,
+      "22": 0,
+      "23": 0,
+      "26": 0,
+      "29": 0
+    }
+  },
+  "generator_input_hashes": {
+    "base_mia": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+    "base_aia": "6D4FF74F8FF2278E050A327F8982803F3CEBDFDEF5024F548FB1688FB9F761D6",
+    "v4_aia": "651D754683BCE4B6F22FD7311AB1584B01C2F42FBB73B13996303472411DFA3A",
+    "independent_aia": "BDEA52C1FD7F77F9CF7054E8C9D64F3307B455521318FD73495B28A86BCF35E1",
+    "routed_aia": "CCAA0A4EE58797F263E1281D5BC65E763B129A2F77DE00A1A4579DD60566129F",
+    "feedback_v4": "A3579D160B8E0ED9AC2DB5BF140C1B7D73E2A2FCE524493985998D95C7CB753A",
+    "feedback_independent": "D08BBD21B101134F61F12DAE27EB1A8A9EEF8454B726440C6FA7037646CA5C2C",
+    "feedback_routed": "A4D1B16FAD78EA8C0382D24E12CB02F5D5E8C3FA5B39C3045C422D2B562664B4",
+    "targets_manifest": "A7653F34B890F7E1095153AB50C75E5CC30EDF4272A8D83BFE7065D5B81746E5"
+  },
+  "target_manifest": {
+    "entry_count": 44,
+    "all_entries_match": true
+  },
+  "formal_cardinality": {
+    "candidate_official_result": {
+      "ok": true,
+      "errors": []
+    },
+    "synthetic_326_active_each_target": {
+      "ok": true,
+      "errors": [],
+      "active_counts": {
+        "1": 326,
+        "2": 326,
+        "3": 326,
+        "4": 326,
+        "5": 326,
+        "6": 326,
+        "7": 326,
+        "8": 326,
+        "9": 326,
+        "10": 326,
+        "12": 326,
+        "13": 326,
+        "17": 326,
+        "18": 326,
+        "19": 326,
+        "20": 326,
+        "22": 326,
+        "23": 326,
+        "26": 326,
+        "29": 326
+      }
+    }
+  },
+  "official_validator_negative_control_probes": {
+    "appended_duplicate_composite_key_is_accepted": {
+      "ok": true,
+      "errors": []
+    },
+    "positive_infinity_time_hat_is_accepted": {
+      "ok": true,
+      "errors": []
+    },
+    "fractional_challenge_id_casting_to_same_integer_is_accepted": {
+      "ok": true,
+      "errors": []
+    },
+    "candidate_impact": "none; strict generator checks and exact byte hashes exclude all three malformed cases"
+  },
+  "time_11_semantics": {
+    "official_validator_accepts_nonnegative_without_upper_bound": true,
+    "horizon": 10.0,
+    "tau": 0.5,
+    "minimum_absolute_error_for_truth_in_0_to_horizon": 1.0,
+    "native_abstention_branch_in_scorer": false,
+    "interpretation": "accepted sentinel used as a guaranteed miss, not a special scorer state"
+  },
+  "score_1_aggregation": {
+    "target_count": 20,
+    "mia_power": "mean_k max(TPR_all_k, TPR_rare_k)",
+    "aia_power": "mean_k max(R_time_all_k, R_time_rare_k_after_deadzone)",
+    "score_1": "mia_power + aia_power",
+    "one_target_aia_delta_multiplier": 0.05
+  },
+  "known_official_validator_limitations_mitigated_by_generator": [
+    "validate_aia_submission compares challenge IDs as sets and does not itself reject duplicate composite keys or require 326 rows; _normalized_aia plus validate_variable_aia and the exact output hash cover the candidate.",
+    "validate_aia_submission has no finite-value/upper-bound check for positive infinity; validate_variable_aia rejects all nonfinite values and the exact output hash covers the candidate.",
+    "validate_aia_submission casts challenge_row_id to int without checking integrality; exact candidate keys and output hashing cover the candidate."
+  ],
+  "package_scope_caveat": "The candidate directory intentionally has no token.txt and is not a submission package; no ZIP/token/production artifact was inspected or changed."
+}

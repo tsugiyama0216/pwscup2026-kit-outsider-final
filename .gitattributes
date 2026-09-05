@@ -1,0 +1,3 @@
+# Exact-byte archival snapshot: preserve hashes across Windows/Linux checkouts.
+# This disables newline conversion, not normal text diff rendering.
+* -text

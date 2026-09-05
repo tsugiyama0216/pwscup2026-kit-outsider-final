@@ -1,0 +1,87 @@
+{
+  "decision": "REJECT_HOME_PRIOR_RERANK",
+  "recommended_mia_action": "KEEP_HISTORICAL_V4_UNCHANGED",
+  "reason": "The discovery-selected tail37 rerank failed the predeclared validation win-rate gate and the explicit all-channel lower-tail audit.",
+  "evidence_scope": {
+    "shadow_engine": "v4_without_DOMIAS_fast_surrogate",
+    "discovery_worlds": 12,
+    "validation_worlds": 20,
+    "negative_control_worlds": 2,
+    "discovery_seeds": [20268011, 20268012, 20268013],
+    "validation_seeds": [20268101, 20268102, 20268103, 20268104, 20268105],
+    "scenarios": ["noise_0p03", "noise_0p10", "noise_0p20", "noise_0p40"],
+    "selected_on_discovery": "tail37_theory_reorder",
+    "rare_status_correction": {
+      "observed_eligible_rare_rows": 11,
+      "eligible_nonhome_rare_structurally_shared": 10,
+      "eligible_home_rare_status_unknown": 1,
+      "shadow_excluded_all_eligible_rare_from_latent_private": true,
+      "classification": "MODEL_ASSUMPTION_NOT_OFFICIAL_FACT"
+    }
+  },
+  "selected_variant_results": {
+    "discovery": {
+      "mean_delta_power": 0.0055833333333333525,
+      "median_delta_power": 0.0019999999999999463,
+      "p10_delta_power": -0.005400000000000005,
+      "minimum_delta_power": -0.008000000000000007,
+      "power_win_rate": 0.5833333333333334,
+      "mean_delta_all": 0.007865384615384613,
+      "median_delta_all": 0.0019999999999999463,
+      "p10_delta_all": -0.0020076923076922325,
+      "minimum_delta_all": -0.00600000000000001,
+      "all_win_rate": 0.5833333333333334,
+      "mean_delta_rare": 0.0,
+      "mean_delta_auc": -0.00009951505519888622
+    },
+    "validation": {
+      "mean_delta_power": 0.0034653846153846037,
+      "median_delta_power": 0.0009615384615384026,
+      "p10_delta_power": -0.0002692307692307769,
+      "minimum_delta_power": -0.0036923076923075504,
+      "power_win_rate": 0.5,
+      "power_ties": 7,
+      "mean_delta_all": 0.005238176638176622,
+      "median_delta_all": 0.0,
+      "p10_delta_all": -0.002361538461538481,
+      "minimum_delta_all": -0.00600000000000001,
+      "all_win_rate": 0.45,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": -0.0000689287163568586
+    },
+    "negative_control": {
+      "mean_delta_power": -0.007807692307692293,
+      "mean_delta_all": -0.017653846153846242,
+      "power_win_rate": 0.0
+    }
+  },
+  "failed_checks": {
+    "validation_power_win_rate_gte_0p60": false,
+    "validation_all_p10_gte_minus_0p002": false
+  },
+  "post_audit_note": "No inspected primary source fixes the complete private-block rare quota at 13. The self AIA sample contains 13 observed private rare rows, but the remaining eligible home rare row may be private or shared. The benchmark excluded it from latent private as a model assumption. This correction does not change the REJECT decision and no rerun was used to promote a candidate.",
+  "research_artifact_only": {
+    "path": "production_variants/F_mia_tail37_theory_reorder.csv",
+    "sha256": "697CA4D79CA0C05ECFA580D57479A4C52DE2C0609E67533E705323FBAF48B4EA",
+    "changed_cells_vs_v4": 609,
+    "changed_rows_vs_v4": 482,
+    "changed_targets_vs_v4": 20,
+    "rare_and_known_private_rows_locked": 174,
+    "locked_cells_changed": 0,
+    "official_format_validator_ok": true,
+    "promote": false
+  },
+  "exact_reproduction": {
+    "actual_background_plus_DOMIAS_v4_sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+    "historical_v4_sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+    "hash_equal": true,
+    "no_DOMIAS_shadow_is_not_production_validation": true
+  },
+  "safety": {
+    "token_read": false,
+    "zip_created_or_changed": false,
+    "production_changed": false,
+    "submission_performed": false
+  }
+}

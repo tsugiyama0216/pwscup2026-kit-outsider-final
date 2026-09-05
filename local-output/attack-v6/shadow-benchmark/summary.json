@@ -1,0 +1,254 @@
+{
+  "purpose": "truth-known local method comparison; not a leaderboard forecast",
+  "as_of": "2026-09-05 Asia/Tokyo",
+  "scope": {
+    "official_zero_targets": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "17",
+      "18",
+      "19"
+    ],
+    "discovery_seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "validation_seeds": [
+      20261111,
+      20261112,
+      20261113
+    ],
+    "scenarios": [
+      "raw",
+      "noise_0p03",
+      "time_shuffled",
+      "warp",
+      "independent"
+    ],
+    "plausible_scenarios": [
+      "raw",
+      "noise_0p03",
+      "time_shuffled",
+      "warp"
+    ],
+    "rows_per_challenge": 326,
+    "members_per_challenge": 163,
+    "controls_per_challenge": 163,
+    "exact_matching": [
+      "sex",
+      "prefecture",
+      "five_year_age_band",
+      "onset",
+      "rare"
+    ]
+  },
+  "calibration": {
+    "method": "L2 logistic regression; C selected by leave-one-discovery-seed-out AIA power",
+    "selected_C": 0.1,
+    "intercept": -7.049290886794732,
+    "coefficients": {
+      "expert_v4": 3.5962656565716067,
+      "expert_independent": 2.7136042221147094,
+      "expert_routed": 1.0014374238849748,
+      "knn_all5": 1.2091871379588826,
+      "knn_nohdl": 0.7166955281515428,
+      "knn_stable3": 1.5588848671252706,
+      "knn_labs": 0.7074823603925832,
+      "trees_all5": -0.16829866298887575,
+      "trees_stable3": -0.15389739953338943,
+      "expert_sum": 2.4371024341904337,
+      "density_mean": 0.6450089718510045
+    },
+    "cv": [
+      {
+        "C": 0.1,
+        "mean_zero_slice_power": 0.8414104759156431,
+        "minimum_zero_slice_power": 0.8202964032258208,
+        "std_zero_slice_power": 0.011601572708409266
+      },
+      {
+        "C": 0.3,
+        "mean_zero_slice_power": 0.8414098361804081,
+        "minimum_zero_slice_power": 0.8192330211020135,
+        "std_zero_slice_power": 0.01172032775761054
+      },
+      {
+        "C": 1.0,
+        "mean_zero_slice_power": 0.8413648747997121,
+        "minimum_zero_slice_power": 0.8148590501592572,
+        "std_zero_slice_power": 0.012273900921038758
+      },
+      {
+        "C": 10.0,
+        "mean_zero_slice_power": 0.8412785456049089,
+        "minimum_zero_slice_power": 0.8148347746574239,
+        "std_zero_slice_power": 0.012283322956788526
+      },
+      {
+        "C": 3.0,
+        "mean_zero_slice_power": 0.8412764314034856,
+        "minimum_zero_slice_power": 0.8137977294045402,
+        "std_zero_slice_power": 0.012484280954901955
+      },
+      {
+        "C": 0.03,
+        "mean_zero_slice_power": 0.8412322345496849,
+        "minimum_zero_slice_power": 0.8192330211020135,
+        "std_zero_slice_power": 0.01179598685744029
+      },
+      {
+        "C": 0.01,
+        "mean_zero_slice_power": 0.8411282778788481,
+        "minimum_zero_slice_power": 0.8180749821288485,
+        "std_zero_slice_power": 0.011970781856316134
+      }
+    ]
+  },
+  "limitations": [
+    "Shadow scores compare methods but are not estimates of the private leaderboard score.",
+    "The seven official target identifiers are mapped to independently generated shadow targets; target-specific differences are therefore stability checks, not reconstructed private truth.",
+    "Warp preserves rank/outcome linkage while matching each public production release's QI margins; it cannot reconstruct the organizer's undisclosed transformation.",
+    "Independent is a null control and is excluded from mixture fitting and the headline plausible-scenario mean.",
+    "The directional whole-AIA column adds shadow zero-slice scores to the 13-target measured-positive sum only for scale comparison."
+  ],
+  "elapsed_seconds": 429.37513500000205,
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false,
+  "archive_created": false,
+  "submission_performed": false,
+  "decision_headline": {
+    "recommendation": "retain exact complement of routed active mask",
+    "reason": "official v4, independent, and routed scores are all zero on these seven targets; unconditioned direct-signal shadows are contradicted by that hard evidence",
+    "conditional_exact_zero_validation_blocks": 4,
+    "conditional_exact_zero_routed_complement_mean": 0.108332651391162,
+    "conditional_exact_zero_runner_up": "inverse_consensus",
+    "conditional_exact_zero_runner_up_mean": 0.1056730769230769,
+    "conditional_exact_zero_runner_up_delta": -0.0026595744680851,
+    "replacement_supported": false
+  },
+  "official_hard_evidence": {
+    "targets": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "17",
+      "18",
+      "19"
+    ],
+    "v4_per_target_scores": "all zero",
+    "independent_per_target_scores": "all zero",
+    "routed_per_target_scores": "all zero",
+    "interpretation": "direct-direction shadow performance cannot override measured production failure"
+  },
+  "unconditioned_shadow_diagnostic_rejected_for_selection": {
+    "best_strategy": "safe_v4",
+    "best_zero_slice_mean": 0.937593730797622,
+    "best_mean_delta_vs_exact": 0.8380129938689044,
+    "best_win_rate_vs_exact": 1.0,
+    "exact_complement_zero_slice_mean": 0.09958073692871762,
+    "exact_complement_p10": 0.0670997360692911,
+    "exact_complement_p90": 0.12243645924627519,
+    "best_directional_whole_aia": 0.4787782183206744,
+    "exact_directional_whole_aia": 0.18547367046655788
+  },
+  "conditional_sensitivity": {
+    "exact_zero": [
+      {
+        "split": "validation",
+        "strategy": "complement_routed_active",
+        "eligible_blocks": 4,
+        "mean": 0.108332651391162,
+        "median": 0.12,
+        "p10": 0.0404468085106383,
+        "p90": 0.1668846153846153,
+        "mean_delta_vs_routed_complement": 0.0,
+        "win_rate_vs_routed_complement": 0.0
+      },
+      {
+        "split": "validation",
+        "strategy": "inverse_consensus",
+        "eligible_blocks": 4,
+        "mean": 0.1056730769230769,
+        "median": 0.12,
+        "p10": 0.033,
+        "p90": 0.1668846153846153,
+        "mean_delta_vs_routed_complement": -0.0026595744680851,
+        "win_rate_vs_routed_complement": 0.0
+      },
+      {
+        "split": "validation",
+        "strategy": "complement_v4_active",
+        "eligible_blocks": 4,
+        "mean": 0.0858743641354426,
+        "median": 0.0930981447659329,
+        "p10": 0.062086208620862,
+        "p90": 0.103883495145631,
+        "mean_delta_vs_routed_complement": -0.0224582872557193,
+        "win_rate_vs_routed_complement": 0.25
+      },
+      {
+        "split": "validation",
+        "strategy": "complement_independent_active",
+        "eligible_blocks": 4,
+        "mean": 0.0618415683104925,
+        "median": 0.0692276910764305,
+        "p10": 0.0091836734693877,
+        "p90": 0.1085905649388468,
+        "mean_delta_vs_routed_complement": -0.0464910830806695,
+        "win_rate_vs_routed_complement": 0.0
+      }
+    ],
+    "near_zero": [
+      {
+        "split": "validation",
+        "strategy": "complement_routed_active",
+        "eligible_blocks": 7,
+        "mean": 0.1107169269483814,
+        "median": 0.12,
+        "p10": 0.0458394775647777,
+        "p90": 0.1645054945054944,
+        "mean_delta_vs_routed_complement": 0.0,
+        "win_rate_vs_routed_complement": 0.0
+      },
+      {
+        "split": "validation",
+        "strategy": "inverse_consensus",
+        "eligible_blocks": 7,
+        "mean": 0.1091971701094756,
+        "median": 0.12,
+        "p10": 0.0415841584158415,
+        "p90": 0.1645054945054944,
+        "mean_delta_vs_routed_complement": -0.0015197568389057,
+        "win_rate_vs_routed_complement": 0.0
+      },
+      {
+        "split": "validation",
+        "strategy": "complement_v4_active",
+        "eligible_blocks": 7,
+        "mean": 0.0810986454831273,
+        "median": 0.0961538461538461,
+        "p10": 0.0423030303030302,
+        "p90": 0.1015419760137064,
+        "mean_delta_vs_routed_complement": -0.029618281465254,
+        "win_rate_vs_routed_complement": 0.1428571428571428
+      },
+      {
+        "split": "validation",
+        "strategy": "complement_independent_active",
+        "eligible_blocks": 7,
+        "mean": 0.0635100744292154,
+        "median": 0.031578947368421,
+        "p10": 0.0178217821782177,
+        "p90": 0.1197154666923003,
+        "mean_delta_vs_routed_complement": -0.0472068525191659,
+        "win_rate_vs_routed_complement": 0.1428571428571428
+      }
+    ],
+    "warning": "small post-selected independent-null samples; used only to test whether another complement clearly dominates"
+  }
+}

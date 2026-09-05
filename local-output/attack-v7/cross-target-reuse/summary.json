@@ -1,0 +1,164 @@
+{
+  "challenge_targets": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "12",
+    "13",
+    "17",
+    "18",
+    "19",
+    "20",
+    "22",
+    "23",
+    "24",
+    "26",
+    "29"
+  ],
+  "challenge_rows": 6846,
+  "unique_visible_rows": 6846,
+  "visible_rows_reused_across_targets": 0,
+  "unique_labs_rows": 6846,
+  "labs_rows_reused_across_targets": 0,
+  "maximum_pair_visible_overlap": 0,
+  "maximum_pair_labs_overlap": 0,
+  "maximum_visible_release_matches": 0,
+  "maximum_labs_release_matches": 0,
+  "top_visible_reference_matches": [
+    {
+      "challenge_target": "1",
+      "reference": "A_bg",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "B_self",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "B_practice",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_1",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_2",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_3",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_4",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_5",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_6",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_7",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    }
+  ],
+  "top_labs_reference_matches": [
+    {
+      "challenge_target": "1",
+      "reference": "A_bg",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "B_self",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "B_practice",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_1",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_2",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_3",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_4",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_5",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_6",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    },
+    {
+      "challenge_target": "1",
+      "reference": "C_7",
+      "visible_exact_rows": 0,
+      "labs_exact_rows": 0
+    }
+  ],
+  "visible_frequency_histogram": {
+    "1": 6846
+  },
+  "labs_frequency_histogram": {
+    "1": 6846
+  }
+}

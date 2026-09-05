@@ -1,0 +1,3200 @@
+{
+  "report_type": "authorized_local_registration_research",
+  "data_provenance": {
+    "data_phase": "actual_prelim_team24",
+    "dist": "C:\\Users\\takut\\Downloads\\PWSCup2026_prelim_team24_アウトサイダー_outsider",
+    "input_hashes": {
+      "B.csv": "7A7AA39E16FA5C76EE9C8DC009928373AEC6CF47E7B1BD10DC4E6899B5D2AB3A",
+      "B_self.csv": "297354A3C909FBA6BF4D33053CF91EFA9139892BF5269050A5607B86E0F33E35",
+      "A_bg.csv": "F4817FBA6C1434D6B74221C2B5ABE90E4A53E80D8FA17E12602D43ADAE0A3126",
+      "schema.json": "D0698EB89CDE0901B28DDAF72CB57270D744BDB72B45F8315F75B3199F024128"
+    },
+    "target_file_hashes": {
+      "C_1.csv": "7F29D9EA5E58A129FA725D150217E186ADD65B14963867EB77C633C052AFD4E0",
+      "C_10.csv": "AEE25C4D17D0938BDBE9D71E3319CEB93A2C4E175C1038094F4B9C7D394970F7",
+      "C_12.csv": "968522F76529BA9F6CBDAFF99F21C2543B094D5F6BD3C1BC4EB613893C200997",
+      "C_13.csv": "EDE2DCFA9CAE9BA1BDCBF59FD52B6CAA62F82DA2BCB57F7A3B230818BBD02E53",
+      "C_17.csv": "00BF2ECF3EDF74E88F48B26A1C24132CE2124F85BF197DBBCD3EA5D2CD41DF8D",
+      "C_18.csv": "C1CF3DBB5AAE8CC0C8910C0A98FB021F60F7D05086ECCA5BC1245C526F9A0C3F",
+      "C_19.csv": "C9FB8351C3F84C14EF4F7293BBC135681302C52E69EBA554066EF8C83787996D",
+      "C_2.csv": "1671EF24E42B5125FEA8407A4350403832DFF1E1FC7ACF7D49B85AE814DFF807",
+      "C_20.csv": "B5468E08BF2740D44FE9992D0B9A6F985E60D95A88DB32DA022B773C0F6F972A",
+      "C_22.csv": "5851D8B4A627D64E7CC247655934272A1DE75BDF54A0E069B60D8064DAA73F01",
+      "C_23.csv": "61EFAC3EFBBA3B09E72A50434A1C57B83061FAB421F4B489C5B2B4C77D1300A4",
+      "C_24.csv": "EFD38BF8AB973767CAAD34CE2B0EF9991B1E461BD7C1F9E17DA06B9A847AAA14",
+      "C_26.csv": "29996BD6CADF1EEF6B3068C3FEE83F77D3DA47C8320E251CE9C2601EE51FE293",
+      "C_29.csv": "FE52F71301F50F8924357230BF1F357F6F16521A127010E0C76DF946188B3478",
+      "C_3.csv": "3CDA48AE590FE74487481A88850B976A7ED726305F8F66A39BD2D3E5CE87B33D",
+      "C_4.csv": "77E1D3D986C459E8DECA76BD5FDAC5F12E48E3A265FE029A991D1CD89B09BF66",
+      "C_5.csv": "77717F02E68E6CF159C55950C2C148C469371E4044EB257FAC096FA8625D6294",
+      "C_6.csv": "DE066048501D638CF9F6C7D4B1D36FD4214307A62A6102289F19CCCDD45C7654",
+      "C_7.csv": "CA0C4055EB75B0B9460535FEA133DD7BFDF043B9DFEF0F9B4AECABF59CEC2F5F",
+      "C_8.csv": "435489A182EA3E4C31FBFB9A664D2DB930532655DCA3EAFF51CCEAB9B0A8F466",
+      "C_9.csv": "ED416408440FD38D2D89BCC6323380ABDE69102439F3F576525B60B72AEDF9DB",
+      "README.txt": "81D125F14516FE6054651C856933EF47861186590BA6EE689108644113F5154F",
+      "aia_challenge_1.csv": "9E25C1EB15FF77CEC7A7FA565871CCA5C36B5E925ED7B2ADFC462126B43F550B",
+      "aia_challenge_10.csv": "24F149CFC4E2CABDFBFB5B1585AA4EF55AF3A05E153A9443F59475A36CADA292",
+      "aia_challenge_12.csv": "B88893336F49DA748758247BED55868ED6E9A75B484703BD107079CEE8F9885A",
+      "aia_challenge_13.csv": "9F2B836598E4A714DB809C7E5B2AB0F1517C6A2571CFCCF8BDE72EDD916BA9DB",
+      "aia_challenge_17.csv": "97EB6C713D88F0F8BBDFD9D3188C28199536BD8591C79A8B9D3C2BF25FEBF29B",
+      "aia_challenge_18.csv": "FCC5A1876E582A14296EC9307C3B627E524ECA2F4CF4AB0F62207FAEE12FA909",
+      "aia_challenge_19.csv": "DD8A27D424049FE10905314C5F647EC8B1899F91CE52792583126C460B57A07A",
+      "aia_challenge_2.csv": "EB80409FFEADF4F8745397D066AFFF2D87786FF739EB24B1DD87F8BB16C8EE4F",
+      "aia_challenge_20.csv": "54BB82E0557AF49CDC1A39945CB6FDF4D71618118F982DCD2D607CABEBC00D20",
+      "aia_challenge_22.csv": "F15269D797058D177268B1927B4FDEBC6C4656A04966782553FD1EEACBDD157A",
+      "aia_challenge_23.csv": "BD9A41BC3D5FD689208D44C5E8F5E721162DAD730BE41EEFD06AF3DE60957F72",
+      "aia_challenge_24.csv": "5DD6DA4E0700B72D453B052EDA03D01C7680B6875C9EDBDC58E66FA278C58476",
+      "aia_challenge_26.csv": "22811A37A8E8F94A4DEAD43B8FBCD72F428CA435C0E91727195886FB8B97D6CB",
+      "aia_challenge_29.csv": "9502542E6D08874CB8AFA9633EC0C109A029A1B536772788C0DF2F7DCEA424C8",
+      "aia_challenge_3.csv": "E4854D0D94163E1D056605A7D661113B042A230AE52B30B20B7103CFF540BFB4",
+      "aia_challenge_4.csv": "17D45E9BF5B825E515A1120112F2DDC7887A4C3E90B2C8C95A809CE55674DD15",
+      "aia_challenge_5.csv": "2E381E5C4B52ED76D50EAEC71EEBC41FFCCBD7DC761254F8E8D6C7D9571B4116",
+      "aia_challenge_6.csv": "FFD2414957BCB655E0E826769B7E3B8220B35AD4CEBD771EEF85746179C688F1",
+      "aia_challenge_7.csv": "743B6F73ECCA1ABC463A0AE06319D1DE1257285FBB0FEED0A08E986C7F30565B",
+      "aia_challenge_8.csv": "D8F5EED197BB18D14409ADEA3FF8D7A8CE9FE019F2DD67212546AF03A35A32EA",
+      "aia_challenge_9.csv": "0E7210D8BD743AD143A6D1C179F7A66BDDC9DDAB246844F853FF3814DFE15CAE",
+      "mia_columns.json": "6D3B2EB2F264B622C36758BBD90EC53C8379CDAC2EEE14601BBE46693A0EA939"
+    },
+    "known_private": {
+      "key_columns": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "sex",
+        "prefecture"
+      ],
+      "candidate_rows": 1049,
+      "challenge_rows": 326,
+      "expected_matches": 163,
+      "matched_rows": 163,
+      "unmatched_controls": 163,
+      "candidate_key_duplicates": 0,
+      "challenge_key_duplicates": 0,
+      "matched_record_ids_unique": true
+    },
+    "rare_rows": 24,
+    "eligible_rare_rows": 11,
+    "record_id_scope": "table-local pseudonym, not a cross-table identity key",
+    "token_read": false,
+    "practice_fallback_allowed": false
+  },
+  "configuration": {
+    "iterations": 2,
+    "max_tentative_anchors": 120,
+    "anchor_quantile": 0.35,
+    "categorical_penalty": 2.0,
+    "ransac_residual_fraction": 0.1,
+    "ransac_trials": 180,
+    "calibration_fraction": 0.5,
+    "false_positive_rate": 0.01,
+    "random_state": 7319
+  },
+  "negative_controls": {
+    "actual_background_seeds": [
+      7001,
+      7003,
+      7009
+    ],
+    "accepted_rows": [
+      2,
+      3,
+      11
+    ],
+    "meaning": "independent actual A_bg cohorts; no B24 membership anchors"
+  },
+  "synthetic_summary": {
+    "gate": false,
+    "fresh_validation_positive_precision_mean": 0.7031661552007122,
+    "fresh_validation_positive_precision_p10": 0.5166666666666667,
+    "fresh_validation_positive_recall_mean": 0.75,
+    "fresh_validation_null_accepted_max": 14
+  },
+  "actual_targets": {
+    "1": {
+      "target": 1,
+      "accepted_rows": 16,
+      "accepted_record_ids": [
+        191,
+        269,
+        273,
+        356,
+        397,
+        430,
+        445,
+        518,
+        596,
+        625,
+        766,
+        793,
+        794,
+        855,
+        988,
+        1005
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.9864156339370829,
+      "accepted_above_base_p95": 16,
+      "potential_new_rows_below_p95": 0,
+      "potential_new_record_ids": [],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.6560510281525681,
+      "holdout_a_p": 0.015384615384615385,
+      "holdout_b_ratio": 0.8289674514290754,
+      "holdout_b_p": 0.015384615384615385,
+      "model_a_min_inlier": 0.2,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9395206568119342,
+          "BMI": 0.9320670052979645,
+          "SBP": 0.9956743137143393,
+          "TG": 0.9891439066251926,
+          "HDL": 0.9892239415017028,
+          "ALT": 0.978699046177678,
+          "FPG": 0.9043386617313122
+        },
+        "intercepts": {
+          "age": 3.993878947304289,
+          "BMI": 1.7017472052876599,
+          "SBP": 1.8473438018757946,
+          "TG": 3.6097741768203377,
+          "HDL": 0.33433262629523597,
+          "ALT": 0.30156698668610815,
+          "FPG": 9.836029321044109
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.121973045314213,
+          "SBP": 25.48894141915575,
+          "TG": 81.01216421177818,
+          "HDL": 12.066167544555427,
+          "ALT": 18.082913360275214,
+          "FPG": 21.43112803331806
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.5666666666666667,
+          "BMI": 0.21666666666666667,
+          "SBP": 0.5083333333333333,
+          "TG": 0.5083333333333333,
+          "HDL": 0.6416666666666667,
+          "ALT": 0.6,
+          "FPG": 0.2
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.7719061365117794,
+          "BMI": 0.9452405448021889,
+          "SBP": 0.9757314621873593,
+          "TG": 0.5296605229334308,
+          "HDL": 0.9674928341128546,
+          "ALT": 0.9374899947028854,
+          "FPG": 0.9870121906788928
+        },
+        "intercepts": {
+          "age": 13.961076450321265,
+          "BMI": 1.4875825494959685,
+          "SBP": 4.210929275648411,
+          "TG": 39.81538897517954,
+          "HDL": 1.195158942353757,
+          "ALT": 1.8213189167017845,
+          "FPG": 1.7165230856656564
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.121973045314213,
+          "SBP": 25.48894141915575,
+          "TG": 81.01216421177818,
+          "HDL": 12.066167544555427,
+          "ALT": 18.082913360275214,
+          "FPG": 21.43112803331806
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.2,
+          "BMI": 0.725,
+          "SBP": 0.0,
+          "TG": 0.21666666666666667,
+          "HDL": 0.9333333333333333,
+          "ALT": 0.0,
+          "FPG": 0.7333333333333333
+        }
+      },
+      "target_gate": false
+    },
+    "2": {
+      "target": 2,
+      "accepted_rows": 21,
+      "accepted_record_ids": [
+        145,
+        152,
+        202,
+        224,
+        292,
+        347,
+        491,
+        545,
+        581,
+        583,
+        599,
+        666,
+        673,
+        741,
+        801,
+        818,
+        829,
+        845,
+        858,
+        902,
+        1023
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.9844750102138091,
+      "accepted_above_base_p95": 21,
+      "potential_new_rows_below_p95": 0,
+      "potential_new_record_ids": [],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.6686229298665536,
+      "holdout_a_p": 0.015384615384615385,
+      "holdout_b_ratio": 0.9303400318339045,
+      "holdout_b_p": 0.09230769230769231,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.18333333333333332,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.78400694710194,
+          "BMI": 0.6010210420877293,
+          "SBP": 1.005922194659877,
+          "TG": 0.9703559305079207,
+          "HDL": 1.0004999039189513,
+          "ALT": 0.9252819037351739,
+          "FPG": 0.9881067938850637
+        },
+        "intercepts": {
+          "age": 14.749421565452877,
+          "BMI": 9.299863204060873,
+          "SBP": -2.841265978620058,
+          "TG": 4.0802722617070515,
+          "HDL": -0.08900486639590355,
+          "ALT": 0.874276599263311,
+          "FPG": 0.19509793069279624
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.599999999999998,
+          "SBP": 24.351487253527054,
+          "TG": 84.11588584882108,
+          "HDL": 10.858819127571685,
+          "ALT": 19.608019963665647,
+          "FPG": 22.56167983528293
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.4583333333333333,
+          "BMI": 0.19166666666666668,
+          "SBP": 0.5,
+          "TG": 0.5833333333333334,
+          "HDL": 0.49166666666666664,
+          "ALT": 0.5166666666666667,
+          "FPG": 0.0
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.8273308650286101,
+          "BMI": 1.0577572492147955,
+          "SBP": 0.4512507798312515,
+          "TG": 0.6902773911472727,
+          "HDL": 0.9402598012082742,
+          "ALT": 0.6637397818481391,
+          "FPG": 0.9008644672275371
+        },
+        "intercepts": {
+          "age": 11.901380006731728,
+          "BMI": -1.1526361590775522,
+          "SBP": 66.11796271949947,
+          "TG": 19.986978136140735,
+          "HDL": 2.403585793119234,
+          "ALT": 2.493013072905118,
+          "FPG": 8.30508397798522
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.599999999999998,
+          "SBP": 24.351487253527054,
+          "TG": 84.11588584882108,
+          "HDL": 10.858819127571685,
+          "ALT": 19.608019963665647,
+          "FPG": 22.56167983528293
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.21666666666666667,
+          "BMI": 0.6916666666666667,
+          "SBP": 0.18333333333333332,
+          "TG": 0.20833333333333334,
+          "HDL": 0.85,
+          "ALT": 0.23333333333333334,
+          "FPG": 0.725
+        }
+      },
+      "target_gate": false
+    },
+    "3": {
+      "target": 3,
+      "accepted_rows": 1,
+      "accepted_record_ids": [
+        678
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.7797902764537655,
+      "accepted_above_base_p95": 0,
+      "potential_new_rows_below_p95": 1,
+      "potential_new_record_ids": [
+        678
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.8493765983341304,
+      "holdout_a_p": 0.015384615384615385,
+      "holdout_b_ratio": 0.9020941062821578,
+      "holdout_b_p": 0.06153846153846154,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9920031805777331,
+          "BMI": 1.0952577073655008,
+          "SBP": 0.909237493561422,
+          "TG": 0.7050240731288476,
+          "HDL": 0.5324182479391946,
+          "ALT": 0.9261900823405381,
+          "FPG": 1.1078951736635274
+        },
+        "intercepts": {
+          "age": -0.00041701868374133255,
+          "BMI": -1.97528276168255,
+          "SBP": 9.759196883320215,
+          "TG": 19.502761357095387,
+          "HDL": 19.971171559329683,
+          "ALT": 0.6054566205063683,
+          "FPG": -9.731309041914002
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.815080781099624,
+          "SBP": 23.658307147010092,
+          "TG": 84.29444274398101,
+          "HDL": 12.496263683551454,
+          "ALT": 17.815686556430812,
+          "FPG": 25.296836692086558
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.55,
+          "BMI": 0.0,
+          "SBP": 0.4583333333333333,
+          "TG": 0.4666666666666667,
+          "HDL": 0.23333333333333334,
+          "ALT": 0.4166666666666667,
+          "FPG": 0.0
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.9444444444444444,
+          "BMI": 1.0092077648864144,
+          "SBP": 0.284763825231401,
+          "TG": 0.15429874116489228,
+          "HDL": 0.9641211881736311,
+          "ALT": 0.24208329228363157,
+          "FPG": 0.9907129201096796
+        },
+        "intercepts": {
+          "age": 3.0,
+          "BMI": -0.2849082156741112,
+          "SBP": 90.78280016012594,
+          "TG": 48.15111874043827,
+          "HDL": 1.3620819101563058,
+          "ALT": 7.959736171217433,
+          "FPG": 1.934325779885782
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.815080781099624,
+          "SBP": 23.658307147010092,
+          "TG": 84.29444274398101,
+          "HDL": 12.496263683551454,
+          "ALT": 17.815686556430812,
+          "FPG": 25.296836692086558
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 108,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.5925925925925926,
+          "SBP": 0.17592592592592593,
+          "TG": 0.18518518518518517,
+          "HDL": 0.7592592592592593,
+          "ALT": 0.2037037037037037,
+          "FPG": 0.6018518518518519
+        }
+      },
+      "target_gate": false
+    },
+    "4": {
+      "target": 4,
+      "accepted_rows": 1,
+      "accepted_record_ids": [
+        969
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.9752144899904671,
+      "accepted_above_base_p95": 1,
+      "potential_new_rows_below_p95": 0,
+      "potential_new_record_ids": [],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.9561076062820296,
+      "holdout_a_p": 0.27692307692307694,
+      "holdout_b_ratio": 0.948243090398121,
+      "holdout_b_p": 0.13846153846153847,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.8927785116688686,
+          "BMI": 0.2221864377936665,
+          "SBP": 0.6766724718168341,
+          "TG": 0.6812066967558399,
+          "HDL": 0.24746306891257006,
+          "ALT": 1.0523045034048382,
+          "FPG": 0.9513931013441472
+        },
+        "intercepts": {
+          "age": 5.370761778951994,
+          "BMI": 19.140019049378132,
+          "SBP": 39.29965023227719,
+          "TG": 21.654309319063046,
+          "HDL": 31.067688128809102,
+          "ALT": -1.4349781422652423,
+          "FPG": 4.874053914171242
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.233607179995889,
+          "SBP": 25.072796399557276,
+          "TG": 74.0245881084871,
+          "HDL": 9.243647479880174,
+          "ALT": 17.706376501881305,
+          "FPG": 21.7233872723684
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 100,
+        "ransac_inlier_fraction": {
+          "age": 0.54,
+          "BMI": 0.17,
+          "SBP": 0.41,
+          "TG": 0.47,
+          "HDL": 0.35,
+          "ALT": 0.45,
+          "FPG": 0.0
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 1.0,
+          "BMI": 0.8873587649926641,
+          "SBP": 0.48938857322550644,
+          "TG": 0.9314066051346175,
+          "HDL": 0.723307624032839,
+          "ALT": 0.2664614875465768,
+          "FPG": 0.8280085150389125
+        },
+        "intercepts": {
+          "age": 0.0,
+          "BMI": 3.404534257706871,
+          "SBP": 74.99589769133969,
+          "TG": 3.3935201461447804,
+          "HDL": 11.212194851887478,
+          "ALT": 7.971448365174432,
+          "FPG": 17.05753528326501
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.233607179995889,
+          "SBP": 25.072796399557276,
+          "TG": 74.0245881084871,
+          "HDL": 9.243647479880174,
+          "ALT": 17.706376501881305,
+          "FPG": 21.7233872723684
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 87,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.5632183908045977,
+          "SBP": 0.0,
+          "TG": 0.0,
+          "HDL": 0.8390804597701149,
+          "ALT": 0.0,
+          "FPG": 0.5977011494252874
+        }
+      },
+      "target_gate": false
+    },
+    "5": {
+      "target": 5,
+      "accepted_rows": 3,
+      "accepted_record_ids": [
+        125,
+        144,
+        156
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.6256752462662853,
+      "accepted_above_base_p95": 0,
+      "potential_new_rows_below_p95": 3,
+      "potential_new_record_ids": [
+        125,
+        144,
+        156
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.9699531202021078,
+      "holdout_a_p": 0.24615384615384617,
+      "holdout_b_ratio": 0.9046428735159856,
+      "holdout_b_p": 0.09230769230769231,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.15,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9139799888827127,
+          "BMI": 1.0037886834783798,
+          "SBP": 0.8867643232468299,
+          "TG": 0.9900690244421688,
+          "HDL": 0.3458978060782295,
+          "ALT": 0.8777837467715749,
+          "FPG": 0.26561462567425387
+        },
+        "intercepts": {
+          "age": 3.074850611450799,
+          "BMI": 0.024093435006527386,
+          "SBP": 14.662310871272894,
+          "TG": -0.4929433989283467,
+          "HDL": 27.132485928506004,
+          "ALT": 0.6618110263321562,
+          "FPG": 63.0086691051132
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.329441867723379,
+          "SBP": 26.52733274301508,
+          "TG": 75.23757644914514,
+          "HDL": 10.139725609866446,
+          "ALT": 20.323025754158675,
+          "FPG": 21.04749850530348
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.5333333333333333,
+          "BMI": 0.0,
+          "SBP": 0.4666666666666667,
+          "TG": 0.5416666666666666,
+          "HDL": 0.3,
+          "ALT": 0.5583333333333333,
+          "FPG": 0.18333333333333332
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.17028380634390647,
+          "BMI": 0.9672575189989535,
+          "SBP": 0.22950503512331066,
+          "TG": 0.21363152301330088,
+          "HDL": 0.7689701749092976,
+          "ALT": 0.2113478904693881,
+          "FPG": 0.9248909715210677
+        },
+        "intercepts": {
+          "age": 40.02459226916656,
+          "BMI": 0.787794667388944,
+          "SBP": 91.56757771325117,
+          "TG": 48.3073076617745,
+          "HDL": 9.550890782038714,
+          "ALT": 11.157731164318966,
+          "FPG": 6.873819549546212
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.329441867723379,
+          "SBP": 26.52733274301508,
+          "TG": 75.23757644914514,
+          "HDL": 10.139725609866446,
+          "ALT": 20.323025754158675,
+          "FPG": 21.04749850530348
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.21666666666666667,
+          "BMI": 0.7083333333333334,
+          "SBP": 0.19166666666666668,
+          "TG": 0.15,
+          "HDL": 0.775,
+          "ALT": 0.18333333333333332,
+          "FPG": 0.6583333333333333
+        }
+      },
+      "target_gate": false
+    },
+    "6": {
+      "target": 6,
+      "accepted_rows": 5,
+      "accepted_record_ids": [
+        326,
+        463,
+        678,
+        1021,
+        1044
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.9107721639656816,
+      "accepted_above_base_p95": 2,
+      "potential_new_rows_below_p95": 3,
+      "potential_new_record_ids": [
+        463,
+        678,
+        1044
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.8610297712417759,
+      "holdout_a_p": 0.046153846153846156,
+      "holdout_b_ratio": 1.0022615448054961,
+      "holdout_b_p": 0.5230769230769231,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9976580588763405,
+          "BMI": 0.30429805336119364,
+          "SBP": 0.9113123418300558,
+          "TG": 0.8711895336780335,
+          "HDL": 0.8073226657939967,
+          "ALT": 0.6786666190386991,
+          "FPG": 0.32248169160634427
+        },
+        "intercepts": {
+          "age": -0.19442245900863497,
+          "BMI": 14.9153164903356,
+          "SBP": 7.907637111145036,
+          "TG": 1.9949730963261203,
+          "HDL": 7.892707607010443,
+          "ALT": 2.7329785366583472,
+          "FPG": 56.988242048969624
+        },
+        "scales": {
+          "age": 19.0,
+          "BMI": 5.351368740908715,
+          "SBP": 25.583248151005108,
+          "TG": 74.50719727730481,
+          "HDL": 11.342585483296759,
+          "ALT": 17.76104114747809,
+          "FPG": 22.859257277085902
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.44166666666666665,
+          "BMI": 0.0,
+          "SBP": 0.44166666666666665,
+          "TG": 0.4166666666666667,
+          "HDL": 0.48333333333333334,
+          "ALT": 0.45,
+          "FPG": 0.16666666666666666
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.5376305580423753,
+          "BMI": 1.0294240263584558,
+          "SBP": 0.9793415785844385,
+          "TG": 0.9374789843132301,
+          "HDL": 0.9629465150348058,
+          "ALT": 0.3160199302331914,
+          "FPG": 1.0782154974394793
+        },
+        "intercepts": {
+          "age": 25.44673231871084,
+          "BMI": -0.1120661172299009,
+          "SBP": 4.1059785225547785,
+          "TG": 0.427957662696798,
+          "HDL": 1.5582022542305296,
+          "ALT": 8.983406223089636,
+          "FPG": -7.606446577608139
+        },
+        "scales": {
+          "age": 19.0,
+          "BMI": 5.351368740908715,
+          "SBP": 25.583248151005108,
+          "TG": 74.50719727730481,
+          "HDL": 11.342585483296759,
+          "ALT": 17.76104114747809,
+          "FPG": 22.859257277085902
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.15833333333333333,
+          "BMI": 0.6166666666666667,
+          "SBP": 0.0,
+          "TG": 0.0,
+          "HDL": 0.825,
+          "ALT": 0.14166666666666666,
+          "FPG": 0.6083333333333333
+        }
+      },
+      "target_gate": false
+    },
+    "7": {
+      "target": 7,
+      "accepted_rows": 10,
+      "accepted_record_ids": [
+        25,
+        212,
+        317,
+        364,
+        395,
+        530,
+        594,
+        610,
+        612,
+        815
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.863584366062917,
+      "accepted_above_base_p95": 4,
+      "potential_new_rows_below_p95": 6,
+      "potential_new_record_ids": [
+        212,
+        395,
+        530,
+        594,
+        610,
+        612
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 1.0150633997730623,
+      "holdout_a_p": 0.5538461538461539,
+      "holdout_b_ratio": 1.0256470398354396,
+      "holdout_b_p": 0.7692307692307693,
+      "model_a_min_inlier": 0.19090909090909092,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.6761836666731965,
+          "BMI": 0.23482805455308509,
+          "SBP": 0.8946648344710357,
+          "TG": 0.8993480033073853,
+          "HDL": 0.24542467105259785,
+          "ALT": 0.8109425333252721,
+          "FPG": 0.23093927625798924
+        },
+        "intercepts": {
+          "age": 21.275627338439527,
+          "BMI": 18.360010733383376,
+          "SBP": 14.949273270031114,
+          "TG": 10.557583706854707,
+          "HDL": 31.555049456219656,
+          "ALT": 1.2538583262771699,
+          "FPG": 72.06696162860092
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.202060416184203,
+          "SBP": 28.716371781139713,
+          "TG": 79.53701065614739,
+          "HDL": 12.063231724917436,
+          "ALT": 20.858035146171915,
+          "FPG": 26.322615524918106
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 110,
+        "ransac_inlier_fraction": {
+          "age": 0.5545454545454546,
+          "BMI": 0.2,
+          "SBP": 0.5181818181818182,
+          "TG": 0.4636363636363636,
+          "HDL": 0.5909090909090909,
+          "ALT": 0.5,
+          "FPG": 0.19090909090909092
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.9444444444444444,
+          "BMI": 1.0490227552060876,
+          "SBP": 1.0992793684899662,
+          "TG": 0.1670320559327976,
+          "HDL": 0.8764965877495293,
+          "ALT": 0.21870591974284842,
+          "FPG": 1.1698799142841116
+        },
+        "intercepts": {
+          "age": 6.0,
+          "BMI": -0.22892215460427678,
+          "SBP": -9.918214681014277,
+          "TG": 47.94768117945595,
+          "HDL": 5.270562368738382,
+          "ALT": 5.321002568935759,
+          "FPG": -10.35466151380794
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.202060416184203,
+          "SBP": 28.716371781139713,
+          "TG": 79.53701065614739,
+          "HDL": 12.063231724917436,
+          "ALT": 20.858035146171915,
+          "FPG": 26.322615524918106
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 109,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.6697247706422018,
+          "SBP": 0.0,
+          "TG": 0.23853211009174313,
+          "HDL": 0.8073394495412844,
+          "ALT": 0.23853211009174313,
+          "FPG": 0.6972477064220184
+        }
+      },
+      "target_gate": false
+    },
+    "8": {
+      "target": 8,
+      "accepted_rows": 0,
+      "accepted_record_ids": [],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": null,
+      "accepted_above_base_p95": 0,
+      "potential_new_rows_below_p95": 0,
+      "potential_new_record_ids": [],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.9850192499628477,
+      "holdout_a_p": 0.2923076923076923,
+      "holdout_b_ratio": 1.009337162397035,
+      "holdout_b_p": 0.5692307692307692,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9050906978026406,
+          "BMI": 0.3113277085857049,
+          "SBP": 0.9314839200938816,
+          "TG": 0.7171588240979236,
+          "HDL": 0.48024602768988384,
+          "ALT": 0.7887447754146152,
+          "FPG": 0.9376744214245822
+        },
+        "intercepts": {
+          "age": 5.671248563297603,
+          "BMI": 16.259087442963647,
+          "SBP": 9.74023702954112,
+          "TG": 15.354254086910196,
+          "HDL": 22.06875845790172,
+          "ALT": 2.6992125243587832,
+          "FPG": 5.1252707458619255
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.448218617431088,
+          "SBP": 25.12468831028535,
+          "TG": 80.07569038229684,
+          "HDL": 10.768620608359484,
+          "ALT": 17.319463813402354,
+          "FPG": 21.41014535760432
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.5083333333333333,
+          "BMI": 0.15833333333333333,
+          "SBP": 0.525,
+          "TG": 0.45,
+          "HDL": 0.0,
+          "ALT": 0.475,
+          "FPG": 0.0
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.9444444444444444,
+          "BMI": 0.9130689103936805,
+          "SBP": 0.6936743028656733,
+          "TG": 0.3394518026989162,
+          "HDL": 0.7984172569860551,
+          "ALT": 0.8599722607865304,
+          "FPG": 0.8841419971072609
+        },
+        "intercepts": {
+          "age": 4.0,
+          "BMI": 1.9345162898299257,
+          "SBP": 38.929310613770284,
+          "TG": 49.17712129696321,
+          "HDL": 8.506831021951285,
+          "ALT": 1.993289112505975,
+          "FPG": 11.141842518743076
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.448218617431088,
+          "SBP": 25.12468831028535,
+          "TG": 80.07569038229684,
+          "HDL": 10.768620608359484,
+          "ALT": 17.319463813402354,
+          "FPG": 21.41014535760432
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.75,
+          "SBP": 0.14166666666666666,
+          "TG": 0.14166666666666666,
+          "HDL": 0.775,
+          "ALT": 0.0,
+          "FPG": 0.6333333333333333
+        }
+      },
+      "target_gate": false
+    },
+    "9": {
+      "target": 9,
+      "accepted_rows": 7,
+      "accepted_record_ids": [
+        90,
+        198,
+        363,
+        418,
+        423,
+        752,
+        821
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.8880566525943075,
+      "accepted_above_base_p95": 3,
+      "potential_new_rows_below_p95": 4,
+      "potential_new_record_ids": [
+        198,
+        363,
+        423,
+        752
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.9616379084871628,
+      "holdout_a_p": 0.36923076923076925,
+      "holdout_b_ratio": 0.9356453136053554,
+      "holdout_b_p": 0.15384615384615385,
+      "model_a_min_inlier": 0.1565217391304348,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 1.0143207622525245,
+          "BMI": 0.593508764278221,
+          "SBP": 0.7347536732272638,
+          "TG": 1.0126598639405757,
+          "HDL": 0.258183113830576,
+          "ALT": 0.7801530458645587,
+          "FPG": 0.339305812373855
+        },
+        "intercepts": {
+          "age": -0.22588720260169737,
+          "BMI": 9.193019700857167,
+          "SBP": 31.446861824557445,
+          "TG": 6.25605241259737,
+          "HDL": 31.262967704952167,
+          "ALT": 1.9595698428634094,
+          "FPG": 56.93929936524313
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.4865671653067345,
+          "SBP": 25.169389238623125,
+          "TG": 92.35877748918833,
+          "HDL": 11.209577771473363,
+          "ALT": 17.913422976258463,
+          "FPG": 22.20249187161309
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 115,
+        "ransac_inlier_fraction": {
+          "age": 0.48695652173913045,
+          "BMI": 0.1565217391304348,
+          "SBP": 0.45217391304347826,
+          "TG": 0.4434782608695652,
+          "HDL": 0.25217391304347825,
+          "ALT": 0.43478260869565216,
+          "FPG": 0.17391304347826086
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.9444444444444444,
+          "BMI": 0.9477836269859039,
+          "SBP": 0.30292802703158583,
+          "TG": 0.4457207551785363,
+          "HDL": 0.8948525467063809,
+          "ALT": 0.36147619011404836,
+          "FPG": 0.9419622006849289
+        },
+        "intercepts": {
+          "age": 4.0,
+          "BMI": 1.84719927806848,
+          "SBP": 81.99209611834036,
+          "TG": 32.147621642452876,
+          "HDL": 4.460781930191331,
+          "ALT": 6.693442541755273,
+          "FPG": 3.977707044362134
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.4865671653067345,
+          "SBP": 25.169389238623125,
+          "TG": 92.35877748918833,
+          "HDL": 11.209577771473363,
+          "ALT": 17.913422976258463,
+          "FPG": 22.20249187161309
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 104,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.6634615384615384,
+          "SBP": 0.17307692307692307,
+          "TG": 0.14423076923076922,
+          "HDL": 0.7884615384615384,
+          "ALT": 0.16346153846153846,
+          "FPG": 0.625
+        }
+      },
+      "target_gate": false
+    },
+    "10": {
+      "target": 10,
+      "accepted_rows": 2,
+      "accepted_record_ids": [
+        423,
+        849
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.7187797902764538,
+      "accepted_above_base_p95": 1,
+      "potential_new_rows_below_p95": 1,
+      "potential_new_record_ids": [
+        849
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.8219820618460507,
+      "holdout_a_p": 0.015384615384615385,
+      "holdout_b_ratio": 0.8953262841710884,
+      "holdout_b_p": 0.06153846153846154,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 1.0142363575784792,
+          "BMI": 0.4463124645970281,
+          "SBP": 0.7941217025818895,
+          "TG": 0.8367635408882101,
+          "HDL": 0.15550735570134042,
+          "ALT": 0.591141057599625,
+          "FPG": 0.8731806557129864
+        },
+        "intercepts": {
+          "age": 0.9452456142892345,
+          "BMI": 12.718059397623307,
+          "SBP": 26.465705550723328,
+          "TG": 11.018419157907637,
+          "HDL": 35.17442987295498,
+          "ALT": 5.42703200625337,
+          "FPG": 11.379807659087845
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.367823319930849,
+          "SBP": 24.401816743129785,
+          "TG": 75.22100026087695,
+          "HDL": 10.879754943586612,
+          "ALT": 19.13879841719782,
+          "FPG": 19.9375437093193
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 115,
+        "ransac_inlier_fraction": {
+          "age": 0.4782608695652174,
+          "BMI": 0.0,
+          "SBP": 0.4608695652173913,
+          "TG": 0.43478260869565216,
+          "HDL": 0.5130434782608696,
+          "ALT": 0.41739130434782606,
+          "FPG": 0.0
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 1.0,
+          "BMI": 0.9311614282648962,
+          "SBP": 0.21897115217201085,
+          "TG": 0.46666891989199777,
+          "HDL": 0.783967098746819,
+          "ALT": 0.9152873489038806,
+          "FPG": 0.7412812929785916
+        },
+        "intercepts": {
+          "age": 2.0,
+          "BMI": 1.7533295144803844,
+          "SBP": 94.09296589208714,
+          "TG": 37.262819985765134,
+          "HDL": 9.051136279834694,
+          "ALT": 0.6964914315203963,
+          "FPG": 22.726440681855124
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.367823319930849,
+          "SBP": 24.401816743129785,
+          "TG": 75.22100026087695,
+          "HDL": 10.879754943586612,
+          "ALT": 19.13879841719782,
+          "FPG": 19.9375437093193
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.7416666666666667,
+          "SBP": 0.19166666666666668,
+          "TG": 0.15833333333333333,
+          "HDL": 0.8166666666666667,
+          "ALT": 0.0,
+          "FPG": 0.5583333333333333
+        }
+      },
+      "target_gate": false
+    },
+    "12": {
+      "target": 12,
+      "accepted_rows": 10,
+      "accepted_record_ids": [
+        69,
+        248,
+        344,
+        561,
+        831,
+        842,
+        869,
+        896,
+        1037,
+        1041
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.8794089609151572,
+      "accepted_above_base_p95": 3,
+      "potential_new_rows_below_p95": 7,
+      "potential_new_record_ids": [
+        69,
+        344,
+        561,
+        831,
+        869,
+        896,
+        1041
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.8682445361108612,
+      "holdout_a_p": 0.03076923076923077,
+      "holdout_b_ratio": 0.8983773657275173,
+      "holdout_b_p": 0.09230769230769231,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9653146318499415,
+          "BMI": 0.765956845923657,
+          "SBP": 0.9759926569257571,
+          "TG": 0.8223845347417381,
+          "HDL": 0.5636238768053649,
+          "ALT": 0.8665485582197189,
+          "FPG": 0.9389422700945375
+        },
+        "intercepts": {
+          "age": 0.9801383261637397,
+          "BMI": 5.102297541636325,
+          "SBP": 7.4456928690513,
+          "TG": 25.107619769196965,
+          "HDL": 18.101584152849522,
+          "ALT": -0.15322802017456816,
+          "FPG": 4.689499991183695
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.3581410491508095,
+          "SBP": 24.733166532044564,
+          "TG": 85.15774583464045,
+          "HDL": 11.547338988155538,
+          "ALT": 19.099770228314227,
+          "FPG": 21.439094450908954
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 116,
+        "ransac_inlier_fraction": {
+          "age": 0.5344827586206896,
+          "BMI": 0.1724137931034483,
+          "SBP": 0.3793103448275862,
+          "TG": 0.47413793103448276,
+          "HDL": 0.5775862068965517,
+          "ALT": 0.4396551724137931,
+          "FPG": 0.0
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.37472470703390504,
+          "BMI": 1.0005250582192924,
+          "SBP": 0.6095152815436127,
+          "TG": 0.5785173742830081,
+          "HDL": 0.8740470236385127,
+          "ALT": 0.2323920096283375,
+          "FPG": 0.9408476635727947
+        },
+        "intercepts": {
+          "age": 37.19734087386825,
+          "BMI": -0.20687816660569425,
+          "SBP": 51.92005534412306,
+          "TG": 29.296829723623595,
+          "HDL": 5.326071644786637,
+          "ALT": 8.774522730157505,
+          "FPG": 4.965479137977724
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.3581410491508095,
+          "SBP": 24.733166532044564,
+          "TG": 85.15774583464045,
+          "HDL": 11.547338988155538,
+          "ALT": 19.099770228314227,
+          "FPG": 21.439094450908954
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 119,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.5798319327731093,
+          "SBP": 0.0,
+          "TG": 0.21008403361344538,
+          "HDL": 0.8319327731092437,
+          "ALT": 0.21008403361344538,
+          "FPG": 0.6890756302521008
+        }
+      },
+      "target_gate": false
+    },
+    "13": {
+      "target": 13,
+      "accepted_rows": 2,
+      "accepted_record_ids": [
+        234,
+        877
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.9718779790276454,
+      "accepted_above_base_p95": 1,
+      "potential_new_rows_below_p95": 1,
+      "potential_new_record_ids": [
+        234
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.9068985111433162,
+      "holdout_a_p": 0.015384615384615385,
+      "holdout_b_ratio": 0.9385060837072294,
+      "holdout_b_p": 0.13846153846153847,
+      "model_a_min_inlier": 0.17543859649122806,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.8778526953345152,
+          "BMI": 0.15832516149605622,
+          "SBP": 0.8499728330337666,
+          "TG": 0.7173281044344606,
+          "HDL": 0.39054512774248734,
+          "ALT": 0.8923044761064559,
+          "FPG": 0.1134952407150929
+        },
+        "intercepts": {
+          "age": 4.716227685998092,
+          "BMI": 18.188364956139516,
+          "SBP": 17.599128904080928,
+          "TG": 9.229055260470474,
+          "HDL": 25.32919309036669,
+          "ALT": 2.668481232641504,
+          "FPG": 74.37411583686365
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.217007040798425,
+          "SBP": 26.557454988220485,
+          "TG": 83.01395845596102,
+          "HDL": 10.12795730791121,
+          "ALT": 20.201369286931776,
+          "FPG": 22.770451738350033
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 114,
+        "ransac_inlier_fraction": {
+          "age": 0.4649122807017544,
+          "BMI": 0.18421052631578946,
+          "SBP": 0.4473684210526316,
+          "TG": 0.4298245614035088,
+          "HDL": 0.34210526315789475,
+          "ALT": 0.4824561403508772,
+          "FPG": 0.17543859649122806
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 1.0,
+          "BMI": 0.7661092665451845,
+          "SBP": 0.29397272868378166,
+          "TG": 0.13160750713913474,
+          "HDL": 0.8444143972434398,
+          "ALT": 0.2460521435437767,
+          "FPG": 1.113626572423801
+        },
+        "intercepts": {
+          "age": -1.0,
+          "BMI": 4.9657057642972795,
+          "SBP": 82.40210379433944,
+          "TG": 56.53401568121324,
+          "HDL": 6.605417487493369,
+          "ALT": 10.479535017227384,
+          "FPG": -10.38836844759544
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.217007040798425,
+          "SBP": 26.557454988220485,
+          "TG": 83.01395845596102,
+          "HDL": 10.12795730791121,
+          "ALT": 20.201369286931776,
+          "FPG": 22.770451738350033
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 109,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.6513761467889908,
+          "SBP": 0.1559633027522936,
+          "TG": 0.1651376146788991,
+          "HDL": 0.7522935779816514,
+          "ALT": 0.1651376146788991,
+          "FPG": 0.7064220183486238
+        }
+      },
+      "target_gate": false
+    },
+    "17": {
+      "target": 17,
+      "accepted_rows": 0,
+      "accepted_record_ids": [],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": null,
+      "accepted_above_base_p95": 0,
+      "potential_new_rows_below_p95": 0,
+      "potential_new_record_ids": [],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.9949614950327884,
+      "holdout_a_p": 0.46153846153846156,
+      "holdout_b_ratio": 0.9944743054348031,
+      "holdout_b_p": 0.46153846153846156,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9903243934420888,
+          "BMI": 0.945167682662727,
+          "SBP": 0.78197830700387,
+          "TG": 0.8968558300800596,
+          "HDL": 0.16575540481168258,
+          "ALT": 0.8378866276057122,
+          "FPG": 0.937548903846233
+        },
+        "intercepts": {
+          "age": 0.9952762190205533,
+          "BMI": 1.0820966023130438,
+          "SBP": 28.761352869992677,
+          "TG": 8.872465892569537,
+          "HDL": 34.38908090835028,
+          "ALT": 2.489126650347245,
+          "FPG": 4.51567551886356
+        },
+        "scales": {
+          "age": 16.0,
+          "BMI": 5.018203834044634,
+          "SBP": 23.87590481754924,
+          "TG": 92.71534186539327,
+          "HDL": 9.395492394363878,
+          "ALT": 29.808001256505406,
+          "FPG": 21.407279384580008
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 119,
+        "ransac_inlier_fraction": {
+          "age": 0.44537815126050423,
+          "BMI": 0.0,
+          "SBP": 0.4789915966386555,
+          "TG": 0.48739495798319327,
+          "HDL": 0.31932773109243695,
+          "ALT": 0.3865546218487395,
+          "FPG": 0.0
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.2360597194733671,
+          "BMI": 0.810068956299812,
+          "SBP": 0.22893952160440068,
+          "TG": 1.1357298135996268,
+          "HDL": 0.6715443269484482,
+          "ALT": 1.293123176391272,
+          "FPG": 0.8360308951469663
+        },
+        "intercepts": {
+          "age": 43.137337578521645,
+          "BMI": 4.517427899440861,
+          "SBP": 93.96961959215955,
+          "TG": -11.922482529831328,
+          "HDL": 13.676722715154451,
+          "ALT": 4.348594318356499,
+          "FPG": 15.171198336577675
+        },
+        "scales": {
+          "age": 16.0,
+          "BMI": 5.018203834044634,
+          "SBP": 23.87590481754924,
+          "TG": 92.71534186539327,
+          "HDL": 9.395492394363878,
+          "ALT": 29.808001256505406,
+          "FPG": 21.407279384580008
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 112,
+        "ransac_inlier_fraction": {
+          "age": 0.16964285714285715,
+          "BMI": 0.5892857142857143,
+          "SBP": 0.13392857142857142,
+          "TG": 0.0,
+          "HDL": 0.6875,
+          "ALT": 0.25,
+          "FPG": 0.5625
+        }
+      },
+      "target_gate": false
+    },
+    "18": {
+      "target": 18,
+      "accepted_rows": 6,
+      "accepted_record_ids": [
+        315,
+        340,
+        843,
+        863,
+        892,
+        976
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.688592310136638,
+      "accepted_above_base_p95": 1,
+      "potential_new_rows_below_p95": 5,
+      "potential_new_record_ids": [
+        315,
+        340,
+        863,
+        892,
+        976
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.775976530225536,
+      "holdout_a_p": 0.015384615384615385,
+      "holdout_b_ratio": 0.9617808326347866,
+      "holdout_b_p": 0.13846153846153847,
+      "model_a_min_inlier": 0.15833333333333333,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9681953252194508,
+          "BMI": 0.20847249185266897,
+          "SBP": 0.7680997680881796,
+          "TG": 0.6765645840978354,
+          "HDL": 0.6878644812908231,
+          "ALT": 0.8452976065889221,
+          "FPG": 0.3786998178214608
+        },
+        "intercepts": {
+          "age": 1.8159347853312369,
+          "BMI": 19.352641330712757,
+          "SBP": 29.09736809984824,
+          "TG": 24.350439086533314,
+          "HDL": 13.037969489261112,
+          "ALT": 3.873418541578003,
+          "FPG": 60.39463801061105
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.445593710073759,
+          "SBP": 23.663370106908346,
+          "TG": 86.6587573173976,
+          "HDL": 11.974690854129108,
+          "ALT": 18.82304459475862,
+          "FPG": 22.08582204506564
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.45,
+          "BMI": 0.15833333333333333,
+          "SBP": 0.525,
+          "TG": 0.48333333333333334,
+          "HDL": 0.5833333333333334,
+          "ALT": 0.5333333333333333,
+          "FPG": 0.21666666666666667
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 1.0,
+          "BMI": 1.0349377412985474,
+          "SBP": 0.9058475334460984,
+          "TG": 0.36305335193778987,
+          "HDL": 0.8259741216212396,
+          "ALT": 0.175626421194429,
+          "FPG": 0.9597326422959013
+        },
+        "intercepts": {
+          "age": 1.0,
+          "BMI": -0.6220121198550466,
+          "SBP": 12.243815018259284,
+          "TG": 61.666800124360925,
+          "HDL": 7.170296846830794,
+          "ALT": 8.775633013923777,
+          "FPG": 4.068954084714548
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.445593710073759,
+          "SBP": 23.663370106908346,
+          "TG": 86.6587573173976,
+          "HDL": 11.974690854129108,
+          "ALT": 18.82304459475862,
+          "FPG": 22.08582204506564
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.6166666666666667,
+          "SBP": 0.0,
+          "TG": 0.19166666666666668,
+          "HDL": 0.8166666666666667,
+          "ALT": 0.23333333333333334,
+          "FPG": 0.7083333333333334
+        }
+      },
+      "target_gate": false
+    },
+    "19": {
+      "target": 19,
+      "accepted_rows": 16,
+      "accepted_record_ids": [
+        106,
+        148,
+        221,
+        254,
+        318,
+        370,
+        375,
+        388,
+        473,
+        603,
+        685,
+        768,
+        865,
+        930,
+        969,
+        986
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.8245948522402288,
+      "accepted_above_base_p95": 4,
+      "potential_new_rows_below_p95": 12,
+      "potential_new_record_ids": [
+        106,
+        254,
+        375,
+        388,
+        473,
+        603,
+        685,
+        768,
+        865,
+        930,
+        969,
+        986
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.83532401952736,
+      "holdout_a_p": 0.015384615384615385,
+      "holdout_b_ratio": 0.907527273810987,
+      "holdout_b_p": 0.03076923076923077,
+      "model_a_min_inlier": 0.15,
+      "model_b_min_inlier": 0.15,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 1.0010662644335795,
+          "BMI": 0.538542686910555,
+          "SBP": 0.7612851136242985,
+          "TG": 0.9674567004658834,
+          "HDL": 0.7796356095735382,
+          "ALT": 0.8122769019565264,
+          "FPG": 0.2706228913656341
+        },
+        "intercepts": {
+          "age": 1.6661552064912115,
+          "BMI": 11.101618857091655,
+          "SBP": 33.24485938040961,
+          "TG": 10.420754160054926,
+          "HDL": 8.992598897296894,
+          "ALT": 0.6412124094548268,
+          "FPG": 70.44506510749966
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.50813545573488,
+          "SBP": 27.19285548418017,
+          "TG": 85.61498840378387,
+          "HDL": 10.931591201628642,
+          "ALT": 20.135127825358694,
+          "FPG": 23.38356110440195
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.48333333333333334,
+          "BMI": 0.16666666666666666,
+          "SBP": 0.4666666666666667,
+          "TG": 0.375,
+          "HDL": 0.5083333333333333,
+          "ALT": 0.425,
+          "FPG": 0.15
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.16059003618146397,
+          "BMI": 1.034340417211557,
+          "SBP": 0.6449129302312194,
+          "TG": 0.3941311954561533,
+          "HDL": 0.8013449284421892,
+          "ALT": 0.5417350850554715,
+          "FPG": 1.0560559484839969
+        },
+        "intercepts": {
+          "age": 47.03068466462565,
+          "BMI": -0.3169307304022446,
+          "SBP": 46.63950244783524,
+          "TG": 45.17613761543483,
+          "HDL": 8.29248292417936,
+          "ALT": 3.5490372706251057,
+          "FPG": -5.581184597974016
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.50813545573488,
+          "SBP": 27.19285548418017,
+          "TG": 85.61498840378387,
+          "HDL": 10.931591201628642,
+          "ALT": 20.135127825358694,
+          "FPG": 23.38356110440195
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.2,
+          "BMI": 0.625,
+          "SBP": 0.16666666666666666,
+          "TG": 0.16666666666666666,
+          "HDL": 0.7916666666666666,
+          "ALT": 0.15,
+          "FPG": 0.6416666666666667
+        }
+      },
+      "target_gate": false
+    },
+    "20": {
+      "target": 20,
+      "accepted_rows": 10,
+      "accepted_record_ids": [
+        135,
+        149,
+        160,
+        345,
+        431,
+        530,
+        882,
+        897,
+        917,
+        976
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.9251668255481411,
+      "accepted_above_base_p95": 5,
+      "potential_new_rows_below_p95": 5,
+      "potential_new_record_ids": [
+        135,
+        530,
+        882,
+        897,
+        976
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.9239829475292923,
+      "holdout_a_p": 0.046153846153846156,
+      "holdout_b_ratio": 1.0442341404266726,
+      "holdout_b_p": 0.8,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.7806578267171144,
+          "BMI": 0.14709330603744886,
+          "SBP": 0.9370561548415457,
+          "TG": 0.8931615199473667,
+          "HDL": 0.5101628511565844,
+          "ALT": 0.8569895449320438,
+          "FPG": 0.9816513595594595
+        },
+        "intercepts": {
+          "age": 12.886975081744687,
+          "BMI": 18.88231810364928,
+          "SBP": 11.218050202396526,
+          "TG": 10.330784397429689,
+          "HDL": 20.24583300785169,
+          "ALT": -0.40617815590470663,
+          "FPG": 0.8606196042509566
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.548491835842256,
+          "SBP": 25.307951696487038,
+          "TG": 82.52607307707332,
+          "HDL": 11.89612893573424,
+          "ALT": 18.10176308765538,
+          "FPG": 22.41428135229171
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.4666666666666667,
+          "BMI": 0.20833333333333334,
+          "SBP": 0.4083333333333333,
+          "TG": 0.48333333333333334,
+          "HDL": 0.43333333333333335,
+          "ALT": 0.525,
+          "FPG": 0.0
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.9444444444444444,
+          "BMI": 0.9741005320697638,
+          "SBP": 0.9688030706219211,
+          "TG": 0.23865380799419242,
+          "HDL": 0.9431770226043806,
+          "ALT": 0.1393929435922598,
+          "FPG": 0.8699086488690636
+        },
+        "intercepts": {
+          "age": 4.0,
+          "BMI": 0.8260967630390255,
+          "SBP": 4.948278441333088,
+          "TG": 49.70628025736403,
+          "HDL": 2.3909582168425203,
+          "ALT": 8.48275345033727,
+          "FPG": 9.142315821168637
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.548491835842256,
+          "SBP": 25.307951696487038,
+          "TG": 82.52607307707332,
+          "HDL": 11.89612893573424,
+          "ALT": 18.10176308765538,
+          "FPG": 22.41428135229171
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 120,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.6583333333333333,
+          "SBP": 0.0,
+          "TG": 0.19166666666666668,
+          "HDL": 0.7916666666666666,
+          "ALT": 0.0,
+          "FPG": 0.6583333333333333
+        }
+      },
+      "target_gate": false
+    },
+    "22": {
+      "target": 22,
+      "accepted_rows": 3,
+      "accepted_record_ids": [
+        427,
+        431,
+        635
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.9072132189386718,
+      "accepted_above_base_p95": 1,
+      "potential_new_rows_below_p95": 2,
+      "potential_new_record_ids": [
+        431,
+        635
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.986196738933426,
+      "holdout_a_p": 0.4153846153846154,
+      "holdout_b_ratio": 1.0004215279667636,
+      "holdout_b_p": 0.5076923076923077,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.7722824221305369,
+          "BMI": 1.073513636575303,
+          "SBP": 0.8319042936919382,
+          "TG": 0.7450853169278363,
+          "HDL": 0.25772227324065083,
+          "ALT": 1.0223283236750054,
+          "FPG": 0.1852141311027807
+        },
+        "intercepts": {
+          "age": 13.975244991677094,
+          "BMI": -1.364181114726339,
+          "SBP": 20.6763622236557,
+          "TG": 9.813386258091683,
+          "HDL": 31.32083967630881,
+          "ALT": -0.6240107688894607,
+          "FPG": 76.72102446277292
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.699634409615882,
+          "SBP": 26.451637054417986,
+          "TG": 87.47877119698389,
+          "HDL": 10.856452482009423,
+          "ALT": 18.63184441080275,
+          "FPG": 23.4086431716172
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 118,
+        "ransac_inlier_fraction": {
+          "age": 0.4322033898305085,
+          "BMI": 0.0,
+          "SBP": 0.3898305084745763,
+          "TG": 0.4152542372881356,
+          "HDL": 0.2288135593220339,
+          "ALT": 0.4661016949152542,
+          "FPG": 0.1694915254237288
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.15104726100966695,
+          "BMI": 1.0273498182056267,
+          "SBP": 1.0125840095093077,
+          "TG": 0.6370131916351887,
+          "HDL": 0.8174129895669427,
+          "ALT": 1.0068340452806916,
+          "FPG": 0.9960217693025247
+        },
+        "intercepts": {
+          "age": 44.75281954887218,
+          "BMI": -0.22020192706325759,
+          "SBP": 1.3196181024469098,
+          "TG": 20.470632928563425,
+          "HDL": 7.612049094540467,
+          "ALT": 0.3837192959959168,
+          "FPG": -0.7299678652301509
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.699634409615882,
+          "SBP": 26.451637054417986,
+          "TG": 87.47877119698389,
+          "HDL": 10.856452482009423,
+          "ALT": 18.63184441080275,
+          "FPG": 23.4086431716172
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 107,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.6261682242990654,
+          "SBP": 0.0,
+          "TG": 0.18691588785046728,
+          "HDL": 0.7289719626168224,
+          "ALT": 0.0,
+          "FPG": 0.5607476635514018
+        }
+      },
+      "target_gate": false
+    },
+    "23": {
+      "target": 23,
+      "accepted_rows": 0,
+      "accepted_record_ids": [],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": null,
+      "accepted_above_base_p95": 0,
+      "potential_new_rows_below_p95": 0,
+      "potential_new_record_ids": [],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.8162613287536109,
+      "holdout_a_p": 0.015384615384615385,
+      "holdout_b_ratio": 0.9284471023740585,
+      "holdout_b_p": 0.1076923076923077,
+      "model_a_min_inlier": 0.0,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9796818155753637,
+          "BMI": 0.06102111322791793,
+          "SBP": 0.9713053565883297,
+          "TG": 0.8736605098592998,
+          "HDL": 0.1792172237119915,
+          "ALT": 0.8219041908917962,
+          "FPG": 1.0389079669843384
+        },
+        "intercepts": {
+          "age": 3.6693150178715683,
+          "BMI": 21.621315392547338,
+          "SBP": 7.145752676904607,
+          "TG": 5.093766024240026,
+          "HDL": 34.28912206336428,
+          "ALT": 1.3149085609690658,
+          "FPG": -1.3119442932644603
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.331738522416966,
+          "SBP": 32.851495190137086,
+          "TG": 92.49863965106881,
+          "HDL": 10.772771602346602,
+          "ALT": 20.252323816602946,
+          "FPG": 23.72163522655812
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 104,
+        "ransac_inlier_fraction": {
+          "age": 0.5288461538461539,
+          "BMI": 0.19230769230769232,
+          "SBP": 0.47115384615384615,
+          "TG": 0.4423076923076923,
+          "HDL": 0.5384615384615384,
+          "ALT": 0.49038461538461536,
+          "FPG": 0.0
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.9444444444444444,
+          "BMI": 1.0191435662110742,
+          "SBP": 1.2575742911325334,
+          "TG": 1.0581483752661793,
+          "HDL": 0.8036665876993677,
+          "ALT": 0.5892656604288603,
+          "FPG": 1.0626237494574922
+        },
+        "intercepts": {
+          "age": 6.0,
+          "BMI": -0.6242963789945115,
+          "SBP": -27.520723938405368,
+          "TG": -2.975771918033061,
+          "HDL": 7.873271823752511,
+          "ALT": 3.52174884441309,
+          "FPG": -3.3051751818376545
+        },
+        "scales": {
+          "age": 17.0,
+          "BMI": 5.331738522416966,
+          "SBP": 32.851495190137086,
+          "TG": 92.49863965106881,
+          "HDL": 10.772771602346602,
+          "ALT": 20.252323816602946,
+          "FPG": 23.72163522655812
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 103,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.6893203883495146,
+          "SBP": 0.0,
+          "TG": 0.0,
+          "HDL": 0.8543689320388349,
+          "ALT": 0.21359223300970873,
+          "FPG": 0.6699029126213593
+        }
+      },
+      "target_gate": false
+    },
+    "26": {
+      "target": 26,
+      "accepted_rows": 5,
+      "accepted_record_ids": [
+        144,
+        312,
+        326,
+        700,
+        849
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.6932316491897045,
+      "accepted_above_base_p95": 0,
+      "potential_new_rows_below_p95": 5,
+      "potential_new_record_ids": [
+        144,
+        312,
+        326,
+        700,
+        849
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.9382566216172842,
+      "holdout_a_p": 0.24615384615384617,
+      "holdout_b_ratio": 0.9478769810059777,
+      "holdout_b_p": 0.2153846153846154,
+      "model_a_min_inlier": 0.15254237288135594,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 0.9215485456780005,
+          "BMI": 0.3462313907124024,
+          "SBP": 0.919076264728379,
+          "TG": 1.03886451004123,
+          "HDL": 0.43745325057454054,
+          "ALT": 1.1648358362304851,
+          "FPG": 0.11643150380854017
+        },
+        "intercepts": {
+          "age": 2.834060756940737,
+          "BMI": 13.278937261010743,
+          "SBP": 7.017521698780527,
+          "TG": -0.9383129854708443,
+          "HDL": 23.4051255786013,
+          "ALT": -2.400870998967008,
+          "FPG": 80.30323720250094
+        },
+        "scales": {
+          "age": 15.0,
+          "BMI": 5.6831169231159,
+          "SBP": 26.725537342213997,
+          "TG": 95.82285196063589,
+          "HDL": 11.221357134130706,
+          "ALT": 20.19023688183286,
+          "FPG": 23.897694613778597
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 118,
+        "ransac_inlier_fraction": {
+          "age": 0.4406779661016949,
+          "BMI": 0.15254237288135594,
+          "SBP": 0.3305084745762712,
+          "TG": 0.3898305084745763,
+          "HDL": 0.5,
+          "ALT": 0.3728813559322034,
+          "FPG": 0.17796610169491525
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.8333333333333334,
+          "BMI": 0.9635909105310521,
+          "SBP": 0.3607373067381181,
+          "TG": 0.23897273610290995,
+          "HDL": 0.7725812434032034,
+          "ALT": 1.1575553295624283,
+          "FPG": 0.8982557613514527
+        },
+        "intercepts": {
+          "age": 10.0,
+          "BMI": 0.6931733543249017,
+          "SBP": 74.83707763858837,
+          "TG": 57.18914209287239,
+          "HDL": 9.531677181652412,
+          "ALT": -0.6772671494818763,
+          "FPG": 8.993053943039797
+        },
+        "scales": {
+          "age": 15.0,
+          "BMI": 5.6831169231159,
+          "SBP": 26.725537342213997,
+          "TG": 95.82285196063589,
+          "HDL": 11.221357134130706,
+          "ALT": 20.19023688183286,
+          "FPG": 23.897694613778597
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 116,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.5689655172413793,
+          "SBP": 0.1810344827586207,
+          "TG": 0.21551724137931033,
+          "HDL": 0.7413793103448276,
+          "ALT": 0.0,
+          "FPG": 0.5258620689655172
+        }
+      },
+      "target_gate": false
+    },
+    "29": {
+      "target": 29,
+      "accepted_rows": 4,
+      "accepted_record_ids": [
+        365,
+        461,
+        530,
+        635
+      ],
+      "audit_false_links": 0,
+      "audit_false_link_rate": 0.0,
+      "background_null_mean_accepted": 5.333333333333333,
+      "background_null_max_accepted": 11,
+      "base_percentile_mean": 0.9678265014299333,
+      "accepted_above_base_p95": 3,
+      "potential_new_rows_below_p95": 1,
+      "potential_new_record_ids": [
+        365
+      ],
+      "rare_selected": 0,
+      "holdout_a_ratio": 0.7873562292876317,
+      "holdout_a_p": 0.015384615384615385,
+      "holdout_b_ratio": 0.9248291709092029,
+      "holdout_b_p": 0.09230769230769231,
+      "model_a_min_inlier": 0.16379310344827586,
+      "model_b_min_inlier": 0.0,
+      "model_a": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "age",
+          "SBP",
+          "TG",
+          "ALT"
+        ],
+        "slopes": {
+          "age": 1.0149610358707932,
+          "BMI": 0.34613566412358737,
+          "SBP": 0.8662447075457577,
+          "TG": 0.9380945994853425,
+          "HDL": 0.8826969797483756,
+          "ALT": 0.7899019969657792,
+          "FPG": 0.28123362502054045
+        },
+        "intercepts": {
+          "age": -0.20087842795103228,
+          "BMI": 14.679466868204756,
+          "SBP": 17.962896184393898,
+          "TG": 2.7714828575119697,
+          "HDL": 4.906442620763933,
+          "ALT": 4.805853834875418,
+          "FPG": 69.60702621387448
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.583266705409876,
+          "SBP": 24.752123036561798,
+          "TG": 79.37285051189077,
+          "HDL": 11.196887200354084,
+          "ALT": 17.901242191945386,
+          "FPG": 21.63431392787045
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 116,
+        "ransac_inlier_fraction": {
+          "age": 0.39655172413793105,
+          "BMI": 0.16379310344827586,
+          "SBP": 0.46551724137931033,
+          "TG": 0.41379310344827586,
+          "HDL": 0.5689655172413793,
+          "ALT": 0.46551724137931033,
+          "FPG": 0.1810344827586207
+        }
+      },
+      "model_b": {
+        "numeric_columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "categorical_columns": [
+          "sex",
+          "prefecture",
+          "smoking"
+        ],
+        "fit_view": [
+          "BMI",
+          "HDL",
+          "FPG"
+        ],
+        "slopes": {
+          "age": 0.7160800703915532,
+          "BMI": 0.9556832002849402,
+          "SBP": 0.37463083709097966,
+          "TG": 0.9738438387694724,
+          "HDL": 0.9165977199315677,
+          "ALT": 0.07825190558752601,
+          "FPG": 1.0058093874977385
+        },
+        "intercepts": {
+          "age": 17.99049714034315,
+          "BMI": 0.9209087192498977,
+          "SBP": 84.26190091962837,
+          "TG": 2.865622094401104,
+          "HDL": 3.402216626825904,
+          "ALT": 9.727966079414633,
+          "FPG": -1.256316369016787
+        },
+        "scales": {
+          "age": 18.0,
+          "BMI": 5.583266705409876,
+          "SBP": 24.752123036561798,
+          "TG": 79.37285051189077,
+          "HDL": 11.196887200354084,
+          "ALT": 17.901242191945386,
+          "FPG": 21.63431392787045
+        },
+        "categorical_penalty": 2.0,
+        "tentative_pairs": 117,
+        "ransac_inlier_fraction": {
+          "age": 0.0,
+          "BMI": 0.6495726495726496,
+          "SBP": 0.0,
+          "TG": 0.0,
+          "HDL": 0.8205128205128205,
+          "ALT": 0.17094017094017094,
+          "FPG": 0.5811965811965812
+        }
+      },
+      "target_gate": false
+    }
+  },
+  "self_target_aia": {
+    "view_a": {
+      "method": "registered_affine_nearest_event_decoder",
+      "link_columns": [
+        "age",
+        "SBP",
+        "TG"
+      ],
+      "rows": 326,
+      "mutual_rows": 68,
+      "decoded_event_rows": 1,
+      "maximum_distance": 0.0028686139444523014,
+      "median_best_distance": 0.04579857197474253,
+      "median_margin": 0.19620202694704433,
+      "known_member_rows": 163,
+      "known_member_onset_events": 16,
+      "known_member_death_only_events": 6,
+      "known_member_any_events": 22,
+      "member_active": 0,
+      "control_active": 1,
+      "correct_member_times_all": 0,
+      "correct_member_any_event_times": 0,
+      "correct_member_onset_times": 0,
+      "correct_member_death_only_times": 0
+    },
+    "view_b": {
+      "method": "registered_affine_nearest_event_decoder",
+      "link_columns": [
+        "HDL",
+        "ALT"
+      ],
+      "rows": 326,
+      "mutual_rows": 98,
+      "decoded_event_rows": 0,
+      "maximum_distance": 3.0107311932417892e-05,
+      "median_best_distance": 0.0011251211566909657,
+      "median_margin": 0.45788267707589464,
+      "known_member_rows": 163,
+      "known_member_onset_events": 16,
+      "known_member_death_only_events": 6,
+      "known_member_any_events": 22,
+      "member_active": 0,
+      "control_active": 0,
+      "correct_member_times_all": 0,
+      "correct_member_any_event_times": 0,
+      "correct_member_onset_times": 0,
+      "correct_member_death_only_times": 0
+    },
+    "two_model_agreement": {
+      "known_member_rows": 163,
+      "known_member_onset_events": 16,
+      "known_member_death_only_events": 6,
+      "known_member_any_events": 22,
+      "decoded_event_rows": 0,
+      "member_active": 0,
+      "control_active": 0,
+      "correct_member_times_all": 0,
+      "correct_member_any_event_times": 0,
+      "correct_member_onset_times": 0,
+      "correct_member_death_only_times": 0
+    }
+  },
+  "decision": {
+    "synthetic_gate": false,
+    "empirically_gated_non_ceiling_targets": [],
+    "promote_mia_overlay": false,
+    "promote_aia_decoder": false,
+    "production_files_changed": 0,
+    "reason": "Only public-mechanism evidence is available per attacked target; promotion additionally requires strict anchor-view/null gates. Self-target evidence cannot approve cross-target AIA transfer.",
+    "self_aia_internal_signal": false,
+    "future_transfer_validation_required": true
+  },
+  "token_read": false,
+  "archive_created": false,
+  "submission_performed": false
+}

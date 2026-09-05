@@ -1,0 +1,10 @@
+{
+  "synthetic_gate": false,
+  "empirically_gated_non_ceiling_targets": [],
+  "promote_mia_overlay": false,
+  "promote_aia_decoder": false,
+  "production_files_changed": 0,
+  "reason": "Only public-mechanism evidence is available per attacked target; promotion additionally requires strict anchor-view/null gates. Self-target evidence cannot approve cross-target AIA transfer.",
+  "self_aia_internal_signal": false,
+  "future_transfer_validation_required": true
+}

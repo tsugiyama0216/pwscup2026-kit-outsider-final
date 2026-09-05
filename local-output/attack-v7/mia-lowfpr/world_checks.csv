@@ -1,0 +1,11 @@
+split,seed,count_25,count_26,count_27,target_count,mia_source_rows,aia_source_rows,shared_total,shared_bounds,candidate_exclusivity,challenge_rows,aia_member_count,aia_control_count,aia_published_strata,challenge_ids_unique,challenge_truth_ids_match,control_matches_unique,attack_background_hidden_disjoint,eligible_for_attack_benchmark,rejection_reason
+discovery,20261702,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,
+discovery,20261704,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,
+discovery,20261705,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,
+discovery,20261709,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,
+validation,20261803,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,
+validation,20261805,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,
+validation,20261806,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,
+validation,20261809,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,
+validation,20261814,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,
+validation,20261816,13,6,1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,

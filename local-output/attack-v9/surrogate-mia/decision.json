@@ -1,0 +1,194 @@
+{
+  "decision": "REJECT",
+  "reason": "donor occupancy lacks robust incremental low-FPR and/or production mechanism evidence",
+  "selected_discovery_config": {
+    "pool": "toy",
+    "without_replacement": false,
+    "neighbours": 3,
+    "inverse_cell": false,
+    "mean_tpr": 0.10956790123456789,
+    "mean_auc": 0.8786484529797287
+  },
+  "validation": {
+    "observations": 18,
+    "mean_delta_tpr_vs_dcr": -0.0009214092140921418,
+    "p10_delta_tpr_vs_dcr": -0.04878048780487805,
+    "win_rate_tpr_vs_dcr": 0.2777777777777778,
+    "mean_delta_auc_vs_dcr": 0.07550895630907525,
+    "p10_delta_auc_vs_dcr": 0.03522456870910179,
+    "null_mean_auc": 0.49814098750743596,
+    "null_max_abs_auc_from_half": 0.09428911362284365
+  },
+  "gates": {
+    "self_validation": false,
+    "production_mechanism": false
+  },
+  "mapping": {
+    "18": {
+      "rows": 1049,
+      "matched": 1049,
+      "unmatched": 0,
+      "ambiguous": 0,
+      "max_matched_distance": 1.3322676295501878e-15,
+      "actual": {
+        "mapped_rows": 1049,
+        "unique_donors": 1049,
+        "duplicate_excess": 0,
+        "max_multiplicity": 1
+      }
+    },
+    "19": {
+      "rows": 1049,
+      "matched": 1049,
+      "unmatched": 0,
+      "ambiguous": 0,
+      "max_matched_distance": 1.7763568394002505e-15,
+      "toy": {
+        "mapped_rows": 1049,
+        "unique_donors": 893,
+        "duplicate_excess": 156,
+        "max_multiplicity": 8
+      }
+    },
+    "29": {
+      "rows": 1049,
+      "matched": 1049,
+      "unmatched": 0,
+      "ambiguous": 0,
+      "max_matched_distance": 1.3322676295501878e-15,
+      "actual": {
+        "mapped_rows": 885,
+        "unique_donors": 812,
+        "duplicate_excess": 73,
+        "max_multiplicity": 4
+      },
+      "toy": {
+        "mapped_rows": 164,
+        "unique_donors": 115,
+        "duplicate_excess": 49,
+        "max_multiplicity": 5
+      }
+    }
+  },
+  "candidate_invariants": {
+    "record_keys_unchanged": true,
+    "locked_rows": 174,
+    "locked_cells_changed": 0,
+    "targets_1_2_changed_cells": 0,
+    "official_mia_validator": "PASS",
+    "official_mia_validator_errors": [],
+    "changed_by_target": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "12": 0,
+      "13": 0,
+      "17": 0,
+      "18": 34,
+      "19": 36,
+      "20": 0,
+      "22": 0,
+      "23": 0,
+      "26": 0,
+      "29": 35
+    },
+    "baseline_sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B"
+  },
+  "candidate_written": false,
+  "token_read": false,
+  "official_submission": false,
+  "limitations": [
+    "self-challenge query rows are stratified-disjoint across discovery and validation, but both surrogate releases are simulated from the same actual B source",
+    "noise seeds are sensitivity replicates, not independent people or official targets",
+    "C18 uniqueness is compatible with multiple mechanisms and does not by itself prove nearest-donor substitution",
+    "C1/C2 approximate proximity is not used as membership truth",
+    "hidden target membership and leaderboard feedback are not used row by row"
+  ],
+  "provenance": {
+    "data_phase": "actual_prelim_team24",
+    "dist": "C:\\Users\\takut\\Downloads\\PWSCup2026_prelim_team24_アウトサイダー_outsider",
+    "input_hashes": {
+      "B.csv": "7A7AA39E16FA5C76EE9C8DC009928373AEC6CF47E7B1BD10DC4E6899B5D2AB3A",
+      "B_self.csv": "297354A3C909FBA6BF4D33053CF91EFA9139892BF5269050A5607B86E0F33E35",
+      "A_bg.csv": "F4817FBA6C1434D6B74221C2B5ABE90E4A53E80D8FA17E12602D43ADAE0A3126",
+      "schema.json": "D0698EB89CDE0901B28DDAF72CB57270D744BDB72B45F8315F75B3199F024128"
+    },
+    "target_file_hashes": {
+      "C_1.csv": "7F29D9EA5E58A129FA725D150217E186ADD65B14963867EB77C633C052AFD4E0",
+      "C_10.csv": "AEE25C4D17D0938BDBE9D71E3319CEB93A2C4E175C1038094F4B9C7D394970F7",
+      "C_12.csv": "968522F76529BA9F6CBDAFF99F21C2543B094D5F6BD3C1BC4EB613893C200997",
+      "C_13.csv": "EDE2DCFA9CAE9BA1BDCBF59FD52B6CAA62F82DA2BCB57F7A3B230818BBD02E53",
+      "C_17.csv": "00BF2ECF3EDF74E88F48B26A1C24132CE2124F85BF197DBBCD3EA5D2CD41DF8D",
+      "C_18.csv": "C1CF3DBB5AAE8CC0C8910C0A98FB021F60F7D05086ECCA5BC1245C526F9A0C3F",
+      "C_19.csv": "C9FB8351C3F84C14EF4F7293BBC135681302C52E69EBA554066EF8C83787996D",
+      "C_2.csv": "1671EF24E42B5125FEA8407A4350403832DFF1E1FC7ACF7D49B85AE814DFF807",
+      "C_20.csv": "B5468E08BF2740D44FE9992D0B9A6F985E60D95A88DB32DA022B773C0F6F972A",
+      "C_22.csv": "5851D8B4A627D64E7CC247655934272A1DE75BDF54A0E069B60D8064DAA73F01",
+      "C_23.csv": "61EFAC3EFBBA3B09E72A50434A1C57B83061FAB421F4B489C5B2B4C77D1300A4",
+      "C_24.csv": "EFD38BF8AB973767CAAD34CE2B0EF9991B1E461BD7C1F9E17DA06B9A847AAA14",
+      "C_26.csv": "29996BD6CADF1EEF6B3068C3FEE83F77D3DA47C8320E251CE9C2601EE51FE293",
+      "C_29.csv": "FE52F71301F50F8924357230BF1F357F6F16521A127010E0C76DF946188B3478",
+      "C_3.csv": "3CDA48AE590FE74487481A88850B976A7ED726305F8F66A39BD2D3E5CE87B33D",
+      "C_4.csv": "77E1D3D986C459E8DECA76BD5FDAC5F12E48E3A265FE029A991D1CD89B09BF66",
+      "C_5.csv": "77717F02E68E6CF159C55950C2C148C469371E4044EB257FAC096FA8625D6294",
+      "C_6.csv": "DE066048501D638CF9F6C7D4B1D36FD4214307A62A6102289F19CCCDD45C7654",
+      "C_7.csv": "CA0C4055EB75B0B9460535FEA133DD7BFDF043B9DFEF0F9B4AECABF59CEC2F5F",
+      "C_8.csv": "435489A182EA3E4C31FBFB9A664D2DB930532655DCA3EAFF51CCEAB9B0A8F466",
+      "C_9.csv": "ED416408440FD38D2D89BCC6323380ABDE69102439F3F576525B60B72AEDF9DB",
+      "README.txt": "81D125F14516FE6054651C856933EF47861186590BA6EE689108644113F5154F",
+      "aia_challenge_1.csv": "9E25C1EB15FF77CEC7A7FA565871CCA5C36B5E925ED7B2ADFC462126B43F550B",
+      "aia_challenge_10.csv": "24F149CFC4E2CABDFBFB5B1585AA4EF55AF3A05E153A9443F59475A36CADA292",
+      "aia_challenge_12.csv": "B88893336F49DA748758247BED55868ED6E9A75B484703BD107079CEE8F9885A",
+      "aia_challenge_13.csv": "9F2B836598E4A714DB809C7E5B2AB0F1517C6A2571CFCCF8BDE72EDD916BA9DB",
+      "aia_challenge_17.csv": "97EB6C713D88F0F8BBDFD9D3188C28199536BD8591C79A8B9D3C2BF25FEBF29B",
+      "aia_challenge_18.csv": "FCC5A1876E582A14296EC9307C3B627E524ECA2F4CF4AB0F62207FAEE12FA909",
+      "aia_challenge_19.csv": "DD8A27D424049FE10905314C5F647EC8B1899F91CE52792583126C460B57A07A",
+      "aia_challenge_2.csv": "EB80409FFEADF4F8745397D066AFFF2D87786FF739EB24B1DD87F8BB16C8EE4F",
+      "aia_challenge_20.csv": "54BB82E0557AF49CDC1A39945CB6FDF4D71618118F982DCD2D607CABEBC00D20",
+      "aia_challenge_22.csv": "F15269D797058D177268B1927B4FDEBC6C4656A04966782553FD1EEACBDD157A",
+      "aia_challenge_23.csv": "BD9A41BC3D5FD689208D44C5E8F5E721162DAD730BE41EEFD06AF3DE60957F72",
+      "aia_challenge_24.csv": "5DD6DA4E0700B72D453B052EDA03D01C7680B6875C9EDBDC58E66FA278C58476",
+      "aia_challenge_26.csv": "22811A37A8E8F94A4DEAD43B8FBCD72F428CA435C0E91727195886FB8B97D6CB",
+      "aia_challenge_29.csv": "9502542E6D08874CB8AFA9633EC0C109A029A1B536772788C0DF2F7DCEA424C8",
+      "aia_challenge_3.csv": "E4854D0D94163E1D056605A7D661113B042A230AE52B30B20B7103CFF540BFB4",
+      "aia_challenge_4.csv": "17D45E9BF5B825E515A1120112F2DDC7887A4C3E90B2C8C95A809CE55674DD15",
+      "aia_challenge_5.csv": "2E381E5C4B52ED76D50EAEC71EEBC41FFCCBD7DC761254F8E8D6C7D9571B4116",
+      "aia_challenge_6.csv": "FFD2414957BCB655E0E826769B7E3B8220B35AD4CEBD771EEF85746179C688F1",
+      "aia_challenge_7.csv": "743B6F73ECCA1ABC463A0AE06319D1DE1257285FBB0FEED0A08E986C7F30565B",
+      "aia_challenge_8.csv": "D8F5EED197BB18D14409ADEA3FF8D7A8CE9FE019F2DD67212546AF03A35A32EA",
+      "aia_challenge_9.csv": "0E7210D8BD743AD143A6D1C179F7A66BDDC9DDAB246844F853FF3814DFE15CAE",
+      "mia_columns.json": "6D3B2EB2F264B622C36758BBD90EC53C8379CDAC2EEE14601BBE46693A0EA939"
+    },
+    "known_private": {
+      "key_columns": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "sex",
+        "prefecture"
+      ],
+      "candidate_rows": 1049,
+      "challenge_rows": 326,
+      "expected_matches": 163,
+      "matched_rows": 163,
+      "unmatched_controls": 163,
+      "candidate_key_duplicates": 0,
+      "challenge_key_duplicates": 0,
+      "matched_record_ids_unique": true
+    },
+    "rare_rows": 24,
+    "eligible_rare_rows": 11,
+    "record_id_scope": "table-local pseudonym, not a cross-table identity key",
+    "token_read": false,
+    "practice_fallback_allowed": false
+  }
+}

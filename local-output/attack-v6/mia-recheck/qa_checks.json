@@ -1,0 +1,16 @@
+{
+  "aggregate_rows": 32,
+  "target_rows": 640,
+  "production_files_inventoried": 15,
+  "unique_production_payloads": 7,
+  "research_variants": 16,
+  "worlds": 2,
+  "aggregate_keys_unique": true,
+  "target_keys_unique": true,
+  "twenty_targets_per_variant_world": true,
+  "aggregate_metrics_finite": true,
+  "aggregate_recompute_max_abs_error": 2.220446049250313e-16,
+  "all_world_checks_passed": true,
+  "all_research_outputs_normal_format": true,
+  "passed": true
+}

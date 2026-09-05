@@ -1,0 +1,47 @@
+{
+  "decision": "reject",
+  "reason": "at least one predeclared rare-purpose/all-protection/stress gate failed",
+  "discovery_choices": {},
+  "validation": {
+    "cases": 0,
+    "mean_delta": 0.0,
+    "win_rate": 0.0,
+    "p10_delta": 0.0,
+    "mean_delta_all": 0.0,
+    "p10_delta_all": 0.0,
+    "mean_delta_rare": 0.0,
+    "rare_win_rate": 0.0,
+    "p10_delta_rare": 0.0
+  },
+  "stress": {
+    "cases": 0,
+    "mean_delta": 0.0,
+    "win_rate": 0.0,
+    "p10_delta": 0.0,
+    "mean_delta_all": 0.0,
+    "p10_delta_all": 0.0,
+    "mean_delta_rare": 0.0,
+    "rare_win_rate": 0.0,
+    "p10_delta_rare": 0.0
+  },
+  "checks": {
+    "has_predeclared_discovery_candidate": false,
+    "validation_mean_delta_gt_0": false,
+    "validation_win_rate_gte_0p60": false,
+    "validation_p10_delta_gte_m0p01": true,
+    "validation_mean_all_gte_0": true,
+    "validation_p10_all_gte_m0p005": true,
+    "validation_mean_rare_gt_0": false,
+    "validation_rare_win_rate_gte_0p60": false,
+    "validation_p10_rare_gte_m0p05": true,
+    "stress_mean_delta_gte_m0p01": true,
+    "stress_p10_delta_gte_m0p05": true,
+    "stress_mean_all_gte_m0p005": true
+  },
+  "note": "The earlier power-only gate was invalid for this task because its bundle improved max(all, rare) while reducing the rare channel.",
+  "production_action": "none",
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false,
+  "submission_performed": false
+}

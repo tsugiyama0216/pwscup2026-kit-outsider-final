@@ -1,0 +1,21 @@
+{
+  "daybreak_official_all": 0.1062193732193732,
+  "v4_official_all": 0.10236752136752136,
+  "candidate_changed_slots_that_can_cross_an_official_operating_prefix": {
+    "19": [
+      12
+    ]
+  },
+  "changed_slots_always_inside_band4_prefix": {
+    "1": [
+      7,
+      25
+    ]
+  },
+  "conservative_max_abs_delta_vs_daybreak_all": 0.002,
+  "candidate_all_lower_bound": 0.1042193732193732,
+  "candidate_all_upper_bound": 0.10821937321937321,
+  "lower_bound_delta_vs_v4_all": 0.0018518518518518406,
+  "rare_tpr_exactly_v4_by_order_invariance": 0.3333333333333333,
+  "note": "This is an aggregate-all bound, not a bound on mean target-wise max(all, rare)."
+}

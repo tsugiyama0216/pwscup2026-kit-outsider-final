@@ -1,0 +1,214 @@
+{
+  "recommendation": {
+    "strategy": "complement_unanimous_active",
+    "empirical_gate_passed": true,
+    "transform": "For targets 6,7,8,9,17,18,19 set time_hat=9.5 unless v4, independent, and routed all had time_hat!=11; set unanimous-active rows to 11.0. Leave all other targets and F_mia unchanged.",
+    "normal_format": true,
+    "active_rows_by_target": {
+      "6": 217,
+      "7": 253,
+      "8": 211,
+      "9": 274,
+      "17": 223,
+      "18": 236,
+      "19": 268
+    },
+    "added_rows_vs_exact_routed_complement": 541,
+    "removed_rows_vs_exact_routed_complement": 0,
+    "seven_target_mask_sha256": "5B812F4FA1B4466C210201D44E2BDBCC65B23CCA7A030B3841418D1E1BB19586"
+  },
+  "shadow_evidence": {
+    "discovery_exact": {
+      "split": "discovery",
+      "condition": "exact",
+      "strategy": "complement_unanimous_active",
+      "ranking": "boolean_pattern",
+      "allocation": "pattern",
+      "active_k": -1,
+      "blocks": 37,
+      "seeds": 15,
+      "mean_power": 0.167214750736435,
+      "median_power": 0.1785714285714285,
+      "p10_power": 0.0282368249837345,
+      "mean_delta": 0.0337256283344288,
+      "median_delta": 0.0368082943316506,
+      "p10_delta": -0.0721949871434406,
+      "p25_delta": -0.0265217391304348,
+      "win_rate": 0.6486486486486487,
+      "loss_rate": 0.3513513513513513,
+      "mean_active": 253.8108108108108,
+      "min_active": 232,
+      "max_active": 282
+    },
+    "validation_exact": {
+      "split": "validation",
+      "condition": "exact",
+      "strategy": "complement_unanimous_active",
+      "ranking": "boolean_pattern",
+      "allocation": "pattern",
+      "active_k": -1,
+      "blocks": 26,
+      "seeds": 13,
+      "mean_power": 0.1881135520882199,
+      "median_power": 0.1863768819815444,
+      "p10_power": 0.0470588235294117,
+      "mean_delta": 0.0482631711931821,
+      "median_delta": 0.0377192130977803,
+      "p10_delta": -0.0436600444211107,
+      "p25_delta": 0.0139351413642379,
+      "win_rate": 0.7692307692307693,
+      "loss_rate": 0.2307692307692307,
+      "mean_active": 249.03846153846155,
+      "min_active": 237,
+      "max_active": 292
+    },
+    "validation_near_zero": {
+      "split": "validation",
+      "condition": "near",
+      "strategy": "complement_unanimous_active",
+      "ranking": "boolean_pattern",
+      "allocation": "pattern",
+      "active_k": -1,
+      "blocks": 35,
+      "seeds": 15,
+      "mean_power": 0.1831679836628474,
+      "median_power": 0.1830985915492957,
+      "p10_power": 0.0361085972850679,
+      "mean_delta": 0.0442266419785004,
+      "median_delta": 0.0375816993464051,
+      "p10_delta": -0.0854574157980769,
+      "p25_delta": -0.0029503105590061,
+      "win_rate": 0.7428571428571429,
+      "loss_rate": 0.2571428571428571,
+      "mean_active": 253.42857142857144,
+      "min_active": 237,
+      "max_active": 292
+    },
+    "baseline_validation_exact": {
+      "split": "validation",
+      "condition": "exact",
+      "strategy": "exact_complement_edge",
+      "ranking": "none",
+      "allocation": "all",
+      "active_k": 163,
+      "blocks": 26,
+      "seeds": 13,
+      "mean_power": 0.1398503808950378,
+      "median_power": 0.1586200517943026,
+      "p10_power": 0.0412371134020618,
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "p10_delta": 0.0,
+      "p25_delta": 0.0,
+      "win_rate": 0.0,
+      "loss_rate": 0.0,
+      "mean_active": 163.0,
+      "min_active": 163,
+      "max_active": 163
+    },
+    "score_1_directional_delta": 0.016892109917613734,
+    "partial_active_count_best_validation": {
+      "split": "validation",
+      "condition": "exact",
+      "strategy": "ridge_100_global_k144",
+      "ranking": "ridge_100",
+      "allocation": "global",
+      "active_k": 144,
+      "blocks": 26,
+      "seeds": 13,
+      "mean_power": 0.1402652462978177,
+      "median_power": 0.1363749070171089,
+      "p10_power": 0.0657407407407407,
+      "mean_delta": 0.0004148654027798,
+      "median_delta": -0.0003935974809761,
+      "p10_delta": -0.058786310549989,
+      "p25_delta": -0.027187595358177,
+      "win_rate": 0.4615384615384615,
+      "loss_rate": 0.5,
+      "mean_active": 144.0,
+      "min_active": 144,
+      "max_active": 144
+    }
+  },
+  "official_evidence": {
+    "three_masks_reconciled": {
+      "6": {
+        "rows": 326,
+        "submitted_active": 163,
+        "calculated_active": 163,
+        "changed_rows": 0
+      },
+      "7": {
+        "rows": 326,
+        "submitted_active": 163,
+        "calculated_active": 163,
+        "changed_rows": 0
+      },
+      "8": {
+        "rows": 326,
+        "submitted_active": 163,
+        "calculated_active": 163,
+        "changed_rows": 0
+      },
+      "9": {
+        "rows": 326,
+        "submitted_active": 163,
+        "calculated_active": 163,
+        "changed_rows": 0
+      },
+      "17": {
+        "rows": 326,
+        "submitted_active": 163,
+        "calculated_active": 163,
+        "changed_rows": 0
+      },
+      "18": {
+        "rows": 326,
+        "submitted_active": 163,
+        "calculated_active": 163,
+        "changed_rows": 0
+      },
+      "19": {
+        "rows": 326,
+        "submitted_active": 163,
+        "calculated_active": 163,
+        "changed_rows": 0
+      }
+    },
+    "common_zero_targets": [
+      6,
+      7,
+      8,
+      9,
+      17,
+      18,
+      19
+    ],
+    "routed_selected_control_minus_member_successes_total_range": [
+      59,
+      68
+    ]
+  },
+  "partial_identification": {
+    "assumption": "136 edge-time hits in each arm and target",
+    "official_constraints": "all three direct raw advantages <= 0 per target; routed aggregate control excess 59..68",
+    "candidate_raw_advantage_min": -418.0,
+    "candidate_raw_advantage_max": 486.0,
+    "variables": 108,
+    "constraints": 90,
+    "interpretation": "Official aggregates alone do not identify the unanimous intersection; the recommendation relies on the replicated conditional-shadow ordering, not a worst-case guarantee."
+  },
+  "qa": {
+    "rows": 2282,
+    "unique_keys": 2282,
+    "expected_keys": 2282,
+    "allowed_times": [
+      9.5,
+      11.0
+    ],
+    "token_read": false,
+    "production_candidate_changed": false,
+    "archive_created": false,
+    "submission_performed": false
+  }
+}

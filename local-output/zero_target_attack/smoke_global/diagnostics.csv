@@ -1,0 +1,7 @@
+seed,scenario,target,current_nohdl_selection_changes,nohdl_agepair_changes,density_selection_changes,copula_mutual,copula_unique_nearest,vote_support_ge3,global_copula_mutual,global_copula_unique_nearest,global_consensus_changes,global_pure_changes
+20260923,raw_cat_shuffled,1,36,34,34,217,245,299,267,295,62,128
+20260923,raw_cat_shuffled,2,34,26,36,219,242,299,274,288,64,120
+20260923,warp_cat_shuffled_C6,1,46,34,52,213,248,296,267,293,88,136
+20260923,warp_cat_shuffled_C6,2,24,28,36,198,241,297,276,287,56,122
+20260923,warp_time_shuffled_cat_shuffled_C6,1,40,34,54,210,240,300,267,293,68,116
+20260923,warp_time_shuffled_cat_shuffled_C6,2,48,40,38,213,242,291,276,287,70,126

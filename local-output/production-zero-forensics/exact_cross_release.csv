@@ -1,0 +1,9 @@
+target,release_rows,cross_qi_rows,internal_qi_duplicate_occurrences,practice_exact_qi_rows,cross_qi_categories_rows,internal_qi_categories_duplicate_occurrences,practice_exact_qi_categories_rows,cross_static_rows,internal_static_duplicate_occurrences,practice_exact_static_rows,cross_full_rows,internal_full_duplicate_occurrences,practice_exact_full_rows,challenge_exact_qi_rows
+6,1049,0,5,0,0,1,0,0,1,0,0,1,0,0
+7,1049,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,1049,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,1049,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,1049,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,1049,165,0,0,157,0,0,147,0,0,145,0,0,0
+19,1049,27,156,993,6,45,275,6,45,267,6,45,266,0
+20,1049,0,0,0,0,0,0,0,0,0,0,0,0,0
