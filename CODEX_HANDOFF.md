@@ -2,6 +2,13 @@
 
 ## Current state: preliminary round complete, final score 0.3407
 
+Organized preliminary-attack files are now under `prelim/attack/`: `final/`
+contains the submitted v9 pair, `candidates/` has the other 17 candidate pairs,
+and `results/` contains six feedback JSONs and the final report. The 43 copied
+files are byte-identical to originals, with source/hash mapping in
+`prelim/attack/manifest.json`. Code and original files were not moved. The
+folder README links the implementation and archived research logs.
+
 This section supersedes all old remaining-attempt counts, pending-submission
 instructions and numerical forecasts below. The user submitted v9 guarded and
 reported its full official result. **No preliminary attempts remain.** The next

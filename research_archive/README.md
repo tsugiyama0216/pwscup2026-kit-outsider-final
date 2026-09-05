@@ -1,5 +1,7 @@
 # 予備戦の全作業アーカイブ
 
+提出CSVだけを探す場合は、[予備戦の攻撃ファイル整理フォルダ](../prelim/attack/README.md)を参照してください。
+
 予備戦の最終公式得点は **0.3407**。提出はユーザーが行い、残り提出回数は0。
 本戦の配布・規則が揃ってから再開する。最新結果は
 `attack_phase_v9/official_feedback/guarded_final.json` と

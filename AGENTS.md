@@ -24,6 +24,7 @@
 
 ## Current workflow
 
+- The preliminary attack handoff folder is `prelim/attack/`: final v9 CSV pair, 17 historical candidate pairs, six official result JSONs, report and hash manifest. These are byte-identical additive copies; canonical source code/data paths remain unchanged. Keep main-round and defense files out of this folder.
 - Preliminary submissions are exhausted. The user submitted v9 guarded and reported a final measured total of 0.3407, up from routed-guided v6's 0.3004. Read `attack_phase_v9/FINAL_RESULT.md` and `official_feedback/guarded_final.json`. v7 itself is unsubmitted, so its comparative performance is unknown. Await the main-round distribution/rules before new attack work.
 - v9's four new research branches failed adoption checks. The deployed guarded composition retained v4 MIA and the measured positive AIA winners, with v7 on seven formerly zero targets. Five of those targets (6/8/17/18/19) scored positively; 7/9 stayed zero. Do not attribute the gain to rejected new methods or forecast main-round performance from it.
 - The user explicitly authorized upload of all work to the existing private repository and accepted retention of the pre-existing live-token history after being informed it was unrotated. Do not rewrite history or force-push. Exclude live token files, token-bearing ZIPs, caches, and actual raw B/B_self/A_bg from new archive content; preserve local copies. Selected research text under ignored `local-output/` is intentionally archived; consult `research_archive/README.md` and its manifest.
