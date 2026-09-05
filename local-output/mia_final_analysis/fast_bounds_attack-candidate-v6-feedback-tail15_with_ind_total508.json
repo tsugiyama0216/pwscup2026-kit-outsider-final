@@ -1,0 +1,351 @@
+{
+  "variant": "attack-candidate-v6-feedback-tail15",
+  "independent_constraints": true,
+  "exact_total": 508,
+  "variables": 2393,
+  "constraints": 5405,
+  "runs": {
+    "minimum": {
+      "success": false,
+      "status": 1,
+      "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "mip_gap": 0.10440020615900013,
+      "scaled_sum": 31044,
+      "score": 0.08844444444444445,
+      "delta_vs_v4": -0.013923076923076923,
+      "per_target": {
+        "1": {
+          "n": 25,
+          "v3": 19,
+          "v4": 19,
+          "ind": 19,
+          "variant": 19,
+          "delta_scaled": 0
+        },
+        "2": {
+          "n": 27,
+          "v3": 22,
+          "v4": 24,
+          "ind": 22,
+          "variant": 24,
+          "delta_scaled": 0
+        },
+        "3": {
+          "n": 26,
+          "v3": 1,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "4": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "5": {
+          "n": 25,
+          "v3": 0,
+          "v4": 2,
+          "ind": 2,
+          "variant": 0,
+          "delta_scaled": -1404
+        },
+        "6": {
+          "n": 25,
+          "v3": 1,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "7": {
+          "n": 27,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "8": {
+          "n": 27,
+          "v3": 0,
+          "v4": 0,
+          "ind": 3,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "9": {
+          "n": 25,
+          "v3": 4,
+          "v4": 4,
+          "ind": 0,
+          "variant": 3,
+          "delta_scaled": -702
+        },
+        "10": {
+          "n": 26,
+          "v3": 0,
+          "v4": 1,
+          "ind": 1,
+          "variant": 0,
+          "delta_scaled": -675
+        },
+        "12": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "13": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "17": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "18": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "19": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "20": {
+          "n": 25,
+          "v3": 1,
+          "v4": 2,
+          "ind": 1,
+          "variant": 0,
+          "delta_scaled": -1404
+        },
+        "22": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "23": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 6,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "26": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "29": {
+          "n": 25,
+          "v3": 0,
+          "v4": 1,
+          "ind": 1,
+          "variant": 0,
+          "delta_scaled": -702
+        }
+      }
+    },
+    "maximum": {
+      "success": false,
+      "status": 1,
+      "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "mip_gap": 0.7121242023551011,
+      "scaled_sum": 45603,
+      "score": 0.12992307692307692,
+      "delta_vs_v4": 0.027555555555555555,
+      "per_target": {
+        "1": {
+          "n": 25,
+          "v3": 19,
+          "v4": 19,
+          "ind": 19,
+          "variant": 19,
+          "delta_scaled": 0
+        },
+        "2": {
+          "n": 27,
+          "v3": 21,
+          "v4": 22,
+          "ind": 21,
+          "variant": 22,
+          "delta_scaled": 0
+        },
+        "3": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "4": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "5": {
+          "n": 27,
+          "v3": 0,
+          "v4": 0,
+          "ind": 2,
+          "variant": 3,
+          "delta_scaled": 1950
+        },
+        "6": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "7": {
+          "n": 25,
+          "v3": 1,
+          "v4": 1,
+          "ind": 0,
+          "variant": 1,
+          "delta_scaled": 0
+        },
+        "8": {
+          "n": 25,
+          "v3": 0,
+          "v4": 3,
+          "ind": 4,
+          "variant": 5,
+          "delta_scaled": 1404
+        },
+        "9": {
+          "n": 25,
+          "v3": 0,
+          "v4": 1,
+          "ind": 0,
+          "variant": 1,
+          "delta_scaled": 0
+        },
+        "10": {
+          "n": 25,
+          "v3": 1,
+          "v4": 0,
+          "ind": 1,
+          "variant": 1,
+          "delta_scaled": 702
+        },
+        "12": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "13": {
+          "n": 25,
+          "v3": 0,
+          "v4": 1,
+          "ind": 0,
+          "variant": 1,
+          "delta_scaled": 0
+        },
+        "17": {
+          "n": 26,
+          "v3": 0,
+          "v4": 1,
+          "ind": 1,
+          "variant": 1,
+          "delta_scaled": 0
+        },
+        "18": {
+          "n": 27,
+          "v3": 1,
+          "v4": 2,
+          "ind": 2,
+          "variant": 2,
+          "delta_scaled": 0
+        },
+        "19": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "20": {
+          "n": 25,
+          "v3": 1,
+          "v4": 0,
+          "ind": 3,
+          "variant": 6,
+          "delta_scaled": 4212
+        },
+        "22": {
+          "n": 25,
+          "v3": 3,
+          "v4": 3,
+          "ind": 2,
+          "variant": 5,
+          "delta_scaled": 1404
+        },
+        "23": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "26": {
+          "n": 25,
+          "v3": 0,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        },
+        "29": {
+          "n": 26,
+          "v3": 1,
+          "v4": 0,
+          "ind": 0,
+          "variant": 0,
+          "delta_scaled": 0
+        }
+      }
+    }
+  }
+}

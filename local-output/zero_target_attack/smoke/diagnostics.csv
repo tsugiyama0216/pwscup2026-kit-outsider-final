@@ -1,0 +1,9 @@
+seed,scenario,target,current_nohdl_selection_changes,nohdl_agepair_changes,density_selection_changes,copula_mutual,copula_unique_nearest,vote_support_ge3
+20260921,raw,1,0,22,0,249,270,312
+20260921,raw,2,0,38,0,258,281,315
+20260921,warp_C6,1,2,22,0,248,267,312
+20260921,warp_C6,2,2,38,0,256,281,310
+20260921,time_shuffled,1,0,22,0,249,270,312
+20260921,time_shuffled,2,0,38,0,258,281,315
+20260921,independent,1,30,38,38,195,220,310
+20260921,independent,2,30,38,44,172,195,313

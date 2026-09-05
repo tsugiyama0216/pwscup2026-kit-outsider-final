@@ -1,0 +1,22 @@
+{
+  "scope": "authorized local shadow evaluation only",
+  "conditioning": "only shadow target blocks where the production-probe direction scored zero",
+  "rows": 4032,
+  "conditioned_rows": 576,
+  "conditioned_target_cases": 24,
+  "best_by_template": [
+    {
+      "template_target": 19,
+      "projection": "stratum_half",
+      "active_time": 9.498631074607,
+      "decoder": "event_q75",
+      "cases": 24,
+      "power_mean": 0.4518676055948996,
+      "power_median": 0.4437076944329328,
+      "power_min": 0.2982456140350877,
+      "power_max": 0.6679788425995038,
+      "pair_changes_mean": 0.0,
+      "event_overrides_mean": 8.541666666666666
+    }
+  ]
+}

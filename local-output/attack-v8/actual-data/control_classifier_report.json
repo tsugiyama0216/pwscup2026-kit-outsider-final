@@ -1,0 +1,168 @@
+{
+  "scope": "actual selfchallenge24 known labels only",
+  "source": "C:\\Users\\takut\\Downloads\\PWSCup2026_prelim_team24_\u30a2\u30a6\u30c8\u30b5\u30a4\u30c0\u30fc_outsider",
+  "member_rows": 163,
+  "control_rows": 163,
+  "models": [
+    {
+      "model": "linear",
+      "auc": 0.5159396288908126,
+      "logloss": 0.6966909155996658,
+      "fold_auc_min": 0.46514047866805414
+    },
+    {
+      "model": "quadratic",
+      "auc": 0.4822913922240205,
+      "logloss": 0.7251141772898525,
+      "fold_auc_min": 0.4318418314255983
+    },
+    {
+      "model": "trees",
+      "auc": 0.4916255786819225,
+      "logloss": 0.7020832604621068,
+      "fold_auc_min": 0.45057232049947965
+    },
+    {
+      "model": "boost",
+      "auc": 0.5047235500018818,
+      "logloss": 0.7123084884699245,
+      "fold_auc_min": 0.4326171875
+    }
+  ],
+  "folds": [
+    {
+      "model": "linear",
+      "fold": 0,
+      "rows": 74,
+      "auc": 0.48429510591672753
+    },
+    {
+      "model": "linear",
+      "fold": 1,
+      "rows": 64,
+      "auc": 0.55859375
+    },
+    {
+      "model": "linear",
+      "fold": 2,
+      "rows": 62,
+      "auc": 0.46514047866805414
+    },
+    {
+      "model": "linear",
+      "fold": 3,
+      "rows": 64,
+      "auc": 0.548828125
+    },
+    {
+      "model": "linear",
+      "fold": 4,
+      "rows": 62,
+      "auc": 0.5598335067637876
+    },
+    {
+      "model": "quadratic",
+      "fold": 0,
+      "rows": 74,
+      "auc": 0.5127830533235939
+    },
+    {
+      "model": "quadratic",
+      "fold": 1,
+      "rows": 64,
+      "auc": 0.47265625
+    },
+    {
+      "model": "quadratic",
+      "fold": 2,
+      "rows": 62,
+      "auc": 0.4318418314255983
+    },
+    {
+      "model": "quadratic",
+      "fold": 3,
+      "rows": 64,
+      "auc": 0.541015625
+    },
+    {
+      "model": "quadratic",
+      "fold": 4,
+      "rows": 62,
+      "auc": 0.47450572320499473
+    },
+    {
+      "model": "trees",
+      "fold": 0,
+      "rows": 74,
+      "auc": 0.48502556610664715
+    },
+    {
+      "model": "trees",
+      "fold": 1,
+      "rows": 64,
+      "auc": 0.5712890625
+    },
+    {
+      "model": "trees",
+      "fold": 2,
+      "rows": 62,
+      "auc": 0.45057232049947965
+    },
+    {
+      "model": "trees",
+      "fold": 3,
+      "rows": 64,
+      "auc": 0.5048828125
+    },
+    {
+      "model": "trees",
+      "fold": 4,
+      "rows": 62,
+      "auc": 0.4755463059313216
+    },
+    {
+      "model": "boost",
+      "fold": 0,
+      "rows": 74,
+      "auc": 0.5449233016800584
+    },
+    {
+      "model": "boost",
+      "fold": 1,
+      "rows": 64,
+      "auc": 0.5107421875
+    },
+    {
+      "model": "boost",
+      "fold": 2,
+      "rows": 62,
+      "auc": 0.48022892819979185
+    },
+    {
+      "model": "boost",
+      "fold": 3,
+      "rows": 64,
+      "auc": 0.4326171875
+    },
+    {
+      "model": "boost",
+      "fold": 4,
+      "rows": 62,
+      "auc": 0.5385015608740894
+    }
+  ],
+  "best": {
+    "model": "linear",
+    "auc": 0.5159396288908126,
+    "logloss": 0.6966909155996658,
+    "fold_auc_min": 0.46514047866805414
+  },
+  "grouping": "5-fold held-out prefecture/sex/age-band matching blocks",
+  "gate": "AUC>=.60, everyfold>.50, bestobserved above p95 best-fixed-score permutation",
+  "association_null_p95": 0.5602205577929166,
+  "permutation_caveat": "fixed OOF predictions, not refitted; not a calibrated hypothesis-test p-value",
+  "gate_passed": false,
+  "production_candidate_written": false,
+  "validation_status": "OOF feasibility/model comparison only; no separate untouched final test",
+  "limitation": "single326row ownchallenge, best-of-four selection is optimistic; cross-target transfer unproven"
+}

@@ -1,0 +1,745 @@
+{
+  "variant": "guided_v4_margin3",
+  "parameters": {
+    "top_l": 15,
+    "minimum_daybreak_rank_gain": 5,
+    "maximum_v4_rank_penalty": 3
+  },
+  "sha256": "70e8e689e476e9eef54f5821846ec1b93de04fd6a63b680849d34f720db78afa",
+  "row_count": 1049,
+  "target_count": 20,
+  "tail_slots": 300,
+  "v4_original_unique_top15_records": 284,
+  "v4_original_duplicate_slots": 16,
+  "guided_unique_top15_records": 300,
+  "guided_duplicate_slots": 0,
+  "retained_v4_top15_slots": 284,
+  "changed_v4_top15_slots": 16,
+  "changed_slot_pairs_vs_tail15": 9,
+  "all_rare_orders_preserved": true,
+  "all_private_bottom_sets_preserved": true,
+  "targets_1_2_whole_rank_order_equals_v4": true,
+  "per_target": {
+    "1": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "2": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "3": {
+      "v4_retained_top15": 12,
+      "removed_vs_tail15_top15": [
+        1001
+      ],
+      "added_vs_tail15_top15": [
+        891
+      ],
+      "prefix_changes_through_16": {
+        "8": {
+          "removed_vs_tail15": [
+            1001
+          ],
+          "added_vs_tail15": [
+            896
+          ]
+        },
+        "9": {
+          "removed_vs_tail15": [
+            1001
+          ],
+          "added_vs_tail15": [
+            971
+          ]
+        },
+        "10": {
+          "removed_vs_tail15": [
+            1001
+          ],
+          "added_vs_tail15": [
+            5
+          ]
+        },
+        "11": {
+          "removed_vs_tail15": [
+            1001
+          ],
+          "added_vs_tail15": [
+            886
+          ]
+        },
+        "12": {
+          "removed_vs_tail15": [
+            1001
+          ],
+          "added_vs_tail15": [
+            88
+          ]
+        },
+        "13": {
+          "removed_vs_tail15": [
+            1001
+          ],
+          "added_vs_tail15": [
+            751
+          ]
+        },
+        "14": {
+          "removed_vs_tail15": [
+            1001
+          ],
+          "added_vs_tail15": [
+            594
+          ]
+        },
+        "15": {
+          "removed_vs_tail15": [
+            1001
+          ],
+          "added_vs_tail15": [
+            891
+          ]
+        },
+        "16": {
+          "removed_vs_tail15": [
+            1001
+          ],
+          "added_vs_tail15": [
+            891
+          ]
+        }
+      },
+      "whole_rank_order_equals_v4": false,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "4": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "5": {
+      "v4_retained_top15": 12,
+      "removed_vs_tail15_top15": [
+        998
+      ],
+      "added_vs_tail15_top15": [
+        440
+      ],
+      "prefix_changes_through_16": {
+        "10": {
+          "removed_vs_tail15": [
+            998
+          ],
+          "added_vs_tail15": [
+            424
+          ]
+        },
+        "11": {
+          "removed_vs_tail15": [
+            998
+          ],
+          "added_vs_tail15": [
+            14
+          ]
+        },
+        "12": {
+          "removed_vs_tail15": [
+            998
+          ],
+          "added_vs_tail15": [
+            474
+          ]
+        },
+        "13": {
+          "removed_vs_tail15": [
+            998
+          ],
+          "added_vs_tail15": [
+            264
+          ]
+        },
+        "14": {
+          "removed_vs_tail15": [
+            998
+          ],
+          "added_vs_tail15": [
+            131
+          ]
+        },
+        "15": {
+          "removed_vs_tail15": [
+            998
+          ],
+          "added_vs_tail15": [
+            440
+          ]
+        },
+        "16": {
+          "removed_vs_tail15": [
+            998
+          ],
+          "added_vs_tail15": [
+            440
+          ]
+        }
+      },
+      "whole_rank_order_equals_v4": false,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "6": {
+      "v4_retained_top15": 14,
+      "removed_vs_tail15_top15": [
+        233
+      ],
+      "added_vs_tail15_top15": [
+        807
+      ],
+      "prefix_changes_through_16": {
+        "12": {
+          "removed_vs_tail15": [
+            531
+          ],
+          "added_vs_tail15": [
+            807
+          ]
+        },
+        "13": {
+          "removed_vs_tail15": [
+            38
+          ],
+          "added_vs_tail15": [
+            807
+          ]
+        },
+        "14": {
+          "removed_vs_tail15": [
+            180
+          ],
+          "added_vs_tail15": [
+            807
+          ]
+        },
+        "15": {
+          "removed_vs_tail15": [
+            233
+          ],
+          "added_vs_tail15": [
+            807
+          ]
+        },
+        "16": {
+          "removed_vs_tail15": [
+            233
+          ],
+          "added_vs_tail15": [
+            146
+          ]
+        }
+      },
+      "whole_rank_order_equals_v4": false,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "7": {
+      "v4_retained_top15": 13,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": false,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "8": {
+      "v4_retained_top15": 14,
+      "removed_vs_tail15_top15": [
+        194
+      ],
+      "added_vs_tail15_top15": [
+        410
+      ],
+      "prefix_changes_through_16": {
+        "14": {
+          "removed_vs_tail15": [
+            565
+          ],
+          "added_vs_tail15": [
+            410
+          ]
+        },
+        "15": {
+          "removed_vs_tail15": [
+            194
+          ],
+          "added_vs_tail15": [
+            410
+          ]
+        },
+        "16": {
+          "removed_vs_tail15": [
+            194
+          ],
+          "added_vs_tail15": [
+            398
+          ]
+        }
+      },
+      "whole_rank_order_equals_v4": false,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "9": {
+      "v4_retained_top15": 13,
+      "removed_vs_tail15_top15": [
+        807
+      ],
+      "added_vs_tail15_top15": [
+        302
+      ],
+      "prefix_changes_through_16": {
+        "9": {
+          "removed_vs_tail15": [
+            807
+          ],
+          "added_vs_tail15": [
+            90
+          ]
+        },
+        "10": {
+          "removed_vs_tail15": [
+            807
+          ],
+          "added_vs_tail15": [
+            146
+          ]
+        },
+        "11": {
+          "removed_vs_tail15": [
+            807
+          ],
+          "added_vs_tail15": [
+            646
+          ]
+        },
+        "12": {
+          "removed_vs_tail15": [
+            807
+          ],
+          "added_vs_tail15": [
+            186
+          ]
+        },
+        "13": {
+          "removed_vs_tail15": [
+            807
+          ],
+          "added_vs_tail15": [
+            86
+          ]
+        },
+        "14": {
+          "removed_vs_tail15": [
+            807
+          ],
+          "added_vs_tail15": [
+            959
+          ]
+        },
+        "15": {
+          "removed_vs_tail15": [
+            807
+          ],
+          "added_vs_tail15": [
+            302
+          ]
+        },
+        "16": {
+          "removed_vs_tail15": [
+            259
+          ],
+          "added_vs_tail15": [
+            302
+          ]
+        }
+      },
+      "whole_rank_order_equals_v4": false,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "10": {
+      "v4_retained_top15": 13,
+      "removed_vs_tail15_top15": [
+        647
+      ],
+      "added_vs_tail15_top15": [
+        1037
+      ],
+      "prefix_changes_through_16": {
+        "6": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            578
+          ]
+        },
+        "7": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            820
+          ]
+        },
+        "8": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            473
+          ]
+        },
+        "9": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            196
+          ]
+        },
+        "10": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            135
+          ]
+        },
+        "11": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            547
+          ]
+        },
+        "12": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            996
+          ]
+        },
+        "13": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            301
+          ]
+        },
+        "14": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            423
+          ]
+        },
+        "15": {
+          "removed_vs_tail15": [
+            647
+          ],
+          "added_vs_tail15": [
+            1037
+          ]
+        },
+        "16": {
+          "removed_vs_tail15": [
+            605
+          ],
+          "added_vs_tail15": [
+            1037
+          ]
+        }
+      },
+      "whole_rank_order_equals_v4": false,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "12": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "13": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "17": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "18": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "19": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "20": {
+      "v4_retained_top15": 14,
+      "removed_vs_tail15_top15": [
+        644
+      ],
+      "added_vs_tail15_top15": [
+        1001
+      ],
+      "prefix_changes_through_16": {
+        "9": {
+          "removed_vs_tail15": [
+            904
+          ],
+          "added_vs_tail15": [
+            1001
+          ]
+        },
+        "10": {
+          "removed_vs_tail15": [
+            217
+          ],
+          "added_vs_tail15": [
+            1001
+          ]
+        },
+        "11": {
+          "removed_vs_tail15": [
+            338
+          ],
+          "added_vs_tail15": [
+            1001
+          ]
+        },
+        "12": {
+          "removed_vs_tail15": [
+            388
+          ],
+          "added_vs_tail15": [
+            1001
+          ]
+        },
+        "13": {
+          "removed_vs_tail15": [
+            184
+          ],
+          "added_vs_tail15": [
+            1001
+          ]
+        },
+        "14": {
+          "removed_vs_tail15": [
+            128
+          ],
+          "added_vs_tail15": [
+            1001
+          ]
+        },
+        "15": {
+          "removed_vs_tail15": [
+            644
+          ],
+          "added_vs_tail15": [
+            1001
+          ]
+        },
+        "16": {
+          "removed_vs_tail15": [
+            644
+          ],
+          "added_vs_tail15": [
+            1001
+          ]
+        }
+      },
+      "whole_rank_order_equals_v4": false,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "22": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [
+        806
+      ],
+      "added_vs_tail15_top15": [
+        998
+      ],
+      "prefix_changes_through_16": {
+        "14": {
+          "removed_vs_tail15": [
+            1022
+          ],
+          "added_vs_tail15": [
+            998
+          ]
+        },
+        "15": {
+          "removed_vs_tail15": [
+            806
+          ],
+          "added_vs_tail15": [
+            998
+          ]
+        }
+      },
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "23": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "26": {
+      "v4_retained_top15": 15,
+      "removed_vs_tail15_top15": [],
+      "added_vs_tail15_top15": [],
+      "prefix_changes_through_16": {},
+      "whole_rank_order_equals_v4": true,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    },
+    "29": {
+      "v4_retained_top15": 14,
+      "removed_vs_tail15_top15": [
+        410
+      ],
+      "added_vs_tail15_top15": [
+        647
+      ],
+      "prefix_changes_through_16": {
+        "7": {
+          "removed_vs_tail15": [
+            625
+          ],
+          "added_vs_tail15": [
+            647
+          ]
+        },
+        "8": {
+          "removed_vs_tail15": [
+            887
+          ],
+          "added_vs_tail15": [
+            647
+          ]
+        },
+        "9": {
+          "removed_vs_tail15": [
+            57
+          ],
+          "added_vs_tail15": [
+            647
+          ]
+        },
+        "10": {
+          "removed_vs_tail15": [
+            410
+          ],
+          "added_vs_tail15": [
+            647
+          ]
+        },
+        "11": {
+          "removed_vs_tail15": [
+            410
+          ],
+          "added_vs_tail15": [
+            647
+          ]
+        },
+        "12": {
+          "removed_vs_tail15": [
+            410
+          ],
+          "added_vs_tail15": [
+            647
+          ]
+        },
+        "13": {
+          "removed_vs_tail15": [
+            410
+          ],
+          "added_vs_tail15": [
+            647
+          ]
+        },
+        "14": {
+          "removed_vs_tail15": [
+            410
+          ],
+          "added_vs_tail15": [
+            647
+          ]
+        },
+        "15": {
+          "removed_vs_tail15": [
+            410
+          ],
+          "added_vs_tail15": [
+            647
+          ]
+        }
+      },
+      "whole_rank_order_equals_v4": false,
+      "rare_order_equals_v4": true,
+      "private_bottom_equals_v4": true
+    }
+  }
+}

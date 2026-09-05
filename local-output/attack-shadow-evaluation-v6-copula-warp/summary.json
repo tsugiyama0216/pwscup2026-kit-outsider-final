@@ -1,0 +1,89 @@
+{
+  "purpose": "directional comparison under public marginal warps",
+  "deltas": {
+    "public_marginal_warp": {
+      "consensus_v4_copula__v4_only": {
+        "mean": 0.03719759511517301,
+        "min": 0.0282679688435713,
+        "max": 0.04168419332877693
+      },
+      "consensus_v4_lean__independent_fallback": {
+        "mean": 0.043869524890808115,
+        "min": 0.040302272482440116,
+        "max": 0.04689020782578435
+      },
+      "consensus_v4_lean__v4_fallback": {
+        "mean": 0.036007748064791484,
+        "min": 0.0318266525337082,
+        "max": 0.03916450848245279
+      },
+      "consensus_v4_lean__v4_only": {
+        "mean": 0.02770470584206211,
+        "min": 0.021777502748801525,
+        "max": 0.03195610541106453
+      },
+      "independent_reference": {
+        "mean": 0.02790386740459086,
+        "min": 0.016756171848837154,
+        "max": 0.034367632078996624
+      },
+      "stratum_v4__v4_only": {
+        "mean": 0.015261868643262622,
+        "min": 0.012444858510493373,
+        "max": 0.01711509757289087
+      },
+      "stratum_v4_copula__v4_only": {
+        "mean": 0.036276089733631806,
+        "min": 0.02897119501873846,
+        "max": 0.04276243832355753
+      },
+      "v4_reference": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "public_marginal_warp_noise_0p03": {
+      "consensus_v4_copula__v4_only": {
+        "mean": 0.03461302719731263,
+        "min": 0.027323435185459544,
+        "max": 0.042479983455586456
+      },
+      "consensus_v4_lean__independent_fallback": {
+        "mean": 0.043647695151305566,
+        "min": 0.03765106004658503,
+        "max": 0.04817468705776362
+      },
+      "consensus_v4_lean__v4_fallback": {
+        "mean": 0.032448730515397595,
+        "min": 0.02687723096796868,
+        "max": 0.03475440467561275
+      },
+      "consensus_v4_lean__v4_only": {
+        "mean": 0.025149405405829273,
+        "min": 0.01862224868823059,
+        "max": 0.03091835774206686
+      },
+      "independent_reference": {
+        "mean": 0.02071211919895738,
+        "min": 0.007426399374880099,
+        "max": 0.031168422111821137
+      },
+      "stratum_v4__v4_only": {
+        "mean": 0.013294453601821327,
+        "min": 0.00808502597688554,
+        "max": 0.01891378168458613
+      },
+      "stratum_v4_copula__v4_only": {
+        "mean": 0.03323169044000579,
+        "min": 0.027669670590834916,
+        "max": 0.03864651286758858
+      },
+      "v4_reference": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    }
+  }
+}

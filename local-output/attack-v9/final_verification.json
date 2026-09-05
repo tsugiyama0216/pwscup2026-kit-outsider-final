@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-05",
+  "candidate": "attack-candidate-v9-guarded",
+  "tests": {"command": "python -X utf8 -m unittest discover -v", "passed": 157, "failed": 0},
+  "official_logical_validator": "PASS",
+  "official_package_validator": "PASS",
+  "hashes": {
+    "F_mia.csv": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+    "F_aia.csv": "63944D5FAA2C08E5E2E40415FFBB16B3153B27EBDD052CD68D7ADB59A403A6E0",
+    "attack-v9-guarded.zip": "B5297F0761A88DE0C5A9B0205903138613FCD2B7A501A231AE35B391A83D0506"
+  },
+  "unchanged_v7": {
+    "F_mia.csv": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+    "F_aia.csv": "65AD898E8E24497AA1C415BBCBE14D8360BC35676903A069162F4F20F115EAA0",
+    "attack-v7-feedback-stack.zip": "CB2A8889C50B4ACEEB9C96D2A892CA640AF7A0DF0896781021D823C5964635D6"
+  },
+  "new_research_methods_promoted": [],
+  "conditional_lower_bound_not_measured": 0.308481900464532,
+  "floor_assumptions": ["same hidden data and scorer", "correct stored feedback to artifact associations", "score_1 rounded to four decimal places"],
+  "token_handling": "safe existing v5 packager only; no token content displayed; ZIP in ignored local-output",
+  "submission_performed": false,
+  "push_performed": false
+}

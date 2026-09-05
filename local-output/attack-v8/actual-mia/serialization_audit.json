@@ -1,0 +1,12 @@
+{
+  "reference": "submissions/prelim/team24/attack-candidate-v4/F_mia.csv",
+  "rebuilt": "local-output/attack-v8/actual-mia/F_mia_actual_bg_domias_v4_main.csv",
+  "reference_sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+  "rebuilt_sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+  "byte_identical": true,
+  "reparsed_frame_equals": true,
+  "reparsed_keys_equal": true,
+  "reparsed_changed_cells": 0,
+  "reparsed_changed_rows": 0,
+  "explanation": "The older rebuild_comparison changed_cells=7440/changed_rows=997 values were computed on the in-memory builder frame before CSV serialization. They are sub-serialization-precision float differences and do not describe the written artifact. The written and reparsed CSV is exactly the historical v4 artifact. The generator now reports submitted-artifact comparisons from a re-read CSV and labels pre-serialization diagnostics separately."
+}

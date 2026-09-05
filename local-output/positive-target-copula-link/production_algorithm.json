@@ -1,0 +1,16 @@
+{
+  "event_margin_gate": {
+    "link": "full-five-QI nearest release row within sex+prefecture, with sex/all fallback",
+    "mutual": "linked release row has the challenge row as its reverse nearest neighbor in the same full copula distance matrix",
+    "margin": "second-nearest minus nearest full-copula distance ranked globally among 326 challenge rows",
+    "threshold": "top 50% margin rank (>=0.50)",
+    "override": "only linked event times (<10); otherwise retain selected expert/fallback time"
+  },
+  "selector_equal_mix": {
+    "active_v4": 1.0,
+    "active_independent": 1.0,
+    "raw_proximity_rank": 0.2,
+    "copula_proximity_rank": 0.2
+  },
+  "submission_performed": false
+}

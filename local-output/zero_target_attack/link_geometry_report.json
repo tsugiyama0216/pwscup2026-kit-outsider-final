@@ -1,0 +1,47 @@
+{
+  "purpose": "public-data link diagnostics only; no organizer truth",
+  "targets": [
+    6,
+    7,
+    8,
+    9,
+    17,
+    18,
+    19,
+    20
+  ],
+  "views": {
+    "all5": [
+      "age",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT"
+    ],
+    "no_hdl": [
+      "age",
+      "SBP",
+      "TG",
+      "ALT"
+    ],
+    "stable3": [
+      "age",
+      "SBP",
+      "TG"
+    ],
+    "age_sbp_alt": [
+      "age",
+      "SBP",
+      "ALT"
+    ],
+    "labs_no_hdl": [
+      "SBP",
+      "TG",
+      "ALT"
+    ],
+    "age_sbp": [
+      "age",
+      "SBP"
+    ]
+  }
+}

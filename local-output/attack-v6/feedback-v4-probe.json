@@ -1,0 +1,181 @@
+{
+  "winners": {
+    "1": {
+      "winner": "v4",
+      "score": 1.0,
+      "all_scores": {
+        "v4": 1.0,
+        "probe": 0.8060495341155809
+      }
+    },
+    "2": {
+      "winner": "v4",
+      "score": 1.0,
+      "all_scores": {
+        "v4": 1.0,
+        "probe": 1.0
+      }
+    },
+    "3": {
+      "winner": "probe",
+      "score": 0.10619469026548675,
+      "all_scores": {
+        "v4": 0.048543689320388335,
+        "probe": 0.10619469026548675
+      }
+    },
+    "4": {
+      "winner": "v4",
+      "score": 0.12037037037037035,
+      "all_scores": {
+        "v4": 0.12037037037037035,
+        "probe": 0.03921568627450976
+      }
+    },
+    "5": {
+      "winner": "v4",
+      "score": 0.12962962962962965,
+      "all_scores": {
+        "v4": 0.12962962962962965,
+        "probe": 0.0560747663551402
+      }
+    },
+    "6": {
+      "winner": "v4",
+      "score": 0.0,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.0
+      }
+    },
+    "7": {
+      "winner": "v4",
+      "score": 0.0,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.0
+      }
+    },
+    "8": {
+      "winner": "v4",
+      "score": 0.0,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.0
+      }
+    },
+    "9": {
+      "winner": "v4",
+      "score": 0.0,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.0
+      }
+    },
+    "10": {
+      "winner": "v4",
+      "score": 0.07766990291262135,
+      "all_scores": {
+        "v4": 0.07766990291262135,
+        "probe": 0.0
+      }
+    },
+    "12": {
+      "winner": "v4",
+      "score": 0.12264150943396232,
+      "all_scores": {
+        "v4": 0.12264150943396232,
+        "probe": 0.03883495145631072
+      }
+    },
+    "13": {
+      "winner": "probe",
+      "score": 0.030612244897959186,
+      "all_scores": {
+        "v4": 0.030000000000000006,
+        "probe": 0.030612244897959186
+      }
+    },
+    "17": {
+      "winner": "v4",
+      "score": 0.0,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.0
+      }
+    },
+    "18": {
+      "winner": "v4",
+      "score": 0.0,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.0
+      }
+    },
+    "19": {
+      "winner": "v4",
+      "score": 0.0,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.0
+      }
+    },
+    "20": {
+      "winner": "v4",
+      "score": 0.0,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.0
+      }
+    },
+    "22": {
+      "winner": "probe",
+      "score": 0.12612612612612611,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.12612612612612611
+      }
+    },
+    "23": {
+      "winner": "probe",
+      "score": 0.06930693069306927,
+      "all_scores": {
+        "v4": 0.0,
+        "probe": 0.06930693069306927
+      }
+    },
+    "26": {
+      "winner": "probe",
+      "score": 0.08571428571428573,
+      "all_scores": {
+        "v4": 0.07619047619047617,
+        "probe": 0.08571428571428573
+      }
+    },
+    "29": {
+      "winner": "v4",
+      "score": 0.0762711864406779,
+      "all_scores": {
+        "v4": 0.0762711864406779,
+        "probe": 0.025641025641025644
+      }
+    }
+  },
+  "winner_counts": {
+    "v4": 15,
+    "probe": 5
+  },
+  "source_paths": {
+    "v4": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\submissions\\prelim\\team24\\attack-candidate-v4\\F_aia.csv",
+    "probe": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\submissions\\prelim\\team24\\attack-candidate-v5-probe-independent\\F_aia.csv"
+  },
+  "score_paths": {
+    "v4": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\attack_phase_v6\\official_feedback\\v4.json",
+    "probe": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\attack_phase_v6\\official_feedback\\probe_independent.json"
+  },
+  "candidate_hashes": {
+    "F_mia.csv": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+    "F_aia.csv": "29C0C3AEFAC550DC2B60B731AAC2CB107817D30692A3D5CE33F747235FFEDE3F"
+  },
+  "official_validator": "PASS"
+}

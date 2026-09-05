@@ -1,0 +1,176 @@
+{
+  "purpose": "official-feedback-conditioned AIA subset research; not a leaderboard prediction",
+  "as_of": "2026-09-05 Asia/Tokyo",
+  "normal_format_only": true,
+  "official_zero_targets": [
+    6,
+    7,
+    8,
+    9,
+    17,
+    18,
+    19
+  ],
+  "shadow": {
+    "scenario": "independent public-background release",
+    "discovery_seeds": [
+      20270101,
+      20270102,
+      20270103,
+      20270104,
+      20270105,
+      20270106,
+      20270107,
+      20270108,
+      20270109,
+      20270110,
+      20270111,
+      20270112,
+      20270113,
+      20270114,
+      20270115,
+      20270116
+    ],
+    "validation_seeds": [
+      20270201,
+      20270202,
+      20270203,
+      20270204,
+      20270205,
+      20270206,
+      20270207,
+      20270208,
+      20270209,
+      20270210,
+      20270211,
+      20270212,
+      20270213,
+      20270214,
+      20270215,
+      20270216
+    ],
+    "release_replicates_per_seed": 2,
+    "discovery_exact_zero_blocks": 37,
+    "validation_exact_zero_blocks": 26,
+    "discovery_near_zero_blocks": 49,
+    "validation_near_zero_blocks": 35
+  },
+  "strategy_selection": {
+    "selected_from_discovery_only": "hybrid_1000_global_k163",
+    "validation": {
+      "split": "validation",
+      "condition": "exact",
+      "strategy": "hybrid_1000_global_k163",
+      "ranking": "hybrid_1000",
+      "allocation": "global",
+      "active_k": 163,
+      "blocks": 26,
+      "seeds": 13,
+      "mean_power": 0.1398503808950378,
+      "median_power": 0.15862005179430264,
+      "p10_power": 0.04123711340206185,
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "p10_delta": 0.0,
+      "p25_delta": 0.0,
+      "win_rate": 0.0,
+      "loss_rate": 0.0,
+      "mean_active": 163.0,
+      "min_active": 163,
+      "max_active": 163
+    },
+    "baseline_validation": {
+      "split": "validation",
+      "condition": "exact",
+      "strategy": "exact_complement_edge",
+      "ranking": "none",
+      "allocation": "all",
+      "active_k": 163,
+      "blocks": 26,
+      "seeds": 13,
+      "mean_power": 0.1398503808950378,
+      "median_power": 0.15862005179430264,
+      "p10_power": 0.04123711340206185,
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "p10_delta": 0.0,
+      "p25_delta": 0.0,
+      "win_rate": 0.0,
+      "loss_rate": 0.0,
+      "mean_active": 163.0,
+      "min_active": 163,
+      "max_active": 163
+    },
+    "changed_rows_from_exact_complement": 0,
+    "adoption_gate_passed": false,
+    "adoption_gate": {
+      "mean_delta_min": 0.005,
+      "win_rate_min": 0.6,
+      "p10_delta_min": -0.02,
+      "robust_raw_min": 0.0
+    }
+  },
+  "production_reconciliation": {
+    "6": {
+      "rows": 326,
+      "submitted_active": 163,
+      "calculated_active": 163,
+      "changed_rows": 0
+    },
+    "7": {
+      "rows": 326,
+      "submitted_active": 163,
+      "calculated_active": 163,
+      "changed_rows": 0
+    },
+    "8": {
+      "rows": 326,
+      "submitted_active": 163,
+      "calculated_active": 163,
+      "changed_rows": 0
+    },
+    "9": {
+      "rows": 326,
+      "submitted_active": 163,
+      "calculated_active": 163,
+      "changed_rows": 0
+    },
+    "17": {
+      "rows": 326,
+      "submitted_active": 163,
+      "calculated_active": 163,
+      "changed_rows": 0
+    },
+    "18": {
+      "rows": 326,
+      "submitted_active": 163,
+      "calculated_active": 163,
+      "changed_rows": 0
+    },
+    "19": {
+      "rows": 326,
+      "submitted_active": 163,
+      "calculated_active": 163,
+      "changed_rows": 0
+    }
+  },
+  "robust_partial_identification": {
+    "assumption": "136 edge-time hits in each arm and target",
+    "official_constraints": "all three direct raw advantages <= 0 per target; routed aggregate control excess 59..68",
+    "candidate_raw_advantage_min": 59.0,
+    "candidate_raw_advantage_max": 68.0,
+    "variables": 108,
+    "constraints": 90
+  },
+  "limitations": [
+    "The private row truth is unavailable; shadow scores compare methods and are not leaderboard-score forecasts.",
+    "Conditioning on all three direct scores being zero is deliberate but reduces effective sample size.",
+    "The robust bound fixes 136 edge-eligible rows per arm and target; it is a sensitivity result, not an unconditional guarantee.",
+    "Many discovery policies are compared, so validation performance and the adoption gate control the recommendation."
+  ],
+  "token_read": false,
+  "production_candidate_changed": false,
+  "archive_created": false,
+  "submission_performed": false,
+  "elapsed_seconds": 299.42655699999887
+}

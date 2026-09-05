@@ -24,6 +24,10 @@
 
 ## Current workflow
 
-- The first pending official run is the isolated AIA probe documented in `CODEX_HANDOFF.md`.
-- Save the official detailed result, especially all 20 `aia_per_target` values and aggregate `p_m`, `p_c`, `p_m_rare`, and `p_c_rare`.
-- Use `attack_phase_v5/blend_feedback_winners.py` for the final whole-target AIA blend; never splice individual rows using leaderboard feedback.
+- Preliminary submissions are exhausted. The user submitted v9 guarded and reported a final measured total of 0.3407, up from routed-guided v6's 0.3004. Read `attack_phase_v9/FINAL_RESULT.md` and `official_feedback/guarded_final.json`. v7 itself is unsubmitted, so its comparative performance is unknown. Await the main-round distribution/rules before new attack work.
+- v9's four new research branches failed adoption checks. The deployed guarded composition retained v4 MIA and the measured positive AIA winners, with v7 on seven formerly zero targets. Five of those targets (6/8/17/18/19) scored positively; 7/9 stayed zero. Do not attribute the gain to rejected new methods or forecast main-round performance from it.
+- The user explicitly authorized upload of all work to the existing private repository and accepted retention of the pre-existing live-token history after being informed it was unrotated. Do not rewrite history or force-push. Exclude live token files, token-bearing ZIPs, caches, and actual raw B/B_self/A_bg from new archive content; preserve local copies. Selected research text under ignored `local-output/` is intentionally archived; consult `research_archive/README.md` and its manifest.
+- The user supplied actual preliminary B/B_self/A_bg/schema in `C:/Users/takut/Downloads/PWSCup2026_prelim_team24_アウトサイダー_outsider/`. `participant_data/` is a different practice world; never silently substitute it for actual data. New production generation must use the hash-gated `attack_phase_v8.actual_inputs` loader with an explicit actual directory.
+- Historical v4 and Daybreak submissions are actual-data outputs; they can be reproduced from the newly supplied inputs. Preserve their measured baselines and rare/ceiling guards unless a change has evidence.
+- Do not call correlated shadow observations independent trials, or convert shadow improvements into a leaderboard prediction. AIA shadows must respect the home-prefecture private-block sampling. MIA has exactly 313 private and 736 shared rows across 29 peers.
+- Never splice individual rows using leaderboard-derived private truth. Use public contest inputs and local truth-known experiments; save and report negative validation results as well as positive ones.

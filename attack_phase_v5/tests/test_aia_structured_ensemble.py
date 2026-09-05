@@ -6,13 +6,100 @@ import numpy as np
 import pandas as pd
 
 from attack_phase_v5.aia_structured_ensemble import (
+    _decode_times,
     build_aia_v5_variants,
+    copula_event_links,
+    copula_proximity_score,
     filter_linkable_releases,
     stratified_half_selection,
 )
 
 
 class StructuredAiaTests(unittest.TestCase):
+    def test_copula_event_links_gate_mutual_event_rows(self) -> None:
+        release = pd.DataFrame(
+            {
+                "age": [40, 45, 50, 55],
+                "SBP": [100.0, 110.0, 120.0, 130.0],
+                "TG": [50.0, 60.0, 70.0, 80.0],
+                "HDL": [35.0, 45.0, 55.0, 65.0],
+                "ALT": [10.0, 20.0, 30.0, 40.0],
+                "sex": [0, 0, 0, 0],
+                "prefecture": ["A", "A", "A", "A"],
+                "time": [10.0, 2.5, 10.0, 7.5],
+                "onset": [0, 1, 0, 0],
+                "death": [0, 0, 0, 1],
+            }
+        )
+        challenge = release.drop(columns=["time", "onset", "death"]).copy()
+        challenge.insert(0, "challenge_row_id", np.arange(len(challenge)))
+
+        linked_time, gate, detail = copula_event_links(
+            release, challenge, margin_quantile=0.0
+        )
+
+        np.testing.assert_array_equal(gate, [False, True, False, True])
+        np.testing.assert_allclose(linked_time, [10.0, 2.5, 10.0, 7.5])
+        self.assertEqual(detail["mutual_links"], 4)
+        self.assertEqual(detail["trusted_event_links"], 2)
+
+    def test_copula_proximity_is_invariant_to_monotone_release_margins(self) -> None:
+        release = pd.DataFrame(
+            {
+                "age": [40, 45, 50, 55],
+                "SBP": [100.0, 115.0, 130.0, 145.0],
+                "TG": [30.0, 60.0, 90.0, 120.0],
+                "HDL": [35.0, 45.0, 55.0, 65.0],
+                "ALT": [5.0, 10.0, 20.0, 40.0],
+                "sex": [0, 0, 0, 0],
+                "prefecture": ["A", "A", "A", "A"],
+            }
+        )
+        challenge = release.copy()
+        challenge.insert(0, "challenge_row_id", np.arange(len(challenge)))
+        transformed = release.copy()
+        for column in ("age", "SBP", "TG", "HDL", "ALT"):
+            transformed[column] = 3.0 * transformed[column] + 7.0
+
+        expected = copula_proximity_score(release, challenge)
+        actual = copula_proximity_score(transformed, challenge)
+
+        np.testing.assert_allclose(actual, expected)
+
+    def test_v4_only_decoder_keeps_v4_and_uses_horizon_for_repair_rows(self) -> None:
+        selected = np.array([True, True, False, True])
+        v4_time = np.array([2.0, 11.0, 4.0, 11.0])
+        independent_time = np.array([8.0, 3.0, 5.0, 1.0])
+
+        actual = _decode_times(
+            selected,
+            v4_time,
+            independent_time,
+            decoder="v4_only",
+            abstain_time=11.0,
+            horizon_time=10.0,
+        )
+
+        np.testing.assert_allclose(actual, np.array([2.0, 10.0, 11.0, 10.0]))
+
+    def test_event_margin_decoder_overrides_only_gated_selected_rows(self) -> None:
+        selected = np.array([True, True, False, True])
+        v4_time = np.array([2.0, 11.0, 4.0, 11.0])
+        independent_time = np.array([8.0, 3.0, 5.0, 1.0])
+
+        actual = _decode_times(
+            selected,
+            v4_time,
+            independent_time,
+            decoder="v4_event_margin",
+            abstain_time=11.0,
+            horizon_time=10.0,
+            linked_event_time=np.array([6.0, 7.0, 8.0, 9.0]),
+            linked_event_gate=np.array([True, False, True, True]),
+        )
+
+        np.testing.assert_allclose(actual, np.array([6.0, 10.0, 11.0, 9.0]))
+
     def test_even_strata_select_exactly_half(self) -> None:
         challenge = pd.DataFrame(
             {
@@ -80,7 +167,7 @@ class StructuredAiaTests(unittest.TestCase):
             {"1": challenge},
             member_count=2,
         )
-        self.assertEqual(len(variants), 28)
+        self.assertEqual(len(variants), 84)
         for frame in variants.values():
             self.assertEqual(frame.shape, (4, 3))
             self.assertEqual(int((frame["time_hat"] != 11.0).sum()), 2)

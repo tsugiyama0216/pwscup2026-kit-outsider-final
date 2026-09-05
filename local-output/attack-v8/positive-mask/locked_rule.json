@@ -1,0 +1,7 @@
+{
+  "strategy": "all_rows",
+  "seed_start": 20280901,
+  "seed_count": 8,
+  "selection": "weak positive discovery mean delta",
+  "caveat": "mixture shadows, not a leaderboard estimate"
+}

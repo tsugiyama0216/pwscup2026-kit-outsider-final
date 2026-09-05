@@ -1,0 +1,314 @@
+{
+  "purpose": "truth-known local MIA recipe recheck; not a leaderboard forecast",
+  "parameters": {
+    "discovery_seeds": [
+      20261301
+    ],
+    "validation_seeds": [
+      20261311
+    ],
+    "scenarios": [
+      "noise_0p40"
+    ],
+    "plausible_scenarios": [
+      "noise_0p10",
+      "noise_0p20",
+      "noise_0p40"
+    ],
+    "counts_per_world": {
+      "25": 13,
+      "26": 6,
+      "27": 1,
+      "total": 508
+    },
+    "known_private": {
+      "total": 163,
+      "rare": 13,
+      "common": 150
+    },
+    "domias": false
+  },
+  "official_constraints": {
+    "v3": {
+      "all": 0.09266381766381768,
+      "rare": 0.3333333333333333,
+      "auc": 0.6434884498600183
+    },
+    "v4": {
+      "all": 0.10236752136752136,
+      "rare": 0.3333333333333333,
+      "auc": 0.6493386125210912
+    },
+    "guided": {
+      "all": 0.10236752136752136,
+      "rare": 0.3333333333333333,
+      "auc": 0.6493444718960911
+    },
+    "daybreak": {
+      "all": 0.1062193732193732,
+      "rare": 0.16666666666666666,
+      "auc": 0.6356009225541036
+    }
+  },
+  "inventory": {
+    "candidate_files": 15,
+    "unique_hashes": 7
+  },
+  "selection_gate": {
+    "candidate": "tail12_reorder_avg",
+    "requirements_fixed_before_validation": {
+      "discovery_mean_delta_power_gt": 0.0025,
+      "validation_mean_delta_power_gt": 0.0025,
+      "validation_win_rate_gte": 0.75,
+      "validation_p10_delta_power_gte": -0.001,
+      "validation_minimum_delta_rare_gte": 0.0,
+      "production_rare_order_equal_v4": true,
+      "production_private_bottom_equal_v4": true
+    },
+    "checks": {
+      "discovery_mean": false,
+      "validation_mean": false,
+      "validation_win_rate": false,
+      "validation_p10": true,
+      "validation_rare": true,
+      "production_rare_order": true,
+      "production_private_bottom": true
+    },
+    "passed": false,
+    "official_constraint": "Even a gate pass is insufficient if the recipe merely re-expresses the guided tail signal, because guided and v4 were officially tied within display rounding.",
+    "decision": "retain_v4"
+  },
+  "discovery_top": [
+    {
+      "split": "discovery",
+      "variant": "v3",
+      "observations": 1,
+      "mean_power": 0.5395071225071225,
+      "mean_delta_power": 0.01184615384615384,
+      "p10_delta_power": 0.01184615384615384,
+      "minimum_delta_power": 0.01184615384615384,
+      "maximum_delta_power": 0.01184615384615384,
+      "win_rate": 1.0,
+      "loss_rate": 0.0,
+      "mean_delta_all": 0.021846153846153904,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": 0.003399818982992797
+    },
+    {
+      "split": "discovery",
+      "variant": "tail12_reorder_avg",
+      "observations": 1,
+      "mean_power": 0.5276609686609687,
+      "mean_delta_power": 0.0,
+      "p10_delta_power": 0.0,
+      "minimum_delta_power": 0.0,
+      "maximum_delta_power": 0.0,
+      "win_rate": 0.0,
+      "loss_rate": 0.0,
+      "mean_delta_all": 0.0,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": -0.0001821785547878596
+    },
+    {
+      "split": "discovery",
+      "variant": "tail15_reorder_avg",
+      "observations": 1,
+      "mean_power": 0.5276609686609687,
+      "mean_delta_power": 0.0,
+      "p10_delta_power": 0.0,
+      "minimum_delta_power": 0.0,
+      "maximum_delta_power": 0.0,
+      "win_rate": 0.0,
+      "loss_rate": 0.0,
+      "mean_delta_all": 0.0,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": -0.0002494549594335149
+    },
+    {
+      "split": "discovery",
+      "variant": "v4",
+      "observations": 1,
+      "mean_power": 0.5276609686609687,
+      "mean_delta_power": 0.0,
+      "p10_delta_power": 0.0,
+      "minimum_delta_power": 0.0,
+      "maximum_delta_power": 0.0,
+      "win_rate": 0.0,
+      "loss_rate": 0.0,
+      "mean_delta_all": 0.0,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": 0.0
+    },
+    {
+      "split": "discovery",
+      "variant": "rarelock_avg3_equal",
+      "observations": 1,
+      "mean_power": 0.5177378917378918,
+      "mean_delta_power": -0.009923076923076923,
+      "p10_delta_power": -0.009923076923076923,
+      "minimum_delta_power": -0.009923076923076923,
+      "maximum_delta_power": -0.009923076923076923,
+      "win_rate": 0.0,
+      "loss_rate": 1.0,
+      "mean_delta_all": -0.015846153846153843,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": 0.00034375333916703
+    },
+    {
+      "split": "discovery",
+      "variant": "rarelock_avg_daybreak10",
+      "observations": 1,
+      "mean_power": 0.5135840455840456,
+      "mean_delta_power": -0.014076923076923098,
+      "p10_delta_power": -0.014076923076923098,
+      "minimum_delta_power": -0.014076923076923098,
+      "maximum_delta_power": -0.014076923076923098,
+      "win_rate": 0.0,
+      "loss_rate": 1.0,
+      "mean_delta_all": -0.023923076923076936,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": -0.0014669068995081247
+    },
+    {
+      "split": "discovery",
+      "variant": "tail20_reorder_avg",
+      "observations": 1,
+      "mean_power": 0.5098860398860399,
+      "mean_delta_power": -0.01777492877492881,
+      "p10_delta_power": -0.01777492877492881,
+      "minimum_delta_power": -0.01777492877492881,
+      "maximum_delta_power": -0.01777492877492881,
+      "win_rate": 0.0,
+      "loss_rate": 1.0,
+      "mean_delta_all": -0.035774928774928716,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": -0.0005540669542659638
+    },
+    {
+      "split": "discovery",
+      "variant": "tail15_replace_max",
+      "observations": 1,
+      "mean_power": 0.49812250712250716,
+      "mean_delta_power": -0.029538461538461513,
+      "p10_delta_power": -0.029538461538461513,
+      "minimum_delta_power": -0.029538461538461513,
+      "maximum_delta_power": -0.029538461538461513,
+      "win_rate": 0.0,
+      "loss_rate": 1.0,
+      "mean_delta_all": -0.047461538461538444,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": -0.000413937043747703
+    },
+    {
+      "split": "discovery",
+      "variant": "tail15_replace_min",
+      "observations": 1,
+      "mean_power": 0.4938148148148148,
+      "mean_delta_power": -0.03384615384615386,
+      "p10_delta_power": -0.03384615384615386,
+      "minimum_delta_power": -0.03384615384615386,
+      "maximum_delta_power": -0.03384615384615386,
+      "win_rate": 0.0,
+      "loss_rate": 1.0,
+      "mean_delta_all": -0.061384615384615315,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": -0.0006503470962696545
+    },
+    {
+      "split": "discovery",
+      "variant": "tail15_replace_avg",
+      "observations": 1,
+      "mean_power": 0.4921225071225071,
+      "mean_delta_power": -0.035538461538461574,
+      "p10_delta_power": -0.035538461538461574,
+      "minimum_delta_power": -0.035538461538461574,
+      "maximum_delta_power": -0.035538461538461574,
+      "win_rate": 0.0,
+      "loss_rate": 1.0,
+      "mean_delta_all": -0.06507692307692303,
+      "mean_delta_rare": 0.0,
+      "minimum_delta_rare": 0.0,
+      "mean_delta_auc": -0.0006292752680611136
+    }
+  ],
+  "validation_selected": {
+    "split": "validation",
+    "variant": "tail12_reorder_avg",
+    "observations": 1,
+    "mean_power": 0.5874615384615385,
+    "mean_delta_power": 0.0,
+    "p10_delta_power": 0.0,
+    "minimum_delta_power": 0.0,
+    "maximum_delta_power": 0.0,
+    "win_rate": 0.0,
+    "loss_rate": 0.0,
+    "mean_delta_all": 0.0,
+    "mean_delta_rare": 0.0,
+    "minimum_delta_rare": 0.0,
+    "mean_delta_auc": -0.00014889234518433714
+  },
+  "production_selected": {
+    "variant": "tail12_reorder_avg",
+    "sha256": "A9BB97C994239F082A28D982CDFA2FB029327AA8A910ECD5B2EAD9CB86F3C9BF",
+    "changed_cells_from_v4": 200,
+    "top15_set_changes_total": 0,
+    "kendall_inversions_total": 397,
+    "rare_order_equal_v4": true,
+    "private_bottom_equal_v4": true,
+    "path": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\local-output\\attack-v6\\mia-recheck\\production_variants\\F_mia_tail12_reorder_avg.csv"
+  },
+  "limitations": [
+    "This was stopped after one qualified discovery world and one held-out validation world under the severe 40% noise scenario; uncertainty is high.",
+    "Shadow values compare recipes and do not predict private leaderboard scores.",
+    "Official v4-vs-guided equality and v4 rare strength override weak or sign-unstable shadow differences.",
+    "The unrun 10%/20% noise and independent-null scenarios cannot be cited as completed evidence.",
+    "Candidate selection used discovery only; validation was read once through the fixed gate."
+  ],
+  "elapsed_seconds": 50.19768009999825,
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false,
+  "archive_created": false,
+  "submission_performed": false,
+  "as_of": "2026-09-05 Asia/Tokyo",
+  "run_status": "timeboxed_complete",
+  "evidence_scope": {
+    "discovery_worlds": 1,
+    "validation_worlds": 1,
+    "scenario": "noise_0p40",
+    "note": "The parent task time-boxed the recheck after the first qualified held-out validation world because no discovery-selected normal-format alternative won."
+  },
+  "decision_headline": {
+    "recommendation": "retain v4 MIA unchanged",
+    "replacement_supported": false,
+    "selected_safe_candidate": "tail12_reorder_avg",
+    "selected_validation_delta_power": 0.0,
+    "selected_validation_delta_auc": -0.0001488923451843,
+    "reason": "The discovery-selected safe alternative tied v4 on low-FPR power in validation and slightly reduced AUC; the only validation-positive blend had a negative discovery result. Official v4/guided equality is stronger evidence than isolated shadow gains."
+  },
+  "qa": {
+    "aggregate_rows": 32,
+    "target_rows": 640,
+    "production_files_inventoried": 15,
+    "unique_production_payloads": 7,
+    "research_variants": 16,
+    "worlds": 2,
+    "aggregate_keys_unique": true,
+    "target_keys_unique": true,
+    "twenty_targets_per_variant_world": true,
+    "aggregate_metrics_finite": true,
+    "aggregate_recompute_max_abs_error": 2.220446049250313e-16,
+    "all_world_checks_passed": true,
+    "all_research_outputs_normal_format": true,
+    "passed": true
+  }
+}

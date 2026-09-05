@@ -1,0 +1,53 @@
+{
+  "decision": "reject",
+  "acceptance_gate": {
+    "validation_mean_delta_gt": 0.0,
+    "validation_win_rate_gte": 0.6,
+    "validation_p10_delta_gte": -0.01,
+    "validation_mean_delta_all_gte": 0.0,
+    "validation_p10_delta_all_gte": -0.005
+  },
+  "validation": {
+    "candidate_targets": {
+      "12": "activate_edge_k26"
+    },
+    "cases": 16,
+    "mean_delta": -0.0018681123603318459,
+    "win_rate": 0.6875,
+    "p10_delta": -0.033557046979865834,
+    "mean_delta_all": 0.005630295409750151,
+    "p10_delta_all": -0.000894337317860483,
+    "mean_delta_rare": -0.49441076930017513,
+    "pass": false
+  },
+  "discovery_seeds": [
+    20270301,
+    20270302
+  ],
+  "validation_seeds": [
+    20270311,
+    20270312
+  ],
+  "preserving_scenarios": [
+    "warp",
+    "warp_noise_0p03"
+  ],
+  "stress_scenario": "warp_time_shuffled",
+  "tested_targets": [
+    5,
+    6,
+    7,
+    9,
+    12,
+    17,
+    18,
+    19,
+    23
+  ],
+  "rare_proxy": "A_bg-trained ExtraTrees, top 26 public-feature scores",
+  "official_zero_condition": "maximum direct power across v4, independent, and routed probes is exactly zero",
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false,
+  "submission_performed": false
+}

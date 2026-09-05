@@ -12,6 +12,13 @@ starter/.venv/
 /work/
 /local-output/
 
+# Live submission credentials remain local, even for private repository backups.
+/submissions/**/token.txt
+/submissions/**/*.zip
+.env
+.env.*
+!.env.example
+
 # 自分の提出物（リポジトリ直下に作られるもの）。
 # ★先頭の / を外すと participant_data/sample_submissions/ の実例まで無視されるので注意。
 /C.csv

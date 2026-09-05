@@ -1,0 +1,5 @@
+method,cases,mean_delta,win_rate,loss_rate,p10_delta,min_delta,mean_delta_all,mean_delta_rare,mean_inactive_gate_rows,inactive_member_hits,inactive_control_hits,inactive_member_gate_rows,inactive_control_gate_rows,score1_delta_if_one_of_20
+global_q90_discovery_disjoint,8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.875,0,0,7,0,0.0
+block_pref_q90_discovery_disjoint,8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.75,0,0,6,0,0.0
+block_pref_sex_q90_discovery_disjoint,8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.375,0,0,18,1,0.0
+block_knn_mode_q95_discovery_disjoint,8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,6.5,6,0,29,23,0.0

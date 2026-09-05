@@ -1,0 +1,16 @@
+decoder,known_members,known_rare_members,gate_rows,member_gate_rows,member_successes,rare_member_gate_rows,rare_member_successes,margin_quantile
+global,163,13,9,4,0,1,0,0.0
+block_pref,163,13,8,3,0,1,0,0.0
+block_pref_sex,163,13,13,10,0,4,0,0.0
+global,163,13,7,3,0,1,0,0.25
+block_pref,163,13,8,3,0,1,0,0.25
+block_pref_sex,163,13,10,8,0,3,0,0.25
+global,163,13,6,2,0,1,0,0.5
+block_pref,163,13,6,3,0,1,0,0.5
+block_pref_sex,163,13,7,6,0,3,0,0.5
+global,163,13,3,1,0,1,0,0.75
+block_pref,163,13,3,1,0,1,0,0.75
+block_pref_sex,163,13,4,4,0,2,0,0.75
+global,163,13,3,1,0,1,0,0.9
+block_pref,163,13,3,1,0,1,0,0.9
+block_pref_sex,163,13,2,2,0,1,0,0.9

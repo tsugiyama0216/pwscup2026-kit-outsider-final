@@ -1,0 +1,241 @@
+{
+  "decision": {
+    "recommendation": "retain_v4",
+    "replacement_supported": false,
+    "candidate": "daybreak_v4_rarelock",
+    "reason": "The candidate preserves v4 rare TPR and has a positive official aggregate-all lower bound, but it lost to v4 in every one of 12 held-out scenario-world observations and no exact target-wise max(all,rare) lower bound was certified.",
+    "downside": {
+      "heldout_mean_delta_power": -0.052849240265906906,
+      "heldout_median_delta_power": -0.047088319088319036,
+      "heldout_p10_delta_power": -0.08938005698005698,
+      "heldout_minimum_delta_power": -0.09663247863247859,
+      "heldout_win_rate": 0.0,
+      "integer_milp": {
+        "minimum": {
+          "success": false,
+          "status": 1,
+          "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+        },
+        "maximum": {
+          "success": false,
+          "status": 1,
+          "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+        }
+      },
+      "lp_relaxation": {
+        "minimum": {
+          "success": true,
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "scaled_power_delta": -55444.0,
+          "power_delta_vs_v4": -0.15796011396011397
+        },
+        "maximum": {
+          "success": true,
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "scaled_power_delta": 295590.0,
+          "power_delta_vs_v4": 0.8421367521367521
+        }
+      }
+    }
+  },
+  "candidate": {
+    "candidate_path": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\local-output\\attack-v7\\mia-lowfpr\\production_variants\\F_mia_daybreak_v4_rarelock.csv",
+    "candidate_sha256": "D5285EF7F57AB743665284CEE666179185DE84D52B5CEC353DFAEFD5E1C6758F",
+    "v4_path": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\submissions\\prelim\\team24\\attack-candidate-v4\\F_mia.csv",
+    "v4_sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+    "changed_row_target_cells_vs_v4": 17631,
+    "changed_distinct_rows_vs_v4": 886,
+    "changed_targets_vs_v4": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "12",
+      "13",
+      "17",
+      "18",
+      "19",
+      "20",
+      "22",
+      "23",
+      "26",
+      "29"
+    ],
+    "changed_target_count_vs_v4": 20,
+    "changed_rows_per_target_vs_v4": {
+      "1": 877,
+      "2": 879,
+      "3": 883,
+      "4": 885,
+      "5": 881,
+      "6": 882,
+      "7": 883,
+      "8": 884,
+      "9": 883,
+      "10": 881,
+      "12": 879,
+      "13": 881,
+      "17": 882,
+      "18": 880,
+      "19": 883,
+      "20": 883,
+      "22": 880,
+      "23": 883,
+      "26": 884,
+      "29": 878
+    },
+    "changed_row_target_cells_vs_daybreak": 179,
+    "changed_distinct_rows_vs_daybreak": 11
+  },
+  "validator": {
+    "official_validate_mia_submission_without_dist": {
+      "ok": true,
+      "errors": []
+    },
+    "production_reference_validate_mia": {
+      "ok": true,
+      "rows": 1049,
+      "columns": 21,
+      "ties": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "12": 0,
+        "13": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "22": 0,
+        "23": 0,
+        "26": 0,
+        "29": 0
+      }
+    },
+    "full_package_validator_run": false,
+    "why_not_full_package": "Task scope forbids production/ZIP/token changes, and the historical production runtime_dist used for these 20 target columns is not present.  The local toy participant_data manifest has 29 targets.",
+    "focused_tests": {
+      "ok": true,
+      "tests": 5
+    },
+    "repository_unittest_discover": {
+      "ok": true,
+      "tests": 118
+    }
+  },
+  "official_structural_bound": {
+    "daybreak_official_all": 0.1062193732193732,
+    "v4_official_all": 0.10236752136752136,
+    "candidate_changed_slots_that_can_cross_an_official_operating_prefix": {
+      "19": [
+        12
+      ]
+    },
+    "changed_slots_always_inside_band4_prefix": {
+      "1": [
+        7,
+        25
+      ]
+    },
+    "conservative_max_abs_delta_vs_daybreak_all": 0.002,
+    "candidate_all_lower_bound": 0.1042193732193732,
+    "candidate_all_upper_bound": 0.10821937321937321,
+    "lower_bound_delta_vs_v4_all": 0.0018518518518518406,
+    "rare_tpr_exactly_v4_by_order_invariance": 0.3333333333333333,
+    "note": "This is an aggregate-all bound, not a bound on mean target-wise max(all, rare)."
+  },
+  "benchmark_gate": {
+    "checks": {
+      "discovery_mean_delta_power_gt_0": false,
+      "validation_mean_delta_power_gt_0": false,
+      "validation_median_delta_power_gt_0": false,
+      "validation_win_rate_gte_0p60": false,
+      "validation_p10_delta_power_gte_minus_0p002": false,
+      "validation_minimum_delta_rare_gte_0": true,
+      "production_rare_order_exact_v4": true,
+      "production_private_bottom_preserved": true,
+      "official_all_lower_bound_gt_v4": true
+    },
+    "passed": false,
+    "decision": "retain_v4"
+  },
+  "scenario_rows": [
+    {
+      "split": "discovery",
+      "scenario": "noise_0p10",
+      "variant": "daybreak_v4_rarelock",
+      "n": 4,
+      "mean_delta_power": -0.016752849002849,
+      "median": -0.0157720797720798,
+      "min": -0.0276210826210825,
+      "max": -0.0078461538461538,
+      "win": 0.0,
+      "mean_delta_all": -0.034542735042735,
+      "mean_delta_rare": 0.0,
+      "mean_delta_auc": -0.0016779761128184
+    },
+    {
+      "split": "discovery",
+      "scenario": "noise_0p40",
+      "variant": "daybreak_v4_rarelock",
+      "n": 4,
+      "mean_delta_power": -0.0744017094017094,
+      "median": -0.0711980056980056,
+      "min": -0.0924843304843304,
+      "max": -0.0627264957264959,
+      "win": 0.0,
+      "mean_delta_all": -0.1156752136752137,
+      "mean_delta_rare": 0.0,
+      "mean_delta_auc": -0.0278038983462115
+    },
+    {
+      "split": "validation",
+      "scenario": "noise_0p10",
+      "variant": "daybreak_v4_rarelock",
+      "n": 6,
+      "mean_delta_power": -0.0251623931623931,
+      "median": -0.0246566951566951,
+      "min": -0.0292535612535611,
+      "max": -0.021242165242165,
+      "win": 0.0,
+      "mean_delta_all": -0.0462146248812914,
+      "mean_delta_rare": 0.0,
+      "mean_delta_auc": -0.0018618644213265
+    },
+    {
+      "split": "validation",
+      "scenario": "noise_0p40",
+      "variant": "daybreak_v4_rarelock",
+      "n": 6,
+      "mean_delta_power": -0.0805360873694206,
+      "median": -0.078088319088319,
+      "min": -0.0966324786324785,
+      "max": -0.0649230769230769,
+      "win": 0.0,
+      "mean_delta_all": -0.1149886039886039,
+      "mean_delta_rare": 0.0,
+      "mean_delta_auc": -0.0261916830587397
+    }
+  ],
+  "safety": {
+    "token_read": false,
+    "archive_created": false,
+    "production_candidate_changed": false,
+    "submission_performed": false
+  }
+}

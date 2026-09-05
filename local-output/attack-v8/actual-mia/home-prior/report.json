@@ -1,0 +1,117 @@
+{
+  "decision": {
+    "selected_on_discovery": "tail37_theory_reorder",
+    "gate_pass": false,
+    "checks": {
+      "discovery_positive": true,
+      "validation_mean_positive": true,
+      "validation_median_positive": true,
+      "validation_win_rate_gte_0p60": false,
+      "validation_p10_gte_minus_0p002": true,
+      "validation_rare_noninferior": true,
+      "production_rare_locked": true,
+      "negative_control_not_positive": true
+    }
+  },
+  "theoretical_prior": {
+    "scored_given_shared": 0.6902173913043478,
+    "shared_given_eligible_home": 0.35064935064935066,
+    "scored_given_eligible_home": 0.2420242800677583,
+    "scored_given_nonhome": 0.6902173913043478,
+    "probability_ratio_nonhome_vs_home": 2.8518518518518516,
+    "log_probability_ratio_beta": 1.0479685558493548
+  },
+  "actual_structure": {
+    "home_prefecture_redacted": "ce76fe655d41af06",
+    "known_private": 163,
+    "eligible_home": 231,
+    "nonhome": 655,
+    "rare": 24,
+    "eligible_rare_rows": 11,
+    "eligible_nonhome_rare_structurally_shared": 10,
+    "eligible_home_rare_status_unknown": 1,
+    "latent_private_excludes_eligible_rare_model_assumption": true
+  },
+  "parameters": {
+    "discovery_seeds": [
+      20268011,
+      20268012,
+      20268013
+    ],
+    "validation_seeds": [
+      20268101,
+      20268102,
+      20268103,
+      20268104,
+      20268105
+    ],
+    "scenarios": [
+      "noise_0p03",
+      "noise_0p10",
+      "noise_0p20",
+      "noise_0p40"
+    ],
+    "include_domias": false
+  },
+  "discovery_selected": {
+    "world_type": "official_home_private",
+    "split": "discovery",
+    "variant": "tail37_theory_reorder",
+    "observations": 12,
+    "mean_delta_power": 0.0055833333333333525,
+    "median_delta_power": 0.0019999999999999463,
+    "p10_delta_power": -0.005400000000000005,
+    "minimum_delta_power": -0.008000000000000007,
+    "win_rate": 0.5833333333333334,
+    "mean_delta_all": 0.007865384615384613,
+    "mean_delta_rare": 0.0,
+    "minimum_delta_rare": 0.0,
+    "mean_delta_auc": -9.951505519888622e-05
+  },
+  "validation_selected": {
+    "world_type": "official_home_private",
+    "split": "validation",
+    "variant": "tail37_theory_reorder",
+    "observations": 20,
+    "mean_delta_power": 0.0034653846153846037,
+    "median_delta_power": 0.0009615384615384026,
+    "p10_delta_power": -0.0002692307692307769,
+    "minimum_delta_power": -0.0036923076923075504,
+    "win_rate": 0.5,
+    "mean_delta_all": 0.005238176638176622,
+    "mean_delta_rare": 0.0,
+    "minimum_delta_rare": 0.0,
+    "mean_delta_auc": -6.89287163568586e-05
+  },
+  "negative_control_selected": {
+    "world_type": "uniform_private_negative",
+    "split": "negative_control",
+    "variant": "tail37_theory_reorder",
+    "observations": 2,
+    "mean_delta_power": -0.007807692307692293,
+    "median_delta_power": -0.007807692307692293,
+    "p10_delta_power": -0.012453846153846126,
+    "minimum_delta_power": -0.013615384615384585,
+    "win_rate": 0.0,
+    "mean_delta_all": -0.017653846153846242,
+    "mean_delta_rare": 0.0,
+    "minimum_delta_rare": 0.0,
+    "mean_delta_auc": -0.001268841574750157
+  },
+  "production_selected": {
+    "variant": "tail37_theory_reorder",
+    "path": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\local-output\\attack-v8\\actual-mia\\home-prior\\production_variants\\F_mia_tail37_theory_reorder.csv",
+    "sha256": "697CA4D79CA0C05ECFA580D57479A4C52DE2C0609E67533E705323FBAF48B4EA",
+    "changed_cells": 609,
+    "changed_rows": 482,
+    "changed_targets": 20,
+    "rare_order_locked": true
+  },
+  "elapsed_seconds": 644.0373158000002,
+  "safety": {
+    "token_read": false,
+    "archive_created": false,
+    "production_changed": false,
+    "submission_performed": false
+  }
+}

@@ -1,0 +1,7 @@
+split,seed,target_count,mia_source_rows,aia_source_rows,shared_total,shared_bounds,candidate_exclusivity,challenge_rows,aia_member_count,aia_control_count,aia_published_strata,challenge_ids_unique,challenge_truth_ids_match,control_matches_unique,attack_background_hidden_disjoint
+discovery,20261101,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+discovery,20261102,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+discovery,20261103,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+validation,20261111,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+validation,20261112,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+validation,20261113,True,True,True,True,True,True,True,True,True,True,True,True,True,True

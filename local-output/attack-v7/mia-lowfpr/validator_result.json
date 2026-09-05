@@ -1,0 +1,43 @@
+{
+  "official_validate_mia_submission_without_dist": {
+    "ok": true,
+    "errors": []
+  },
+  "production_reference_validate_mia": {
+    "ok": true,
+    "rows": 1049,
+    "columns": 21,
+    "ties": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "12": 0,
+      "13": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "22": 0,
+      "23": 0,
+      "26": 0,
+      "29": 0
+    }
+  },
+  "full_package_validator_run": false,
+  "why_not_full_package": "Task scope forbids production/ZIP/token changes, and the historical production runtime_dist used for these 20 target columns is not present.  The local toy participant_data manifest has 29 targets.",
+  "focused_tests": {
+    "ok": true,
+    "tests": 5
+  },
+  "repository_unittest_discover": {
+    "ok": true,
+    "tests": 118
+  }
+}

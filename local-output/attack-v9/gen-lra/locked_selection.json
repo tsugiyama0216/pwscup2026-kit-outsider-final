@@ -1,0 +1,5 @@
+{
+  "method": "qi5_sex:h0.5:gen_lra_k1",
+  "baseline": "qi5_sex:dcr",
+  "rule": "best mean TPR01; AUC then name tie-break, discovery only"
+}

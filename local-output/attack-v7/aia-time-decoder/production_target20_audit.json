@@ -1,0 +1,43 @@
+{
+  "target": 20,
+  "margin_quantile": 0.5,
+  "filter_target20": {
+    "input_rows": 1049,
+    "cross_target_exact_rows": 0,
+    "cross_target_exact_fraction": 0.0,
+    "cross_target_filter_applied": false,
+    "internal_duplicate_occurrences": 0,
+    "linkable_rows": 1049
+  },
+  "link_details": {
+    "release_rows": 1049,
+    "challenge_rows": 326,
+    "margin_quantile": 0.5,
+    "mutual_links": 105,
+    "event_links": 47,
+    "trusted_event_links": 11
+  },
+  "baseline_active_rows": 163,
+  "trusted_event_links_all_challenge": 11,
+  "applied_active_links": 7,
+  "changed_rows": 7,
+  "membership_mask_unchanged": true,
+  "changed_challenge_row_ids": [
+    37,
+    102,
+    104,
+    114,
+    243,
+    255,
+    290
+  ],
+  "changed_time_hat": [
+    4.226513697922147,
+    6.842896965107362,
+    0.1402432388095489,
+    3.627287354895649,
+    3.161249780077052,
+    5.624217697676642,
+    7.588880289669058
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "decision": "pass_no_promotion",
+  "actual_inputs": {
+    "allowlisted_files": [
+      "B.csv",
+      "B_self.csv",
+      "A_bg.csv",
+      "schema.json"
+    ],
+    "exact_hashes_required": true,
+    "practice_fallback_allowed": false,
+    "smoke_rows": {
+      "B": 1049,
+      "A_bg": 5143,
+      "releases": 20,
+      "known_private": 163,
+      "rare": 24
+    },
+    "token_read": false
+  },
+  "event_additions": {
+    "whole_target_filter_scope_required": true,
+    "targets_1_2_protected": true,
+    "exact_11_only": true,
+    "active_cells_preserved": true,
+    "keys_preserved": true,
+    "invalid_keys_and_times_rejected": true,
+    "private_score_claim": false
+  },
+  "tests": {
+    "command": "python -m unittest attack_phase_v8.tests.test_actual_inputs attack_phase_v8.tests.test_event_additions -v",
+    "passed": 10,
+    "failed": 0
+  },
+  "unchanged_v7_hashes": {
+    "F_aia.csv": "65AD898E8E24497AA1C415BBCBE14D8360BC35676903A069162F4F20F115EAA0",
+    "F_mia.csv": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B"
+  },
+  "claims_audit": {
+    "measured_current_score": 0.3004,
+    "v8_measured_improvement_claimed": false,
+    "score_0p5_claimed": false,
+    "research_candidate_only": true
+  },
+  "production_modified": false,
+  "archive_created": false,
+  "submission_performed": false
+}

@@ -1,0 +1,11 @@
+world_type,split,seed,private,shared,scored_shared,unscored_shared,latent_private_home,latent_private_rare
+official_home_private,discovery,20268011,313,736,508,228,150,0
+official_home_private,discovery,20268012,313,736,508,228,150,0
+official_home_private,discovery,20268013,313,736,508,228,150,0
+official_home_private,validation,20268101,313,736,508,228,150,0
+official_home_private,validation,20268102,313,736,508,228,150,0
+official_home_private,validation,20268103,313,736,508,228,150,0
+official_home_private,validation,20268104,313,736,508,228,150,0
+official_home_private,validation,20268105,313,736,508,228,150,0
+uniform_private_negative,negative_control,20268101,313,736,508,228,35,0
+uniform_private_negative,negative_control,20268102,313,736,508,228,43,0

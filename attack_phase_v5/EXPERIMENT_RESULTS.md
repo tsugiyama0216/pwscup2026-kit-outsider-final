@@ -1,5 +1,8 @@
 # 攻撃バージョン5: 実験結果
 
+> この文書はv5実行時点の履歴です。independent/Daybreakの公式結果と残り2回の
+> 現行計画は`../CODEX_HANDOFF.md`および`../attack_phase_v6/README.md`を参照してください。
+
 実行日: 2026-09-04
 
 ## 結論

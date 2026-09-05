@@ -1,0 +1,161 @@
+{
+  "purpose": "public-only weak-label evidence; not organiser-truth scoring",
+  "identity_model": {
+    "members": "target-private P_i; no cross-target person recurrence",
+    "controls": "outside all cohorts/A_bg; unique per target",
+    "legacy_shadow_warning": "attack_phase/evaluate_shadow.py reuses B_practice as every target's AIA source and is invalid for cross-target identity features"
+  },
+  "collision_audit": {
+    "full_qi": {
+      "cross_target_groups": 0,
+      "participating_rows": 0,
+      "maximum_targets": 0
+    },
+    "labs4": {
+      "cross_target_groups": 0,
+      "participating_rows": 0,
+      "maximum_targets": 0
+    },
+    "stable3_block": {
+      "cross_target_groups": 0,
+      "participating_rows": 0,
+      "maximum_targets": 0
+    },
+    "age_sex_prefecture": {
+      "cross_target_groups": 346,
+      "participating_rows": 4468,
+      "maximum_targets": 4
+    },
+    "sex_prefecture": {
+      "cross_target_groups": 14,
+      "participating_rows": 5542,
+      "maximum_targets": 4
+    }
+  },
+  "prefecture_groups": [
+    {
+      "targets": [
+        "1",
+        "7",
+        "17"
+      ],
+      "split": "discovery"
+    },
+    {
+      "targets": [
+        "2"
+      ],
+      "split": "singleton"
+    },
+    {
+      "targets": [
+        "3",
+        "4"
+      ],
+      "split": "validation"
+    },
+    {
+      "targets": [
+        "5",
+        "8",
+        "18",
+        "24"
+      ],
+      "split": "discovery"
+    },
+    {
+      "targets": [
+        "6"
+      ],
+      "split": "singleton"
+    },
+    {
+      "targets": [
+        "9",
+        "19"
+      ],
+      "split": "validation"
+    },
+    {
+      "targets": [
+        "10"
+      ],
+      "split": "singleton"
+    },
+    {
+      "targets": [
+        "12",
+        "29"
+      ],
+      "split": "discovery"
+    },
+    {
+      "targets": [
+        "13",
+        "20"
+      ],
+      "split": "validation"
+    },
+    {
+      "targets": [
+        "22",
+        "26"
+      ],
+      "split": "discovery"
+    },
+    {
+      "targets": [
+        "23"
+      ],
+      "split": "singleton"
+    }
+  ],
+  "method_selection": {
+    "winner_model": "quadratic_c0p1",
+    "winner_mode": "sibling_bg_0p25",
+    "discovery_gate_metric": 0.4910329291365434,
+    "discovery_auc_sibling": 0.5124410664882736,
+    "discovery_auc_background": 0.4910329291365434
+  },
+  "heldout_prefecture_validation": {
+    "auc_sibling": 0.5120349387707009,
+    "auc_background": 0.5050934243117936,
+    "auc_combined": 0.5106466358789193
+  },
+  "heldout_label_permutation_null": {
+    "auc_sibling": {
+      "mean": 0.4437312536745566,
+      "p95": 0.5242446044253114
+    },
+    "auc_background": {
+      "mean": 0.49061125839114744,
+      "p95": 0.5317101442969088
+    },
+    "auc_combined": {
+      "mean": 0.44999639188314217,
+      "p95": 0.5203763018151827
+    }
+  },
+  "heldout_official_feedback_gate": {
+    "source": "routed only",
+    "observations": 6,
+    "spearman": -0.34786262139146906,
+    "pvalue": 0.4992532181146331
+  },
+  "public_gate_pass": false,
+  "candidate_emitted": false,
+  "candidate_reason": "No F_aia is emitted by this experiment. A truth-known, no-reuse validation gate must also pass before production use.",
+  "hypothetical_v7_changes": {
+    "eligible_targets": 10,
+    "total_changed_rows_if_four_swaps": 80
+  },
+  "input_hashes": {
+    "A_bg.csv": "304AF8F2EE60BAA37C7968772BFAF604033C9A6336DFA4BE25BA6D7ADA6BCC3D",
+    "F_aia.csv:v4": "651D754683BCE4B6F22FD7311AB1584B01C2F42FBB73B13996303472411DFA3A",
+    "F_aia.csv:independent": "BDEA52C1FD7F77F9CF7054E8C9D64F3307B455521318FD73495B28A86BCF35E1",
+    "F_aia.csv:routed": "CCAA0A4EE58797F263E1281D5BC65E763B129A2F77DE00A1A4579DD60566129F",
+    "F_aia.csv:v7": "65AD898E8E24497AA1C415BBCBE14D8360BC35676903A069162F4F20F115EAA0"
+  },
+  "network_access": false,
+  "submission_performed": false
+}

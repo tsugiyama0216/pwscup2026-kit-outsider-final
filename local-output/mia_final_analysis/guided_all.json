@@ -1,0 +1,472 @@
+{
+  "width": 15,
+  "minimum_independent_gain": 1,
+  "maximum_v4_penalty": null,
+  "equal_rank_fusion": false,
+  "owners": [
+    {
+      "record_id": 146,
+      "occurrences": [
+        "6",
+        "9"
+      ],
+      "old_owner": "9",
+      "guided_owner": "6",
+      "proposed_independent_owner": "6",
+      "proposed_rule_owner": "6",
+      "switched": true,
+      "independent_gain": 1,
+      "v4_penalty": 3,
+      "ranks": {
+        "6": {
+          "v3": 32,
+          "v4": 14,
+          "ind": 11
+        },
+        "9": {
+          "v3": 23,
+          "v4": 11,
+          "ind": 12
+        }
+      }
+    },
+    {
+      "record_id": 160,
+      "occurrences": [
+        "5",
+        "20"
+      ],
+      "old_owner": "5",
+      "guided_owner": "5",
+      "proposed_independent_owner": "5",
+      "proposed_rule_owner": "5",
+      "switched": false,
+      "independent_gain": 0,
+      "v4_penalty": 0,
+      "ranks": {
+        "5": {
+          "v3": 705,
+          "v4": 6,
+          "ind": 2
+        },
+        "20": {
+          "v3": 8,
+          "v4": 9,
+          "ind": 21
+        }
+      }
+    },
+    {
+      "record_id": 259,
+      "occurrences": [
+        "9",
+        "23"
+      ],
+      "old_owner": "23",
+      "guided_owner": "23",
+      "proposed_independent_owner": "23",
+      "proposed_rule_owner": "23",
+      "switched": false,
+      "independent_gain": 0,
+      "v4_penalty": 0,
+      "ranks": {
+        "9": {
+          "v3": 4,
+          "v4": 14,
+          "ind": 606
+        },
+        "23": {
+          "v3": 472,
+          "v4": 6,
+          "ind": 2
+        }
+      }
+    },
+    {
+      "record_id": 260,
+      "occurrences": [
+        "7",
+        "10"
+      ],
+      "old_owner": "10",
+      "guided_owner": "7",
+      "proposed_independent_owner": "7",
+      "proposed_rule_owner": "7",
+      "switched": true,
+      "independent_gain": 8,
+      "v4_penalty": 10,
+      "ranks": {
+        "7": {
+          "v3": 82,
+          "v4": 15,
+          "ind": 6
+        },
+        "10": {
+          "v3": 6,
+          "v4": 5,
+          "ind": 14
+        }
+      }
+    },
+    {
+      "record_id": 398,
+      "occurrences": [
+        "8",
+        "20"
+      ],
+      "old_owner": "20",
+      "guided_owner": "20",
+      "proposed_independent_owner": "20",
+      "proposed_rule_owner": "20",
+      "switched": false,
+      "independent_gain": 0,
+      "v4_penalty": 0,
+      "ranks": {
+        "8": {
+          "v3": 154,
+          "v4": 15,
+          "ind": 5
+        },
+        "20": {
+          "v3": 10,
+          "v4": 5,
+          "ind": 5
+        }
+      }
+    },
+    {
+      "record_id": 410,
+      "occurrences": [
+        "8",
+        "29"
+      ],
+      "old_owner": "29",
+      "guided_owner": "8",
+      "proposed_independent_owner": "8",
+      "proposed_rule_owner": "8",
+      "switched": true,
+      "independent_gain": 13,
+      "v4_penalty": 3,
+      "ranks": {
+        "8": {
+          "v3": 21,
+          "v4": 14,
+          "ind": 13
+        },
+        "29": {
+          "v3": 13,
+          "v4": 11,
+          "ind": 26
+        }
+      }
+    },
+    {
+      "record_id": 605,
+      "occurrences": [
+        "8",
+        "10"
+      ],
+      "old_owner": "8",
+      "guided_owner": "8",
+      "proposed_independent_owner": "8",
+      "proposed_rule_owner": "8",
+      "switched": false,
+      "independent_gain": 0,
+      "v4_penalty": 0,
+      "ranks": {
+        "8": {
+          "v3": 224,
+          "v4": 10,
+          "ind": 3
+        },
+        "10": {
+          "v3": 16,
+          "v4": 8,
+          "ind": 9
+        }
+      }
+    },
+    {
+      "record_id": 647,
+      "occurrences": [
+        "3",
+        "7",
+        "10",
+        "29"
+      ],
+      "old_owner": "10",
+      "guided_owner": "29",
+      "proposed_independent_owner": "29",
+      "proposed_rule_owner": "29",
+      "switched": true,
+      "independent_gain": 5,
+      "v4_penalty": 1,
+      "ranks": {
+        "3": {
+          "v3": 96,
+          "v4": 8,
+          "ind": 5
+        },
+        "7": {
+          "v3": 48,
+          "v4": 14,
+          "ind": 8
+        },
+        "10": {
+          "v3": 13,
+          "v4": 6,
+          "ind": 8
+        },
+        "29": {
+          "v3": 102,
+          "v4": 7,
+          "ind": 3
+        }
+      }
+    },
+    {
+      "record_id": 807,
+      "occurrences": [
+        "6",
+        "9"
+      ],
+      "old_owner": "9",
+      "guided_owner": "6",
+      "proposed_independent_owner": "6",
+      "proposed_rule_owner": "6",
+      "switched": true,
+      "independent_gain": 15,
+      "v4_penalty": 3,
+      "ranks": {
+        "6": {
+          "v3": 25,
+          "v4": 12,
+          "ind": 8
+        },
+        "9": {
+          "v3": 11,
+          "v4": 9,
+          "ind": 23
+        }
+      }
+    },
+    {
+      "record_id": 892,
+      "occurrences": [
+        "3",
+        "8"
+      ],
+      "old_owner": "8",
+      "guided_owner": "8",
+      "proposed_independent_owner": "8",
+      "proposed_rule_owner": "8",
+      "switched": false,
+      "independent_gain": 0,
+      "v4_penalty": 0,
+      "ranks": {
+        "3": {
+          "v3": 129,
+          "v4": 10,
+          "ind": 4
+        },
+        "8": {
+          "v3": 24,
+          "v4": 3,
+          "ind": 2
+        }
+      }
+    },
+    {
+      "record_id": 964,
+      "occurrences": [
+        "3",
+        "5"
+      ],
+      "old_owner": "3",
+      "guided_owner": "3",
+      "proposed_independent_owner": "3",
+      "proposed_rule_owner": "3",
+      "switched": false,
+      "independent_gain": 0,
+      "v4_penalty": 0,
+      "ranks": {
+        "3": {
+          "v3": 5,
+          "v4": 1,
+          "ind": 3
+        },
+        "5": {
+          "v3": 79,
+          "v4": 9,
+          "ind": 4
+        }
+      }
+    },
+    {
+      "record_id": 977,
+      "occurrences": [
+        "5",
+        "7"
+      ],
+      "old_owner": "7",
+      "guided_owner": "5",
+      "proposed_independent_owner": "5",
+      "proposed_rule_owner": "5",
+      "switched": true,
+      "independent_gain": 4,
+      "v4_penalty": 5,
+      "ranks": {
+        "5": {
+          "v3": 377,
+          "v4": 11,
+          "ind": 3
+        },
+        "7": {
+          "v3": 11,
+          "v4": 6,
+          "ind": 7
+        }
+      }
+    },
+    {
+      "record_id": 998,
+      "occurrences": [
+        "5",
+        "22"
+      ],
+      "old_owner": "5",
+      "guided_owner": "22",
+      "proposed_independent_owner": "22",
+      "proposed_rule_owner": "22",
+      "switched": true,
+      "independent_gain": 15,
+      "v4_penalty": 2,
+      "ranks": {
+        "5": {
+          "v3": 13,
+          "v4": 12,
+          "ind": 23
+        },
+        "22": {
+          "v3": 74,
+          "v4": 14,
+          "ind": 8
+        }
+      }
+    },
+    {
+      "record_id": 1001,
+      "occurrences": [
+        "3",
+        "20"
+      ],
+      "old_owner": "3",
+      "guided_owner": "20",
+      "proposed_independent_owner": "20",
+      "proposed_rule_owner": "20",
+      "switched": true,
+      "independent_gain": 24,
+      "v4_penalty": 1,
+      "ranks": {
+        "3": {
+          "v3": 8,
+          "v4": 9,
+          "ind": 30
+        },
+        "20": {
+          "v3": 49,
+          "v4": 10,
+          "ind": 6
+        }
+      }
+    }
+  ],
+  "changes_vs_current_tail15": {
+    "3": {
+      "removed_vs_current": [
+        1001
+      ],
+      "added_vs_current": [
+        891
+      ]
+    },
+    "5": {
+      "removed_vs_current": [
+        998
+      ],
+      "added_vs_current": [
+        977
+      ]
+    },
+    "6": {
+      "removed_vs_current": [
+        180,
+        233
+      ],
+      "added_vs_current": [
+        146,
+        807
+      ]
+    },
+    "7": {
+      "removed_vs_current": [
+        977
+      ],
+      "added_vs_current": [
+        260
+      ]
+    },
+    "8": {
+      "removed_vs_current": [
+        194
+      ],
+      "added_vs_current": [
+        410
+      ]
+    },
+    "9": {
+      "removed_vs_current": [
+        146,
+        807
+      ],
+      "added_vs_current": [
+        302,
+        418
+      ]
+    },
+    "10": {
+      "removed_vs_current": [
+        260,
+        647
+      ],
+      "added_vs_current": [
+        124,
+        1037
+      ]
+    },
+    "20": {
+      "removed_vs_current": [
+        644
+      ],
+      "added_vs_current": [
+        1001
+      ]
+    },
+    "22": {
+      "removed_vs_current": [
+        806
+      ],
+      "added_vs_current": [
+        998
+      ]
+    },
+    "29": {
+      "removed_vs_current": [
+        410
+      ],
+      "added_vs_current": [
+        647
+      ]
+    }
+  }
+}

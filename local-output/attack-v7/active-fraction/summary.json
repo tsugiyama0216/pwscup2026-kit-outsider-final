@@ -1,0 +1,69 @@
+{
+  "purpose": "conditional independent-shadow active-fraction selection; not a leaderboard forecast",
+  "discovery_seeds": [
+    20261301,
+    20261302,
+    20261303,
+    20261304,
+    20261305,
+    20261306,
+    20261307,
+    20261308,
+    20261309,
+    20261310,
+    20261311,
+    20261312
+  ],
+  "validation_seeds": [
+    20261401,
+    20261402,
+    20261403,
+    20261404,
+    20261405,
+    20261406,
+    20261407,
+    20261408,
+    20261409,
+    20261410,
+    20261411,
+    20261412
+  ],
+  "fractions": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45
+  ],
+  "censor_edge_time": 9.498631074606434,
+  "selection_rule": "highest discovery mean under the exact-zero condition; validation untouched until lock",
+  "selected_strategy": "inverse_votes_at_most_two_edge",
+  "selected_validation": [
+    {
+      "split": "validation",
+      "strategy": "inverse_votes_at_most_two_edge",
+      "eligible_blocks": 8,
+      "mean": 0.17369501632948695,
+      "median": 0.1585164835164835,
+      "p10": 0.0924137931034483,
+      "p90": 0.2861486486486487,
+      "mean_delta": 0.03738162387020791,
+      "win_rate": 0.75,
+      "loss_rate": 0.25
+    }
+  ],
+  "exact_zero_eligible_blocks": {
+    "discovery": 15,
+    "validation": 8
+  },
+  "near_zero_eligible_blocks": {
+    "discovery": 16,
+    "validation": 12
+  },
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false
+}

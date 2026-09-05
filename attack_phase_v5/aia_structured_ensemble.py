@@ -14,6 +14,7 @@ from typing import Any, Iterable
 
 import numpy as np
 import pandas as pd
+from scipy.spatial.distance import cdist
 from sklearn.neighbors import NearestNeighbors
 
 
@@ -178,6 +179,169 @@ def proximity_score(released: pd.DataFrame, challenge: pd.DataFrame) -> np.ndarr
     return np.mean(np.column_stack(view_ranks), axis=1)
 
 
+def _marginal_midrank_matrix(
+    frame: pd.DataFrame, columns: tuple[str, ...]
+) -> np.ndarray:
+    """Encode each numeric margin by deterministic empirical mid-ranks.
+
+    Each table is encoded separately.  The resulting copula coordinates retain
+    row-level rank structure while being invariant to strictly monotone,
+    target-specific marginal transformations.
+    """
+    values = frame.loc[:, columns].to_numpy(dtype=float, copy=True)
+    if not np.isfinite(values).all():
+        raise ValueError("copula proximity columns must be finite")
+    encoded = np.empty_like(values, dtype=float)
+    for index in range(values.shape[1]):
+        encoded[:, index] = (
+            pd.Series(values[:, index]).rank(method="average").to_numpy(dtype=float)
+            / (len(values) + 1.0)
+        )
+    return encoded / np.sqrt(len(columns))
+
+
+def copula_proximity_score(
+    released: pd.DataFrame, challenge: pd.DataFrame
+) -> np.ndarray:
+    """Rank multiview proximity after separate marginal-rank normalization."""
+    _require_columns(released, (*QI_COLUMNS, *BLOCK_COLUMNS), "released table")
+    _require_columns(
+        challenge,
+        ("challenge_row_id", *QI_COLUMNS, *BLOCK_COLUMNS),
+        "challenge",
+    )
+    if not len(released) or not len(challenge):
+        raise ValueError("released table and challenge must be non-empty")
+
+    challenge_ids = challenge["challenge_row_id"].to_numpy(dtype=np.int64)
+    release_sex = released["sex"].to_numpy()
+    release_pref = released["prefecture"].astype(str).to_numpy()
+    challenge_blocks = pd.DataFrame(
+        {
+            "sex": challenge["sex"].to_numpy(),
+            "prefecture": challenge["prefecture"].astype(str).to_numpy(),
+        }
+    )
+    view_ranks: list[np.ndarray] = []
+    for columns in PROXIMITY_VIEWS:
+        release_x = _marginal_midrank_matrix(released, columns)
+        challenge_x = _marginal_midrank_matrix(challenge, columns)
+        nearest = np.empty(len(challenge), dtype=float)
+        for raw_key, indices in challenge_blocks.groupby(
+            ["sex", "prefecture"], sort=False
+        ).indices.items():
+            sex, prefecture = raw_key if isinstance(raw_key, tuple) else (raw_key, "")
+            rows = np.asarray(indices, dtype=int)
+            pool = np.flatnonzero(
+                (release_sex == sex) & (release_pref == str(prefecture))
+            )
+            if not len(pool):
+                pool = np.flatnonzero(release_sex == sex)
+            if not len(pool):
+                pool = np.arange(len(released), dtype=int)
+            model = NearestNeighbors(n_neighbors=1, metric="euclidean")
+            model.fit(release_x[pool])
+            distance, _ = model.kneighbors(challenge_x[rows])
+            nearest[rows] = distance[:, 0]
+        view_ranks.append(strict_rank(-nearest, challenge_ids))
+    return np.mean(np.column_stack(view_ranks), axis=1)
+
+
+def copula_event_links(
+    released: pd.DataFrame,
+    challenge: pd.DataFrame,
+    *,
+    margin_quantile: float = 0.50,
+    horizon_time: float = 10.0,
+) -> tuple[np.ndarray, np.ndarray, dict[str, Any]]:
+    """Link only high-confidence event rows in separate-margin rank space.
+
+    A link is trusted when the challenge row and released row are mutual
+    nearest neighbours inside the public sex/prefecture block and its
+    first-versus-second-neighbour distance margin is at or above the requested
+    global percentile.  Non-event links are deliberately not overrides: the
+    caller retains its expert or censoring-horizon prediction for those rows.
+    """
+    _require_columns(
+        released,
+        (*QI_COLUMNS, *BLOCK_COLUMNS, "time", "onset", "death"),
+        "released table",
+    )
+    _require_columns(
+        challenge,
+        ("challenge_row_id", *QI_COLUMNS, *BLOCK_COLUMNS),
+        "challenge",
+    )
+    if not len(released) or not len(challenge):
+        raise ValueError("released table and challenge must be non-empty")
+    if not 0.0 <= margin_quantile <= 1.0:
+        raise ValueError("margin quantile must be in [0, 1]")
+
+    release_x = _marginal_midrank_matrix(released, QI_COLUMNS)
+    challenge_x = _marginal_midrank_matrix(challenge, QI_COLUMNS)
+    release_sex = released["sex"].to_numpy()
+    release_pref = released["prefecture"].astype(str).to_numpy()
+    challenge_blocks = pd.DataFrame(
+        {
+            "sex": challenge["sex"].to_numpy(),
+            "prefecture": challenge["prefecture"].astype(str).to_numpy(),
+        }
+    )
+    nearest = np.empty(len(challenge), dtype=int)
+    second_margin = np.empty(len(challenge), dtype=float)
+    mutual = np.zeros(len(challenge), dtype=bool)
+    all_release_rows = np.arange(len(released), dtype=int)
+
+    for raw_key, indices in challenge_blocks.groupby(
+        ["sex", "prefecture"], sort=False
+    ).indices.items():
+        sex, prefecture = raw_key if isinstance(raw_key, tuple) else (raw_key, "")
+        rows = np.asarray(indices, dtype=int)
+        pool = np.flatnonzero(
+            (release_sex == sex) & (release_pref == str(prefecture))
+        )
+        if not len(pool):
+            pool = np.flatnonzero(release_sex == sex)
+        if not len(pool):
+            pool = all_release_rows
+
+        pair = cdist(challenge_x[rows], release_x[pool], metric="euclidean")
+        order = np.argsort(pair, axis=1, kind="mergesort")
+        nearest_local = order[:, 0]
+        nearest[rows] = pool[nearest_local]
+        if pair.shape[1] > 1:
+            second_margin[rows] = (
+                np.take_along_axis(pair, order[:, 1:2], axis=1)[:, 0]
+                - pair[np.arange(len(rows)), nearest_local]
+            )
+        else:
+            second_margin[rows] = np.inf
+        reverse = np.argmin(pair, axis=0)
+        mutual[rows] = reverse[nearest_local] == np.arange(len(rows))
+
+    margin_rank = (
+        pd.Series(second_margin).rank(method="average", pct=True).to_numpy(dtype=float)
+    )
+    release_event = (
+        released["onset"].to_numpy(dtype=int)[nearest]
+        + released["death"].to_numpy(dtype=int)[nearest]
+    ) > 0
+    gate = mutual & (margin_rank >= margin_quantile) & release_event
+    linked_time = np.full(len(challenge), horizon_time, dtype=float)
+    linked_time[gate] = released["time"].to_numpy(dtype=float)[nearest[gate]]
+    if not np.isfinite(linked_time).all() or (linked_time < 0.0).any():
+        raise ValueError("copula event link produced invalid times")
+    diagnostics = {
+        "release_rows": len(released),
+        "challenge_rows": len(challenge),
+        "margin_quantile": margin_quantile,
+        "mutual_links": int(np.count_nonzero(mutual)),
+        "event_links": int(np.count_nonzero(release_event)),
+        "trusted_event_links": int(np.count_nonzero(gate)),
+    }
+    return linked_time, gate, diagnostics
+
+
 def filter_linkable_releases(
     releases: dict[str, pd.DataFrame],
     *,
@@ -322,6 +486,8 @@ def _decode_times(
     decoder: str,
     abstain_time: float,
     horizon_time: float,
+    linked_event_time: np.ndarray | None = None,
+    linked_event_gate: np.ndarray | None = None,
 ) -> np.ndarray:
     active_v4 = ~np.isclose(v4_time, abstain_time)
     active_independent = ~np.isclose(independent_time, abstain_time)
@@ -330,7 +496,37 @@ def _decode_times(
         output[selected] = horizon_time
         return output
 
-    if decoder == "v4_fallback":
+    if decoder == "v4_only":
+        # Preserve every v4 prediction that survives the public stratum repair.
+        # Rows introduced solely to satisfy the published half-per-stratum
+        # structure have no v4 link, so the censoring horizon is the conservative
+        # fallback instead of importing a second attack's uncertain linkage.
+        chosen = np.where(active_v4, v4_time, horizon_time)
+        output[selected] = chosen[selected]
+        return output
+
+    if decoder in {"v4_event_margin", "independent_event_margin"}:
+        if linked_event_time is None or linked_event_gate is None:
+            raise ValueError(f"{decoder} requires copula event links")
+        linked_event_time = np.asarray(linked_event_time, dtype=float)
+        linked_event_gate = np.asarray(linked_event_gate, dtype=bool)
+        if (
+            linked_event_time.shape != selected.shape
+            or linked_event_gate.shape != selected.shape
+            or not np.isfinite(linked_event_time).all()
+            or (linked_event_time < 0.0).any()
+        ):
+            raise ValueError("copula event links must be finite and aligned")
+        if decoder == "v4_event_margin":
+            chosen = np.where(active_v4, v4_time, horizon_time)
+        else:
+            chosen = np.where(
+                active_independent,
+                independent_time,
+                np.where(active_v4, v4_time, horizon_time),
+            )
+        chosen = np.where(linked_event_gate, linked_event_time, chosen)
+    elif decoder == "v4_fallback":
         chosen = np.where(
             active_v4,
             v4_time,
@@ -376,19 +572,27 @@ def build_aia_v5_variants(
     if set(releases) != set(challenges) or not releases:
         raise ValueError("release and challenge target sets must be equal and non-empty")
     score_specs = {
-        "stratum_v4": (1.00, 0.00, 0.30),
-        "stratum_independent": (0.00, 1.00, 0.30),
-        "stratum_proximity": (0.00, 0.00, 1.00),
-        "consensus_equal": (1.00, 1.00, 0.35),
-        "consensus_v4_lean": (1.10, 0.90, 0.35),
-        "consensus_independent_lean": (0.90, 1.10, 0.35),
-        "consensus_soft_proximity": (0.60, 0.60, 1.00),
+        "stratum_v4": (1.00, 0.00, 0.30, 0.00),
+        "stratum_v4_copula": (1.00, 0.00, 0.15, 0.15),
+        "stratum_independent": (0.00, 1.00, 0.30, 0.00),
+        "stratum_proximity": (0.00, 0.00, 1.00, 0.00),
+        "consensus_equal": (1.00, 1.00, 0.35, 0.00),
+        "consensus_v4_lean": (1.10, 0.90, 0.35, 0.00),
+        "consensus_v4_copula": (1.10, 0.90, 0.20, 0.20),
+        "consensus_equal_copula_mix": (1.00, 1.00, 0.20, 0.20),
+        "consensus_equal_copula": (1.00, 1.00, 0.00, 0.40),
+        "consensus_soft_copula": (0.60, 0.60, 0.00, 1.00),
+        "consensus_independent_lean": (0.90, 1.10, 0.35, 0.00),
+        "consensus_soft_proximity": (0.60, 0.60, 1.00, 0.00),
     }
     decoders = (
         "horizon",
+        "v4_only",
         "v4_fallback",
         "independent_fallback",
         "consensus_event",
+        "v4_event_margin",
+        "independent_event_margin",
     )
     parts: dict[str, list[pd.DataFrame]] = {
         f"{score_name}__{decoder}": []
@@ -412,18 +616,33 @@ def build_aia_v5_variants(
         active_v4 = ~np.isclose(v4_time, abstain_time)
         active_independent = ~np.isclose(independent_time, abstain_time)
         proximity = proximity_score(linkable_releases[target_id], challenge)
+        copula_proximity = copula_proximity_score(
+            linkable_releases[target_id], challenge
+        )
+        linked_event_time, linked_event_gate, link_details = copula_event_links(
+            linkable_releases[target_id],
+            challenge,
+            horizon_time=horizon_time,
+        )
         target_details: dict[str, Any] = {
             "v4_active": int(np.count_nonzero(active_v4)),
             "independent_active": int(np.count_nonzero(active_independent)),
             "active_overlap": int(np.count_nonzero(active_v4 * active_independent)),
+            "copula_event_links": link_details,
             "variants": {},
         }
 
-        for score_name, (v4_weight, independent_weight, proximity_weight) in score_specs.items():
+        for score_name, (
+            v4_weight,
+            independent_weight,
+            proximity_weight,
+            copula_weight,
+        ) in score_specs.items():
             score = (
                 v4_weight * active_v4
                 + independent_weight * active_independent
                 + proximity_weight * proximity
+                + copula_weight * copula_proximity
             )
             selected, detail = stratified_half_selection(
                 challenge, score, member_count=member_count
@@ -458,6 +677,8 @@ def build_aia_v5_variants(
                     decoder=decoder,
                     abstain_time=abstain_time,
                     horizon_time=horizon_time,
+                    linked_event_time=linked_event_time,
+                    linked_event_gate=linked_event_gate,
                 )
                 parts[name].append(
                     pd.DataFrame(

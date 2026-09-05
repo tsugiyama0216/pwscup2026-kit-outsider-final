@@ -1,0 +1,39 @@
+{
+  "scope": "public production screening only; no private truth",
+  "targets": [
+    3,
+    4,
+    5,
+    10,
+    12,
+    13,
+    20,
+    22,
+    23,
+    26,
+    29
+  ],
+  "methods": [
+    "current_q25",
+    "current_q50",
+    "current_q75",
+    "current_q90",
+    "interval_self_q25_l75",
+    "interval_self_q50_l50",
+    "interval_self_q75_l0",
+    "interval_self_q75_l75",
+    "interval_self_q90_l75",
+    "interval_bg_q25_l75",
+    "interval_bg_q50_l50",
+    "interval_bg_q75_l0",
+    "interval_bg_q75_l75",
+    "interval_bg_q90_l75"
+  ],
+  "background_control_folds": 4,
+  "interpretation": "negative control-hit delta means the event overlay reduces A_bg control successes relative to an edge prediction; it is not proof of member-time gain",
+  "network_access": false,
+  "token_read": false,
+  "production_candidate_changed": false,
+  "archive_created": false,
+  "submission_performed": false
+}
