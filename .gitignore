@@ -1,6 +1,5 @@
 # 参加者がキットを動かすと出来るもの
-starter/.venv/
-/opendp_aim/.venv/
+**/.venv/
 **/.ipynb_checkpoints/
 **/__pycache__/
 *.py[cod]
@@ -11,10 +10,18 @@ starter/.venv/
 /.uv-cache/
 /work/
 /local-output/
+/prelim/workspace/.tools/
+/prelim/workspace/.uv-cache/
+/prelim/workspace/work/
+/prelim/workspace/local-output/
 
 # Live submission credentials remain local, even for private repository backups.
 /submissions/**/token.txt
 /submissions/**/*.zip
+/prelim/workspace/submissions/**/token.txt
+/prelim/workspace/submissions/**/*.zip
+/prelim/anonymization/**/token.txt
+/prelim/anonymization/**/*.zip
 .env
 .env.*
 !.env.example
@@ -29,5 +36,13 @@ starter/.venv/
 /notebooks/C.csv
 /notebooks/F_mia.csv
 /notebooks/F_aia.csv
+/prelim/workspace/C.csv
+/prelim/workspace/F_mia.csv
+/prelim/workspace/F_aia.csv
+/prelim/workspace/my_defense.zip
+/prelim/workspace/my_attack.zip
+/prelim/workspace/notebooks/C.csv
+/prelim/workspace/notebooks/F_mia.csv
+/prelim/workspace/notebooks/F_aia.csv
 
 .DS_Store

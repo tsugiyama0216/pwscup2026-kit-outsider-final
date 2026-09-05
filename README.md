@@ -1,174 +1,19 @@
-# PWS Cup 2026 スターターキット
+# PWSCup2026 — team24 作業リポジトリ
 
-チーム作業：[予備戦の攻撃ファイル・結果](prelim/attack/README.md)（最終提出v9 guarded：0.3407）／[全作業アーカイブ](research_archive/README.md)
+予備戦の作業は **[`prelim/`](prelim/README.md)** に集約しました。本戦は [`main_round/`](main_round/README.md) で別管理します（現在は案内のみ）。
 
-匿名化技術コンテスト **PWS Cup 2026** の参加者向け配布物一式です。**練習用のデータ**（本番とは別に作った「トイ世界」）で、提出から採点までひととおり試せます。
-
-競技のルールと採点の定義は **`rulebook/` の PDF が正本**です。このリポジトリのコードや説明と食い違ったら、ルールブックが正しいと考えてください。
-
-- 公式ページ: <https://www.iwsec.org/pws/2026/cup26.html>
-- 参加登録: 公式ページの参加申込フォームから（説明会 7/30 から予備戦終了まで受付）
-- 提出先: [CodaBench](https://www.codabench.org/competitions/17698)
-- 問い合わせ: pwscup2026-info (at) csec.ipsj.or.jp
-
----
-
-## 中身
-
-| パス | 何か |
+| 探したいもの | 場所 |
 |---|---|
-| `rulebook/PWS_Cup2026_ルールブック_prelim-attack-20260825.pdf` | **競技ルールの正本**。得点の定義・提出様式・禁止事項 |
-| `participant_data/` | **練習用データ一式**。下の「配布データ」参照 |
-| `notebooks/` | **教材（任意）**。ノートブック2本（「はじめてのPWSCup」＝提出まで1周／「採点のしくみ」＝点数の中身）と、**読みもの1本**（コードなし） |
-| `study_materials/` | **チーム内の勉強用資料**。今回採用した攻撃手法を図表中心で説明する初心者向けガイド |
-| `starter/` | **コード**。提出物の検証器・ローカル自己採点・参照攻撃・参照防御 |
-| Docker イメージ | `hajimeono/pwscup2026-kit:prelim-attack-20260825`（Docker Hub・public・amd64/arm64）。**Python 環境なしで検証と自己採点ができます** |
-| `LICENSE` | コードのライセンス（Apache-2.0） |
+| 予備戦・匿名化フェーズの提出物 `C.csv` | [`prelim/anonymization/anonymization-submitted-v5/`](prelim/anonymization/anonymization-submitted-v5/) |
+| 予備戦・攻撃フェーズの最終提出、候補、採点結果 | [`prelim/attack/`](prelim/attack/README.md) |
+| 予備戦の実装、実験記録、当時のキット・ルール | [`prelim/workspace/`](prelim/workspace/README.md) |
+| 初期の攻撃手法を説明した旧学習資料 | [`prelim/old_attack_study_materials/`](prelim/old_attack_study_materials/README.md) |
+| 全体構造・旧パスからの移動先・実行方法 | [`REPOSITORY_LAYOUT.md`](REPOSITORY_LAYOUT.md) |
 
-**リポジトリごとダウンロードする場合**は、[Releases](https://github.com/pwscup/pwscup2026-kit/releases) の先頭（`Latest` が付いているもの）から `Source code (zip)` を落としてください。Releases はフェーズごとに中身を固定してあるので、**あとから同じ状態を取り直せます**。そのフェーズのルールブック PDF も一緒に付いています。
+予備戦の最終攻撃は **v9 guarded、公式結果（ユーザー共有）0.3407** です。予備戦の提出枠は使い切っています。v7 は単独では未提出であり、本戦の性能も未評価です。
 
-### 配布データ（`participant_data/`）
+今回の整理は保存場所と案内の変更です。予備戦の作業環境は `prelim/workspace/` にまとめ、実装・データ・出力の相対配置を維持しています。過去の実行手順は、このディレクトリを作業場所として読んでください。攻撃アルゴリズムや提出 CSV の内容を更新する整理ではありません。
 
-| ファイル | 何か |
-|---|---|
-| `B_practice.csv` | あなたのコホート（加工対象）。1,049 行 × 14 列 |
-| `B_self.csv` | 自己採点用の拡張版 B（真の希少ラベル `is_rare` 付き）。**提出物ではありません** |
-| `A_bg.csv` | 背景データ。攻撃の参照分布に使います |
-| `targets/C_<k>.csv` | 攻撃対象の匿名化データ（練習では k = 1〜29 を公開） |
-| `targets/aia_challenge_<k>.csv` | 属性推論の標的ファイル（1枚 326 行） |
-| `targets/mia_columns.json` | その回の対象チームID一覧 |
-| `sample_submissions/` | **そのまま提出できる形の実例**（`C.csv` / `F_mia.csv` / `F_aia.csv` / `token.txt`） |
-| `schema.json` | 列と値域の定義 |
-| `utility_ref.json` | 自己採点が使う参照統計 |
-| `scoring_config.yaml` | 採点・検証パラメータ |
+`prelim/workspace/participant_data/` は予備戦当時の**練習用データ**です。本戦データでも、実際に配布された team24 の B/B_self/A_bg でもありません。実配布の生データは外部のローカル保存先に残し、新たなアップロードには含めません。実トークン、トークン入り ZIP、仮想環境・キャッシュも新規の管理対象から除外します（既存 Git 履歴は書き換えていません）。
 
-**まず `participant_data/sample_submissions/` の中身を開いて、出力の形をそのまま真似るのが一番早いです。**
-
-提出物は CSV とテキストファイルだけなので、**Python 以外の言語・ツール（R / Julia / Excel / 手作業）で作ってもかまいません。** ただし、下の自己採点器・検証器を動かすには Python か Docker が要ります。
-
----
-
-## いちばん短い道: ノートブック
-
-**読むだけなら GitHub 上でそのまま表示されます**——[`notebooks/はじめてのPWSCup.ipynb`](notebooks/はじめてのPWSCup.ipynb) / [`notebooks/採点のしくみ.ipynb`](notebooks/採点のしくみ.ipynb)。下の読みものは markdown なので、動かす準備も要りません。
-
-| ノートブック | 中身 | 所要 |
-|---|---|---|
-| はじめてのPWSCup | データの読み方 → 素朴な匿名化 → 自己採点 → 素朴な攻撃 → 提出物の書き出し | 20〜30 分 |
-| 採点のしくみ | 4観点が何を測っているか・**どの操作で点が上下するか**を、加工を作りながら確かめる | 15〜20 分 |
-| [読みもの] 競技データはどう作られているか | 合成データの材料と作り方のうち、開示する範囲（コードなし） | 5 分 |
-
-実行環境は `starter/` に一本化しています（採点器と同じ版のライブラリで動くので、ノートブックの中で出る点数がそのままサーバの点数になります）。
-
-```sh
-cd starter
-uv sync --extra notebook
-uv run jupyter lab ..
-```
-
----
-
-## 提出物を検証する / 自己採点する
-
-**有用性 U は CodaBench に出さなくても手元で採点できます**（同じ点数が出ます）。加工の作り込みはこのループが速いです。
-
-### Docker（Python 環境が要りません・いちばん手軽）
-
-```sh
-# 提出 zip の形式チェック
-docker run --rm -v "$PWD":/w hajimeono/pwscup2026-kit:prelim-attack-20260825 \
-  validate /w/my_defense.zip --dist /w/participant_data
-
-# 有用性の自己採点（U と4観点の内訳）
-docker run --rm -v "$PWD":/w hajimeono/pwscup2026-kit:prelim-attack-20260825 \
-  score /w/C.csv --dist /w/participant_data
-```
-
-**★ タグ `prelim-attack-20260825` を省略しないでください。** `:latest` はフェーズが進むと別のイメージを指すようになります。タグを書いておけば、あとで同じ点数を再現できます。
-
-### Python（`starter/` を入れる）
-
-uv を使う場合（推奨）。**同梱の `uv.lock` どおりの環境**が作られます。
-
-```sh
-cd starter
-uv sync
-uv run python -m pwscup2026.kit.validate ../my_defense.zip --dist ../participant_data
-uv run python -m pwscup2026.kit.selfscore ../C.csv --dist ../participant_data
-```
-
-pip を使う場合:
-
-```sh
-cd starter
-python -m venv .venv && . .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -e .
-python -m pwscup2026.kit.selfscore ../C.csv --dist ../participant_data
-```
-
-**環境の版について。** 同梱の `uv.lock` は事務局が動作確認した環境です（この環境で参照防御の C を作り、自己採点まで通しています）。`starter/requirements-kit.txt` は**採点 Docker イメージそのものの版**なので、サーバ採点と厳密に合わせたい場合はこちらを使ってください（`uv pip install -r requirements-kit.txt`）。採点に効く numpy・pandas・scipy・scikit-learn・lifelines・statsmodels の版は両者で同一で、違うのは数値に関わらない推移的依存だけです。
-
-**保護（protection）と攻撃力は他チームの情報が要るため、手元では採点できません。**
-
----
-
-## 参照実装（実装例）
-
-ルールブック §4.1・§4.2・§8 で「配ります」と書いている実装です。**方法を縛るものではありません**——独自の防御・攻撃を使ってかまいません。
-
-```sh
-cd starter
-uv sync
-uv run python reference/run_defense.py --dist ../participant_data --out ../C.csv
-uv run python reference/run_mia.py     --dist ../participant_data --out ../F_mia.csv
-uv run python reference/run_aia.py     --dist ../participant_data --out ../F_aia.csv
-```
-
-| スクリプト | 中身 |
-|---|---|
-| `reference/run_defense.py` | **参照防御**。`copula_survival`＝共変量をコピュラで再合成し、転帰は競合リスク Cox から共変量条件付きにサンプル（`--method copula_synth` で転帰独立の素朴版も選べます） |
-| `reference/run_mia.py` | **参照MIA**。密度比 p_syn/p_ref を KDE で推定（ルールブック §4.1） |
-| `reference/run_aia.py` | **参照AIA**。QI の最近傍を C から1件引いて `time` を答える（ルールブック §4.2） |
-| `reference/strong_synth.py` | **強い合成器**（ARF・CTGAN）。追加依存が要ります。下記参照 |
-
-出来た `C.csv` は `token.txt` と一緒に zip 直下に入れて提出します。
-
-```
-my_defense.zip
-├── C.csv
-└── token.txt
-```
-
-**★ 提出したら、リーダーボードに載せてください。** CodaBench は提出しただけでは
-リーダーボードに載りません。提出一覧（My Submissions）の Actions 列のいちばん左のアイコン
-（マウスを重ねると **Add to Leaderboard** と出ます）を押します。載っている提出はその列が
-緑のチェックに変わります。**加工・攻撃のどちらのフェーズでも、順位の計算に使われるのは、
-そのフェーズ終了時点でリーダーボードに載せている1件だけ**です。1件も載せずに終わった場合は
-事務局が最新の有効な提出をあとから掲載しますが（ルールブック §5.3）、「最新」が自分の
-いちばん良い提出とは限りません。**出したいものは自分で載せてください。**
-
-参照防御をそのまま回すと、有用性の4観点のうち **U_spec（特定の解析での結論一致）が最も低く出ます**。`--method copula_synth`（転帰を共変量と独立に引く素朴版）と見比べると、4観点が何を見ているかが分かります。**この比較は `notebooks/採点のしくみ.ipynb` で実際に採点しながら確かめられます。**
-
-### 強い合成器（任意・追加依存）
-
-```sh
-cd starter
-uv sync --extra strong-synth        # arfpy
-uv run python reference/strong_synth.py --dist ../participant_data --method arf_synth --out ../C.csv
-
-uv sync --extra ctgan               # sdv（torch を引きます・重いです）
-uv run python reference/strong_synth.py --dist ../participant_data --method ctgan_synth --out ../C.csv
-```
-
-`copula_survival` は追加依存なしで使えます（`run_defense.py` の既定）。
-
----
-
-## ライセンスと利用条件
-
-- **コード**（`starter/` 以下）: Apache-2.0（`LICENSE`）
-- **データとルールブック**: 参加・成果発表・研究・教育目的での利用を許諾します。第三者への再配布の条件は追ってご案内します。
-
-データの生成方法（世界生成のコード）は競技の公平性のため非公開です。作り方のうち開示する範囲は [`notebooks/データはどう作られているか.md`](notebooks/データはどう作られているか.md) にまとめています。
-
-© 2026 PWS Cup 2026 事務局（情報処理学会 コンピュータセキュリティ研究会 PWS組織委員会）
+本戦を始めるときは、新しいルール・配布物を確認してから `main_round/` に作業を追加します。予備戦の資料をそのまま本戦の仕様として扱わないでください。

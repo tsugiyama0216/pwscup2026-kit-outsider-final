@@ -29,18 +29,18 @@ token.txtやトークン入り提出ZIPは、この整理フォルダには含�
 
 [results/](results/) にはv3、v4、Daybreak、independent probe、routed-guided probe、
 最終v9のユーザー共有結果を保存しています。
-レポート中の実装参照は[元のレポート](../../attack_phase_v9/FINAL_RESULT.md)の位置を基準とします。
+レポート中の実装参照は[元のレポート](../workspace/attack_phase_v9/FINAL_RESULT.md)の位置を基準とします。
 
 ## 攻撃コードと研究記録
 
 既存のimport・データ参照を保つため、実行コードと研究ログは移動せず、
 この場所から辿れるようにしています。
 
-- 初期実装：[v1](../../attack_phase/)・[v2](../../attack_phase_v2/)・[v3](../../attack_phase_v3/)・[v4](../../attack_phase_v4/)
-- 後期実装：[v5](../../attack_phase_v5/)・[v6](../../attack_phase_v6/)・[v7](../../attack_phase_v7/)・[v8](../../attack_phase_v8/)・[v9](../../attack_phase_v9/)
-- 別系統：[Daybreak](../../attack_phase_daybreak/)・[Daybreak independent](../../attack_phase_daybreak_independent/)
-- [全研究ログ・検証出力](../../local-output/)（不採用実験を含む）
-- [全作業アーカイブの説明](../../research_archive/README.md)
+- 初期実装：[v1](../workspace/attack_phase/)・[v2](../workspace/attack_phase_v2/)・[v3](../workspace/attack_phase_v3/)・[v4](../workspace/attack_phase_v4/)
+- 後期実装：[v5](../workspace/attack_phase_v5/)・[v6](../workspace/attack_phase_v6/)・[v7](../workspace/attack_phase_v7/)・[v8](../workspace/attack_phase_v8/)・[v9](../workspace/attack_phase_v9/)
+- 別系統：[Daybreak](../workspace/attack_phase_daybreak/)・[Daybreak independent](../workspace/attack_phase_daybreak_independent/)
+- [全研究ログ・検証出力](../workspace/local-output/)（不採用実験を含む）
+- [全作業アーカイブの説明](../workspace/research_archive/README.md)
 - [本戦へ再開する際の引き継ぎ](../../CODEX_HANDOFF.md)
 
 元の提出CSV・結果ファイルも残しています。このフォルダは予備戦の固定コピーで、

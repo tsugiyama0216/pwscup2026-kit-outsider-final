@@ -1,34 +1,32 @@
-# PWSCUP2026 Codex instructions
+# PWSCUP2026 repository instructions
 
 ## Scope and authorization
 
-- This repository is the private working repository for the authorized PWSCUP2026 privacy competition.
-- Attack work must remain within the contest datasets, rules, local shadow worlds, and official submission format.
-- Do not repurpose techniques or data against real people or systems outside the competition.
+- This is the private repository for the authorized PWSCUP2026 privacy competition. Keep all work within contest datasets and rules; do not target real people or systems outside it.
+- Inspect Git status before edits and preserve unrelated user changes.
+- Read `CODEX_HANDOFF.md` before attack work or submission advice. Read `prelim/workspace/AGENTS.md` and its handoff before changing preliminary code.
+- Do not submit to CodaBench, push to GitHub, merge into main, or consume an official attempt without the user's explicit instruction. Never rewrite history or force-push for this reorganization.
+- Never print or newly commit live token contents, token-bearing ZIPs, actual downloaded B/B_self/A_bg, virtual environments or caches. Existing private token history was retained at the owner's informed request; this is not permission to duplicate live credentials.
 
-## Start every task
+## Repository boundaries
 
-- Read `CODEX_HANDOFF.md` before changing the attack implementation or advising on a submission.
-- Treat the live-score values and remaining-submission count in that handoff as the current baseline until the user supplies newer official feedback.
-- Inspect `git status` before editing. Preserve unrelated user changes.
+- `prelim/` contains all preliminary-round artifacts, historical implementations, research and the exact starter/practice snapshot used for that round.
+- `prelim/anonymization/anonymization-submitted-v5/` is the anonymization submission, NOT attack v5. Its live token stays local and ignored.
+- `prelim/attack/` contains the final v9 pair, 17 earlier candidate pairs and six official result JSONs. It is a handoff collection; canonical reproduction inputs/code remain in `prelim/workspace/`.
+- `prelim/old_attack_study_materials/` explains initial v1, not final v9. Preserve the DOCX originals as historical evidence.
+- `prelim/workspace/` preserves the old execution layout. Run its historical module commands from there. Relative paths in historical reports use that directory as their base unless stated otherwise.
+- `main_round/` is reserved for future main-round work. It currently contains only a README; no main-round data or result is available.
+- See `REPOSITORY_LAYOUT.md` for path migration and the file tree. Do not move source packages individually without checking cross-version imports and hash-gated input paths.
 
-## Operational rules
+## Verification
 
-- Use `starter/.venv/Scripts/python.exe`; a separate system Python installation is not required.
-- Never print, commit, or duplicate the contents of `token.txt` outside ignored local submission archives.
-- Do not submit to CodaBench, push to GitHub, or consume an official submission attempt without the user's explicit instruction.
-- Keep candidate directories under `submissions/prelim/team24/` limited to `F_mia.csv` and `F_aia.csv`.
-- Build token-bearing ZIPs only with `python -m attack_phase_v5.package_submission_v5` and require the official validator to pass.
-- After code changes, run `python -m unittest discover -v`. Rebuild and revalidate any affected candidate and ZIP.
-- Do not claim a local shadow score as a predicted leaderboard score.
+- From the repository root, `python -m unittest discover -v` runs the preliminary suite through `test_prelim_workspace.py`. Alternatively run the same command inside `prelim/workspace/`.
+- Use the project's existing Python environment; a new system-wide installation is unnecessary. New-clone setup runs inside `prelim/workspace/`.
+- Rebuild and revalidate affected candidates when changing algorithms. Path-only archival organization must preserve submitted CSV, feedback, target manifest and DOCX bytes.
+- `prelim/workspace/archive_prelim_work.py` prepares the secret-scanned Git-root-relative manifest and supports `--verify-staged`. Keep the root `.gitattributes` exact-byte policy.
 
-## Current workflow
+## Final preliminary result
 
-- The preliminary attack handoff folder is `prelim/attack/`: final v9 CSV pair, 17 historical candidate pairs, six official result JSONs, report and hash manifest. These are byte-identical additive copies; canonical source code/data paths remain unchanged. Keep main-round and defense files out of this folder.
-- Preliminary submissions are exhausted. The user submitted v9 guarded and reported a final measured total of 0.3407, up from routed-guided v6's 0.3004. Read `attack_phase_v9/FINAL_RESULT.md` and `official_feedback/guarded_final.json`. v7 itself is unsubmitted, so its comparative performance is unknown. Await the main-round distribution/rules before new attack work.
-- v9's four new research branches failed adoption checks. The deployed guarded composition retained v4 MIA and the measured positive AIA winners, with v7 on seven formerly zero targets. Five of those targets (6/8/17/18/19) scored positively; 7/9 stayed zero. Do not attribute the gain to rejected new methods or forecast main-round performance from it.
-- The user explicitly authorized upload of all work to the existing private repository and accepted retention of the pre-existing live-token history after being informed it was unrotated. Do not rewrite history or force-push. Exclude live token files, token-bearing ZIPs, caches, and actual raw B/B_self/A_bg from new archive content; preserve local copies. Selected research text under ignored `local-output/` is intentionally archived; consult `research_archive/README.md` and its manifest.
-- The user supplied actual preliminary B/B_self/A_bg/schema in `C:/Users/takut/Downloads/PWSCup2026_prelim_team24_アウトサイダー_outsider/`. `participant_data/` is a different practice world; never silently substitute it for actual data. New production generation must use the hash-gated `attack_phase_v8.actual_inputs` loader with an explicit actual directory.
-- Historical v4 and Daybreak submissions are actual-data outputs; they can be reproduced from the newly supplied inputs. Preserve their measured baselines and rare/ceiling guards unless a change has evidence.
-- Do not call correlated shadow observations independent trials, or convert shadow improvements into a leaderboard prediction. AIA shadows must respect the home-prefecture private-block sampling. MIA has exactly 313 private and 736 shared rows across 29 peers.
-- Never splice individual rows using leaderboard-derived private truth. Use public contest inputs and local truth-known experiments; save and report negative validation results as well as positive ones.
+- The user submitted v9 guarded and reported 0.3407. No preliminary attempts remain.
+- Read `prelim/workspace/attack_phase_v9/FINAL_RESULT.md`; local shadow scores are not leaderboard predictions. v7 itself was not submitted and v9's four new research methods were rejected.
+- Actual preliminary inputs remain in the user-supplied Downloads directory. `prelim/workspace/participant_data/` is practice data, not a substitute. Await main-round rules/data before new attack work.

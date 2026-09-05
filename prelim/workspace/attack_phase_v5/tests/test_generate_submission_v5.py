@@ -19,10 +19,17 @@ from attack_phase_v5.blend_feedback_winners import (
     blend_target_winners,
     load_aia_per_target,
 )
-from attack_phase_v5.package_submission_v5 import package_candidate
+from attack_phase_v5.package_submission_v5 import package_candidate, parse_args
 
 
 class V5InputIntegrityTests(unittest.TestCase):
+    def test_default_token_path_follows_anonymization_submission_rename(self) -> None:
+        with patch("sys.argv", ["package_submission_v5", "--candidate-dir", "candidate", "--out", "unused.zip"]):
+            args = parse_args()
+        prelim_root = Path(__file__).resolve().parents[3]
+        self.assertEqual(args.token, prelim_root / "anonymization" / "anonymization-submitted-v5" / "token.txt")
+        # Check only the destination; never read the live credential.
+
     def test_input_hash_check_accepts_exact_and_rejects_change(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "input.csv"

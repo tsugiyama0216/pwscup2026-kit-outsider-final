@@ -9,11 +9,11 @@
 PowerShell を開き、次を実行します。初回だけインターネット接続が必要です。
 
 ```powershell
-Set-Location "C:\path\to\pwscup2026-kit"
+Set-Location "C:\path\to\pwscup2026-kit-private\prelim\workspace"
 powershell -ExecutionPolicy Bypass -File .\setup-local.ps1
 ```
 
-この PC ではすでに基本環境の構築が完了しているため、通常は次の手順から再開できます。
+移設前の環境が別フォルダにある場合は、そのPython実行ファイルを明示するか、この場所で環境を作り直してください。仮想環境はGitに含めていません。
 
 ## 2. 防御・自己採点・攻撃・ZIP検証を一括実行する
 

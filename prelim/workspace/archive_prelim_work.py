@@ -14,13 +14,31 @@ import json
 import re
 import subprocess
 import zipfile
-from pathlib import Path
+from pathlib import Path, PurePosixPath
+from collections.abc import Iterable
 
 
-ROOT = Path(__file__).resolve().parent
+WORKSPACE_ROOT = Path(__file__).resolve().parent
+ROOT = WORKSPACE_ROOT.parents[1]
+WORKSPACE_PREFIX = WORKSPACE_ROOT.relative_to(ROOT).as_posix()
 RESEARCH_EXTENSIONS = {".py", ".md", ".json", ".csv"}
-MANIFEST = "research_archive/prelim-2026-manifest.json"
-PATHSPEC = "local-output/prelim-archive-pathspec.nul"
+MANIFEST = f"{WORKSPACE_PREFIX}/research_archive/prelim-2026-manifest.json"
+PATHSPEC = f"{WORKSPACE_PREFIX}/local-output/prelim-archive-pathspec.nul"
+KIT_SAMPLE_TOKEN_PATHS = {
+    f"{WORKSPACE_PREFIX}/participant_data/token.txt",
+    f"{WORKSPACE_PREFIX}/participant_data/sample_submissions/token.txt",
+}
+KIT_SAMPLE_ZIP_RELATIVE_PATHS = {
+    "participant_data/sample_submissions/attack_sub.zip",
+    "participant_data/sample_submissions/process_sub.zip",
+}
+KIT_SAMPLE_ZIP_PATHS = {
+    f"{WORKSPACE_PREFIX}/{path}" for path in KIT_SAMPLE_ZIP_RELATIVE_PATHS
+}
+CACHE_PARTS = {
+    "__pycache__", ".venv", ".tools", ".uv-cache", ".cache",
+    ".pytest_cache", ".mypy_cache", ".ipynb_checkpoints",
+}
 FORBIDDEN_RAW_HASHES = {
     "7A7AA39E16FA5C76EE9C8DC009928373AEC6CF47E7B1BD10DC4E6899B5D2AB3A",
     "297354A3C909FBA6BF4D33053CF91EFA9139892BF5269050A5607B86E0F33E35",
@@ -37,20 +55,50 @@ def git_paths(*arguments: str) -> set[str]:
     return {p.decode("utf-8") for p in data.split(b"\0") if p}
 
 
+def workspace_relative_path(path: str) -> str:
+    """Accept Git-root paths and the historical workspace-relative API."""
+    normalized = PurePosixPath(path.replace("\\", "/")).as_posix()
+    prefix = WORKSPACE_PREFIX + "/"
+    return normalized[len(prefix):] if normalized.startswith(prefix) else normalized
+
+
+def is_research_path(path: str) -> bool:
+    return workspace_relative_path(path).startswith("local-output/")
+
+
 def excluded_reason(path: str) -> str | None:
-    item = Path(path)
+    item = PurePosixPath(path.replace("\\", "/"))
     if item.name.lower() == "token.txt" or item.name.lower().startswith(".env"):
         return "credential file; not part of new archive"
-    if "__pycache__" in item.parts or item.suffix.lower() in {".pyc", ".pyo"}:
-        return "regenerable bytecode cache"
-    if path.startswith("local-output/"):
-        if item.suffix.lower() == ".zip":
-            return "submission archive may contain live token"
+    if (any(part.lower() in CACHE_PARTS or part.lower().endswith(".egg-info")
+            for part in item.parts)
+            or item.suffix.lower() in {".pyc", ".pyo"}):
+        return "regenerable execution environment or cache"
+    relative = workspace_relative_path(path)
+    if item.suffix.lower() == ".zip" and relative not in KIT_SAMPLE_ZIP_RELATIVE_PATHS:
+        return "submission archive may contain live token"
+    if is_research_path(path):
         if item.suffix.lower() not in RESEARCH_EXTENSIONS:
             return "not an allowlisted research text artifact"
-    if path.startswith("submissions/") and item.suffix.lower() == ".zip":
-        return "submission archive may contain live token"
     return None
+
+
+def assert_staged_scope(index_paths: Iterable[str], expected_paths: Iterable[str]) -> None:
+    """Reject credentials/caches and unexamined additions anywhere in the index.
+
+    The two original public kit/practice token files are retained deliberately.
+    No other token path is exempt, including renamed anonymization submissions.
+    This function only inspects names; it never reads or reports token contents.
+    """
+    indexed = set(index_paths)
+    forbidden = sorted(path for path in indexed
+                       if path not in KIT_SAMPLE_TOKEN_PATHS and excluded_reason(path))
+    if forbidden:
+        raise ValueError("excluded file is present in the staged tree: " + ", ".join(forbidden))
+    unexpected = sorted(indexed - set(expected_paths) - KIT_SAMPLE_TOKEN_PATHS)
+    if unexpected:
+        raise ValueError("staged paths are absent from the inspected manifest: "
+                         + ", ".join(unexpected))
 
 
 def scan_payload(payload: bytes, secret_values: list[bytes]) -> list[str]:
@@ -94,8 +142,7 @@ def verify_staged_manifest() -> None:
         if stage != b"0":
             raise ValueError("unmerged index is not an archive")
         index[path.decode("utf-8")] = oid.decode("ascii")
-    if "submissions/prelim/team24/submitted-v5/token.txt" in index:
-        raise ValueError("live token is still present in the current staged tree")
+    assert_staged_scope(index, (entry["path"] for entry in entries))
     reader = subprocess.Popen(["git", "cat-file", "--batch"], cwd=ROOT,
                               stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     hashes, problems = {}, []
@@ -148,7 +195,7 @@ def main() -> None:
         if value not in secrets:
             secrets.append(value)
     selected = git_paths("ls-files") | git_paths("ls-files", "--others", "--exclude-standard")
-    research_root = ROOT / "local-output"
+    research_root = WORKSPACE_ROOT / "local-output"
     selected.update(p.relative_to(ROOT).as_posix() for p in research_root.rglob("*") if p.is_file())
     selected.discard(MANIFEST)
     selected.discard(PATHSPEC)
@@ -166,15 +213,14 @@ def main() -> None:
             raise ValueError(f"file exceeds the private Git archive size gate: {relative}")
         matches = scan_payload(payload, secrets)
         if path.suffix.lower() == ".zip":
-            if relative not in {"participant_data/sample_submissions/attack_sub.zip",
-                                "participant_data/sample_submissions/process_sub.zip"}:
+            if relative not in KIT_SAMPLE_ZIP_PATHS:
                 raise ValueError(f"unexpected non-submission ZIP in archive selection: {relative}")
             matches.extend(scan_existing_sample_zip(payload, secrets))
         if matches:
             findings.append({"path": relative, "reasons": matches})
         entries.append({"path": relative, "bytes": len(payload),
                         "sha256": hashlib.sha256(payload).hexdigest().upper(),
-                        "kind": "research_output" if relative.startswith("local-output/") else "workspace_artifact"})
+                        "kind": "research_output" if is_research_path(relative) else "workspace_artifact"})
     if findings:
         # Print paths/categories only, never any matched content or credential hash.
         print(json.dumps({"secret_scan": "FAIL", "findings": findings}, indent=2))

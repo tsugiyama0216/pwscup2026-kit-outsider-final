@@ -123,7 +123,6 @@ def package_candidate(
 
 
 def parse_args() -> argparse.Namespace:
-    team_dir = REPO_ROOT / "submissions" / "prelim" / "team24"
     parser = argparse.ArgumentParser(
         description="v5 candidateをtoken付き提出ZIPへ梱包し、公式validatorで検査します。"
     )
@@ -131,7 +130,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--token",
         type=Path,
-        default=team_dir / "submitted-v5" / "token.txt",
+        default=REPO_ROOT.parent / "anonymization" / "anonymization-submitted-v5" / "token.txt",
     )
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument(
