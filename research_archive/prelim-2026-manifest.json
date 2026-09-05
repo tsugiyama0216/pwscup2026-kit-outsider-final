@@ -6,8 +6,8 @@
   "history": "existing token history retained at the owner's explicit request; live token excluded from current new archive",
   "not_a_guarantee_all_possible_secrets_are_detected": true,
   "existing_kit_sample_zip_members_scanned_in_memory": true,
-  "file_count": 1781,
-  "total_bytes": 154135659,
+  "file_count": 1827,
+  "total_bytes": 162832004,
   "files": [
     {
       "path": ".gitattributes",
@@ -23,14 +23,14 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 3793,
-      "sha256": "0B4F54E21AC3E7B298BD673EBF1A996E3C9DB1307D253671242DDD2A18E1915D",
+      "bytes": 4104,
+      "sha256": "1E6D2BD8891A9BA4DAA9D6236BCCBB7E2950133360745F94A7F66A26A80833A8",
       "kind": "workspace_artifact"
     },
     {
       "path": "CODEX_HANDOFF.md",
-      "bytes": 16227,
-      "sha256": "E6012577149B966678D364872D7594399B79370FC6D48131B8DC5543EF6088E9",
+      "bytes": 16672,
+      "sha256": "B7E39DC0961578B1128E4AFF955BF0B58EF17F71F813666667A07ACC4CFE19B5",
       "kind": "workspace_artifact"
     },
     {
@@ -53,8 +53,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10829,
-      "sha256": "BCC48E2A3909214190B9B5F3E0884ECFF37E06AB23B18A320B4A876C585D44EF",
+      "bytes": 11007,
+      "sha256": "85C10947195E4CB478AF0EE768C84F41151364B5DC9CB968AC510FF17CF688F3",
       "kind": "workspace_artifact"
     },
     {
@@ -9922,9 +9922,285 @@
       "kind": "workspace_artifact"
     },
     {
+      "path": "prelim/README.md",
+      "bytes": 164,
+      "sha256": "F7B432E4CE62885AFFC9BB9FD784BE654181F9D0B15648D2DFDFCF1F99FF63C5",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/README.md",
+      "bytes": 2526,
+      "sha256": "0C03047DCD5AAEB87768474A4D5C6EDDF007D82B56A44ED340277C12AEFA2648",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-daybreak-blue/F_aia.csv",
+      "bytes": 84940,
+      "sha256": "340BD8DD0571A15C52FA30B6328265450DBDC2E5689DD51934C28EC3F833FE20",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-daybreak-blue/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "8236A9A572306C79BE2D417FCA8F6BA395BCA1F93BA3E90DC99642A2010A4BB2",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-daybreak-independent/F_aia.csv",
+      "bytes": 85496,
+      "sha256": "BDEA52C1FD7F77F9CF7054E8C9D64F3307B455521318FD73495B28A86BCF35E1",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-daybreak-independent/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "760D4FE12B4296DE4712D2AF133E6165F93446E9A9794CDA56BADF6868F68294",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v1/F_aia.csv",
+      "bytes": 103760,
+      "sha256": "679CEE2530C2C72B3D94D924028E698912C8D323AB3A79B08CE760593194D960",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v1/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "B91D8EEAA732DDE2A2EE37B1A9F4B0A2023F38806AD6AC9759746A32D0B17B1E",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v2/F_aia.csv",
+      "bytes": 84940,
+      "sha256": "340BD8DD0571A15C52FA30B6328265450DBDC2E5689DD51934C28EC3F833FE20",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v2/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "B91D8EEAA732DDE2A2EE37B1A9F4B0A2023F38806AD6AC9759746A32D0B17B1E",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v3/F_aia.csv",
+      "bytes": 84940,
+      "sha256": "340BD8DD0571A15C52FA30B6328265450DBDC2E5689DD51934C28EC3F833FE20",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v3/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "8236A9A572306C79BE2D417FCA8F6BA395BCA1F93BA3E90DC99642A2010A4BB2",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v4/F_aia.csv",
+      "bytes": 84399,
+      "sha256": "651D754683BCE4B6F22FD7311AB1584B01C2F42FBB73B13996303472411DFA3A",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v4/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v5-probe-independent/F_aia.csv",
+      "bytes": 85496,
+      "sha256": "BDEA52C1FD7F77F9CF7054E8C9D64F3307B455521318FD73495B28A86BCF35E1",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v5-probe-independent/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v5-structured/F_aia.csv",
+      "bytes": 84948,
+      "sha256": "A72B5B668C965DA359102EBAF7051228940C05D467C3945C920832C7F43B51DC",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v5-structured/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v5-tail12/F_aia.csv",
+      "bytes": 84948,
+      "sha256": "A72B5B668C965DA359102EBAF7051228940C05D467C3945C920832C7F43B51DC",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v5-tail12/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D47457F5A7CA3BB31599649496963F1D3EE5F05B587F1A4DC7E3B99F3F269872",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-feedback-tail15/F_aia.csv",
+      "bytes": 84924,
+      "sha256": "29C0C3AEFAC550DC2B60B731AAC2CB107817D30692A3D5CE33F747235FFEDE3F",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-feedback-tail15/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "1C580DA6A75CF068D752BE6916E4B1DDFE624AFEEF3B7CB0A97CC0D2AFD48869",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-feedback-v4-probe/F_aia.csv",
+      "bytes": 84924,
+      "sha256": "29C0C3AEFAC550DC2B60B731AAC2CB107817D30692A3D5CE33F747235FFEDE3F",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-feedback-v4-probe/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-final-aggressive-complements/F_aia.csv",
+      "bytes": 83506,
+      "sha256": "2CFDC03D9EB2A2F096BE3A872BC836CA0AAE16FF170F20F0124F85F14E7A3D82",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-final-aggressive-complements/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-final-feedback-winners/F_aia.csv",
+      "bytes": 84846,
+      "sha256": "E1D57A40DA372FC8B14E3129E386D0265170CDA7BA06EF0544F8319FF189F465",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-final-feedback-winners/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-final-horizon-edge/F_aia.csv",
+      "bytes": 80821,
+      "sha256": "6D4FF74F8FF2278E050A327F8982803F3CEBDFDEF5024F548FB1688FB9F761D6",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-final-horizon-edge/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-routed-guided-probe/F_aia.csv",
+      "bytes": 83714,
+      "sha256": "CCAA0A4EE58797F263E1281D5BC65E763B129A2F77DE00A1A4579DD60566129F",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-routed-guided-probe/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "70E8E689E476E9EEF54F5821846EC1B93DE04FD6A63B680849D34F720DB78AFA",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-routed-probe/F_aia.csv",
+      "bytes": 83714,
+      "sha256": "CCAA0A4EE58797F263E1281D5BC65E763B129A2F77DE00A1A4579DD60566129F",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v6-routed-probe/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v7-feedback-stack/F_aia.csv",
+      "bytes": 80379,
+      "sha256": "65AD898E8E24497AA1C415BBCBE14D8360BC35676903A069162F4F20F115EAA0",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/candidates/attack-candidate-v7-feedback-stack/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/final/F_aia.csv",
+      "bytes": 81824,
+      "sha256": "63944D5FAA2C08E5E2E40415FFBB16B3153B27EBDD052CD68D7ADB59A403A6E0",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/final/F_mia.csv",
+      "bytes": 396386,
+      "sha256": "D4D66585ACAB6713531A01B9B3BA673E860FFAC8C84536BD7FF0C46240E0128B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/manifest.json",
+      "bytes": 12608,
+      "sha256": "4F63556F3AF2B83D0061A5407B3468ED16EC7B27A9073C539BB0FD4DE87509BC",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/results/FINAL_RESULT.md",
+      "bytes": 4323,
+      "sha256": "88E70ADC203629391808A54BC9F7AD585C36358D0E302EEE40A490783892BE58",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/results/daybreak.json",
+      "bytes": 1264,
+      "sha256": "61F55FC71B5E4E1A759DFC84301A020E07F455551EA99221BC335E523BE7EF4B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/results/guarded_final.json",
+      "bytes": 1533,
+      "sha256": "E7F7A06F024154A374CD985FAA42A5D4138E9B5F0BBEDD4C44A2D85498C3F495",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/results/probe_independent.json",
+      "bytes": 1408,
+      "sha256": "D08BBD21B101134F61F12DAE27EB1A8A9EEF8454B726440C6FA7037646CA5C2C",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/results/routed_guided_probe.json",
+      "bytes": 1664,
+      "sha256": "A4D1B16FAD78EA8C0382D24E12CB02F5D5E8C3FA5B39C3045C422D2B562664B4",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/results/v3.json",
+      "bytes": 1154,
+      "sha256": "8E5C3077020321407211AEE13A6837B14EF125920887650ED358A72F85720E8B",
+      "kind": "workspace_artifact"
+    },
+    {
+      "path": "prelim/attack/results/v4.json",
+      "bytes": 1154,
+      "sha256": "A3579D160B8E0ED9AC2DB5BF140C1B7D73E2A2FCE524493985998D95C7CB753A",
+      "kind": "workspace_artifact"
+    },
+    {
       "path": "research_archive/README.md",
-      "bytes": 3417,
-      "sha256": "5B6565AFE37E3DD86C1E01FE3F8A4EC1CD93CE34532BA2F452A901554B94CF8B",
+      "bytes": 3563,
+      "sha256": "70F4B39E5B3C4F7A45837E922F5FE40896F25B0E332CCA9034E8279268887840",
       "kind": "workspace_artifact"
     },
     {
@@ -10919,10 +11195,6 @@
     },
     {
       "path": "participant_data/token.txt",
-      "reason": "credential file; not part of new archive"
-    },
-    {
-      "path": "submissions/prelim/team24/submitted-v5/token.txt",
       "reason": "credential file; not part of new archive"
     }
   ]
