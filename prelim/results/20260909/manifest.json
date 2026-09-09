@@ -1,0 +1,380 @@
+{
+  "release_date": "2026-09-09",
+  "source_file_count": 67,
+  "source_urls": {
+    "results": "https://drive.google.com/file/d/1BLiwflR7FJ9tp5lCeSkP-kJga4ByHRnB/view",
+    "truth": "https://drive.google.com/file/d/1jnYGBEX1vjSgrvzBywHjeBnYru9_H5MQ/view",
+    "attacks": "https://drive.google.com/file/d/1x1KGX_XmEMunHqEmjq8ZYMcDqx5BtQs8/view"
+  },
+  "files": [
+    {
+      "path": "sources/attack_submissions/cohort01_F.zip",
+      "bytes": 105790,
+      "sha256": "e0773dbb86e969b9a941bfb6481e73df3b5adacd23c4c3a9f645344fd74590f9"
+    },
+    {
+      "path": "sources/attack_submissions/cohort02_F.zip",
+      "bytes": 220186,
+      "sha256": "b7b8bb076e23a1e8edc826b3139bfa587c44187e35bff30c28446d51ed2a2609"
+    },
+    {
+      "path": "sources/attack_submissions/cohort03_F.zip",
+      "bytes": 80942,
+      "sha256": "f9a36e3f542157667bd1bd72fc27affb4ce21560411639ddf59a9c3583ac7917"
+    },
+    {
+      "path": "sources/attack_submissions/cohort04_F.zip",
+      "bytes": 109595,
+      "sha256": "d0bc305abc257b4db9b8584ee543e0619d2419db36e356db575155dae42aed79"
+    },
+    {
+      "path": "sources/attack_submissions/cohort05_F.zip",
+      "bytes": 183952,
+      "sha256": "170a2f373798c331d152109cba5b97a919f56270ef95de25e04d744f10b269bc"
+    },
+    {
+      "path": "sources/attack_submissions/cohort06_F.zip",
+      "bytes": 79697,
+      "sha256": "24a2157a011123199f557770558e4133ba842ab5c17d6da2f3dcd0c3de93b356"
+    },
+    {
+      "path": "sources/attack_submissions/cohort07_F.zip",
+      "bytes": 208888,
+      "sha256": "440918ff526a71fa8ad0879a02012e97a66f9c75dd4084baa199860b0536107d"
+    },
+    {
+      "path": "sources/attack_submissions/cohort08_F.zip",
+      "bytes": 80489,
+      "sha256": "221c56490498bf27d8147209a1a63ae185694bc2a2ec03da5cdac62065a0298a"
+    },
+    {
+      "path": "sources/attack_submissions/cohort09_F.zip",
+      "bytes": 196391,
+      "sha256": "45577e6e7440f545b41097ab4f0f28faba048d1775322d74279a269adad723ed"
+    },
+    {
+      "path": "sources/attack_submissions/cohort10_F.zip",
+      "bytes": 71809,
+      "sha256": "e24004e075785e7ffaf0ee87ba4bc67f76702da758a306503664bc736ee3eef1"
+    },
+    {
+      "path": "sources/attack_submissions/cohort12_F.zip",
+      "bytes": 86190,
+      "sha256": "de9de614484701bbad24576d6f1e19303cdf88531fa83a22900741c91553bf1e"
+    },
+    {
+      "path": "sources/attack_submissions/cohort13_F.zip",
+      "bytes": 80228,
+      "sha256": "6c33b3546014b480974d6d84a2898a48faea9bdb5f3deb787dc7c8e5ee25e766"
+    },
+    {
+      "path": "sources/attack_submissions/cohort17_F.zip",
+      "bytes": 70763,
+      "sha256": "df2a4688136d724de21834dc92f51acc43e4fe545d2866b380d1d41c0c6428aa"
+    },
+    {
+      "path": "sources/attack_submissions/cohort18_F.zip",
+      "bytes": 225621,
+      "sha256": "b10c5a3494200cc3c86fe6284d7065911bc39e7833a5ca27964e53a054833344"
+    },
+    {
+      "path": "sources/attack_submissions/cohort19_F.zip",
+      "bytes": 76740,
+      "sha256": "2f998ab76b4a09394b2a090a239861c394b8202f58616a9e07d4cfe311eecb95"
+    },
+    {
+      "path": "sources/attack_submissions/cohort20_F.zip",
+      "bytes": 21159,
+      "sha256": "a5cee83d58d7fce71a486ca6a9eca72954ffbf58bfc47c93bd00cc6d5e31e7a8"
+    },
+    {
+      "path": "sources/attack_submissions/cohort22_F.zip",
+      "bytes": 100546,
+      "sha256": "0cbf247fd592dfc128a1a158e71358fe4deeb2472ffbb7a7dac067dc057bb5e1"
+    },
+    {
+      "path": "sources/attack_submissions/cohort23_F.zip",
+      "bytes": 112344,
+      "sha256": "91ded012005d1b54145adcff0229ff531657268c1e94cef4d0037fed28e2ff2f"
+    },
+    {
+      "path": "sources/attack_submissions/cohort24_F.zip",
+      "bytes": 70474,
+      "sha256": "f9c278ad1ed80d7d7b580a0ac851d8a651f1a5c683331aa4cf0134f7a8a2a092"
+    },
+    {
+      "path": "sources/attack_submissions/cohort26_F.zip",
+      "bytes": 94569,
+      "sha256": "61aae77b4ee9dc321e41f36af27eba5f42397042b65ff0f016013ecde440223d"
+    },
+    {
+      "path": "sources/attack_submissions/cohort29_F.zip",
+      "bytes": 203346,
+      "sha256": "7566ecb0abfb309aa1633f2929dcb8b8b6e9dcbec4db2ff1078df43e94909214"
+    },
+    {
+      "path": "sources/attack_submissions/README_攻撃フェーズの提出物.md",
+      "bytes": 1468,
+      "sha256": "4eb5dda45d2be45901ebe772d4cb9cfae23bcf87774d5310935a232d51a10903"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_1.csv",
+      "bytes": 10864,
+      "sha256": "53ebcaca3c44b34ea299de8551f5c236a48c158f486c2832d8fa3b09afc9f167"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_10.csv",
+      "bytes": 10872,
+      "sha256": "fa3cbfb7dabe3b06f0b377efd113b29447ffb42a2c85152d23918336131556d1"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_12.csv",
+      "bytes": 10865,
+      "sha256": "6691bf1ea44bf111d3ec1fbc5de46de9c63a49a5be4a900d75f6fde613d6104a"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_13.csv",
+      "bytes": 10869,
+      "sha256": "4a9a31040ba770c233513ac45be720cbf7f25dfa98baf8ff53aa93db5c13c0fe"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_17.csv",
+      "bytes": 10879,
+      "sha256": "48cbdb85f37fdfdacf5d907ef5b39ac274fb0697e217ee97c90341c1093bf1c3"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_18.csv",
+      "bytes": 10871,
+      "sha256": "6a218c1287f9973b633dec8e3c7b27dff185983faadd38975ba7615b26a19f07"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_19.csv",
+      "bytes": 10875,
+      "sha256": "549e28c1c1f2de6034af57c50b5979b5fc1007e7109f1fc9072dcbec8f66c613"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_2.csv",
+      "bytes": 10873,
+      "sha256": "eb7165e19e8f9a8476314666525dac77cb46b127d460b7ffea83dc7b5cf5af65"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_20.csv",
+      "bytes": 10879,
+      "sha256": "f3209696e1921b316f6ef72bac31ff6c9858c618e03334d3c4412d2dfe347fe0"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_22.csv",
+      "bytes": 10869,
+      "sha256": "ddb40d36af92d874121987a718d78cfbbf6c19e42fe7bda744e468d8d4b8e5c0"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_23.csv",
+      "bytes": 10872,
+      "sha256": "7d731cfc0a9890c70b91debaefb9b6467899d65638070e591a50cef183a832e7"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_24.csv",
+      "bytes": 10874,
+      "sha256": "130c7be3a8850760af1ae585b1f840fe0ecc26fa828fd4430b835c19befb5ad1"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_26.csv",
+      "bytes": 10870,
+      "sha256": "c959b36c1631c852a32c5251602b2941edd88ee541e093415308b25596819428"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_29.csv",
+      "bytes": 10878,
+      "sha256": "c82cc067257555ef446d202e086f3b424c1ab30dfa0fea773fbd708decbd36eb"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_3.csv",
+      "bytes": 10872,
+      "sha256": "50b07fb14fdfbf68f591d9f95916ff905f43efb81979c6d4a0d1e5f571f0ce30"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_4.csv",
+      "bytes": 10876,
+      "sha256": "637cb22bd995a4a8ba96136d2a111ecfb29332e51330bbfee086ed703e61683a"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_5.csv",
+      "bytes": 10869,
+      "sha256": "d2ace48549146e7dacf531ba7c539e5115ae026ecaec3ab4654e7dd911b2c225"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_6.csv",
+      "bytes": 10866,
+      "sha256": "bdaf981057adcc89a3fdfb972ddaf1ccc5cd37fdb245b569290e51087aa168fc"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_7.csv",
+      "bytes": 10863,
+      "sha256": "cf5eb8c83591c131de8d0839e76664752910fa8eb07add37cd5af62db5d39f5f"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_8.csv",
+      "bytes": 10873,
+      "sha256": "b423de12fae6034a2ddab071c28c307cbc8b543cbd79a48a2985e61df674c553"
+    },
+    {
+      "path": "sources/ground_truth/aia_truth_9.csv",
+      "bytes": 10864,
+      "sha256": "f2e835b2d70586efc19ed6918897f8b8fbbc583b7358f897acec921e60867457"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_1.csv",
+      "bytes": 12106,
+      "sha256": "8b1eb7de2bb17f1e3dd9c9c42918257a09152f65a9fe936d76865837ae959586"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_10.csv",
+      "bytes": 12343,
+      "sha256": "2966e467e8d206aa1c82915a2f9bf7ba4fc36ad6df9e047311b3ec43bdcfa38d"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_12.csv",
+      "bytes": 12047,
+      "sha256": "320fd5a0202796b5a016cea51e8ca20eef9464ceeb330902af0331f7590a6172"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_13.csv",
+      "bytes": 12317,
+      "sha256": "56d4f989d781d63ba1e54a090100c11c5a627242b5b134b482c753a0b2131479"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_17.csv",
+      "bytes": 12123,
+      "sha256": "fa598ea9d925d609444bad9b12c2ce1e3b411af73c56434fec6b1db20037761f"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_18.csv",
+      "bytes": 12322,
+      "sha256": "7c993785500f657dbfb84e8406145f00f1cb1c5f6efe4a15fa451587bf0e51ba"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_19.csv",
+      "bytes": 12058,
+      "sha256": "4477df26af7b9ff5bb38e444b0fcb6aa453d9ff36f18d662903c4861347f96a2"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_2.csv",
+      "bytes": 12049,
+      "sha256": "8030a089afc726488d2c608eda2e7c4620af2c808f977bd3ac5c4df3687f21f7"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_20.csv",
+      "bytes": 12343,
+      "sha256": "abc017b4b1792b212d13a8b3c7429d010020a4b165e681d16d98505ef2b3ea43"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_21.csv",
+      "bytes": 12325,
+      "sha256": "fd4b6bb20c6291ef0c081811b86368303ed15a5696360594320c4d863c501f1a"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_22.csv",
+      "bytes": 12051,
+      "sha256": "af1f71acc9676400f176aa86463af4c6eddf27e85d957b2a1b0fc4aff8e7eebf"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_23.csv",
+      "bytes": 11722,
+      "sha256": "ce5f4b9b3c2ccf3c66fcdefe41d209a21814b1244a3409b433ab28e1ad7495a7"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_24.csv",
+      "bytes": 12337,
+      "sha256": "42b0754d77c5c2e2776e93988dd99f1d50d314d8d6debf7625505ff0709e40b0"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_26.csv",
+      "bytes": 12018,
+      "sha256": "be353fa569254d646f8a2d5cd34a5831a0b5d393f7dafeadbc32820dd8334232"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_29.csv",
+      "bytes": 12031,
+      "sha256": "e722304eb9d757df81d42bfdca75ce05c6e830547a7a8a3902cdc0e0032007c9"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_3.csv",
+      "bytes": 12333,
+      "sha256": "caf9b12f00e065c41767277ffcae14a4ab0add91735d28b610537ca16e7dd4da"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_4.csv",
+      "bytes": 12306,
+      "sha256": "96aff67b955b1c49cf426e9281a43c0704614b5a493009d6db4f42dde31d0737"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_5.csv",
+      "bytes": 12329,
+      "sha256": "98ac8311393eef03ebd0d7c4277e39c26204a4148f2325c17dc14680ec24cf55"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_6.csv",
+      "bytes": 12335,
+      "sha256": "53d1a14abf4af4957b56e857d3f55240c8c309ba70cb4539cf62f5e66085356b"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_7.csv",
+      "bytes": 12065,
+      "sha256": "54ffb1ef3560b680ecba82bc9d1d937ad19ce5fb58b75593872583f819a7fb75"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_8.csv",
+      "bytes": 12342,
+      "sha256": "b31784241ca15a1afd6e6a2ae33a40006054deba354fa7af3722a3a7f7bec06b"
+    },
+    {
+      "path": "sources/ground_truth/pool_ids_9.csv",
+      "bytes": 12046,
+      "sha256": "62f0b55b96c0db68724eeca2aa9bb157923e55d210c5b8c4592e7c3eb603c3de"
+    },
+    {
+      "path": "sources/ground_truth/README_予備戦の正解データ.md",
+      "bytes": 2249,
+      "sha256": "c104371e100804586eae4fa71c8b2f9eff6516d41eba0119a2fbc21bac27738c"
+    },
+    {
+      "path": "sources/公開用結果表_20260909.xlsx",
+      "bytes": 54473,
+      "sha256": "8d6380feafa50a850b28aa50eb4b04cd0ffe132ca15904dc0c84b85fd8ff6508"
+    }
+  ],
+  "verification": {
+    "attack_csv_hashes_match_workbook_meta": 42,
+    "team24_final_csv_byte_matches": 2,
+    "scored_cohorts": 21,
+    "listed_cohorts": 22,
+    "truth_pool_files": 22,
+    "truth_aia_files": 21,
+    "pool_rows_per_file": 1049,
+    "aia_rows_per_file": 326,
+    "aia_member_rows_per_file": 163,
+    "aia_control_rows_per_file": 163,
+    "summary_u_anon_score_and_ranks_checked": 21,
+    "team24_attack_power": 0.34066814461322326,
+    "team24_mia_power": 0.15792307692307692,
+    "team24_aia_power": 0.18274506769014637,
+    "aia_missing_pair": {
+      "attacker": 4,
+      "target": 23,
+      "matrix_cell": "加工者x攻撃者_AIA!E19",
+      "published_attack_power": 0.1822037946511402,
+      "mia_mean_20_plus_aia_mean_19": 0.18220379465114014,
+      "mia_mean_20_plus_aia_sum_divided_by_20": 0.17578591261089083,
+      "status": "Published official value retained; organizer clarification not requested."
+    }
+  },
+  "rulebook": {
+    "path": "main_round/rulebook/PWS_Cup2026_ルールブック_main-process-20260912.pdf",
+    "version": "main-process-20260912",
+    "pages": 25,
+    "sha256": "9290c6e98b85214ca691bb90ff961196642c72d85348810f8df36741489885f2",
+    "git_blob_sha1": "4909c5b7d08a4aa307a2fb2c08ea0178dc15ac98",
+    "upstream_commit": "c045f7f6756ecbf858d634faf5ac278797bb0119",
+    "published_utc": "2026-09-09T02:54:15Z"
+  }
+}

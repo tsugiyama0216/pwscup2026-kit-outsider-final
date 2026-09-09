@@ -15,7 +15,7 @@
 - `prelim/attack/` contains the final v9 pair, 17 earlier candidate pairs and six official result JSONs. It is a handoff collection; canonical reproduction inputs/code remain in `prelim/workspace/`.
 - `prelim/old_attack_study_materials/` explains initial v1, not final v9. Preserve the DOCX originals as historical evidence.
 - `prelim/workspace/` preserves the old execution layout. Run its historical module commands from there. Relative paths in historical reports use that directory as their base unless stated otherwise.
-- `main_round/` is reserved for future main-round work. It currently contains only a README; no main-round data or result is available.
+- `main_round/rulebook/` contains the official main-process-20260912 PDF and a change summary verified on 2026-09-09. No main-round data, scoring kit or result is available yet; the email announces distribution on 2026-09-12 at 09:00 JST.
 - See `REPOSITORY_LAYOUT.md` for path migration and the file tree. Do not move source packages individually without checking cross-version imports and hash-gated input paths.
 
 ## Verification
@@ -27,6 +27,6 @@
 
 ## Final preliminary result
 
-- The user submitted v9 guarded and reported 0.3407. No preliminary attempts remain.
+- The user submitted v9 guarded. The 2026-09-09 workbook confirms attack power 0.3406681446132233 (rank 4) and overall score 0.4223063973063974 (rank 17). The previously reported 0.3407 is rounded attack power. See `prelim/results/20260909/README.md`; no preliminary attempts remain.
 - Read `prelim/workspace/attack_phase_v9/FINAL_RESULT.md`; local shadow scores are not leaderboard predictions. v7 itself was not submitted and v9's four new research methods were rejected.
 - Actual preliminary inputs remain in the user-supplied Downloads directory. `prelim/workspace/participant_data/` is practice data, not a substitute. Await main-round rules/data before new attack work.

@@ -1,6 +1,8 @@
 # PWSCup2026 — team24 作業リポジトリ
 
-予備戦の作業は **[`prelim/`](prelim/README.md)** に集約しました。本戦は [`main_round/`](main_round/README.md) で別管理します（現在は案内のみ）。
+予備戦の作業は **[`prelim/`](prelim/README.md)** に集約しました。本戦は [`main_round/`](main_round/README.md) で別管理します。
+
+**9月9日の予備戦確定結果：team24の攻撃力は0.3406681446132233（4位）、総合得点は0.4223063973063974（17位）です。** [結果公開の整理・原本・訂正事項](prelim/results/20260909/README.md)を追加しました。本戦版ルールブック **main-process-20260912** の[原本と変更点](main_round/rulebook/README.md)も保存しています。
 
 | 探したいもの | 場所 |
 |---|---|

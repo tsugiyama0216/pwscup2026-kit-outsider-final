@@ -2,6 +2,8 @@
 
 予備戦は `prelim/`、本戦は `main_round/` です。リポジトリ直下には共通の案内、Git 設定、ライセンスなどを残しています。
 
+2026-09-09追加：[予備戦の結果公開](prelim/results/20260909/README.md)に確定結果・公開原本・検証記録、[本戦ルール](main_round/rulebook/README.md)にmain-process-20260912のPDF・変更点を保存しています。以下の移動先一覧は予備戦整理時の記録です。
+
 ## 主要ファイル構造
 
 ```text
@@ -51,8 +53,9 @@ pwscup2026-kit-private/
 │       ├── notebooks/               # 当時のキット付属教材
 │       ├── rulebook/                # 当時のルールブック
 │       └── setup-local.ps1 / run-practice.ps1
-└── main_round/                      # 本戦用。現時点では案内のみ
-    └── README.md
+└── main_round/                      # 本戦用。実データ・キットは配布待ち
+    ├── README.md
+    └── rulebook/                    # main-process-20260912 PDFと更新確認
 ```
 
 細かなコード・実験ファイルは省略しています。`.venv/`、キャッシュ、実トークン、トークン入り ZIP など、ローカル専用の無視対象もこのツリーには載せていません。
