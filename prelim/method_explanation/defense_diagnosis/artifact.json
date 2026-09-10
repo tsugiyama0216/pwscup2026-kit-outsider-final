@@ -1,0 +1,582 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "予備戦の匿名化：MIA・AIAで失点した理由",
+    "description": "team24匿名化v5の被攻撃結果を公式正解から再採点した分析。",
+    "sources": [
+      {
+        "id": "analysis",
+        "label": "team24被攻撃結果の再採点・診断",
+        "path": "prelim/method_explanation/defense_diagnosis/analyze.py",
+        "query": {
+          "language": "python",
+          "description": "公開された20攻撃者のF_mia/F_aiaとpool_ids/aia_truthからteam24への得点を再計算。実Cと練習診断の来歴を照合。集計のみを保存。 Pythonの実計算はanalyze.py、図表の公式表からの取得・独立照合はprepare_report_data.pyとofficial_tables.sqlを参照。",
+          "tables_used": [
+            "公開用結果表_20260909.xlsx:総括 A21:Q21",
+            "公開用結果表_20260909.xlsx:攻撃_標的別_MIA（標的24）",
+            "公開用結果表_20260909.xlsx:攻撃_標的別_AIA（標的24）",
+            "ground_truth/pool_ids_*.csv",
+            "ground_truth/aia_truth_24.csv",
+            "attack_submissions/cohort*_F.zip",
+            "anonymization-submitted-v5/C.csv",
+            "toy-attack-v5-uspec/toy_attack_report.json"
+          ],
+          "filters": [
+            "標的コホート24",
+            "自己攻撃を除く20攻撃者",
+            "予備戦2026年9月9日公開結果"
+          ],
+          "metric_definitions": {
+            "MIA": "FPR=.01のTPR。攻撃者ごと全体・希少の最大を採り平均。公式beta_chanceとK=12で換算。",
+            "AIA": "±.5年を正解としてclip((p_m-p_c)/(1-p_c),0,1)。希少はz=1.64補正。最悪攻撃者を防御失点に採る。"
+          },
+          "engine": "Python 3 (NumPy, pandas, openpyxl; bundled pwscup2026 scorer)"
+        }
+      },
+      {
+        "id": "workbook",
+        "label": "事務局公開結果表（2026年9月9日）",
+        "path": "公開用結果表_20260909.xlsx",
+        "href": "https://drive.google.com/file/d/1BLiwflR7FJ9tp5lCeSkP-kJga4ByHRnB/view"
+      },
+      {
+        "id": "truth",
+        "label": "事務局公開正解データ",
+        "path": "README_予備戦の正解データ.md",
+        "href": "https://drive.google.com/file/d/1jnYGBEX1vjSgrvzBywHjeBnYru9_H5MQ/view"
+      },
+      {
+        "id": "submitted",
+        "label": "事務局公開攻撃提出物",
+        "path": "README_攻撃フェーズの提出物.md",
+        "href": "https://drive.google.com/file/d/1x1KGX_XmEMunHqEmjq8ZYMcDqx5BtQs8/view"
+      },
+      {
+        "id": "mia_sql",
+        "label": "MIAの攻撃者別検出率",
+        "path": "prelim/method_explanation/defense_diagnosis/official_tables.sql",
+        "query": {
+          "engine": "SQLite",
+          "language": "sql",
+          "sql": "-- Original official workbook rows, loaded unchanged into an in-memory SQLite table.\n-- MIA contributions: denominator is all 20 attackers of target24, including zero.\nSELECT 'チーム' || attacker AS attacker, attacker AS attacker_id,\n       t_j AS tpr, tpr_all AS all_tpr, tpr_rare AS rare_tpr,\n       members, rare_members,\n       t_j / (SELECT COUNT(*) FROM official_mia WHERE target = 24) AS raw_average_contribution\nFROM official_mia\nWHERE target = 24 AND t_j > 0\nORDER BY t_j DESC, attacker;",
+          "description": "公式Excelの元の行をメモリ内SQLite表へ読み込み、保存したSQLを実行。analyze.pyによる提出物・正解からの再採点とも照合済み。",
+          "tables_used": [
+            "公開用結果表_20260909.xlsx:攻撃_標的別_MIA → official_mia"
+          ],
+          "filters": [
+            "標的24",
+            "予備戦",
+            "自己攻撃を除く"
+          ],
+          "metric_definitions": {
+            "tpr": "TPR at FPR .01; max of overall and rare per attacker",
+            "aia": "Normalized member-control time accuracy excess; tau=.5 year"
+          }
+        }
+      },
+      {
+        "id": "rare_sql",
+        "label": "希少MIAの分母・検出率",
+        "path": "prelim/method_explanation/defense_diagnosis/official_tables.sql",
+        "query": {
+          "engine": "SQLite",
+          "language": "sql",
+          "sql": "-- Rare denominators and official interpolated TPR. No individual records displayed.\nSELECT attacker, members, rare_members, tpr_all AS all_tpr, tpr_rare AS rare_tpr\nFROM official_mia\nWHERE target = 24 AND rare_members > 0\nORDER BY tpr_rare DESC, attacker;",
+          "description": "公式Excelの元の行をメモリ内SQLite表へ読み込み、保存したSQLを実行。analyze.pyによる提出物・正解からの再採点とも照合済み。",
+          "tables_used": [
+            "公開用結果表_20260909.xlsx:攻撃_標的別_MIA → official_mia"
+          ],
+          "filters": [
+            "標的24",
+            "予備戦",
+            "自己攻撃を除く"
+          ],
+          "metric_definitions": {
+            "tpr": "TPR at FPR .01; max of overall and rare per attacker",
+            "aia": "Normalized member-control time accuracy excess; tau=.5 year"
+          }
+        }
+      },
+      {
+        "id": "aia_sql",
+        "label": "AIAの公式結果と全員10年の基準",
+        "path": "prelim/method_explanation/defense_diagnosis/official_tables.sql",
+        "query": {
+          "engine": "SQLite",
+          "language": "sql",
+          "sql": "-- Official target/control rates plus an independently counted constant-10 baseline.\nWITH comparison AS (\n    SELECT 'チーム' || attacker AS method,\n           CAST(ROUND(p_m * 163) AS INTEGER) AS m_correct,\n           CAST(ROUND(p_c * 163) AS INTEGER) AS c_correct,\n           p_m AS m_rate, p_c AS c_rate, loss\n    FROM official_aia WHERE target = 24 AND attacker IN (5, 19)\n    UNION ALL\n    SELECT '全員に10年',\n           SUM(CASE WHEN label = 'member' AND ABS(time - 10) <= 0.5 THEN 1 ELSE 0 END),\n           SUM(CASE WHEN label = 'control' AND ABS(time - 10) <= 0.5 THEN 1 ELSE 0 END),\n           AVG(CASE WHEN label = 'member' THEN CASE WHEN ABS(time - 10) <= 0.5 THEN 1.0 ELSE 0.0 END END),\n           AVG(CASE WHEN label = 'control' THEN CASE WHEN ABS(time - 10) <= 0.5 THEN 1.0 ELSE 0.0 END END),\n           NULL\n    FROM aia_truth_24\n)\nSELECT method, m_correct, c_correct, m_rate, c_rate,\n       COALESCE(loss, MIN(1.0, MAX(0.0, (m_rate - c_rate) / (1 - c_rate)))) AS loss\nFROM comparison ORDER BY loss DESC;",
+          "description": "公式Excelの元の行をメモリ内SQLite表へ読み込み、保存したSQLを実行。analyze.pyによる提出物・正解からの再採点とも照合済み。",
+          "tables_used": [
+            "公開用結果表_20260909.xlsx:攻撃_標的別_AIA → official_aia",
+            "ground_truth/aia_truth_24.csv → aia_truth_24"
+          ],
+          "filters": [
+            "標的24",
+            "予備戦",
+            "自己攻撃を除く"
+          ],
+          "metric_definitions": {
+            "tpr": "TPR at FPR .01; max of overall and rare per attacker",
+            "aia": "Normalized member-control time accuracy excess; tau=.5 year"
+          }
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# 予備戦の匿名化：MIA・AIAで失点した理由"
+      },
+      {
+        "id": "summary",
+        "type": "markdown",
+        "body": "## 匿名性を制限した主因は、希少群でのMIAである\n\n**匿名性を制限したのはMIA成分0.5777であり、AIA成分は0.2000であった。** 匿名性は0.4223、総合順位は採点対象21チーム中17位である。これらの成分は採点規則で補正・集約した失点であり、「57.8％の人が特定された」「20％の追跡年数が漏れた」という意味ではない。\n\n公開された全20攻撃者の提出ファイルと正解データを突き合わせ、team24へのMIA・AIAの得点を再現した。その結果、①MIAの失点がごく少人数の希少メンバーの検出に集中したこと、②最大のAIA失点が追跡終了付近の予測と候補選別によって生じたこと、③保存済みのv5自己診断は実提出版とは異なる練習世界の評価だったことが確認できた。\n\n改善の優先順位は、希少群に対するMIAの検証、候補選別を組み合わせるAIAの検証、生成に使わない対照を用いた評価の整備である。AIMの特定の集計やA_bgによる後処理が失点を生んだという因果関係は、今回の資料だけでは確定できない。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "definitions",
+        "type": "markdown",
+        "body": "## 評価対象と得点の読み方\n\n対象はteam24が予備戦に提出した匿名化v5のC、1,049行である。分析日は2026年9月10日、公式資料の公開日は9月9日である。自チームの攻撃力0.3407は、この防御側の評価とは別の指標である。\n\n**MIA**は、攻撃者が持つ候補のうち、どの人がteam24の元データBにも含まれていたかを推測する攻撃である。誤検出率（FPR）1％での検出率（TPR）を全候補と希少候補で別々に求め、大きい方を攻撃者ごとに採る。さらに20攻撃者で平均し、偶然水準の補正と規定の換算を行う。\n\n**AIA**は、年齢などが示された326人について追跡年数timeを推測する攻撃である。163人がBのメンバー、163人が対照であり、両群に希少者が13人ずつ含まれる。予測誤差が±0.5年以内なら正解である。メンバーの正解率が対照をどれだけ上回ったかを補正し、全体・希少群の悪い方を採る。防御側では最も成功した攻撃者の値を使う。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "mia",
+        "type": "markdown",
+        "body": "## MIAは、全体の平均で見えにくい希少者の検出で失点した\n\n全候補でのTPRは**20攻撃者中16者が0**であり、その平均は1.31％であった。一方、希少群も含めた悪い方を採ると、補正前の平均は12.725％となった。両者の差は11.414ポイントであり、補正前平均の約89.7％に相当する。これは希少群の評価を加えたことによる数値上の増分であり、匿名化工程の因果寄与率ではない。\n\n下図は、補正前のTPRが正となった5攻撃者を示す。残る15攻撃者は0である。チーム1・3・5・20では希少群のTPRが採用され、チーム12では全候補のTPRが採用された。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "mia_chart_block",
+        "type": "chart",
+        "chartId": "mia_attackers"
+      },
+      {
+        "id": "mia_small",
+        "type": "markdown",
+        "body": "### 分母が1〜2人のとき、一人の検出が大きな失点につながった\n\n希少なメンバーが攻撃候補に含まれたのは6攻撃者である。チーム20は希少メンバー1人を検出して希少TPRが1.0となった。チーム1・3・5は各2人のうち少なくとも1人を、希少非メンバー全員より上位に置いていた。\n\n母集団の識別番号を使って重複を除くと、20攻撃者の候補との重なりに現れた希少メンバーは9人であり、この厳しい順位条件を満たした人は4人であった。全Bの希少者24人すべてが攻撃対象として評価されたわけではない。\n\nチーム3の0.505はROCの線形補間を含む値であり、人数として「1.01人を検出した」という意味ではない。少人数では1人の順位が大きく影響するため、全体AUCや全体平均だけでは、この弱点を十分に捉えられない。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "rare_table_block",
+        "type": "table",
+        "tableId": "rare_detail"
+      },
+      {
+        "id": "mia_calibration",
+        "type": "markdown",
+        "body": "### 偶然水準を差し引いた後にも失点が残った\n\n公式の補正前平均は0.12725、置換検定による偶然水準の95％点は0.0637037であった。公式の偶然水準を使って補正・換算すると、MIA成分0.5776936を再現できる。したがって、公式評価上の失点を「希少者が少ないので、すべて偶然だった」と説明することもできない。\n\nただし、今回の再計算では20,000回の置換検定自体は再実行せず、公表された偶然水準を使用した。生成時の別シードや別コホートでも同じ強さの検出が起こるかは未測定である。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "aia",
+        "type": "markdown",
+        "body": "## AIA最大失点は、約10年を答える相手の選別によって生じた\n\n最大の失点を与えたチーム5の提出は、**163人に約9.95〜10年、残る163人に11年**を答える構成だった。11年は今回の正解timeに対して±0.5年の範囲に入らない。提出値から確認できるのは、予測対象を二群に分けるこの構造であり、その選別アルゴリズムの実装までは公開ファイルから分からない。\n\n約10年を答えた163人には、メンバー92人、対照71人が含まれていた。そのうち正解はメンバー83人、対照63人であり、両者の正解率は50.9％と38.7％だった。補正した失点は**(83−63)÷(163−63)＝0.20**となる。\n\nこの攻撃の正解は全件、真のtimeが9.5年以上の人であった。9.5年未満の追跡年数を正しく当てた人は0人である。最大失点の説明としては、細かな発症時期の復元よりも、当たりやすい予測をメンバー側に多く割り当てたことが重要である。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "aia_table_block",
+        "type": "table",
+        "tableId": "aia_comparison"
+      },
+      {
+        "id": "aia_baseline",
+        "type": "markdown",
+        "body": "### 高い正解率だけではAIAの強さを判断できない\n\n全員に10年と答える単純な基準でも、メンバー142人・対照145人が正解となる。しかし対照の方が当たっているため、AIA失点は0である。チーム5はこの基準より正解人数が少なくても、メンバーと対照の差を作ることで0.20を得た。\n\nチーム19も163人に9.5年、残りに主に0年を答え、失点0.1810を与えていた。こうした候補選別を組み合わせる攻撃を、転帰の最近傍予測だけで代用すると弱点を見落とす。なお、team24に対する公式AIAでは、誤差の範囲を差し引いた希少群の成分は20攻撃者すべて0であり、最大失点は全体側から生じている。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "checks",
+        "type": "markdown",
+        "body": "## 追加診断は候補選別の有効性を示したが、原因の確定には至らない\n\n確認用に、公開された年齢・SBP・TG・HDL・ALTの5変数から、CとA_bgのどちらに近いかで候補を並べ、上位163人に10年、残りに11年と答える方法を固定して評価した。TGとALTは対数変換し、A_bgの標準偏差で尺度をそろえ、近い3行までの平均二乗距離を用いた。正解ラベルを使った学習やパラメータ探索は行っていない。\n\n自チームCではAIA失点0.1194、うち全体側は0.1000だった。A_bgの密度だけを使う比較は0、県の頻度比だけを使う比較は0.0108だった。候補選別を防御検証に含める必要性を示す結果である。\n\nただし、team24の課題と正解を固定して参照するCだけを他チームのものへ替えると、チーム20のCでも0.1287、チーム23のCでも0.1194となった。**この簡易攻撃の成功を、team24のC固有の漏洩だけで説明することはできない。** 公開された他チームの攻撃コードを再現した実験でもない。今後はCなし・他チームC・別コホートの比較を残し、選別の成功とCによる追加的な情報を区別する必要がある。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "validation_gap",
+        "type": "markdown",
+        "body": "## 最も明確な改善点は、提出前の検証条件である\n\n保存済みのv5自己診断レポートは、C・B・A_bgのハッシュが実際の予備戦提出時のものとすべて異なっていた。**このレポートは練習世界の評価であり、提出Cの耐性を直接確認した証拠にはならない。** 調べた保存場所では、実提出Cに対応する同形式の自己診断レポートは見つからなかった。\n\n当時の診断には次の限界が明記されていた。\n\n1. MIAはB全体とA_bgから作った候補・対照を使い、実際の攻撃者ごとに25〜27人程度だけが重なる条件を再現していなかった。\n2. AIAの対照に使ったA_bgは、数値の復号や転帰ドナーにも使われていた。対照側まで当たりやすくなり、メンバーとの差を小さく見積もる可能性がある。\n3. 検証したのは主に1-NN・DOMIASによるMIAと最近傍によるAIAであり、今回確認した「候補を選んで約10年を答えるAIA」を十分に代表していなかった。\n\n記録は結果を非公式と明記しており、評価の限界を隠していたわけではない。問題は、この診断で信号が出なかったことを、競技の攻撃条件に対する十分な防御確認へつなげられる設計になっていなかった点である。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "implementation",
+        "type": "markdown",
+        "body": "## 転帰の付け替えだけでは、共変量を使うMIAの入力は変わらない\n\n保存済みの親Cと提出v5を比較すると、年齢や検査値などの共変量10列は完全に同じであった。転帰3列は、出力時の丸めを除くと15行が変化し、onsetが9行、deathが6行で変わっていた。\n\nしたがって、共変量だけから推測するMIAでは、最後の転帰の付け替えによって入力は改善されない。当時の練習世界のMIA結果も、v4とv5で同じだった。転帰の付け替えはU_specを改善する操作として意味があったが、共変量に残るMIAの弱点への対策は別に必要である。\n\n提出Cの13列全部、共変量10列、数値7列の組合せについて、Bとの一致行は小数6桁に丸めても0であった。一方、数値7列がA_bgの行と一致するCの行は68行であり、転帰3列は全1,049行でA_bgのいずれかと一致した。これは生成後の公開ドナー利用という実装に整合する。**単純なBの行のコピーが今回の失点原因だったという証拠は得られていない。** 一致行が0でも、集団の分布を通じてメンバーを推測できる可能性は残る。",
+        "sourceId": "analysis"
+      },
+      {
+        "id": "uncertainty",
+        "type": "markdown",
+        "body": "## AIMやA_bgのどの工程が原因だったかは、まだ断定できない\n\n希少群の特徴を保つ集計や後処理が、希少メンバーを推測する手掛かりを残した可能性はある。しかし、公開された攻撃提出物は最終的な予測値であり、攻撃者の学習コードや特徴量の内訳ではない。今回の再採点だけで「このクロス集計が悪かった」「A_bgの付け替えが漏洩を起こした」「ρを下げれば解決する」とは結論できない。\n\nまた、DPに基づく生成を採用したことと、競技のMIA・AIA失点が0になることは別に検証する必要がある。OpenDPの説明では、DPの集計表から合成行を作る処理は後処理として扱う。今回のA_bgによる変換も、固定した設定でDP出力と公開情報だけを使うという条件を満たす部分は、その考え方に沿う。[OpenDP公式説明](https://docs.opendp.org/en/stable/getting-started/statistical-modeling/synthetic-data.html)\n\n当時の選択監査にも、非公開の自己採点値を見てから改善方針を決めた人の判断を含む過程全体について、あらかじめ固定されたρ＝0.1の処理とは主張しないと記録されている。この記録は全体保証の範囲に関する留保であり、それ自体が今回の検出を引き起こした証拠ではない。"
+      },
+      {
+        "id": "next",
+        "type": "markdown",
+        "body": "## 次は希少MIAと候補選別AIAを、同じ条件で比較する\n\n1. **実提出版と評価対象を固定する。** C、B、正解、設定の対応をハッシュで確認し、練習世界と実データを混ぜない。正解公開後の今回の分析は原因探索に使い、採用判断は調整に使っていない世界で行う。\n2. **希少MIAを必須の検証にする。** 全体のTPRとAUCに加え、希少候補の順位、対象メンバー数、誤検出率1％でのTPRを残す。希少メンバーが1〜2人だけ重なる条件も含める。\n3. **AIAに候補選別を組み込む。** 全員10年、通常の転帰予測、候補選別後の10年予測を比較する。Cなし・A_bgのみ・別Cも対照にし、対照データを生成時のドナーと分離する。\n4. **匿名化工程を一つずつ比較する。** 区分番号を値に戻した段階、希少群の調整後、転帰の付け替え後を、同じ攻撃と同じ正解で比較する。保存されていない中間段階を、最終Cから正確に再現できるとは扱わない。\n5. **有用性と匿名性を同時に採否条件にする。** 現在のUは0.5336なので、Anonだけ改善してもそこが総合得点の上限になる。一方、Anonを0.4223のままにしてU_specだけを改善しても総合得点は上がらない。\n\n残る問いは、希少な人の検出が別の生成シードでも再現するか、どの特徴量・工程でその順位が上がるか、候補選別AIAが独立した対照でも成立するかである。現時点の証拠に基づけば、生成方式の全面変更を決める前に、この比較条件を整えることが優先である。",
+        "sourceId": "analysis"
+      }
+    ],
+    "charts": [
+      {
+        "id": "mia_attackers",
+        "title": "攻撃者ごとのMIA検出率",
+        "subtitle": "FPR=1％。全体・希少群の大きい方。正の値を持つ5攻撃者を掲載し、残り15者は0。",
+        "type": "bar",
+        "dataset": "mia_positive",
+        "sourceId": "mia_sql",
+        "valueFormat": "percent",
+        "encodings": {
+          "x": {
+            "field": "attacker",
+            "type": "nominal",
+            "label": "攻撃者"
+          },
+          "y": {
+            "field": "tpr",
+            "type": "quantitative",
+            "label": "検出率"
+          }
+        },
+        "options": {
+          "orientation": "horizontal"
+        },
+        "palette": {
+          "kind": "sequential",
+          "name": "blue"
+        },
+        "legend": {
+          "position": "none"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "rare_detail",
+        "title": "希少メンバーが含まれた6攻撃者",
+        "subtitle": "分母は攻撃者が持つ候補中の希少メンバー数。希少TPRは希少候補だけで算定。",
+        "dataset": "rare",
+        "sourceId": "rare_sql",
+        "defaultSort": {
+          "field": "rare_tpr",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "attacker",
+            "label": "攻撃者"
+          },
+          {
+            "field": "rare_members",
+            "label": "希少メンバー数"
+          },
+          {
+            "field": "all_tpr",
+            "label": "全体TPR",
+            "format": "percent"
+          },
+          {
+            "field": "rare_tpr",
+            "label": "希少TPR",
+            "format": "percent"
+          }
+        ]
+      },
+      {
+        "id": "aia_comparison",
+        "title": "AIAの正解人数と補正後の失点",
+        "subtitle": "メンバー・対照は各163人。正解率の高さだけでは失点の大小は決まらない。",
+        "dataset": "aia",
+        "sourceId": "aia_sql",
+        "defaultSort": {
+          "field": "loss",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "method",
+            "label": "予測"
+          },
+          {
+            "field": "m_correct",
+            "label": "メンバー正解人数"
+          },
+          {
+            "field": "c_correct",
+            "label": "対照正解人数"
+          },
+          {
+            "field": "m_rate",
+            "label": "メンバー正解率",
+            "format": "percent"
+          },
+          {
+            "field": "c_rate",
+            "label": "対照正解率",
+            "format": "percent"
+          },
+          {
+            "field": "loss",
+            "label": "AIA失点",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "audience": "technical",
+      "scope": "retrospective diagnosis; no causal attribution to a generation stage",
+      "chart_contract": "One horizontal single-root blue bar compares five positive MIA attacker TPRs at zero baseline. Exact all/rare denominators in table; AIA table preserves numerator/denominator.",
+      "source_reconciliation": "Archived workbook bytes differ from Downloads; all seven sheets' cell values match. Attack and C hashes match official metadata. 20 MIA/AIA rows reproduced. Official beta_chance reused.",
+      "privacy": "Only aggregate results; no B/A_bg rows, direct record identifiers or credentials in this artifact.",
+      "required_structure": "Summary; MIA/AIA evidence; definitions placed before evidence; diagnostic method; validation gaps and uncertainty; next steps and open questions. No extra time trend: single release."
+    }
+  },
+  "snapshot": {
+    "version": 1,
+    "status": "ready",
+    "datasets": {
+      "mia_positive": [
+        {
+          "attacker": "チーム20",
+          "attacker_id": 20,
+          "tpr": 1,
+          "all_tpr": 0,
+          "rare_tpr": 1,
+          "members": 26,
+          "rare_members": 1,
+          "raw_average_contribution": 0.05
+        },
+        {
+          "attacker": "チーム3",
+          "attacker_id": 3,
+          "tpr": 0.505,
+          "all_tpr": 0.037037037037037,
+          "rare_tpr": 0.505,
+          "members": 27,
+          "rare_members": 2,
+          "raw_average_contribution": 0.02525
+        },
+        {
+          "attacker": "チーム1",
+          "attacker_id": 1,
+          "tpr": 0.5,
+          "all_tpr": 0.074074074074074,
+          "rare_tpr": 0.5,
+          "members": 27,
+          "rare_members": 2,
+          "raw_average_contribution": 0.025
+        },
+        {
+          "attacker": "チーム5",
+          "attacker_id": 5,
+          "tpr": 0.5,
+          "all_tpr": 0.111111111111111,
+          "rare_tpr": 0.5,
+          "members": 27,
+          "rare_members": 2,
+          "raw_average_contribution": 0.025
+        },
+        {
+          "attacker": "チーム12",
+          "attacker_id": 12,
+          "tpr": 0.04,
+          "all_tpr": 0.04,
+          "rare_tpr": null,
+          "members": 25,
+          "rare_members": 0,
+          "raw_average_contribution": 0.002
+        }
+      ],
+      "rare": [
+        {
+          "attacker": 20,
+          "members": 26,
+          "rare_members": 1,
+          "all_tpr": 0,
+          "rare_tpr": 1
+        },
+        {
+          "attacker": 3,
+          "members": 27,
+          "rare_members": 2,
+          "all_tpr": 0.037037037037037,
+          "rare_tpr": 0.505
+        },
+        {
+          "attacker": 1,
+          "members": 27,
+          "rare_members": 2,
+          "all_tpr": 0.074074074074074,
+          "rare_tpr": 0.5
+        },
+        {
+          "attacker": 5,
+          "members": 27,
+          "rare_members": 2,
+          "all_tpr": 0.111111111111111,
+          "rare_tpr": 0.5
+        },
+        {
+          "attacker": 22,
+          "members": 26,
+          "rare_members": 1,
+          "all_tpr": 0,
+          "rare_tpr": 0
+        },
+        {
+          "attacker": 26,
+          "members": 26,
+          "rare_members": 1,
+          "all_tpr": 0,
+          "rare_tpr": 0
+        }
+      ],
+      "aia": [
+        {
+          "method": "チーム5",
+          "m_correct": 83,
+          "c_correct": 63,
+          "m_rate": 0.50920245398773,
+          "c_rate": 0.386503067484663,
+          "loss": 0.2
+        },
+        {
+          "method": "チーム19",
+          "m_correct": 77,
+          "c_correct": 58,
+          "m_rate": 0.47239263803681,
+          "c_rate": 0.355828220858896,
+          "loss": 0.180952380952381
+        },
+        {
+          "method": "全員に10年",
+          "m_correct": 142,
+          "c_correct": 145,
+          "m_rate": 0.871165644171779,
+          "c_rate": 0.889570552147239,
+          "loss": 0
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "analysis",
+      "label": "team24被攻撃結果の再採点・診断",
+      "path": "prelim/method_explanation/defense_diagnosis/analyze.py",
+      "query": {
+        "language": "python",
+        "description": "公開された20攻撃者のF_mia/F_aiaとpool_ids/aia_truthからteam24への得点を再計算。実Cと練習診断の来歴を照合。集計のみを保存。 Pythonの実計算はanalyze.py、図表の公式表からの取得・独立照合はprepare_report_data.pyとofficial_tables.sqlを参照。",
+        "tables_used": [
+          "公開用結果表_20260909.xlsx:総括 A21:Q21",
+          "公開用結果表_20260909.xlsx:攻撃_標的別_MIA（標的24）",
+          "公開用結果表_20260909.xlsx:攻撃_標的別_AIA（標的24）",
+          "ground_truth/pool_ids_*.csv",
+          "ground_truth/aia_truth_24.csv",
+          "attack_submissions/cohort*_F.zip",
+          "anonymization-submitted-v5/C.csv",
+          "toy-attack-v5-uspec/toy_attack_report.json"
+        ],
+        "filters": [
+          "標的コホート24",
+          "自己攻撃を除く20攻撃者",
+          "予備戦2026年9月9日公開結果"
+        ],
+        "metric_definitions": {
+          "MIA": "FPR=.01のTPR。攻撃者ごと全体・希少の最大を採り平均。公式beta_chanceとK=12で換算。",
+          "AIA": "±.5年を正解としてclip((p_m-p_c)/(1-p_c),0,1)。希少はz=1.64補正。最悪攻撃者を防御失点に採る。"
+        },
+        "engine": "Python 3 (NumPy, pandas, openpyxl; bundled pwscup2026 scorer)"
+      }
+    },
+    {
+      "id": "workbook",
+      "label": "事務局公開結果表（2026年9月9日）",
+      "path": "公開用結果表_20260909.xlsx",
+      "href": "https://drive.google.com/file/d/1BLiwflR7FJ9tp5lCeSkP-kJga4ByHRnB/view"
+    },
+    {
+      "id": "truth",
+      "label": "事務局公開正解データ",
+      "path": "README_予備戦の正解データ.md",
+      "href": "https://drive.google.com/file/d/1jnYGBEX1vjSgrvzBywHjeBnYru9_H5MQ/view"
+    },
+    {
+      "id": "submitted",
+      "label": "事務局公開攻撃提出物",
+      "path": "README_攻撃フェーズの提出物.md",
+      "href": "https://drive.google.com/file/d/1x1KGX_XmEMunHqEmjq8ZYMcDqx5BtQs8/view"
+    },
+    {
+      "id": "mia_sql",
+      "label": "MIAの攻撃者別検出率",
+      "path": "prelim/method_explanation/defense_diagnosis/official_tables.sql",
+      "query": {
+        "engine": "SQLite",
+        "language": "sql",
+        "sql": "-- Original official workbook rows, loaded unchanged into an in-memory SQLite table.\n-- MIA contributions: denominator is all 20 attackers of target24, including zero.\nSELECT 'チーム' || attacker AS attacker, attacker AS attacker_id,\n       t_j AS tpr, tpr_all AS all_tpr, tpr_rare AS rare_tpr,\n       members, rare_members,\n       t_j / (SELECT COUNT(*) FROM official_mia WHERE target = 24) AS raw_average_contribution\nFROM official_mia\nWHERE target = 24 AND t_j > 0\nORDER BY t_j DESC, attacker;",
+        "description": "公式Excelの元の行をメモリ内SQLite表へ読み込み、保存したSQLを実行。analyze.pyによる提出物・正解からの再採点とも照合済み。",
+        "tables_used": [
+          "公開用結果表_20260909.xlsx:攻撃_標的別_MIA → official_mia"
+        ],
+        "filters": [
+          "標的24",
+          "予備戦",
+          "自己攻撃を除く"
+        ],
+        "metric_definitions": {
+          "tpr": "TPR at FPR .01; max of overall and rare per attacker",
+          "aia": "Normalized member-control time accuracy excess; tau=.5 year"
+        }
+      }
+    },
+    {
+      "id": "rare_sql",
+      "label": "希少MIAの分母・検出率",
+      "path": "prelim/method_explanation/defense_diagnosis/official_tables.sql",
+      "query": {
+        "engine": "SQLite",
+        "language": "sql",
+        "sql": "-- Rare denominators and official interpolated TPR. No individual records displayed.\nSELECT attacker, members, rare_members, tpr_all AS all_tpr, tpr_rare AS rare_tpr\nFROM official_mia\nWHERE target = 24 AND rare_members > 0\nORDER BY tpr_rare DESC, attacker;",
+        "description": "公式Excelの元の行をメモリ内SQLite表へ読み込み、保存したSQLを実行。analyze.pyによる提出物・正解からの再採点とも照合済み。",
+        "tables_used": [
+          "公開用結果表_20260909.xlsx:攻撃_標的別_MIA → official_mia"
+        ],
+        "filters": [
+          "標的24",
+          "予備戦",
+          "自己攻撃を除く"
+        ],
+        "metric_definitions": {
+          "tpr": "TPR at FPR .01; max of overall and rare per attacker",
+          "aia": "Normalized member-control time accuracy excess; tau=.5 year"
+        }
+      }
+    },
+    {
+      "id": "aia_sql",
+      "label": "AIAの公式結果と全員10年の基準",
+      "path": "prelim/method_explanation/defense_diagnosis/official_tables.sql",
+      "query": {
+        "engine": "SQLite",
+        "language": "sql",
+        "sql": "-- Official target/control rates plus an independently counted constant-10 baseline.\nWITH comparison AS (\n    SELECT 'チーム' || attacker AS method,\n           CAST(ROUND(p_m * 163) AS INTEGER) AS m_correct,\n           CAST(ROUND(p_c * 163) AS INTEGER) AS c_correct,\n           p_m AS m_rate, p_c AS c_rate, loss\n    FROM official_aia WHERE target = 24 AND attacker IN (5, 19)\n    UNION ALL\n    SELECT '全員に10年',\n           SUM(CASE WHEN label = 'member' AND ABS(time - 10) <= 0.5 THEN 1 ELSE 0 END),\n           SUM(CASE WHEN label = 'control' AND ABS(time - 10) <= 0.5 THEN 1 ELSE 0 END),\n           AVG(CASE WHEN label = 'member' THEN CASE WHEN ABS(time - 10) <= 0.5 THEN 1.0 ELSE 0.0 END END),\n           AVG(CASE WHEN label = 'control' THEN CASE WHEN ABS(time - 10) <= 0.5 THEN 1.0 ELSE 0.0 END END),\n           NULL\n    FROM aia_truth_24\n)\nSELECT method, m_correct, c_correct, m_rate, c_rate,\n       COALESCE(loss, MIN(1.0, MAX(0.0, (m_rate - c_rate) / (1 - c_rate)))) AS loss\nFROM comparison ORDER BY loss DESC;",
+        "description": "公式Excelの元の行をメモリ内SQLite表へ読み込み、保存したSQLを実行。analyze.pyによる提出物・正解からの再採点とも照合済み。",
+        "tables_used": [
+          "公開用結果表_20260909.xlsx:攻撃_標的別_AIA → official_aia",
+          "ground_truth/aia_truth_24.csv → aia_truth_24"
+        ],
+        "filters": [
+          "標的24",
+          "予備戦",
+          "自己攻撃を除く"
+        ],
+        "metric_definitions": {
+          "tpr": "TPR at FPR .01; max of overall and rare per attacker",
+          "aia": "Normalized member-control time accuracy excess; tau=.5 year"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "datasets": {
+    "mia_positive": [
+      {
+        "attacker": "チーム20",
+        "attacker_id": 20,
+        "tpr": 1.0,
+        "all_tpr": 0.0,
+        "rare_tpr": 1.0,
+        "members": 26,
+        "rare_members": 1,
+        "raw_average_contribution": 0.05
+      },
+      {
+        "attacker": "チーム3",
+        "attacker_id": 3,
+        "tpr": 0.505,
+        "all_tpr": 0.037037037037037,
+        "rare_tpr": 0.505,
+        "members": 27,
+        "rare_members": 2,
+        "raw_average_contribution": 0.02525
+      },
+      {
+        "attacker": "チーム1",
+        "attacker_id": 1,
+        "tpr": 0.5,
+        "all_tpr": 0.074074074074074,
+        "rare_tpr": 0.5,
+        "members": 27,
+        "rare_members": 2,
+        "raw_average_contribution": 0.025
+      },
+      {
+        "attacker": "チーム5",
+        "attacker_id": 5,
+        "tpr": 0.5,
+        "all_tpr": 0.111111111111111,
+        "rare_tpr": 0.5,
+        "members": 27,
+        "rare_members": 2,
+        "raw_average_contribution": 0.025
+      },
+      {
+        "attacker": "チーム12",
+        "attacker_id": 12,
+        "tpr": 0.04,
+        "all_tpr": 0.04,
+        "rare_tpr": null,
+        "members": 25,
+        "rare_members": 0,
+        "raw_average_contribution": 0.002
+      }
+    ],
+    "rare": [
+      {
+        "attacker": 20,
+        "members": 26,
+        "rare_members": 1,
+        "all_tpr": 0.0,
+        "rare_tpr": 1.0
+      },
+      {
+        "attacker": 3,
+        "members": 27,
+        "rare_members": 2,
+        "all_tpr": 0.037037037037037,
+        "rare_tpr": 0.505
+      },
+      {
+        "attacker": 1,
+        "members": 27,
+        "rare_members": 2,
+        "all_tpr": 0.074074074074074,
+        "rare_tpr": 0.5
+      },
+      {
+        "attacker": 5,
+        "members": 27,
+        "rare_members": 2,
+        "all_tpr": 0.111111111111111,
+        "rare_tpr": 0.5
+      },
+      {
+        "attacker": 22,
+        "members": 26,
+        "rare_members": 1,
+        "all_tpr": 0.0,
+        "rare_tpr": 0.0
+      },
+      {
+        "attacker": 26,
+        "members": 26,
+        "rare_members": 1,
+        "all_tpr": 0.0,
+        "rare_tpr": 0.0
+      }
+    ],
+    "aia": [
+      {
+        "method": "チーム5",
+        "m_correct": 83,
+        "c_correct": 63,
+        "m_rate": 0.50920245398773,
+        "c_rate": 0.386503067484663,
+        "loss": 0.2
+      },
+      {
+        "method": "チーム19",
+        "m_correct": 77,
+        "c_correct": 58,
+        "m_rate": 0.47239263803681,
+        "c_rate": 0.355828220858896,
+        "loss": 0.180952380952381
+      },
+      {
+        "method": "全員に10年",
+        "m_correct": 142,
+        "c_correct": 145,
+        "m_rate": 0.871165644171779,
+        "c_rate": 0.889570552147239,
+        "loss": 0.0
+      }
+    ]
+  },
+  "queries": [
+    "-- Original official workbook rows, loaded unchanged into an in-memory SQLite table.\n-- MIA contributions: denominator is all 20 attackers of target24, including zero.\nSELECT 'チーム' || attacker AS attacker, attacker AS attacker_id,\n       t_j AS tpr, tpr_all AS all_tpr, tpr_rare AS rare_tpr,\n       members, rare_members,\n       t_j / (SELECT COUNT(*) FROM official_mia WHERE target = 24) AS raw_average_contribution\nFROM official_mia\nWHERE target = 24 AND t_j > 0\nORDER BY t_j DESC, attacker;",
+    "-- Rare denominators and official interpolated TPR. No individual records displayed.\nSELECT attacker, members, rare_members, tpr_all AS all_tpr, tpr_rare AS rare_tpr\nFROM official_mia\nWHERE target = 24 AND rare_members > 0\nORDER BY tpr_rare DESC, attacker;",
+    "-- Official target/control rates plus an independently counted constant-10 baseline.\nWITH comparison AS (\n    SELECT 'チーム' || attacker AS method,\n           CAST(ROUND(p_m * 163) AS INTEGER) AS m_correct,\n           CAST(ROUND(p_c * 163) AS INTEGER) AS c_correct,\n           p_m AS m_rate, p_c AS c_rate, loss\n    FROM official_aia WHERE target = 24 AND attacker IN (5, 19)\n    UNION ALL\n    SELECT '全員に10年',\n           SUM(CASE WHEN label = 'member' AND ABS(time - 10) <= 0.5 THEN 1 ELSE 0 END),\n           SUM(CASE WHEN label = 'control' AND ABS(time - 10) <= 0.5 THEN 1 ELSE 0 END),\n           AVG(CASE WHEN label = 'member' THEN CASE WHEN ABS(time - 10) <= 0.5 THEN 1.0 ELSE 0.0 END END),\n           AVG(CASE WHEN label = 'control' THEN CASE WHEN ABS(time - 10) <= 0.5 THEN 1.0 ELSE 0.0 END END),\n           NULL\n    FROM aia_truth_24\n)\nSELECT method, m_correct, c_correct, m_rate, c_rate,\n       COALESCE(loss, MIN(1.0, MAX(0.0, (m_rate - c_rate) / (1 - c_rate)))) AS loss\nFROM comparison ORDER BY loss DESC;"
+  ]
+}
