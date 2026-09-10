@@ -8,6 +8,7 @@
 |---|---|
 | [`anonymization/`](anonymization/README.md) | 匿名化フェーズの提出物。`anonymization-submitted-v5/C.csv` |
 | [`attack/`](attack/README.md) | 攻撃フェーズの引き継ぎ用ファイル集。最終 v9、過去候補、公式結果 |
+| [`method_explanation/`](method_explanation/README.md) | 匿名化から攻撃までを文章・図・計算例で理解する説明原稿。対話しながら更新 |
 | [`old_attack_study_materials/`](old_attack_study_materials/README.md) | 初期の攻撃手法を扱う旧学習資料。最終 v9 の仕様書ではありません |
 | [`workspace/`](workspace/README.md) | 予備戦の再現用作業環境。コード、元の候補、実験記録、当時のキット・ルール |
 

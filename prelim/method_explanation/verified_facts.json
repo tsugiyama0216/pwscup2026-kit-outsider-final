@@ -1,0 +1,176 @@
+{
+  "draft_date": "2026-09-09",
+  "source_commit": "bc0e8c5e5c72dcc955c823d8199474b5dfedb1ce",
+  "anonymization": {
+    "submitted_sha256": "efd38bf8ab973767caad34ce2b0ef9991b1e461bd7c1f9e17da06b9a847aaa14",
+    "matches_local_v5": true,
+    "shape": [
+      1049,
+      13
+    ],
+    "covariate_columns_unchanged_from_parent": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG"
+    ],
+    "rows_with_changed_outcome_triplet": 1049,
+    "parent_mechanism_rho": 0.1,
+    "workload_queries": 39,
+    "fixed_queries": 9,
+    "death_weight": 0.31,
+    "local_utility_before": 0.4160721490235696,
+    "local_utility_after": 0.5335902571150335,
+    "local_facets_before": {
+      "U_gen": 0.9485224022878931,
+      "U_spec": 0.4160721490235696,
+      "U_rare": 0.9008527883120517,
+      "U_valid": 0.847708609300239
+    },
+    "local_facets_after": {
+      "U_gen": 0.9485224022878931,
+      "U_spec": 0.5335902571150335,
+      "U_rare": 0.9008527883120517,
+      "U_valid": 0.8460913527844703
+    },
+    "selection_audit_facts": {
+      "death_weight_selected_from_practice_before_preliminary_candidate_score": true,
+      "preliminary_private_rows_used_to_fit_or_tune_death_weight": false,
+      "preliminary_candidate_alternatives_compared_with_b_self": false,
+      "preliminary_candidate_score_used_to_select_or_revert": false,
+      "preliminary_baseline_selfscore_was_known_before_the_improvement_request": true,
+      "additional_aim_release_count": 0,
+      "additional_rho_zcdp": 0.0
+    },
+    "selection_interpretation": {
+      "mechanism_step": "The transformation itself is deterministic postprocessing of the frozen DP C.csv with public A_bg/schema and the practice-selected v5 parameter, so it adds no AIM privacy budget.",
+      "selection_process": "Because the request to improve U_spec followed inspection of the local preliminary baseline self-score, the complete human-in-the-loop decision process is not claimed to be an end-to-end precommitted rho=0.1 mechanism.",
+      "bounded_action": "After fixing v5, one preliminary candidate was produced and scored once for reporting. No candidate search, score-driven parameter change, re-release, or revert was performed."
+    },
+    "evidence_files": [
+      "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-kit\\local-output\\prelim\\team24\\opendp_aim\\release-001\\privacy_report.json",
+      "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-kit\\local-output\\prelim\\team24\\opendp_aim\\postprocess-v5-uspec-001\\postprocess_report.json",
+      "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-kit\\local-output\\prelim\\team24\\opendp_aim\\release-001\\score.json",
+      "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-kit\\local-output\\prelim\\team24\\opendp_aim\\postprocess-v5-uspec-001\\score.json",
+      "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-kit\\work\\prelim\\team24\\decisions\\uspec-v5-selection-audit.json"
+    ]
+  },
+  "attack": {
+    "official_result_provenance": "Official feedback shared by the user and stored in the repository; not fetched from CodaBench today.",
+    "final_mia_identical_to_v4": true,
+    "final_aia_power": 0.18274506769014637,
+    "routed_aia_power": 0.14248115204199746,
+    "positive13_contribution": 0.1506204125415067,
+    "former_zero7_contribution": 0.032124655148639644,
+    "former_zero7_scores": {
+      "6": 0.09459459459459477,
+      "7": 0.0,
+      "8": 0.12048192771084346,
+      "9": 0.0,
+      "17": 0.11111111111111122,
+      "18": 0.08823529411764708,
+      "19": 0.22807017543859645
+    },
+    "verified_manifest_entries": 43,
+    "evidence_files": [
+      "prelim/attack/results/guarded_final.json",
+      "prelim/attack/results/routed_guided_probe.json",
+      "prelim/attack/manifest.json"
+    ]
+  },
+  "configuration_details": {
+    "verified_date": "2026-09-09",
+    "config_sha256": "3a646111a693a659862805dbc7bceaf26f9486c7bae3832d7e9b0a3a699cdf80",
+    "schema_sha256": "d0698eb89cde0901b28ddaf72cb57270d744bdb72b45f8315f75b3199f024128",
+    "config_matches_parent_report": true,
+    "schema_matches_parent_report": true,
+    "aim": {
+      "oneway": "all",
+      "oneway_split": 0.35,
+      "measure_split": 0.9,
+      "rounds": 16,
+      "max_size_mb": 32,
+      "fixed_budget_weight": 3,
+      "adaptive_budget_weight": 1
+    },
+    "model_columns": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "outcome_state",
+      "rare_flag"
+    ],
+    "synthesis": {
+      "method": "round"
+    },
+    "output_rows": 1049,
+    "age_bin_edges": [
+      40,
+      41,
+      44,
+      48,
+      55,
+      62,
+      69,
+      73,
+      74
+    ],
+    "fixed_queries": [
+      [
+        "outcome_state",
+        "age"
+      ],
+      [
+        "outcome_state",
+        "sex"
+      ],
+      [
+        "outcome_state",
+        "BMI"
+      ],
+      [
+        "outcome_state",
+        "SBP"
+      ],
+      [
+        "outcome_state",
+        "TG"
+      ],
+      [
+        "outcome_state",
+        "HDL"
+      ],
+      [
+        "outcome_state",
+        "ALT"
+      ],
+      [
+        "outcome_state",
+        "smoking"
+      ],
+      [
+        "outcome_state",
+        "FPG"
+      ]
+    ],
+    "workload_count": 39,
+    "nominal_rho_allocation": {
+      "oneway": 0.034999999999999996,
+      "fixed": 0.04875,
+      "adaptive": 0.01625
+    }
+  }
+}
