@@ -1,0 +1,47 @@
+{
+  "round": "main",
+  "phase": "anonymization",
+  "team_name": "アウトサイダー / outsider",
+  "cohort_id": 10,
+  "allocated_on": "2026-09-16",
+  "source_folder": "PWSCup2026_final_team10_アウトサイダー_outsider",
+  "repository": "tsugiyama0216/pwscup2026-kit-private",
+  "visibility": "private",
+  "authorization": "User explicitly requested local allocation and GitHub upload on 2026-09-16.",
+  "files": [
+    {
+      "path": "participant_data/A_bg.csv",
+      "bytes": 794376,
+      "sha256": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23"
+    },
+    {
+      "path": "participant_data/B.csv",
+      "bytes": 161043,
+      "sha256": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff"
+    },
+    {
+      "path": "participant_data/B_self.csv",
+      "bytes": 163149,
+      "sha256": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8"
+    },
+    {
+      "path": "participant_data/README.txt",
+      "bytes": 1969,
+      "sha256": "d95b5a87a56fc9b1ef5fafe3ade4fa749d50c5aa121991962b77c9aedef3aa24"
+    },
+    {
+      "path": "participant_data/schema.json",
+      "bytes": 2855,
+      "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+    },
+    {
+      "path": "participant_data/utility_ref.json",
+      "bytes": 1264,
+      "sha256": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee"
+    }
+  ],
+  "local_only_files": [
+    "participant_data/token.txt"
+  ],
+  "token_hash_included": false
+}

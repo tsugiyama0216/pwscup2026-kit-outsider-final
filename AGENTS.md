@@ -6,7 +6,8 @@
 - Inspect Git status before edits and preserve unrelated user changes.
 - Read `CODEX_HANDOFF.md` before attack work or submission advice. Read `prelim/workspace/AGENTS.md` and its handoff before changing preliminary code.
 - Do not submit to CodaBench, push to GitHub, merge into main, or consume an official attempt without the user's explicit instruction. Never rewrite history or force-push for this reorganization.
-- Never print or newly commit live token contents, token-bearing ZIPs, actual downloaded B/B_self/A_bg, virtual environments or caches. Existing private token history was retained at the owner's informed request; this is not permission to duplicate live credentials.
+- Never print or newly commit live token contents, token-bearing ZIPs, preliminary actual downloaded B/B_self/A_bg, virtual environments or caches. Existing private token history was retained at the owner's informed request; this is not permission to duplicate live credentials.
+- On 2026-09-16 the user explicitly authorized local allocation and upload of the supplied main-round processing data to this existing private GitHub repository. The six non-credential originals belong in `main_round/anonymization/team10/participant_data/`; `token.txt` is local and ignored. This exception applies only to that supplied main-round package; keep the repository private.
 
 ## Repository boundaries
 
@@ -15,7 +16,7 @@
 - `prelim/attack/` contains the final v9 pair, 17 earlier candidate pairs and six official result JSONs. It is a handoff collection; canonical reproduction inputs/code remain in `prelim/workspace/`.
 - `prelim/old_attack_study_materials/` explains initial v1, not final v9. Preserve the DOCX originals as historical evidence.
 - `prelim/workspace/` preserves the old execution layout. Run its historical module commands from there. Relative paths in historical reports use that directory as their base unless stated otherwise.
-- `main_round/rulebook/` contains the official main-process-20260912 PDF and a change summary verified on 2026-09-09. No main-round data, scoring kit or result is available yet; the email announces distribution on 2026-09-12 at 09:00 JST.
+- `main_round/rulebook/` contains the official main-process-20260912 PDF and a change summary verified on 2026-09-09. Main-round processing data for cohort/team10 was allocated on 2026-09-16 under `main_round/anonymization/team10/participant_data/`. The main-round scoring kit has not been added or verified, and there is no main-round result yet. Preliminary team24 and main-round team10 are different cohort assignments.
 - See `REPOSITORY_LAYOUT.md` for path migration and the file tree. Do not move source packages individually without checking cross-version imports and hash-gated input paths.
 
 ## Verification
@@ -29,4 +30,4 @@
 
 - The user submitted v9 guarded. The 2026-09-09 workbook confirms attack power 0.3406681446132233 (rank 4) and overall score 0.4223063973063974 (rank 17). The previously reported 0.3407 is rounded attack power. See `prelim/results/20260909/README.md`; no preliminary attempts remain.
 - Read `prelim/workspace/attack_phase_v9/FINAL_RESULT.md`; local shadow scores are not leaderboard predictions. v7 itself was not submitted and v9's four new research methods were rejected.
-- Actual preliminary inputs remain in the user-supplied Downloads directory. `prelim/workspace/participant_data/` is practice data, not a substitute. Await main-round rules/data before new attack work.
+- Actual preliminary inputs remain in the user-supplied Downloads directory. `prelim/workspace/participant_data/` is practice data, not a substitute. Main-round processing inputs are now available in the main-round directory; main-round attack-phase inputs have not been added.

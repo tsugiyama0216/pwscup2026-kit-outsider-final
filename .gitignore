@@ -22,6 +22,9 @@
 /prelim/workspace/submissions/**/*.zip
 /prelim/anonymization/**/token.txt
 /prelim/anonymization/**/*.zip
+/main_round/**/token.txt
+/main_round/**/*.zip
+/main_round/**/local-output/
 .env
 .env.*
 !.env.example
