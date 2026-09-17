@@ -36,6 +36,8 @@
 !/main_round/anonymization/team10/R/R1/submission/team10_R1_defense.zip
 # User requested storing the submitted R2 ZIP under R2 in this private repository on 2026-09-17.
 !/main_round/anonymization/team10/R/R2/submission/team10_R2_defense.zip
+# User requested storing R3, including its submission ZIP, in this private repository.
+!/main_round/anonymization/team10/R/R3/submission/team10_R3_defense.zip
 .env
 .env.*
 !.env.example

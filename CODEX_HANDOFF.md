@@ -20,6 +20,8 @@
 
 **2026-09-17に作成したR2を、ユーザー指定の[R2](main_round/anonymization/team10/R/R2/README.md)へ格納しました。** R1と同じ階層に提出CSV・ZIP・実装・評価記録をまとめています。モデル名とZIP名はR2のまま、CSV・ZIP・生成コード・評価レポートのバイトを保存しています。ローカル有用性U=0.7693769302515455、49テストと生成時の公式形式検証成功。ユーザーが追加の再生成確認を取り消したため、生成後のReproduceは未実行です。ユーザーは提出済みR2の非公開GitHubへの保存を依頼しており、この許可は`main_round/anonymization/team10/R/R2/submission/team10_R2_defense.zip`を含みます。こちらからCodaBenchへの送信は行いません。
 
+**2026-09-17、ユーザー提供のR2公式結果を受けて[R3](main_round/anonymization/team10/R/R3/README.md)を作成しました。** R2の保存済み合成CSVへ、集計Cox係数と共分散に基づく強度0.5の部分補正を適用します。全9係数で有意・非有意が元Bと一致。6候補を比較し、ローカルU=0.8661244917109793（U_gen=0.9187884920473647、U_spec=0.9116907071412028、U_rare=0.8661244917109793、U_valid=1）を採用しました。一般有用性はR2から微減します。R2の参照MIA=0はR3へ引き継げず、R3の攻撃耐性は未評価です。17テスト成功、提出ZIP作成。生成時の公式形式検証・再現確認の記録はR3/verification.jsonを参照してください。R1・R2は変更せず、R2の再生成も行いません。作成後の追加依頼により、R3一式と`main_round/anonymization/team10/R/R3/submission/team10_R3_defense.zip`を既存の非公開GitHubへ保存する許可を得ています。検証済みのCSV・ZIP・生成コード・評価レポートは変更せず、CodaBenchへは送信しません。R3/verification.jsonはGitHub保存前の生成検証記録として保持しています。
+
 旧ルートの実行コード・データ・研究記録は、相対配置を保って `prelim/workspace/` に移動しました。
 過去の `python -m attack_phase_...` コマンドは、先に `cd prelim/workspace` して実行します。
 詳細引き継ぎに残る過去の提出推奨・残回数は履歴であり、現在の指示ではありません。

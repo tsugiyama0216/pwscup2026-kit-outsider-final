@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-17",
+  "tests": {
+    "command": "run.ps1 -Mode Test",
+    "passed": 17,
+    "failed": 0,
+    "sandbox_note": "Initial Windows temporary-directory ACL failure; same suite passed outside sandbox."
+  },
+  "official_package_validation": true,
+  "saved_score_recomputed": true,
+  "R3_csv_reproduced_byte_for_byte": true,
+  "R2_regenerated": false,
+  "R1_R2_tracked_bytes_unchanged": true,
+  "selected_ablation_csv_matches_release": true,
+  "R3_zip_git_ignored": true,
+  "credential_present_only_in_submission_zip": true,
+  "artifacts": {
+    "C.csv": "483c2ffce37af5a66d72a73db7ada09c1a2b0b571b8d3a17966dfc529d20f54b",
+    "report.json": "692871866f19f7881613a5f30a17068aa0652007846b53e10ca5245730dd0d85",
+    "submission/team10_R3_defense.zip": "5dc5def2198737bf0fe2284333572aa5f36b4a407709e9ee5044642d95a50383"
+  },
+  "rows": 1049,
+  "columns": 13,
+  "rare_detected": 48,
+  "all_nine_cox_significance_statuses_match": true,
+  "official_submission_performed": false,
+  "github_push_performed": false
+}

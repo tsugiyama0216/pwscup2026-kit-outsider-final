@@ -16,6 +16,8 @@
 
 ## Repository boundaries
 
+- On 2026-09-17, after receiving the completed R3 submission ZIP, the user requested storing R3 under team10/R. This authorizes uploading the R3 model, evaluation records, and exactly `main_round/anonymization/team10/R/R3/submission/team10_R3_defense.zip` to the existing private repository. Preserve the verified artifact bytes and never print the token. No CodaBench submission is authorized.
+
 - `prelim/` contains all preliminary-round artifacts, historical implementations, research and the exact starter/practice snapshot used for that round.
 - `prelim/anonymization/anonymization-submitted-v5/` is the anonymization submission, NOT attack v5. Its live token stays local and ignored.
 - `prelim/attack/` contains the final v9 pair, 17 earlier candidate pairs and six official result JSONs. It is a handoff collection; canonical reproduction inputs/code remain in `prelim/workspace/`.
