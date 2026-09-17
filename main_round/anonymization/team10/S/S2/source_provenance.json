@@ -1,0 +1,85 @@
+{
+  "recorded_at_utc": "2026-09-17T05:16:28.714315+00:00",
+  "candidate": "S2",
+  "parent": "S1",
+  "round": "main",
+  "cohort_id": 10,
+  "purpose": "Fix conditional-round spurious correlation via sample; retain one released DP model for controlled diagnosis",
+  "config_changed_top_level_keys": [
+    "config_version",
+    "synthesis",
+    "public_config_provenance"
+  ],
+  "changed_generator_functions": [
+    "main",
+    "make_privacy_report",
+    "parse_args",
+    "postprocess_submission",
+    "run_aim",
+    "validate_public_configuration"
+  ],
+  "added_generator_functions": [
+    "synthesize_table",
+    "validate_synthesis"
+  ],
+  "model_files_sha256": {
+    "scripts/generate_pwscup.py": "14b958d84aa9ad080f76c3190c54593d0b3faaef92d7cca76cd9563be0eb2981",
+    "scripts/model_snapshot.py": "4c288b49044df2f12f3c8f4d02e18df69bf867034e03b3b91e717e961b31748b",
+    "scripts/build_public_config.py": "b01233d47a51c6b6815e3e91d6b60cde5f10b3422b083a493c2d8165335a7cc0",
+    "scripts/package_submission.py": "41f42f6e53d63d20b2d26fac97d96f85160006473a490a82ad6aedece32d76fc",
+    "scripts/score_submission.py": "e96ca780f707cb12dbf754e98f36f639bbb7f01ae0ee519d4a92451571bf0b5a",
+    "scripts/compare_samplers.py": "94311f25c5e1c23d10d429363bfa885b3b0fe7b01a439552ec0018032cdfcc15",
+    "scripts/evaluate_fix.py": "4f4af6e36c64eb9b3e08ae73f7c4e2efab4e0c2a94d019a926b5e9dffb8b68d0",
+    "config/aim_main_team10_S2.json": "a5ad47224a4eff430e896018a99a6a00cb1e920b4d4306ebd0cc872b7098c624",
+    "config/s1_sample_base.json": "91d4a29afafbab8cf3261436f675d864233ae658b8bb88134ff6460fd4189c3f",
+    "pyproject.toml": "5595e3c73e86402828a5a64077cb8784a8e0c9a41593e7d703596ce55cbef5f3",
+    "uv.lock": "a1ff3c6d5c2f5183851775772afeaeddf718bda1ef4e5173dd2a0bb0dfe45383",
+    "C.csv": "2af408cac6dfbc9865fcd58a5d59910bd162da817e6e46ae4da0431c30a35e70",
+    "model_snapshot.npz": "fd274d0a304455ba3e8a1095a66672d5f507bed1d2ad0b7bfc1848ec3286547d"
+  },
+  "unchanged_from_S1": {
+    "scripts/build_public_config.py": true,
+    "pyproject.toml": true,
+    "uv.lock": true
+  },
+  "generation": {
+    "private_input": "../../participant_data/B.csv",
+    "B_self_used": false,
+    "public_inputs": [
+      "../../participant_data/A_bg.csv",
+      "../../participant_data/schema.json"
+    ],
+    "dp_measurements_for_S2": 1,
+    "rho_zcdp_for_S2": 0.1,
+    "score_based_rerun_or_seed_search": false,
+    "synthesis_method": "sample",
+    "python_hash_seed": "0",
+    "dp_noise_seed_fixed": false,
+    "same_model_diagnostic_additional_dp_measurements": 0
+  },
+  "tests": {
+    "command": "python -m unittest discover -s main_round/anonymization/team10/S/S2/scripts -p test_*.py -v",
+    "environment": "existing OpenDP AIM venv",
+    "passed": 29,
+    "failed": 0,
+    "groups": {
+      "snapshot_roundtrip_and_validation": 9,
+      "package_lineage_and_runner": 14,
+      "sampler_regression": 6
+    }
+  },
+  "independent_review": {
+    "P0_P1_findings": 0,
+    "S1_frozen_artifacts_unchanged": true
+  },
+  "python": "3.12.13 (main, Jul 18 2026, 17:08:38) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "opendp": "0.15.1",
+    "mbi": "1.1.0",
+    "numpy": "2.5.1",
+    "pandas": "2.3.3",
+    "polars": "1.36.1",
+    "scipy": "1.18.0"
+  },
+  "scope": "Local repair, one S2 generation, diagnostics, packaging and utility scoring. No CodaBench submission or GitHub upload."
+}

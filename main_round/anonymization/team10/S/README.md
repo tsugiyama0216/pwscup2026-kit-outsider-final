@@ -8,4 +8,7 @@
 
 | モデル | 方式 | 状態 |
 |---|---|---|
-| [S1](S1/README.md) | 予備戦提出v5（OpenDP AIM＋公開A_bg後処理）を本戦データへ適用 | C.csv・提出ZIP作成、形式検証済み。本戦自己採点U=0（相関指標が0）。未提出 |
+| [S1](S1/README.md) | 予備戦提出v5（OpenDP AIM＋公開A_bg後処理）を本戦データへ適用 | U=0。ユーザー提供の公式結果とローカル採点が一致。元の成果物を保存 |
+| [S2](S2/README.md) | S1の条件付きround不具合をsampleで回避、DPモデル保存を追加 | C.csv・提出ZIP作成、公式形式検証済み。ローカルU=0.548413。CodaBench未提出 |
+
+S1の0点検証は [検証記録](research/s1_official_verification_20260917/README.md)、修正の効果は [S2の同じモデルによる比較](S2/README.md#同じモデルによる不具合の確認) を参照してください。

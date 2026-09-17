@@ -13,8 +13,10 @@
 | 配布原本6ファイルのサイズ・SHA-256 | [anonymization/team10/data_manifest.json](anonymization/team10/data_manifest.json) |
 | 本戦ルールブック | [rulebook/README.md](rulebook/README.md) |
 
-配布README記載の加工フェーズ提出締切は **2026-09-25 09:00 JST** です。2026-09-17に [S1](anonymization/team10/S/S1/README.md) で予備戦提出v5の方法を本戦データへ適用し、C.csvと提出ZIPを作成しました。本戦公式キットの形式検証は合格、自己採点U=0（新しい相関指標が0点）です。CodaBenchへの提出は行っていません。予備戦の得点に新指標を遡及適用することはありません。
+配布README記載の加工フェーズ提出締切は **2026-09-25 09:00 JST** です。2026-09-17に [S1](anonymization/team10/S/S1/README.md) の公式返却値（ユーザー提供）とローカルU=0が一致することを確認しました。修正版 [S2](anonymization/team10/S/S2/README.md) は条件付きroundをsampleに変更し、ローカルU=0.5484134662543412、29テスト・公式形式検証成功、提出ZIP作成済みです。S2のCodaBench提出は未実施です。予備戦の得点に新指標を遡及適用することはありません。
 
 今回のデータ保存はユーザーの明示的依頼による、既存の**非公開**GitHubリポジトリへの保存です。2026-09-17の明示的指定により、認証用 `token.txt` も `anonymization/team10/participant_data/` と `anonymization/team10/模擬提出データ/` の2か所でGit管理します。追加の明示的な許可により、[S1のトークン入り提出ZIP](anonymization/team10/S/S1/submission/team10_S1_defense.zip)も保存します。トークンの内容は文書やログに記載しません。
 
 予備戦の作業は [`../prelim/`](../prelim/README.md) に保存しています。本戦の実装を始めるときは、ルール・採点キット・データの差分を確認してから、必要な実装を明示的に引き継ぎます。予備戦の練習データや得点を、本戦データ・本戦での性能とみなさないでください。
+
+S2完了後の2026-09-17の依頼により、S2の成果物・検証記録・トークン入り提出ZIPも、同じ非公開GitHubリポジトリのmainへの反映対象としました。

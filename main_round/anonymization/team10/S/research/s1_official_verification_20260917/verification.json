@@ -1,0 +1,431 @@
+{
+  "verified_at_utc": "2026-09-17T04:55:20.664342+00:00",
+  "feedback_provenance": "User pasted in chat on 2026-09-17; no server job ID/log/remote artifact provided",
+  "official_release": "main-process-20260912",
+  "official_commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+  "source_files_verified_against_release_archive": 25,
+  "archive_sha256": "7d842aec5416f0ebd7d72bcc71d623e4ef8618d3b4308f53c3b8f95d9681d8ca",
+  "reference_hashes": {
+    "B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+    "utility_ref.json": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee"
+  },
+  "original_manifest_matches": true,
+  "B_self_without_rare_equals_B": true,
+  "frozen_s1_sha256": {
+    "C.csv": "2e2f03966479e80d11c0bd28465232f857f2b41aed99e3df4055008045a162db",
+    "score.json": "3a48a05b46d3f82d9b53271aa634f0bccd9adfede226721393ed1db31d211f46",
+    "validation.json": "dc9378ad57929e67208b7bec8b785c650414d02417913a5221b8e6f1da22a9c2",
+    "privacy_report.json": "1f6c78cf8bf446dd48948584e9a6d86d1fc287a33ee07b6554c202a964f01364",
+    "release_ledger.json": "535c2327a445ae1651c3f1694a4b8be1590a3518876ece6b394ff2548e71daed",
+    "config\\aim_main_team10_S1.json": "6cd1c636a8d50dd8f81c214f1144edd2c1ec1f609e0ffc215b35b96331891d38",
+    "scripts\\generate_pwscup.py": "fc0ba951e3313f16ba71fcbba5dcee4ff5857aac3c8139553f9292a7885b8beb",
+    "submission\\team10_S1_defense.zip": "ee4029270662d273a6c47fb92e1572ac24fd10d7d13f626f60b6a825c4ef0b5a"
+  },
+  "frozen_s1_unchanged": true,
+  "package": {
+    "members": [
+      "C.csv",
+      "token.txt"
+    ],
+    "C_exact_bytes_match": true,
+    "token_matches_team10_source": true,
+    "token_or_token_hash_recorded": false,
+    "rows": 1049,
+    "columns": 13,
+    "validation_errors": []
+  },
+  "facet_comparison": {
+    "U_gen": {
+      "user_supplied_official": 0.0,
+      "rescored_zip": 0.0,
+      "previous_local": 0.0,
+      "absolute_difference_official_local": 0.0,
+      "matches_at_1e_12": true
+    },
+    "U_spec": {
+      "user_supplied_official": 0.6335930906419508,
+      "rescored_zip": 0.633593090641952,
+      "previous_local": 0.633593090641952,
+      "absolute_difference_official_local": 1.2212453270876722e-15,
+      "matches_at_1e_12": true
+    },
+    "U_rare": {
+      "user_supplied_official": 0.835808936825886,
+      "rescored_zip": 0.835808936825886,
+      "previous_local": 0.835808936825886,
+      "absolute_difference_official_local": 0.0,
+      "matches_at_1e_12": true
+    },
+    "U_valid": {
+      "user_supplied_official": 0.8824909051373203,
+      "rescored_zip": 0.8824909051373203,
+      "previous_local": 0.8824909051373203,
+      "absolute_difference_official_local": 0.0,
+      "matches_at_1e_12": true
+    }
+  },
+  "rare_gate_matches": true,
+  "rare_gate": {
+    "rare_detected_C": 66,
+    "rare_gate": 8,
+    "rare_true_B": 24,
+    "gated_axes": []
+  },
+  "independent_scipy_correlation": {
+    "pairs": [
+      {
+        "pair": [
+          "age",
+          "sex"
+        ],
+        "B": -0.05401696404246186,
+        "C": 0.6898266768875236,
+        "absolute_difference": 0.7438436409299855
+      },
+      {
+        "pair": [
+          "age",
+          "BMI"
+        ],
+        "B": 0.02132274962470713,
+        "C": 0.7202420415546154,
+        "absolute_difference": 0.6989192919299082
+      },
+      {
+        "pair": [
+          "age",
+          "SBP"
+        ],
+        "B": 0.30760810807042,
+        "C": 0.6900851951893617,
+        "absolute_difference": 0.38247708711894174
+      },
+      {
+        "pair": [
+          "age",
+          "TG"
+        ],
+        "B": 0.15523304039700747,
+        "C": 0.6605613275011188,
+        "absolute_difference": 0.5053282871041114
+      },
+      {
+        "pair": [
+          "age",
+          "HDL"
+        ],
+        "B": -0.008482224240016977,
+        "C": 0.7723160702497212,
+        "absolute_difference": 0.7807982944897381
+      },
+      {
+        "pair": [
+          "age",
+          "ALT"
+        ],
+        "B": -0.029244471831026433,
+        "C": 0.7142659330682269,
+        "absolute_difference": 0.7435104048992534
+      },
+      {
+        "pair": [
+          "age",
+          "FPG"
+        ],
+        "B": 0.1614762982502093,
+        "C": 0.6503666081972825,
+        "absolute_difference": 0.4888903099470733
+      },
+      {
+        "pair": [
+          "age",
+          "smoking"
+        ],
+        "B": -0.1347876363291559,
+        "C": 0.39704029506619637,
+        "absolute_difference": 0.5318279313953522
+      },
+      {
+        "pair": [
+          "sex",
+          "BMI"
+        ],
+        "B": 0.21865755148509886,
+        "C": 0.6714157760169455,
+        "absolute_difference": 0.4527582245318466
+      },
+      {
+        "pair": [
+          "sex",
+          "SBP"
+        ],
+        "B": 0.15775696356858768,
+        "C": 0.6895850451919426,
+        "absolute_difference": 0.5318280816233549
+      },
+      {
+        "pair": [
+          "sex",
+          "TG"
+        ],
+        "B": 0.26466055040465625,
+        "C": 0.6505029392229033,
+        "absolute_difference": 0.385842388818247
+      },
+      {
+        "pair": [
+          "sex",
+          "HDL"
+        ],
+        "B": 0.6737111790284136,
+        "C": 0.7157709352125871,
+        "absolute_difference": 0.04205975618417346
+      },
+      {
+        "pair": [
+          "sex",
+          "ALT"
+        ],
+        "B": 0.425711991370879,
+        "C": 0.7452202526525412,
+        "absolute_difference": 0.3195082612816622
+      },
+      {
+        "pair": [
+          "sex",
+          "FPG"
+        ],
+        "B": 0.2831549816930646,
+        "C": 0.6406562202685123,
+        "absolute_difference": 0.35750123857544774
+      },
+      {
+        "pair": [
+          "sex",
+          "smoking"
+        ],
+        "B": 0.2776879420205714,
+        "C": 0.48194661423583357,
+        "absolute_difference": 0.20425867221526217
+      },
+      {
+        "pair": [
+          "BMI",
+          "SBP"
+        ],
+        "B": 0.3629797605446533,
+        "C": 0.7841364440617211,
+        "absolute_difference": 0.4211566835170678
+      },
+      {
+        "pair": [
+          "BMI",
+          "TG"
+        ],
+        "B": 0.3576041158791724,
+        "C": 0.7763627558539099,
+        "absolute_difference": 0.4187586399747375
+      },
+      {
+        "pair": [
+          "BMI",
+          "HDL"
+        ],
+        "B": -0.033419458527776884,
+        "C": 0.7732816832400509,
+        "absolute_difference": 0.8067011417678277
+      },
+      {
+        "pair": [
+          "BMI",
+          "ALT"
+        ],
+        "B": 0.41034957736141703,
+        "C": 0.8152898453769296,
+        "absolute_difference": 0.4049402680155126
+      },
+      {
+        "pair": [
+          "BMI",
+          "FPG"
+        ],
+        "B": 0.21139816145456808,
+        "C": 0.69058059337442,
+        "absolute_difference": 0.47918243191985194
+      },
+      {
+        "pair": [
+          "BMI",
+          "smoking"
+        ],
+        "B": 0.06453633553028511,
+        "C": 0.43759740484680304,
+        "absolute_difference": 0.37306106931651795
+      },
+      {
+        "pair": [
+          "SBP",
+          "TG"
+        ],
+        "B": 0.2700051147013357,
+        "C": 0.7738243989704223,
+        "absolute_difference": 0.5038192842690866
+      },
+      {
+        "pair": [
+          "SBP",
+          "HDL"
+        ],
+        "B": 0.09080447390826595,
+        "C": 0.7641693862511845,
+        "absolute_difference": 0.6733649123429185
+      },
+      {
+        "pair": [
+          "SBP",
+          "ALT"
+        ],
+        "B": 0.1900479971058275,
+        "C": 0.8018227123910253,
+        "absolute_difference": 0.6117747152851978
+      },
+      {
+        "pair": [
+          "SBP",
+          "FPG"
+        ],
+        "B": 0.3105901127026273,
+        "C": 0.7282608514856713,
+        "absolute_difference": 0.417670738783044
+      },
+      {
+        "pair": [
+          "SBP",
+          "smoking"
+        ],
+        "B": -0.016084464975317705,
+        "C": 0.5201732784623815,
+        "absolute_difference": 0.5362577434376992
+      },
+      {
+        "pair": [
+          "TG",
+          "HDL"
+        ],
+        "B": -0.04881273435883787,
+        "C": 0.7365165413098903,
+        "absolute_difference": 0.7853292756687282
+      },
+      {
+        "pair": [
+          "TG",
+          "ALT"
+        ],
+        "B": 0.4354935738767669,
+        "C": 0.8012249493130995,
+        "absolute_difference": 0.3657313754363326
+      },
+      {
+        "pair": [
+          "TG",
+          "FPG"
+        ],
+        "B": 0.24174075847461257,
+        "C": 0.6995491722391335,
+        "absolute_difference": 0.4578084137645209
+      },
+      {
+        "pair": [
+          "TG",
+          "smoking"
+        ],
+        "B": 0.09515715557460909,
+        "C": 0.49831491424403146,
+        "absolute_difference": 0.4031577586694224
+      },
+      {
+        "pair": [
+          "HDL",
+          "ALT"
+        ],
+        "B": 0.17052886219726324,
+        "C": 0.7708077497399624,
+        "absolute_difference": 0.6002788875426991
+      },
+      {
+        "pair": [
+          "HDL",
+          "FPG"
+        ],
+        "B": 0.2110284267593017,
+        "C": 0.7195434327777585,
+        "absolute_difference": 0.5085150060184568
+      },
+      {
+        "pair": [
+          "HDL",
+          "smoking"
+        ],
+        "B": 0.12658775618531137,
+        "C": 0.46496985373175315,
+        "absolute_difference": 0.3383820975464418
+      },
+      {
+        "pair": [
+          "ALT",
+          "FPG"
+        ],
+        "B": 0.2266364942599497,
+        "C": 0.7374551689099653,
+        "absolute_difference": 0.5108186746500156
+      },
+      {
+        "pair": [
+          "ALT",
+          "smoking"
+        ],
+        "B": 0.15812156412310105,
+        "C": 0.5368282900669135,
+        "absolute_difference": 0.3787067259438124
+      },
+      {
+        "pair": [
+          "FPG",
+          "smoking"
+        ],
+        "B": 0.039079851860742545,
+        "C": 0.5135711786727374,
+        "absolute_difference": 0.47449132681199485
+      }
+    ],
+    "mean_absolute_difference": 0.489979417825729,
+    "q90_absolute_difference": 0.7436770229146195,
+    "mean_score": 0.0,
+    "tail_score": 0.07040372135672568,
+    "correlation_score": 0.0
+  },
+  "U_gen_components": {
+    "marginal_mean": 0.9405147759771211,
+    "corr_score": 0.0,
+    "pmse_score": 0.9849022155656257,
+    "time_dz": 1.0,
+    "tail_score": 0.9988706791859181
+  },
+  "positive_control": {
+    "description": "B as C in memory only; scorer health check, not a submission",
+    "utility": 0.999999999999999,
+    "facets": {
+      "U_gen": 1.0,
+      "U_spec": 0.999999999999999,
+      "U_rare": 1.0,
+      "U_valid": 1.0
+    }
+  },
+  "reference_attack": {
+    "recomputed": false,
+    "reason": "Server MIA candidate set and membership ground truth are not in team10 processing inputs"
+  },
+  "conclusion": "U=0 reproduced from frozen submission ZIP and independently traced to correlation error exceeding mean scale 0.4"
+}

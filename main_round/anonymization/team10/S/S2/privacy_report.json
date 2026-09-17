@@ -1,0 +1,57 @@
+{
+  "generated_at_utc": "2026-09-17T05:12:41.751287+00:00",
+  "mechanism": "OpenDP AIM with Private-PGM postprocessing",
+  "config_version": "pwscup-aim-main-team10-S2-sample-fix",
+  "config_sha256": "a5ad47224a4eff430e896018a99a6a00cb1e920b4d4306ebd0cc872b7098c624",
+  "public_background_sha256": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+  "public_schema_sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+  "generator_sha256": "14b958d84aa9ad080f76c3190c54593d0b3faaef92d7cca76cd9563be0eb2981",
+  "output_sha256": "2af408cac6dfbc9865fcd58a5d59910bd162da817e6e46ae4da0431c30a35e70",
+  "synthesis_method": "sample",
+  "model_snapshot_sha256": "fd274d0a304455ba3e8a1095a66672d5f507bed1d2ad0b7bfc1848ec3286547d",
+  "snapshot_module_sha256": "4c288b49044df2f12f3c8f4d02e18df69bf867034e03b3b91e717e961b31748b",
+  "privacy": {
+    "rho_zcdp": 0.1,
+    "privacy_unit": "one person represented by one row",
+    "adjacency": "add or remove one row",
+    "approx_dp_conversions": [
+      {
+        "epsilon": 2.2459660262893473,
+        "delta": 1e-05
+      },
+      {
+        "epsilon": 2.4507880004767997,
+        "delta": 1e-06
+      },
+      {
+        "epsilon": 2.6391412446698057,
+        "delta": 1e-07
+      }
+    ]
+  },
+  "dp_release_count": 1,
+  "output_rows_public": 1049,
+  "workload_query_count": 39,
+  "fixed_query_count": 9,
+  "versions": {
+    "opendp": "0.15.1",
+    "mbi": "1.1.0",
+    "pandas": "2.3.3",
+    "polars": "1.36.1"
+  },
+  "notes": [
+    "record_id is excluded before the DP release",
+    "all key-sets and numeric bin edges are fixed by public inputs",
+    "rare_flag is derived row-wise from the public rare detector and is not released",
+    "numeric decoding uses only the public A_bg distribution",
+    "sampling, decoding, clipping, and schema formatting are postprocessing",
+    "this report includes no statistics computed from the private cohort",
+    "S2 bypasses the mbi 1.1.0 conditional round sampler with independent sample draws",
+    "the saved model contains only released DP potentials/marginals and public encoding keys",
+    "dp_release_count and rho describe this candidate only, not composition with earlier candidates",
+    "the rare-row target count is the public A_bg rare rate times the public output size, and target rows are chosen only from the DP output",
+    "rare-marker values are copied together from one public A_bg donor row",
+    "the fixed donor seed is used only after the randomized DP release",
+    "time, onset, and death are copied together from the nearest public A_bg row in a fixed A_bg-derived Cox risk space"
+  ]
+}

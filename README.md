@@ -1,6 +1,8 @@
-# PWSCup2026 — team24 作業リポジトリ
+# PWSCup2026 — 予備戦team24・本戦team10
 
 予備戦の作業は **[`prelim/`](prelim/README.md)** に集約しました。本戦は [`main_round/`](main_round/README.md) で別管理します。
+
+**本戦の現在の匿名化候補は[S2](main_round/anonymization/team10/S/S2/README.md)です。** S1の条件付きround処理をsampleへ修正し、ローカル有用性U=0.5484134662543412。学習済みDPモデル・検証記録・[提出用ZIP](main_round/anonymization/team10/S/S2/submission/team10_S2_defense.zip)をまとめています。S2のCodaBench提出は未実施です。
 
 **9月9日の予備戦確定結果：team24の攻撃力は0.3406681446132233（4位）、総合得点は0.4223063973063974（17位）です。** [結果公開の整理・原本・訂正事項](prelim/results/20260909/README.md)を追加しました。本戦版ルールブック **main-process-20260912** の[原本と変更点](main_round/rulebook/README.md)も保存しています。
 
@@ -19,3 +21,5 @@
 `prelim/workspace/participant_data/` は予備戦当時の**練習用データ**です。本戦データでも、実際に配布された team24 の B/B_self/A_bg でもありません。予備戦の実配布の生データは外部のローカル保存先に残し、新たなアップロードには含めません。実トークンも原則除外しますが、2026-09-17のユーザーの明示的指定により、本戦team10の `participant_data/token.txt` と `模擬提出データ/token.txt` は既存の非公開リポジトリで管理します。同日の追加許可により、[S1のトークン入り提出ZIP](main_round/anonymization/team10/S/S1/submission/team10_S1_defense.zip)も保存します。配置先は [`main_round/anonymization/team10/`](main_round/anonymization/team10/README.md) です。その他のトークン入りZIP、仮想環境・キャッシュは引き続き除外します（既存Git履歴は書き換えていません）。
 
 本戦を始めるときは、新しいルール・配布物を確認してから `main_round/` に作業を追加します。予備戦の資料をそのまま本戦の仕様として扱わないでください。
+
+2026-09-17のS2完了後の依頼により、S2と検証記録をmainへの反映対象としました。先に許可された秘密トークン入りZIPの取り扱いを引き継ぎ、S2の提出ZIPもこの既存の非公開リポジトリで管理します。

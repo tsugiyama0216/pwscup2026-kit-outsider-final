@@ -30,6 +30,8 @@
 !/main_round/anonymization/team10/模擬提出データ/token.txt
 # User explicitly authorized the S1 token-bearing submission ZIP in this private repository.
 !/main_round/anonymization/team10/S/S1/submission/team10_S1_defense.zip
+# User authorized uploading the completed S2 state, including its submission ZIP, to private main.
+!/main_round/anonymization/team10/S/S2/submission/team10_S2_defense.zip
 .env
 .env.*
 !.env.example

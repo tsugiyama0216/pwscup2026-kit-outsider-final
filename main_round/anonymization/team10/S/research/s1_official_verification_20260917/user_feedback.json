@@ -1,0 +1,22 @@
+{
+  "utility_facets": {
+    "U_gen": 0.0,
+    "U_spec": 0.6335930906419508,
+    "U_rare": 0.835808936825886,
+    "U_valid": 0.8824909051373203
+  },
+  "u_rare_gate": {
+    "rare_detected_C": 66,
+    "rare_gate": 8,
+    "rare_true_B": 24,
+    "gated_axes": []
+  },
+  "reference_attack_mia": 0.0,
+  "reference_attack_breakdown": {
+    "tpr_at_low_fpr": 0.0,
+    "tpr_rare": null,
+    "score": 0.0,
+    "low_fpr": 0.01,
+    "auc": 0.450546875
+  }
+}

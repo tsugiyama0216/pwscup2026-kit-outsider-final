@@ -1,0 +1,179 @@
+{
+  "generated_at_utc": "2026-09-17T05:12:42.569030+00:00",
+  "ok": true,
+  "round": "main",
+  "team": 10,
+  "candidate": "S2",
+  "originals": {
+    "ok": true,
+    "manifest_sha256": "13a96377f1597f6c63696561e81878637eccd13dc1963bd3415431526f3271ae",
+    "sha256": {
+      "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+      "B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+      "B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+      "README.txt": "d95b5a87a56fc9b1ef5fafe3ade4fa749d50c5aa121991962b77c9aedef3aa24",
+      "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+      "utility_ref.json": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee"
+    }
+  },
+  "lineage": {
+    "ok": true,
+    "config_sha256": "a5ad47224a4eff430e896018a99a6a00cb1e920b4d4306ebd0cc872b7098c624",
+    "generator_sha256": "14b958d84aa9ad080f76c3190c54593d0b3faaef92d7cca76cd9563be0eb2981",
+    "snapshot_module_sha256": "4c288b49044df2f12f3c8f4d02e18df69bf867034e03b3b91e717e961b31748b",
+    "public_background_sha256": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "public_schema_sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+    "output_sha256": "2af408cac6dfbc9865fcd58a5d59910bd162da817e6e46ae4da0431c30a35e70",
+    "model_snapshot_sha256": "fd274d0a304455ba3e8a1095a66672d5f507bed1d2ad0b7bfc1848ec3286547d",
+    "input_sha256": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "privacy_report_sha256": "8b61d6c0cd8894d0b22e1ee0bbdbac99b8581a745dcc50afa6d568c2d1133f12",
+    "release_ledger_sha256": "71830d83e1086a06dbec7eb91c0b9330a58d5df0df12ef2439e2f0528a3d79c0",
+    "release_attempt_id": "db460761-0dad-4c2c-9a0f-3cfc0ebff602",
+    "dp_release_count": 1,
+    "rho_zcdp": 0.1,
+    "repackaging_runs_dp": false
+  },
+  "csv": {
+    "ok": true,
+    "rows": 1049,
+    "columns": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "time",
+      "onset",
+      "death"
+    ],
+    "column_count": 13,
+    "missing_values": 0,
+    "nonfinite_values": 0,
+    "range_violations": 0,
+    "duplicate_rows": 0,
+    "numeric_min_max": {
+      "age": [
+        40.0,
+        74.0
+      ],
+      "sex": [
+        0.0,
+        1.0
+      ],
+      "BMI": [
+        11.43835727355278,
+        36.84389782617448
+      ],
+      "SBP": [
+        52.01457428347175,
+        184.71400691890855
+      ],
+      "TG": [
+        4.540868995786591,
+        459.1189398291184
+      ],
+      "HDL": [
+        27.38369293671409,
+        80.94330831349376
+      ],
+      "ALT": [
+        0.4565206690705556,
+        104.13688070931092
+      ],
+      "smoking": [
+        0.0,
+        1.0
+      ],
+      "FPG": [
+        49.72481266270979,
+        125.74186613075145
+      ],
+      "time": [
+        0.0410677618069815,
+        9.998631074606434
+      ],
+      "onset": [
+        0.0,
+        1.0
+      ],
+      "death": [
+        0.0,
+        1.0
+      ]
+    },
+    "outcome_counts": {
+      "0,0": 884,
+      "0,1": 63,
+      "1,0": 102
+    },
+    "time_limits": [
+      0.0027378507871321013,
+      10.0
+    ]
+  },
+  "package": {
+    "ok": true,
+    "members": [
+      "C.csv",
+      "token.txt"
+    ],
+    "csv_exact_bytes": true,
+    "token_exact_bytes_match_team10_source": true,
+    "token_content_or_hash_recorded": false,
+    "path": "submission/team10_S2_defense.zip",
+    "bytes": 64968,
+    "sha256": "668fb70166a47a36ee5f30f9e85ec5e32e1f7c5805b9ec82138670e770fdbdd6"
+  },
+  "official_kit": {
+    "status": "passed",
+    "ok": true,
+    "package_ok": true,
+    "logical_ok": true,
+    "zip_validator_ok": true,
+    "explicit_expected_rows_from_B": 1049,
+    "error_count": 0,
+    "rare_diagnostic": {
+      "rare_detected": 66,
+      "gate": 8,
+      "below_gate": false
+    },
+    "release_tag": "main-process-20260912",
+    "commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+    "archive_sha256": "7d842aec5416f0ebd7d72bcc71d623e4ef8618d3b4308f53c3b8f95d9681d8ca",
+    "release_url": "https://github.com/pwscup/pwscup2026-kit/releases/tag/main-process-20260912",
+    "verified_source_sha256": {
+      "participant_data/scoring_config.yaml": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22",
+      "starter/src/pwscup2026/__init__.py": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177",
+      "starter/src/pwscup2026/attack/__init__.py": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc",
+      "starter/src/pwscup2026/attack/aia.py": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a",
+      "starter/src/pwscup2026/attack/mia.py": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf",
+      "starter/src/pwscup2026/common/__init__.py": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787",
+      "starter/src/pwscup2026/common/config.py": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f",
+      "starter/src/pwscup2026/common/schema.py": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e",
+      "starter/src/pwscup2026/common/submission_schema.py": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9",
+      "starter/src/pwscup2026/defense/__init__.py": "ff0390d9c9de08be55c70bd92721ac74cf44e3f0133c78a227b4aec02095e6ff",
+      "starter/src/pwscup2026/defense/perturb.py": "a7ca5164a3243af452a741dee6a7acc70551b56fba38671f6e84d1cd84d0f89b",
+      "starter/src/pwscup2026/defense/synth.py": "ba2b0eac07ecf86e38dec916617da8227c36025d2b060daa186154bd17f2e50f",
+      "starter/src/pwscup2026/kit/__init__.py": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5",
+      "starter/src/pwscup2026/kit/codabench/__init__.py": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f",
+      "starter/src/pwscup2026/kit/codabench/run.py": "78d68f4baab795254c23bc679a9175c623bf9609a3d8b3208d740039583656ec",
+      "starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+      "starter/src/pwscup2026/kit/kit_config.yaml": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157",
+      "starter/src/pwscup2026/kit/selfscore.py": "8f49e24ec3a2601cecde884659da0ed93cf1806e9385f047e9ea1f96137f147d",
+      "starter/src/pwscup2026/kit/validate.py": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e",
+      "starter/src/pwscup2026/rare/__init__.py": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e",
+      "starter/src/pwscup2026/rare/outlier.py": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47",
+      "starter/src/pwscup2026/scoring/__init__.py": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802",
+      "starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+      "starter/src/pwscup2026/scoring/result.py": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+      "starter/src/pwscup2026/scoring/utility.py": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932"
+    },
+    "token_registration_checked": false,
+    "note": "Local official format validation only; server-side token registration and scoring are not tested."
+  }
+}
