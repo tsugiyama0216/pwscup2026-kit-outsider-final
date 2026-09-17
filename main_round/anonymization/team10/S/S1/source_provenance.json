@@ -1,0 +1,61 @@
+{
+  "model": "S1",
+  "round": "main",
+  "cohort_id": 10,
+  "method": "actual preliminary anonymization submitted v5",
+  "source_files": [
+    {
+      "model_path": "scripts/generate_pwscup.py",
+      "historical_source": "pwscup2026-kit/opendp_aim/scripts/generate_pwscup.py",
+      "sha256": "fc0ba951e3313f16ba71fcbba5dcee4ff5857aac3c8139553f9292a7885b8beb",
+      "byte_identical": true
+    },
+    {
+      "model_path": "scripts/build_public_config.py",
+      "historical_source": "pwscup2026-kit/opendp_aim/scripts/build_public_config.py",
+      "sha256": "b01233d47a51c6b6815e3e91d6b60cde5f10b3422b083a493c2d8165335a7cc0",
+      "byte_identical": true
+    },
+    {
+      "model_path": "config/prelim_submitted_v5_base.json",
+      "historical_source": "pwscup2026-kit/work/prelim/team24/config/pwscup_aim_prelim_team24_v5_uspec.json",
+      "sha256": "adb8d7749446e153ff32d18967bfaacb5677281df4339719ce10f6643bcd6e69",
+      "byte_identical": true
+    },
+    {
+      "model_path": "pyproject.toml",
+      "historical_source": "pwscup2026-kit/opendp_aim/pyproject.toml",
+      "sha256": "5595e3c73e86402828a5a64077cb8784a8e0c9a41593e7d703596ce55cbef5f3",
+      "byte_identical": true
+    },
+    {
+      "model_path": "uv.lock",
+      "historical_source": "pwscup2026-kit/opendp_aim/uv.lock",
+      "sha256": "a1ff3c6d5c2f5183851775772afeaeddf718bda1ef4e5173dd2a0bb0dfe45383",
+      "byte_identical": true
+    }
+  ],
+  "historical_parent_privacy_report_sha256": "ae18413439ef9a914c3f2dde951a04dba2d435eacd2a73ea3cde460c25ae51a1",
+  "generation": {
+    "private_input": "../../participant_data/B.csv",
+    "public_inputs": [
+      "../../participant_data/A_bg.csv",
+      "../../participant_data/schema.json"
+    ],
+    "B_self_used": false,
+    "dp_releases": 1,
+    "rho_zcdp": 0.1,
+    "death_weight": 0.31,
+    "public_configuration_rebuilt": true,
+    "score_based_tuning_or_rerun": false
+  },
+  "python": "3.12.13 (main, Jul 18 2026, 17:08:38) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "opendp": "0.15.1",
+    "mbi": "1.1.0",
+    "polars": "1.36.1",
+    "numpy": "2.5.1",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0"
+  }
+}

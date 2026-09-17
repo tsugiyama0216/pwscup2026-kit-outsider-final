@@ -1,0 +1,471 @@
+{
+  "audited_at_utc": "2026-09-17T04:18:48.003354+00:00",
+  "c_sha256": "2e2f03966479e80d11c0bd28465232f857f2b41aed99e3df4055008045a162db",
+  "c_unchanged": true,
+  "official_commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+  "scorer_path": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-current\\main_round\\anonymization\\team10\\S\\S1\\local-output\\official-kit\\pwscup2026-kit-3dd71bd3436f2abfdbb64da97e860f22729ea054\\starter\\src\\pwscup2026\\kit\\selfscore.py",
+  "input_manifest_all_files_match": true,
+  "B_self_without_label_equals_B": true,
+  "official_source_hashes_match_recorded": true,
+  "reference_hashes_match_recorded": true,
+  "scoring_config_hash_matches": true,
+  "independent_full_selfscore": {
+    "utility": 0.0,
+    "facets": {
+      "U_gen": 0.0,
+      "U_spec": 0.633593090641952,
+      "U_rare": 0.835808936825886,
+      "U_valid": 0.8824909051373203
+    },
+    "detail": {
+      "U_gen": {
+        "marginal": {
+          "age": 0.9342230695900858,
+          "BMI": 0.9504289799809342,
+          "SBP": 0.9389895138226882,
+          "TG": 0.9351763584366063,
+          "HDL": 0.9628217349857007,
+          "ALT": 0.9532888465204957,
+          "FPG": 0.9494756911344138,
+          "sex": 0.998093422306959,
+          "smoking": 0.988560533841754,
+          "prefecture": 0.794089609151573
+        },
+        "marginal_mean": 0.9405147759771211,
+        "marginal_worst": 0.794089609151573,
+        "corr_score": 0.0,
+        "correlation": {
+          "enabled": true,
+          "score": 0.0,
+          "features": [
+            "age",
+            "sex",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "FPG",
+            "smoking"
+          ],
+          "method": "spearman",
+          "observed_mean_dist": 0.489979417825729,
+          "observed_tail_dist": 0.7436770229146193,
+          "mean_score": 0.0,
+          "tail_score": 0.0704037213567259,
+          "mean_scale": 0.4,
+          "tail_scale": 0.8,
+          "tail_quantile": 0.9,
+          "n_pairs_total": 36,
+          "n_pairs_used": 36,
+          "n_pairs_both_finite": 36,
+          "n_pairs_one_invalid": 0,
+          "n_pairs_excluded": 0,
+          "mean_dist": 0.489979417825729,
+          "tail_dist": 0.7436770229146193
+        },
+        "pmse": 0.003774446108593559,
+        "pmse_ceiling": 0.25,
+        "pmse_score": 0.9849022155656257,
+        "time_dz": 1.0,
+        "time": {
+          "km_l1_integral": 0.03820199413689302,
+          "km_signal_D": 0.57544522565516,
+          "km_floor": 0.16426613255654027,
+          "time_dz": 1.0,
+          "tau": 10.0
+        },
+        "tail_score": 0.9988706791859181,
+        "tail": {
+          "enabled": true,
+          "u_shift": 1.0,
+          "u_spike": 0.9988706791859181,
+          "shiftz": 2.92067713188819,
+          "spike": 0.0005646604070409758,
+          "mean_z_up": -1.0709174440270275,
+          "mean_z_dn": -0.7447564311616772,
+          "n_stat": 36
+        }
+      },
+      "U_spec": {
+        "cox_converged": true,
+        "io_part": 0.633593090641952,
+        "per_coefficient": {
+          "age": {
+            "beta_B": 0.033717614159644485,
+            "beta_C": 0.03443445339521768,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.9044645728683554,
+            "contrib": 0.9044645728683554
+          },
+          "sex": {
+            "beta_B": -0.17567475402741337,
+            "beta_C": -0.664762284584593,
+            "sig_B": false,
+            "sig_C": true,
+            "io": 0.5579806566415079,
+            "contrib": 0.0
+          },
+          "BMI": {
+            "beta_B": 0.05950255795640202,
+            "beta_C": 0.06268136560155411,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.9745095146272242,
+            "contrib": 0.9745095146272242
+          },
+          "SBP": {
+            "beta_B": 0.005499582973615605,
+            "beta_C": -0.0023260125052683637,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.7064378378780739,
+            "contrib": 0.7064378378780739
+          },
+          "log_TG": {
+            "beta_B": -0.0359167717625119,
+            "beta_C": -0.14860357826983833,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.8578677182495245,
+            "contrib": 0.8578677182495245
+          },
+          "HDL": {
+            "beta_B": -0.01077467984458384,
+            "beta_C": -0.012192211073824621,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9206507589226036,
+            "contrib": 0.9206507589226036
+          },
+          "log_ALT": {
+            "beta_B": 0.5789538980351139,
+            "beta_C": 0.7432048770445356,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.779221771111806,
+            "contrib": 0.779221771111806
+          },
+          "FPG": {
+            "beta_B": 0.14322249254829397,
+            "beta_C": 0.16480058244693835,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.559185642119981,
+            "contrib": 0.559185642119981
+          },
+          "smoking": {
+            "beta_B": 0.2832072111412733,
+            "beta_C": 0.6374841326001714,
+            "sig_B": false,
+            "sig_C": true,
+            "io": 0.6471650499931522,
+            "contrib": 0.0
+          }
+        },
+        "tstr_c_index": 0.9018960555273404,
+        "tstr": 0.8037921110546808,
+        "trtr_c_index": 0.9047175667287399,
+        "tstr_cal": 0.9930284439486893
+      },
+      "U_rare": {
+        "mass_C": 0.06291706387035272,
+        "mass_B": 0.06768350810295519,
+        "mass_se": 0.007755956586263255,
+        "mass_star": 1.0,
+        "prof_val": 0.7808441558441558,
+        "prof_base": 0.8040744466800803,
+        "prof_cal": 0.9711092785850373,
+        "onset_val": 0.7234848484848485,
+        "onset_base": 0.8656103286384977,
+        "onset_cal": 0.835808936825886,
+        "c2st_val": 0.53219696969697,
+        "c2st_base": 0.6167840375586854,
+        "c2st_cal": 0.8628578842660675,
+        "aggregate": "min",
+        "parts_used": [
+          "mass_star",
+          "prof_cal",
+          "onset_cal",
+          "c2st_cal"
+        ],
+        "rare_detected_C": 66,
+        "rare_detected_B": 71,
+        "rare_true_B": 24,
+        "rare_gate": 8,
+        "rare_gate_prof_onset": 3,
+        "u_rare_gated": [],
+        "b_detector_precision": 0.30985915492957744,
+        "b_detector_recall": 0.9166666666666666
+      },
+      "U_valid": {
+        "censoring_realism_rate": 0.9971401334604385,
+        "no_fab": 0.7120645499303767,
+        "no_fab_detail": {
+          "tol": 0.08,
+          "scale": 0.5,
+          "mean_penalty": 0.2879354500696233,
+          "n_pairs": 21,
+          "pairs": {
+            "prefecture:BMI": {
+              "assoc_C": 0.18622657226671882,
+              "assoc_B": 0.1948072533317959,
+              "penalty": 0.0
+            },
+            "sex:BMI": {
+              "assoc_C": 0.563910351131859,
+              "assoc_B": 0.22596872339203708,
+              "penalty": 0.5158832554796436
+            },
+            "smoking:BMI": {
+              "assoc_C": 0.37241479827764784,
+              "assoc_B": 0.06029562084997151,
+              "penalty": 0.4642383548553526
+            },
+            "prefecture:SBP": {
+              "assoc_C": 0.17682174772131976,
+              "assoc_B": 0.203305988331579,
+              "penalty": 0.0
+            },
+            "sex:SBP": {
+              "assoc_C": 0.6153938376461039,
+              "assoc_B": 0.1602944103688985,
+              "penalty": 0.7501988545544108
+            },
+            "smoking:SBP": {
+              "assoc_C": 0.4714164336861007,
+              "assoc_B": 0.013784553457525772,
+              "penalty": 0.7552637604571498
+            },
+            "prefecture:TG": {
+              "assoc_C": 0.2113828352360079,
+              "assoc_B": 0.21944911958220534,
+              "penalty": 0.0
+            },
+            "sex:TG": {
+              "assoc_C": 0.46874531311797096,
+              "assoc_B": 0.2471119122417909,
+              "penalty": 0.2832668017523601
+            },
+            "smoking:TG": {
+              "assoc_C": 0.4674036536312176,
+              "assoc_B": 0.10415152872205585,
+              "penalty": 0.5665042498183235
+            },
+            "prefecture:HDL": {
+              "assoc_C": 0.18296563371832295,
+              "assoc_B": 0.24418319919016268,
+              "penalty": 0.0
+            },
+            "sex:HDL": {
+              "assoc_C": 0.5787236177264827,
+              "assoc_B": 0.6447749138198019,
+              "penalty": 0.0
+            },
+            "smoking:HDL": {
+              "assoc_C": 0.5411470687799297,
+              "assoc_B": 0.13065607433556145,
+              "penalty": 0.6609819888887364
+            },
+            "prefecture:ALT": {
+              "assoc_C": 0.13644323244816345,
+              "assoc_B": 0.1558993359034631,
+              "penalty": 0.0
+            },
+            "sex:ALT": {
+              "assoc_C": 0.4280920725663094,
+              "assoc_B": 0.28976280392384074,
+              "penalty": 0.11665853728493727
+            },
+            "smoking:ALT": {
+              "assoc_C": 0.415684359219848,
+              "assoc_B": 0.15344149135240875,
+              "penalty": 0.3644857357348784
+            },
+            "prefecture:FPG": {
+              "assoc_C": 0.1954537683381343,
+              "assoc_B": 0.21571684374809186,
+              "penalty": 0.0
+            },
+            "sex:FPG": {
+              "assoc_C": 0.5632383518300091,
+              "assoc_B": 0.27740784033797633,
+              "penalty": 0.4116610229840656
+            },
+            "smoking:FPG": {
+              "assoc_C": 0.47074633992619425,
+              "assoc_B": 0.029972666026271508,
+              "penalty": 0.7215473477998454
+            },
+            "prefecture:onset": {
+              "assoc_C": 0.2075511406745441,
+              "assoc_B": 0.19514275403570408,
+              "penalty": 0.0
+            },
+            "sex:onset": {
+              "assoc_C": 0.18167203121014397,
+              "assoc_B": 0.11661615608414515,
+              "penalty": 0.0
+            },
+            "smoking:onset": {
+              "assoc_C": 0.3176207057037694,
+              "assoc_B": 0.019643434777576057,
+              "penalty": 0.4359545418523866
+            }
+          }
+        },
+        "no_dup": 1.0,
+        "no_dup_detail": {
+          "dup_rate": 0.0,
+          "n_dup_rows": 0,
+          "tol": 0.0,
+          "scale": 0.2
+        },
+        "novel": 0.820758937158466,
+        "novel_detail": {
+          "enabled": true,
+          "novel": 0.820758937158466,
+          "d_plus": 0.223069590085796,
+          "deadzone": 0.0534,
+          "n_rows_C": 1049,
+          "n_rows_B": 1049,
+          "nn_dist_C_median": 0.6541278094615545,
+          "nn_dist_B_median": 0.8263532362218184,
+          "n_rows_A_bg": 5143,
+          "features": [
+            "age",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "FPG",
+            "time",
+            "sex",
+            "smoking",
+            "onset",
+            "death"
+          ]
+        }
+      }
+    }
+  },
+  "saved_utility_and_facets_exact_match": true,
+  "saved_detail_exact_match": true,
+  "independent_scipy_spearman": {
+    "features": [
+      "age",
+      "sex",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "FPG",
+      "smoking"
+    ],
+    "pairs": 36,
+    "mean_absolute_difference": 0.489979417825729,
+    "p90_absolute_difference": 0.7436770229146195,
+    "mean_scale": 0.4,
+    "tail_scale": 0.8,
+    "correlation_score": 0.0,
+    "max_abs_official_distance_difference": 1.1102230246251565e-16,
+    "largest_differences": [
+      {
+        "columns": [
+          "BMI",
+          "HDL"
+        ],
+        "B_spearman": -0.033419458527776884,
+        "C_spearman": 0.7732816832400509,
+        "abs_difference": 0.8067011417678277
+      },
+      {
+        "columns": [
+          "TG",
+          "HDL"
+        ],
+        "B_spearman": -0.04881273435883787,
+        "C_spearman": 0.7365165413098903,
+        "abs_difference": 0.7853292756687282
+      },
+      {
+        "columns": [
+          "age",
+          "HDL"
+        ],
+        "B_spearman": -0.008482224240016977,
+        "C_spearman": 0.772316070249721,
+        "abs_difference": 0.780798294489738
+      },
+      {
+        "columns": [
+          "age",
+          "sex"
+        ],
+        "B_spearman": -0.054016964042461854,
+        "C_spearman": 0.6898266768875236,
+        "abs_difference": 0.7438436409299855
+      },
+      {
+        "columns": [
+          "age",
+          "ALT"
+        ],
+        "B_spearman": -0.029244471831026436,
+        "C_spearman": 0.7142659330682269,
+        "abs_difference": 0.7435104048992534
+      },
+      {
+        "columns": [
+          "age",
+          "BMI"
+        ],
+        "B_spearman": 0.02132274962470713,
+        "C_spearman": 0.7202420415546154,
+        "abs_difference": 0.6989192919299082
+      },
+      {
+        "columns": [
+          "SBP",
+          "HDL"
+        ],
+        "B_spearman": 0.09080447390826595,
+        "C_spearman": 0.7641693862511845,
+        "abs_difference": 0.6733649123429185
+      },
+      {
+        "columns": [
+          "SBP",
+          "ALT"
+        ],
+        "B_spearman": 0.1900479971058275,
+        "C_spearman": 0.8018227123910252,
+        "abs_difference": 0.6117747152851977
+      }
+    ]
+  },
+  "csv_validation": {
+    "ok": true,
+    "errors": [],
+    "rows": 1049,
+    "columns": 13
+  },
+  "generator_comparison": {
+    "common_functions_with_changed_AST": [
+      "main",
+      "make_privacy_report",
+      "parse_args"
+    ],
+    "added_functions": [
+      "initialize_release_ledger",
+      "sha256_file",
+      "update_release_ledger",
+      "write_json_atomic"
+    ],
+    "removed_functions": []
+  },
+  "conclusion": "U=0 is reproduced using the pinned official main-round scorer and direct main team10 references. Independent SciPy Spearman calculations confirm correlation mean distance exceeds the 0.4 zero-score threshold. This audit did not regenerate, modify, or tune C.csv."
+}

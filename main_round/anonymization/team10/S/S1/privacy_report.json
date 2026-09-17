@@ -1,0 +1,51 @@
+{
+  "generated_at_utc": "2026-09-17T04:15:15.218962+00:00",
+  "mechanism": "OpenDP AIM with Private-PGM postprocessing",
+  "config_version": "pwscup-aim-main-team10-S1-prelim-v5-method",
+  "config_sha256": "6cd1c636a8d50dd8f81c214f1144edd2c1ec1f609e0ffc215b35b96331891d38",
+  "public_background_sha256": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+  "public_schema_sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+  "generator_sha256": "fc0ba951e3313f16ba71fcbba5dcee4ff5857aac3c8139553f9292a7885b8beb",
+  "output_sha256": "2e2f03966479e80d11c0bd28465232f857f2b41aed99e3df4055008045a162db",
+  "privacy": {
+    "rho_zcdp": 0.1,
+    "privacy_unit": "one person represented by one row",
+    "adjacency": "add or remove one row",
+    "approx_dp_conversions": [
+      {
+        "epsilon": 2.2459660262893473,
+        "delta": 1e-05
+      },
+      {
+        "epsilon": 2.4507880004767997,
+        "delta": 1e-06
+      },
+      {
+        "epsilon": 2.6391412446698057,
+        "delta": 1e-07
+      }
+    ]
+  },
+  "dp_release_count": 1,
+  "output_rows_public": 1049,
+  "workload_query_count": 39,
+  "fixed_query_count": 9,
+  "versions": {
+    "opendp": "0.15.1",
+    "mbi": "1.1.0",
+    "pandas": "2.3.3",
+    "polars": "1.36.1"
+  },
+  "notes": [
+    "record_id is excluded before the DP release",
+    "all key-sets and numeric bin edges are fixed by public inputs",
+    "rare_flag is derived row-wise from the public rare detector and is not released",
+    "numeric decoding uses only the public A_bg distribution",
+    "sampling, decoding, clipping, and schema formatting are postprocessing",
+    "this report includes no statistics computed from the private cohort",
+    "the rare-row target count is the public A_bg rare rate times the public output size, and target rows are chosen only from the DP output",
+    "rare-marker values are copied together from one public A_bg donor row",
+    "the fixed donor seed is used only after the randomized DP release",
+    "time, onset, and death are copied together from the nearest public A_bg row in a fixed A_bg-derived Cox risk space"
+  ]
+}

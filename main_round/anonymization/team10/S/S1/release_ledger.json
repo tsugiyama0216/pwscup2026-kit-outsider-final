@@ -1,0 +1,21 @@
+{
+  "ledger_version": 1,
+  "release_attempt_id": "112f693c-dbfc-42b3-bab8-06d27c19fefc",
+  "status": "complete",
+  "release_started_at_utc": "2026-09-17T04:14:53.357291+00:00",
+  "rho_zcdp": 0.1,
+  "input_sha256": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+  "public_background_sha256": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+  "public_schema_sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+  "config_sha256": "6cd1c636a8d50dd8f81c214f1144edd2c1ec1f609e0ffc215b35b96331891d38",
+  "generator_sha256": "fc0ba951e3313f16ba71fcbba5dcee4ff5857aac3c8139553f9292a7885b8beb",
+  "output_path": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-current\\main_round\\anonymization\\team10\\S\\S1\\C.csv",
+  "privacy_report_path": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-current\\main_round\\anonymization\\team10\\S\\S1\\privacy_report.json",
+  "opendp_uv_lock_sha256": "a1ff3c6d5c2f5183851775772afeaeddf718bda1ef4e5173dd2a0bb0dfe45383",
+  "release_completed_at_utc": "2026-09-17T04:15:15.133172+00:00",
+  "workload_query_count": 39,
+  "fixed_query_count": 9,
+  "completed_at_utc": "2026-09-17T04:15:15.225013+00:00",
+  "output_sha256": "2e2f03966479e80d11c0bd28465232f857f2b41aed99e3df4055008045a162db",
+  "privacy_report_sha256": "1f6c78cf8bf446dd48948584e9a6d86d1fc287a33ee07b6554c202a964f01364"
+}

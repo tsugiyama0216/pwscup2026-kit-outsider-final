@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/pwscup/pwscup2026-kit",
+  "release_url": "https://github.com/pwscup/pwscup2026-kit/releases/tag/main-process-20260912",
+  "release_tag": "main-process-20260912",
+  "published_at": "2026-09-11T06:03:46Z",
+  "commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+  "archive_url": "https://codeload.github.com/pwscup/pwscup2026-kit/zip/3dd71bd3436f2abfdbb64da97e860f22729ea054",
+  "archive_sha256": "7d842aec5416f0ebd7d72bcc71d623e4ef8618d3b4308f53c3b8f95d9681d8ca",
+  "retrieved_at_utc": "2026-09-17T04:15:36.270570+00:00",
+  "kit_root": "main_round/anonymization/team10/S/S1/local-output/official-kit/pwscup2026-kit-3dd71bd3436f2abfdbb64da97e860f22729ea054",
+  "files": {
+    "starter/src/pwscup2026/kit/validate.py": {
+      "sha256": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e"
+    },
+    "starter/src/pwscup2026/kit/selfscore.py": {
+      "sha256": "8f49e24ec3a2601cecde884659da0ed93cf1806e9385f047e9ea1f96137f147d"
+    },
+    "starter/src/pwscup2026/common/submission_schema.py": {
+      "sha256": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9"
+    },
+    "participant_data/scoring_config.yaml": {
+      "sha256": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22"
+    },
+    "starter/src/pwscup2026/kit/kit_config.yaml": {
+      "sha256": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157"
+    },
+    "starter/pyproject.toml": {
+      "sha256": "80b45ec4291e1a3ea312c075c3ba20dbef93c107fcf8ab8ff47064daffb7d5f6"
+    }
+  }
+}
