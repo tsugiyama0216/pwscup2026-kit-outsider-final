@@ -16,6 +16,6 @@
 
 今回の整理は保存場所と案内の変更です。予備戦の作業環境は `prelim/workspace/` にまとめ、実装・データ・出力の相対配置を維持しています。過去の実行手順は、このディレクトリを作業場所として読んでください。攻撃アルゴリズムや提出 CSV の内容を更新する整理ではありません。
 
-`prelim/workspace/participant_data/` は予備戦当時の**練習用データ**です。本戦データでも、実際に配布された team24 の B/B_self/A_bg でもありません。予備戦の実配布の生データは外部のローカル保存先に残し、新たなアップロードには含めません。実トークンも原則除外しますが、2026-09-17のユーザーの明示的指定により、本戦team10の `participant_data/token.txt` と `模擬提出データ/token.txt` は既存の非公開リポジトリで管理します。配置先は [`main_round/anonymization/team10/`](main_round/anonymization/team10/README.md) です。トークン入り ZIP、仮想環境・キャッシュは引き続き除外します（既存 Git 履歴は書き換えていません）。
+`prelim/workspace/participant_data/` は予備戦当時の**練習用データ**です。本戦データでも、実際に配布された team24 の B/B_self/A_bg でもありません。予備戦の実配布の生データは外部のローカル保存先に残し、新たなアップロードには含めません。実トークンも原則除外しますが、2026-09-17のユーザーの明示的指定により、本戦team10の `participant_data/token.txt` と `模擬提出データ/token.txt` は既存の非公開リポジトリで管理します。同日の追加許可により、[S1のトークン入り提出ZIP](main_round/anonymization/team10/S/S1/submission/team10_S1_defense.zip)も保存します。配置先は [`main_round/anonymization/team10/`](main_round/anonymization/team10/README.md) です。その他のトークン入りZIP、仮想環境・キャッシュは引き続き除外します（既存Git履歴は書き換えていません）。
 
 本戦を始めるときは、新しいルール・配布物を確認してから `main_round/` に作業を追加します。予備戦の資料をそのまま本戦の仕様として扱わないでください。

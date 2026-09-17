@@ -15,7 +15,7 @@
 /prelim/workspace/work/
 /prelim/workspace/local-output/
 
-# Live submission credentials remain local except the two authorized team10 files below.
+# Live submission credentials remain local except the explicitly authorized team10 files below.
 /submissions/**/token.txt
 /submissions/**/*.zip
 /prelim/workspace/submissions/**/token.txt
@@ -28,6 +28,8 @@
 # User explicitly authorized these two team10 tokens in this private repository on 2026-09-17.
 !/main_round/anonymization/team10/participant_data/token.txt
 !/main_round/anonymization/team10/模擬提出データ/token.txt
+# User explicitly authorized the S1 token-bearing submission ZIP in this private repository.
+!/main_round/anonymization/team10/S/S1/submission/team10_S1_defense.zip
 .env
 .env.*
 !.env.example

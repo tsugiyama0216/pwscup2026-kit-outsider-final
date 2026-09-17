@@ -17,7 +17,7 @@
 | [privacy_report.json](privacy_report.json) / [release_ledger.json](release_ledger.json) | 1回の生成記録・ハッシュ・設定上のρ=0.1 |
 | [source_provenance.json](source_provenance.json) | 予備戦の実提出コード・設定との対応 |
 
-ZIPは秘密トークンを含むためGit管理対象外です。トークンは共通配布場所から直接ZIPへ格納し、モデルフォルダー内に単独のtoken.txtは作成しません。
+2026-09-17のユーザーの明示的な許可により、この提出ZIPも既存の非公開リポジトリでGit管理します。ZIP直下には本戦team10の秘密トークンを含みます。トークンは共通配布場所から直接ZIPへ格納し、モデルフォルダー内に単独のtoken.txtは作成しません。値は文書やログに記載しません。
 
 ## 引き継いだ手法
 
