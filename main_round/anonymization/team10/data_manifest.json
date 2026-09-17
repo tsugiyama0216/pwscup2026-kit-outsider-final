@@ -40,8 +40,11 @@
       "sha256": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee"
     }
   ],
-  "local_only_files": [
-    "participant_data/token.txt"
+  "local_only_files": [],
+  "private_repository_token_files": [
+    "participant_data/token.txt",
+    "模擬提出データ/token.txt"
   ],
+  "token_upload_authorization": "User explicitly authorized both team10 token files in the existing private repository on 2026-09-17.",
   "token_hash_included": false
 }

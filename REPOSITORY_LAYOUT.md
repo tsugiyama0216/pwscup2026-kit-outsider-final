@@ -58,11 +58,13 @@ pwscup2026-kit-private/
     ├── anonymization/
     │   └── team10/                  # 本戦コホート10（予備戦は24）
     │       ├── README.md / data_manifest.json
-    │       └── participant_data/    # 配布原本6ファイル。token.txtはローカルのみ
+    │       ├── S/ / R/ / M/ / L/    # 作業者別モデル格納先
+    │       ├── 模擬提出データ/       # 予備戦v5のC.csvと本戦team10のtoken.txt
+    │       └── participant_data/    # 配布原本6ファイルと明示許可されたtoken.txt
     └── rulebook/                    # main-process-20260912 PDFと更新確認
 ```
 
-細かなコード・実験ファイルは省略しています。`.venv/`、キャッシュ、実トークン、トークン入り ZIP など、ローカル専用の無視対象もこのツリーには載せていません。
+細かなコード・実験ファイルは省略しています。`.venv/`、キャッシュ、上記team10の2ファイル以外の実トークン、トークン入り ZIP など、ローカル専用の無視対象もこのツリーには載せていません。
 
 ## 旧パスからの移動先
 
@@ -105,8 +107,8 @@ python -m unittest discover -v
 - 予備戦の最終提出は **v9 guarded、公式結果（ユーザー共有）0.3407**。提出枠は残っていません。v7 単独の提出結果や本戦での性能はありません。
 - `participant_data/` と `starter/` は、予備戦当時の練習キットの保存物です。本戦のキット・実データとして分類したものではありません。
 - 実配布の team24 の B/B_self/A_bg は、ユーザーの Downloads 配下などのリポジトリ外の保存先に残します。練習用の同名ファイルと混同せず、新たな Git 管理対象に加えません。
-- 本戦・加工フェーズの team10 配布原本6ファイルは、2026-09-16のユーザーの明示的依頼に基づき `main_round/anonymization/team10/participant_data/` に配置し、既存の非公開GitHubへの保存対象としました。認証トークンは同じPC内の配置先にだけ保存し、Git管理から除外します。
-- 実トークン、トークン入り ZIP、仮想環境・キャッシュは新規のアップロード対象外です。既存ローカルファイルは保持し、過去の Git 履歴は書き換えていません。
+- 本戦・加工フェーズの team10 配布原本6ファイルは、2026-09-16のユーザーの明示的依頼に基づき `main_round/anonymization/team10/participant_data/` に配置し、既存の非公開GitHubへの保存対象としました。2026-09-17の明示的指定により、同じteam10配下の `participant_data/token.txt` と `模擬提出データ/token.txt` も非公開リポジトリで管理します。
+- 上記2ファイル以外の実トークン、トークン入り ZIP、仮想環境・キャッシュは新規のアップロード対象外です。トークンの内容は文書やログに記載しません。既存ローカルファイルは保持し、過去の Git 履歴は書き換えていません。
 - `local-output/` は原則ローカル出力先ですが、選別済みの研究用テキスト・CSV・JSON・スクリプトはアーカイブされています。保存範囲は [`prelim/workspace/research_archive/README.md`](prelim/workspace/research_archive/README.md) とマニフェストが正本です。
 - 旧学習資料は初期手法を理解するために残します。最終 v9 の確認は [`prelim/attack/results/FINAL_RESULT.md`](prelim/attack/results/FINAL_RESULT.md) と [`prelim/workspace/attack_phase_v9/README.md`](prelim/workspace/attack_phase_v9/README.md) を優先してください。
 

@@ -6,8 +6,9 @@
 - Inspect Git status before edits and preserve unrelated user changes.
 - Read `CODEX_HANDOFF.md` before attack work or submission advice. Read `prelim/workspace/AGENTS.md` and its handoff before changing preliminary code.
 - Do not submit to CodaBench, push to GitHub, merge into main, or consume an official attempt without the user's explicit instruction. Never rewrite history or force-push for this reorganization.
-- Never print or newly commit live token contents, token-bearing ZIPs, preliminary actual downloaded B/B_self/A_bg, virtual environments or caches. Existing private token history was retained at the owner's informed request; this is not permission to duplicate live credentials.
-- On 2026-09-16 the user explicitly authorized local allocation and upload of the supplied main-round processing data to this existing private GitHub repository. The six non-credential originals belong in `main_round/anonymization/team10/participant_data/`; `token.txt` is local and ignored. This exception applies only to that supplied main-round package; keep the repository private.
+- Never print live token contents. Do not newly commit live tokens except the two team10 files explicitly authorized below. Token-bearing ZIPs, preliminary actual downloaded B/B_self/A_bg, virtual environments and caches remain excluded. Existing private token history does not authorize other credential copies.
+- On 2026-09-16 the user explicitly authorized local allocation and upload of the supplied main-round processing data to this existing private GitHub repository. The six non-credential originals belong in `main_round/anonymization/team10/participant_data/`.
+- On 2026-09-17 the user explicitly authorized uploading the supplied team10 token to the existing private repository `tsugiyama0216/pwscup2026-kit-private` at exactly `main_round/anonymization/team10/participant_data/token.txt` and `main_round/anonymization/team10/模擬提出データ/token.txt`. Keep the repository private. Do not print token values or copy them into documentation, logs or other files.
 
 ## Repository boundaries
 

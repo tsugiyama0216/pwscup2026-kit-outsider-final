@@ -16,7 +16,7 @@
 | [schema.json](participant_data/schema.json) | 列定義・希少検出の参照 | PC・非公開GitHub |
 | [utility_ref.json](participant_data/utility_ref.json) | 自己採点の参照値 | PC・非公開GitHub |
 | [README.txt](participant_data/README.txt) | 事務局の配布案内原本 | PC・非公開GitHub |
-| `participant_data/token.txt` | 提出用の秘密トークン | PCのみ・Git管理対象外 |
+| `participant_data/token.txt` | 提出用の秘密トークン | PC・非公開GitHub（2026-09-17に明示許可） |
 
 [data_manifest.json](data_manifest.json) に原本6ファイルのサイズとSHA-256を記録しています。トークンの内容とハッシュは記載していません。
 
@@ -36,7 +36,7 @@
 ## 保存・利用について
 
 - 2026-09-16のユーザーの明示的依頼に基づき、配布原本6ファイルを既存の非公開リポジトリ `tsugiyama0216/pwscup2026-kit-private` へ保存します。リポジトリを公開せず、配布元READMEの取扱条件に従ってください。
-- `token.txt`、本戦フォルダー内のZIP、ローカル実行出力はGit管理から除外します。別PCで利用する際は、認証トークンを別途安全に配置してください。
+- 2026-09-17のユーザーの明示的指定により、team10の `participant_data/token.txt` と [`模擬提出データ/`](模擬提出データ/) 内の `token.txt` も、同じ非公開リポジトリに保存します。本戦フォルダー内の他のトークン、ZIP、ローカル実行出力は引き続きGit管理から除外します。トークンの内容は文書やログに記載しません。
 - 本戦の採点キットの導入・動作検証、加工アルゴリズムの実装、C.csvの生成・提出はまだ行っていません。今回保存した配布データだけで自己採点環境の構築完了とは扱いません。
 - 本戦用キットを導入するときは、このフォルダーのデータを明示的に参照します。`prelim/workspace/participant_data/` の練習用データや予備戦team24の実データを混ぜないでください。
 - 提出Cの列定義は本戦の `schema.json` にある `submitted_c_columns`（`record_id` を除いた13列）を参照します。
