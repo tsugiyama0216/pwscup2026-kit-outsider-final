@@ -16,6 +16,8 @@
 
 ## Repository boundaries
 
+- On 2026-09-18 the user requested creating sequential conditional synthesis R5, storing its submission data under team10/R/R5 on this PC and GitHub, and showing both locations. This authorizes R5 contents and exactly `main_round/anonymization/team10/R/R5/submission/team10_R5_defense.zip` in the existing private origin. Preserve verified artifact bytes, never print the token, and do not submit to CodaBench.
+
 - On 2026-09-17, after receiving the completed R4 and its local paths, the user explicitly requested saving it to GitHub too. This authorizes uploading the R4 contents and exactly `main_round/anonymization/team10/R/R4/submission/team10_R4_defense.zip` to the existing private repository. Preserve the verified artifact bytes, never print the token, and do not submit to CodaBench.
 
 - On 2026-09-17, after receiving the completed R3 submission ZIP, the user requested storing R3 under team10/R. This authorizes uploading the R3 model, evaluation records, and exactly `main_round/anonymization/team10/R/R3/submission/team10_R3_defense.zip` to the existing private repository. Preserve the verified artifact bytes and never print the token. No CodaBench submission is authorized.

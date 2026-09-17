@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-09-18",
+  "unit_tests_passed": 3,
+  "official_package_validation": true,
+  "official_schema_validation": true,
+  "csv_byte_reproduction": true,
+  "score_reproduction": true,
+  "original_models_unchanged": true,
+  "official_submission_performed": false,
+  "artifacts": {
+    "C.csv": "acb90291e7a8de8e4a43340aeed62fcbba490e68390eec6d1309dd0f84920be7",
+    "report.json": "28b5e5ec7031a0df8630d4b24190d16234823ab3386c9e50d8ff5c30f90ba797",
+    "submission/team10_R5_defense.zip": "581627acc10505c61a4927a69f0865a935fcb655ab4bef6db4bee865b7bea9f4"
+  }
+}

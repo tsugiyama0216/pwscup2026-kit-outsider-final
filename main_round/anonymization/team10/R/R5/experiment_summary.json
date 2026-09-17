@@ -1,0 +1,172 @@
+{
+  "grid": [
+    {
+      "leaf_size": 20,
+      "strength": 0.0,
+      "utility": 0.6680608502247269,
+      "facets": {
+        "U_gen": 0.9088673668627214,
+        "U_spec": 0.6680608502247269,
+        "U_rare": 0.8604542822726096,
+        "U_valid": 1.0
+      },
+      "clipped": {
+        "BMI": 0,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0,
+        "FPG": 0
+      },
+      "rare": {
+        "rare_detected": 47,
+        "gate": 8,
+        "below_gate": false
+      }
+    },
+    {
+      "leaf_size": 20,
+      "strength": 0.5,
+      "utility": 0.8079092630783484,
+      "facets": {
+        "U_gen": 0.9204916520673778,
+        "U_spec": 0.8079092630783484,
+        "U_rare": 0.8625840348515141,
+        "U_valid": 0.9992488796892274
+      },
+      "clipped": {
+        "BMI": 0,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0,
+        "FPG": 0
+      },
+      "rare": {
+        "rare_detected": 46,
+        "gate": 8,
+        "below_gate": false
+      }
+    },
+    {
+      "leaf_size": 40,
+      "strength": 0.0,
+      "utility": 0.5104133629347712,
+      "facets": {
+        "U_gen": 0.9088592272983294,
+        "U_spec": 0.6599455127676026,
+        "U_rare": 0.5104133629347712,
+        "U_valid": 1.0
+      },
+      "clipped": {
+        "BMI": 0,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0,
+        "FPG": 0
+      },
+      "rare": {
+        "rare_detected": 54,
+        "gate": 8,
+        "below_gate": false
+      }
+    },
+    {
+      "leaf_size": 40,
+      "strength": 0.5,
+      "utility": 0.648288180012353,
+      "facets": {
+        "U_gen": 0.9013788534419875,
+        "U_spec": 0.8633959970774269,
+        "U_rare": 0.648288180012353,
+        "U_valid": 1.0
+      },
+      "clipped": {
+        "BMI": 0,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0,
+        "FPG": 0
+      },
+      "rare": {
+        "rare_detected": 57,
+        "gate": 8,
+        "below_gate": false
+      }
+    },
+    {
+      "leaf_size": 60,
+      "strength": 0.0,
+      "utility": 0.7550873208311595,
+      "facets": {
+        "U_gen": 0.9175336688090214,
+        "U_spec": 0.7815692547293793,
+        "U_rare": 0.7550873208311595,
+        "U_valid": 0.9996971719402821
+      },
+      "clipped": {
+        "BMI": 0,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0,
+        "FPG": 0
+      },
+      "rare": {
+        "rare_detected": 62,
+        "gate": 8,
+        "below_gate": false
+      }
+    },
+    {
+      "leaf_size": 60,
+      "strength": 0.5,
+      "utility": 0.6290340191230834,
+      "facets": {
+        "U_gen": 0.9056286606744074,
+        "U_spec": 0.8825914948785426,
+        "U_rare": 0.6290340191230834,
+        "U_valid": 0.9998364893577001
+      },
+      "clipped": {
+        "BMI": 0,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0,
+        "FPG": 0
+      },
+      "rare": {
+        "rare_detected": 61,
+        "gate": 8,
+        "below_gate": false
+      }
+    }
+  ],
+  "selected": {
+    "leaf_size": 20,
+    "strength": 0.5,
+    "utility": 0.8079092630783484,
+    "facets": {
+      "U_gen": 0.9204916520673778,
+      "U_spec": 0.8079092630783484,
+      "U_rare": 0.8625840348515141,
+      "U_valid": 0.9992488796892274
+    },
+    "clipped": {
+      "BMI": 0,
+      "SBP": 0,
+      "TG": 0,
+      "HDL": 0,
+      "ALT": 0,
+      "FPG": 0
+    },
+    "rare": {
+      "rare_detected": 46,
+      "gate": 8,
+      "below_gate": false
+    }
+  }
+}

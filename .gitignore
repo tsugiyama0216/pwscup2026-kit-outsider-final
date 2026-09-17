@@ -40,6 +40,8 @@
 !/main_round/anonymization/team10/R/R3/submission/team10_R3_defense.zip
 # User requested storing R4, including its submission ZIP, in this private repository.
 !/main_round/anonymization/team10/R/R4/submission/team10_R4_defense.zip
+# User requested R5 submission artifacts on this PC and the existing private GitHub.
+!/main_round/anonymization/team10/R/R5/submission/team10_R5_defense.zip
 .env
 .env.*
 !.env.example
