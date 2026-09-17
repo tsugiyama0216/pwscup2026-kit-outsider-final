@@ -22,6 +22,8 @@
 
 **2026-09-17、ユーザー提供のR2公式結果を受けて[R3](main_round/anonymization/team10/R/R3/README.md)を作成しました。** R2の保存済み合成CSVへ、集計Cox係数と共分散に基づく強度0.5の部分補正を適用します。全9係数で有意・非有意が元Bと一致。6候補を比較し、ローカルU=0.8661244917109793（U_gen=0.9187884920473647、U_spec=0.9116907071412028、U_rare=0.8661244917109793、U_valid=1）を採用しました。一般有用性はR2から微減します。R2の参照MIA=0はR3へ引き継げず、R3の攻撃耐性は未評価です。17テスト成功、提出ZIP作成。生成時の公式形式検証・再現確認の記録はR3/verification.jsonを参照してください。R1・R2は変更せず、R2の再生成も行いません。作成後の追加依頼により、R3一式と`main_round/anonymization/team10/R/R3/submission/team10_R3_defense.zip`を既存の非公開GitHubへ保存する許可を得ています。検証済みのCSV・ZIP・生成コード・評価レポートは変更せず、CodaBenchへは送信しません。R3/verification.jsonはGitHub保存前の生成検証記録として保持しています。
 
+**2026-09-17、ユーザー提供のR3公式結果を受けて[R4](main_round/anonymization/team10/R/R4/README.md)を作成しました。** 固定R3のC.csvへ、年齢・性別・喫煙による条件付き検査値分布の補正を適用し、変位をCox係数の零空間へ射影して発症リスクを保持します。強度0.5、追加Cox補正なし。22候補を比較し、ローカルU=0.8683850877951735（U_gen=0.9319172595024955、U_spec=0.9136141267012007、U_rare=0.8683850877951735、U_valid=1）を採用。R3からUの改善は0.002260596と小幅ですが、全4指標は同等以上です。21テスト成功、提出ZIP作成。最終検証はR4/verification.jsonを参照。R1〜R3は変更せず、作成後の追加依頼によりR4一式と`main_round/anonymization/team10/R/R4/submission/team10_R4_defense.zip`を既存の非公開GitHubへ保存する許可を得ています。検証済み成果物のバイトは保持し、verification.jsonは保存前の生成検証記録として残しています。CodaBenchへは送信しません。R3の参照MIA=0をR4の攻撃耐性へ流用しません。
+
 旧ルートの実行コード・データ・研究記録は、相対配置を保って `prelim/workspace/` に移動しました。
 過去の `python -m attack_phase_...` コマンドは、先に `cd prelim/workspace` して実行します。
 詳細引き継ぎに残る過去の提出推奨・残回数は履歴であり、現在の指示ではありません。

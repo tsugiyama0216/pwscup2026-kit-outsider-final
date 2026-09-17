@@ -1,0 +1,250 @@
+{
+  "selection": "projected-0.5",
+  "baseline_R3_user_reported_utility": 0.8661244917109793,
+  "candidates": [
+    {
+      "label": "global-0.25",
+      "utility": 0.6455227825351517,
+      "facets": {
+        "U_gen": 0.9187884920473647,
+        "U_spec": 0.9080469482197651,
+        "U_rare": 0.6455227825351517,
+        "U_valid": 1.0
+      },
+      "rare": 54
+    },
+    {
+      "label": "global-0.5",
+      "utility": 0.7815381082056498,
+      "facets": {
+        "U_gen": 0.9187884920473647,
+        "U_spec": 0.9046388123718534,
+        "U_rare": 0.7815381082056498,
+        "U_valid": 1.0
+      },
+      "rare": 58
+    },
+    {
+      "label": "global-0.75",
+      "utility": 0.8351159814954557,
+      "facets": {
+        "U_gen": 0.9187884920473647,
+        "U_spec": 0.9014599182843165,
+        "U_rare": 0.8351159814954557,
+        "U_valid": 1.0
+      },
+      "rare": 58
+    },
+    {
+      "label": "global-1.0",
+      "utility": 0.806152870282271,
+      "facets": {
+        "U_gen": 0.918788290152912,
+        "U_spec": 0.8985054423377616,
+        "U_rare": 0.806152870282271,
+        "U_valid": 1.0
+      },
+      "rare": 60
+    },
+    {
+      "label": "sex-0.25",
+      "utility": 0.8570175929553556,
+      "facets": {
+        "U_gen": 0.9185608109420772,
+        "U_spec": 0.908140027918361,
+        "U_rare": 0.8570175929553556,
+        "U_valid": 1.0
+      },
+      "rare": 51
+    },
+    {
+      "label": "sex-0.5",
+      "utility": 0.6255065722239845,
+      "facets": {
+        "U_gen": 0.916945801565808,
+        "U_spec": 0.9050269320123133,
+        "U_rare": 0.6255065722239845,
+        "U_valid": 1.0
+      },
+      "rare": 54
+    },
+    {
+      "label": "sex-0.75",
+      "utility": 0.7039911863388251,
+      "facets": {
+        "U_gen": 0.9170157720670324,
+        "U_spec": 0.9015275558481033,
+        "U_rare": 0.7039911863388251,
+        "U_valid": 1.0
+      },
+      "rare": 57
+    },
+    {
+      "label": "sex-1.0",
+      "utility": 0.7780438990780537,
+      "facets": {
+        "U_gen": 0.9184798970524215,
+        "U_spec": 0.898428874129629,
+        "U_rare": 0.7780438990780537,
+        "U_valid": 1.0
+      },
+      "rare": 58
+    },
+    {
+      "label": "joint-0.25-cox-0",
+      "utility": 0.8683017780149286,
+      "facets": {
+        "U_gen": 0.9369833745888316,
+        "U_spec": 0.883631687754331,
+        "U_rare": 0.8683017780149286,
+        "U_valid": 1.0
+      },
+      "rare": 51
+    },
+    {
+      "label": "joint-0.25-cox-0.25",
+      "utility": 0.713785612983143,
+      "facets": {
+        "U_gen": 0.9256157476878303,
+        "U_spec": 0.9065867635749782,
+        "U_rare": 0.713785612983143,
+        "U_valid": 1.0
+      },
+      "rare": 53
+    },
+    {
+      "label": "joint-0.5-cox-0",
+      "utility": 0.7343447157909573,
+      "facets": {
+        "U_gen": 0.9530491760882936,
+        "U_spec": 0.8522460392913024,
+        "U_rare": 0.7343447157909573,
+        "U_valid": 1.0
+      },
+      "rare": 54
+    },
+    {
+      "label": "joint-0.5-cox-0.25",
+      "utility": 0.8290805293659717,
+      "facets": {
+        "U_gen": 0.9408600063277011,
+        "U_spec": 0.8853329852901404,
+        "U_rare": 0.8290805293659717,
+        "U_valid": 1.0
+      },
+      "rare": 55
+    },
+    {
+      "label": "joint-0.75-cox-0",
+      "utility": 0.8156145847252472,
+      "facets": {
+        "U_gen": 0.9613621177782407,
+        "U_spec": 0.8156145847252472,
+        "U_rare": 0.8323250094249861,
+        "U_valid": 1.0
+      },
+      "rare": 53
+    },
+    {
+      "label": "joint-0.75-cox-0.25",
+      "utility": 0.860690590496507,
+      "facets": {
+        "U_gen": 0.9495169108049917,
+        "U_spec": 0.860690590496507,
+        "U_rare": 0.8629158214099779,
+        "U_valid": 1.0
+      },
+      "rare": 53
+    },
+    {
+      "label": "projected-0.25",
+      "utility": 0.7833748078752836,
+      "facets": {
+        "U_gen": 0.9261644040080446,
+        "U_spec": 0.9126599645693498,
+        "U_rare": 0.7833748078752836,
+        "U_valid": 1.0
+      },
+      "rare": 52
+    },
+    {
+      "label": "projected-0.5",
+      "utility": 0.8683850877951735,
+      "facets": {
+        "U_gen": 0.9319172595024955,
+        "U_spec": 0.9136141267012007,
+        "U_rare": 0.8683850877951735,
+        "U_valid": 1.0
+      },
+      "rare": 55
+    },
+    {
+      "label": "projected-0.75",
+      "utility": 0.6264163999654008,
+      "facets": {
+        "U_gen": 0.9378660486443418,
+        "U_spec": 0.9145530674879284,
+        "U_rare": 0.6264163999654008,
+        "U_valid": 1.0
+      },
+      "rare": 55
+    },
+    {
+      "label": "projected-1.0",
+      "utility": 0.6660657352229291,
+      "facets": {
+        "U_gen": 0.9393671476252745,
+        "U_spec": 0.915477463044011,
+        "U_rare": 0.6660657352229291,
+        "U_valid": 1.0
+      },
+      "rare": 57
+    },
+    {
+      "label": "projected-0.4",
+      "utility": 0.8683850877951735,
+      "facets": {
+        "U_gen": 0.9297199405213653,
+        "U_spec": 0.913234256773418,
+        "U_rare": 0.8683850877951735,
+        "U_valid": 1.0
+      },
+      "rare": 55
+    },
+    {
+      "label": "projected-0.45",
+      "utility": 0.845048006227835,
+      "facets": {
+        "U_gen": 0.930734120241572,
+        "U_spec": 0.9134244893466698,
+        "U_rare": 0.845048006227835,
+        "U_valid": 1.0
+      },
+      "rare": 55
+    },
+    {
+      "label": "projected-0.55",
+      "utility": 0.8413632038750976,
+      "facets": {
+        "U_gen": 0.9329587937159993,
+        "U_spec": 0.9138031563914542,
+        "U_rare": 0.8413632038750976,
+        "U_valid": 1.0
+      },
+      "rare": 55
+    },
+    {
+      "label": "projected-0.6",
+      "utility": 0.8511893434823976,
+      "facets": {
+        "U_gen": 0.9340579951888993,
+        "U_spec": 0.9139915126983593,
+        "U_rare": 0.8511893434823976,
+        "U_valid": 1.0
+      },
+      "rare": 55
+    }
+  ],
+  "selection_rule": "highest local utility, then Pareto dominance of other facets for equal utility",
+  "notes": "Adaptive algorithm batches: 8 marginal, 6 joint, 4 risk-preserving, then 4 local refinements. No seed or row-order search. Not an independent holdout evaluation."
+}

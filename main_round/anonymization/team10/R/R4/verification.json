@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-17",
+  "tests": {
+    "command": "run.ps1 -Mode Test",
+    "passed": 21,
+    "failed": 0
+  },
+  "official_package_validation": true,
+  "saved_score_recomputed": true,
+  "R4_csv_reproduced_byte_for_byte": true,
+  "older_models_regenerated": false,
+  "R1_R2_R3_tracked_bytes_unchanged": true,
+  "selected_experiment_matches_release": true,
+  "R4_zip_git_ignored": true,
+  "credential_present_only_in_submission_zip": true,
+  "preserved_columns": [
+    "age",
+    "sex",
+    "prefecture",
+    "smoking",
+    "time",
+    "onset",
+    "death"
+  ],
+  "maximum_serialized_linear_predictor_change": 7.105427357601002e-15,
+  "maximum_refitted_cox_coefficient_change_from_R3": 1.3322676295501878e-15,
+  "all_nine_cox_significance_statuses_match_B": true,
+  "artifacts": {
+    "C.csv": "afe9d9251ffb2bdb439902e63826f4d3ff57869aeac6260baf19459f77a06807",
+    "report.json": "4d8c7e2104ec2b99ca746643c0e13d7a4c3d66b39183891852862fbadea7e3d3",
+    "submission/team10_R4_defense.zip": "03e510f4167e91f9e01333d35d05527213c1e82e5b9c1c5530e19fb0cb8d6f01"
+  },
+  "rows": 1049,
+  "columns": 13,
+  "rare_detected": 55,
+  "official_submission_performed": false,
+  "github_push_performed": false
+}
