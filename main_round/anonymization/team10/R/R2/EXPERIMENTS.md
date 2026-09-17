@@ -37,6 +37,6 @@ R2の`research_ablation.py`は、実験用CSVとJSONをローカル専用フォ�
 
 ```powershell
 # リポジトリルートから。再実行時は未使用のlabelを指定する。
-& .\prelim\workspace\starter\.venv\Scripts\python.exe -X utf8 main_round/anonymization/team10/R/R2t/research_ablation.py diagnose-r1 --label unpenalized-recheck
-& .\prelim\workspace\starter\.venv\Scripts\python.exe -X utf8 main_round/anonymization/team10/R/R2t/research_ablation.py conditional --label conditional-recheck
+& .\prelim\workspace\starter\.venv\Scripts\python.exe -X utf8 main_round/anonymization/team10/R/R2/research_ablation.py diagnose-r1 --label unpenalized-recheck
+& .\prelim\workspace\starter\.venv\Scripts\python.exe -X utf8 main_round/anonymization/team10/R/R2/research_ablation.py conditional --label conditional-recheck
 ```

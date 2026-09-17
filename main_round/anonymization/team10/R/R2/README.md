@@ -1,6 +1,6 @@
-# R2t: R2の提出データ・実装・評価記録
+# R2: R2の提出データ・実装・評価記録
 
-ユーザーの指定により、モデルR2の内容をR1と同じ階層の`R2t/`に保存する。モデル名、提出ZIP名、生成コード、CSV、評価レポートはR2作成時の内容を保持する。
+ユーザーの指定により、モデルR2の内容をR1と同じ階層の`R2/`に保存する。モデル名、提出ZIP名、生成コード、CSV、評価レポートはR2作成時の内容を保持する。
 
 2026-09-17作成。本戦team10のB.csvから作る1,049行・13列の完全合成データ。R1の検査値生成を引き継ぎ、発症・死亡の生成を**無正則化Coxと時間区間ごとの件数を保つリスク集合サンプリング**へ変更した。
 
@@ -71,13 +71,13 @@ seedはR1と同じ`20260917`で固定し、seed探索はしていない。学習
 
 ```powershell
 # 保存済み成果物とスコアの確認
-& .\main_round\anonymization\team10\R\R2t\run.ps1 -Mode Verify
+& .\main_round\anonymization\team10\R\R2\run.ps1 -Mode Verify
 
 # メモリ内で再生成し、保存済みCSVと完全一致するか確認
-& .\main_round\anonymization\team10\R\R2t\run.ps1 -Mode Reproduce
+& .\main_round\anonymization\team10\R\R2\run.ps1 -Mode Reproduce
 
 # 人工データによる回帰テスト
-& .\main_round\anonymization\team10\R\R2t\run.ps1 -Mode Test
+& .\main_round\anonymization\team10\R\R2\run.ps1 -Mode Test
 ```
 
 Generateは凍結成果物があると停止する。新しいモデルの開発は別のモデル番号で行う。
