@@ -16,6 +16,8 @@
 - [本戦の格納先](main_round/README.md)
 - [本戦・加工フェーズのteam10データ](main_round/anonymization/team10/README.md)
 
+**2026-09-17に[R1](main_round/anonymization/team10/R/R1/README.md)を作成しました。** 性別・喫煙別ガウシアン・コピュラと競合リスクCoxによる1,049行・13列の完全合成です。S2のコード・モデル・生成データは不使用。ローカル有用性U=0.564209862140604、公式形式検証と15テスト成功、同一乱数種のCSVバイト再現も確認済みです。匿名性・差分プライバシーの保証はありません。ユーザーはR1一式の非公開GitHubへのアップロードを依頼し、トークン入り `main_round/anonymization/team10/R/R1/submission/team10_R1_defense.zip` を含めることも明示的に許可しました。この追加許可はR1の同ZIPだけに適用し、CodaBench提出は行いません。
+
 旧ルートの実行コード・データ・研究記録は、相対配置を保って `prelim/workspace/` に移動しました。
 過去の `python -m attack_phase_...` コマンドは、先に `cd prelim/workspace` して実行します。
 詳細引き継ぎに残る過去の提出推奨・残回数は履歴であり、現在の指示ではありません。

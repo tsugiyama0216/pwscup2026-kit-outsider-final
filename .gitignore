@@ -32,6 +32,8 @@
 !/main_round/anonymization/team10/S/S1/submission/team10_S1_defense.zip
 # User authorized uploading the completed S2 state, including its submission ZIP, to private main.
 !/main_round/anonymization/team10/S/S2/submission/team10_S2_defense.zip
+# User explicitly authorized the R1 token-bearing ZIP in this private repository on 2026-09-17.
+!/main_round/anonymization/team10/R/R1/submission/team10_R1_defense.zip
 .env
 .env.*
 !.env.example
