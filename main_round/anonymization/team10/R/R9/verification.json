@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-18",
+  "model": "R9",
+  "target_utility": 0.99,
+  "local_utility": 0.9951442572649957,
+  "tests": {
+    "command": "./main_round/anonymization/team10/R/R9/run.ps1 -Mode Test",
+    "passed": 10,
+    "failed": 0
+  },
+  "release_validation": {
+    "logical_ok": true,
+    "rows": 1049,
+    "columns": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "time",
+      "onset",
+      "death"
+    ],
+    "no_missing": true,
+    "source_exact_matches": 0,
+    "synthetic_duplicate_rows": 0,
+    "censored_time_is_horizon": true,
+    "rare_diagnostic": {
+      "rare_detected": 56,
+      "gate": 8,
+      "below_gate": false
+    },
+    "event_counts": {
+      "onset": 110,
+      "death": 71
+    },
+    "privacy_note": "No formal differential privacy or official attack-resistance guarantee.",
+    "package_ok": true,
+    "csv_matches_zip_bytes": true,
+    "token_matches_original_bytes": true,
+    "C_sha256": "ae3d363321b58743e5f7ddf9e27b97e5525f1403c587d12ae6b5368311501136",
+    "ZIP_sha256": "6d43c8017c90a07a7abc4f08004b470540b751b3f6f14d4742b6d2d3fbaede98"
+  },
+  "reproduction": {
+    "command": "./main_round/anonymization/team10/R/R9/run.ps1 -Mode Reproduce",
+    "exit_code": 0,
+    "selected_candidate_csv_byte_identical": true,
+    "regenerated_csv_byte_identical": true,
+    "official_facets_identical": true,
+    "input_and_source_provenance_identical": true
+  },
+  "fixed_event_time_sex_smoking_columns_unchanged_from_R8": true,
+  "per_row_detected_rare_membership_unchanged_from_R8": true,
+  "prefecture_counts_match_B": true,
+  "all_nine_cox_significance_flags_match_B": true,
+  "credential_plaintext_leaks": 0,
+  "R1_R8_and_other_workers_models_unchanged_from_commit": "294f26490228acd0cac6b40a07feae2619c9be49",
+  "github_destination": {
+    "repository": "tsugiyama0216/pwscup2026-kit-private",
+    "visibility_verified": "PRIVATE",
+    "branch": "main",
+    "pre_upload_remote_main": "294f26490228acd0cac6b40a07feae2619c9be49"
+  },
+  "official_submission_performed": false,
+  "official_attack_evaluated": false,
+  "artifact_sha256": {
+    "C.csv": "ae3d363321b58743e5f7ddf9e27b97e5525f1403c587d12ae6b5368311501136",
+    "submission/team10_R9_defense.zip": "6d43c8017c90a07a7abc4f08004b470540b751b3f6f14d4742b6d2d3fbaede98",
+    "report.json": "fb216996b40640a8d2f9d41ada5bde635058aa1e19c411ab98d5ad6124c56a22",
+    "experiment_summary.json": "02a9d7bad426c7bf39cc4cc2f1cf099b328f1c471ab76f1db486100866278e51",
+    "test_r9.py": "81ea452ed4a766445a7c21466f721ed91dc5991a52ec64578099301d0c38d65c"
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "selection": "Maximum official local utility subject to no R8 facet regression and >1e-9 improvement",
+  "candidate_count": 12,
+  "adaptive_batches": true,
+  "independent_holdout": false,
+  "random_seed_or_row_order_search": false,
+  "selected": {
+    "settings": {
+      "steps": 300,
+      "marginal_weight": 10.0,
+      "rare_weight": 4.0,
+      "correlation_weight": 300.0,
+      "information_weight": 100.0,
+      "movement_weight": 0.02,
+      "trust_radius": 1.0,
+      "membership_weight": 10000.0,
+      "preserve_membership": true,
+      "balance_prefecture": true,
+      "balance_age": true
+    },
+    "utility": 0.9951442572649957,
+    "facets": {
+      "U_gen": 0.9970448045757865,
+      "U_spec": 0.999408266781119,
+      "U_rare": 0.9951442572649957,
+      "U_valid": 1.0
+    },
+    "csv_sha256": "ae3d363321b58743e5f7ddf9e27b97e5525f1403c587d12ae6b5368311501136",
+    "batch": "age",
+    "index": 1,
+    "batch_sha256": "ec472a96a687d6ea5175e1beeede236032b93c14f4e531c8ca343041baf3a433",
+    "eligible": true
+  },
+  "candidates": [
+    {
+      "settings": {
+        "steps": 200,
+        "marginal_weight": 4.0,
+        "rare_weight": 4.0,
+        "correlation_weight": 100.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0
+      },
+      "utility": 0.9052393932109903,
+      "facets": {
+        "U_gen": 0.9894184938036223,
+        "U_spec": 0.9998690598474566,
+        "U_rare": 0.9052393932109903,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "8d93986323cc81d39833ab2ca2fc512e65d1cbbb862e344f2bbcb13ee7c0baf9",
+      "batch": "initial",
+      "index": 0,
+      "batch_sha256": "5865672ed4f4ec9b2fe920e0d13eac3bd89ee335c55b24579a2dbdba5e34c415",
+      "eligible": false
+    },
+    {
+      "settings": {
+        "steps": 200,
+        "marginal_weight": 10.0,
+        "rare_weight": 4.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0
+      },
+      "utility": 0.9334084072954973,
+      "facets": {
+        "U_gen": 0.9897998093422308,
+        "U_spec": 0.9995224170027218,
+        "U_rare": 0.9334084072954973,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "e3a145fe7e74d014b4cc283effe54ac81ba55d558862fe2799deda0e01cccfda",
+      "batch": "initial",
+      "index": 1,
+      "batch_sha256": "5865672ed4f4ec9b2fe920e0d13eac3bd89ee335c55b24579a2dbdba5e34c415",
+      "eligible": false
+    },
+    {
+      "settings": {
+        "steps": 200,
+        "marginal_weight": 4.0,
+        "rare_weight": 10.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0
+      },
+      "utility": 0.8629858720842297,
+      "facets": {
+        "U_gen": 0.9896091515729266,
+        "U_spec": 0.9998449420392068,
+        "U_rare": 0.8629858720842297,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "bc95473631dbb0a6853d3bf8347b2015060e6c68ed5a0ac567cb6c919268097f",
+      "batch": "initial",
+      "index": 2,
+      "batch_sha256": "5865672ed4f4ec9b2fe920e0d13eac3bd89ee335c55b24579a2dbdba5e34c415",
+      "eligible": false
+    },
+    {
+      "settings": {
+        "steps": 200,
+        "marginal_weight": 10.0,
+        "rare_weight": 10.0,
+        "correlation_weight": 300.0,
+        "information_weight": 300.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0
+      },
+      "utility": 0.8911548861687368,
+      "facets": {
+        "U_gen": 0.9897044804575786,
+        "U_spec": 0.9995134420726779,
+        "U_rare": 0.8911548861687368,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "ae852dd3ee4b3cadf3352eda242f61a937238a941057445c06a18c3a790c9227",
+      "batch": "initial",
+      "index": 3,
+      "batch_sha256": "5865672ed4f4ec9b2fe920e0d13eac3bd89ee335c55b24579a2dbdba5e34c415",
+      "eligible": false
+    },
+    {
+      "settings": {
+        "steps": 250,
+        "marginal_weight": 4.0,
+        "rare_weight": 4.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0,
+        "membership_weight": 10000.0,
+        "preserve_membership": true,
+        "balance_prefecture": true
+      },
+      "utility": 0.983511327583896,
+      "facets": {
+        "U_gen": 0.990276453765491,
+        "U_spec": 0.9998005224703148,
+        "U_rare": 0.983511327583896,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "0bc7894262eb71fc3e7d0089f6124008376748b6e85c22fddec73410555022ef",
+      "batch": "constraints",
+      "index": 0,
+      "batch_sha256": "48cc850166b675ecdb181ffe6ab1edfbc9f7c57cc909312d4c8030f3b54c8202",
+      "eligible": true
+    },
+    {
+      "settings": {
+        "steps": 250,
+        "marginal_weight": 10.0,
+        "rare_weight": 4.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0,
+        "membership_weight": 10000.0,
+        "preserve_membership": true,
+        "balance_prefecture": true
+      },
+      "utility": 0.9856264057077322,
+      "facets": {
+        "U_gen": 0.9943755958055291,
+        "U_spec": 0.9991758985889957,
+        "U_rare": 0.9856264057077322,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "e1dbd54787efba3e0d13fbc06aeb957598829a3d46ba25d2540d710342233b22",
+      "batch": "constraints",
+      "index": 1,
+      "batch_sha256": "48cc850166b675ecdb181ffe6ab1edfbc9f7c57cc909312d4c8030f3b54c8202",
+      "eligible": true
+    },
+    {
+      "settings": {
+        "steps": 250,
+        "marginal_weight": 4.0,
+        "rare_weight": 10.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0,
+        "membership_weight": 10000.0,
+        "preserve_membership": true,
+        "balance_prefecture": true
+      },
+      "utility": 0.9824537885219776,
+      "facets": {
+        "U_gen": 0.9882745471877978,
+        "U_spec": 0.9994206214041951,
+        "U_rare": 0.9824537885219776,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "0e320829bfa4aa074424af3bd682cf5373aaed912badc1bfc29fbd8582cf3419",
+      "batch": "constraints",
+      "index": 2,
+      "batch_sha256": "48cc850166b675ecdb181ffe6ab1edfbc9f7c57cc909312d4c8030f3b54c8202",
+      "eligible": true
+    },
+    {
+      "settings": {
+        "steps": 250,
+        "marginal_weight": 4.0,
+        "rare_weight": 10.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0,
+        "membership_weight": 100000.0,
+        "preserve_membership": true,
+        "balance_prefecture": true
+      },
+      "utility": 0.8855292583999885,
+      "facets": {
+        "U_gen": 0.9842707340324118,
+        "U_spec": 0.8855292583999885,
+        "U_rare": 0.9845688666458139,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "40062cc78a5b44070e8bb50cdf973bea72fa87bcb7cf5476c3d0b90b3f35088a",
+      "batch": "constraints",
+      "index": 3,
+      "batch_sha256": "48cc850166b675ecdb181ffe6ab1edfbc9f7c57cc909312d4c8030f3b54c8202",
+      "eligible": false
+    },
+    {
+      "settings": {
+        "steps": 300,
+        "marginal_weight": 4.0,
+        "rare_weight": 4.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0,
+        "membership_weight": 10000.0,
+        "preserve_membership": true,
+        "balance_prefecture": true,
+        "balance_age": true
+      },
+      "utility": 0.9930291791411593,
+      "facets": {
+        "U_gen": 0.9968541468064824,
+        "U_spec": 0.9998772555143525,
+        "U_rare": 0.9930291791411593,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "837c23c6daad1c8538a601d5c8715c8602e9093c351f7df53680e0cc3827a4fa",
+      "batch": "age",
+      "index": 0,
+      "batch_sha256": "ec472a96a687d6ea5175e1beeede236032b93c14f4e531c8ca343041baf3a433",
+      "eligible": true
+    },
+    {
+      "settings": {
+        "steps": 300,
+        "marginal_weight": 10.0,
+        "rare_weight": 4.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0,
+        "membership_weight": 10000.0,
+        "preserve_membership": true,
+        "balance_prefecture": true,
+        "balance_age": true
+      },
+      "utility": 0.9951442572649957,
+      "facets": {
+        "U_gen": 0.9970448045757865,
+        "U_spec": 0.999408266781119,
+        "U_rare": 0.9951442572649957,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "ae3d363321b58743e5f7ddf9e27b97e5525f1403c587d12ae6b5368311501136",
+      "batch": "age",
+      "index": 1,
+      "batch_sha256": "ec472a96a687d6ea5175e1beeede236032b93c14f4e531c8ca343041baf3a433",
+      "eligible": true
+    },
+    {
+      "settings": {
+        "steps": 300,
+        "marginal_weight": 4.0,
+        "rare_weight": 10.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0,
+        "membership_weight": 10000.0,
+        "preserve_membership": true,
+        "balance_prefecture": true,
+        "balance_age": true
+      },
+      "utility": 0.9925643469971401,
+      "facets": {
+        "U_gen": 0.9925643469971401,
+        "U_spec": 0.9996075754681885,
+        "U_rare": 0.9962017963269137,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "e1cda902edd2a08940f87a128b0c2897e5fe1a00f3986df76d6fab687b8e1a9f",
+      "batch": "age",
+      "index": 2,
+      "batch_sha256": "ec472a96a687d6ea5175e1beeede236032b93c14f4e531c8ca343041baf3a433",
+      "eligible": true
+    },
+    {
+      "settings": {
+        "steps": 300,
+        "marginal_weight": 4.0,
+        "rare_weight": 10.0,
+        "correlation_weight": 300.0,
+        "information_weight": 100.0,
+        "movement_weight": 0.02,
+        "trust_radius": 1.0,
+        "membership_weight": 100000.0,
+        "preserve_membership": true,
+        "balance_prefecture": true,
+        "balance_age": true
+      },
+      "utility": 0.9865586272640611,
+      "facets": {
+        "U_gen": 0.9865586272640611,
+        "U_spec": 0.9947621448929334,
+        "U_rare": 0.997094430992736,
+        "U_valid": 1.0
+      },
+      "csv_sha256": "9f7e160f8dbcdc3c1b1164f012ddef1df65da0868938163e8634387c1d5f7e1e",
+      "batch": "age",
+      "index": 3,
+      "batch_sha256": "ec472a96a687d6ea5175e1beeede236032b93c14f4e531c8ca343041baf3a433",
+      "eligible": true
+    }
+  ]
+}

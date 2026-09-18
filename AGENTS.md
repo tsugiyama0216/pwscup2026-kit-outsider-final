@@ -16,6 +16,8 @@
 
 ## Repository boundaries
 
+- On 2026-09-18 the user supplied R8 official feedback and requested an improved R9 aiming above 0.99, saving submission data under team10/R on this PC and GitHub. This authorizes R9 contents and exactly `main_round/anonymization/team10/R/R9/submission/team10_R9_defense.zip` in the existing private origin. Preserve verified artifact bytes, R1-R8 and other workers' models, never print the token, and do not submit to CodaBench.
+
 - On 2026-09-18 the user requested uploading worker M's S1-based M1 artifacts to the existing private GitHub repository. This authorizes the tracked contents under `main_round/anonymization/team10/M/M1/` and the corresponding documentation updates. It does not authorize a token-bearing M1 submission ZIP or a CodaBench submission.
 
 - On 2026-09-18 the user supplied R7 official feedback and requested an improved R8, storing submission data under team10/R on this PC and GitHub. This authorizes R8 contents and exactly `main_round/anonymization/team10/R/R8/submission/team10_R8_defense.zip` in the existing private origin. Preserve verified artifact bytes and R1-R7, never print the token, and do not submit to CodaBench.
