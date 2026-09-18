@@ -1,0 +1,177 @@
+{
+  "schema_version": "team10-local-resistance-v1",
+  "evaluated_at_utc": "2026-09-18T06:49:40.261664+00:00",
+  "model": "R7",
+  "scope": "local stress test; not official protection or final Anon",
+  "rulebook_alignment": {
+    "mia": "section 6.2.1: TPR at FPR=0.01, rare worst-case, 20,000-permutation chance correction, K=12",
+    "aia": "section 6.2.2: normalized excess time accuracy with tau=0.5 and rare SE deadzone",
+    "aggregation": "section 6.2: resistance=1-max(MIA,AIA); decision floor mirrors min(U,Anon)"
+  },
+  "limitations": [
+    "Official cross-team MIA candidate sets and AIA target/control challenges are unavailable.",
+    "The local proxy uses all B rows as members/targets and public A_bg rows as controls.",
+    "The team10 official AIA phi_i baseline is unavailable, so the reported AIA risk is before phi subtraction.",
+    "Multiple attacks are aggregated by maximum as a conservative development stress test, not by the official cross-team aggregation.",
+    "K=12 normalization is reported for rulebook traceability, but the proxy candidate composition differs from the official 25-27-member pool and may saturate; model ranking therefore uses the chance-corrected beta scale before K normalization.",
+    "Results compare models on this fixed local proxy and are not leaderboard predictions."
+  ],
+  "inputs": {
+    "c_sha256": "a07312b4a5ef6121a4c0bc660b2a0d3f81299ad56921664b8612f562727b6836",
+    "utility_score_sha256": "a07bc735b5c306cffd413223502e564fa2e93e27c4360f317ea57204cdd77382",
+    "b_self_sha256": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+    "a_bg_sha256": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "schema_sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+    "official_attack_mia_sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf",
+    "official_attack_aia_sha256": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a",
+    "official_attack_score_sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "prelim_v4_mia_source_sha256": "65f8579f244ab65437c5c3d2f5f576b70d511574d5b81fdf961786a41acbfd30",
+    "prelim_v4_aia_source_sha256": "c583d261bf3c7f3ed67333449636932dcc3f6cdbe21783c8789b6b74a0fd41f8",
+    "prelim_v9_method_record_sha256": "be528f902d92984a8c8517183e996c41c6172d47211a208974eded1acbbd9c67"
+  },
+  "utility": {
+    "U": 0.9568840160028896,
+    "facets": {
+      "U_gen": 0.965034580679937,
+      "U_spec": 0.9568840160028896,
+      "U_rare": 0.9639190249630962,
+      "U_valid": 1.0
+    }
+  },
+  "mia": {
+    "candidate_proxy": "all 1049 B rows as members and all public A_bg rows as nonmembers",
+    "candidate_rows": 6192,
+    "members": 1049,
+    "controls": 5143,
+    "attacks": {
+      "official_domias_kde": {
+        "raw_worst_tpr": 0.6338028169014085,
+        "tpr_all": 0.20686367969494757,
+        "tpr_rare": 0.6338028169014085,
+        "chance95": 0.04225352112676056,
+        "beta": 0.601549295774648,
+        "normalized_risk": 1.0,
+        "permutations": 20000,
+        "seed": 6391565122484030078
+      },
+      "team_v4_v9_multiview": {
+        "raw_worst_tpr": 0.02669208770257388,
+        "tpr_all": 0.02669208770257388,
+        "tpr_rare": 0.014084507042253521,
+        "chance95": 0.04225352112676056,
+        "beta": 0.01,
+        "normalized_risk": 0.0,
+        "permutations": 20000,
+        "seed": 4254597652952066518,
+        "detail": {
+          "views": {
+            "qi": {
+              "member_distance_median": 0.3474199854439011,
+              "control_distance_median": 0.4144177757183833
+            },
+            "stable": {
+              "member_distance_median": 0.17210084475254195,
+              "control_distance_median": 0.23889140414574708
+            },
+            "clinical": {
+              "member_distance_median": 0.412659626525773,
+              "control_distance_median": 0.47976906004931763
+            },
+            "outcome": {
+              "member_distance_median": 0.3846488283981216,
+              "control_distance_median": 0.45950628917779324
+            }
+          },
+          "coherence_mean": 0.6046511627906976
+        }
+      }
+    },
+    "stress_normalized_risk": 1.0,
+    "stress_beta_risk": 0.601549295774648,
+    "stress_raw_tpr": 0.6338028169014085,
+    "worst_attack": "official_domias_kde"
+  },
+  "aia": {
+    "challenge_proxy": "all B rows as targets and all A_bg rows as controls",
+    "members": 1049,
+    "controls": 5143,
+    "phi_team10": null,
+    "phi_note": "team10 official phi_i is unavailable; no phi subtraction is applied",
+    "attacks": {
+      "official_qi_nearest": {
+        "risk": 0.028071712088708827,
+        "breakdown": {
+          "r_onset": null,
+          "r_time_all": 0.028071712088708827,
+          "r_time_rare": 0.0,
+          "r_time_rare_raw": 0.054975011358473456,
+          "aia_rare_se_z": 1.64,
+          "tpr_onset_member": null,
+          "tpr_onset_control": null,
+          "succ_time_member": 0.7206863679694948,
+          "succ_time_control": 0.712619093914058,
+          "succ_time_member_rare": 0.5492957746478874,
+          "succ_time_control_rare": 0.5230769230769231,
+          "tau_time": 0.5,
+          "low_fpr": 0.01
+        }
+      },
+      "team_multiview_linkage": {
+        "risk": 0.04697881557463981,
+        "breakdown": {
+          "r_onset": null,
+          "r_time_all": 0.04697881557463981,
+          "r_time_rare": 0.0,
+          "r_time_rare_raw": 0.036323202372127696,
+          "aia_rare_se_z": 1.64,
+          "tpr_onset_member": null,
+          "tpr_onset_control": null,
+          "succ_time_member": 0.7426120114394662,
+          "succ_time_control": 0.7299241687730896,
+          "succ_time_member_rare": 0.5492957746478874,
+          "succ_time_control_rare": 0.5323076923076923,
+          "tau_time": 0.5,
+          "low_fpr": 0.01
+        }
+      },
+      "public_horizon_sanity": {
+        "risk": 0.04790063666076526,
+        "breakdown": {
+          "r_onset": null,
+          "r_time_all": 0.04790063666076526,
+          "r_time_rare": 0.0,
+          "r_time_rare_raw": 0.0,
+          "aia_rare_se_z": 1.64,
+          "tpr_onset_member": null,
+          "tpr_onset_control": null,
+          "succ_time_member": 0.8341277407054337,
+          "succ_time_control": 0.8257826171495236,
+          "succ_time_member_rare": 0.6338028169014085,
+          "succ_time_control_rare": 0.6953846153846154,
+          "tau_time": 0.5,
+          "low_fpr": 0.01
+        }
+      }
+    },
+    "stress_risk_before_phi": 0.04697881557463981
+  },
+  "copy_diagnostics": {
+    "exact_B_rows_in_C": 0,
+    "exact_A_bg_rows_in_C": 0,
+    "c_duplicate_rows": 0
+  },
+  "summary": {
+    "mia_stress_normalized_risk": 1.0,
+    "mia_stress_beta_risk": 0.601549295774648,
+    "mia_stress_raw_tpr": 0.6338028169014085,
+    "aia_stress_risk_before_phi": 0.04697881557463981,
+    "official_like_attack_risk": 1.0,
+    "official_like_resistance_index": 0.0,
+    "diagnostic_attack_risk": 0.601549295774648,
+    "diagnostic_resistance_index": 0.398450704225352,
+    "risk_band": "high-local-signal",
+    "utility_U": 0.9568840160028896,
+    "screening_floor": 0.398450704225352,
+    "bottleneck": "resistance"
+  }
+}
