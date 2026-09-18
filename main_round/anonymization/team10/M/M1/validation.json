@@ -1,0 +1,15 @@
+{
+  "validated_at_utc": "2026-09-18T03:11:05.730431+00:00",
+  "ok": true,
+  "errors": [],
+  "candidate": "M1",
+  "rows": 1049,
+  "columns": 13,
+  "missing_values": 0,
+  "duplicate_rows": 0,
+  "rare_detected": 66,
+  "rare_gate": 8,
+  "c_sha256": "c5c54aaa50ef04858134e70bd3ed154b1620285f8047766403034b1fe8afca2d",
+  "generation_report_sha256": "252b7617737e35d084bae9cf6aef3a9e091d776d6c1fb094c863ac88912ad837",
+  "token_or_submission_zip_created": false
+}

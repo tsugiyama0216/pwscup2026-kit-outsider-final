@@ -1,0 +1,36 @@
+{
+  "selected": {
+    "strength": 1.0,
+    "seed": 20260919,
+    "outcome_method": "nearest-risk",
+    "death_weight": 0.31,
+    "utility": 0.7521530456176521,
+    "facets": {
+      "U_gen": 0.9214155715372894,
+      "U_spec": 0.7521530456176521,
+      "U_rare": 0.8183050847457627,
+      "U_valid": 0.8727753152771738
+    }
+  },
+  "strength_screen_seed_20260918": [
+    {"strength": 0.5, "utility": 0.4115146794705244},
+    {"strength": 0.75, "utility": 0.5805148036936515},
+    {"strength": 1.0, "utility": 0.7175814637804333}
+  ],
+  "seed_screen_strength_1_death_weight_0_31": [
+    {"seed": 20260917, "utility": 0.5519437120513102},
+    {"seed": 20260918, "utility": 0.7175814637804333},
+    {"seed": 20260919, "utility": 0.7521530456176521},
+    {"seed": 20260920, "utility": 0.6637260318574074},
+    {"seed": 20260921, "utility": 0.7084027937812974}
+  ],
+  "death_weight_screen_seed_20260918_strength_1": [
+    {"death_weight": 0.0, "utility": 0.6206957472177158},
+    {"death_weight": 0.1, "utility": 0.519553603883104},
+    {"death_weight": 0.2, "utility": 0.5397633258151703},
+    {"death_weight": 0.31, "utility": 0.7175814637804333},
+    {"death_weight": 0.5, "utility": 0.6260792014613719},
+    {"death_weight": 0.8, "utility": 0.6059439707726472}
+  ],
+  "selection_note": "B/B_self were used by the official local scorer to select among public-only postprocessing candidates. They are not read by generate_m1.py. Candidate selection is therefore not claimed as a precommitted end-to-end DP mechanism."
+}

@@ -1,0 +1,26 @@
+{
+  "model": "M1",
+  "base_model": "S1",
+  "method": "public-reference rank-copula postprocessing",
+  "features": [
+    "age",
+    "sex",
+    "BMI",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT",
+    "FPG",
+    "smoking"
+  ],
+  "strength": 1.0,
+  "seed": 20260919,
+  "outcome_method": "nearest-risk",
+  "death_weight": 0.31,
+  "rare_repair": "S1 public-background-rate donor repair",
+  "private_generation_inputs": [],
+  "selection_inputs": [
+    "participant_data/B_self.csv",
+    "participant_data/utility_ref.json"
+  ]
+}
