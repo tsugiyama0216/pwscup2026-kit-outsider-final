@@ -21,6 +21,34 @@ MODEL_NOTES = {
     "R9": ("地域・年齢・Cox等の集計制約付きR8補正", "Uは最高だがMIAはR6水準へ悪化。集計一致の強化と耐性低下が同時に観測。"),
     "M1": ("S1へ公開A_bgランク・コピュラ補正", "非S1モデルでMIAが最小、floor首位。希少側DOMIAS信号は残る。"),
 }
+MODEL_CAUSES = {
+    "S1": "DP測定と独立的な復号でB固有の7変数密度まで平滑化された一方、列間相関も崩れた可能性があります。低MIAとU=0は同じ強い平滑化の別側面と考えられます。",
+    "S2": "sample化で不自然な相関は減りましたが、Bから測定した周辺・低次元構造の再現が戻り、特に希少側でCとBの密度がA_bgより近くなった可能性があります。",
+    "R1": "性別・喫煙層別のコピュラとB経験分布が、希少7変数の同時密度を強く再現した可能性があります。完全合成・完全一致0でもKDE密度比は高くなり得ます。",
+    "R2": "連続共変量はR1を引き継ぐため、7変数だけを使うDOMIASの値がR1と同じです。事象割当ての変更は主にAIAとU_specへ影響したと考えられます。",
+    "R3": "BのCox係数へ近づける連続値補正が、B固有の共変量方向へCを移動させ、希少側密度比をわずかに上げた可能性があります。",
+    "R4": "Bの条件付き平均・共分散へ近づける分布輸送が、Coxリスクを保ちながらも7変数のBらしさを増した可能性があります。",
+    "R5": "CART葉内の経験分布から再サンプリングする局所平滑化が、後期コピュラ系列ほど希少密度を精密に合わせず、相対的にMIAを抑えた可能性があります。",
+    "R6": "B検出希少群の経験分位点と潜在共分散を明示的に移したため、DOMIASが使う希少7変数密度へ最も直接的に近づいた可能性があります。",
+    "R7": "多数派・希少群を別々に補正し、希少半径を保護したためBらしい裾構造が残りました。R6からは改善しましたが、希少密度信号は依然強い状態です。",
+    "R8": "非線形分散補正と希少経験分位点補正により有用性を高めつつ、区分保護や事象交換がR6/R7よりMIAを弱めた可能性があります。ただしB経験分位点利用の信号は残ります。",
+    "R9": "地域件数、年齢分位点、全体・希少分位点、順位相関、Cox統計を同時にBへ合わせたため、Uは上がってもDOMIASが見る7変数密度、とくに希少側が再びBへ近づいた可能性があります。",
+    "M1": "依存構造をBではなく公開A_bgから導入したため、B固有の密度比を相対的に抑えた可能性があります。公開A_bg完全一致4行はありますが、B完全一致0であり、希少MIAの残存原因をそれだけでは説明できません。",
+}
+MODEL_ACTIONS = {
+    "S1": "提出候補にはせず、低MIA側の対照として保持します。相関を段階的に戻したときのUとMIAの曲線を比較します。",
+    "S2": "希少ドナー処理とDP合成本体を分けてアブレーションし、希少側TPRを増やした工程を特定します。",
+    "R1": "層別、経験分位点、共分散縮小率を個別に弱め、希少TPRとU_gen/U_rareの変化を測ります。",
+    "R2": "MIA改善には事象生成ではなくR1由来の連続共変量生成を変更します。AIAについてはR1との事象割当て差を比較します。",
+    "R3": "Cox補正強度を0から採用値まで段階化し、U_spec改善1単位当たりのMIA増加を記録します。",
+    "R4": "条件付き平均補正、共分散補正、Cox直交射影を別々に外し、どの成分が希少密度を強めるか確認します。",
+    "R5": "R系列の耐性基準として保持し、葉サイズ・深さ・希少群平滑化を調整してUを上げてもMIAを維持できるか検証します。",
+    "R6": "希少コピュラ強度とB経験分位点への写像を弱め、A_bgとの混合またはノイズ付加で希少密度比を下げます。",
+    "R7": "多数派補正、希少補正、半径保持、事象交換の4段階を順に評価し、MIAに効く工程だけを緩和します。",
+    "R8": "R6/R7より改善した処理を保持しつつ、希少経験分位点強度を下げる候補を優先します。",
+    "R9": "地域、年齢、分位点、順位相関、Cox制約を1群ずつR8へ追加するアブレーションを行い、U増分とMIA増分を対応付けます。",
+    "M1": "次モデルでは公開A_bg依存構造を維持し、希少ドナー強度だけを下げる候補を作り、U_specを保ちながら希少TPRを下げます。",
+}
 
 
 def fmt(value: float | None) -> str:
@@ -86,6 +114,8 @@ def main() -> None:
         detail = [
             f"# {report['model']} 耐性評価",
             "",
+            "[詳細な解釈・原因仮説](DETAILS.md) / [指標・攻撃手法の解説](../../METRICS_GUIDE.md)",
+            "",
             f"- 有用性U: {fmt(summary['utility_U'])}",
             f"- MIA βリスク（偶然補正後・K正規化前）: {fmt(summary['mia_stress_beta_risk'])}",
             f"- MIA K=12正規化リスク: {fmt(summary['mia_stress_normalized_risk'])}",
@@ -116,6 +146,85 @@ def main() -> None:
         ]
         (report_path.parent / "SUMMARY.md").write_text("\n".join(detail) + "\n", encoding="utf-8", newline="\n")
 
+        official = report["mia"]["attacks"]["official_domias_kde"]
+        team_mia = report["mia"]["attacks"]["team_v4_v9_multiview"]
+        official_aia = report["aia"]["attacks"]["official_qi_nearest"]
+        team_aia = report["aia"]["attacks"]["team_multiview_linkage"]
+        horizon_aia = report["aia"]["attacks"]["public_horizon_sanity"]
+        cause = MODEL_CAUSES.get(report["model"], "原因仮説は未登録です。")
+        action = MODEL_ACTIONS.get(report["model"], "追加のアブレーションを設計します。")
+        bottleneck = "耐性" if item["resistance_margin"] < 0 else "有用性"
+        details = [
+            f"# {report['model']} 詳細な攻撃耐性診断",
+            "",
+            "[全モデル比較](../../MODEL_COMPARISON.md) / [指標・攻撃手法の解説](../../METRICS_GUIDE.md) / [生JSON](resistance_report.json)",
+            "",
+            "## モデルの位置づけ",
+            "",
+            f"- 生成・補正の特徴: {feature}",
+            f"- 観測された結論: {model_memo}",
+            f"- 開発上のボトルネック: **{bottleneck}**",
+            "",
+            "## 主要指標",
+            "",
+            "| 指標 | 値 | このモデルでの意味 |",
+            "|---|---:|---|",
+            f"| U | {fmt(utility_value)} | 4有用性観点の最小値 |",
+            f"| MIA β | {fmt(summary['mia_stress_beta_risk'])} | 偶然補正後の最大membership信号。小さいほど良い |",
+            f"| AIA R（φ前） | {fmt(summary['aia_stress_risk_before_phi'])} | 対照を超えるtime復元力。小さいほど良い |",
+            f"| 診断用耐性 | {fmt(resistance)} | 1−max(MIA β, AIA R) |",
+            f"| screening floor | {fmt(summary['screening_floor'])} | min(U, 診断用耐性)。一次比較値 |",
+            f"| balance | {fmt(balance_score)} | Uと耐性の調和平均 |",
+            f"| 耐性余裕 R−U | {fmt(item['resistance_margin'])} | {'負なので耐性が制約' if item['resistance_margin'] < 0 else '正なので有用性が制約'} |",
+            "",
+            "## MIAの内訳",
+            "",
+            "| 攻撃 | 全体TPR | 希少TPR | chance 95% | β | K=12正規化 |",
+            "|---|---:|---:|---:|---:|---:|",
+            f"| 運営DOMIAS KDE | {fmt(official['tpr_all'])} | {fmt(official['tpr_rare'])} | {fmt(official['chance95'])} | {fmt(official['beta'])} | {fmt(official['normalized_risk'])} |",
+            f"| 予備戦由来の多視点MIA | {fmt(team_mia['tpr_all'])} | {fmt(team_mia['tpr_rare'])} | {fmt(team_mia['chance95'])} | {fmt(team_mia['beta'])} | {fmt(team_mia['normalized_risk'])} |",
+            "",
+            f"希少側MIAギャップは **{fmt(item['mia_rare_gap'])}** です。DOMIASは7連続変数のC対A_bg密度比を使うため、この値が大きい場合は希少群の周辺分布・相関・裾の合わせ込みを優先して疑います。",
+            "",
+            "## AIAの内訳",
+            "",
+            "| 攻撃 | R | 役割 |",
+            "|---|---:|---|",
+            f"| 運営QI最近傍 | {fmt(official_aia['risk'])} | 性別×都道府県内のQI最近傍からtimeを復元 |",
+            f"| 予備戦由来の多視点照合 | {fmt(team_aia['risk'])} | 3種類の近傍time予測の中央値 |",
+            f"| 10年固定 | {fmt(horizon_aia['risk'])} | データを見ないsanity baseline。最大リスクから除外 |",
+            "",
+            f"このモデルの主要攻撃は **{item['primary_attack_driver']}** です。AIAはteam10の公式φを控除していないため、絶対値よりモデル間の相対差を重視します。",
+            "",
+            "## コピー・重複診断",
+            "",
+            f"- Bとの13列完全一致: {item['exact_B_rows_in_C']}行",
+            f"- 公開A_bgとの13列完全一致: {item['exact_A_bg_rows_in_C']}行",
+            f"- C内完全重複: {item['c_duplicate_rows']}行",
+            "",
+            "完全一致が0でも、連続分布や相関がBへ近ければ密度比MIAは成立します。この検査だけで匿名性を判断しません。",
+            "",
+            "## 考えられる原因",
+            "",
+            cause,
+            "",
+            "これはモデル差分と攻撃仕様に基づく仮説であり、因果関係の確定ではありません。候補選択と診断に同じBを使っている点にも注意が必要です。",
+            "",
+            "## 次に確認すること",
+            "",
+            action,
+            "",
+            "各候補ではU、全体TPR、希少TPR、MIA β、AIA R、floorを同時に保存し、1つの処理変更だけで比較します。",
+            "",
+            "## この結果から言えないこと",
+            "",
+            "- 公式protection、Anon、順位の予測ではありません。",
+            "- K=12正規化値の飽和を、そのまま公式MIA=1とは解釈できません。",
+            "- 現在の攻撃で信号が小さくても、未実装の攻撃への耐性は保証しません。",
+            "- 完全合成、完全一致0、重複0だけでは匿名性を保証しません。",
+        ]
+        (report_path.parent / "DETAILS.md").write_text("\n".join(details) + "\n", encoding="utf-8", newline="\n")
+
     models.sort(key=lambda item: (-float(item["screening_floor"]), item["model"]))
     observed = {item["model"] for item in models}
     missing_models = [model for model in EXPECTED_BASELINES if model not in observed]
@@ -142,12 +251,14 @@ def main() -> None:
             f"未測定: {', '.join(missing_models)}（ローカルにC.csvと評価記録がありません）。" if missing_models else "全対象を測定済みです。"
         ),
         "",
+        "各列の計算方法・目的・攻撃実装・解釈は [METRICS_GUIDE.md](METRICS_GUIDE.md) を参照してください。モデル名から個別の原因仮説と次の検証へ移動できます。",
+        "",
         "| モデル | U | MIA β | AIA R（φ前） | 診断用耐性 | floor | balance | 耐性余裕 R-U | 判定 | 特徴・メモ |",
         "|---|---:|---:|---:|---:|---:|---:|---:|---|---|",
     ]
     for item in models:
         lines.append(
-            "| [{model}](results/{model}/SUMMARY.md) | {u} | {mb} | {aia} | {res} | {floor} | {balance} | {margin} | {interp} | {memo} |".format(
+            "| [{model}](results/{model}/DETAILS.md) | {u} | {mb} | {aia} | {res} | {floor} | {balance} | {margin} | {interp} | {memo} |".format(
                 model=item["model"], u=fmt(item["utility_U"]), mb=fmt(item["mia_stress_beta_risk"]),
                 aia=fmt(item["aia_stress_risk_before_phi"]),
                 res=fmt(item["diagnostic_resistance_index"]), floor=fmt(item["screening_floor"]),
@@ -198,7 +309,7 @@ def main() -> None:
             item = by_name[model]
             bottleneck = "耐性" if item["resistance_margin"] < 0 else "有用性"
             diagnostic_lines += [
-                f"## {model}",
+                f"## [{model}](results/{model}/DETAILS.md)",
                 "",
                 f"- 生成・補正の特徴: {item['feature']}",
                 f"- U / 診断用耐性 / floor / balance: {fmt(item['utility_U'])} / {fmt(item['diagnostic_resistance_index'])} / {fmt(item['screening_floor'])} / {fmt(item['balance_score'])}",

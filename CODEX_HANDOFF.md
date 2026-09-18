@@ -1,5 +1,7 @@
 # PWSCUP2026 引き継ぎ
 
+**2026-09-18、M共通耐性評価の説明資料を拡充。** `evaluation/METRICS_GUIDE.md`に比較表の全項目、代理集合、運営DOMIAS KDE、多視点MIA、運営・多視点AIA、20,000回偶然補正、floor・balance・耐性余裕・希少MIAギャップ、現在の横断結論、判断手順、限界を記載。全12モデルの`results/<model>/DETAILS.md`に生成特徴、指標の意味、MIA/AIA内訳、完全一致、モデル固有の原因仮説、次のアブレーション、言えないことを追加。原因は断定せず、モデル差分と攻撃仕様からの仮説として明示。比較表とSUMMARYから詳細解説へリンクする。
+
 **2026-09-18、R8公式結果を受けて[R9](main_round/anonymization/team10/R/R9/README.md)を作成。** R8公式はgen=.974715229174222、spec=.9724474721829109、rare=.9792811713362229、valid=1、MIA=0、AUC=.5330859375。R9は固定R8に地域件数の補正58行、検出区分別の年齢分位点補正332行を行い、分布・順位相関・Coxスコアと標準誤差を集計目標に6,294変数を300反復で同時補正。12候補・3段階で比較し、ローカルU=.9951442572649957（gen=.9970448045757865、spec=.999408266781119、rare=.9951442572649957、valid=1）を採用。全指標がR8以上で0.99超え。検出希少56、希少発症18、各行の時刻・発症・死亡を保持。10テスト合格、最終形式・再現検証はR9/verification.json。最適化は反復上限終了で完全収束を主張しない。独立ホールドアウトではなく、R9公式攻撃耐性は未評価。R1〜R8とM/S系列を保持。GitHubのM1追加コミット294f264をfast-forwardで取り込んだ。ユーザーはこのPCと既存非公開GitHubへの保存を指定し、`main_round/anonymization/team10/R/R9/submission/team10_R9_defense.zip`を含む。CodaBenchへ送信しない。
 
 **2026-09-18、共通耐性評価をS1～S2・R1～R9・M1へ拡張。** GitHub mainからR9をfast-forward取得し、S/Rの成果物は変更せず、結果を`main_round/anonymization/team10/M/evaluation/`に保存。診断用screening floorはM1=.752153、R5=.581549、S2=.548413、R8=.440704、R1/R2=.426620、R3=.412535、R4/R7=.398451、R6/R9=.356197、S1=0。R9はU=.995144だがMIA β=.643803で耐性がボトルネック。S1以外はすべて`high-local-signal`で、全モデルともAIAより運営DOMIAS MIAが支配的。特に希少側TPRが主要課題。比較表へモデル別メモ、Uと耐性の調和平均balance、耐性余裕R-Uを追加し、`MODEL_DIAGNOSTICS.md`へ生成特徴・希少MIAギャップ・完全一致・結論を記録。全モデルでB完全一致とC内重複は0。これはB全行対A_bgの代理診断で、公式protection/Anon予測ではない。

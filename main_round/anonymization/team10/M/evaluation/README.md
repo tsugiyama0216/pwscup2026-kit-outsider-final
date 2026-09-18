@@ -14,7 +14,7 @@ S1～S2、R1～R9、M1以降を同じ条件で比較するためのローカル�
 
 正式な本戦攻撃challengeはまだこのリポジトリにないため、B全行をmember/標的、公開A_bgをnonmember/対照とする代理評価です。結果はモデル間比較用で、公式protection・Anon・リーダーボード予測ではありません。
 
-計算式とルール上の根拠は [RULEBOOK_BASIS.md](RULEBOOK_BASIS.md)、一覧は [MODEL_COMPARISON.md](MODEL_COMPARISON.md)、モデル別の特徴・攻撃内訳・結論は [MODEL_DIAGNOSTICS.md](MODEL_DIAGNOSTICS.md) を参照してください。各モデルの生データは `results/<model>/SUMMARY.md` と `resistance_report.json` に保存します。
+各指標の目的・計算・攻撃実装・解釈は [METRICS_GUIDE.md](METRICS_GUIDE.md)、ルール上の根拠は [RULEBOOK_BASIS.md](RULEBOOK_BASIS.md)、一覧は [MODEL_COMPARISON.md](MODEL_COMPARISON.md)、モデル横断の特徴は [MODEL_DIAGNOSTICS.md](MODEL_DIAGNOSTICS.md) を参照してください。各モデルには `results/<model>/DETAILS.md`、`SUMMARY.md`、`resistance_report.json` を保存します。
 
 ## 新しいモデルの追加
 

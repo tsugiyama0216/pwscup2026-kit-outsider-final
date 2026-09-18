@@ -29,6 +29,6 @@ M1のトークン入り提出ZIPは作成しておらず、CodaBenchへの提出
 
 ## 有用性と攻撃耐性の共通比較
 
-[evaluation/](evaluation/README.md) に、運営参照MIA/AIAと予備戦v4/v9を移植した攻撃を使う共通評価基盤を保存しています。S1～S2、R1～R9、M1を同一条件で診断済みです。現在の比較は [MODEL_COMPARISON.md](evaluation/MODEL_COMPARISON.md)、モデル別の特徴と解釈は [MODEL_DIAGNOSTICS.md](evaluation/MODEL_DIAGNOSTICS.md) を参照してください。
+[evaluation/](evaluation/README.md) に、運営参照MIA/AIAと予備戦v4/v9を移植した攻撃を使う共通評価基盤を保存しています。S1～S2、R1～R9、M1を同一条件で診断済みです。現在の比較は [MODEL_COMPARISON.md](evaluation/MODEL_COMPARISON.md)、指標と攻撃実装の詳細は [METRICS_GUIDE.md](evaluation/METRICS_GUIDE.md)、モデル別の特徴と解釈は [MODEL_DIAGNOSTICS.md](evaluation/MODEL_DIAGNOSTICS.md) を参照してください。各`results/<model>/DETAILS.md`にはモデル固有の原因仮説と次の検証を記録しています。
 
 初回の代理評価では、M1はAIAよりMIA、特に運営DOMIASの希少側で強い信号が出ました。公式challengeを使ったAnonではありませんが、M1をそのまま提出候補に確定せず、M2以降でこの信号を下げながら有用性を維持する方針です。
