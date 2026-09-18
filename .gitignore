@@ -46,6 +46,8 @@
 !/main_round/anonymization/team10/R/R6/submission/team10_R6_defense.zip
 # User requested R7 submission artifacts on this PC and the existing private GitHub.
 !/main_round/anonymization/team10/R/R7/submission/team10_R7_defense.zip
+# User requested R8 submission artifacts on this PC and the existing private GitHub.
+!/main_round/anonymization/team10/R/R8/submission/team10_R8_defense.zip
 .env
 .env.*
 !.env.example

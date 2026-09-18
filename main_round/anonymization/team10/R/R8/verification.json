@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-18",
+  "model": "R8",
+  "tests": {
+    "command": "./main_round/anonymization/team10/R/R8/run.ps1 -Mode Test",
+    "passed": 17,
+    "failed": 0
+  },
+  "release_validation": {
+    "logical_ok": true,
+    "rows": 1049,
+    "columns": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "time",
+      "onset",
+      "death"
+    ],
+    "no_missing": true,
+    "source_exact_matches": 0,
+    "synthetic_duplicate_rows": 0,
+    "censored_time_is_horizon": true,
+    "rare_diagnostic": {
+      "rare_detected": 56,
+      "gate": 8,
+      "below_gate": false
+    },
+    "event_counts": {
+      "onset": 110,
+      "death": 71
+    },
+    "privacy_note": "No formal differential privacy or official attack-resistance guarantee.",
+    "package_ok": true,
+    "csv_matches_zip_bytes": true,
+    "token_matches_original_bytes": true,
+    "C_sha256": "d9892abc49f506f57bb890da6e5f8ae606f11af592606ffc015fd85913c5ed6b",
+    "ZIP_sha256": "da5c2d7cbe284f7e0950791c6de796245dac2fcbaa7df4532affd0cfb50c0950"
+  },
+  "reproduction": {
+    "command": "./main_round/anonymization/team10/R/R8/run.ps1 -Mode Reproduce",
+    "exit_code": 0,
+    "csv_byte_identical": true,
+    "official_facets_identical": true,
+    "source_and_input_provenance_identical": true,
+    "format_only_cleanup": "Removed trailing blank source lines; CSV and ZIP bytes preserved; reproduction rerun afterwards."
+  },
+  "all_nine_cox_significance_flags_match_B": true,
+  "prior_R1_R7_tracked_files_unchanged": true,
+  "credential_in_plaintext_release_files": false,
+  "github_destination": {
+    "repository": "tsugiyama0216/pwscup2026-kit-private",
+    "visibility_verified": "PRIVATE",
+    "branch": "main",
+    "pre_upload_remote_main": "13b78aaa4f49e233db120a0773093db9080f88cb"
+  },
+  "official_submission_performed": false,
+  "official_attack_evaluated": false,
+  "artifact_sha256": {
+    "C.csv": "d9892abc49f506f57bb890da6e5f8ae606f11af592606ffc015fd85913c5ed6b",
+    "submission/team10_R8_defense.zip": "da5c2d7cbe284f7e0950791c6de796245dac2fcbaa7df4532affd0cfb50c0950",
+    "report.json": "ec19a1d0671b4faae605aabd346ef70cdccc34a71a8c6d062ba4b4727a149907",
+    "experiment_summary.json": "045dcd20b9a7e8dc04f1ae7a5ed9b9de23a49437a04652dad2598b9220d324a8",
+    "test_r8.py": "83ace936c4e3a8b28dea438eb6492b98629352cd1375d383a7cf6d4544076623"
+  }
+}
