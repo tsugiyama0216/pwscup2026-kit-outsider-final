@@ -16,6 +16,8 @@
 
 ## Repository boundaries
 
+- On 2026-09-18 the user requested improving R6 into R7 and saving the submission data under team10/R on this PC and GitHub. This authorizes R7 contents and exactly `main_round/anonymization/team10/R/R7/submission/team10_R7_defense.zip` in the existing private origin. Preserve verified artifact bytes and R1-R6, never print the token, and do not submit to CodaBench.
+
 - On 2026-09-18, after cancelling and deleting the previous R5-based R6, the user requested a new R4-based copula R6, storing its submission data on this PC and GitHub. This authorizes the new R6 contents and exactly `main_round/anonymization/team10/R/R6/submission/team10_R6_defense.zip` in the existing private origin. Preserve verified artifact bytes and R1-R5, never print the token, and do not submit to CodaBench.
 
 - On 2026-09-18 the user requested creating sequential conditional synthesis R5, storing its submission data under team10/R/R5 on this PC and GitHub, and showing both locations. This authorizes R5 contents and exactly `main_round/anonymization/team10/R/R5/submission/team10_R5_defense.zip` in the existing private origin. Preserve verified artifact bytes, never print the token, and do not submit to CodaBench.

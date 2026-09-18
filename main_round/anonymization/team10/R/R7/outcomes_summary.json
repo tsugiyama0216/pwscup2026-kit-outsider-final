@@ -1,0 +1,391 @@
+{
+  "candidates": [
+    {
+      "radial_strength": 0.1,
+      "joint_strength": 0.0,
+      "regularization": 0.25,
+      "covariance_weight": 0.0,
+      "information_strength": 0.0,
+      "preserve_strength": 0.0,
+      "majority_strength": 0.5,
+      "outcome_steps": 60,
+      "utility": 0.8498681853089063,
+      "facets": {
+        "U_gen": 0.9640989336823782,
+        "U_spec": 0.8498681853089063,
+        "U_rare": 0.936792698826597,
+        "U_valid": 1.0
+      },
+      "outcome_audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 2.2929770949263104,
+        "final_score_loss": 0.012975277335491042,
+        "swaps": 5,
+        "loss_history": [
+          0.2996972966687806,
+          0.07922469363786813,
+          0.02432213703886733,
+          0.017686046119913104,
+          0.012975277335491042
+        ],
+        "max_steps": 60,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "rare_detail": {
+        "mass_C": 0.04957102001906578,
+        "mass_B": 0.06768350810295519,
+        "mass_se": 0.007755956586263255,
+        "mass_star": 0.9615774213800045,
+        "prof_val": 0.7605311355311354,
+        "prof_base": 0.8040744466800803,
+        "prof_cal": 0.945846667147887,
+        "onset_val": 0.8108974358974359,
+        "onset_base": 0.8656103286384977,
+        "onset_cal": 0.936792698826597,
+        "c2st_val": 0.627403846153846,
+        "c2st_base": 0.6167840375586854,
+        "c2st_cal": 1.0,
+        "aggregate": "min",
+        "parts_used": [
+          "mass_star",
+          "prof_cal",
+          "onset_cal",
+          "c2st_cal"
+        ],
+        "rare_detected_C": 52,
+        "rare_detected_B": 71,
+        "rare_true_B": 24,
+        "rare_gate": 8,
+        "rare_gate_prof_onset": 3,
+        "u_rare_gated": [],
+        "b_detector_precision": 0.30985915492957744,
+        "b_detector_recall": 0.9166666666666666
+      },
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.1,
+      "joint_strength": 0.0,
+      "regularization": 0.25,
+      "covariance_weight": 0.0,
+      "information_strength": 0.0,
+      "preserve_strength": 0.0,
+      "majority_strength": 1.0,
+      "outcome_steps": 60,
+      "utility": 0.8484690225354925,
+      "facets": {
+        "U_gen": 0.9763006174111107,
+        "U_spec": 0.8484690225354925,
+        "U_rare": 0.936792698826597,
+        "U_valid": 1.0
+      },
+      "outcome_audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 3.832395042112175,
+        "final_score_loss": 0.008819235390491401,
+        "swaps": 4,
+        "loss_history": [
+          0.7783942915508213,
+          0.20699181537778572,
+          0.0461301595414218,
+          0.008819235390491401
+        ],
+        "max_steps": 60,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "rare_detail": {
+        "mass_C": 0.04957102001906578,
+        "mass_B": 0.06768350810295519,
+        "mass_se": 0.007755956586263255,
+        "mass_star": 0.9615774213800045,
+        "prof_val": 0.7605311355311354,
+        "prof_base": 0.8040744466800803,
+        "prof_cal": 0.945846667147887,
+        "onset_val": 0.8108974358974359,
+        "onset_base": 0.8656103286384977,
+        "onset_cal": 0.936792698826597,
+        "c2st_val": 0.5921474358974359,
+        "c2st_base": 0.6167840375586854,
+        "c2st_cal": 0.9600563565834738,
+        "aggregate": "min",
+        "parts_used": [
+          "mass_star",
+          "prof_cal",
+          "onset_cal",
+          "c2st_cal"
+        ],
+        "rare_detected_C": 52,
+        "rare_detected_B": 71,
+        "rare_true_B": 24,
+        "rare_gate": 8,
+        "rare_gate_prof_onset": 3,
+        "u_rare_gated": [],
+        "b_detector_precision": 0.30985915492957744,
+        "b_detector_recall": 0.9166666666666666
+      },
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.25,
+      "joint_strength": 0.0,
+      "regularization": 0.25,
+      "covariance_weight": 0.0,
+      "information_strength": 0.0,
+      "preserve_strength": 0.0,
+      "majority_strength": 0.5,
+      "outcome_steps": 60,
+      "utility": 0.8501787231370096,
+      "facets": {
+        "U_gen": 0.964115115250266,
+        "U_spec": 0.8501787231370096,
+        "U_rare": 0.936792698826597,
+        "U_valid": 1.0
+      },
+      "outcome_audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 2.386733639747254,
+        "final_score_loss": 0.010097530188176076,
+        "swaps": 7,
+        "loss_history": [
+          0.3139927427755233,
+          0.0852880469800583,
+          0.021536259320135455,
+          0.015563487859590445,
+          0.012080884219980383,
+          0.011993856218160757,
+          0.010097530188176076
+        ],
+        "max_steps": 60,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "rare_detail": {
+        "mass_C": 0.04957102001906578,
+        "mass_B": 0.06768350810295519,
+        "mass_se": 0.007755956586263255,
+        "mass_star": 0.9615774213800045,
+        "prof_val": 0.7541208791208792,
+        "prof_base": 0.8040744466800803,
+        "prof_cal": 0.9378744496041965,
+        "onset_val": 0.8108974358974359,
+        "onset_base": 0.8656103286384977,
+        "onset_cal": 0.936792698826597,
+        "c2st_val": 0.6177884615384617,
+        "c2st_base": 0.6167840375586854,
+        "c2st_cal": 1.0,
+        "aggregate": "min",
+        "parts_used": [
+          "mass_star",
+          "prof_cal",
+          "onset_cal",
+          "c2st_cal"
+        ],
+        "rare_detected_C": 52,
+        "rare_detected_B": 71,
+        "rare_true_B": 24,
+        "rare_gate": 8,
+        "rare_gate_prof_onset": 3,
+        "u_rare_gated": [],
+        "b_detector_precision": 0.30985915492957744,
+        "b_detector_recall": 0.9166666666666666
+      },
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.25,
+      "joint_strength": 0.0,
+      "regularization": 0.25,
+      "covariance_weight": 0.0,
+      "information_strength": 0.0,
+      "preserve_strength": 0.0,
+      "majority_strength": 1.0,
+      "outcome_steps": 60,
+      "utility": 0.8494460548533773,
+      "facets": {
+        "U_gen": 0.9767828129923166,
+        "U_spec": 0.8494460548533773,
+        "U_rare": 0.9309242085065558,
+        "U_valid": 1.0
+      },
+      "outcome_audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 3.8920554393488427,
+        "final_score_loss": 0.005762787835135633,
+        "swaps": 6,
+        "loss_history": [
+          0.8355455062308409,
+          0.2508448082080414,
+          0.06514317922408983,
+          0.021635376092410768,
+          0.012142745930990283,
+          0.005762787835135633
+        ],
+        "max_steps": 60,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "rare_detail": {
+        "mass_C": 0.05052430886558627,
+        "mass_B": 0.06768350810295519,
+        "mass_se": 0.007755956586263255,
+        "mass_star": 0.975661928422258,
+        "prof_val": 0.7504492362982929,
+        "prof_base": 0.8040744466800803,
+        "prof_cal": 0.9333081524935918,
+        "onset_val": 0.8058176100628931,
+        "onset_base": 0.8656103286384977,
+        "onset_cal": 0.9309242085065558,
+        "c2st_val": 0.6367924528301885,
+        "c2st_base": 0.6167840375586854,
+        "c2st_cal": 1.0,
+        "aggregate": "min",
+        "parts_used": [
+          "mass_star",
+          "prof_cal",
+          "onset_cal",
+          "c2st_cal"
+        ],
+        "rare_detected_C": 53,
+        "rare_detected_B": 71,
+        "rare_true_B": 24,
+        "rare_gate": 8,
+        "rare_gate_prof_onset": 3,
+        "u_rare_gated": [],
+        "b_detector_precision": 0.30985915492957744,
+        "b_detector_recall": 0.9166666666666666
+      },
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.5,
+      "joint_strength": 0.0,
+      "regularization": 0.25,
+      "covariance_weight": 0.0,
+      "information_strength": 0.0,
+      "preserve_strength": 0.0,
+      "majority_strength": 0.5,
+      "outcome_steps": 60,
+      "utility": 0.85030404755524,
+      "facets": {
+        "U_gen": 0.9645754304284289,
+        "U_spec": 0.85030404755524,
+        "U_rare": 0.9392739308921325,
+        "U_valid": 1.0
+      },
+      "outcome_audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 2.586545755179044,
+        "final_score_loss": 0.011683083952073386,
+        "swaps": 5,
+        "loss_history": [
+          0.38595320176012377,
+          0.10666787133731268,
+          0.021398445850280258,
+          0.01536680539268927,
+          0.011683083952073386
+        ],
+        "max_steps": 60,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "rare_detail": {
+        "mass_C": 0.05624404194470925,
+        "mass_B": 0.06768350810295519,
+        "mass_se": 0.007755956586263255,
+        "mass_star": 1.0,
+        "prof_val": 0.7552461662631155,
+        "prof_base": 0.8040744466800803,
+        "prof_cal": 0.9392739308921325,
+        "onset_val": 0.8298022598870056,
+        "onset_base": 0.8656103286384977,
+        "onset_cal": 0.9586325768457339,
+        "c2st_val": 0.701271186440678,
+        "c2st_base": 0.6167840375586854,
+        "c2st_cal": 1.0,
+        "aggregate": "min",
+        "parts_used": [
+          "mass_star",
+          "prof_cal",
+          "onset_cal",
+          "c2st_cal"
+        ],
+        "rare_detected_C": 59,
+        "rare_detected_B": 71,
+        "rare_true_B": 24,
+        "rare_gate": 8,
+        "rare_gate_prof_onset": 3,
+        "u_rare_gated": [],
+        "b_detector_precision": 0.30985915492957744,
+        "b_detector_recall": 0.9166666666666666
+      },
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.5,
+      "joint_strength": 0.0,
+      "regularization": 0.25,
+      "covariance_weight": 0.0,
+      "information_strength": 0.0,
+      "preserve_strength": 0.0,
+      "majority_strength": 1.0,
+      "outcome_steps": 60,
+      "utility": 0.8512434214036042,
+      "facets": {
+        "U_gen": 0.9782186297348494,
+        "U_spec": 0.8512434214036042,
+        "U_rare": 0.924070338931254,
+        "U_valid": 1.0
+      },
+      "outcome_audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 4.0814381284059795,
+        "final_score_loss": 0.01184551933245023,
+        "swaps": 5,
+        "loss_history": [
+          1.0272786743558908,
+          0.33210586025101935,
+          0.05860608060603851,
+          0.021808700384653164,
+          0.01184551933245023
+        ],
+        "max_steps": 60,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "rare_detail": {
+        "mass_C": 0.055290753098188754,
+        "mass_B": 0.06768350810295519,
+        "mass_se": 0.007755956586263255,
+        "mass_star": 1.0,
+        "prof_val": 0.7430213464696224,
+        "prof_base": 0.8040744466800803,
+        "prof_cal": 0.924070338931254,
+        "onset_val": 0.8175287356321839,
+        "onset_base": 0.8656103286384977,
+        "onset_cal": 0.9444535359438924,
+        "c2st_val": 0.6522988505747125,
+        "c2st_base": 0.6167840375586854,
+        "c2st_cal": 1.0,
+        "aggregate": "min",
+        "parts_used": [
+          "mass_star",
+          "prof_cal",
+          "onset_cal",
+          "c2st_cal"
+        ],
+        "rare_detected_C": 58,
+        "rare_detected_B": 71,
+        "rare_true_B": 24,
+        "rare_gate": 8,
+        "rare_gate_prof_onset": 3,
+        "u_rare_gated": [],
+        "b_detector_precision": 0.30985915492957744,
+        "b_detector_recall": 0.9166666666666666
+      },
+      "eligible": false
+    }
+  ],
+  "selected": null
+}

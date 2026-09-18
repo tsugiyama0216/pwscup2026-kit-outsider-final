@@ -1,0 +1,89 @@
+{
+  "candidates": [
+    {
+      "radial_strength": 0.0,
+      "joint_strength": 0.25,
+      "regularization": 0.25,
+      "error": "Candidate outside physiological ranges",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.0,
+      "joint_strength": 0.25,
+      "regularization": 1.0,
+      "error": "Candidate outside physiological ranges",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.0,
+      "joint_strength": 0.5,
+      "regularization": 0.25,
+      "error": "Candidate outside physiological ranges",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.0,
+      "joint_strength": 0.5,
+      "regularization": 1.0,
+      "error": "Candidate outside physiological ranges",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.25,
+      "joint_strength": 0.25,
+      "regularization": 0.25,
+      "error": "Candidate outside physiological ranges",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.25,
+      "joint_strength": 0.25,
+      "regularization": 1.0,
+      "error": "Candidate outside physiological ranges",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.25,
+      "joint_strength": 0.5,
+      "regularization": 0.25,
+      "error": "Candidate outside physiological ranges",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.25,
+      "joint_strength": 0.5,
+      "regularization": 1.0,
+      "error": "Candidate outside physiological ranges",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.5,
+      "joint_strength": 0.25,
+      "regularization": 0.25,
+      "error": "Distribution transport requires clipping",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.5,
+      "joint_strength": 0.25,
+      "regularization": 1.0,
+      "error": "Distribution transport requires clipping",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.5,
+      "joint_strength": 0.5,
+      "regularization": 0.25,
+      "error": "Distribution transport requires clipping",
+      "eligible": false
+    },
+    {
+      "radial_strength": 0.5,
+      "joint_strength": 0.5,
+      "regularization": 1.0,
+      "error": "Distribution transport requires clipping",
+      "eligible": false
+    }
+  ],
+  "selected": null
+}
