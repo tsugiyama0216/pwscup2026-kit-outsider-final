@@ -1,0 +1,55 @@
+{
+  "package_ok": true,
+  "names": [
+    "C.csv",
+    "token.txt"
+  ],
+  "csv_matches_frozen_R10": true,
+  "token_matches_original": true,
+  "utility": 0.9951442572649957,
+  "facets": {
+    "U_gen": 0.9976167778836988,
+    "U_spec": 0.9994978237043326,
+    "U_rare": 0.9951442572649957,
+    "U_valid": 1.0
+  },
+  "validation": {
+    "logical_ok": true,
+    "rows": 1049,
+    "columns": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "time",
+      "onset",
+      "death"
+    ],
+    "no_missing": true,
+    "source_exact_matches": 0,
+    "synthetic_duplicate_rows": 0,
+    "censored_time_is_horizon": true,
+    "rare_diagnostic": {
+      "rare_detected": 56,
+      "gate": 8,
+      "below_gate": false
+    },
+    "event_counts": {
+      "onset": 110,
+      "death": 71
+    },
+    "privacy_note": "No formal differential privacy or official attack-resistance guarantee."
+  },
+  "C_sha256": "8e5797cbff0be3d312b7bd55584caef4ed91793fb7e5109e334849d6e4a658bb",
+  "ZIP_sha256": "a0e20b8df1e02345d62235452cfdb3ec1cd4f2dccfcf8a58725e965d09246e4c",
+  "ZIP_bytes": 66323,
+  "package_script_sha256": "806846636d6a05d3922f4b156f08cba9d99564bb594a8824c5b27f972e8ee04a",
+  "official_R10_auc": null,
+  "codabench_submitted": false
+}
