@@ -54,6 +54,8 @@
 !/main_round/anonymization/team10/R/R10/submission/team10_R10_defense.zip
 # User requested R11 submission data on this PC and private GitHub.
 !/main_round/anonymization/team10/R/R11/submission/team10_R11_defense.zip
+# User requested R12 submission data on this PC and the existing private GitHub.
+!/main_round/anonymization/team10/R/R12/submission/team10_R12_defense.zip
 .env
 .env.*
 !.env.example

@@ -1,0 +1,782 @@
+{
+  "model": "R12",
+  "method": "R11-distilled empirical copula with linear marginal interpolation",
+  "majority_knots": 256,
+  "provenance": {
+    "official_release": "main-process-20260912",
+    "official_kit_commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+    "scoring_config_sha256": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157",
+    "rulebook_sha256": "9290c6e98b85214ca691bb90ff961196642c72d85348810f8df36741489885f2",
+    "inputs": {
+      "participant_data/A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+      "participant_data/B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+      "participant_data/B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+      "participant_data/README.txt": "d95b5a87a56fc9b1ef5fafe3ade4fa749d50c5aa121991962b77c9aedef3aa24",
+      "participant_data/schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+      "participant_data/utility_ref.json": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee"
+    },
+    "dependencies": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "lifelines": "0.30.3",
+      "scikit-learn": "1.9.0",
+      "statsmodels": "0.14.6",
+      "PyYAML": "6.0.3",
+      "autograd": "1.9.1",
+      "threadpoolctl": "3.6.0"
+    },
+    "python": "3.12.13",
+    "R11_C_sha256": "82f7a6295cc3f70a014491575a288bb623901c5bef5588fedd55cc8fd36a351d",
+    "source_sha256": {
+      "model.py": "58eb74234f934a8e26efae462c36d3adad6efbdb61219f2c62cbd2b26f6a345a",
+      "generate.py": "e74c59c2006f45285b904b02b63b48d33988064cfa0e89f878ac7abc13a70f4a",
+      "evaluation.py": "510da8675ee92193bf2d4998ce64ec57d807cf8083358b8591922145eedacd53",
+      "research.py": "9ef699a91613fcfbf72b25474bc986b0880012f493ecf39003953a08ab5d5ddf",
+      "run.ps1": "b93450b4051d1d9982857e9533c7ef66dd1f0aad742f4f992b9767ec06eb00a4"
+    },
+    "study_sha256": "40bdfa939a290ea6a26711946c58cc6b8c3660e3e21f7e13a57c46c23d7b062a",
+    "feedback_sha256": "f27db9b33d9063ef60fbe0023eb9d9afddc5d0ccc27645c38e465184f901e486"
+  },
+  "score": {
+    "utility": 0.9962017963269137,
+    "facets": {
+      "U_gen": 0.9974261201143946,
+      "U_spec": 0.9975884876119974,
+      "U_rare": 0.9962017963269137,
+      "U_valid": 1.0
+    },
+    "detail": {
+      "U_gen": {
+        "marginal": {
+          "age": 0.9971401334604385,
+          "BMI": 0.9971401334604385,
+          "SBP": 0.9971401334604385,
+          "TG": 0.996186844613918,
+          "HDL": 0.994280266920877,
+          "ALT": 0.9952335557673975,
+          "FPG": 0.9971401334604385,
+          "sex": 1.0,
+          "smoking": 1.0,
+          "prefecture": 1.0
+        },
+        "marginal_mean": 0.9974261201143946,
+        "marginal_worst": 0.994280266920877,
+        "corr_score": 0.9993278663533529,
+        "correlation": {
+          "enabled": true,
+          "score": 0.9993278663533529,
+          "features": [
+            "age",
+            "sex",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "FPG",
+            "smoking"
+          ],
+          "method": "spearman",
+          "observed_mean_dist": 0.00024726301295965576,
+          "observed_tail_dist": 0.0005377069173176652,
+          "mean_score": 0.9993818424676009,
+          "tail_score": 0.9993278663533529,
+          "mean_scale": 0.4,
+          "tail_scale": 0.8,
+          "tail_quantile": 0.9,
+          "n_pairs_total": 36,
+          "n_pairs_used": 36,
+          "n_pairs_both_finite": 36,
+          "n_pairs_one_invalid": 0,
+          "n_pairs_excluded": 0,
+          "mean_dist": 0.00024726301295965576,
+          "tail_dist": 0.0005377069173176652
+        },
+        "pmse": 1.0371289759007347e-05,
+        "pmse_ceiling": 0.25,
+        "pmse_score": 0.999958514840964,
+        "time_dz": 1.0,
+        "time": {
+          "km_l1_integral": 0.006109299722090173,
+          "km_signal_D": 0.57544522565516,
+          "km_floor": 0.16426613255654027,
+          "time_dz": 1.0,
+          "tau": 10.0
+        },
+        "tail_score": 1.0,
+        "tail": {
+          "enabled": true,
+          "u_shift": 1.0,
+          "u_spike": 1.0,
+          "shiftz": 0.6540781984069038,
+          "spike": 0.0,
+          "mean_z_up": -0.2824439763695293,
+          "mean_z_dn": -0.006109610607856081,
+          "n_stat": 36
+        }
+      },
+      "U_spec": {
+        "cox_converged": true,
+        "io_part": 0.9975884876119974,
+        "per_coefficient": {
+          "age": {
+            "beta_B": 0.033717614159644485,
+            "beta_C": 0.03361336309332495,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.9975745182550132,
+            "contrib": 0.9975745182550132
+          },
+          "sex": {
+            "beta_B": -0.17567475402741337,
+            "beta_C": -0.17696002833795987,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9987505144133844,
+            "contrib": 0.9987505144133844
+          },
+          "BMI": {
+            "beta_B": 0.05950255795640202,
+            "beta_C": 0.05933054095149606,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.998549012238442,
+            "contrib": 0.998549012238442
+          },
+          "SBP": {
+            "beta_B": 0.005499582973615605,
+            "beta_C": 0.0055647071425797045,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.997355828099997,
+            "contrib": 0.997355828099997
+          },
+          "log_TG": {
+            "beta_B": -0.0359167717625119,
+            "beta_C": -0.03602678129596712,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9998204496353849,
+            "contrib": 0.9998204496353849
+          },
+          "HDL": {
+            "beta_B": -0.01077467984458384,
+            "beta_C": -0.010652920615095821,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9977119034119912,
+            "contrib": 0.9977119034119912
+          },
+          "log_ALT": {
+            "beta_B": 0.5789538980351139,
+            "beta_C": 0.5803233037570715,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.9971665083376537,
+            "contrib": 0.9971665083376537
+          },
+          "FPG": {
+            "beta_B": 0.14322249254829397,
+            "beta_C": 0.1430333482424164,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.9957727117756863,
+            "contrib": 0.9957727117756863
+          },
+          "smoking": {
+            "beta_B": 0.2832072111412733,
+            "beta_C": 0.27881437832997275,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9955949423404234,
+            "contrib": 0.9955949423404234
+          }
+        },
+        "tstr_c_index": 0.904698756654064,
+        "tstr": 0.8093975133081279,
+        "trtr_c_index": 0.9047175667287399,
+        "tstr_cal": 0.999953522959658
+      },
+      "U_rare": {
+        "mass_C": 0.05338417540514776,
+        "mass_B": 0.06768350810295519,
+        "mass_se": 0.007755956586263255,
+        "mass_star": 1.0,
+        "prof_val": 0.8010204081632653,
+        "prof_base": 0.8040744466800803,
+        "prof_cal": 0.9962017963269137,
+        "onset_val": 0.8630952380952381,
+        "onset_base": 0.8656103286384977,
+        "onset_cal": 0.997094430992736,
+        "c2st_val": 0.9747023809523809,
+        "c2st_base": 0.6167840375586854,
+        "c2st_cal": 1.0,
+        "aggregate": "min",
+        "parts_used": [
+          "mass_star",
+          "prof_cal",
+          "onset_cal",
+          "c2st_cal"
+        ],
+        "rare_detected_C": 56,
+        "rare_detected_B": 71,
+        "rare_true_B": 24,
+        "rare_gate": 8,
+        "rare_gate_prof_onset": 3,
+        "u_rare_gated": [],
+        "b_detector_precision": 0.30985915492957744,
+        "b_detector_recall": 0.9166666666666666
+      },
+      "U_valid": {
+        "censoring_realism_rate": 1.0,
+        "no_fab": 1.0,
+        "no_fab_detail": {
+          "tol": 0.08,
+          "scale": 0.5,
+          "mean_penalty": 0.0,
+          "n_pairs": 21,
+          "pairs": {
+            "prefecture:BMI": {
+              "assoc_C": 0.22379600791779156,
+              "assoc_B": 0.1948072533317959,
+              "penalty": 0.0
+            },
+            "sex:BMI": {
+              "assoc_C": 0.2267988902621209,
+              "assoc_B": 0.22596872339203708,
+              "penalty": 0.0
+            },
+            "smoking:BMI": {
+              "assoc_C": 0.07307271184366085,
+              "assoc_B": 0.06029562084997151,
+              "penalty": 0.0
+            },
+            "prefecture:SBP": {
+              "assoc_C": 0.21840224309627668,
+              "assoc_B": 0.203305988331579,
+              "penalty": 0.0
+            },
+            "sex:SBP": {
+              "assoc_C": 0.15622147874646067,
+              "assoc_B": 0.1602944103688985,
+              "penalty": 0.0
+            },
+            "smoking:SBP": {
+              "assoc_C": 0.010288168063932129,
+              "assoc_B": 0.013784553457525772,
+              "penalty": 0.0
+            },
+            "prefecture:TG": {
+              "assoc_C": 0.20683854683467404,
+              "assoc_B": 0.21944911958220534,
+              "penalty": 0.0
+            },
+            "sex:TG": {
+              "assoc_C": 0.22913661460830545,
+              "assoc_B": 0.2471119122417909,
+              "penalty": 0.0
+            },
+            "smoking:TG": {
+              "assoc_C": 0.12907262659644375,
+              "assoc_B": 0.10415152872205585,
+              "penalty": 0.0
+            },
+            "prefecture:HDL": {
+              "assoc_C": 0.19252803503302526,
+              "assoc_B": 0.24418319919016268,
+              "penalty": 0.0
+            },
+            "sex:HDL": {
+              "assoc_C": 0.6476587103148282,
+              "assoc_B": 0.6447749138198019,
+              "penalty": 0.0
+            },
+            "smoking:HDL": {
+              "assoc_C": 0.13098047738682755,
+              "assoc_B": 0.13065607433556145,
+              "penalty": 0.0
+            },
+            "prefecture:ALT": {
+              "assoc_C": 0.17995755647342465,
+              "assoc_B": 0.1558993359034631,
+              "penalty": 0.0
+            },
+            "sex:ALT": {
+              "assoc_C": 0.2873706478301551,
+              "assoc_B": 0.28976280392384074,
+              "penalty": 0.0
+            },
+            "smoking:ALT": {
+              "assoc_C": 0.13432625666871942,
+              "assoc_B": 0.15344149135240875,
+              "penalty": 0.0
+            },
+            "prefecture:FPG": {
+              "assoc_C": 0.2185184522158215,
+              "assoc_B": 0.21571684374809186,
+              "penalty": 0.0
+            },
+            "sex:FPG": {
+              "assoc_C": 0.2826479468491765,
+              "assoc_B": 0.27740784033797633,
+              "penalty": 0.0
+            },
+            "smoking:FPG": {
+              "assoc_C": 0.024615150301134314,
+              "assoc_B": 0.029972666026271508,
+              "penalty": 0.0
+            },
+            "prefecture:onset": {
+              "assoc_C": 0.2098045879647697,
+              "assoc_B": 0.19514275403570408,
+              "penalty": 0.0
+            },
+            "sex:onset": {
+              "assoc_C": 0.11039005939581718,
+              "assoc_B": 0.11661615608414515,
+              "penalty": 0.0
+            },
+            "smoking:onset": {
+              "assoc_C": 0.019591072232472077,
+              "assoc_B": 0.019643434777576057,
+              "penalty": 0.0
+            }
+          }
+        },
+        "no_dup": 1.0,
+        "no_dup_detail": {
+          "dup_rate": 0.0,
+          "n_dup_rows": 0,
+          "tol": 0.0,
+          "scale": 0.2
+        },
+        "novel": 1.0,
+        "novel_detail": {
+          "enabled": true,
+          "novel": 1.0,
+          "d_plus": 0.011439466158245948,
+          "deadzone": 0.0534,
+          "n_rows_C": 1049,
+          "n_rows_B": 1049,
+          "nn_dist_C_median": 0.8341752320876406,
+          "nn_dist_B_median": 0.8263532362218184,
+          "n_rows_A_bg": 5143,
+          "features": [
+            "age",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "FPG",
+            "time",
+            "sex",
+            "smoking",
+            "onset",
+            "death"
+          ]
+        }
+      }
+    }
+  },
+  "baseline_score": {
+    "utility": 0.9962017963269137,
+    "facets": {
+      "U_gen": 0.9973307912297426,
+      "U_spec": 0.9995605261019739,
+      "U_rare": 0.9962017963269137,
+      "U_valid": 1.0
+    },
+    "detail": {
+      "U_gen": {
+        "marginal": {
+          "age": 0.9971401334604385,
+          "BMI": 0.9971401334604385,
+          "SBP": 0.9971401334604385,
+          "TG": 0.996186844613918,
+          "HDL": 0.994280266920877,
+          "ALT": 0.9952335557673975,
+          "FPG": 0.996186844613918,
+          "sex": 1.0,
+          "smoking": 1.0,
+          "prefecture": 1.0
+        },
+        "marginal_mean": 0.9973307912297426,
+        "marginal_worst": 0.994280266920877,
+        "corr_score": 0.9993077537322347,
+        "correlation": {
+          "enabled": true,
+          "score": 0.9993077537322347,
+          "features": [
+            "age",
+            "sex",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "FPG",
+            "smoking"
+          ],
+          "method": "spearman",
+          "observed_mean_dist": 0.0002615661810177309,
+          "observed_tail_dist": 0.0005537970142122789,
+          "mean_score": 0.9993460845474557,
+          "tail_score": 0.9993077537322347,
+          "mean_scale": 0.4,
+          "tail_scale": 0.8,
+          "tail_quantile": 0.9,
+          "n_pairs_total": 36,
+          "n_pairs_used": 36,
+          "n_pairs_both_finite": 36,
+          "n_pairs_one_invalid": 0,
+          "n_pairs_excluded": 0,
+          "mean_dist": 0.0002615661810177309,
+          "tail_dist": 0.0005537970142122789
+        },
+        "pmse": 1.017878826667568e-05,
+        "pmse_ceiling": 0.25,
+        "pmse_score": 0.9999592848469333,
+        "time_dz": 1.0,
+        "time": {
+          "km_l1_integral": 0.006109299722090173,
+          "km_signal_D": 0.57544522565516,
+          "km_floor": 0.16426613255654027,
+          "time_dz": 1.0,
+          "tau": 10.0
+        },
+        "tail_score": 1.0,
+        "tail": {
+          "enabled": true,
+          "u_shift": 1.0,
+          "u_spike": 1.0,
+          "shiftz": 0.6385169992102888,
+          "spike": 0.0,
+          "mean_z_up": -0.2743377195255149,
+          "mean_z_dn": 0.03142610529334555,
+          "n_stat": 36
+        }
+      },
+      "U_spec": {
+        "cox_converged": true,
+        "io_part": 0.9995605261019739,
+        "per_coefficient": {
+          "age": {
+            "beta_B": 0.033717614159644485,
+            "beta_C": 0.033715967476706556,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.9999616839249528,
+            "contrib": 0.9999616839249528
+          },
+          "sex": {
+            "beta_B": -0.17567475402741337,
+            "beta_C": -0.1764030960191522,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9992921503103473,
+            "contrib": 0.9992921503103473
+          },
+          "BMI": {
+            "beta_B": 0.05950255795640202,
+            "beta_C": 0.05952399264055801,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.9998192251127888,
+            "contrib": 0.9998192251127888
+          },
+          "SBP": {
+            "beta_B": 0.005499582973615605,
+            "beta_C": 0.005493771970673409,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9997641715085255,
+            "contrib": 0.9997641715085255
+          },
+          "log_TG": {
+            "beta_B": -0.0359167717625119,
+            "beta_C": -0.035873169220393915,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9999288396419421,
+            "contrib": 0.9999288396419421
+          },
+          "HDL": {
+            "beta_B": -0.01077467984458384,
+            "beta_C": -0.01075532570810847,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9996364389100048,
+            "contrib": 0.9996364389100048
+          },
+          "log_ALT": {
+            "beta_B": 0.5789538980351139,
+            "beta_C": 0.5788440425793226,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.9997726533687272,
+            "contrib": 0.9997726533687272
+          },
+          "FPG": {
+            "beta_B": 0.14322249254829397,
+            "beta_C": 0.14322505476617253,
+            "sig_B": true,
+            "sig_C": true,
+            "io": 0.999942766371938,
+            "contrib": 0.999942766371938
+          },
+          "smoking": {
+            "beta_B": 0.2832072111412733,
+            "beta_C": 0.28113933669615215,
+            "sig_B": false,
+            "sig_C": false,
+            "io": 0.9979268057685391,
+            "contrib": 0.9979268057685391
+          }
+        },
+        "tstr_c_index": 0.9047269717660779,
+        "tstr": 0.8094539435321557,
+        "trtr_c_index": 0.9047175667287399,
+        "tstr_cal": 1.0
+      },
+      "U_rare": {
+        "mass_C": 0.05338417540514776,
+        "mass_B": 0.06768350810295519,
+        "mass_se": 0.007755956586263255,
+        "mass_star": 1.0,
+        "prof_val": 0.8010204081632653,
+        "prof_base": 0.8040744466800803,
+        "prof_cal": 0.9962017963269137,
+        "onset_val": 0.8630952380952381,
+        "onset_base": 0.8656103286384977,
+        "onset_cal": 0.997094430992736,
+        "c2st_val": 0.9747023809523809,
+        "c2st_base": 0.6167840375586854,
+        "c2st_cal": 1.0,
+        "aggregate": "min",
+        "parts_used": [
+          "mass_star",
+          "prof_cal",
+          "onset_cal",
+          "c2st_cal"
+        ],
+        "rare_detected_C": 56,
+        "rare_detected_B": 71,
+        "rare_true_B": 24,
+        "rare_gate": 8,
+        "rare_gate_prof_onset": 3,
+        "u_rare_gated": [],
+        "b_detector_precision": 0.30985915492957744,
+        "b_detector_recall": 0.9166666666666666
+      },
+      "U_valid": {
+        "censoring_realism_rate": 1.0,
+        "no_fab": 1.0,
+        "no_fab_detail": {
+          "tol": 0.08,
+          "scale": 0.5,
+          "mean_penalty": 0.0,
+          "n_pairs": 21,
+          "pairs": {
+            "prefecture:BMI": {
+              "assoc_C": 0.2240496979482114,
+              "assoc_B": 0.1948072533317959,
+              "penalty": 0.0
+            },
+            "sex:BMI": {
+              "assoc_C": 0.22693793107221225,
+              "assoc_B": 0.22596872339203708,
+              "penalty": 0.0
+            },
+            "smoking:BMI": {
+              "assoc_C": 0.07313519817226018,
+              "assoc_B": 0.06029562084997151,
+              "penalty": 0.0
+            },
+            "prefecture:SBP": {
+              "assoc_C": 0.2187753073423139,
+              "assoc_B": 0.203305988331579,
+              "penalty": 0.0
+            },
+            "sex:SBP": {
+              "assoc_C": 0.156658185765935,
+              "assoc_B": 0.1602944103688985,
+              "penalty": 0.0
+            },
+            "smoking:SBP": {
+              "assoc_C": 0.0099507861706184,
+              "assoc_B": 0.013784553457525772,
+              "penalty": 0.0
+            },
+            "prefecture:TG": {
+              "assoc_C": 0.20683736123793997,
+              "assoc_B": 0.21944911958220534,
+              "penalty": 0.0
+            },
+            "sex:TG": {
+              "assoc_C": 0.22914295860423797,
+              "assoc_B": 0.2471119122417909,
+              "penalty": 0.0
+            },
+            "smoking:TG": {
+              "assoc_C": 0.12908460355055354,
+              "assoc_B": 0.10415152872205585,
+              "penalty": 0.0
+            },
+            "prefecture:HDL": {
+              "assoc_C": 0.1922677230117511,
+              "assoc_B": 0.24418319919016268,
+              "penalty": 0.0
+            },
+            "sex:HDL": {
+              "assoc_C": 0.6473244329135681,
+              "assoc_B": 0.6447749138198019,
+              "penalty": 0.0
+            },
+            "smoking:HDL": {
+              "assoc_C": 0.12981782118727217,
+              "assoc_B": 0.13065607433556145,
+              "penalty": 0.0
+            },
+            "prefecture:ALT": {
+              "assoc_C": 0.1799414910064568,
+              "assoc_B": 0.1558993359034631,
+              "penalty": 0.0
+            },
+            "sex:ALT": {
+              "assoc_C": 0.2874043003558122,
+              "assoc_B": 0.28976280392384074,
+              "penalty": 0.0
+            },
+            "smoking:ALT": {
+              "assoc_C": 0.1345683953968492,
+              "assoc_B": 0.15344149135240875,
+              "penalty": 0.0
+            },
+            "prefecture:FPG": {
+              "assoc_C": 0.21831019050320605,
+              "assoc_B": 0.21571684374809186,
+              "penalty": 0.0
+            },
+            "sex:FPG": {
+              "assoc_C": 0.2828385166631391,
+              "assoc_B": 0.27740784033797633,
+              "penalty": 0.0
+            },
+            "smoking:FPG": {
+              "assoc_C": 0.024431692499319008,
+              "assoc_B": 0.029972666026271508,
+              "penalty": 0.0
+            },
+            "prefecture:onset": {
+              "assoc_C": 0.2098045879647697,
+              "assoc_B": 0.19514275403570408,
+              "penalty": 0.0
+            },
+            "sex:onset": {
+              "assoc_C": 0.11039005939581718,
+              "assoc_B": 0.11661615608414515,
+              "penalty": 0.0
+            },
+            "smoking:onset": {
+              "assoc_C": 0.019591072232472077,
+              "assoc_B": 0.019643434777576057,
+              "penalty": 0.0
+            }
+          }
+        },
+        "no_dup": 1.0,
+        "no_dup_detail": {
+          "dup_rate": 0.0,
+          "n_dup_rows": 0,
+          "tol": 0.0,
+          "scale": 0.2
+        },
+        "novel": 1.0,
+        "novel_detail": {
+          "enabled": true,
+          "novel": 1.0,
+          "d_plus": 0.01334604385128694,
+          "deadzone": 0.0534,
+          "n_rows_C": 1049,
+          "n_rows_B": 1049,
+          "nn_dist_C_median": 0.8340846107064341,
+          "nn_dist_B_median": 0.8263532362218184,
+          "n_rows_A_bg": 5143,
+          "features": [
+            "age",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "FPG",
+            "time",
+            "sex",
+            "smoking",
+            "onset",
+            "death"
+          ]
+        }
+      }
+    }
+  },
+  "utility_floor": 0.9962017963269137,
+  "utility_delta": 0.0,
+  "audit": {
+    "rare_rows_unchanged": 56,
+    "fixed_columns_unchanged": true,
+    "rare_membership_unchanged": true,
+    "changed_cells": 5898,
+    "changed_rows": 985,
+    "boundary_exception_rows": 8,
+    "majority_marginal_values": 1536,
+    "rare_marginal_values": 336
+  },
+  "validation": {
+    "logical_ok": true,
+    "rows": 1049,
+    "columns": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "time",
+      "onset",
+      "death"
+    ],
+    "no_missing": true,
+    "source_exact_matches": 0,
+    "synthetic_duplicate_rows": 0,
+    "censored_time_is_horizon": true,
+    "rare_diagnostic": {
+      "rare_detected": 56,
+      "gate": 8,
+      "below_gate": false
+    },
+    "event_counts": {
+      "onset": 110,
+      "death": 71
+    },
+    "privacy_note": "No formal differential privacy or official attack-resistance guarantee.",
+    "package_ok": true,
+    "csv_matches_zip_bytes": true,
+    "token_matches_original_bytes": true,
+    "C_sha256": "496c19e59ae6179b86f098d7f9c0098ea96c3b740753b7412d671921fd564153",
+    "ZIP_sha256": "d8ef6a58c07cb972d3b41d5ed575fc3d99644105164d827e30de6237135089ce"
+  },
+  "fitted_model_sha256": "7ea48171229fee5c8591d881aaacf78f73f36d23b470985c4e2939e40220bbee",
+  "generation_seconds": 0.09340650000376627,
+  "independent_holdout": false,
+  "official_attack_evaluated": false,
+  "formal_differential_privacy": false,
+  "official_submission_performed": false,
+  "exact_reproduction": true
+}

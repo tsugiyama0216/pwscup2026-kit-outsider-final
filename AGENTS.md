@@ -16,6 +16,8 @@
 
 ## Repository boundaries
 
+- On 2026-09-19 the user requested a more understandable R12 that preserves R11's score, storing submission data under team10/R on this PC and GitHub. This authorizes R12 contents and exactly `main_round/anonymization/team10/R/R12/submission/team10_R12_defense.zip` in the existing private origin. Preserve R1-R11 and other models; distinguish verified local utility from unmeasured official anonymity/final scores. Never print the token or submit to CodaBench.
+
 - On 2026-09-19 the user requested an R9-based R11 aimed at improving the score, saving submission data under team10/R on this PC and GitHub. This authorizes the R11 model, evaluation records and exactly `main_round/anonymization/team10/R/R11/submission/team10_R11_defense.zip` in the existing private origin. Select for higher utility rather than the attack-AUC increase previously requested for R10. Preserve R1-R10 and other models, never print tokens, distinguish local utility from official final scores, and do not submit to CodaBench.
 
 - On 2026-09-19, after deleting R10, the user explicitly requested storing R10 submission data under team10/R on this PC and GitHub. This supersedes the deletion request and authorizes restoring the verified R10 from commit 19148a6 and uploading exactly `main_round/anonymization/team10/R/R10/submission/team10_R10_defense.zip` with its model and verification records to the existing private origin. Preserve the frozen CSV bytes, never print the token, distinguish proxy AUC from official AUC, and do not submit to CodaBench.
