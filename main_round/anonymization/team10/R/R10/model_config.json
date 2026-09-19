@@ -1,0 +1,16 @@
+{
+  "selected_index": 0,
+  "settings": {
+    "steps": 180,
+    "marginal_weight": 10.0,
+    "rare_weight": 4.0,
+    "correlation_weight": 300.0,
+    "information_weight": 100.0,
+    "movement_weight": 0.02,
+    "trust_radius": 0.25,
+    "membership_weight": 10000.0,
+    "preserve_membership": true
+  },
+  "objective": "Preserve R9 utility; increase local attack-side AUC as explicitly requested",
+  "official_auc_target_verifiable": false
+}

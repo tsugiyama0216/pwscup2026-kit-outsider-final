@@ -1,0 +1,57 @@
+{
+  "valid": true,
+  "utility": 0.9951442572649957,
+  "facets": {
+    "U_gen": 0.9976167778836988,
+    "U_spec": 0.9994978237043326,
+    "U_rare": 0.9951442572649957,
+    "U_valid": 1.0
+  },
+  "proxy_auc": 0.7650158748635545,
+  "official_auc": null,
+  "C_sha256": "8e5797cbff0be3d312b7bd55584caef4ed91793fb7e5109e334849d6e4a658bb",
+  "fixed_columns_verified": [
+    "age",
+    "sex",
+    "prefecture",
+    "smoking",
+    "time",
+    "onset",
+    "death"
+  ],
+  "rare_membership_preserved": true,
+  "validation": {
+    "logical_ok": true,
+    "rows": 1049,
+    "columns": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "time",
+      "onset",
+      "death"
+    ],
+    "no_missing": true,
+    "source_exact_matches": 0,
+    "synthetic_duplicate_rows": 0,
+    "censored_time_is_horizon": true,
+    "rare_diagnostic": {
+      "rare_detected": 56,
+      "gate": 8,
+      "below_gate": false
+    },
+    "event_counts": {
+      "onset": 110,
+      "death": 71
+    },
+    "privacy_note": "No formal differential privacy or official attack-resistance guarantee."
+  },
+  "csv_byte_reproduction": false
+}
