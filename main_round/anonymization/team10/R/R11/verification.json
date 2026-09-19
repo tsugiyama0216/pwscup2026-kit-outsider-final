@@ -1,0 +1,56 @@
+{
+  "verified": true,
+  "utility": 0.9962017963269137,
+  "facets": {
+    "U_gen": 0.9973307912297426,
+    "U_spec": 0.9995605261019739,
+    "U_rare": 0.9962017963269137,
+    "U_valid": 1.0
+  },
+  "validation": {
+    "logical_ok": true,
+    "rows": 1049,
+    "columns": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "time",
+      "onset",
+      "death"
+    ],
+    "no_missing": true,
+    "source_exact_matches": 0,
+    "synthetic_duplicate_rows": 0,
+    "censored_time_is_horizon": true,
+    "rare_diagnostic": {
+      "rare_detected": 56,
+      "gate": 8,
+      "below_gate": false
+    },
+    "event_counts": {
+      "onset": 110,
+      "death": 71
+    },
+    "privacy_note": "No formal differential privacy or official attack-resistance guarantee.",
+    "package_ok": true,
+    "flat_zip_entries": [
+      "C.csv",
+      "token.txt"
+    ],
+    "csv_matches_zip": true,
+    "token_matches_original": true,
+    "fixed_columns_preserved": true,
+    "rare_membership_preserved": true,
+    "C_sha256": "82f7a6295cc3f70a014491575a288bb623901c5bef5588fedd55cc8fd36a351d",
+    "ZIP_sha256": "1aae5acc2bdd33f23011cc6dfea9dfb288ea874815a9955d8636daa3fda3e999",
+    "ZIP_bytes": 66391
+  },
+  "candidate_bytes_reproduced": true
+}

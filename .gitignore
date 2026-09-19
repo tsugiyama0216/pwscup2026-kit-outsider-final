@@ -52,6 +52,8 @@
 !/main_round/anonymization/team10/R/R9/submission/team10_R9_defense.zip
 # User requested restoring and saving R10 submission data on this PC and private GitHub.
 !/main_round/anonymization/team10/R/R10/submission/team10_R10_defense.zip
+# User requested R11 submission data on this PC and private GitHub.
+!/main_round/anonymization/team10/R/R11/submission/team10_R11_defense.zip
 .env
 .env.*
 !.env.example
