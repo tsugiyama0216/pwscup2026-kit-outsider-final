@@ -1,0 +1,2530 @@
+{
+  "source": "PUBLIC A_bg only; target IO, not actual full utility",
+  "rows": [
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8576754711474103
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7538741940520244
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7594672327352043
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8995846195505887
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7935361776058044
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8025090937709565
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.9105400788846819
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8021481268202247
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.805926707730634
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.9491581010240883
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8442829345582665
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8419989049827861
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7745870885755575
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7766761237917699
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8734278094487892
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7716429804484637
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8805068097317581
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8686597626641417
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8094742865950493
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8190321822028859
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8046832101501528
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7810967682300367
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.9125813961529717
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8763848902934362
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7838676258512742
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8791941355201696
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8896008332135847
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8931563190027556
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8852613109977748
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8973375844691108
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8070579045324433
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8298928321879981
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9198340447454171
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8193263674762272
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.9123030260968495
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9175436270779522
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8591024210922162
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7528783881608982
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7602734640858413
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.901973909789343
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7921182741297684
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.804082976248266
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.9133581238344871
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7997919502318338
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8051928545836933
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.9514184277467531
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8424368591977713
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8390432308574861
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7726348440470592
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7750651275629045
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8721943115677407
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7671680396397454
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8790639252379671
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8625698605525397
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8030668625480716
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8167606143631954
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7972818690106878
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7684479674608448
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8117786655809645
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.86201472341407
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7827835554944161
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.87803542581938
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8899160418397949
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8934007076836621
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8825598399443907
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8974130532589538
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7994268970529499
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8269267314669684
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9094570089050722
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8091073860993262
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8119022412922184
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091811,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8974743913774537
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7401645490201056
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7463832865175863
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7399140102556299
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7726106810945059
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7836216786087946
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.777229417489171
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.787006153485198
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8017585529604199
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7891632513594814
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8088117096214282
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8327286256362412
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9161906194215546
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7650395555651818
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7724786129939599
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7609801570287364
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.853981816268335
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8616427308162847
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8619482969574251
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8123161449882883
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8165778556129073
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9070504257897757
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8750962806241395
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8849705572149152
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9079240713889491
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7689384150875112
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8581811179706716
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8626406868596566
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8645832970441537
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8567071203612621
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8688292956896704
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8108505261720611
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.9063796750802964
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9041449402448494
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.9087063003913082
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.9067791317372887
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "4",
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8944494869450187
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7398949688479447
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7481745022547557
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7395574310668347
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7699351864149977
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7852227508317059
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7767106537349848
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7842676603314077
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8031442387867861
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7884542944099469
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8027913023435258
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8308526524722794
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9149733454767647
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7661845177512344
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.7771939020776687
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.7605315224729714
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7614993522714054
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8639050971334425
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8635369353636683
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8106745473585604
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.808575530739382
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9076261322699128
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.7682975155506592
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8747526101934578
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.9117805184952075
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.769307528897414
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8586436255032163
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8637689003631954
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8651876982762086
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8538341045232012
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.9,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8690690915803443
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8048713045343465
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.9006983558513054
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 0.7,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.898183205417588
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 0,
+      "ideal_target_IO_public": 0.8927525320660674
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 1,
+      "ideal_target_IO_public": 0.8975327294456376
+    },
+    {
+      "plan": {
+        "histogram_epsilon": "8",
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "clip_quantile": 0.97,
+        "damping": 1.0,
+        "quantization": 4096
+      },
+      "public_cohort_seed": 2026091827,
+      "replicate": 2,
+      "ideal_target_IO_public": 0.8785370515652446
+    }
+  ],
+  "summaries": [
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.893184656620774,
+      "minimum": 0.8193263674762272,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.8776458212607879,
+      "minimum": 0.8567071203612621,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.8769107492111269,
+      "minimum": 0.8538341045232012,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.8730089939840747,
+      "minimum": 0.7810967682300367,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.8655284825407276,
+      "minimum": 0.8088117096214282,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.864551055307658,
+      "minimum": 0.8091073860993262,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.86358596968243,
+      "minimum": 0.8027913023435258,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.8630266538271775,
+      "minimum": 0.8070579045324433,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.8565939172047051,
+      "minimum": 0.7994268970529499,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.849730399481068,
+      "minimum": 0.7716429804484637,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "12/5",
+          "18/5",
+          "6"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.8404091796529028,
+      "minimum": 0.769307528897414,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "16/5",
+          "24/5",
+          "8"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.8404038024171445,
+      "minimum": 0.7689384150875112,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.8329572016997947,
+      "minimum": 0.7614993522714054,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.8328453334492005,
+      "minimum": 0.7682975155506592,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.82818901755651,
+      "minimum": 0.8046832101501528,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.8239975927149684,
+      "minimum": 0.7972818690106878,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.8160904785401066,
+      "minimum": 0.787006153485198,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.97,
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.8157015203630258,
+      "minimum": 0.7842676603314077,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.8050072918581778,
+      "minimum": 0.7699351864149977,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "damping": 1.0,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.8048486113533034,
+      "minimum": 0.7726106810945059,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "18/5",
+          "42/5"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.7873007042465966,
+      "minimum": 0.7605315224729714,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "24/5",
+          "56/5"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.7871982245673325,
+      "minimum": 0.7609801570287364,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "12"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "8",
+        "quantization": 4096
+      },
+      "mean": 0.7666468625847486,
+      "minimum": 0.7395574310668347,
+      "n": 6
+    },
+    {
+      "plan": {
+        "clip_quantile": 0.9,
+        "cox_round_epsilons": [
+          "16"
+        ],
+        "damping": 0.7,
+        "histogram_epsilon": "4",
+        "quantization": 4096
+      },
+      "mean": 0.7662464572879935,
+      "minimum": 0.7399140102556299,
+      "n": 6
+    }
+  ],
+  "limitations": [
+    "2 public cohorts x 3 simulated noise draws; selection bias; no utility guarantee"
+  ]
+}

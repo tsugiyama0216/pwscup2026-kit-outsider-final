@@ -1,0 +1,16 @@
+{
+  "current_release": "epsilon20/release",
+  "epsilon_exact": "20",
+  "delta": 0,
+  "C_sha256": "3f0ba21a933899c5704e3b73b2f00ac8fed04570612b804bcfb19d516ac5a154",
+  "model_sha256": "1f9faef7bac08d40a0602f04293f6aa0aea59f505bffffab3766d641a561da81",
+  "previous400_output_deleted": true,
+  "historical_spent_epsilon_exact": "434",
+  "named_current_release_relative_to_S": "S_DPCopula_ep20",
+  "named_releases_relative_to_S": {
+    "1": "S_DPCopula_ep1",
+    "3": "S_DPCopula_ep3",
+    "10": "S_DPCopula_ep10",
+    "20": "S_DPCopula_ep20"
+  }
+}

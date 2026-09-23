@@ -1,0 +1,49 @@
+{
+  "C_sha256": "73091d16b3fe39b277dc3b59467489f2a7dd0375e380c04bfca55a433779665d",
+  "accounting": {
+    "copula_epsilon_exact": "12/5",
+    "copula_fraction": "4/5",
+    "cox_epsilon_exact": "3/5",
+    "epsilon_exact": "3"
+  },
+  "contains_token": false,
+  "delta": 0,
+  "epsilon_exact": "3",
+  "format": "S_Copula_release_manifest_v1",
+  "freeze_sha256": "4d2323c9d21ba0dd5b82142a062075d5790209f73524605424a2a34d2d003790",
+  "model_sha256": "810ea4b6bf8b4f129d46ad4cbc43d2b50f9d55f492d81b81bdcb1b3a690f62ed",
+  "postprocess_seed": 20260918,
+  "postprocessing": {
+    "coefficient_l2_errors": [
+      0.4772794959588892,
+      0.4403441013929588,
+      0.4040939523432621,
+      0.372075339715806,
+      0.3454417777298815,
+      0.3264453331424961,
+      0.3089325239917579,
+      0.2951544229183865,
+      0.28367844732836917,
+      0.27345036112573223,
+      0.26341482833402174,
+      0.2579345654833533,
+      0.2531543815538168,
+      0.2488300375233733,
+      0.24637803555847454,
+      0.24544284736201374,
+      0.24554925913339545
+    ],
+    "iterations_completed": 17,
+    "iterations_requested": 16,
+    "max_corr_mean_shift": 0.02,
+    "max_corr_tail_shift": 0.04,
+    "method": "synthetic_rank_cox_calibration",
+    "selected_coefficient_l2_error": 0.3089325239917579,
+    "selection_input": "synthetic_C_and_DP_target_only"
+  },
+  "private_evaluation_used_for_selection": false,
+  "private_input_hash_included": false,
+  "public_n": 1049,
+  "selection_provenance": "configuration_frozen_before_any_private_release",
+  "total_authorized_epsilon_exact": "14"
+}

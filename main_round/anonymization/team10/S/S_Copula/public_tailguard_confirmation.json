@@ -1,0 +1,36 @@
+{
+  "source": "public A_bg heldout proxy, detector surrogate for rare truth, one fresh noise draw per budget; confirmation with empty-bin and public-support guard; no retuning",
+  "seed": 20260918,
+  "results": [
+    {
+      "epsilon": 1,
+      "U": 0.2981706169704996,
+      "facets": {
+        "U_gen": 0.2981706169704996,
+        "U_spec": 0.4319562902113472,
+        "U_rare": 0.3857890148212728,
+        "U_valid": 0.9874351027068454
+      }
+    },
+    {
+      "epsilon": 3,
+      "U": 0.35140880507818406,
+      "facets": {
+        "U_gen": 0.8670356409494409,
+        "U_spec": 0.35140880507818406,
+        "U_rare": 0.8632525775382918,
+        "U_valid": 0.9971401334604385
+      }
+    },
+    {
+      "epsilon": 10,
+      "U": 0.6662178181277113,
+      "facets": {
+        "U_gen": 0.7846628833933471,
+        "U_spec": 0.6662178181277113,
+        "U_rare": 0.8418151369958599,
+        "U_valid": 0.9985700667302193
+      }
+    }
+  ]
+}

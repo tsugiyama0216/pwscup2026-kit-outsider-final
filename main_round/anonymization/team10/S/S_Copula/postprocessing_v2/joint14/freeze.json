@@ -1,0 +1,47 @@
+{
+  "parent_epsilon_exact": "14",
+  "additional_epsilon_exact": "0",
+  "delta": 0,
+  "parents": [
+    {
+      "epsilon_exact": "1",
+      "model_sha256": "0cb3f2a2d3f01c25eb9e3b44563eaad2a4f451d9a75124fd59dd77a0056991fa",
+      "manifest_sha256": "f02148334fec10ff2f7793fde86e827cbc041d43215656d0422845b991e44bfb"
+    },
+    {
+      "epsilon_exact": "3",
+      "model_sha256": "810ea4b6bf8b4f129d46ad4cbc43d2b50f9d55f492d81b81bdcb1b3a690f62ed",
+      "manifest_sha256": "5988a46dd3f8b7a2e3bcec2915d45fdf958cb80158a56df3f127d0d2fd53df96"
+    },
+    {
+      "epsilon_exact": "10",
+      "model_sha256": "2444b938cbab92ee193106e45d7e842ea1ce00ce0617890df66dce4c234f169e",
+      "manifest_sha256": "6402ae4249c0b21d856eaa78598625a0c1b0f33a6ec8cb493ffdd60396804196"
+    }
+  ],
+  "settings": {
+    "histogram_prior_multiplier": 1.0,
+    "cox_prior_multiplier": 1.0,
+    "histogram_beta_weight": 0.0,
+    "large_sample_n": 10490,
+    "radial_strength": 0.0,
+    "postprocess_seed": 20260918,
+    "iterations": 180,
+    "swap_candidates": 4096,
+    "swap_trials": 12,
+    "coefficient_tolerance": 0.005
+  },
+  "code_sha256": {
+    "postprocessing_v2\\histogram_refine.py": "d3d70cfaf3662f027dbc31b38e9d6f00120bb9211f1dfa40c9a985debba11f2e",
+    "postprocessing_v2\\cox_optimizer.py": "cbb9390e6f16e22417926ffe09bd10e0825f11e015471aee97f7a7593d20cc3b",
+    "postprocessing_v2\\joint_cox.py": "453bcc268ced62fe6ca45d6717117882619bec067c8410ced04edd7f40adb050",
+    "postprocessing_v2\\pipeline.py": "1cd5b6c1eb6a5dfc9a446ce867106c7c4088a44d425b74f5c67cfab1df99bb47",
+    "postprocessing_v2\\public_pipeline_study.py": "e5d3c05657680df7f1c0ce5736879b5c0afa24a9b61974a57842123b7254313e",
+    "dp_copula.py": "65f11a69e9be2df9e73229d276d005d128eb9088a70c7bff8c61676d9dcce8c6",
+    "dp_cox.py": "b8c0d80fb6b21d25bf58f5bbb765850b6af44967be7ddb6918f93fe5a9d5db50"
+  },
+  "runner_sha256": "3bb6a1304da3363e54c99173e87159f6b5748bb878a578efabf4173da9b7a1d1",
+  "public_selection_sha256": "f8ce4f1864301e1390f51cb104206e3c19e5fda5ff13bdc890ea07bfe153e006",
+  "config_sha256": "8247a35e7ddd406407c411fe0266fd6981ad1bd00bfa089e319416daa3d8fed6",
+  "release_rule": "Generate exactly this public-selected candidate, before any private scoring; preserve regardless of subsequent diagnostic score"
+}

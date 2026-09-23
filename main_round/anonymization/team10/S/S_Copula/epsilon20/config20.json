@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "standalone_epsilon_exact": "20",
+  "additional_epsilon_exact": "20",
+  "previous_epsilon_exact": "414",
+  "composed_epsilon_exact": "434",
+  "delta": 0,
+  "public_n": 1049,
+  "plan": {
+    "clip_quantile": 0.97,
+    "cox_round_epsilons": [
+      "16/5",
+      "24/5",
+      "8"
+    ],
+    "damping": 1.0,
+    "histogram_epsilon": "4",
+    "quantization": 4096,
+    "radial_strength": 0,
+    "postprocess_seed": 20260918,
+    "iterations": 300,
+    "candidates": 4096,
+    "trials": 12
+  },
+  "public_selection_sha256": "4310206e10ad2b5a28410040155ef171b9d39978228bf4b1084a4df36d32fe47",
+  "source_sha256": {
+    "dp_copula.py": "65f11a69e9be2df9e73229d276d005d128eb9088a70c7bff8c61676d9dcce8c6",
+    "dp_cox.py": "b8c0d80fb6b21d25bf58f5bbb765850b6af44967be7ddb6918f93fe5a9d5db50",
+    "release.py": "5dceca67e74405950e57abe22a11503d816a04b4ddb0d3a6bb8aa525ab60d67c",
+    "postprocessing_v2/histogram_refine.py": "d3d70cfaf3662f027dbc31b38e9d6f00120bb9211f1dfa40c9a985debba11f2e",
+    "postprocessing_v2/cox_optimizer.py": "cbb9390e6f16e22417926ffe09bd10e0825f11e015471aee97f7a7593d20cc3b",
+    "expanded_budget/dp_cox_target.py": "24076bbc1c5167ebb826d577c633c5ee0fe42712ac41c5d920cc121b47182c2b",
+    "expanded_budget/target_calibration.py": "a6c0ab33ba086b83e72de2d08ebf2aef95bb170d1ca0b3f167e578b0c1dd7b04",
+    "expanded_budget/expanded_release.py": "c77f57576057f9d6f17799e45ed2ed88a6b662a8a69f7c52675ac81e2084cfdd",
+    "epsilon20/influence_cox.py": "a55059ff7d1c35dedb008ab8f9d2e62d4dcb5c48f491c365df0ffa5584815d9a",
+    "epsilon20/pipeline20.py": "b205e06cacafc0fcffeef04422dc94f7673750d590071cf44b77e570b13b377f",
+    "epsilon20/release20.py": "c2d41101eff01b40388b8369eb812b74d56a9d9fca1b018545fddd8e0f0a00db"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "source": "PUBLIC A_bg only, exact heldout public clippedscore and counts, no actual B access",
+  "rows": [
+    {
+      "seed": 2026091811,
+      "groups": false,
+      "l2": 0.11063418671207789,
+      "official_IO": 0.8383457325372566
+    },
+    {
+      "seed": 2026091811,
+      "groups": true,
+      "l2": 0.11003244741063373,
+      "official_IO": 0.8392688430396286
+    },
+    {
+      "seed": 2026091827,
+      "groups": false,
+      "l2": 0.16454371763967432,
+      "official_IO": 0.7991275655394727
+    },
+    {
+      "seed": 2026091827,
+      "groups": true,
+      "l2": 0.1559727978860906,
+      "official_IO": 0.8012861148069385
+    }
+  ]
+}

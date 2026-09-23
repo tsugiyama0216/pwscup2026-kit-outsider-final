@@ -1,0 +1,9 @@
+{"accounting": {"copula_epsilon_exact": "4/5", "copula_fraction": "4/5", "cox_epsilon_exact": "1/5", "epsilon_exact": "1"}, "event": "reserved", "time_utc": "2026-09-18T06:14:54.733448+00:00"}
+{"epsilon_exact": "1", "event": "model_saved", "model_sha256": "0cb3f2a2d3f01c25eb9e3b44563eaad2a4f451d9a75124fd59dd77a0056991fa", "time_utc": "2026-09-18T06:14:54.939406+00:00"}
+{"C_sha256": "b0303c2bc6181ff144533a00ede41d406abfa6f8c700becb37327cc6c55937e7", "epsilon_exact": "1", "event": "complete", "time_utc": "2026-09-18T06:14:55.523563+00:00"}
+{"accounting": {"copula_epsilon_exact": "12/5", "copula_fraction": "4/5", "cox_epsilon_exact": "3/5", "epsilon_exact": "3"}, "event": "reserved", "time_utc": "2026-09-18T06:14:55.641295+00:00"}
+{"epsilon_exact": "3", "event": "model_saved", "model_sha256": "810ea4b6bf8b4f129d46ad4cbc43d2b50f9d55f492d81b81bdcb1b3a690f62ed", "time_utc": "2026-09-18T06:14:55.815162+00:00"}
+{"C_sha256": "73091d16b3fe39b277dc3b59467489f2a7dd0375e380c04bfca55a433779665d", "epsilon_exact": "3", "event": "complete", "time_utc": "2026-09-18T06:14:56.377283+00:00"}
+{"accounting": {"copula_epsilon_exact": "8", "copula_fraction": "4/5", "cox_epsilon_exact": "2", "epsilon_exact": "10"}, "event": "reserved", "time_utc": "2026-09-18T06:14:56.495853+00:00"}
+{"epsilon_exact": "10", "event": "model_saved", "model_sha256": "2444b938cbab92ee193106e45d7e842ea1ce00ce0617890df66dce4c234f169e", "time_utc": "2026-09-18T06:14:56.658396+00:00"}
+{"C_sha256": "bb57c437b696683096e8eb97a490752c09589904caaa45923922cb82778accee", "epsilon_exact": "10", "event": "complete", "time_utc": "2026-09-18T06:14:57.205526+00:00"}

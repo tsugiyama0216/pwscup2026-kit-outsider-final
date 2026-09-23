@@ -1,0 +1,11 @@
+{
+  "accounting": {
+    "copula_epsilon_exact": "8",
+    "copula_fraction": "4/5",
+    "cox_epsilon_exact": "2",
+    "epsilon_exact": "10"
+  },
+  "created_utc": "2026-09-18T06:14:56.494854+00:00",
+  "freeze_sha256": "4d2323c9d21ba0dd5b82142a062075d5790209f73524605424a2a34d2d003790",
+  "state": "reserved_conservatively_spent"
+}

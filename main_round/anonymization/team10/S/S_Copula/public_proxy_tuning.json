@@ -1,0 +1,963 @@
+{
+  "source": "PUBLIC A_bg only; proxy n1049 and remaining n4094 public prior. rare truth uses public detector surrogate, not real hidden labels. Single fixed split and one random DP model per epsilon, options reuse DP model.",
+  "results": [
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.06171542978370914,
+      "facets": {
+        "U_gen": 0.06171542978370914,
+        "U_spec": 0.5496433003187633,
+        "U_rare": 0.7824589295177531,
+        "U_valid": 0.9915254237288136
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.05920147982528978,
+      "facets": {
+        "U_gen": 0.05920147982528978,
+        "U_spec": 0.6158897256419583,
+        "U_rare": 0.6565772487186272,
+        "U_valid": 0.9915254237288136
+      },
+      "spec_mismatches": [
+        "BMI"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.5694503375454265,
+      "facets": {
+        "U_gen": 0.6580650591527377,
+        "U_spec": 0.5694503375454265,
+        "U_rare": 0.7824589295177531,
+        "U_valid": 0.9915254237288136
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.6282518575358532,
+      "facets": {
+        "U_gen": 0.6580650591527377,
+        "U_spec": 0.6282518575358532,
+        "U_rare": 0.785348506401138,
+        "U_valid": 0.9915254237288136
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.0884617168848616,
+      "facets": {
+        "U_gen": 0.0884617168848616,
+        "U_spec": 0.6376829740860264,
+        "U_rare": 0.7844803566453051,
+        "U_valid": 0.9915458937198067
+      },
+      "spec_mismatches": []
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.09104870970324763,
+      "facets": {
+        "U_gen": 0.09104870970324763,
+        "U_spec": 0.5960220833983182,
+        "U_rare": 0.6836042757456543,
+        "U_valid": 0.9915458937198067
+      },
+      "spec_mismatches": [
+        "BMI"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.5011375765224177,
+      "facets": {
+        "U_gen": 0.6377041832904233,
+        "U_spec": 0.5011375765224177,
+        "U_rare": 0.7844803566453051,
+        "U_valid": 0.9915458937198067
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.6052507791149098,
+      "facets": {
+        "U_gen": 0.6377041832904233,
+        "U_spec": 0.6052507791149098,
+        "U_rare": 0.785796434732605,
+        "U_valid": 0.9915458937198067
+      },
+      "spec_mismatches": [
+        "BMI"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.5802578773926731,
+      "facets": {
+        "U_gen": 0.5802578773926731,
+        "U_spec": 0.5918072478233983,
+        "U_rare": 0.7824589295177531,
+        "U_valid": 0.9963680387409201
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.5827221354080251,
+      "facets": {
+        "U_gen": 0.5827221354080251,
+        "U_spec": 0.6152883685365971,
+        "U_rare": 0.7908622908622909,
+        "U_valid": 0.9963680387409201
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.5999574219964309,
+      "facets": {
+        "U_gen": 0.6861067169312677,
+        "U_spec": 0.5999574219964309,
+        "U_rare": 0.7824589295177531,
+        "U_valid": 0.9963680387409201
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.6308503903001309,
+      "facets": {
+        "U_gen": 0.6861067169312677,
+        "U_spec": 0.6308503903001309,
+        "U_rare": 0.7840595697738555,
+        "U_valid": 0.9963680387409201
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.5433475887815081,
+      "facets": {
+        "U_gen": 0.617785756700898,
+        "U_spec": 0.5433475887815081,
+        "U_rare": 0.7840595697738555,
+        "U_valid": 0.9963768115942029
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.6139310164375967,
+      "facets": {
+        "U_gen": 0.6139310164375967,
+        "U_spec": 0.6187732975743081,
+        "U_rare": 0.7828472036392828,
+        "U_valid": 0.9963768115942029
+      },
+      "spec_mismatches": [
+        "BMI"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.5394626837799521,
+      "facets": {
+        "U_gen": 0.7127435156612294,
+        "U_spec": 0.5394626837799521,
+        "U_rare": 0.7840595697738555,
+        "U_valid": 0.9963768115942029
+      },
+      "spec_mismatches": [
+        "BMI",
+        "log_ALT"
+      ]
+    },
+    {
+      "epsilon": 1,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.5432539012463102,
+      "facets": {
+        "U_gen": 0.7127435156612294,
+        "U_spec": 0.5432539012463102,
+        "U_rare": 0.7871992871992872,
+        "U_valid": 0.9963768115942029
+      },
+      "spec_mismatches": [
+        "sex",
+        "BMI"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.43697147085946847,
+      "facets": {
+        "U_gen": 0.5251713306025634,
+        "U_spec": 0.43697147085946847,
+        "U_rare": 0.8772412334056169,
+        "U_valid": 0.9970449172576832
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.5175251020245524,
+      "facets": {
+        "U_gen": 0.5175251020245524,
+        "U_spec": 0.5180501740149588,
+        "U_rare": 0.8187394108807895,
+        "U_valid": 0.9970449172576832
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.4402488625373896,
+      "facets": {
+        "U_gen": 0.8650368258186634,
+        "U_spec": 0.4402488625373896,
+        "U_rare": 0.8723488654995505,
+        "U_valid": 0.9970449172576832
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.5462803088253018,
+      "facets": {
+        "U_gen": 0.8650368258186634,
+        "U_spec": 0.5462803088253018,
+        "U_rare": 0.8734569579640002,
+        "U_valid": 0.9970449172576832
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.44440404265834155,
+      "facets": {
+        "U_gen": 0.4489025280873049,
+        "U_spec": 0.44440404265834155,
+        "U_rare": 0.8690432115089649,
+        "U_valid": 0.9970449172576832
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.4384810736681468,
+      "facets": {
+        "U_gen": 0.4384810736681468,
+        "U_spec": 0.5248950600425571,
+        "U_rare": 0.8187394108807895,
+        "U_valid": 0.9970449172576832
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.4558948838714501,
+      "facets": {
+        "U_gen": 0.8612502315222382,
+        "U_spec": 0.4558948838714501,
+        "U_rare": 0.8754165124028138,
+        "U_valid": 0.9970449172576832
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.5761646698770001,
+      "facets": {
+        "U_gen": 0.8612502315222382,
+        "U_spec": 0.5761646698770001,
+        "U_rare": 0.8720430692261678,
+        "U_valid": 0.9970449172576832
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.5539569574857824,
+      "facets": {
+        "U_gen": 0.7901108161580652,
+        "U_spec": 0.5539569574857824,
+        "U_rare": 0.8804697554697555,
+        "U_valid": 0.9990467111534795
+      },
+      "spec_mismatches": [
+        "sex"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.5644061698727634,
+      "facets": {
+        "U_gen": 0.7901108161580652,
+        "U_spec": 0.5644061698727634,
+        "U_rare": 0.8773755202326631,
+        "U_valid": 0.9990467111534795
+      },
+      "spec_mismatches": [
+        "sex"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.4953313180769793,
+      "facets": {
+        "U_gen": 0.8268195198556428,
+        "U_spec": 0.4953313180769793,
+        "U_rare": 0.8697447447447447,
+        "U_valid": 0.9990467111534795
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.5178079499257356,
+      "facets": {
+        "U_gen": 0.8268195198556428,
+        "U_spec": 0.5178079499257356,
+        "U_rare": 0.8672917815774958,
+        "U_valid": 0.9990467111534795
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.5484738374784772,
+      "facets": {
+        "U_gen": 0.7835783564996371,
+        "U_spec": 0.5484738374784772,
+        "U_rare": 0.8755362505362506,
+        "U_valid": 0.9990467111534795
+      },
+      "spec_mismatches": [
+        "sex"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.572592164111819,
+      "facets": {
+        "U_gen": 0.7835783564996371,
+        "U_spec": 0.572592164111819,
+        "U_rare": 0.8593876268294872,
+        "U_valid": 0.9990467111534795
+      },
+      "spec_mismatches": [
+        "sex"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.49200437601075614,
+      "facets": {
+        "U_gen": 0.8262813897293415,
+        "U_spec": 0.49200437601075614,
+        "U_rare": 0.8747318747318745,
+        "U_valid": 0.9990467111534795
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 3,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.5123719853064286,
+      "facets": {
+        "U_gen": 0.8262813897293415,
+        "U_spec": 0.5123719853064286,
+        "U_rare": 0.8699766164554896,
+        "U_valid": 0.9990467111534795
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.37865346961280144,
+      "facets": {
+        "U_gen": 0.37865346961280144,
+        "U_spec": 0.40649678528448774,
+        "U_rare": 0.8724259974259975,
+        "U_valid": 0.9985362997658079
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.37865346961280144,
+      "facets": {
+        "U_gen": 0.37865346961280144,
+        "U_spec": 0.40649678528448774,
+        "U_rare": 0.8724259974259975,
+        "U_valid": 0.9985362997658079
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.38737836238167733,
+      "facets": {
+        "U_gen": 0.38737836238167733,
+        "U_spec": 0.41982639469858213,
+        "U_rare": 0.8717824967824968,
+        "U_valid": 0.9985362997658079
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.38737836238167733,
+      "facets": {
+        "U_gen": 0.38737836238167733,
+        "U_spec": 0.43159646419311065,
+        "U_rare": 0.8714071214071213,
+        "U_valid": 0.9985362997658079
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.41379289996774304,
+      "facets": {
+        "U_gen": 0.41379289996774304,
+        "U_spec": 0.42025242094438653,
+        "U_rare": 0.8701047986762271,
+        "U_valid": 0.9985380116959064
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.41379289996774304,
+      "facets": {
+        "U_gen": 0.41379289996774304,
+        "U_spec": 0.4423547724775904,
+        "U_rare": 0.8642213642213642,
+        "U_valid": 0.9985380116959064
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.4356997116293016,
+      "facets": {
+        "U_gen": 0.47364292649822304,
+        "U_spec": 0.4356997116293016,
+        "U_rare": 0.86569222283508,
+        "U_valid": 0.9985380116959064
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.44839484111781186,
+      "facets": {
+        "U_gen": 0.47364292649822304,
+        "U_spec": 0.44839484111781186,
+        "U_rare": 0.8637617209045779,
+        "U_valid": 0.9985380116959064
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.43201805767246615,
+      "facets": {
+        "U_gen": 0.5635749950849087,
+        "U_spec": 0.43201805767246615,
+        "U_rare": 0.8784055685464136,
+        "U_valid": 0.9985700667302193
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.5635749950849087,
+      "facets": {
+        "U_gen": 0.5635749950849087,
+        "U_spec": 0.5665622149044046,
+        "U_rare": 0.8764478764478765,
+        "U_valid": 0.9985700667302193
+      },
+      "spec_mismatches": [
+        "sex"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.44537206384577627,
+      "facets": {
+        "U_gen": 0.45079423421100295,
+        "U_spec": 0.44537206384577627,
+        "U_rare": 0.8850127793789764,
+        "U_valid": 0.9985700667302193
+      },
+      "spec_mismatches": [
+        "sex",
+        "log_ALT",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.45079423421100295,
+      "facets": {
+        "U_gen": 0.45079423421100295,
+        "U_spec": 0.5129312555647386,
+        "U_rare": 0.879021879021879,
+        "U_valid": 0.9985700667302193
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": false,
+      "U": 0.4873932211838117,
+      "facets": {
+        "U_gen": 0.5787613008347585,
+        "U_spec": 0.4873932211838117,
+        "U_rare": 0.8756644843601366,
+        "U_valid": 0.9983317445185891
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 0
+      },
+      "calibrate": true,
+      "U": 0.5298492605398333,
+      "facets": {
+        "U_gen": 0.5787613008347585,
+        "U_spec": 0.5298492605398333,
+        "U_rare": 0.8682092555331992,
+        "U_valid": 0.9983317445185891
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": false,
+      "U": 0.49671822024703427,
+      "facets": {
+        "U_gen": 0.5711345039310267,
+        "U_spec": 0.49671822024703427,
+        "U_rare": 0.87731520340216,
+        "U_valid": 0.9983317445185891
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    },
+    {
+      "epsilon": 10,
+      "options": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 100,
+        "public_radial_strength": 1
+      },
+      "calibrate": true,
+      "U": 0.5527104208427139,
+      "facets": {
+        "U_gen": 0.5711345039310267,
+        "U_spec": 0.5527104208427139,
+        "U_rare": 0.8657868956376419,
+        "U_valid": 0.9983317445185891
+      },
+      "spec_mismatches": [
+        "sex",
+        "smoking"
+      ]
+    }
+  ]
+}

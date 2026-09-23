@@ -1,0 +1,18 @@
+{
+  "name": "S_DPCopula_ep1",
+  "epsilon_exact": "1",
+  "delta": 0,
+  "source_relative_to_S": "S_Copula/releases/eps1",
+  "shared_implementation_relative_to_S": "S_Copula",
+  "operation": "byte_identical_copy_of_existing_release",
+  "new_private_queries": 0,
+  "new_sampling": false,
+  "new_evaluation": false,
+  "original_files_sha256": {
+    "C.csv": "b0303c2bc6181ff144533a00ede41d406abfa6f8c700becb37327cc6c55937e7",
+    "model.json": "0cb3f2a2d3f01c25eb9e3b44563eaad2a4f451d9a75124fd59dd77a0056991fa",
+    "manifest.json": "f02148334fec10ff2f7793fde86e827cbc041d43215656d0422845b991e44bfb"
+  },
+  "private_diagnostic_sha256": "a48e360d4a4b931587151a9d9c48f495f47e8a4d4ab805e19aa9a3a2b4ed7b5a",
+  "historical_spent_epsilon_exact": "434"
+}

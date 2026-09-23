@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "postprocess_seed": 20260918,
+  "selection_policy": "Frozen from public A_bg proxy only before any private measurement or evaluation; never select outputs on private scores.",
+  "releases": {
+    "1": {
+      "copula_fraction": "4/5",
+      "bins": 8,
+      "sample": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 1,
+        "enforce_public_support": true
+      },
+      "cox_public": {
+        "quantization": 128,
+        "ridge": 0.01,
+        "clip_quantile": 0.99
+      },
+      "cox_postprocess": {
+        "damping": 1.0,
+        "max_standardized_step": 1.0,
+        "prior_variance_multiplier": 1.0
+      },
+      "cox_calibration": {
+        "iterations": 16,
+        "learning_rate": 0.15,
+        "max_corr_mean_shift": 0.02,
+        "max_corr_tail_shift": 0.04,
+        "strata": "none"
+      }
+    },
+    "3": {
+      "copula_fraction": "4/5",
+      "bins": 8,
+      "sample": {
+        "marginal_prior_noise_multiplier": 3,
+        "group_prior": 100,
+        "public_radial_strength": 1,
+        "enforce_public_support": true
+      },
+      "cox_public": {
+        "quantization": 128,
+        "ridge": 0.01,
+        "clip_quantile": 0.99
+      },
+      "cox_postprocess": {
+        "damping": 1.0,
+        "max_standardized_step": 1.0,
+        "prior_variance_multiplier": 1.0
+      },
+      "cox_calibration": {
+        "iterations": 16,
+        "learning_rate": 0.15,
+        "max_corr_mean_shift": 0.02,
+        "max_corr_tail_shift": 0.04,
+        "strata": "none"
+      }
+    },
+    "10": {
+      "copula_fraction": "4/5",
+      "bins": 8,
+      "sample": {
+        "marginal_prior_noise_multiplier": 15,
+        "group_prior": 0,
+        "public_radial_strength": 0,
+        "enforce_public_support": true
+      },
+      "cox_public": {
+        "quantization": 128,
+        "ridge": 0.01,
+        "clip_quantile": 0.99
+      },
+      "cox_postprocess": {
+        "damping": 1.0,
+        "max_standardized_step": 1.0,
+        "prior_variance_multiplier": 1.0
+      },
+      "cox_calibration": {
+        "iterations": 16,
+        "learning_rate": 0.15,
+        "max_corr_mean_shift": 0.02,
+        "max_corr_tail_shift": 0.04,
+        "strata": "none"
+      }
+    }
+  }
+}

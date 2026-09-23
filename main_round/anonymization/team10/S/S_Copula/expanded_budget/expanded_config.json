@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "additional_epsilon_exact": "400",
+  "previous_epsilon_exact": "14",
+  "composed_epsilon_exact": "414",
+  "delta": 0,
+  "public_n": 1049,
+  "plan": {
+    "radius": 16,
+    "quantization": 65536,
+    "se_weight": 2,
+    "postprocess_seed": 20260918,
+    "iterations": 300,
+    "candidates": 4096,
+    "trials": 12
+  },
+  "public_selection_sha256": "ee3b8ab20716258a518499b041411267c791874e437f519146ff8d330c8f2987",
+  "selection_rule": "First epsilon in 50/100/200/400/800 with mean Cox>=.95 and min Cox>=.92 over six public trials"
+}

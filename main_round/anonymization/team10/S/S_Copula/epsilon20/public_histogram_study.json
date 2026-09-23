@@ -1,0 +1,182 @@
+{
+  "source": "PUBLIC A_bg only, seeded simulator",
+  "rows": [
+    {
+      "histogram_epsilon": 4,
+      "radial": 0,
+      "cohort_seed": 2026091811,
+      "replicate": 0,
+      "U_gen_public_KM_floor0": 0.9313125330488949,
+      "U_rare_public_detector_proxy": 0.8721980595516895,
+      "gen_without_KM": 0.9313125330488949
+    },
+    {
+      "histogram_epsilon": 4,
+      "radial": 1,
+      "cohort_seed": 2026091811,
+      "replicate": 0,
+      "U_gen_public_KM_floor0": 0.9288962404703944,
+      "U_rare_public_detector_proxy": 0.8747630199620832,
+      "gen_without_KM": 0.9288962404703944
+    },
+    {
+      "histogram_epsilon": 4,
+      "radial": 0,
+      "cohort_seed": 2026091811,
+      "replicate": 1,
+      "U_gen_public_KM_floor0": 0.9335250354212552,
+      "U_rare_public_detector_proxy": 0.8767911721509943,
+      "gen_without_KM": 0.9386474431406028
+    },
+    {
+      "histogram_epsilon": 4,
+      "radial": 1,
+      "cohort_seed": 2026091811,
+      "replicate": 1,
+      "U_gen_public_KM_floor0": 0.9335250354212552,
+      "U_rare_public_detector_proxy": 0.8613106815385227,
+      "gen_without_KM": 0.9383304514675788
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 0,
+      "cohort_seed": 2026091811,
+      "replicate": 0,
+      "U_gen_public_KM_floor0": 0.9329764650348642,
+      "U_rare_public_detector_proxy": 0.8758782201405152,
+      "gen_without_KM": 0.9454441493701257
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 1,
+      "cohort_seed": 2026091811,
+      "replicate": 0,
+      "U_gen_public_KM_floor0": 0.9329764650348642,
+      "U_rare_public_detector_proxy": 0.873536299765808,
+      "gen_without_KM": 0.9389390979033547
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 0,
+      "cohort_seed": 2026091811,
+      "replicate": 1,
+      "U_gen_public_KM_floor0": 0.9474922350567284,
+      "U_rare_public_detector_proxy": 0.8628415300546448,
+      "gen_without_KM": 0.9474922350567284
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 1,
+      "cohort_seed": 2026091811,
+      "replicate": 1,
+      "U_gen_public_KM_floor0": 0.9459595423045074,
+      "U_rare_public_detector_proxy": 0.8788056206088994,
+      "gen_without_KM": 0.9459595423045074
+    },
+    {
+      "histogram_epsilon": 4,
+      "radial": 0,
+      "cohort_seed": 2026091827,
+      "replicate": 0,
+      "U_gen_public_KM_floor0": 0.9190704732061581,
+      "U_rare_public_detector_proxy": 0.8431972789115646,
+      "gen_without_KM": 0.9353573352770721
+    },
+    {
+      "histogram_epsilon": 4,
+      "radial": 1,
+      "cohort_seed": 2026091827,
+      "replicate": 0,
+      "U_gen_public_KM_floor0": 0.9190704732061581,
+      "U_rare_public_detector_proxy": 0.8431972789115648,
+      "gen_without_KM": 0.9313923903454224
+    },
+    {
+      "histogram_epsilon": 4,
+      "radial": 0,
+      "cohort_seed": 2026091827,
+      "replicate": 1,
+      "U_gen_public_KM_floor0": 0.9407690403180569,
+      "U_rare_public_detector_proxy": 0.864935064935065,
+      "gen_without_KM": 0.9407690403180569
+    },
+    {
+      "histogram_epsilon": 4,
+      "radial": 1,
+      "cohort_seed": 2026091827,
+      "replicate": 1,
+      "U_gen_public_KM_floor0": 0.9402227599501589,
+      "U_rare_public_detector_proxy": 0.8673160173160172,
+      "gen_without_KM": 0.9402227599501589
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 0,
+      "cohort_seed": 2026091827,
+      "replicate": 0,
+      "U_gen_public_KM_floor0": 0.9214202524128237,
+      "U_rare_public_detector_proxy": 0.8541353383458647,
+      "gen_without_KM": 0.9272101577627476
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 1,
+      "cohort_seed": 2026091827,
+      "replicate": 0,
+      "U_gen_public_KM_floor0": 0.9214202524128237,
+      "U_rare_public_detector_proxy": 0.855137844611529,
+      "gen_without_KM": 0.9297487036578598
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 0,
+      "cohort_seed": 2026091827,
+      "replicate": 1,
+      "U_gen_public_KM_floor0": 0.9402618126488257,
+      "U_rare_public_detector_proxy": 0.8617836965294592,
+      "gen_without_KM": 0.9402618126488257
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 1,
+      "cohort_seed": 2026091827,
+      "replicate": 1,
+      "U_gen_public_KM_floor0": 0.9366105209740101,
+      "U_rare_public_detector_proxy": 0.8585956416464892,
+      "gen_without_KM": 0.9366105209740101
+    }
+  ],
+  "summaries": [
+    {
+      "histogram_epsilon": 4,
+      "radial": 0,
+      "mean_general_without_KM": 0.9365215879461567,
+      "mean_rare_proxy": 0.8642803938873284,
+      "mean_gen_floor0": 0.9311692704985912
+    },
+    {
+      "histogram_epsilon": 4,
+      "radial": 1,
+      "mean_general_without_KM": 0.9347104605583887,
+      "mean_rare_proxy": 0.861646749432047,
+      "mean_gen_floor0": 0.9304286272619917
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 0,
+      "mean_general_without_KM": 0.9401020887096069,
+      "mean_rare_proxy": 0.8636596962676208,
+      "mean_gen_floor0": 0.9355376912883105
+    },
+    {
+      "histogram_epsilon": 8,
+      "radial": 1,
+      "mean_general_without_KM": 0.9378144662099329,
+      "mean_rare_proxy": 0.8665188516581814,
+      "mean_gen_floor0": 0.9342416951815514
+    }
+  ],
+  "limitations": [
+    "Rare truth is detector proxy; KM floor zero; not actual utility; 2 public cohorts x 2 noise draws."
+  ]
+}

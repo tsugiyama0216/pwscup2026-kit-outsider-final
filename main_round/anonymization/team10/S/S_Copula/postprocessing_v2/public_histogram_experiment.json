@@ -1,0 +1,380 @@
+{
+  "provenance": "PUBLIC A_bg only, 2 disjoint-within-split 1049-row pseudo-private cohorts, 3 independent noise draws each; seeded noise used only in public simulation",
+  "public_prior_source": "disjoint remainder of A_bg in each split",
+  "selected_prior_multiplier": 1.0,
+  "selection": "multiplier 1 is the public multinomial sampling model; parameter sweep is sensitivity analysis, no private evaluation",
+  "synthetic_sample_rows": 10490,
+  "public_proxy_results": [
+    {
+      "split": 471,
+      "draw": 0,
+      "method": "frozen_eps10",
+      "histogram_count_rmse": 1.6268021281116647,
+      "group_count_rmse": 2.0894836752139265,
+      "event_mean_standardized_rmse": 0.06870109337888528,
+      "cox_standardized_l2_error": 0.5193465313834587
+    },
+    {
+      "split": 471,
+      "draw": 0,
+      "method": "bayes_0.5",
+      "histogram_count_rmse": 1.6393668066979157,
+      "group_count_rmse": 1.8459378216224855,
+      "event_mean_standardized_rmse": 0.055167468921898985,
+      "cox_standardized_l2_error": 0.43404529651455975
+    },
+    {
+      "split": 471,
+      "draw": 0,
+      "method": "bayes_1",
+      "histogram_count_rmse": 1.5576484728440976,
+      "group_count_rmse": 1.8857494597248399,
+      "event_mean_standardized_rmse": 0.0512790308535574,
+      "cox_standardized_l2_error": 0.4357017609613998
+    },
+    {
+      "split": 471,
+      "draw": 0,
+      "method": "bayes_2",
+      "histogram_count_rmse": 1.594195255424681,
+      "group_count_rmse": 1.9555564053928476,
+      "event_mean_standardized_rmse": 0.051882886829807136,
+      "cox_standardized_l2_error": 0.40663301790677825
+    },
+    {
+      "split": 471,
+      "draw": 0,
+      "method": "bayes_4",
+      "histogram_count_rmse": 1.7434868954141172,
+      "group_count_rmse": 2.019597135627941,
+      "event_mean_standardized_rmse": 0.054958920381612764,
+      "cox_standardized_l2_error": 0.3651151648518107
+    },
+    {
+      "split": 471,
+      "draw": 1,
+      "method": "frozen_eps10",
+      "histogram_count_rmse": 1.693285238649441,
+      "group_count_rmse": 2.5840052889522753,
+      "event_mean_standardized_rmse": 0.05368013123332692,
+      "cox_standardized_l2_error": 0.47354279620934137
+    },
+    {
+      "split": 471,
+      "draw": 1,
+      "method": "bayes_0.5",
+      "histogram_count_rmse": 1.6399362494241252,
+      "group_count_rmse": 1.8386528147645658,
+      "event_mean_standardized_rmse": 0.05651032934391562,
+      "cox_standardized_l2_error": 0.4413456321220739
+    },
+    {
+      "split": 471,
+      "draw": 1,
+      "method": "bayes_1",
+      "histogram_count_rmse": 1.5862501520327306,
+      "group_count_rmse": 1.982733125111722,
+      "event_mean_standardized_rmse": 0.05449372498041905,
+      "cox_standardized_l2_error": 0.42749810295690965
+    },
+    {
+      "split": 471,
+      "draw": 1,
+      "method": "bayes_2",
+      "histogram_count_rmse": 1.654098428004037,
+      "group_count_rmse": 2.116406616775497,
+      "event_mean_standardized_rmse": 0.05637458931964128,
+      "cox_standardized_l2_error": 0.42977455617962257
+    },
+    {
+      "split": 471,
+      "draw": 1,
+      "method": "bayes_4",
+      "histogram_count_rmse": 1.8210312955387187,
+      "group_count_rmse": 2.215743544413815,
+      "event_mean_standardized_rmse": 0.06583084264218979,
+      "cox_standardized_l2_error": 0.3976919988487062
+    },
+    {
+      "split": 471,
+      "draw": 2,
+      "method": "frozen_eps10",
+      "histogram_count_rmse": 1.7245827260488609,
+      "group_count_rmse": 2.06476574355484,
+      "event_mean_standardized_rmse": 0.08558629938918151,
+      "cox_standardized_l2_error": 0.4987677748299033
+    },
+    {
+      "split": 471,
+      "draw": 2,
+      "method": "bayes_0.5",
+      "histogram_count_rmse": 1.7032166222450917,
+      "group_count_rmse": 1.5906965684700463,
+      "event_mean_standardized_rmse": 0.06863029811742923,
+      "cox_standardized_l2_error": 0.4399678422384817
+    },
+    {
+      "split": 471,
+      "draw": 2,
+      "method": "bayes_1",
+      "histogram_count_rmse": 1.6371041045078456,
+      "group_count_rmse": 1.5651150706360244,
+      "event_mean_standardized_rmse": 0.07489123606310842,
+      "cox_standardized_l2_error": 0.43307350964555197
+    },
+    {
+      "split": 471,
+      "draw": 2,
+      "method": "bayes_2",
+      "histogram_count_rmse": 1.6763965744530809,
+      "group_count_rmse": 1.5977904630117237,
+      "event_mean_standardized_rmse": 0.08510583502334512,
+      "cox_standardized_l2_error": 0.39377077165918234
+    },
+    {
+      "split": 471,
+      "draw": 2,
+      "method": "bayes_4",
+      "histogram_count_rmse": 1.802232440756037,
+      "group_count_rmse": 1.6541898138428461,
+      "event_mean_standardized_rmse": 0.09970785704345744,
+      "cox_standardized_l2_error": 0.41412705979488773
+    },
+    {
+      "split": 472,
+      "draw": 0,
+      "method": "frozen_eps10",
+      "histogram_count_rmse": 1.589277494510509,
+      "group_count_rmse": 3.165899029764953,
+      "event_mean_standardized_rmse": 0.06233544321136612,
+      "cox_standardized_l2_error": 0.44933943099161405
+    },
+    {
+      "split": 472,
+      "draw": 0,
+      "method": "bayes_0.5",
+      "histogram_count_rmse": 1.609629229577319,
+      "group_count_rmse": 1.993552082836124,
+      "event_mean_standardized_rmse": 0.0681982367230774,
+      "cox_standardized_l2_error": 0.3515991387654401
+    },
+    {
+      "split": 472,
+      "draw": 0,
+      "method": "bayes_1",
+      "histogram_count_rmse": 1.500960751332828,
+      "group_count_rmse": 2.053620050069396,
+      "event_mean_standardized_rmse": 0.06868189006393532,
+      "cox_standardized_l2_error": 0.32987732576405854
+    },
+    {
+      "split": 472,
+      "draw": 0,
+      "method": "bayes_2",
+      "histogram_count_rmse": 1.5237466483497277,
+      "group_count_rmse": 2.1151775978548493,
+      "event_mean_standardized_rmse": 0.07060237459161364,
+      "cox_standardized_l2_error": 0.33582385504659107
+    },
+    {
+      "split": 472,
+      "draw": 0,
+      "method": "bayes_4",
+      "histogram_count_rmse": 1.659187267313467,
+      "group_count_rmse": 2.172027802955018,
+      "event_mean_standardized_rmse": 0.07387077365849175,
+      "cox_standardized_l2_error": 0.37657129115824123
+    },
+    {
+      "split": 472,
+      "draw": 1,
+      "method": "frozen_eps10",
+      "histogram_count_rmse": 1.5417567385119668,
+      "group_count_rmse": 2.246208927382879,
+      "event_mean_standardized_rmse": 0.0717719993873611,
+      "cox_standardized_l2_error": 0.5161321672300927
+    },
+    {
+      "split": 472,
+      "draw": 1,
+      "method": "bayes_0.5",
+      "histogram_count_rmse": 1.5833749793429308,
+      "group_count_rmse": 1.2787489630681723,
+      "event_mean_standardized_rmse": 0.06135533268759548,
+      "cox_standardized_l2_error": 0.3411558827945718
+    },
+    {
+      "split": 472,
+      "draw": 1,
+      "method": "bayes_1",
+      "histogram_count_rmse": 1.4649482419044872,
+      "group_count_rmse": 1.198303724383784,
+      "event_mean_standardized_rmse": 0.06567208920291075,
+      "cox_standardized_l2_error": 0.33981117382995946
+    },
+    {
+      "split": 472,
+      "draw": 1,
+      "method": "bayes_2",
+      "histogram_count_rmse": 1.4759175898682932,
+      "group_count_rmse": 1.2352971666929269,
+      "event_mean_standardized_rmse": 0.07688056007314165,
+      "cox_standardized_l2_error": 0.33185906048683383
+    },
+    {
+      "split": 472,
+      "draw": 1,
+      "method": "bayes_4",
+      "histogram_count_rmse": 1.6086157527924747,
+      "group_count_rmse": 1.3246262607494692,
+      "event_mean_standardized_rmse": 0.0932570391789554,
+      "cox_standardized_l2_error": 0.3195583988727856
+    },
+    {
+      "split": 472,
+      "draw": 2,
+      "method": "frozen_eps10",
+      "histogram_count_rmse": 1.7138684598580805,
+      "group_count_rmse": 2.077567779589365,
+      "event_mean_standardized_rmse": 0.08616812713089043,
+      "cox_standardized_l2_error": 0.5419319637843333
+    },
+    {
+      "split": 472,
+      "draw": 2,
+      "method": "bayes_0.5",
+      "histogram_count_rmse": 1.721511627492788,
+      "group_count_rmse": 1.6605084240951007,
+      "event_mean_standardized_rmse": 0.0706224011540381,
+      "cox_standardized_l2_error": 0.36025076207593276
+    },
+    {
+      "split": 472,
+      "draw": 2,
+      "method": "bayes_1",
+      "histogram_count_rmse": 1.6828183059274053,
+      "group_count_rmse": 1.7157806299210812,
+      "event_mean_standardized_rmse": 0.07509920791225874,
+      "cox_standardized_l2_error": 0.36003724012372246
+    },
+    {
+      "split": 472,
+      "draw": 2,
+      "method": "bayes_2",
+      "histogram_count_rmse": 1.7609455951458808,
+      "group_count_rmse": 1.7919528447936126,
+      "event_mean_standardized_rmse": 0.08020490571804521,
+      "cox_standardized_l2_error": 0.3593242984569019
+    },
+    {
+      "split": 472,
+      "draw": 2,
+      "method": "bayes_4",
+      "histogram_count_rmse": 1.9153710235971855,
+      "group_count_rmse": 1.8029883917790162,
+      "event_mean_standardized_rmse": 0.0856029815116978,
+      "cox_standardized_l2_error": 0.3708649215891783
+    }
+  ],
+  "summary": {
+    "bayes_0.5": {
+      "histogram_count_rmse": {
+        "mean": 1.6495059191300285,
+        "std": 0.0533432158984369
+      },
+      "group_count_rmse": {
+        "mean": 1.7013494458094158,
+        "std": 0.25204904719650917
+      },
+      "event_mean_standardized_rmse": {
+        "mean": 0.06341401115799246,
+        "std": 0.006662789036463003
+      },
+      "cox_standardized_l2_error": {
+        "mean": 0.39472742575184333,
+        "std": 0.048341384137820825
+      }
+    },
+    "bayes_1": {
+      "histogram_count_rmse": {
+        "mean": 1.5716216714248992,
+        "std": 0.08177294110465036
+      },
+      "group_count_rmse": {
+        "mean": 1.7335503433078079,
+        "std": 0.3171360571854217
+      },
+      "event_mean_standardized_rmse": {
+        "mean": 0.06501952984603161,
+        "std": 0.010124061341834365
+      },
+      "cox_standardized_l2_error": {
+        "mean": 0.387666518880267,
+        "std": 0.04969675304830213
+      }
+    },
+    "bayes_2": {
+      "histogram_count_rmse": {
+        "mean": 1.6142166818742834,
+        "std": 0.10459310688379542
+      },
+      "group_count_rmse": {
+        "mean": 1.802030182420243,
+        "std": 0.34160382733354183
+      },
+      "event_mean_standardized_rmse": {
+        "mean": 0.07017519192593234,
+        "std": 0.013369583143090011
+      },
+      "cox_standardized_l2_error": {
+        "mean": 0.3761975932893183,
+        "std": 0.03996567259907952
+      }
+    },
+    "bayes_4": {
+      "histogram_count_rmse": {
+        "mean": 1.7583207792353335,
+        "std": 0.11223610325033972
+      },
+      "group_count_rmse": {
+        "mean": 1.8648621582280176,
+        "std": 0.34102123637420534
+      },
+      "event_mean_standardized_rmse": {
+        "mean": 0.07887140240273416,
+        "std": 0.01704868222396705
+      },
+      "cox_standardized_l2_error": {
+        "mean": 0.373988139185935,
+        "std": 0.03234427113701526
+      }
+    },
+    "frozen_eps10": {
+      "histogram_count_rmse": {
+        "mean": 1.6482621309484207,
+        "std": 0.07407998586940295
+      },
+      "group_count_rmse": {
+        "mean": 2.37132174074304,
+        "std": 0.4363350181367288
+      },
+      "event_mean_standardized_rmse": {
+        "mean": 0.07137384895516856,
+        "std": 0.012829084031425922
+      },
+      "cox_standardized_l2_error": {
+        "mean": 0.4998434440714572,
+        "std": 0.03364720757481248
+      }
+    }
+  },
+  "source_sha256": {
+    "histogram_refine.py": "d3d70cfaf3662f027dbc31b38e9d6f00120bb9211f1dfa40c9a985debba11f2e",
+    "tests_test_histogram.py": "7647722718abc290b21dcfad10e0022a9e6b10dc5f55e26536c7b0ec21da9aaa"
+  },
+  "fixed_group_public_pseudocount": 0.5,
+  "public_input_sha256": {
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+  }
+}
