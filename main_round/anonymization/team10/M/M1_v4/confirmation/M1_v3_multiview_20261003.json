@@ -1,0 +1,166 @@
+{
+  "beta_raw": 0.0,
+  "mean_auc": 0.51236371155726,
+  "per_attackers": [
+    {
+      "raw": 0.0,
+      "auc": 0.41627190014286786,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5170689525528235,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5230468456274907,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.48466050078953304,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5075569591698624,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": 0.0,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5644785322204677,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": 0.0,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5097751710654936,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": 0.0,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.4568012632528761,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": 0.0,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5219941348973607,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5684637942702458,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": 0.0,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.4837205804947741,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": 0.0,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5185352282126475,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5043612301676819,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.4927438153244605,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": 0.0,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5335739529287916,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": 0.0,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.629746597488533,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5211294082261825,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5464696593728852,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.5222949093916835,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": null,
+      "score": 0.0,
+      "low_fpr": 0.01
+    },
+    {
+      "raw": 0.0,
+      "auc": 0.4245807955485375,
+      "tpr_at_low_fpr": 0.0,
+      "tpr_rare": 0.0,
+      "score": 0.0,
+      "low_fpr": 0.01
+    }
+  ]
+}

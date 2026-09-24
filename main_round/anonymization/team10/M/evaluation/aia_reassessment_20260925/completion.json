@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "completed_utc": "2026-09-24T15:38:21.746137+00:00",
+  "candidate_count": 3,
+  "seed_count": 9,
+  "comparison_rows": 27,
+  "aia_attack_rows": 54,
+  "inputs_unchanged": true,
+  "candidate_tuning": false,
+  "submission_zip_unchanged": true,
+  "B_record_id_equals_row_index": true,
+  "mia_confidences_recomputed_and_equal": true,
+  "mia_cached_permutations_validated": true,
+  "elapsed_seconds": 11.702999999994063,
+  "protocol_sha256": "3b75eccdbe3e4cc187c9bc11af93d7d0c234961dd5798c94aa2506b1c52b01fd",
+  "result_sha256": {
+    "comparison_all_seeds.csv": "146463e926f5f9c1b863fa823502f41bcd04d40db921dcc0beb2a7a679b000ba",
+    "comparison_primary.csv": "5dcc66fe2e02d9452183379d5a6f3c8ebc138e4ccbd5a26b55845045a60b68d7",
+    "sensitivity.csv": "0a0859808046ca5d3f80c3a012cb4f9e6eca019cca16b99a2d5038fe30d8e787",
+    "aia_attack_details.csv": "005253533440987aa27e8840b74a3962678ffb65b8f7e330017ec1ed8c0638d5"
+  }
+}

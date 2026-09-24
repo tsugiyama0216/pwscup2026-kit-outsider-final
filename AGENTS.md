@@ -2,6 +2,12 @@
 
 ## Scope and authorization
 
+- On 2026-09-25, after creating the M1_v5 submission ZIP and reviewing candidate selection, the user requested uploading the current state to GitHub. This authorizes committing the current team10 work and exactly `main_round/anonymization/team10/M/M1_v5/submission/team10_M1_v5_defense.zip` to the existing private repository `tsugiyama0216/pwscup2026-kit-private`. This supersedes the earlier local-only scope for that V5 ZIP. Keep its verified bytes, token contents out of logs, and unrelated ignored artifacts local. No CodaBench submission is authorized.
+
+- On 2026-09-25 the user selected M1_v5 for submission and explicitly requested its ZIP. This supersedes the earlier M1_v3 selection and authorizes local creation of `main_round/anonymization/team10/M/M1_v5/submission/team10_M1_v5_defense.zip`, containing the frozen evaluated C.csv and original team10 token.txt. Preserve the evaluated bytes and prior packages; record creation and validation without logging the credential. No CodaBench submission or GitHub upload is authorized by this request. Keep the ZIP ignored.
+
+- On 2026-09-24 the user selected M1_v3 as the final submission and explicitly requested creating its submission file and a creation log. This authorizes local creation of exactly `main_round/anonymization/team10/M/M1_v3/submission/team10_M1_v3_defense.zip`, containing the frozen received C.csv and original team10 token.txt. Preserve the evaluated CSV bytes; record creation and validation without printing the credential. This request does not authorize uploading this ZIP to GitHub or submitting it to CodaBench. The ZIP remains ignored. Prior restrictions for M1 are historical and do not prevent this specifically authorized local M1_v3 package.
+
 - This is the private repository for the authorized PWSCUP2026 privacy competition. Keep all work within contest datasets and rules; do not target real people or systems outside it.
 - Inspect Git status before edits and preserve unrelated user changes.
 - Read `CODEX_HANDOFF.md` before attack work or submission advice. Read `prelim/workspace/AGENTS.md` and its handoff before changing preliminary code.

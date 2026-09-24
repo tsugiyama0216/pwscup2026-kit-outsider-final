@@ -1,0 +1,17 @@
+{
+  "verified_utc": "2026-09-24T15:41:46.983683+00:00",
+  "tests_passed": 5,
+  "test_log": "logs/test_results.txt",
+  "current_data_matches_prior_mia_input_hashes": true,
+  "all_180_mia_attacker_truth_and_rare_arrays_match_current_data": true,
+  "result_hashes_match_completion": true,
+  "protocol_and_code_hashes_match": true,
+  "candidate_csv_and_submission_zip_unchanged": true,
+  "comparison": {
+    "v5_vs_v4_improved": 5,
+    "tied": 4,
+    "decreased": 0
+  },
+  "test_code_sha256": "4662ae79b853844a060be36caa3efe4cfd8d055692773f52087e55196a255af1",
+  "report_code_sha256": "057d058ad894f0444ce7e03b7c990ed92a73af55ba16c49127aef16b8abd3e52"
+}

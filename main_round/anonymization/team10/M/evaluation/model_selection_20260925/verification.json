@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-09-24T16:08:43.228281+00:00",
+  "recommendation": "M1_v5",
+  "selection_objective": "min(U,Anon), same observed scenarios, no phi assumption",
+  "checked_input_files": 18,
+  "all_hashes_match": true,
+  "comparison_arithmetic_verified": true,
+  "shared_first3_mia_cohorts_identical": true,
+  "v5_submission_zip_matches_verified_creation_log": true,
+  "paired_comparisons": [
+    {
+      "candidate": "M1_v5",
+      "base": "M1_v4",
+      "scope": "all9",
+      "improved": 5,
+      "tied": 4,
+      "worse": 0
+    },
+    {
+      "candidate": "M1_v5",
+      "base": "M1_v4",
+      "scope": "previous_confirmation3",
+      "improved": 2,
+      "tied": 1,
+      "worse": 0
+    },
+    {
+      "candidate": "M1_v5",
+      "base": "M1_v3",
+      "scope": "all9",
+      "improved": 9,
+      "tied": 0,
+      "worse": 0
+    },
+    {
+      "candidate": "M1_v5",
+      "base": "M1_v3",
+      "scope": "previous_confirmation3",
+      "improved": 3,
+      "tied": 0,
+      "worse": 0
+    },
+    {
+      "candidate": "M1_v4",
+      "base": "M1_v3",
+      "scope": "all9",
+      "improved": 4,
+      "tied": 5,
+      "worse": 0
+    },
+    {
+      "candidate": "M1_v4",
+      "base": "M1_v3",
+      "scope": "previous_confirmation3",
+      "improved": 1,
+      "tied": 2,
+      "worse": 0
+    }
+  ],
+  "caveats": [
+    "This is an evidence-based selection among compared fixed CSVs, not proof that all possible models are ranked.",
+    "Nine resamples share B and public A; six seeds were used during V5 selection and three were subsequent confirmation.",
+    "A_bg is shared by generation, attack background, and controls; unseen nonmembers and actual Pi/shared blocks are unavailable.",
+    "AIA controls are public proxies; 50 unmatched B rows were excluded, and only two AIA attacks were tested.",
+    "Provided phi=0.026887 is not confirmed applicable to these pseudo challenges; recommendation uses no subtraction.",
+    "Some R variants and DPCopula eps1/3/10 lack the same evaluation; absence is not a score of zero.",
+    "DP guarantees and empirical contest attack scores are different criteria; no DP violation is inferred from these scores."
+  ],
+  "new_attack_runs": false,
+  "candidate_mutation": false,
+  "submission_performed": false,
+  "source_sha256": {
+    "M\\evaluation\\aia_reassessment_20260925\\comparison_all_seeds.csv": "146463e926f5f9c1b863fa823502f41bcd04d40db921dcc0beb2a7a679b000ba",
+    "M\\evaluation\\domias_main_round_20260924\\comparison_all_seeds.csv": "6781996fcc05837cda5398a78463ca662843a0a2bcf8233679678f8d1d2ad33b"
+  }
+}

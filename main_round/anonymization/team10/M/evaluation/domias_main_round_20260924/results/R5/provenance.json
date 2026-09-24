@@ -1,0 +1,19 @@
+{
+  "C_sha256": "acb90291e7a8de8e4a43340aeed62fcbba490e68390eec6d1309dd0f84920be7",
+  "environment": {
+    "kit_commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+    "config_sha256": "52a94e8dafd254cc76f7ea00989b9313c3137e7b7734eeac3525f1f69b79d6f7",
+    "dependencies": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.0",
+      "lifelines": "0.30.3",
+      "statsmodels": "0.14.6",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "frozen_inputs_sha256": "3524fab6d0ebb9dbe145a5826ec40f46c2398081bc92ebf44a6039d95d9ce1df",
+  "confidence_sha256": "ecc3146401979a978d7cbd6c3a7f8549daa41ab68926c5eb26ae5198c0965fc7",
+  "generator_run": 0
+}

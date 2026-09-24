@@ -1,0 +1,136 @@
+{
+  "base_sha256": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+  "candidates": [
+    {
+      "name": "three_05",
+      "fields": [
+        "BMI",
+        "TG",
+        "ALT"
+      ],
+      "strength": 0.05
+    },
+    {
+      "name": "three_10",
+      "fields": [
+        "BMI",
+        "TG",
+        "ALT"
+      ],
+      "strength": 0.1
+    },
+    {
+      "name": "three_20",
+      "fields": [
+        "BMI",
+        "TG",
+        "ALT"
+      ],
+      "strength": 0.2
+    },
+    {
+      "name": "three_35",
+      "fields": [
+        "BMI",
+        "TG",
+        "ALT"
+      ],
+      "strength": 0.35
+    },
+    {
+      "name": "six_05",
+      "fields": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "strength": 0.05
+    },
+    {
+      "name": "six_10",
+      "fields": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "strength": 0.1
+    },
+    {
+      "name": "six_20",
+      "fields": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "strength": 0.2
+    },
+    {
+      "name": "six_35",
+      "fields": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "strength": 0.35
+    }
+  ],
+  "training_seeds": [
+    20260924,
+    20260925,
+    20260926,
+    20261001,
+    20261002,
+    20261003
+  ],
+  "confirmation_seeds": [
+    20261011,
+    20261012,
+    20261013
+  ],
+  "utility_floor": 0.86,
+  "aia_risk_ceiling": 0.1,
+  "public_neighbor_k": 50,
+  "screening": "Same six known cohort sets; rank candidates by minimum objective with v4 chance95 fixed for all candidates, then mean objective, then U. Do not exploit candidate-specific permutation randomness during selection.",
+  "selection": "U>=0.86, AIA<=0.10, minimum screening objective strictly above v4 baseline minimum; select maximum(minimum, mean, U), freeze before final permutation/confirmation.",
+  "fallback": "If no eligible improvement, preserve all results and report failure; any subsequent study must use a separate protocol.",
+  "confirmation": "Selected model and v4 on known six + new three seeds with exact per-model 20000 permutations. No further tuning from confirmation.",
+  "private_data_use": "No B in smoothing; B used for score-based selection. Inherits non-DP v4/v3. No formal DP guarantee.",
+  "code_sha256": "d177f6b6ae8c76d540cdf929d357cf994cc70bdf5c043007dab6e4885b1d77f8",
+  "environment": {
+    "kit_commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+    "config_sha256": "52a94e8dafd254cc76f7ea00989b9313c3137e7b7734eeac3525f1f69b79d6f7",
+    "dependencies": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.0",
+      "lifelines": "0.30.3",
+      "statsmodels": "0.14.6",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "inputs_sha256": {
+    "B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+    "utility_ref.json": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee"
+  },
+  "dependency_sha256": {
+    "M\\evaluation\\domias_main_round_20260924\\evaluate.py": "1da1981829c0ade8ec2e1fecec25edf780a1197b9e0b873b1d91fc184b54c230",
+    "M\\evaluation\\scripts\\evaluate_resistance.py": "d36ecf8309cf306ec25f792cbb0c8707713bb7d580409e1f95b9a39ecd7b52f0",
+    "S\\S_Copula\\evaluate.py": "b447a2bd969eef3a7c6ef54c0b574dc410d76adb95fc192d7246d284a2161f58"
+  }
+}

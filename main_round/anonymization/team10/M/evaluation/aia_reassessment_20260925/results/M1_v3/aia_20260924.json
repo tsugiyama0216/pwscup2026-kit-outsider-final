@@ -1,0 +1,55 @@
+{
+  "attacks": {
+    "official_qi_nearest": {
+      "risk_before_phi": 0.04651162790697689,
+      "breakdown": {
+        "r_onset": null,
+        "r_time_all": 0.04651162790697689,
+        "r_time_rare": 0.0,
+        "r_time_rare_raw": 0.14285714285714277,
+        "aia_rare_se_z": 1.64,
+        "tpr_onset_member": null,
+        "tpr_onset_control": null,
+        "succ_time_member": 0.7484662576687117,
+        "succ_time_control": 0.7361963190184049,
+        "succ_time_member_rare": 0.5384615384615384,
+        "succ_time_control_rare": 0.46153846153846156,
+        "tau_time": 0.5,
+        "low_fpr": 0.01
+      }
+    },
+    "allowed_qi_multiview": {
+      "risk_before_phi": 0.15384615384615347,
+      "breakdown": {
+        "r_onset": null,
+        "r_time_all": 0.15384615384615347,
+        "r_time_rare": 0.0,
+        "r_time_rare_raw": 0.0,
+        "aia_rare_se_z": 1.64,
+        "tpr_onset_member": null,
+        "tpr_onset_control": null,
+        "succ_time_member": 0.7975460122699386,
+        "succ_time_control": 0.7607361963190185,
+        "succ_time_member_rare": 0.6153846153846154,
+        "succ_time_control_rare": 0.6153846153846154,
+        "tau_time": 0.5,
+        "low_fpr": 0.01
+      }
+    }
+  },
+  "summary": {
+    "model": "M1_v3",
+    "seed": 20260924,
+    "U": 0.842644163219807,
+    "beta_raw": 0.11346153846153846,
+    "chance95": 0.06923076923076922,
+    "beta": 0.05423076923076924,
+    "a_MIA": 0.4020979020979022,
+    "AIA_before_phi": 0.15384615384615347,
+    "Anon_no_phi_proxy": 0.5979020979020978,
+    "Objective_no_phi_proxy": 0.5979020979020978,
+    "AIA_phi_scenario": 0.12695915384615347,
+    "Anon_phi_scenario": 0.5979020979020978,
+    "Objective_phi_scenario": 0.5979020979020978
+  }
+}

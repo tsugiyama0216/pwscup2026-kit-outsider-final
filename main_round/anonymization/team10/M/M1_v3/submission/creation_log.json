@@ -1,0 +1,86 @@
+{
+  "event": "final_submission_package_created",
+  "model": "M1_v3",
+  "selection": "User explicitly selected M1_v3 as the final submission",
+  "created_at_utc": "2026-09-24T14:09:47+00:00",
+  "created_at_jst": "2026-09-24T23:09:47+09:00",
+  "scope": "Local submission archive creation and validation only",
+  "source_csv": "../C.csv",
+  "source_received_manifest": "../review/received_manifest.json",
+  "credential_source_repository_relative": "main_round/anonymization/team10/participant_data/token.txt",
+  "credential_source_method": "existing_R12_archive_verified_against_original_git_blob_id",
+  "credential_source_commit": "5a87ce20c238292114b2b9c48f96d4dae06422ac",
+  "archive": "team10_M1_v3_defense.zip",
+  "archive_entries": [
+    "C.csv",
+    "token.txt"
+  ],
+  "C_sha256": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1",
+  "C_bytes": 158175,
+  "ZIP_sha256": "5be38cda5fb0a234d8500ce7bac1148ae62cbc65f0607e1c5124d2ccfcf71068",
+  "ZIP_bytes": 64028,
+  "verification": {
+    "zip_crc_ok": true,
+    "exactly_two_flat_entries": true,
+    "csv_matches_received_original_bytes": true,
+    "csv_matches_evaluated_sha256": true,
+    "token_matches_original_bytes": true,
+    "token_matches_committed_original_git_blob_id": true,
+    "token_matches_existing_R12_submission_bytes": true,
+    "all_seven_received_originals_unchanged": true,
+    "official_package_check_ok": true,
+    "official_submission_validation_ok": true,
+    "explicit_B_row_count_validation_ok": true,
+    "expected_rows_from_B": 1049,
+    "rows": 1049,
+    "columns": [
+      "age",
+      "sex",
+      "prefecture",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "time",
+      "onset",
+      "death"
+    ],
+    "no_missing": true,
+    "duplicate_rows": 0,
+    "rare_diagnostic": {
+      "rare_detected": 65,
+      "gate": 8,
+      "below_gate": false
+    },
+    "credential_registration_checked_against_server": false,
+    "credential_note": "Original token copied exactly and format checked; server registration is not available locally"
+  },
+  "official_kit": {
+    "kit_commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+    "config_sha256": "52a94e8dafd254cc76f7ea00989b9313c3137e7b7734eeac3525f1f69b79d6f7",
+    "dependencies": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.0",
+      "lifelines": "0.30.3",
+      "statsmodels": "0.14.6",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "previous_local_utility": {
+    "U": 0.842644163219807,
+    "source": "../review/verification.json",
+    "recomputed_for_packaging": false,
+    "scope": "Previously measured local utility for the identical CSV; not an official result"
+  },
+  "prior_domias_comparison": "../../evaluation/domias_main_round_20260924/README.md",
+  "generator_executed": false,
+  "csv_modified": false,
+  "codabench_submitted": false,
+  "github_pushed": false,
+  "credential_value_recorded_in_logs": false
+}

@@ -1,0 +1,35 @@
+{
+  "v4_sha256": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+  "v5_sha256": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db",
+  "screening_sha256": "f3646736363187255c0e20997e300c8678ebc79dc956bb2afb900e6586b61512",
+  "protocol_sha256": "8414eff0e10f393e189e58c851e1f33072ed3ad36991dc639910d83084573e28",
+  "confirmation_code_sha256": "fdfe1425f47a526f0387d0ec52fda7af3913dc1a65a3d4c14f052f814efa5122",
+  "known_seeds": [
+    20260924,
+    20260925,
+    20260926,
+    20261001,
+    20261002,
+    20261003
+  ],
+  "new_seeds": [
+    20261011,
+    20261012,
+    20261013
+  ],
+  "environment": {
+    "kit_commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+    "config_sha256": "52a94e8dafd254cc76f7ea00989b9313c3137e7b7734eeac3525f1f69b79d6f7",
+    "dependencies": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.0",
+      "lifelines": "0.30.3",
+      "statsmodels": "0.14.6",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "v3_csv_sha256": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1",
+  "v3_zip_sha256": "5be38cda5fb0a234d8500ce7bac1148ae62cbc65f0607e1c5124d2ccfcf71068"
+}

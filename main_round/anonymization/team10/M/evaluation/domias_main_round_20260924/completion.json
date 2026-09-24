@@ -1,0 +1,8 @@
+{
+  "complete": 1,
+  "models": 8,
+  "seeds": 3,
+  "permutations_per_model_seed": 20000,
+  "frozen_inputs_sha256": "3524fab6d0ebb9dbe145a5826ec40f46c2398081bc92ebf44a6039d95d9ce1df",
+  "comparison_sha256": "6781996fcc05837cda5398a78463ca662843a0a2bcf8233679678f8d1d2ad33b"
+}

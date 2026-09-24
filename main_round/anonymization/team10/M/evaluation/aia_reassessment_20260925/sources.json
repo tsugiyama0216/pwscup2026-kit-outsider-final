@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "updated-comparison",
+      "title": "M1_v3・V4・V5の再評価",
+      "queries": [
+        {
+          "id": "same-seed-results",
+          "source": {
+            "label": "固定候補3種の再計算",
+            "files": [
+              {
+                "label": "comparison_primary.csv"
+              },
+              {
+                "label": "comparison_all_seeds.csv"
+              },
+              {
+                "label": "sensitivity.csv"
+              },
+              {
+                "label": "verification.json"
+              }
+            ],
+            "metricDefinitions": [
+              {
+                "label": "Anon代理",
+                "definition": "Anon代理は、正規化したDOMIASとAIA最大リスクの大きい方を1から引いた局所評価です。基本表示はφ無控除です。"
+              },
+              {
+                "label": "総合代理",
+                "definition": "総合代理は有用性UとAnon代理の小さい方です。"
+              }
+            ],
+            "filters": [
+              "モデルは固定されたM1_v3・M1_v4・M1_v5",
+              "主seedは20260924",
+              "変動の確認は同じデータから9通りの抽出"
+            ],
+            "caveats": [
+              "本戦のchallenge・真値・非公開対照がないため、今回のAnon代理は正式な匿名性得点ではありません。",
+              "φ=0.026887は提供済みですが、今回の疑似集団への適用は仮定にすぎません。",
+              "9条件は独立したデータでの検証ではなく、範囲も信頼区間ではありません。"
+            ],
+            "executedAt": "2026-09-24T15:38:21.746137+00:00",
+            "evidenceFlow": [
+              {
+                "kind": "result",
+                "title": "同条件比較",
+                "detail": "V5はV4より総合代理が5条件で高く、4条件で同点でした。最低AnonはV5が0.632867、V3/V4が0.562937でした。"
+              },
+              {
+                "kind": "validation",
+                "title": "再計算と保存値の照合",
+                "detail": "有用性と全候補のDOMIAS確信度を再計算。以前の20,000置換の結果は入力ハッシュと95%点を照合して再利用。5テストに成功し、元CSVと提出ZIPの不変を確認しました。"
+              }
+            ]
+          },
+          "columns": [
+            "model",
+            "seed",
+            "U",
+            "beta_raw",
+            "chance95",
+            "beta",
+            "a_MIA",
+            "AIA_before_phi",
+            "Anon_no_phi_proxy",
+            "Objective_no_phi_proxy",
+            "AIA_phi_scenario",
+            "Anon_phi_scenario",
+            "Objective_phi_scenario"
+          ],
+          "rows": [
+            {
+              "model": "M1_v3",
+              "seed": 20260924,
+              "U": 0.842644163219807,
+              "beta_raw": 0.1134615384615384,
+              "chance95": 0.0692307692307692,
+              "beta": 0.0542307692307692,
+              "a_MIA": 0.4020979020979022,
+              "AIA_before_phi": 0.1538461538461534,
+              "Anon_no_phi_proxy": 0.5979020979020978,
+              "Objective_no_phi_proxy": 0.5979020979020978,
+              "AIA_phi_scenario": 0.1269591538461534,
+              "Anon_phi_scenario": 0.5979020979020978,
+              "Objective_phi_scenario": 0.5979020979020978
+            },
+            {
+              "model": "M1_v4",
+              "seed": 20260924,
+              "U": 0.8745376810931582,
+              "beta_raw": 0.1134615384615384,
+              "chance95": 0.0692307692307692,
+              "beta": 0.0542307692307692,
+              "a_MIA": 0.4020979020979022,
+              "AIA_before_phi": 0.1538461538461534,
+              "Anon_no_phi_proxy": 0.5979020979020978,
+              "Objective_no_phi_proxy": 0.5979020979020978,
+              "AIA_phi_scenario": 0.1269591538461534,
+              "Anon_phi_scenario": 0.5979020979020978,
+              "Objective_phi_scenario": 0.5979020979020978
+            },
+            {
+              "model": "M1_v5",
+              "seed": 20260924,
+              "U": 0.8745376810931582,
+              "beta_raw": 0.0653846153846154,
+              "chance95": 0.073076923076923,
+              "beta": 0.01,
+              "a_MIA": 0.0,
+              "AIA_before_phi": 0.1538461538461534,
+              "Anon_no_phi_proxy": 0.8461538461538465,
+              "Objective_no_phi_proxy": 0.8461538461538465,
+              "AIA_phi_scenario": 0.1269591538461534,
+              "Anon_phi_scenario": 0.8730408461538466,
+              "Objective_phi_scenario": 0.8730408461538466
+            }
+          ]
+        },
+        {
+          "id": "sensitivity-results",
+          "source": {
+            "label": "9抽出の観測範囲",
+            "files": [
+              {
+                "label": "sensitivity.csv"
+              }
+            ]
+          },
+          "columns": [
+            "model",
+            "Anon_no_phi_proxy_min",
+            "Anon_no_phi_proxy_median",
+            "Anon_no_phi_proxy_max"
+          ],
+          "rows": [
+            {
+              "model": "M1_v3",
+              "Anon_no_phi_proxy_min": 0.5629370629370631,
+              "Anon_no_phi_proxy_median": 0.7377622377622378,
+              "Anon_no_phi_proxy_max": 1.0
+            },
+            {
+              "model": "M1_v4",
+              "Anon_no_phi_proxy_min": 0.5629370629370631,
+              "Anon_no_phi_proxy_median": 0.7377622377622378,
+              "Anon_no_phi_proxy_max": 1.0
+            },
+            {
+              "model": "M1_v5",
+              "Anon_no_phi_proxy_min": 0.632867132867133,
+              "Anon_no_phi_proxy_median": 0.9333333333333332,
+              "Anon_no_phi_proxy_max": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aia-correction",
+      "title": "AIA条件の修正と残る制約",
+      "queries": [
+        {
+          "id": "allowed-qi-matched-pairs",
+          "source": {
+            "label": "固定公式ルールとローカルAIA再評価",
+            "files": [
+              {
+                "label": "PWS_Cup2026_ルールブック_main-process-20260912.pdf §4.2・6.2.2"
+              },
+              {
+                "label": "protocol.json"
+              },
+              {
+                "label": "aia_attack_details.csv"
+              },
+              {
+                "label": "legacy_aia_reference.json"
+              },
+              {
+                "label": "all_B_all_A_QI_only.csv"
+              }
+            ],
+            "caveats": [
+              "標的の真のPi所属は不明です。A_bgを対照にし、適合する対照がいないBの50人を抽出対象から除外しています。",
+              "年齢帯は5歳幅と仮定し、公開Aの希少区分には検出器推定を使っています。",
+              "MIAとAIAの代理抽出は、実際の共有・非共有ブロックの同時再現ではありません。"
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "method",
+                "title": "入力と構成",
+                "detail": "予測には公開7属性のみ。標的・対照は各163人、各側の希少13人・発症16人・希少発症4人を対応抽出。公式最近傍とQI限定多視点の最大リスクを採用しました。"
+              },
+              {
+                "kind": "calculation",
+                "title": "V5の主条件",
+                "detail": "多視点攻撃の成功は標的130/163・対照124/163。全体超過は6/39=0.153846、希少リスクは0でした。Anon代理は1−0.153846=0.846154、φ控除を仮定した場合は0.873041です。"
+              },
+              {
+                "kind": "result",
+                "title": "前回評価との関係",
+                "detail": "旧V5のAnon代理0.930308から今回主条件の0.846154へ修正します。全B/全AでQIに限定した別診断ではV5のAIAはV4より高く、AIAに対する一貫した改善は確認できません。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

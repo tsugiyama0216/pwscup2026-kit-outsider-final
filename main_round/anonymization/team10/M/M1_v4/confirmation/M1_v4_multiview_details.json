@@ -1,0 +1,21 @@
+{
+  "views": {
+    "qi": {
+      "member_distance_median": 0.32691277796820695,
+      "control_distance_median": 0.351073659864888
+    },
+    "stable": {
+      "member_distance_median": 0.1598187546325855,
+      "control_distance_median": 0.18727382096150652
+    },
+    "clinical": {
+      "member_distance_median": 0.3886511078173395,
+      "control_distance_median": 0.41616098606557117
+    },
+    "outcome": {
+      "member_distance_median": 0.3704372825235953,
+      "control_distance_median": 0.40299985730913157
+    }
+  },
+  "coherence_mean": 0.6159964470284238
+}

@@ -1,0 +1,8 @@
+model,U,seeds,a_MIA_min,a_MIA_max,Anon_upper_bound_from_MIA_max,scope
+M1,0.7521530456176521,3,0.0874125874125877,0.4020979020979022,0.9125874125874123,Earlier common3 MIA sets; upper bound does not reuse obsolete AIA
+R5,0.8079092630783484,3,1.0,1.0,0.0,Earlier common3 MIA sets; upper bound does not reuse obsolete AIA
+S2,0.5484134662543412,3,1.0,1.0,0.0,Earlier common3 MIA sets; upper bound does not reuse obsolete AIA
+R8,0.9724474721829108,3,1.0,1.0,0.0,Earlier common3 MIA sets; upper bound does not reuse obsolete AIA
+R12,0.9962017963269136,3,1.0,1.0,0.0,Earlier common3 MIA sets; upper bound does not reuse obsolete AIA
+DPCopula_ep15,0.8059329598204774,3,1.0,1.0,0.0,Earlier common3 MIA sets; upper bound does not reuse obsolete AIA
+DPCopula_ep20,0.9231041374439938,3,1.0,1.0,0.0,Earlier common3 MIA sets; upper bound does not reuse obsolete AIA

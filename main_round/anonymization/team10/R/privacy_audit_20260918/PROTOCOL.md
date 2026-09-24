@@ -1,0 +1,22 @@
+# R1–R9 fixed-release privacy audit protocol
+
+2026-09-18. Authorized competition data only. This audit reads frozen releases; it does not modify or regenerate R1–R9, submit, or access tokens. Seeds and attack settings are fixed in `audit.py` before inspecting results.
+
+## What this audit measures
+
+- Compare the nine saved releases under the same attacks and public reference split. This is an observational comparison of different versions, **not a causal ablation** of individual algorithm changes.
+- Members are team10 B. Nonmember proxies are public A_bg, after excluding exact 13-field records. Record identifiers are dataset-local and are NOT overlap keys: 1,049 IDs coincide across B/A_bg, but none of those ID pairs has the same full record. Because A_bg is public and may have a different cohort distribution, member-versus-public discrimination is **not an official or unbiased main-round membership attack estimate**. A true, exchangeable private holdout and shadow retraining are unavailable here.
+- Split A_bg once, randomly with a fixed seed, into 50% reference/training, 25% threshold calibration, and 25% evaluation. Fit feature scales and public baselines on reference only. Reuse the same split for every release. No attack hyperparameters are selected from B labels or evaluation performance.
+- Only aggregate summaries are written. No person identifiers, row predictions, nearest-neighbor pairs, or token contents are exported.
+
+## Fixed attacks and comparisons
+
+1. MIA scores: negative nearest-release Euclidean distance on standardized continuous/log-transformed lab features and one-hot categories (all released columns or the official AIA QIs); full-feature nearest-distance ratio relative to public reference; a fixed gradient-boosted classifier trained to distinguish synthetic release records from public reference records.
+2. For each score, select a one-sided upper-tail threshold on calibration controls targeting at most 1% FPR using an order-statistic rule and strict `score > threshold`. Evaluate member TPR and independent evaluation-control FPR; report AUC and uncertainty. Repeat with subgroup-specific calibration for detected-rare groups. If fewer than 99 calibration observations exist, the conservative 1% order statistic can yield an infinite threshold and no power. True rare labels exist only for B; comparisons with detected-rare controls are explicitly a **label-mismatched diagnostic**, not like-for-like privacy estimates.
+3. AIA: predict time using only schema-specified QIs. Fit fixed ExtraTrees and 5-neighbor regressors on each release and separate public-reference baselines. Also use an interval-mode ExtraTrees classifier (quarter-year bins and censoring atom), maximizing conditional ±0.5-year probability, because mean regression optimizes the wrong objective. Report ±0.5-year accuracy, MAE, and gains over the corresponding public baseline on B and disjoint public controls. Report censored, onset, death, detected-rare, and true-rare member strata. Include an always-10-year baseline because censoring dominates overall accuracy. Baseline difficulty gaps and event-stratum results are needed to interpret apparent leakage. The interval-mode sensitivity was added after seeing poor mean-regression accuracy; its fixed parameters are not selected for attack success.
+4. Distribution comparison: aggregate quantiles, normalized Wasserstein and KS distances, correlations, marginal counts, duplicates, and rare counts. Compare synthetic detected-rare records with both B detected-rare records and B true-rare records without treating the two labels as equal.
+5. Inspect release lineage and exact histogram preservation. An exact confidential-data histogram without a DP mechanism is an identifiable structural non-DP property; this alone does not measure successful reidentification or establish empirical MIA strength.
+
+## Uncertainty and limits
+
+Use 400 fixed-seed bootstrap resamples for AUC and paired AIA accuracy gains, plus Wilson intervals for TPR/FPR and accuracies. Conditional intervals describe evaluation sampling uncertainty with the fitted attack, release, and threshold held fixed. They exclude synthesis/training/threshold uncertainty, cohort shift, repeated candidate selection, and multiple comparisons. Subgroup sample sizes are always included. A zero observed attack rate, no identical rows, or near-chance AUC does not certify privacy or differential privacy.

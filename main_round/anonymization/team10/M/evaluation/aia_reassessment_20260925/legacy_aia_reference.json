@@ -1,0 +1,17 @@
+[
+  {
+    "model": "M1_v3",
+    "legacy_AIA_full_query": 0.07509797690922551,
+    "source_sha256": "880f2ad16a10bdb95f7d3d7ce85c7c2d59d1a3cafa076cb190d198415a1beb47"
+  },
+  {
+    "model": "M1_v4",
+    "legacy_AIA_full_query": 0.07435805529075284,
+    "source_sha256": "7553c859f84041ecaff707f24f49bdfffb93bb49bf90ccc5998e6c07e777dac6"
+  },
+  {
+    "model": "M1_v5",
+    "legacy_AIA_full_query": 0.06969159693817999,
+    "source_sha256": "77412a8891bbd44753e790edfdd568fc149b3f78dce6c7f4e3d25361f7893069"
+  }
+]

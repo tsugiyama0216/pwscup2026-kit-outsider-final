@@ -1,0 +1,74 @@
+{
+  "name": "six_05",
+  "U": 0.8745376810931582,
+  "facets": {
+    "U_gen": 0.9195127813298408,
+    "U_spec": 0.9336307917838218,
+    "U_rare": 0.9582375759350069,
+    "U_valid": 0.8745376810931582
+  },
+  "AIA": 0.0736169488498331,
+  "C_sha256": "cbafa001f4dc5f34e41717d9193b49229bb70ab597dd4a0e5cfd89279e32dace",
+  "seeds": [
+    {
+      "seed": 20260924,
+      "raw": 0.11346153846153846,
+      "fixed_v4_chance95": 0.0692307692307692,
+      "screening_anon": 0.5979020979020977,
+      "screening_objective": 0.5979020979020977
+    },
+    {
+      "seed": 20260925,
+      "raw": 0.13076923076923075,
+      "fixed_v4_chance95": 0.0923076923076923,
+      "screening_anon": 0.6503496503496504,
+      "screening_objective": 0.6503496503496504
+    },
+    {
+      "seed": 20260926,
+      "raw": 0.09423076923076924,
+      "fixed_v4_chance95": 0.0846153846153846,
+      "screening_anon": 0.9125874125874124,
+      "screening_objective": 0.8745376810931582
+    },
+    {
+      "seed": 20261001,
+      "raw": 0.04807692307692308,
+      "fixed_v4_chance95": 0.0826923076923077,
+      "screening_anon": 0.926383051150167,
+      "screening_objective": 0.8745376810931582
+    },
+    {
+      "seed": 20261002,
+      "raw": 0.08076923076923079,
+      "fixed_v4_chance95": 0.1076923076923077,
+      "screening_anon": 0.926383051150167,
+      "screening_objective": 0.8745376810931582
+    },
+    {
+      "seed": 20261003,
+      "raw": 0.11346153846153846,
+      "fixed_v4_chance95": 0.0846153846153846,
+      "screening_anon": 0.7377622377622377,
+      "screening_objective": 0.7377622377622377
+    }
+  ],
+  "min_screening_objective": 0.5979020979020977,
+  "mean_screening_objective": 0.76827117154891,
+  "min_screening_anon": 0.5979020979020977,
+  "audit": {
+    "strength": 0.05,
+    "fields": [
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "FPG"
+    ],
+    "boundary_limited_rows": 2,
+    "applied_strength_min_rare": 0.010614719218401172,
+    "applied_strength_mean_rare": 0.04909557266351904
+  },
+  "elapsed_seconds": 3.625
+}

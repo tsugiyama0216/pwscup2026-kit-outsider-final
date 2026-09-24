@@ -1,0 +1,179 @@
+{
+  "baseline": {
+    "U": 0.842644163219807,
+    "AIA": 0.07509797690922551
+  },
+  "results": [
+    {
+      "name": "plain",
+      "C_sha256": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1",
+      "U": 0.842644163219807,
+      "facets": {
+        "U_gen": 0.9194581474861001,
+        "U_spec": 0.842644163219807,
+        "U_rare": 0.9677133209820106,
+        "U_valid": 0.8747894476382988
+      },
+      "AIA": 0.07509797690922551,
+      "changed_rows": 0,
+      "audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 0.019411255809234862,
+        "final_score_loss": 0.019411255809234862,
+        "swaps": 0,
+        "loss_history": [],
+        "max_steps": 24,
+        "significance_guard": false,
+        "significance_margin": 2.1,
+        "target_beta": [
+          0.03371761415964446,
+          -0.1756747540274131,
+          0.059502557956402094,
+          0.0054995829736156,
+          -0.03591677176251219,
+          -0.010774679844583844,
+          0.5789538980351134,
+          0.14322249254829397,
+          0.2832072111412732
+        ],
+        "rare_target": null,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "elapsed_seconds": 2.6560000000026776,
+      "eligible": false
+    },
+    {
+      "name": "guard200",
+      "C_sha256": "efeff549a9ff4c0fe5bb9c08001a7505b69909bc8a3d1b108f6d753454af18ca",
+      "U": 0.8426368439811074,
+      "facets": {
+        "U_gen": 0.9194581474861001,
+        "U_spec": 0.8426368439811074,
+        "U_rare": 0.9677133209820106,
+        "U_valid": 0.8747894476382988
+      },
+      "AIA": 0.07975266266061973,
+      "changed_rows": 6,
+      "audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 0.13191096316043596,
+        "final_score_loss": 0.011278108456113496,
+        "swaps": 3,
+        "loss_history": [
+          0.03310824639789689,
+          0.01396684003150018,
+          0.011278108456113496
+        ],
+        "max_steps": 24,
+        "significance_guard": true,
+        "significance_margin": 2.0,
+        "target_beta": [
+          0.03371761415964446,
+          -0.1756747540274131,
+          0.07287429192496715,
+          0.0054995829736156,
+          -0.03591677176251219,
+          -0.010774679844583844,
+          0.5789538980351134,
+          0.14322249254829397,
+          0.2832072111412732
+        ],
+        "rare_target": null,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "elapsed_seconds": 2.577999999994063,
+      "eligible": false
+    },
+    {
+      "name": "guard210",
+      "C_sha256": "03a96a5759a1139b73b07b28653829284a76ac7f2492283043621b514a7a7f1a",
+      "U": 0.8747894476382988,
+      "facets": {
+        "U_gen": 0.9194581474861001,
+        "U_spec": 0.9416388656657004,
+        "U_rare": 0.9677133209820106,
+        "U_valid": 0.8747894476382988
+      },
+      "AIA": 0.08341315326260633,
+      "changed_rows": 4,
+      "audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 0.21358698439315452,
+        "final_score_loss": 0.010349959513050361,
+        "swaps": 2,
+        "loss_history": [
+          0.05371314555310656,
+          0.010349959513050361
+        ],
+        "max_steps": 24,
+        "significance_guard": true,
+        "significance_margin": 2.1,
+        "target_beta": [
+          0.03371761415964446,
+          -0.1756747540274131,
+          0.0765180065212155,
+          0.0054995829736156,
+          -0.03591677176251219,
+          -0.010774679844583844,
+          0.5789538980351134,
+          0.14322249254829397,
+          0.2832072111412732
+        ],
+        "rare_target": null,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "elapsed_seconds": 2.4689999999973224,
+      "eligible": false
+    },
+    {
+      "name": "guard225",
+      "C_sha256": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+      "U": 0.8745376810931582,
+      "facets": {
+        "U_gen": 0.9194581474861001,
+        "U_spec": 0.9348792246031975,
+        "U_rare": 0.9677133209820106,
+        "U_valid": 0.8745376810931582
+      },
+      "AIA": 0.07435805529075284,
+      "changed_rows": 8,
+      "audit": {
+        "method": "Efron score moment calibration by synthetic onset/censor swaps",
+        "initial_score_loss": 0.37495660586779933,
+        "final_score_loss": 0.01801259692277547,
+        "swaps": 4,
+        "loss_history": [
+          0.09975695181581717,
+          0.02370609441396012,
+          0.02199279494425202,
+          0.01801259692277547
+        ],
+        "max_steps": 24,
+        "significance_guard": true,
+        "significance_margin": 2.25,
+        "target_beta": [
+          0.03371761415964446,
+          -0.1756747540274131,
+          0.08198357841558804,
+          0.0054995829736156,
+          -0.03591677176251219,
+          -0.010774679844583844,
+          0.5789538980351134,
+          0.14322249254829397,
+          0.2832072111412732
+        ],
+        "rare_target": null,
+        "rare_onset_count_preserved": true,
+        "source_record_matching": false
+      },
+      "elapsed_seconds": 2.6560000000026776,
+      "eligible": true
+    }
+  ],
+  "selected": "guard225",
+  "selected_csv_sha256": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+  "confirmation_results_used_for_selection": false
+}

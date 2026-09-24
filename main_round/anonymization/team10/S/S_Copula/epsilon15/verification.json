@@ -1,0 +1,15 @@
+{
+  "epsilon_exact": "15",
+  "single_private_fit": true,
+  "resume_reused_saved_model": true,
+  "resume_only_read_csv": [
+    "A_bg.csv"
+  ],
+  "named_release_hashes": {
+    "C.csv": "d3925850eb4ad4c81e7950856bc75c2a5dc7c3d96a1ee91b9889e047b8ce3b8a",
+    "model.json": "3ef68a497f52cb334a878f6899f619a7d5e475e0aea92cf8cffd5e60c9a9c1ce",
+    "manifest.json": "83fddf6d4e0dd61a7231a0ea2733812ffc0120ca9762a4e5bd56a7f7ed7ce981"
+  },
+  "utility": 0.8059329598204774,
+  "source_hashes_still_match": true
+}

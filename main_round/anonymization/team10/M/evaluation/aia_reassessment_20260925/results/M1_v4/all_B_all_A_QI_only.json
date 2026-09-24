@@ -1,0 +1,38 @@
+{
+  "official_qi_nearest": {
+    "risk_before_phi": 0.015211442760461042,
+    "breakdown": {
+      "r_onset": null,
+      "r_time_all": 0.015211442760461042,
+      "r_time_rare": 0.0,
+      "r_time_rare_raw": 0.0,
+      "aia_rare_se_z": 1.64,
+      "tpr_onset_member": null,
+      "tpr_onset_control": null,
+      "succ_time_member": 0.7340324118207817,
+      "succ_time_control": 0.7299241687730896,
+      "succ_time_member_rare": 0.4166666666666667,
+      "succ_time_control_rare": 0.5415384615384615,
+      "tau_time": 0.5,
+      "low_fpr": 0.01
+    }
+  },
+  "allowed_qi_multiview": {
+    "risk_before_phi": 0.029854780645995865,
+    "breakdown": {
+      "r_onset": null,
+      "r_time_all": 0.029854780645995865,
+      "r_time_rare": 0.0,
+      "r_time_rare_raw": 0.0,
+      "aia_rare_se_z": 1.64,
+      "tpr_onset_member": null,
+      "tpr_onset_control": null,
+      "succ_time_member": 0.7511916110581506,
+      "succ_time_control": 0.7435349018082831,
+      "succ_time_member_rare": 0.5,
+      "succ_time_control_rare": 0.5876923076923077,
+      "tau_time": 0.5,
+      "low_fpr": 0.01
+    }
+  }
+}

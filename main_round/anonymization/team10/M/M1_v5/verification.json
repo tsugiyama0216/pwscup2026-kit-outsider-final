@@ -1,0 +1,108 @@
+{
+  "created_at_jst": "2026-09-24T23:57:34+09:00",
+  "model": "M1_v5",
+  "C_sha256": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db",
+  "base_C_sha256": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+  "selected": "three_35",
+  "candidate_count": 8,
+  "changes": {
+    "changed_rows": 65,
+    "changed_cells": 195,
+    "changed_columns": {
+      "BMI": 65,
+      "TG": 65,
+      "ALT": 65
+    },
+    "delta_ranges": {
+      "BMI": {
+        "min": -1.5800996653304082,
+        "max": 1.0625418958247934
+      },
+      "TG": {
+        "min": -23.08747417005094,
+        "max": 12.740849717897937
+      },
+      "ALT": {
+        "min": -4.689484246787401,
+        "max": 3.88421503895591
+      }
+    }
+  },
+  "unit_tests_passed": 4,
+  "saved_model_replay_byte_identical": true,
+  "public_source_algorithm_reproduction_byte_identical": true,
+  "all_non_BMI_TG_ALT_field_strings_unchanged": true,
+  "all_detector_normal_rows_unchanged": true,
+  "rare_detector_membership_preserved": true,
+  "all_outcome_fields_unchanged": true,
+  "validation": {
+    "logical_ok": true,
+    "rows": 1049,
+    "no_missing": true,
+    "duplicate_rows": 0,
+    "exact_B_matches": 0,
+    "rare": {
+      "rare_detected": 65,
+      "gate": 8,
+      "below_gate": false
+    }
+  },
+  "v4_U": 0.8745376810931582,
+  "v5_U": 0.8745376810931582,
+  "known_seed_Anon_range_v4": [
+    0.5979020979020978,
+    0.9256419447092472
+  ],
+  "known_seed_Anon_range_v5": [
+    0.9125874125874124,
+    0.93030840306182
+  ],
+  "new_seed_Anon_range_v4": [
+    0.5629370629370631,
+    0.9256419447092472
+  ],
+  "new_seed_Anon_range_v5": [
+    0.632867132867133,
+    0.93030840306182
+  ],
+  "objective_improved": 5,
+  "objective_tied": 4,
+  "objective_worse": 0,
+  "completion": {
+    "complete": true,
+    "rows": 18,
+    "selected_sha256": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db",
+    "permutations_per_model_per_seed": 20000,
+    "original_v4_unchanged": true,
+    "v3_csv_unchanged": true,
+    "v3_submission_zip_unchanged": true,
+    "new_seeds_used_for_tuning": false,
+    "scope": "Local B/A proxy; new candidate subsets, not independent data holdout or official score",
+    "additional_mia_scope": "Raw TPR and AUC, no chance correction, not included in Anon proxy",
+    "elapsed_seconds": 246.89100000000326
+  },
+  "formal_differential_privacy": false,
+  "official_score": false,
+  "independent_data_holdout": false,
+  "final_submission_selection": "M1_v3 remains unchanged",
+  "codabench_submitted": false,
+  "github_pushed": false,
+  "submission_zip_created": false,
+  "files_sha256": {
+    "C.csv": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db",
+    "model.json": "00018d44ebc5baba673ae110f303acf9ec0782f814cef2d6879316eea0d838fb",
+    "generate.py": "c4fed3ddc0331d2cb81221985498f5c67a19cff4b39e6139e524aeeb72dc836e",
+    "experiment.py": "5341f3250882416f64e4d445480ab6d88a39a75e5022d42447d75d94f4c45c81",
+    "confirm.py": "fdfe1425f47a526f0387d0ec52fda7af3913dc1a65a3d4c14f052f814efa5122",
+    "test_model.py": "e8a070b0de4a1d55b630d3cbe9988d530486ded4a8ea01f07ecb01d9623d6318",
+    "protocol.json": "8414eff0e10f393e189e58c851e1f33072ed3ad36991dc639910d83084573e28",
+    "screening.json": "f3646736363187255c0e20997e300c8678ebc79dc956bb2afb900e6586b61512",
+    "public_neighbors.json": "88c86a608e430500e950a39c1739578690799f60aba42888621210dcb91cd15e",
+    "utility.json": "769df3393b9ebc449d3e724931eb188ce49bfe8cdc31b07b0b8333072bc388f1",
+    "aia.json": "77412a8891bbd44753e790edfdd568fc149b3f78dce6c7f4e3d25361f7893069",
+    "change_summary.json": "c829f2527a5d0791e1ff51f0d8c4fb7a5db79c95339ac013447d0a80d2ab3e85",
+    "confirmation/comparison.csv": "54a59f158d817ac720d2419a341c2d2cf8b4b22ba0682f8bc98cbd3fa4f08f09",
+    "confirmation/frozen.json": "62a8209fce0e9b3c4b48e334b1368a62378a0cf4a81116a718f4a14fb525d46b",
+    "confirmation/completion.json": "d9d569e70b5733243fe457dbcbffd9c80abbd8ee20ec068c2d2663a525f56df0"
+  }
+}

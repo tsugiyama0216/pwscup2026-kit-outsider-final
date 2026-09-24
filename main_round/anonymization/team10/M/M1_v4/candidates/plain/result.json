@@ -1,0 +1,38 @@
+{
+  "name": "plain",
+  "C_sha256": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1",
+  "U": 0.842644163219807,
+  "facets": {
+    "U_gen": 0.9194581474861001,
+    "U_spec": 0.842644163219807,
+    "U_rare": 0.9677133209820106,
+    "U_valid": 0.8747894476382988
+  },
+  "AIA": 0.07509797690922551,
+  "changed_rows": 0,
+  "audit": {
+    "method": "Efron score moment calibration by synthetic onset/censor swaps",
+    "initial_score_loss": 0.019411255809234862,
+    "final_score_loss": 0.019411255809234862,
+    "swaps": 0,
+    "loss_history": [],
+    "max_steps": 24,
+    "significance_guard": false,
+    "significance_margin": 2.1,
+    "target_beta": [
+      0.03371761415964446,
+      -0.1756747540274131,
+      0.059502557956402094,
+      0.0054995829736156,
+      -0.03591677176251219,
+      -0.010774679844583844,
+      0.5789538980351134,
+      0.14322249254829397,
+      0.2832072111412732
+    ],
+    "rare_target": null,
+    "rare_onset_count_preserved": true,
+    "source_record_matching": false
+  },
+  "elapsed_seconds": 2.6560000000026776
+}

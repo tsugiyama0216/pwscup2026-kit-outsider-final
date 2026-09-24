@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "base_model": "M1_v3",
+  "base_csv_sha256": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1",
+  "output_csv_sha256": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+  "columns": [
+    "age",
+    "sex",
+    "prefecture",
+    "BMI",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT",
+    "smoking",
+    "FPG",
+    "time",
+    "onset",
+    "death"
+  ],
+  "rows": 1049,
+  "mutable_fields": [
+    "time",
+    "onset"
+  ],
+  "patches": [
+    {
+      "row_index": 108,
+      "time": "9.998631074606434",
+      "onset": "0"
+    },
+    {
+      "row_index": 145,
+      "time": "3.241615331964408",
+      "onset": "1"
+    },
+    {
+      "row_index": 191,
+      "time": "6.272416153319644",
+      "onset": "1"
+    },
+    {
+      "row_index": 214,
+      "time": "2.239561943874059",
+      "onset": "1"
+    },
+    {
+      "row_index": 809,
+      "time": "9.998631074606434",
+      "onset": "0"
+    },
+    {
+      "row_index": 902,
+      "time": "9.998631074606434",
+      "onset": "0"
+    },
+    {
+      "row_index": 931,
+      "time": "9.998631074606434",
+      "onset": "0"
+    },
+    {
+      "row_index": 957,
+      "time": "9.357973990417522",
+      "onset": "1"
+    }
+  ],
+  "method": "Four aggregate Cox-guided synthetic onset/censor tuple swaps within fixed rare-detector strata; no B-row matching",
+  "formal_differential_privacy": false,
+  "candidate_selection": "guard225 selected from four preset settings, conditioned on U improvement and non-increasing local AIA risk"
+}

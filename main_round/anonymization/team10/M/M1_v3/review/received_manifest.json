@@ -1,0 +1,33 @@
+{
+  "source": "C:\\Users\\takut\\Downloads\\M1_v3_package\\M1_v3",
+  "files": {
+    "C.csv": {
+      "bytes": 158175,
+      "sha256": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1"
+    },
+    "DOMIAS_same20.csv": {
+      "bytes": 398,
+      "sha256": "8ee6b627d1bee6ba34b2c83556b38c2c1a01990d31b7f444cb1fe57df7e6455f"
+    },
+    "feature_diagnosis.csv": {
+      "bytes": 1221,
+      "sha256": "0c4e0beb18570623b28b264de2b4f0b2f9838c5af661c3cc4fd57633eca20e9a"
+    },
+    "generate_m1_v3.py": {
+      "bytes": 1778,
+      "sha256": "bec96d2af849bd6639abd640b580a4209156b734ffbd8286c8e6bb6593783faa"
+    },
+    "member_diagnosis.csv": {
+      "bytes": 357148,
+      "sha256": "fc08890d136cc1554830f156cec11b58be08ed4f7ceaa6db0188a30e553969ef"
+    },
+    "README.md": {
+      "bytes": 909,
+      "sha256": "19fc53ec05e606c60a3cb5de1e66920acefb90a24301e9d5372928a1ceda44b6"
+    },
+    "report.json": {
+      "bytes": 763,
+      "sha256": "1c882d5b94994fc26f643539921d095468e08b2638a3512c22bf67d08e939981"
+    }
+  }
+}

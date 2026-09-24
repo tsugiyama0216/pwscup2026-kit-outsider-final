@@ -1,0 +1,23 @@
+{
+  "protocol_sha256": "fc601cce106565c58031f34d8e925225060a5b9fdcd0a48afe2882f8172a4907",
+  "evaluator_sha256": "1da1981829c0ade8ec2e1fecec25edf780a1197b9e0b873b1d91fc184b54c230",
+  "team_input_sha256": {
+    "M/M1/C.csv": "c5c54aaa50ef04858134e70bd3ed154b1620285f8047766403034b1fe8afca2d",
+    "M/M1_v3/C.csv": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1",
+    "R/R5/C.csv": "acb90291e7a8de8e4a43340aeed62fcbba490e68390eec6d1309dd0f84920be7",
+    "S/S2/C.csv": "2af408cac6dfbc9865fcd58a5d59910bd162da817e6e46ae4da0431c30a35e70",
+    "R/R8/C.csv": "d9892abc49f506f57bb890da6e5f8ae606f11af592606ffc015fd85913c5ed6b",
+    "R/R12/C.csv": "496c19e59ae6179b86f098d7f9c0098ea96c3b740753b7412d671921fd564153",
+    "S/S_Copula/epsilon15/release/C.csv": "d3925850eb4ad4c81e7950856bc75c2a5dc7c3d96a1ee91b9889e047b8ce3b8a",
+    "S/S_DPCopula_ep20/C.csv": "3f0ba21a933899c5704e3b73b2f00ac8fed04570612b804bcfb19d516ac5a154",
+    "participant_data/B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "participant_data/B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+    "participant_data/A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "participant_data/schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+    "participant_data/utility_ref.json": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee",
+    "M/evaluation/scripts/evaluate_resistance.py": "d36ecf8309cf306ec25f792cbb0c8707713bb7d580409e1f95b9a39ecd7b52f0",
+    "S/S_Copula/evaluate.py": "b447a2bd969eef3a7c6ef54c0b574dc410d76adb95fc192d7246d284a2161f58"
+  },
+  "screenshot_sha256": "13839a916b49a9cd665ba524fa82e2548eeed3aa846600a9b2a9ea7da23acc40",
+  "tests": "3 tests passed: batch ROC vs official with ties/rare subsets, constant scores chance, mean across attackers"
+}

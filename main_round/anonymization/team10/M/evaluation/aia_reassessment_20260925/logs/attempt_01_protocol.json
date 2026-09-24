@@ -1,0 +1,115 @@
+{
+  "created_utc": "2026-09-24T15:37:01.948964+00:00",
+  "models": [
+    "M1_v3",
+    "M1_v4",
+    "M1_v5"
+  ],
+  "seeds": [
+    20260924,
+    20260925,
+    20260926,
+    20261001,
+    20261002,
+    20261003,
+    20261011,
+    20261012,
+    20261013
+  ],
+  "primary_seed": 20260924,
+  "input_sha256": {
+    "M/M1_v3/C.csv": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1",
+    "M/M1_v4/C.csv": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+    "M/M1_v5/C.csv": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db",
+    "participant_data/B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "participant_data/B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+    "participant_data/A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "participant_data/schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+    "participant_data/utility_ref.json": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee",
+    "M/M1_v3/submission/team10_M1_v3_defense.zip": "5be38cda5fb0a234d8500ce7bac1148ae62cbc65f0607e1c5124d2ccfcf71068"
+  },
+  "code_sha256": "d0a04c0c4051fb43c0643be2dc892b554207d0179456a596c44282e978ecb148",
+  "environment": {
+    "kit_commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+    "config_sha256": "52a94e8dafd254cc76f7ea00989b9313c3137e7b7734eeac3525f1f69b79d6f7",
+    "dependencies": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.0",
+      "lifelines": "0.30.3",
+      "statsmodels": "0.14.6",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "source_context_sha256": {
+    "PWSCup_team10_context_ja.md": "cdeb34707d425408b56bc169e216048d5ea4b18b2225e935d63e16b55d619553",
+    "PWSCup_team10_candidates.csv": "88845cb8e495208e90b20549325c92bb50245603d0c9369f3985adc8fdf4f693"
+  },
+  "QI": [
+    "age",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT",
+    "sex",
+    "prefecture"
+  ],
+  "views": [
+    [
+      "all",
+      [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      [
+        "TG",
+        "ALT"
+      ]
+    ],
+    [
+      "stable",
+      [
+        "age",
+        "SBP",
+        "HDL"
+      ],
+      []
+    ],
+    [
+      "clinical_allowed",
+      [
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      [
+        "TG",
+        "ALT"
+      ]
+    ]
+  ],
+  "age_band_width": 5,
+  "targets": 163,
+  "controls": 163,
+  "rare_per_side": 13,
+  "onset_per_side": 16,
+  "rare_onset_per_side": 4,
+  "provided_phi": 0.026887,
+  "phi_status": "User-provided, not validated for these pseudo-challenges; scenario only",
+  "aia_aggregation": "max across two attacks and all/SE-adjusted rare, then optionally subtract phi once",
+  "mia_policy": "Recompute confidences and observed statistics, validate cached permutation hash and 95% null quantile, reuse 20000 permutations",
+  "candidate_tuning": false,
+  "official_score": false,
+  "limitations": [
+    "AIA targets sampled from B, not known Pi; controls sampled from public A instead of outside A and all cohorts",
+    "Five-year age-band assumption; exact matching excludes some B records; public rare labels are detector surrogates",
+    "AIA samples and preexisting MIA samples are separate proxies, not a joint reconstruction of all shared/private blocks",
+    "Nine seeds share the same underlying data; seed variation is not a confidence interval or independent holdout",
+    "Candidates were previously optimized using these data and six MIA seeds; two AIA attacks do not cover all possible attacks"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "copied_files": 7,
+  "all_copies_byte_identical": true,
+  "utility_recomputed": {
+    "U": 0.842644163219807,
+    "U_gen": 0.9194581474861001,
+    "U_spec": 0.842644163219807,
+    "U_rare": 0.9677133209820106,
+    "U_valid": 0.8747894476382988
+  },
+  "utility_difference_from_report": {
+    "U": 7.419525761664936e-06,
+    "U_gen": 0.0,
+    "U_spec": 7.419525761664936e-06,
+    "U_rare": 0.0,
+    "U_valid": 0.0
+  },
+  "utility_all_within_1e_minus_5": true,
+  "csv_validation": {
+    "logical_ok": true,
+    "rows": 1049,
+    "no_missing": true,
+    "duplicate_rows": 0,
+    "exact_B_matches": 0,
+    "rare": {
+      "rare_detected": 65,
+      "gate": 8,
+      "below_gate": false
+    }
+  },
+  "summary_arithmetic": {
+    "beta": 0.01,
+    "anon_proxy": 0.9249020230907745,
+    "objective_proxy": 0.8426367436940453
+  },
+  "member_diagnosis": {
+    "rows": 1049,
+    "unique_b_indices": 1049,
+    "sampled_members": 407,
+    "rare_sampled": 8,
+    "total_sample_count": 520,
+    "missing_by_column": {}
+  },
+  "feature_diagnosis_reconciliation": {
+    "top10pct": {
+      "calculated": {
+        "n": 41,
+        "mean_score": 0.9592404724094185,
+        "rare_rate": 0.04878048780487805,
+        "nearest_dist": 0.9177969822902446
+      },
+      "reported": {
+        "n": 41.0,
+        "mean_score": 0.9592404724094185,
+        "rare_rate": 0.048780487804878,
+        "nearest_dist": 0.9177969822902446
+      },
+      "matches": true
+    },
+    "top25pct": {
+      "calculated": {
+        "n": 102,
+        "mean_score": 0.6144054824967581,
+        "rare_rate": 0.0196078431372549,
+        "nearest_dist": 0.8264577450677832
+      },
+      "reported": {
+        "n": 102.0,
+        "mean_score": 0.6144054824967581,
+        "rare_rate": 0.0196078431372549,
+        "nearest_dist": 0.8264577450677832
+      },
+      "matches": true
+    },
+    "all_sampled": {
+      "calculated": {
+        "n": 407,
+        "mean_score": -0.20485010758453834,
+        "rare_rate": 0.019656019656019656,
+        "nearest_dist": 0.9433838457797612
+      },
+      "reported": {
+        "n": 407.0,
+        "mean_score": -0.2048501075845383,
+        "rare_rate": 0.0196560196560196,
+        "nearest_dist": 0.9433838457797612
+      },
+      "matches": true
+    }
+  },
+  "missing_dependencies": [
+    "M1_v2/C.csv",
+    "M1_v2 generation code/configuration",
+    "pseudo-attacker construction and DOMIAS/AIA evaluation scripts and per-trial predictions"
+  ],
+  "received_generator_executed": false,
+  "github_pushed": false,
+  "scope": "Fixed received CSV checked with existing official-kit local scorer. DOMIAS/AIA not independently rerun. This diagnostic is not a DP release."
+}

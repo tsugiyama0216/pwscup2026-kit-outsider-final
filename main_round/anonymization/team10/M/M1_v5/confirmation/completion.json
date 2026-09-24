@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "rows": 18,
+  "selected_sha256": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db",
+  "permutations_per_model_per_seed": 20000,
+  "original_v4_unchanged": true,
+  "v3_csv_unchanged": true,
+  "v3_submission_zip_unchanged": true,
+  "new_seeds_used_for_tuning": false,
+  "scope": "Local B/A proxy; new candidate subsets, not independent data holdout or official score",
+  "additional_mia_scope": "Raw TPR and AUC, no chance correction, not included in Anon proxy",
+  "elapsed_seconds": 246.89100000000326
+}

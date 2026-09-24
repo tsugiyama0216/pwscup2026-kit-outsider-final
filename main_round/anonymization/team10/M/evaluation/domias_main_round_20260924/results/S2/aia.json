@@ -1,0 +1,43 @@
+{
+  "attacks": {
+    "official_qi_nearest": {
+      "risk_before_phi": 0.0,
+      "breakdown": {
+        "r_onset": null,
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "r_time_rare_raw": 0.0,
+        "aia_rare_se_z": 1.64,
+        "tpr_onset_member": null,
+        "tpr_onset_control": null,
+        "succ_time_member": 0.7016205910390848,
+        "succ_time_control": 0.7108691425238188,
+        "succ_time_member_rare": 0.3333333333333333,
+        "succ_time_control_rare": 0.5784615384615385,
+        "tau_time": 0.5,
+        "low_fpr": 0.01
+      }
+    },
+    "team_multiview_linkage": {
+      "risk_before_phi": 0.06946779592896307,
+      "breakdown": {
+        "r_onset": null,
+        "r_time_all": 0.06946779592896307,
+        "r_time_rare": 0.0,
+        "r_time_rare_raw": 0.0,
+        "aia_rare_se_z": 1.64,
+        "tpr_onset_member": null,
+        "tpr_onset_control": null,
+        "succ_time_member": 0.7588179218303146,
+        "succ_time_control": 0.7408127552012445,
+        "succ_time_member_rare": 0.375,
+        "succ_time_control_rare": 0.6307692307692307,
+        "tau_time": 0.5,
+        "low_fpr": 0.01
+      }
+    }
+  },
+  "worst_before_phi": 0.06946779592896307,
+  "phi": null,
+  "scope": "all B as targets, public A as controls; true B rare flags, detector proxy for public rare; not official AIA challenges"
+}

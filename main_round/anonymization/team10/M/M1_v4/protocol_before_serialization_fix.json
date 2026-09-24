@@ -1,0 +1,72 @@
+{
+  "base_sha256": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1",
+  "method": "R8 aggregate Cox outcome calibration applied to frozen M1_v3; outcome-only swaps",
+  "candidates": [
+    {
+      "name": "plain",
+      "guard": false,
+      "margin": 2.1,
+      "max_steps": 24
+    },
+    {
+      "name": "guard200",
+      "guard": true,
+      "margin": 2.0,
+      "max_steps": 24
+    },
+    {
+      "name": "guard210",
+      "guard": true,
+      "margin": 2.1,
+      "max_steps": 24
+    },
+    {
+      "name": "guard225",
+      "guard": true,
+      "margin": 2.25,
+      "max_steps": 24
+    }
+  ],
+  "selection": "Maximum local U among candidates with U above M1_v3 and AIA worst before phi <= baseline; static ten columns and death exactly fixed",
+  "exploratory_mia_seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "confirmation_mia_seeds": [
+    20261001,
+    20261002,
+    20261003
+  ],
+  "confirmation_policy": "Freeze selected CSV before confirmation; no retuning against confirmation results",
+  "code_sha256": "e4b92255a4f6f010f9e9f810cd3a55700d2f526a0c98e4e250d836b2bd61721b",
+  "official_kit": {
+    "kit_commit": "3dd71bd3436f2abfdbb64da97e860f22729ea054",
+    "config_sha256": "52a94e8dafd254cc76f7ea00989b9313c3137e7b7734eeac3525f1f69b79d6f7",
+    "dependencies": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.0",
+      "lifelines": "0.30.3",
+      "statsmodels": "0.14.6",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "dependencies_sha256": {
+    "R\\R8\\outcomes.py": "6949233fbcc93865cef9360b875577b5194b520acac965472a0d5ee6147b169f",
+    "R\\R8\\model.py": "06496bca0f3f2f8f68a7cb3533ef4a09c9c8ec60da576de4d0b89d51336a5587",
+    "R\\R8\\cox_calibration.py": "c9237f037b7fa5b8cad4b087d360e1937ba53e7c92ed8b18a57df8e7574605ee",
+    "R\\R8\\copula_helpers.py": "740b3e937e8f4a45e095dbea6bafee7aa4a149c35e0affb18a22f925cecd2690",
+    "M\\evaluation\\domias_main_round_20260924\\evaluate.py": "1da1981829c0ade8ec2e1fecec25edf780a1197b9e0b873b1d91fc184b54c230",
+    "M\\evaluation\\scripts\\evaluate_resistance.py": "d36ecf8309cf306ec25f792cbb0c8707713bb7d580409e1f95b9a39ecd7b52f0"
+  },
+  "inputs_sha256": {
+    "B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+    "utility_ref.json": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee"
+  },
+  "privacy": "Private aggregate fitting and score-based selection; no formal DP guarantee; local proxy only"
+}

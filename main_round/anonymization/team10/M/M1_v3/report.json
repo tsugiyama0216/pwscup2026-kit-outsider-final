@@ -1,0 +1,29 @@
+{
+  "model": "M1-v3-local-DOMIAS-defense",
+  "utility_proxy": {
+    "U": 0.8426367436940453,
+    "U_gen": 0.9194581474861001,
+    "U_spec": 0.8426367436940453,
+    "U_rare": 0.9677133209820106,
+    "U_valid": 0.8747894476382988
+  },
+  "domias_same20": {
+    "beta_raw": 0.034615384615384624,
+    "beta_chance95": 0.059615384615384626,
+    "beta": 0.01,
+    "a_MIA_K12": 0.0
+  },
+  "aia_proxy_before_phi": {
+    "official_qi_nearest": 0.01663748528411567,
+    "team_multiview_linkage": 0.07509797690922551,
+    "worst": 0.07509797690922551
+  },
+  "anon_proxy": 0.9249020230907745,
+  "objective_proxy": 0.8426367436940453,
+  "changed": {
+    "rows": 5,
+    "columns": ["BMI", "TG", "ALT"],
+    "lambda_to_local_A_bg": 0.75,
+    "driver_member_record_id": 478
+  }
+}

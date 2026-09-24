@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "rows": 12,
+  "DOMIAS_all_pool_confidences_identical": true,
+  "previous_M1_v3_DOMIAS_confidences_reproduced": true,
+  "new_seeds": [
+    20261001,
+    20261002,
+    20261003
+  ],
+  "frozen_selected_sha256": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+  "base_csv_unchanged": true,
+  "base_submission_zip_unchanged": true,
+  "elapsed_seconds": 61.95299999999406,
+  "scope": "Local proxy, new candidate subsets of the same B/A data; not independent data holdout or official scores",
+  "additional_mia_scope": "Multiview MIA includes time/onset/death; raw TPR and AUC diagnostics only, no permutation normalization and not included in Anon proxy"
+}

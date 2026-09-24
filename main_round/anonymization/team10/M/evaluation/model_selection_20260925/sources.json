@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "m1-choice",
+      "title": "現時点の提出候補はM1_v5",
+      "queries": [
+        {
+          "id": "paired-m1-results",
+          "source": {
+            "label": "固定候補V3・V4・V5の最新評価",
+            "files": [
+              {
+                "label": "aia_reassessment_20260925/comparison_all_seeds.csv"
+              },
+              {
+                "label": "model_selection_20260925/m1_comparison.csv"
+              },
+              {
+                "label": "model_selection_20260925/verification.json"
+              }
+            ],
+            "metricDefinitions": [
+              {
+                "label": "総合代理値",
+                "definition": "総合代理値はUとAnon proxyの小さい方です。Anon proxyは1から正規化MIAとAIAの大きい方を引き、今回はφを控除していません。"
+              }
+            ],
+            "filters": [
+              "既存の固定候補3種",
+              "9通りの同じ標的・対照条件",
+              "主条件seed20260924"
+            ],
+            "caveats": [
+              "9条件は同じデータの再抽出であり、中央値・最低値は本番の期待値や保証下限ではありません。",
+              "V5選択に既知6seedを使用し、残る3seedも同じ母集団の確認です。",
+              "本戦の非公開対照・Pi・全攻撃は再現できていません。公開Aの共用と50人の抽出対象除外による偏りも残ります。",
+              "提供φ=0.026887の適用を仮定せずに比較しています。"
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "現物との対応",
+                "detail": "全入力と結果ハッシュ、27行の総合式を照合。既存V5提出ZIPも作成記録・評価CSVに一致しました。"
+              },
+              {
+                "kind": "result",
+                "title": "同じ条件での優劣",
+                "detail": "V5対V4は9条件で5改善4同点、以前の確認3条件に限ると2改善1同点。V5対V3は9条件すべてで総合代理値が高くなりました。"
+              },
+              {
+                "kind": "result",
+                "title": "判断",
+                "detail": "V5はV4とUが同じで、総合代理値の中央値と最低値も高いため、得点を目的とする現在の提出候補としてV5を推奨します。AIA単独で一貫して優位という結果ではありません。"
+              }
+            ]
+          },
+          "columns": [
+            "model",
+            "U",
+            "primary_Anon",
+            "primary_Objective",
+            "objective_median_9",
+            "objective_min_9",
+            "objective_max_9",
+            "objective_mean_9_diagnostic_only"
+          ],
+          "rows": [
+            {
+              "model": "M1_v3",
+              "U": 0.842644163219807,
+              "primary_Anon": 0.5979020979020978,
+              "primary_Objective": 0.5979020979020978,
+              "objective_median_9": 0.7377622377622378,
+              "objective_min_9": 0.5629370629370631,
+              "objective_max_9": 0.842644163219807,
+              "objective_mean_9_diagnostic_only": 0.7222163646944286
+            },
+            {
+              "model": "M1_v4",
+              "U": 0.8745376810931582,
+              "primary_Anon": 0.5979020979020978,
+              "primary_Objective": 0.5979020979020978,
+              "objective_median_9": 0.7377622377622378,
+              "objective_min_9": 0.5629370629370631,
+              "objective_max_9": 0.8745376810931582,
+              "objective_mean_9_diagnostic_only": 0.7363912615270293
+            },
+            {
+              "model": "M1_v5",
+              "U": 0.8745376810931582,
+              "primary_Anon": 0.8461538461538465,
+              "primary_Objective": 0.8461538461538465,
+              "objective_median_9": 0.8745376810931582,
+              "objective_min_9": 0.632867132867133,
+              "objective_max_9": 0.8745376810931582,
+              "objective_mean_9_diagnostic_only": 0.8346623723660239
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "other-candidates",
+      "title": "有用性が高い他候補を選ばない理由",
+      "queries": [
+        {
+          "id": "common-mia-screen",
+          "source": {
+            "label": "8候補の同一3条件DOMIAS比較",
+            "files": [
+              {
+                "label": "domias_main_round_20260924/comparison_all_seeds.csv"
+              },
+              {
+                "label": "domias_main_round_20260924/inputs/frozen_inputs.json"
+              },
+              {
+                "label": "model_selection_20260925/other_candidates_mia.csv"
+              }
+            ],
+            "metricDefinitions": [
+              {
+                "label": "MIAからのAnon上限",
+                "definition": "Anon=1−max(a_MIA,AIA)なので、どのAIA値でもAnonは1−a_MIA以下です。"
+              }
+            ],
+            "filters": [
+              "全候補共通の3つのMIA候補集合",
+              "20疑似攻撃者と20,000置換の保存結果"
+            ],
+            "caveats": [
+              "この比較の旧AIAは最新条件と異なるため、旧AIAを使った順位付けは行っていません。",
+              "同条件未評価の候補まで劣ると断定していません。",
+              "DPCopulaのDP機構の保証を否定するものではなく、今回の経験的攻撃スコアによる提出判断です。"
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "比較条件の照合",
+                "detail": "元CSVの保存ハッシュ、MIA観測値・偶然補正・正規化を確認し、M1系の初めの3条件と候補集合が同一であることを照合しました。"
+              },
+              {
+                "kind": "result",
+                "title": "MIAが制約となる候補",
+                "detail": "R5、S2、R8、R12、DPCopula ε15・20は3条件すべてでa_MIA=1。この代理評価ではAIAを改善してもAnonは0となるため、現時点の提出候補には推奨しません。"
+              }
+            ]
+          },
+          "columns": [
+            "model",
+            "U",
+            "seeds",
+            "a_MIA_min",
+            "a_MIA_max",
+            "Anon_upper_bound_from_MIA_max"
+          ],
+          "rows": [
+            {
+              "model": "M1",
+              "U": 0.7521530456176521,
+              "seeds": 3,
+              "a_MIA_min": 0.0874125874125877,
+              "a_MIA_max": 0.4020979020979022,
+              "Anon_upper_bound_from_MIA_max": 0.9125874125874123
+            },
+            {
+              "model": "R5",
+              "U": 0.8079092630783484,
+              "seeds": 3,
+              "a_MIA_min": 1.0,
+              "a_MIA_max": 1.0,
+              "Anon_upper_bound_from_MIA_max": 0.0
+            },
+            {
+              "model": "S2",
+              "U": 0.5484134662543412,
+              "seeds": 3,
+              "a_MIA_min": 1.0,
+              "a_MIA_max": 1.0,
+              "Anon_upper_bound_from_MIA_max": 0.0
+            },
+            {
+              "model": "R8",
+              "U": 0.9724474721829108,
+              "seeds": 3,
+              "a_MIA_min": 1.0,
+              "a_MIA_max": 1.0,
+              "Anon_upper_bound_from_MIA_max": 0.0
+            },
+            {
+              "model": "R12",
+              "U": 0.9962017963269136,
+              "seeds": 3,
+              "a_MIA_min": 1.0,
+              "a_MIA_max": 1.0,
+              "Anon_upper_bound_from_MIA_max": 0.0
+            },
+            {
+              "model": "DPCopula_ep15",
+              "U": 0.8059329598204774,
+              "seeds": 3,
+              "a_MIA_min": 1.0,
+              "a_MIA_max": 1.0,
+              "Anon_upper_bound_from_MIA_max": 0.0
+            },
+            {
+              "model": "DPCopula_ep20",
+              "U": 0.9231041374439938,
+              "seeds": 3,
+              "a_MIA_min": 1.0,
+              "a_MIA_max": 1.0,
+              "Anon_upper_bound_from_MIA_max": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

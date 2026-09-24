@@ -1,0 +1,74 @@
+{
+  "name": "six_20",
+  "U": 0.8745376810931582,
+  "facets": {
+    "U_gen": 0.919701758973369,
+    "U_spec": 0.930238000382832,
+    "U_rare": 0.9083510210056358,
+    "U_valid": 0.8745376810931582
+  },
+  "AIA": 0.07043584366062906,
+  "C_sha256": "ea885930dab52bcf6466d1b0da57dbd90ab947cd964f5e3843e8f75235e23869",
+  "seeds": [
+    {
+      "seed": 20260924,
+      "raw": 0.1096153846153846,
+      "fixed_v4_chance95": 0.0692307692307692,
+      "screening_anon": 0.6328671328671328,
+      "screening_objective": 0.6328671328671328
+    },
+    {
+      "seed": 20260925,
+      "raw": 0.13076923076923075,
+      "fixed_v4_chance95": 0.0923076923076923,
+      "screening_anon": 0.6503496503496504,
+      "screening_objective": 0.6503496503496504
+    },
+    {
+      "seed": 20260926,
+      "raw": 0.09230769230769233,
+      "fixed_v4_chance95": 0.0846153846153846,
+      "screening_anon": 0.929564156339371,
+      "screening_objective": 0.8745376810931582
+    },
+    {
+      "seed": 20261001,
+      "raw": 0.04038461538461539,
+      "fixed_v4_chance95": 0.0826923076923077,
+      "screening_anon": 0.929564156339371,
+      "screening_objective": 0.8745376810931582
+    },
+    {
+      "seed": 20261002,
+      "raw": 0.07884615384615384,
+      "fixed_v4_chance95": 0.1076923076923077,
+      "screening_anon": 0.929564156339371,
+      "screening_objective": 0.8745376810931582
+    },
+    {
+      "seed": 20261003,
+      "raw": 0.11730769230769231,
+      "fixed_v4_chance95": 0.0846153846153846,
+      "screening_anon": 0.7027972027972027,
+      "screening_objective": 0.7027972027972027
+    }
+  ],
+  "min_screening_objective": 0.6328671328671328,
+  "mean_screening_objective": 0.76827117154891,
+  "min_screening_anon": 0.6328671328671328,
+  "audit": {
+    "strength": 0.2,
+    "fields": [
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "FPG"
+    ],
+    "boundary_limited_rows": 12,
+    "applied_strength_min_rare": 0.010614719218399751,
+    "applied_strength_mean_rare": 0.1840606329765412
+  },
+  "elapsed_seconds": 3.4530000000086147
+}

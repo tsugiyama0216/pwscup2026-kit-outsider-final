@@ -1,0 +1,42 @@
+{
+  "name": "guard200",
+  "C_sha256": "efeff549a9ff4c0fe5bb9c08001a7505b69909bc8a3d1b108f6d753454af18ca",
+  "U": 0.8426368439811074,
+  "facets": {
+    "U_gen": 0.9194581474861001,
+    "U_spec": 0.8426368439811074,
+    "U_rare": 0.9677133209820106,
+    "U_valid": 0.8747894476382988
+  },
+  "AIA": 0.07975266266061973,
+  "changed_rows": 6,
+  "audit": {
+    "method": "Efron score moment calibration by synthetic onset/censor swaps",
+    "initial_score_loss": 0.13191096316043596,
+    "final_score_loss": 0.011278108456113496,
+    "swaps": 3,
+    "loss_history": [
+      0.03310824639789689,
+      0.01396684003150018,
+      0.011278108456113496
+    ],
+    "max_steps": 24,
+    "significance_guard": true,
+    "significance_margin": 2.0,
+    "target_beta": [
+      0.03371761415964446,
+      -0.1756747540274131,
+      0.07287429192496715,
+      0.0054995829736156,
+      -0.03591677176251219,
+      -0.010774679844583844,
+      0.5789538980351134,
+      0.14322249254829397,
+      0.2832072111412732
+    ],
+    "rare_target": null,
+    "rare_onset_count_preserved": true,
+    "source_record_matching": false
+  },
+  "elapsed_seconds": 2.577999999994063
+}

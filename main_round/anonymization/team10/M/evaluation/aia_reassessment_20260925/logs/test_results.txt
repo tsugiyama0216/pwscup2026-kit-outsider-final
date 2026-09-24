@@ -1,0 +1,10 @@
+test_pairing_all_seeds_and_replay (__main__.ReassessmentTests.test_pairing_all_seeds_and_replay) ... ok
+test_query_hidden_attributes_cannot_change_predictions (__main__.ReassessmentTests.test_query_hidden_attributes_cannot_change_predictions) ... ok
+test_saved_comparisons_arithmetic_and_input_integrity (__main__.ReassessmentTests.test_saved_comparisons_arithmetic_and_input_integrity) ... ok
+test_success_threshold_and_rare_deadzone_against_hand_calculation (__main__.ReassessmentTests.test_success_threshold_and_rare_deadzone_against_hand_calculation) ... ok
+test_worst_attack_then_single_phi_and_objective (__main__.ReassessmentTests.test_worst_attack_then_single_phi_and_objective) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.187s
+
+OK

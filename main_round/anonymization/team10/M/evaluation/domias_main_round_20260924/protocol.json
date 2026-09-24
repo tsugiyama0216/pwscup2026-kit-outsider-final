@@ -1,0 +1,44 @@
+{
+  "format": "main-round-domias-local-v1",
+  "models": {
+    "M1": "M/M1/C.csv",
+    "M1_v3": "M/M1_v3/C.csv",
+    "R5": "R/R5/C.csv",
+    "S2": "S/S2/C.csv",
+    "R8": "R/R8/C.csv",
+    "R12": "R/R12/C.csv",
+    "DPCopula_ep15": "S/S_Copula/epsilon15/release/C.csv",
+    "DPCopula_ep20": "S/S_DPCopula_ep20/C.csv"
+  },
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "pseudo_attackers": 20,
+  "candidates_per_attacker": 1049,
+  "members_per_attacker": 26,
+  "rare_candidates_per_attacker": 24,
+  "max_rare_members_per_attacker": 2,
+  "members_disjoint_across_attackers": true,
+  "permutations": 20000,
+  "low_fpr": 0.01,
+  "mia_fold_K": 12,
+  "shared_candidate_sets_all_models": true,
+  "primary_seed": 20260924,
+  "selection_rule": "All requested models evaluated; fixed released CSVs, no generation/parameter tuning from scores.",
+  "member_source": "B_self; true is_rare flags",
+  "nonmember_source": "public A_bg; rare stratum from public detector, stratified to24 total rare candidates",
+  "DOMIAS": "literal fixed official overlap_mia KDE on continuous7, A_bg standardized, Scott bandwidth default",
+  "MIA_aggregation": "mean over attacker max(full TPR, rare TPR), then20000 joint truth/rare label permutations separately per attacker, then chance95 correction, then K12",
+  "AIA": "all B targets vs all A_bg controls; max(official QI nearest, adapted multiview), before unknown phi",
+  "caveats": [
+    "Actual other-team cohorts, hidden shared blocks, private nonmembers and official AIA challenges are unavailable.",
+    "Nonmember rare labels are detector surrogates; true public rare labels are unavailable.",
+    "Public nonmembers also appear in KDE reference and may appear in the generators public inputs; proxy optimism/bias is possible.",
+    "Real cohort prefecture biases and exact25..27 block allocation are not reproduced.",
+    "AIA targets/controls and phi differ from official scoring; report proxy only.",
+    "Hash serialization is documented here; exact official server serialization is unknown.",
+    "Received screenshot has no underlying attack code or cohort manifest; no exact replication claim."
+  ]
+}

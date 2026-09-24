@@ -1,0 +1,90 @@
+{
+  "verified_at_utc": "2026-09-24T14:29:43+00:00",
+  "candidate": "M1_v4",
+  "selected_setting": "guard225",
+  "C_sha256": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+  "base_C_sha256": "d425f6d612f0d3f0d8af3ee0a7f042d846c25ad9555966b437f3623773c175a1",
+  "base_submission_zip_sha256": "5be38cda5fb0a234d8500ce7bac1148ae62cbc65f0607e1c5124d2ccfcf71068",
+  "rows_changed": 8,
+  "cells_changed": 16,
+  "columns_changed": [
+    "time",
+    "onset"
+  ],
+  "unchanged_columns": [
+    "age",
+    "sex",
+    "prefecture",
+    "BMI",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT",
+    "smoking",
+    "FPG",
+    "death"
+  ],
+  "outcome_tuple_multiset_preserved_within_each_rare_stratum": true,
+  "reproduction_byte_identical": true,
+  "unit_tests_passed": 3,
+  "utility": 0.8745376810931582,
+  "utility_gain": 0.03189351787335126,
+  "official_csv_validation": {
+    "logical_ok": true,
+    "rows": 1049,
+    "no_missing": true,
+    "duplicate_rows": 0,
+    "exact_B_matches": 0,
+    "rare": {
+      "rare_detected": 65,
+      "gate": 8,
+      "below_gate": false
+    }
+  },
+  "domias_confidences_identical_to_v3": true,
+  "proxy_objective_increased_seeds": 3,
+  "proxy_objective_equal_seeds": 3,
+  "comparison_seeds": [
+    20260924,
+    20260925,
+    20260926,
+    20261001,
+    20261002,
+    20261003
+  ],
+  "confirmation": {
+    "complete": true,
+    "rows": 12,
+    "DOMIAS_all_pool_confidences_identical": true,
+    "previous_M1_v3_DOMIAS_confidences_reproduced": true,
+    "new_seeds": [
+      20261001,
+      20261002,
+      20261003
+    ],
+    "frozen_selected_sha256": "d32640fd8a85866121235053dc7c02c29ab87979c8fd5e0013aae9ca49db7201",
+    "base_csv_unchanged": true,
+    "base_submission_zip_unchanged": true,
+    "elapsed_seconds": 61.95299999999406,
+    "scope": "Local proxy, new candidate subsets of the same B/A data; not independent data holdout or official scores",
+    "additional_mia_scope": "Multiview MIA includes time/onset/death; raw TPR and AUC diagnostics only, no permutation normalization and not included in Anon proxy"
+  },
+  "scope": "Local candidate; final submission choice remains M1_v3. No formal DP, official score, or independent-data holdout claim.",
+  "codabench_submitted": false,
+  "github_pushed": false,
+  "token_zip_created_for_v4": false,
+  "files_sha256": {
+    "experiment.py": "b9284bdc897228903508fee936b2002c93698ade61567f1735b5964f7deb7165",
+    "protocol.json": "0d9779ebb7140c5f161e3e0d157db8fa42cfc5e810448754df5c5c689413cd1c",
+    "selection.json": "587572cda3e5ae999b8fe2cecbf48329ae02c43ecb9bff50cc6ba7e9d63d5955",
+    "model.json": "df15a8b92188ca24ec1c95803b0035ad06102578dd28262ef8dcecab371885be",
+    "generate.py": "019d4aafd11c146dca2af7c47a428e21f70a0b85bcbef10c33b96a0a9baca5f8",
+    "confirm.py": "b7f3c603de2775f993983862e84d7857984749f276e77c802ef82de17bd5383e",
+    "test_model.py": "ea971b9143fb3d86112497627af0f630fd8358fe9a0cd3b5eeff9626ed67e532",
+    "utility.json": "6b6b9575b7474ee41f9b7a920281f07d10adf2029c8b4bb5e4f2a4c97e7fce47",
+    "aia.json": "7553c859f84041ecaff707f24f49bdfffb93bb49bf90ccc5998e6c07e777dac6",
+    "confirmation/comparison.csv": "83e55180d202e03532b93e9c79e86959721b46e36a9420720d8c5601f404c779",
+    "confirmation/frozen.json": "3b6a8362e1317442d4f481ac1ebe38fcf93bc88888b8fa2661e86bab20460da5",
+    "confirmation/completion.json": "e363dab4f7dda6723334b940f6912e400fa2eb6b40acc5405112e3b020e6273a"
+  }
+}

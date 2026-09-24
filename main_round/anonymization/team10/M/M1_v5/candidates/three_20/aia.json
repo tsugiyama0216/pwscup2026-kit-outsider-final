@@ -1,0 +1,43 @@
+{
+  "attacks": {
+    "official_qi_nearest": {
+      "risk_before_phi": 0.017333831892442926,
+      "breakdown": {
+        "r_onset": null,
+        "r_time_all": 0.017333831892442926,
+        "r_time_rare": 0.0,
+        "r_time_rare_raw": 0.0,
+        "aia_rare_se_z": 1.64,
+        "tpr_onset_member": null,
+        "tpr_onset_control": null,
+        "succ_time_member": 0.7340324118207817,
+        "succ_time_control": 0.7293408516430099,
+        "succ_time_member_rare": 0.4166666666666667,
+        "succ_time_control_rare": 0.5384615384615384,
+        "tau_time": 0.5,
+        "low_fpr": 0.01
+      }
+    },
+    "team_multiview_linkage": {
+      "risk_before_phi": 0.07192077042794444,
+      "breakdown": {
+        "r_onset": null,
+        "r_time_all": 0.07192077042794444,
+        "r_time_rare": 0.0,
+        "r_time_rare_raw": 0.0,
+        "aia_rare_se_z": 1.64,
+        "tpr_onset_member": null,
+        "tpr_onset_control": null,
+        "succ_time_member": 0.7740705433746425,
+        "succ_time_control": 0.7565623177133969,
+        "succ_time_member_rare": 0.5,
+        "succ_time_control_rare": 0.5876923076923077,
+        "tau_time": 0.5,
+        "low_fpr": 0.01
+      }
+    }
+  },
+  "worst_before_phi": 0.07192077042794444,
+  "phi": null,
+  "scope": "all B as targets, public A as controls; true B rare flags, detector proxy for public rare; not official AIA challenges"
+}

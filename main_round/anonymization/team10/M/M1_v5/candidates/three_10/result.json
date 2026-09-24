@@ -1,0 +1,71 @@
+{
+  "name": "three_10",
+  "U": 0.8745376810931582,
+  "facets": {
+    "U_gen": 0.9196546401255286,
+    "U_spec": 0.9335345882281119,
+    "U_rare": 0.9677133209820106,
+    "U_valid": 0.8745376810931582
+  },
+  "AIA": 0.07043584366062906,
+  "C_sha256": "e1c4e56cc840f66456138437d7d0d883a1c0cfd95b05ec9b800a81f3a4b31615",
+  "seeds": [
+    {
+      "seed": 20260924,
+      "raw": 0.11153846153846152,
+      "fixed_v4_chance95": 0.0692307692307692,
+      "screening_anon": 0.6153846153846154,
+      "screening_objective": 0.6153846153846154
+    },
+    {
+      "seed": 20260925,
+      "raw": 0.13076923076923075,
+      "fixed_v4_chance95": 0.0923076923076923,
+      "screening_anon": 0.6503496503496504,
+      "screening_objective": 0.6503496503496504
+    },
+    {
+      "seed": 20260926,
+      "raw": 0.09615384615384617,
+      "fixed_v4_chance95": 0.0846153846153846,
+      "screening_anon": 0.8951048951048948,
+      "screening_objective": 0.8745376810931582
+    },
+    {
+      "seed": 20261001,
+      "raw": 0.04807692307692308,
+      "fixed_v4_chance95": 0.0826923076923077,
+      "screening_anon": 0.929564156339371,
+      "screening_objective": 0.8745376810931582
+    },
+    {
+      "seed": 20261002,
+      "raw": 0.08076923076923079,
+      "fixed_v4_chance95": 0.1076923076923077,
+      "screening_anon": 0.929564156339371,
+      "screening_objective": 0.8745376810931582
+    },
+    {
+      "seed": 20261003,
+      "raw": 0.11346153846153846,
+      "fixed_v4_chance95": 0.0846153846153846,
+      "screening_anon": 0.7377622377622377,
+      "screening_objective": 0.7377622377622377
+    }
+  ],
+  "min_screening_objective": 0.6153846153846154,
+  "mean_screening_objective": 0.7711849244626628,
+  "min_screening_anon": 0.6153846153846154,
+  "audit": {
+    "strength": 0.1,
+    "fields": [
+      "BMI",
+      "TG",
+      "ALT"
+    ],
+    "boundary_limited_rows": 1,
+    "applied_strength_min_rare": 0.06856095591367285,
+    "applied_strength_mean_rare": 0.09951632239867188
+  },
+  "elapsed_seconds": 4.062000000005355
+}
