@@ -25,3 +25,46 @@ S1～S2、R1～R9、M1以降を同じ条件で比較するためのローカル�
 ```
 
 評価基盤はCodaBenchへ送信せず、tokenも読みません。
+
+## 加工データの防御スコアを一度に出す
+
+任意の加工済み `C.csv` と、その候補の有用性スコアJSONがあれば、攻撃力代理、Anon（防御）代理、総合点代理を1つのJSONとMarkdownにまとめられます。
+
+```powershell
+.\run_defense.ps1 `
+  -Model R12 `
+  -C ..\R\R12\C.csv `
+  -Score ..\R\R12\report.json `
+  -Phi 0.026887
+```
+
+team10本戦については、提供された `φ_i=0.026887` を `phi_team10.json` に保存しており、`run_defense.ps1` が自動適用します。別の値で再計算する場合だけ `-Phi <値>` を指定してください。ルールブック §6.2.2 のとおり、AIAは `clip(R - φ_i, 0, 1)` に補正してからMIAと比較します。
+
+計算方法をローカルで再現したい場合は、正解列付きのAIA challenge（`is_target`, `time`, `onset` を含む）を用意して次を実行します。
+
+```powershell
+# リポジトリルートから実行
+& .\prelim\workspace\starter\.venv\Scripts\python.exe `
+  .\main_round\anonymization\team10\M\evaluation\scripts\estimate_phi.py `
+  --challenge .\challenge_with_truth.csv `
+  --data .\main_round\anonymization\team10\participant_data `
+  --kit-root .\prelim\workspace `
+  --out .\phi_estimate.json
+```
+
+この推定器はルールブックの「A_bgから1,049行を置き換え、同じAIA採点を1,000回繰り返して平均する」手順を実装しています。公式の正解付きchallengeと事務局のサンプリング手順がない段階では、出力は公式φ_iではありません。
+
+すでに `resistance_report.json` がある場合は、攻撃を再実行せずφ_iだけを反映できます。
+
+```powershell
+.\run_defense.ps1 -Model R12 -C ..\R\R12\C.csv -Score ..\R\R12\report.json `
+  -Phi 0.026887 -ResistanceReport ..\R\R12\attack_evaluation\resistance_report.json
+```
+
+出力先は `results/<Model>/defense_score.json` と `DEFENSE_SCORE.md` です。主な値は次のとおりです。
+
+- `attack_power_proxy = max(MIAリスク, AIAリスク)`
+- `anon_proxy = 1 - attack_power_proxy`
+- `overall_score_proxy = min(U, anon_proxy)`
+
+運営の本番攻撃候補と最終的な公式Anonは攻撃フェーズ後にしか分かりません。φ_iの計算方法はルールブックに定められていますが、計算には対象コホートのAIA標的・対照構成と、A_bgから1,049行を置き換える1,000回の実測が必要です。したがって、φ_i未入力時はAIA控除前、入力時は控除後のローカル代理値を出します。MIAの正規化前βも併記し、ローカル候補集合による飽和の影響を確認できるようにしています。

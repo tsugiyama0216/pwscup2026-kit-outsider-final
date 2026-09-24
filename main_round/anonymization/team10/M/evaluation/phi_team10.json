@@ -1,0 +1,7 @@
+{
+  "team": "team10",
+  "round": "main",
+  "phi_i": 0.026887,
+  "source": "user-supplied value on 2026-09-24",
+  "rulebook_basis": "Section 6.2.2: mean of 1,000 R scores after replacing C_i by 1,049-row samples from A_bg"
+}

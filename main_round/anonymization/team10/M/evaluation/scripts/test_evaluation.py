@@ -51,6 +51,27 @@ class EvaluationTests(unittest.TestCase):
             self.assertEqual(evaluation.load_utility(standalone), score)
             self.assertEqual(evaluation.load_utility(nested), score)
 
+    def test_defense_summary_applies_phi_after_aia_max(self) -> None:
+        score_module_path = MODULE_PATH.with_name("score_defense.py")
+        score_spec = importlib.util.spec_from_file_location("score_defense", score_module_path)
+        assert score_spec and score_spec.loader
+        score_module = importlib.util.module_from_spec(score_spec)
+        score_spec.loader.exec_module(score_module)
+        report = {
+            "model": "toy",
+            "summary": {"mia_stress_beta_risk": 0.2},
+            "mia": {"attacks": {"official_domias_kde": {"normalized_risk": 0.4}}},
+            "aia": {"stress_risk_before_phi": 0.3},
+            "utility": {"U": 0.8},
+            "limitations": [],
+            "inputs": {},
+        }
+        result = score_module.build_summary(report, phi=0.1)
+        self.assertAlmostEqual(result["defense"]["aia_risk_after_phi"], 0.2)
+        self.assertAlmostEqual(result["defense"]["attack_power_proxy"], 0.4)
+        self.assertAlmostEqual(result["defense"]["anon_proxy"], 0.6)
+        self.assertAlmostEqual(result["defense"]["overall_score_proxy"], 0.6)
+
 
 if __name__ == "__main__":
     unittest.main()
