@@ -1,5 +1,7 @@
 # 本戦ルールブックの更新確認（2026-09-09）
 
+2026-09-27追記：main-attack-20260928の[公式release](https://github.com/pwscup/pwscup2026-kit/releases/tag/main-attack-20260928)でも同じPDF（下記SHA-256一致）が配布され、ルール変更なし・検証器更新と案内されています。[本戦攻撃環境](../attack/README.md)に対応キットとダウンロード原本を保存し、ユーザーの明示的依頼による非公開GitHub保存の対象に追加しました。以下は9月9日時点の調査記録です。
+
 **main-process-20260912 は公式GitHubに公開済みです。** [保存した公式PDF](PWS_Cup2026_ルールブック_main-process-20260912.pdf)は原本のままです。全25ページで、予備戦版からの変更箇所が赤字です。[従来の予備戦版](../../prelim/workspace/rulebook/PWS_Cup2026_ルールブック_prelim-attack-20260825.pdf)も保持しています。
 
 ## 更新の確認

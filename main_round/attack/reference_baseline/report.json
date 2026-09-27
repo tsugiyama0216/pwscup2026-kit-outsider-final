@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "mia_rows": 1049,
+  "mia_target_columns": 22,
+  "aia_rows": 7172,
+  "created_at_utc": "2026-09-27T01:54:31.105276+00:00",
+  "purpose": "Official reference implementation smoke test; not a competitive candidate or score estimate.",
+  "team_id": 10,
+  "attack_targets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27,
+    28
+  ],
+  "official_package": "C:\\Users\\takut\\Documents\\ChatGPT\\PWSCUP2026\\pwscup2026-kit-private\\main_round\\attack\\official-kit\\starter\\src\\pwscup2026",
+  "methods": [
+    "overlap_mia",
+    "aia_predict"
+  ],
+  "submission_created": false,
+  "output_sha256": {
+    "F_mia.csv": "25b8ed513fa4ca711dca34546986c5e24f33862505bde6012bf2e777787421f7",
+    "F_aia.csv": "ef3ad89e8c4cf8257ff81d52c2604a2a8e797bd1d6972b8b5246f89b7bbbc08e"
+  }
+}

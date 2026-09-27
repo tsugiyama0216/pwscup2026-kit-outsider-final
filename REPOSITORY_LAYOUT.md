@@ -2,6 +2,10 @@
 
 予備戦は `prelim/`、本戦は `main_round/` です。リポジトリ直下には共通の案内、Git 設定、ライセンスなどを残しています。
 
+2026-09-27追加：[main_round/attack/](main_round/attack/README.md) に本戦の攻撃配布物・固定版キット・実行と検証の入口を配置しました。ユーザーの明示的依頼により、`downloads/` の配布原本、`targets/` の本戦攻撃対象、`official-kit/starter/` の固定版実行ソース、`reference_baseline/` の参照CSV・検証記録も既存の非公開リポジトリに保存します。専用Pythonの仮想環境・キャッシュ・今後の `local-output/` はローカル管理です。
+
+以下のツリーは予備戦整理時点の履歴です。最新の本戦作業は上記リンクと[引き継ぎ](CODEX_HANDOFF.md)を参照してください。
+
 2026-09-09追加：[予備戦の結果公開](prelim/results/20260909/README.md)に確定結果・公開原本・検証記録、[本戦ルール](main_round/rulebook/README.md)にmain-process-20260912のPDF・変更点を保存しています。以下の移動先一覧は予備戦整理時の記録です。
 
 ## 主要ファイル構造

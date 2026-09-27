@@ -2,12 +2,15 @@
 
 予備戦の作業は **[`prelim/`](prelim/README.md)** に集約しました。本戦は [`main_round/`](main_round/README.md) で別管理します。
 
-**本戦の現在の匿名化候補は[S2](main_round/anonymization/team10/S/S2/README.md)です。** S1の条件付きround処理をsampleへ修正し、ローカル有用性U=0.5484134662543412。学習済みDPモデル・検証記録・[提出用ZIP](main_round/anonymization/team10/S/S2/submission/team10_S2_defense.zip)をまとめています。S2のCodaBench提出は未実施です。
+**本戦・攻撃フェーズ：2026-09-27に[作業環境と配布物](main_round/attack/README.md)を整備しました。** team10用の起動・データ確認・参照攻撃・提出形式検証はここから始めます。ユーザーの依頼により配布原本・固定版キット・参照出力も既存の非公開GitHubへ保存します。配布C_10と最終選択モデル[M1_v5の原本](main_round/anonymization/team10/M/M1_v5/C.csv)の一致を確認しました。
+
+**2026-09-17時点の匿名化修正版は[S2](main_round/anonymization/team10/S/S2/README.md)です。** S1の条件付きround処理をsampleへ修正し、ローカル有用性U=0.5484134662543412。学習済みDPモデル・検証記録・[提出用ZIP](main_round/anonymization/team10/S/S2/submission/team10_S2_defense.zip)をまとめています。当時のS2のCodaBench提出は未実施です。以後のモデルと選定の履歴は[引き継ぎ](CODEX_HANDOFF.md)を参照してください。
 
 **9月9日の予備戦確定結果：team24の攻撃力は0.3406681446132233（4位）、総合得点は0.4223063973063974（17位）です。** [結果公開の整理・原本・訂正事項](prelim/results/20260909/README.md)を追加しました。本戦版ルールブック **main-process-20260912** の[原本と変更点](main_round/rulebook/README.md)も保存しています。
 
 | 探したいもの | 場所 |
 |---|---|
+| 本戦・攻撃フェーズの配布物、起動・検証手順 | [`main_round/attack/`](main_round/attack/README.md) |
 | 予備戦・匿名化フェーズの提出物 `C.csv` | [`prelim/anonymization/anonymization-submitted-v5/`](prelim/anonymization/anonymization-submitted-v5/) |
 | 予備戦・攻撃フェーズの最終提出、候補、採点結果 | [`prelim/attack/`](prelim/attack/README.md) |
 | 予備戦の実装、実験記録、当時のキット・ルール | [`prelim/workspace/`](prelim/workspace/README.md) |

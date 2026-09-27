@@ -1,5 +1,9 @@
 # PWSCUP2026 引き継ぎ
 
+**2026-09-27、[本戦・攻撃環境](main_round/attack/README.md)を整備し、ユーザーが現在の状態の非公開GitHub保存を依頼。** `main-attack-20260928`の配布原本・固定版公式キット・team10用実行と検証の入口を保存対象とします。マニフェスト94件のハッシュ照合、公式指定29ライブラリ、本戦22対象の参照攻撃（MIA 1,049行、AIA 7,172行）の検証は完了しています。保存した参照出力と検証記録は `main_round/attack/reference_baseline/`、実行入口は `main_round/attack/attack.ps1` です。期間は9月28日09:00〜10月11日09:00 JST、採点に通る提出は最大8回。参照攻撃は動作確認用で、最適化済み候補や公式攻撃力ではありません。仮想環境・キャッシュ・新たな実トークンのコピー・提出ZIPは今回の追加対象に含めず、既存の明示許可済み履歴を維持します。CodaBenchへの提出は行っていません。
+
+**自己Cの照合を完了しました。** 配布 `main_round/attack/targets/C_10.csv` は、事務局メールのSHA-256と、既存の最終選択モデル [`M/M1_v5/C.csv`](main_round/anonymization/team10/M/M1_v5/C.csv) の両方に一致します（SHA-256 `7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db`）。事務局掲載の提出IDは943347です。環境整備時に残っていた「最終提出原本との照合未確認」は解消しました。自己10は攻撃対象から除外します。以下の記録は各記載日時点の履歴です。
+
 **2026-09-25、ユーザーが現在の成果物のGitHub保存を依頼。** 現在のteam10作業一式と、検証済みV5提出ZIPを既存非公開リポジトリのmainへ保存する許可。V5 ZIPの従来のローカル限定条件はこの追加依頼で更新。M1_v3〜v5、DOMIAS/AIA再評価、DPCopula ε15、Rモデルの監査記録を対象とし、直近の選定根拠は[M/evaluation/model_selection_20260925](main_round/anonymization/team10/M/evaluation/model_selection_20260925/README.md)へ集約。旧V3 ZIP、AIA private/、キャッシュなど既存の除外は維持し、CodaBenchには送信しない。作成ログの`github_pushed:false`はZIP作成時点の記録として改変しない。
 
 **2026-09-25、ユーザーが提出モデルをM1_v5へ変更し、[提出用ZIPと作成ログ](main_round/anonymization/team10/M/M1_v5/FINAL_SUBMISSION.md)を作成。** 最新の指定が以前のM1_v3選択に優先する。`M/M1_v5/submission/team10_M1_v5_defense.zip`直下は評価済みC.csvとteam10原本token.txtのみ。1,049行×13列、固定公式キットのZIP/CSV形式検証・配布B行数照合・CRC・元CSVとのバイト一致に合格。CSV SHA256=7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db、ZIP SHA256=3a5b9bae363b8f9ba8f86d17d8a03b76000e26c69ee1b5eaa26181107cbf7183（64,458 bytes）。tokenは検証済みV3 ZIPからメモリ内で取得し、配布原本のGitオブジェクトIDに一致。値は出力しない。V3/V4/V5のCSV・V3 ZIP・V5モデル不変。CSVの再生成・再学習・再採点は不要で実施せず。作成ログはV5/submission/CREATION_LOG.mdおよびcreation_log.json。今回の許可はローカルZIP作成のみ。CodaBench送付・GitHubアップロードはしていない。

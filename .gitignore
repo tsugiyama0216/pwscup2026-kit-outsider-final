@@ -25,6 +25,21 @@
 /main_round/**/token.txt
 /main_round/**/*.zip
 /main_round/**/local-output/
+# 2026-09-27: archive the authorized non-secret attack distribution and pinned public kit.
+/main_round/attack/.cache/
+/main_round/attack/.tools/
+/main_round/attack/downloads/*
+!/main_round/attack/downloads/release.json
+!/main_round/attack/downloads/official_commit.txt
+!/main_round/attack/downloads/SHA256SUMS.txt
+!/main_round/attack/downloads/PWS_Cup2026_._main-process-20260912.pdf
+!/main_round/attack/downloads/PWSCup2026_final_attack.zip
+# Upstream public source archive contains only public practice/example tokens, no live credential.
+!/main_round/attack/downloads/official-kit-main-attack-20260928.zip
+/main_round/attack/official-kit/*
+!/main_round/attack/official-kit/starter/
+!/main_round/attack/official-kit/README.md
+!/main_round/attack/official-kit/LICENSE
 # User explicitly authorized these two team10 tokens in this private repository on 2026-09-17.
 !/main_round/anonymization/team10/participant_data/token.txt
 !/main_round/anonymization/team10/模擬提出データ/token.txt

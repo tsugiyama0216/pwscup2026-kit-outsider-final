@@ -6,8 +6,11 @@
 
 **2026-09-16に本戦・加工フェーズの配布データを配置しました。チームはアウトサイダー / outsider、コホート番号は10（予備戦は24）です。**
 
+**2026-09-27：[攻撃フェーズの作業環境](attack/README.md)を整備しました。** 公式配布物・固定版本戦キット・team10用の実行と検証を用意しています。対象は自己10を除く22コホート。期間は9月28日09:00〜10月11日09:00 JST、採点に通る提出は最大8回です。配布C_10（事務局掲載の提出ID943347）は、最終選択した[M1_v5のC.csv](anonymization/team10/M/M1_v5/C.csv)と完全一致しました。ユーザーの依頼により、攻撃配布原本と参照出力を含む現在の状態を既存の非公開GitHubへ保存します。以下の加工フェーズ記録は各記載日時点の履歴です。
+
 | 内容 | 場所 |
 |---|---|
+| 本戦攻撃データ・実行と検証の手順 | [attack/README.md](attack/README.md) |
 | 本戦加工データの案内・取扱い | [anonymization/team10/README.md](anonymization/team10/README.md) |
 | 配布原本 B・B_self・A_bg・schema・utility_ref・README | [anonymization/team10/participant_data/](anonymization/team10/participant_data/) |
 | 配布原本6ファイルのサイズ・SHA-256 | [anonymization/team10/data_manifest.json](anonymization/team10/data_manifest.json) |

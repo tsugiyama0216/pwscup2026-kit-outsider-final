@@ -1,0 +1,14 @@
+{
+  "verified_at_utc": "2026-09-27T02:06:26.840319+00:00",
+  "upstream_base": "51efc4f",
+  "fresh_environment_setup_passed": true,
+  "python_version": "3.12.13",
+  "verified_manifest_files": 94,
+  "dependency_pins_verified": 29,
+  "target_count": 22,
+  "own_C_equals_saved_M1_v5": true,
+  "own_C_sha256": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db",
+  "live_credentials_newly_added": false,
+  "archives_recursively_checked_for_live_token": true,
+  "codabench_submission_performed": false
+}

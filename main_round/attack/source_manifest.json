@@ -1,0 +1,606 @@
+{
+  "created_at": "2026-09-27T10:52:06.790079+09:00",
+  "phase": "main-attack",
+  "release": "main-attack-20260928",
+  "official_commit": "a490490e11a0ec460a5df9fdefb17c72ad459c1e",
+  "release_url": "https://github.com/pwscup/pwscup2026-kit/releases/tag/main-attack-20260928",
+  "team_id": 10,
+  "attack_zip_sha256": "bdab1804efd39e6e227220ede168d2031fe1275b1b46655ef7891116a3160dc3",
+  "window_jst": {
+    "start": "2026-09-28T09:00:00+09:00",
+    "end": "2026-10-11T09:00:00+09:00"
+  },
+  "max_scored_attempts": 8,
+  "target_ids": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "22",
+    "25",
+    "26",
+    "27",
+    "28"
+  ],
+  "token_note": "Existing local token is referenced only; content and hash excluded. No submission performed.",
+  "files": [
+    {
+      "path": "downloads/official-kit-main-attack-20260928.zip",
+      "bytes": 6308894,
+      "sha256": "a95583b08006f43ebbcb06830104f4dc0651f3c800808cab96bf2e0fec20eca1",
+      "role": "official_download"
+    },
+    {
+      "path": "downloads/official_commit.txt",
+      "bytes": 42,
+      "sha256": "0605349e7b8bc295377d883bb15071b68637e7e53703ac7393b92f8d3778a56c",
+      "role": "official_download"
+    },
+    {
+      "path": "downloads/PWS_Cup2026_._main-process-20260912.pdf",
+      "bytes": 587621,
+      "sha256": "9290c6e98b85214ca691bb90ff961196642c72d85348810f8df36741489885f2",
+      "role": "official_download"
+    },
+    {
+      "path": "downloads/PWSCup2026_final_attack.zip",
+      "bytes": 1841114,
+      "sha256": "bdab1804efd39e6e227220ede168d2031fe1275b1b46655ef7891116a3160dc3",
+      "role": "official_download"
+    },
+    {
+      "path": "downloads/release.json",
+      "bytes": 8262,
+      "sha256": "d7f49355168ca183a4fd7b7c286a358af6012cc4926ebf037932b42e4c72c33e",
+      "role": "official_download"
+    },
+    {
+      "path": "downloads/SHA256SUMS.txt",
+      "bytes": 3866,
+      "sha256": "01ceb4aed10be97dda2e27e5ff26cf463114b882567d1fbc432b4a27a2aa47a8",
+      "role": "official_download"
+    },
+    {
+      "path": "targets/aia_challenge_0.csv",
+      "bytes": 30103,
+      "sha256": "4ca93cd9e8c29809ccef2a36ef25a4153bc1a263c742e86a25b56220caaa5854",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_1.csv",
+      "bytes": 30117,
+      "sha256": "d806921494158a3ef9cee0ddbe163b810ffef9d00167dd0eb8323225ddd67ff3",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_10.csv",
+      "bytes": 30160,
+      "sha256": "18c67f92e2111fa756e5f64fbf86a187fdabcc01970b7480b02b0a84dbc2c0bd",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_11.csv",
+      "bytes": 30088,
+      "sha256": "f6612c96ee551b00070ec2a33d69ad948427b361cc8d32ea71969d8acacff97a",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_12.csv",
+      "bytes": 30133,
+      "sha256": "a5863b3a1af33f0319a33861aa7e607d5d9c443c11420e6b268fe9580c5968ac",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_13.csv",
+      "bytes": 30137,
+      "sha256": "06f41260e135ec7a6ab1ad4773dc2b665390457d7d7db0f32a6993d5da98c9b9",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_14.csv",
+      "bytes": 30128,
+      "sha256": "ac0eb4bbfe2cece2f52ab93c7a06b542453d61884a38468e0d7eb5204cd6ddad",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_15.csv",
+      "bytes": 30130,
+      "sha256": "ff400ab6e1ec812e4ef6c4eeec0a86f40de674fbb7f250c41a21f7d991e2def3",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_16.csv",
+      "bytes": 30105,
+      "sha256": "4755f4222a5f16eed4520d9566722bff22086e3ee8d98952e38e54e75e0db7f5",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_17.csv",
+      "bytes": 30143,
+      "sha256": "73f438ccb4a15d5f12a7f489f58e839c77d35e7fe53d70a01c2e33b8a6410b57",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_2.csv",
+      "bytes": 31081,
+      "sha256": "b5cac6afa9e18b8e9a6d734ac7d83b14500672138bc8b505c0fc371d379d516d",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_22.csv",
+      "bytes": 30132,
+      "sha256": "0850a1b890095927da4d73aa0ca77ee616927bc1886d1d6573143342239e7e00",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_25.csv",
+      "bytes": 30168,
+      "sha256": "c73fe7fedaa726965f0bec91e5cdabab4630c4a04b648447872c72119115230c",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_26.csv",
+      "bytes": 30140,
+      "sha256": "0fa2f579c42a0e1227e10efba916da681d98e2f91055b62121b17b0532370b07",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_27.csv",
+      "bytes": 30107,
+      "sha256": "46fefc3d83639f8987fc2cd08daa30ba4f8d933ca7a8d912c2334d642b9c8c05",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_28.csv",
+      "bytes": 31088,
+      "sha256": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_3.csv",
+      "bytes": 30104,
+      "sha256": "82cedd6ad7693425241c2b7da16fd4ee2ac96cd1aeb8657caf2d664ca6167962",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_4.csv",
+      "bytes": 30086,
+      "sha256": "ccd28be9738fee38a1ebca2a128555040ed702afb0a30ff83911f83de5cae87b",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_5.csv",
+      "bytes": 31135,
+      "sha256": "426250fb74741680d16258e9bbbf536b79b0ba7c29828acd5382038780ddcc02",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_6.csv",
+      "bytes": 30116,
+      "sha256": "5bd3ea48a7e40ac46cfa0bb256f95f17a5f0cc5a2b788ae5fcf7f43bfc28e35b",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_7.csv",
+      "bytes": 30111,
+      "sha256": "b4bef96e9acc9e8ac0f76033e2af99e4dc3292f6bb9a03dd36319cd4fc2fa984",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_8.csv",
+      "bytes": 30144,
+      "sha256": "cbeef3c78f15cffb9028a9d163151b3e3af45685fb350f1473854c6fd4871238",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/aia_challenge_9.csv",
+      "bytes": 30109,
+      "sha256": "0580e6ca24b2e6a4e4071aacedec3b32fd0063d2506cd9f70e847e8e27aabe9a",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_0.csv",
+      "bytes": 146142,
+      "sha256": "525ff7b79815190d2512ea7716bd5b5198c611ba66b54c24fa58933f6e1d44c1",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_1.csv",
+      "bytes": 146550,
+      "sha256": "eb990d1d41419743273b082e931afc259d4ce251a2a9ab059198b097d85e44dd",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_10.csv",
+      "bytes": 158281,
+      "sha256": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_11.csv",
+      "bytes": 157013,
+      "sha256": "ec79f5531ffda71f2fddc34e0f30e5f312b5f7d3ca78b95973c56c64bb6790f7",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_12.csv",
+      "bytes": 161236,
+      "sha256": "33848d8bd09942287f5c0d52d2092f4b6c19ccfd6a9ecad677209899f15400e1",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_13.csv",
+      "bytes": 147977,
+      "sha256": "90b09027567281647a3a3388c359ee73733af63638c9d4c920f202639140dee7",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_14.csv",
+      "bytes": 143428,
+      "sha256": "b37067cd9508864d7fb85ef5bf122235391b71a10b76c964328ef4f6cef6c4ba",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_15.csv",
+      "bytes": 156962,
+      "sha256": "046ba97c34f0c3d4ef6a6729b629068934de4c9f75c378f61f112f62a557368e",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_16.csv",
+      "bytes": 156299,
+      "sha256": "8481f1279635e1aa6db654895a5a2c6cb4d602ac42c47d30eca48c160f471470",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_17.csv",
+      "bytes": 109734,
+      "sha256": "cd7f29fbfc8ac9860ceaa3646e125390ce9ed4ac2802134a1ccbc0dbc53c3994",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_2.csv",
+      "bytes": 157449,
+      "sha256": "8c1f30b15451864a6373bad76c8bce873ea82da8137e48f824fe3f02f57c1c1b",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_22.csv",
+      "bytes": 146984,
+      "sha256": "a2d10f282ba255739a95ad3500e9325d8897f0632833274432bbf5795fcaceea",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_25.csv",
+      "bytes": 158685,
+      "sha256": "35ad7bd8fa4ddd3d3657372b4f0b07b52ebaa2f70466e84f44a0aed8aed2351a",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_26.csv",
+      "bytes": 144572,
+      "sha256": "f9f978a770147891419e80a3a8c3fe799e38a4d0eb1803d86ee05c14aeb9fa38",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_27.csv",
+      "bytes": 145568,
+      "sha256": "cd9e330eba7e2300f7ae745b70113237ba20660fa24794726d8bfa7beac650d4",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_28.csv",
+      "bytes": 148191,
+      "sha256": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_3.csv",
+      "bytes": 156058,
+      "sha256": "1240d0483abe84e7f5997872f144b0428ec0ac2d11c662dcc33146371eaa9384",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_4.csv",
+      "bytes": 147052,
+      "sha256": "b722a3cdd357af845a10e3bdc312b27570fdea2aa66eb0f688c9c9ca494dbc2b",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_5.csv",
+      "bytes": 146805,
+      "sha256": "0f3d7b95ef1e8380d865de6728397d5f75b04f66ab0218391979a4ce8171628a",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_6.csv",
+      "bytes": 157470,
+      "sha256": "f9439ff60b33f7976c22280265b309f27382ce85fb6e2c3fdeeb2644bf6c62db",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_7.csv",
+      "bytes": 156570,
+      "sha256": "071b81d7b8a37e245b2b20c5b6f89f419fc8005ad772e5352ca568e40a85262e",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_8.csv",
+      "bytes": 161196,
+      "sha256": "d5e52dfdc45c7a7a89318c5abc32aa0e80136fe35093d051f01127b985f879a7",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/C_9.csv",
+      "bytes": 158123,
+      "sha256": "b5489304725517b445529e1614682042473f16489148d3267c08e0aff59e3af6",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/mia_columns.json",
+      "bytes": 261,
+      "sha256": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/README.txt",
+      "bytes": 1419,
+      "sha256": "a678569f44782a058d19355c4abed3d07488730813e2c4f5e51a246e01e290ff",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "targets/SHA256SUMS.txt",
+      "bytes": 3866,
+      "sha256": "01ceb4aed10be97dda2e27e5ff26cf463114b882567d1fbc432b4a27a2aa47a8",
+      "role": "main_attack_target"
+    },
+    {
+      "path": "../anonymization/team10/participant_data/A_bg.csv",
+      "bytes": 794376,
+      "sha256": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+      "role": "main_team10_input"
+    },
+    {
+      "path": "../anonymization/team10/participant_data/B.csv",
+      "bytes": 161043,
+      "sha256": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+      "role": "main_team10_input"
+    },
+    {
+      "path": "../anonymization/team10/participant_data/B_self.csv",
+      "bytes": 163149,
+      "sha256": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+      "role": "main_team10_input"
+    },
+    {
+      "path": "../anonymization/team10/participant_data/README.txt",
+      "bytes": 1969,
+      "sha256": "d95b5a87a56fc9b1ef5fafe3ade4fa749d50c5aa121991962b77c9aedef3aa24",
+      "role": "main_team10_input"
+    },
+    {
+      "path": "../anonymization/team10/participant_data/schema.json",
+      "bytes": 2855,
+      "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+      "role": "main_team10_input"
+    },
+    {
+      "path": "../anonymization/team10/participant_data/utility_ref.json",
+      "bytes": 1264,
+      "sha256": "c5dd6159c35c69618e12a6f135aaac889773d5a9932890bf9f7f0c9f8fc46bee",
+      "role": "main_team10_input"
+    },
+    {
+      "path": "official-kit/starter/pyproject.toml",
+      "bytes": 1392,
+      "sha256": "80b45ec4291e1a3ea312c075c3ba20dbef93c107fcf8ab8ff47064daffb7d5f6",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/reference/_common.py",
+      "bytes": 4063,
+      "sha256": "bf0a62bc0dfbb3e32b8ec017ca2d1930f9c9bb2664a8ac689255c72950cafc0e",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/reference/run_aia.py",
+      "bytes": 2402,
+      "sha256": "4a96e4a566c57fe00516c85a45bde453cf090606296910bf02bc6d242938263f",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/reference/run_defense.py",
+      "bytes": 2170,
+      "sha256": "6ebcd3e26ce42b4153f32b8ae2142c4dd42062ab4c801fde204981b032a221d1",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/reference/run_mia.py",
+      "bytes": 2046,
+      "sha256": "73595ecba2d02e28144653540f8c666dca45f9489903e93d572325d2cd6d28b4",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/reference/strong_synth.py",
+      "bytes": 5740,
+      "sha256": "be2c5371dcde31f5561f1cc6c3a8b0b8bb0fbf2c5b80966eb7c1856ffd88baf0",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/requirements-kit.txt",
+      "bytes": 996,
+      "sha256": "8dbd72203ef5dd566550f8955f667791ca873068c9c1c28efb0d83db1a8433d1",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/__init__.py",
+      "bytes": 109,
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/attack/__init__.py",
+      "bytes": 115,
+      "sha256": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/attack/aia.py",
+      "bytes": 4394,
+      "sha256": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/attack/mia.py",
+      "bytes": 2393,
+      "sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/common/__init__.py",
+      "bytes": 53,
+      "sha256": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/common/config.py",
+      "bytes": 360,
+      "sha256": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/common/schema.py",
+      "bytes": 292,
+      "sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/common/submission_schema.py",
+      "bytes": 13316,
+      "sha256": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/defense/__init__.py",
+      "bytes": 681,
+      "sha256": "ff0390d9c9de08be55c70bd92721ac74cf44e3f0133c78a227b4aec02095e6ff",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/defense/perturb.py",
+      "bytes": 2196,
+      "sha256": "a7ca5164a3243af452a741dee6a7acc70551b56fba38671f6e84d1cd84d0f89b",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/defense/synth.py",
+      "bytes": 10644,
+      "sha256": "ba2b0eac07ecf86e38dec916617da8227c36025d2b060daa186154bd17f2e50f",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/__init__.py",
+      "bytes": 91,
+      "sha256": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "bytes": 389,
+      "sha256": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/codabench/run.py",
+      "bytes": 16015,
+      "sha256": "78d68f4baab795254c23bc679a9175c623bf9609a3d8b3208d740039583656ec",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "bytes": 24293,
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/kit_config.yaml",
+      "bytes": 3438,
+      "sha256": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/selfscore.py",
+      "bytes": 10902,
+      "sha256": "8f49e24ec3a2601cecde884659da0ed93cf1806e9385f047e9ea1f96137f147d",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/validate.py",
+      "bytes": 32860,
+      "sha256": "359589b4e82cb41f4284c5a7cdc7e2d3c793788d6d9d6f12a62b46a7a132f3c3",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/rare/__init__.py",
+      "bytes": 84,
+      "sha256": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/rare/outlier.py",
+      "bytes": 1122,
+      "sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/scoring/__init__.py",
+      "bytes": 55,
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/scoring/attack_score.py",
+      "bytes": 10057,
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/scoring/result.py",
+      "bytes": 3121,
+      "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/scoring/utility.py",
+      "bytes": 58325,
+      "sha256": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "official-kit/starter/uv.lock",
+      "bytes": 496822,
+      "sha256": "abd218d5c317eeb5c7df5b85c2163bbbc347951657fbbadbc9cc75189bd3a295",
+      "role": "official_runtime_source"
+    },
+    {
+      "path": "../rulebook/PWS_Cup2026_ルールブック_main-process-20260912.pdf",
+      "bytes": 587621,
+      "sha256": "9290c6e98b85214ca691bb90ff961196642c72d85348810f8df36741489885f2",
+      "role": "rulebook"
+    }
+  ]
+}
