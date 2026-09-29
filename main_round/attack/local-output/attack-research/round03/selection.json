@@ -1,0 +1,46 @@
+{
+  "routes": {
+    "mia": {
+      "rounded": "round01:likelihood_rule",
+      "jitter": "round01:likelihood_rule",
+      "strong_jitter": "round02:learned",
+      "bootstrap": "round01:learned_rule",
+      "copula": "round01:official",
+      "copy": "round01:likelihood_rule",
+      "independent": "round02:learned"
+    },
+    "aia": {
+      "rounded": "round01:rule_top_half",
+      "jitter": "round01:joint_1.5",
+      "strong_jitter": "round01:joint_0.5",
+      "bootstrap": "round01:joint_0.25",
+      "copula": "round02:joint_0.5",
+      "copy": "round01:rule_top_half",
+      "independent": "round01:joint_0.25"
+    }
+  },
+  "source_sha256": {
+    "attack_research/features.py": "dc9a092b1d70b253246c851e3fe7045e6cc6134c52aac1ab7c2b9cd93c11d55c",
+    "attack_research/run.py": "48d5207bf3d0759cba58648156cfadff24e0d27875ec74e535f86e83acd53b6c",
+    "attack_research/__init__.py": "19d6a23d1255f636bcdcd5a9beeb3e384012c6af1f2f08c4119ff4e220f09af1",
+    "attack_research/protocol.json": "a0544f92b1a7977302268c3301a24b4845ba0f1049f458a2e7685804b109eae1",
+    "local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84",
+    "local_eval/example_candidate.py": "ad3918ce5a82062addb4d0cdada6f0d152622e7888b4a803721cb05b2246369d",
+    "local_eval/methods.py": "9d54f07d85714f04e7a02018a1d2dc2664786241849c3c9a3ee20fe3aef2e426",
+    "local_eval/scoring.py": "42f6486ef845008859922ae3cbe063c2e8b11085b0ffdb2649d01caa364dcaed",
+    "local_eval/__init__.py": "8f487f7f7b86d01c42ba25df821c9315954576e697202cbb83e42470aef2593a",
+    "local_eval/__main__.py": "2ab7e5656e0dca72f490da09e1d6c1b22d80196688f596afd9dea3561f3ced96",
+    "attack_research/v2/features.py": "0679ba283aeda2e6559988d32319f7b03bf65e2d42f8ba940924e90b057c1210",
+    "attack_research/v2/run.py": "63d94e5aa273f66ccbe375f8f9c495616841ce9a251d3c4bf92c0b3dab7757e0",
+    "attack_research/v2/__init__.py": "2e29b2ba0761400e7e50c9b003c8ca10efac2c19fb3dfb1845dc0ca6972b3df0",
+    "attack_research/v3/fusion.py": "025443ca2a1ac58d4ae344fc6ef6b0b0ba387060fb59dcfb4830d38531091a28"
+  },
+  "router_sha256": "972bd93365e642073551164b2f8248efbb0b9d920f72462b564455a23aff75e9",
+  "models_sha256": {
+    "round01": "2fcbd3fbcaa8aef011d8fce035573a57349f4b92e7a2e2c0596e8758658bc9ce",
+    "round02": "3aa172327b1b2d20d0161ecbf1e7c02efe7da89e99e2d86e0f08e725b6ba38fd"
+  },
+  "profile_training_cases": 84,
+  "basis": "Best expert per development style; unknown test style inferred only from public C and background",
+  "confirmation_used": false
+}
