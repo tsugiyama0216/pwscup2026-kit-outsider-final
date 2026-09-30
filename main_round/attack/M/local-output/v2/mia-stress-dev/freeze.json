@@ -1,0 +1,16 @@
+{
+  "stage": "dev",
+  "fixed_strength": 1.0,
+  "mia_selection_sha256": "191b9b8684b456bdb42d69596e0c0be3f49ddc5e58178e8c6e1ad0b8e946c62d",
+  "model_dependency_sha256": {
+    "M/v2/mia.py": "014120a128bd3b6351b5af756e018055fc46ef62d5d31b436b63d205095220d2",
+    "M/v2/shadow_joint.py": "b84faf5f63cf4d016c83fe6ba215e8f891ab6a0c4b317f70696ba16c4e532bfd",
+    "M/v2/evaluate_mia.py": "b7ccb97e79854d5cba5e21a216e2d7d900faedb9eb9eeb651e713c0258d2e802",
+    "M/v2/stress_mia.py": "d9e40dbe758259c65f14f8cfb8a2967045dcc739439156e69fac5b83c4e016f4",
+    "M/v2/mia_protocol.json": "f515f6feded966f9263a14c90d3f8c421a8b6b12fcb7e9440d80152088ce6a35",
+    "M/v1/model.py": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+    "M/v1/actual.py": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393",
+    "local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84"
+  },
+  "protocol_sha256": "aac52e211ef59105477840e9e3c1954e9fca2ccc5f99db01abaed7f60e98d426"
+}

@@ -1,5 +1,7 @@
 # Main-round attack workspace
 
+- M v2 freezes the shared `attack_workspace.py`, `attack.ps1`, M v1 sources, and root `local_eval/{data,scoring}.py`. Keep their exact bytes and hash gates. The root `local_eval` package contains only the three frozen files required by M; TS retains its complete evaluator under `attack_TS/local_eval`. TS package initialization establishes its own runtime paths. Use the separate M wrapper and TS entry points. See `M/main_integration_20260930.json`.
+
 - Before running TS v88 on another PC, read `../../CODEX_HANDOFF.md` section `V88_CROSS_PC_HANDOFF`. Source main `fad8253` lacks `prelim_transfer.methods`; obtain the original adapter and its dependencies, set up the pinned runtime, then verify imports, v88 initialization and benchmark. `published_v88.check` only checks listed files and original inputs, not runnable dependency completeness.
 
 - TS's own attacks, general local evaluation code and fitted assets live in `attack_TS/`. Worker M's attacks remain in `M/`. Official downloads, targets, source manifest, pinned runtime and validation helpers in this directory are shared infrastructure. Keep new TS outputs under `attack_TS/local-output/` and M outputs under `M/local-output/`.

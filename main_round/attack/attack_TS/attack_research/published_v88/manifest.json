@@ -1,11 +1,11 @@
 {
   "version": "v88",
   "scope": "Frozen recommended attack inference code, fitted assets, and local shadow-generation entry points only. No rejected research experiments or generated cases.",
-  "source_module_count": 88,
+  "source_module_count": 89,
   "fitted_model_count": 11,
   "selection_count": 6,
   "files_sha256": {
-    "attack_TS/attack_research/__init__.py": "e3ba30cfbd7a2d390d79e8233489fd76c2775647ac776bfc422efd786c64f83e",
+    "attack_TS/attack_research/__init__.py": "cccd4222cb7cdca483998c679517bea74f4f4dccc691e0c45c4b93f6981e50fc",
     "attack_TS/attack_research/features.py": "dc9a092b1d70b253246c851e3fe7045e6cc6134c52aac1ab7c2b9cd93c11d55c",
     "attack_TS/attack_research/published_v88/__init__.py": "1cd4218141028f51c1309154fcc68ed3647792fd5854e47d3f9fe8fbf4725326",
     "attack_TS/attack_research/published_v88/benchmark.py": "3f3da8f79be4fa26d166af02f10fae865c1749bb22d5eef2e27f2ece0c7ac5ad",
@@ -83,7 +83,7 @@
     "attack_TS/attack_research/v88/predict.py": "a84c3b98859e639f6ec5df1efd966274149531b801bff495b56742f4c5d4ce91",
     "attack_TS/attack_research/v9/__init__.py": "1524776cdcd1295d7ee098b62d354031ef18bd9fe72449823c4beac890508665",
     "attack_TS/attack_research/v9/features.py": "e50bf50e3d071a637f167b91f4ecf52707e5c9f932444ccee7e668565f629fff",
-    "attack_workspace.py": "3a9554b86d5bf0df3d5ffb1df82027b3238e486d8db5d3c65bd044627149771c",
+    "attack_workspace.py": "6bf5297730cdcd754535dc2173178fdea8e54404dbce6c29c24812978e49f2a8",
     "attack_TS/evaluate.ps1": "51955ce938eeaaf68b51f4b0403202615581fed061ff06c0ff49292bfc35acc3",
     "attack_TS/generate.ps1": "3de58dcb4d98fb34432ae5bd6e64ff87f755b4af2224fae941f7d6be2d9b167e",
     "attack_TS/local-output/attack-research/round01/models.joblib": "2fcbd3fbcaa8aef011d8fce035573a57349f4b92e7a2e2c0596e8758658bc9ce",
@@ -103,20 +103,28 @@
     "attack_TS/local-output/attack-research/round80-public-qi-prior/prior.joblib": "187beb5f8e088496f95e07c9c0b29070cf3f7cb9aa289ee12108f83283d2f944",
     "attack_TS/local-output/attack-research/round82/selection.json": "2307a04d4d9eded47a93265d1238b4d07adc9d4f0a5d50bc831488c379ac266c",
     "attack_TS/local-output/attack-research/round88/selection.json": "2fd613112b8c02fb15c06bfe64fe03b2fddbe205a919e94221545f87bbfbdeb3",
-    "attack_TS/local_eval/__init__.py": "a03dd6210c14e8564245b328c71ee084dcbb0281cfb7ed08030012b73c68d348",
+    "attack_TS/local_eval/__init__.py": "a9ba2824d2e306ebbc8cbd1a38147871ae1a99b70ad04bb49b978eabcbc46f9f",
     "attack_TS/local_eval/__main__.py": "286c49a71678cd30982cba6e36797f152ae03fc7f8c8dd0d92b347386e76de87",
     "attack_TS/local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84",
     "attack_TS/local_eval/example_candidate.py": "ad3918ce5a82062addb4d0cdada6f0d152622e7888b4a803721cb05b2246369d",
     "attack_TS/local_eval/generate.py": "121dcad3fdbf550f2609878aae0b5550d45f25f2a295d631c1f7e48837143852",
     "attack_TS/local_eval/methods.py": "9d54f07d85714f04e7a02018a1d2dc2664786241849c3c9a3ee20fe3aef2e426",
     "attack_TS/local_eval/scoring.py": "42f6486ef845008859922ae3cbe063c2e8b11085b0ffdb2649d01caa364dcaed",
-    "attack_TS/attack_research/published_v88/manifest_before_attack_TS.json": "e6a17df85679f013799ea181bc4717a0dfe996abe528c97c2510893bf194b190"
+    "attack_TS/attack_research/published_v88/manifest_before_attack_TS.json": "e6a17df85679f013799ea181bc4717a0dfe996abe528c97c2510893bf194b190",
+    "attack_TS/_workspace_compat.py": "e9fcc4fc3591dcf4003f6d91f650ee4ba71ed816ee40188371c6db4b8e139b1e",
+    "attack_TS/attack_research/published_v88/manifest_before_M_v2_main.json": "c0daf990dd85f9acd580b7297e06840d111951f0befb73524db9861bdb105e76"
   },
   "layout": {
     "workspace_root": "main_round/attack",
     "owner_root": "attack_TS",
     "historical_manifest": "attack_TS/attack_research/published_v88/manifest_before_attack_TS.json",
     "historical_manifest_sha256": "e6a17df85679f013799ea181bc4717a0dfe996abe528c97c2510893bf194b190",
-    "description": "Only runtime paths and source hashes changed for the attack_TS layout. Fitted models, selections, predictions, and historical result records retain their original bytes."
+    "description": "Only runtime paths and source hashes changed for the attack_TS layout. Fitted models, selections, predictions, and historical result records retain their original bytes.",
+    "m_v2_main_compatibility": {
+      "previous_manifest": "attack_TS/attack_research/published_v88/manifest_before_M_v2_main.json",
+      "previous_manifest_sha256": "c0daf990dd85f9acd580b7297e06840d111951f0befb73524db9861bdb105e76",
+      "shared_workspace_source": "a5706e5:main_round/attack/attack_workspace.py",
+      "description": "M's frozen shared workspace is retained byte-for-byte. The TS package bootstrap supplies TS_ROOT/TS_OUTPUT and prioritizes TS's complete local_eval package. Algorithm modules, fitted models, selections and historical evaluation records are unchanged."
+    }
   }
 }

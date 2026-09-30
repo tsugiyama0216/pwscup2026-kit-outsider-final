@@ -1,0 +1,3 @@
+method,strength,primary_worlds,mean_mia,mean_all_population_tpr,mean_rare_max_uplift,paired_delta_mean,paired_delta_min,wins,ties,losses
+median_0,0.0,6,0.605343835539914,0.5590693257359924,0.04627450980392157,0.0,0.0,0,6,0
+median_1,1.0,6,0.6317216915256131,0.5951756885090219,0.03654600301659125,0.02637785598569912,-0.03349086643204291,5,0,1

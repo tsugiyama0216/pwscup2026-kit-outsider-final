@@ -1,0 +1,114 @@
+{
+  "component": "aia",
+  "selected_variant": "guarded40",
+  "protocol_sha256": "d5efd6521728811cd63a79305d5fba42c3f00d4dfa3c2836703e2bafb1cd11f1",
+  "dependencies": {
+    "M/v2/aia.py": "30f961bc7d390029ca00c09409e278b47ffae363df148286c7a90a2bab9c9f90",
+    "M/v2/evaluate_aia.py": "988b0184b790870cad8334063520be2b33af8ed1279e1bb18161114e0e0ecbaa",
+    "M/v2/test_aia.py": "6722aa29eda8c24095d71ea97f9d8370b467b8407191e540ca86586998f977a3",
+    "local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84",
+    "local_eval/scoring.py": "42f6486ef845008859922ae3cbe063c2e8b11085b0ffdb2649d01caa364dcaed",
+    "M/v1/model.py": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7"
+  },
+  "holdout_executed": false,
+  "dev_evidence": {
+    "selected": {
+      "conditions": 135.0,
+      "aia_no_phi_mean": 0.3840994201728226,
+      "paired_delta_mean": 0.09503994512945307,
+      "paired_delta_min": -0.16513761467889912,
+      "wins": 22.0,
+      "ties": 110.0,
+      "losses": 3.0,
+      "member_success_mean": 0.7922744830720292,
+      "control_success_mean": 0.6912519881845035
+    },
+    "reference": {
+      "conditions": 135.0,
+      "aia_no_phi_mean": 0.2890594750433696,
+      "paired_delta_mean": 0.0,
+      "paired_delta_min": 0.0,
+      "wins": 0.0,
+      "ties": 135.0,
+      "losses": 0.0,
+      "member_success_mean": 0.7565553283344695,
+      "control_success_mean": 0.6818450352192683
+    },
+    "preserved_region_mean_deltas": [
+      {
+        "variant": "guarded40",
+        "conditions": 45,
+        "aia_no_phi_mean": 0.5382178925459233,
+        "paired_delta_mean": 0.0,
+        "paired_delta_min": 0.0,
+        "wins": 0,
+        "ties": 45,
+        "losses": 0,
+        "member_success_mean": 0.8365371506475803,
+        "control_success_mean": 0.6916155419222905
+      },
+      {
+        "variant": "soft40",
+        "conditions": 45,
+        "aia_no_phi_mean": 0.5382178925459233,
+        "paired_delta_mean": 0.0,
+        "paired_delta_min": 0.0,
+        "wins": 0,
+        "ties": 45,
+        "losses": 0,
+        "member_success_mean": 0.8365371506475803,
+        "control_success_mean": 0.6916155419222905
+      },
+      {
+        "variant": "support20",
+        "conditions": 45,
+        "aia_no_phi_mean": 0.5382178925459233,
+        "paired_delta_mean": 0.0,
+        "paired_delta_min": 0.0,
+        "wins": 0,
+        "ties": 45,
+        "losses": 0,
+        "member_success_mean": 0.8365371506475803,
+        "control_success_mean": 0.6916155419222905
+      },
+      {
+        "variant": "support40",
+        "conditions": 45,
+        "aia_no_phi_mean": 0.5382178925459233,
+        "paired_delta_mean": 0.0,
+        "paired_delta_min": 0.0,
+        "wins": 0,
+        "ties": 45,
+        "losses": 0,
+        "member_success_mean": 0.8365371506475803,
+        "control_success_mean": 0.6916155419222905
+      },
+      {
+        "variant": "support8",
+        "conditions": 45,
+        "aia_no_phi_mean": 0.5382178925459233,
+        "paired_delta_mean": 0.0,
+        "paired_delta_min": 0.0,
+        "wins": 0,
+        "ties": 45,
+        "losses": 0,
+        "member_success_mean": 0.8365371506475803,
+        "control_success_mean": 0.6916155419222905
+      },
+      {
+        "variant": "v1_reference",
+        "conditions": 45,
+        "aia_no_phi_mean": 0.5382178925459233,
+        "paired_delta_mean": 0.0,
+        "paired_delta_min": 0.0,
+        "wins": 0,
+        "ties": 45,
+        "losses": 0,
+        "member_success_mean": 0.8365371506475803,
+        "control_success_mean": 0.6916155419222905
+      }
+    ]
+  },
+  "selection_rule": "Among candidates with preserve-primary mean delta >= -0.005, maximize equal-weight primary dev AIA before phi; tie by variant order. Require >1e-6 gain over reference, otherwise keep reference.",
+  "dev_output": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\M\\local-output\\v2\\aia-dev"
+}

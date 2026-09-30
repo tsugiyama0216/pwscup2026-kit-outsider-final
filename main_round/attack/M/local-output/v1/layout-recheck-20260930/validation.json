@@ -1,0 +1,326 @@
+{
+  "created_utc": "2026-09-30T04:45:39.375654+00:00",
+  "selected_variant": "full_reference_aia",
+  "selection": {
+    "selected_variant": "full_reference_aia",
+    "model_sha256": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+    "development_summary_sha256": "5558e7e316d6c72ebcf0fbf02433f6783f3b713f9df493f1a84c39e0f65a0ce3",
+    "selected_before_final_check": true,
+    "development_primary_conditions": 15,
+    "development_mia": 0.5897435897435898,
+    "development_aia_no_phi": 0.5613500308290836,
+    "development_combined_no_phi": 1.1510936205726734,
+    "official_development_combined_no_phi": 0.8151961846752374,
+    "development_wins_ties_losses": [
+      10,
+      5,
+      0
+    ],
+    "selection_rule": "Maximum mean combined_no_phi on all 15 development primary conditions, after the documented additional MIA/AIA combination",
+    "development_revision": "development_revision.json",
+    "model_default_change_only_after_development": true,
+    "final_check_inspected_at_selection": false,
+    "official_submission": false
+  },
+  "input_verification": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "dependency_versions": {
+    "autograd": "1.9.0",
+    "autograd-gamma": "0.5.0",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "formulaic": "1.2.2",
+    "interface-meta": "2.0.1",
+    "joblib": "1.5.3",
+    "kiwisolver": "1.5.0",
+    "lifelines": "0.30.3",
+    "matplotlib": "3.11.0",
+    "narwhals": "2.23.0",
+    "numpy": "2.4.6",
+    "packaging": "26.2",
+    "pandas": "2.3.3",
+    "patsy": "1.0.2",
+    "pillow": "12.3.0",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.2",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "six": "1.17.0",
+    "statsmodels": "0.14.6",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.15.0",
+    "tzdata": "2026.2",
+    "wrapt": "2.2.2"
+  },
+  "private_inference": {
+    "exact_private_rows": 163,
+    "remaining_unknown_rows": 886,
+    "private_true_rare": 13,
+    "private_onset": 16,
+    "private_rare_onset": 4,
+    "private_death": 12,
+    "comparison": "Exact decimal public-QI equality; unique matches; no tolerance",
+    "deduction": "All 163 self members are private by the contest definition; exactly 163 unique B matches exhaust them.",
+    "limitations": "Other 886 rows remain unknown. This selected negative set does not estimate population FPR."
+  },
+  "official_format_validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "csv_roundtrip_exact": true,
+  "two_complete_runs_byte_identical": true,
+  "known_private_scores_zero_for_all_22": true,
+  "unknown_rank_and_ties_preserved_for_all_22": true,
+  "per_target": [
+    {
+      "target": 0,
+      "known_private_in_top11_including_ties_before": 0,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.3822097697100025,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 1,
+      "known_private_in_top11_including_ties_before": 0,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.00986675674004893,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 2,
+      "known_private_in_top11_including_ties_before": 1,
+      "known_private_at_rare_max_before": 0,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.3187573005269171,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 3,
+      "known_private_in_top11_including_ties_before": 2,
+      "known_private_at_rare_max_before": 0,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 1.4401095140314852,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 4,
+      "known_private_in_top11_including_ties_before": 4,
+      "known_private_at_rare_max_before": 0,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.07260049290930545,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 5,
+      "known_private_in_top11_including_ties_before": 2,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.1040383299110198,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 6,
+      "known_private_in_top11_including_ties_before": 2,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 2.288889242389686,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 7,
+      "known_private_in_top11_including_ties_before": 1,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.9662331699667516,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 8,
+      "known_private_in_top11_including_ties_before": 0,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 1.106091718001369,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 9,
+      "known_private_in_top11_including_ties_before": 0,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.015503974575619528,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 11,
+      "known_private_in_top11_including_ties_before": 3,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.5993456840282534,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 12,
+      "known_private_in_top11_including_ties_before": 4,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.4156238707916639,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 13,
+      "known_private_in_top11_including_ties_before": 2,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.4724047057669979,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 14,
+      "known_private_in_top11_including_ties_before": 0,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.378504,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 15,
+      "known_private_in_top11_including_ties_before": 4,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.17765945266866565,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 16,
+      "known_private_in_top11_including_ties_before": 2,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.7800042292603954,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 17,
+      "known_private_in_top11_including_ties_before": 2,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.400647535,
+      "aia_time_max": 9.998631075
+    },
+    {
+      "target": 22,
+      "known_private_in_top11_including_ties_before": 2,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.08128751579369203,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 25,
+      "known_private_in_top11_including_ties_before": 0,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.0027378507871321,
+      "aia_time_max": 9.998631074606434
+    },
+    {
+      "target": 26,
+      "known_private_in_top11_including_ties_before": 1,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.0568360976873704,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 27,
+      "known_private_in_top11_including_ties_before": 2,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.3417136773839206,
+      "aia_time_max": 10.0
+    },
+    {
+      "target": 28,
+      "known_private_in_top11_including_ties_before": 2,
+      "known_private_at_rare_max_before": 1,
+      "known_private_nonzero_after": 0,
+      "unique_mia_scores": 887,
+      "aia_time_min": 0.6196045745943795,
+      "aia_time_max": 10.0
+    }
+  ],
+  "c3_sensitivity_only": [
+    {
+      "variant": "without_last_row",
+      "rows_removed": 1,
+      "max_mia_change": 0.28693994280238233,
+      "top11_membership_changed_including_ties": 0,
+      "aia_predictions_changed": 0,
+      "aia_changes_greater_than_half_year": 0
+    },
+    {
+      "variant": "without_exact_background_rows",
+      "rows_removed": 40,
+      "max_mia_change": 0.5462345090556978,
+      "top11_membership_changed_including_ties": 0,
+      "aia_predictions_changed": 1,
+      "aia_changes_greater_than_half_year": 1
+    },
+    {
+      "variant": "without_both",
+      "rows_removed": 41,
+      "max_mia_change": 0.5452812202091782,
+      "top11_membership_changed_including_ties": 0,
+      "aia_predictions_changed": 1,
+      "aia_changes_greater_than_half_year": 1
+    }
+  ],
+  "c3_decision": "Retain all original rows. Sensitivity has no truth labels and does not establish a benefit of removal.",
+  "output_sha256": {
+    "F_mia.csv": "ca1605c5a1cf18d98e16813d309bbbba0d77048bb7a3a85e1db5812f1df19872",
+    "F_aia.csv": "ffde1f9dece680b1830273ac7b7d9068abcff5e648db528576a08cc15a2f52e9"
+  },
+  "v1_source_sha256": {
+    "__init__.py": "f482a21e9bc27348e859bdfde915fcdd194cede257fe1a798f566e15a355cac5",
+    "actual.py": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393",
+    "diagnose.py": "4c4fc47d7b564b1592529e138f118ee61268172f03d6dbd12245be4d8d5a11d5",
+    "evaluate.py": "8e42173a037e301f7032cdc1f30824ce936439440fa99376d1295df47d9906c9",
+    "model.py": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+    "run.py": "cc32c78b2d9e140babc5871cbfe62bb372c7409818a04b6d13518255eb40f6d2",
+    "test_v1.py": "1c0836e4a090ad07db534b6b1ffcdab63b00fa36743db347325e9553480cd75e"
+  },
+  "official_score_measured": false,
+  "official_submission_performed": false,
+  "submission_zip_created": false,
+  "github_push_performed": false
+}

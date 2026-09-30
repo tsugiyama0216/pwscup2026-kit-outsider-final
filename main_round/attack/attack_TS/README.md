@@ -38,3 +38,9 @@ Set-Location main_round/attack/attack_TS
 既存のモデル・選択記録・Mの予測CSV・配布原本は内容を保持しています。実行時の参照先だけを新配置へ合わせ、移動前のv88マニフェストは `attack_research/published_v88/manifest_before_attack_TS.json` に残しました。過去の生成・検証JSON内のパスは作成当時の記録として保持し、現在の配置は `layout_migration.json` を参照します。今回の整理でモデルの再学習や予測の再生成はしていません。
 
 このPCでの整理時には、原本94件・v88構成106件の照合、学習済みモデル11ファイルの読み込み、Mの既存テスト11件とTSの生成器テスト2件を確認しました。本戦専用環境は未構築です。また、取得時点のリポジトリにはv88が必要とする `prelim_transfer.methods` が元から含まれておらず、v88全体の起動にはこの依存コードの復元も必要です。今回のフォルダー移動で生じた欠落ではありません。
+
+## Mのv2との共有環境の互換性
+
+Mのv2をmainへ統合する際、Mが固定した共有コードと評価用2ファイルを元のバイトで保持しました。TSの実行入口は従来どおりこのフォルダーで使います。`_workspace_compat.py` がTS側のパッケージを優先し、共有環境にTS用の保存先を設定するため、TSの攻撃実装・学習済みモデルを変更する必要はありません。
+
+統合前のv88マニフェストは `attack_research/published_v88/manifest_before_M_v2_main.json` に保存し、有効な `manifest.json` には互換処理と共有コードの正確なハッシュを記録しています。過去の `layout_migration.json` と生成・検証記録は当時の履歴として保持します。これは配置の互換対応であり、欠落した `prelim_transfer.methods` を復元するものではありません。
