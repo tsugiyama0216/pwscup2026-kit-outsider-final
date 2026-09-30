@@ -22,9 +22,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 TS_ROOT = ROOT / "attack_TS"
 TS_OUTPUT = TS_ROOT / "local-output"
+MOCK_ROOT = ROOT.parent / "mock_test"
+MOCK_OUTPUT = MOCK_ROOT / "local-output"
 # Keep the original package names for frozen joblib models and M's evaluator.
 if str(TS_ROOT) not in sys.path:
     sys.path.insert(0, str(TS_ROOT))
+if str(MOCK_ROOT) not in sys.path:
+    sys.path.insert(0, str(MOCK_ROOT))
 KIT = ROOT / "official-kit" / "starter"
 PACKAGE = KIT / "src" / "pwscup2026"
 TARGETS = ROOT / "targets"

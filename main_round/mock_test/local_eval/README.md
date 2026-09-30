@@ -1,30 +1,56 @@
-# TS作成の本戦攻撃ローカル評価器
+# 本戦の共通模擬問題生成・評価器
 
 **攻撃アルゴリズムを、正解が分かる模擬問題に適用して比較する道具です。** 公式と同じ採点関数を使います。本戦22標的の予測CSVから公式点を推定するものではありません。
 
-TS本人の作業として `attack_TS/` に保存しています。Mの独立攻撃も、この一般的な模擬問題生成・採点コードを再利用します。
+2026-09-30に攻撃実装から分離し、`main_round/mock_test/` に置きました。M・TSのどちらの攻撃も、共通の公開入力APIで同じ問題に適用できます。Pythonパッケージ名は互換性のため `local_eval` を維持します。短い開始手順は [共通ツールの入口](../README.md) を参照してください。
 
 ## 別PCで模擬問題を生成する
 
-この非公開リポジトリには元になるteam10の`A_bg.csv`・`B.csv`・`schema.json`と固定版公式キットがあります。別PCでcloneした後、Windows PowerShellで`main_round/attack/attack_TS/`へ移動します。
+この非公開リポジトリには元になるteam10の`A_bg.csv`・`B.csv`・`schema.json`と固定版公式キットがあります。別PCでcloneした後、Windows PowerShellで`main_round/mock_test/`へ移動します。
 
 ```powershell
-..\setup.ps1
-.\generate.ps1 -Split dev -Seed 20260927
-# 必要なら1方式だけ： .\generate.ps1 -Split holdout -Seed 971001 -Style bootstrap
+..\attack\setup.ps1
+.\generate.ps1 -Split dev -Seed 20260927 -Count 3
+# 6抽出に増やす例： .\generate.ps1 -Split dev -Seed 20260927 -Count 6
+# 単一問題・1方式だけ： .\generate.ps1 -Split holdout -Seed 971001 -Count 1 -Style bootstrap
 ```
 
-既定では同じ模擬人物集合から7加工方式を生成し、`local-output/shadow-cases/dev-20260927/`に保存します。`public/`には加工C、背景、MIA候補、AIA質問、schemaだけを置き、`private/`には採点用の所属・時刻正解を分けます。元の人物行IDは出力しません。`manifest.json`に入力・生成コード・出力のSHA-256と抽出条件を記録します。既存の非空出力先は上書きしません。出力先はGit管理から除外されるため、模擬問題の実データを新たにGitHubへ載せません。
+既定の `-Count 3` では開始seedから3回抽出し、各抽出から7加工方式を生成します。上の例は `local-output/shadow-cases/dev-20260927-n3/` に `suite.json` と抽出ごとのフォルダーを保存します。`-Count 1` の単一問題は `dev-20260927/` のように保存します。各問題の `public/` には加工C、背景、MIA候補、AIA質問、schemaだけを置き、`private/` には採点用の所属・時刻正解を分けます。元の人物行IDは出力しません。`manifest.json` に入力・生成コード・出力のSHA-256と抽出条件を記録します。既存の非空出力先は上書きしません。出力先はGit管理から除外されるため、模擬問題の実データを新たにGitHubへ載せません。
 
-同じseed・分割・方式と同じ入力ファイルなら同じ模擬問題を再生成できます。`private/`を攻撃の`predict()`へ渡してはいけません。[第88候補の再現手順](../attack_research/published_v88/README.md)には固定25条件の採点確認もあります。
+連続3seedで希少共有0・1・2人を各1回、6seedなら各2回含めます。手法を比較するときは同じ保存スイートを使用し、平均だけでなく問題別・方式別の成績と公式参照との勝敗を確認します。同じ問題の再採点では抽出の幅は増えません。
 
-2026-09-27に初版を作成しました。コードは本フォルダー、実験出力は `../local-output/local-eval-v1/` に分けています。固定版公式キット・配布原本・提出済みデータは変更しません。
+同じseed・分割・方式と同じ入力ファイルなら同じ模擬問題を再生成できます。`private/`を攻撃の`predict()`へ渡してはいけません。[第88候補の再現手順](../../attack/attack_TS/attack_research/published_v88/README.md)には固定25条件の採点確認もあります。
 
-このPCでの初回結果は [比較レポート](../local-output/local-eval-v1/dev-final-20260927/REPORT.md)、確認記録は [verification.json](../local-output/local-eval-v1/dev-final-20260927/verification.json) です。これらの実験出力はローカル管理です。
+初版は2026-09-27に作成しました。現在のコードは本フォルダー、新しい共通ツールの出力は `main_round/mock_test/local-output/` に置きます。固定版公式キット・配布原本・提出済みデータは変更しません。
+
+初回結果の保存先は `main_round/attack/attack_TS/local-output/local-eval-v1/dev-final-20260927/` でした。過去のTS/Mのモデル・予測・評価記録はそのまま保持し、この共通フォルダーへ移しません。これらのローカル実験出力は取得したPCにない場合があります。
 
 ## 実行
 
-本戦の `main_round/attack/attack_TS/` で実行します。
+本戦の `main_round/mock_test/` で実行します。保存した問題を指定すると、同じ公開入力と正解を使って手法を比較できます。
+
+```powershell
+# 先にgenerate.ps1で保存した問題へMのv1を適用
+.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927-n3 -Plugin ..\attack\M\v1\model.py
+
+# 複数の保存先も指定可能（各問題を先に-Count 1で生成しておく）
+.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927,.\local-output\shadow-cases\dev-20260928,.\local-output\shadow-cases\dev-20260929 -Plugin ..\attack\M\v1\model.py
+```
+
+Mのv1の既定は採用済み `full_reference_aia` です。攻撃関数へ渡すのは公開入力だけで、採点用の `private/` は評価器が読みます。本番だけの自己163人マスクはこのAPIには含みません。
+
+`-CaseDirectory` を使うと、保存されたsplit・加工方式で公式参照とプラグインを比較します。`-Split`・`-Methods` は併用しません。`-Plugin` もカンマ区切りで複数指定できるため、同じ実行で複数手法を比較できます。
+
+devで候補と設定を決めた後、固定した候補の確認には別の保存スイートを使います。
+
+```powershell
+.\generate.ps1 -Split holdout -Seed 20261001 -Count 3
+.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\holdout-20261001-n3 -Plugin ..\attack\M\v1\model.py
+```
+
+holdoutの結果を見て候補を変更した場合、その結果は以後の開発履歴として扱います。この人物分割は既に使用されているため、新しい抽出を増やしても完全に独立した人物検証にはなりません。
+
+`-CaseDirectory` を省略すると、従来どおり指定splitの既定3抽出をその場で生成します。
 
 ```powershell
 # 調整用データで、公式参照・多視点・定数・背景だけの4手法を比較
@@ -37,7 +63,9 @@ TS本人の作業として `attack_TS/` に保存しています。Mの独立攻
 .\evaluate.ps1 -Split holdout -Plugin .\local_eval\example_candidate.py
 ```
 
-`-Output` で保存先を指定できます。保存先は `main_round/attack/attack_TS/local-output/` 内の空フォルダーに限り、以前の結果を上書きしません。`-NullRepetitions` は既定100。0でラベル入替診断を省略できます。処理は専用Python・CPU1スレッドで実行します。
+`-Output` で保存先を指定できます。保存先は `main_round/mock_test/local-output/` 内の空フォルダーに限り、以前の結果を上書きしません。`-NullRepetitions` は既定100。0でラベル入替診断を省略できます。処理は `main_round/attack/.venv/` の専用Python・CPU1スレッドで実行します。
+
+既定7方式を含む保存問題1件なら主平均は1抽出×5方式の5条件、3抽出スイートなら15条件、6抽出なら30条件です。`-CaseDirectory` なしの自動生成評価は3抽出×5方式の15条件、v88の固定再現検査は5抽出×5方式の25条件です。抽出seedや方式が異なる結果をそのまま比較せず、同じ保存問題に各手法を適用してください。
 
 初版作成時は最終確認用の構造・人数・分割だけを検査しました。その後、予備選手法の本戦移植でAIAを採点済みです。現在この人物分割を未使用の検証データとは呼べません。新しい研究でも、人物分割と抽出seedの使用履歴を区別して記録します。
 
@@ -46,10 +74,11 @@ TS本人の作業として `attack_TS/` に保存しています。Mの独立攻
 | 出力 | 用途 |
 |---|---|
 | `REPORT.md` | 点数・加工方式ごとの差・限界を読む |
-| `summary.csv` | 調整対象5方式×3抽出の平均、最小最大、公式参照との同条件の差 |
+| `summary.csv` | 評価した主対象方式の平均、最小最大、公式参照との同条件の差。既定自動生成では5方式×3抽出 |
 | `results.csv` | seed・加工方式・手法ごとのMIA/AIA、全体/希少、偶然の水準 |
 | `paired_comparison.csv` | 同一seed・方式での公式参照との差 |
 | `by_style.csv` | 加工方式別の平均 |
+| `by_case.csv` | 保存問題ごとの成績。特定の抽出に結果が偏っていないか確認 |
 | `run.json` | 入力・実行コード・候補コードのハッシュ、固定条件、分割、所要時間 |
 
 主指標は **MIA＋AIAのφ控除前代理値**（0〜2、高いほど攻撃が強い）です。
@@ -89,7 +118,7 @@ TS本人の作業として `attack_TS/` に保存しています。Mの独立攻
 
 ## 新しい攻撃候補の追加
 
-2026-09-27更新：[予備選手法の本戦移植](../prelim_transfer/README.md)で、dev選択後にAIAのholdoutを採点済み。structured 0.636465、公式参照0.555723。以後この分割を未使用の検証用と扱わない。MIA v4の同時最適化は本APIの評価対象外。
+2026-09-27の履歴：予備選手法の本戦移植で、dev選択後にAIAのholdoutを採点済み。structured 0.636465、公式参照0.555723。以後この分割を未使用の検証用と扱わない。当時の `prelim_transfer` は現在の取得コードに未収録で、これらは保存された履歴値です。MIA v4の同時最適化は本APIの評価対象外。
 
 [example_candidate.py](example_candidate.py) を別名でコピーし、次の関数を実装します。
 
@@ -118,7 +147,7 @@ def predict(*, c, background, candidates, challenge, cfg):
 ## 検証
 
 ```powershell
-..\.venv\Scripts\python.exe -m unittest local_eval.tests.test_local_eval local_eval.tests.test_generate -v
+..\attack\.venv\Scripts\python.exe -m unittest local_eval.tests.test_local_eval local_eval.tests.test_generate local_eval.tests.test_evaluate_case -v
 ```
 
 分割非交差、AIAの厳密対応と人数、MIA希少構成、予測APIへの正解混入防止、入力変更の隔離、不正出力拒否、定数MIA=0.01、完全予測の点数方向、独立生成の標的不使用、コピー漏洩、コピュラ生成、入替診断の再現性を検証します。公式キットのファイルは変更せず、その関数を直接呼びます。

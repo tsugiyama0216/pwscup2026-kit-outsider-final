@@ -13,7 +13,10 @@ MANIFEST = Path(__file__).with_name('manifest.json')
 
 def verify_package() -> dict:
     payload = json.loads(MANIFEST.read_text(encoding='utf-8'))
-    root = workspace.ROOT.resolve()
+    base = payload.get('path_base', 'main_round/attack')
+    if base not in ('main_round/attack', 'main_round'):
+        raise ValueError(f'Unsupported published manifest base: {base}')
+    root = (workspace.ROOT.parent if base == 'main_round' else workspace.ROOT).resolve()
     for relative, expected in payload['files_sha256'].items():
         path = (root / relative).resolve()
         if not path.is_relative_to(root) or not path.is_file():

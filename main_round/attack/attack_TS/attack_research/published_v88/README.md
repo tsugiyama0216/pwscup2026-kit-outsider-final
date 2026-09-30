@@ -16,12 +16,14 @@
 
 `check`は同梱コード・学習済みモデルと配布原本94件を照合します。`benchmark`は固定した5抽出×5加工方式を新たに生成し、MIA平均**0.730769**、AIA平均**0.847384**、両方1.0が**8/25条件**になることを確認します。AIAは未知の公式補正φを引かないローカル代理スコアであり、本戦の公式得点ではありません。
 
-自分で別の模擬条件を比較する場合は、公開入力だけを受け取る`plugin.py`を評価器に渡せます。
+不足依存の復旧後、別の模擬条件を比較する場合は、公開入力だけを受け取る`plugin.py`を共通評価器に渡せます。作業場所は引き続き `main_round/attack/attack_TS/` です。
 
 ```powershell
-.\evaluate.ps1 -Split dev -Plugin .\attack_research\published_v88\plugin.py -NullRepetitions 0
+..\..\mock_test\evaluate.ps1 -Split dev -Plugin .\attack_research\published_v88\plugin.py -NullRepetitions 0
 ```
 
-このコマンドの既定3抽出は上記の固定25条件とは異なります。模擬問題の生成と公開/正解ファイルの分離は[評価器の説明](../../local_eval/README.md)を参照してください。本戦22対象の回答CSVを生成・提出するコマンドではありません。
+このコマンドの既定3抽出・主15条件は上記の固定25条件とは異なります。単一抽出の主5条件や別seedの結果とも直接比較しません。共通ツールの `-CaseDirectory` で同じ保存スイートを指定すると、他の攻撃と同条件で比較できます。生成・保存・採点は [共通模擬テスト](../../../../mock_test/README.md)、公開/正解ファイルの分離とAPIは [評価器の詳細](../../../../mock_test/local_eval/README.md) を参照してください。本戦22対象の回答CSVを生成・提出するコマンドではありません。
 
 2026-09-30にTS本人の攻撃として `attack_TS/` へ移動しました。学習済みモデル・選択JSONは同じバイトを保持し、実行時のパスだけを更新しています。移動前の固定マニフェストは [manifest_before_attack_TS.json](manifest_before_attack_TS.json)、移動後のコードと配置の検査は [manifest.json](manifest.json)、移動前後の照合は [layout_migration.json](../../layout_migration.json) を参照します。
+
+同日の追加整理で `local_eval/` と生成・評価スクリプトを `main_round/mock_test/` へ分離しました。分離前のマニフェストは [manifest_before_mock_test.json](manifest_before_mock_test.json) に保持し、現在の `manifest.json` は共通ツールの新しい配置を参照します。既存モデル・選択JSON・過去の検証記録の内容は維持します。

@@ -14,8 +14,8 @@ OUTPUT = workspace.TS_OUTPUT / "attack-research" / "round01"
 
 def sources():
     paths = list(ROOT.glob("*.py")) + [ROOT / "protocol.json"]
-    paths += list((workspace.TS_ROOT / "local_eval").glob("*.py"))
-    return {str(p.relative_to(workspace.TS_ROOT)).replace("\\", "/"): workspace.sha256(p) for p in paths}
+    paths += list((workspace.MOCK_ROOT / "local_eval").glob("*.py"))
+    return {p.relative_to(workspace.ROOT.parent).as_posix(): workspace.sha256(p) for p in paths}
 
 
 def read_data(pd):

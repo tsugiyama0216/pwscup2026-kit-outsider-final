@@ -2,6 +2,15 @@
 
 このフォルダーは、作業者 **M（ユーザー本人）** が作成した本戦攻撃をまとめる場所です。`M` は作業者、`v1` はその作業者の第1版を表します。名称は **Mのv1** です。
 
+複数の模擬問題で手法を比較する入口は [../../mock_test/](../../mock_test/README.md) です。共通ツールから `M/v1/model.py` をプラグインとして読み込み、既定の採用方式 `full_reference_aia` を同じ保存問題に適用できます。`main_round/mock_test/` での例：
+
+```powershell
+.\generate.ps1 -Split dev -Seed 20260927 -Count 3
+.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927-n3 -Plugin ..\attack\M\v1\model.py
+```
+
+この共通ツールの新しい問題・比較結果は `main_round/mock_test/local-output/` に保存します。以下の `M/local-output/v1/` は保存済みの本番予測・診断・評価記録で、内容を保持します。既存の `M-v1-evaluate` はMの固定条件を再実行する専用手順として残します。共通評価では自己163人マスクの実戦用処理を含まず、異なる抽出seedの得点を過去の評価と直接比較しません。
+
 ```text
 main_round/attack/M/
 ├── README.md

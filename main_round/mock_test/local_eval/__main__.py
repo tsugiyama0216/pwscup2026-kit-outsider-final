@@ -153,10 +153,10 @@ def main(argv=None):
             parser.error(f"{path.name} must export predict")
         selected[name] = mod.predict
         plugins[name] = {"path": str(path), "sha256": workspace.sha256(path)}
-    out = (args.output or workspace.TS_OUTPUT / "local-eval-v1" /
+    out = (args.output or workspace.MOCK_OUTPUT / "evaluations" /
            (args.split + "-" + datetime.now().strftime("%Y%m%dT%H%M%S"))).resolve()
-    if not out.is_relative_to(workspace.TS_OUTPUT.resolve()):
-        parser.error("output must be inside main_round/attack/attack_TS/local-output")
+    if not out.is_relative_to(workspace.MOCK_OUTPUT.resolve()):
+        parser.error("output must be inside main_round/mock_test/local-output")
     if out.exists() and any(out.iterdir()):
         parser.error("output directory must be empty; keep previous evaluations")
     out.mkdir(parents=True, exist_ok=True)
@@ -207,7 +207,9 @@ def main(argv=None):
         "evaluator_sha256": {p.name: workspace.sha256(p) for p in sorted(module_dir.glob("*.py"))},
         "dependency_versions": versions, "compute_threads": 1, "output": str(out),
         "elapsed_seconds": perf_counter() - start, "official_submission": False,
-        "holdout_scored_in_this_run": args.split == "holdout"}
+        "holdout_scored_in_this_run": args.split == "holdout",
+        "person_partition_previously_used": True,
+        "fresh_sampling_is_independent_person_holdout": False}
     save(out / "run.json", metadata)
     write_report(out, summary, frame, metadata)
     print(f"Local proxy evaluation complete: {out / 'REPORT.md'}", flush=True)

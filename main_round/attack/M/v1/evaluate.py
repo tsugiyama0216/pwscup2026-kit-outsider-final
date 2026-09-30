@@ -76,14 +76,14 @@ def dependency_hashes():
     """Freeze v1 sources/settings and the general evaluator's direct dependencies."""
     paths = {
         workspace.ROOT / "attack_workspace.py",
-        workspace.TS_ROOT / "local_eval" / "data.py",
-        workspace.TS_ROOT / "local_eval" / "scoring.py",
+        workspace.MOCK_ROOT / "local_eval" / "data.py",
+        workspace.MOCK_ROOT / "local_eval" / "scoring.py",
         workspace.ROOT / "source_manifest.json",
     }
     suffixes = {".py", ".json", ".yaml", ".yml", ".toml"}
     paths.update(p for p in HERE.rglob("*")
                  if p.is_file() and p.suffix in suffixes and "__pycache__" not in p.parts)
-    return {p.relative_to(workspace.ROOT).as_posix(): workspace.sha256(p)
+    return {p.relative_to(workspace.ROOT.parent).as_posix(): workspace.sha256(p)
             for p in sorted(paths)}
 
 
