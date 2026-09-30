@@ -1,0 +1,23 @@
+{
+  "completed_utc": "2026-09-30T05:39:49.638309+00:00",
+  "selection_sha256": "37acc76547e6533fd903a88dd112b0a2d4806f5c5232893701b107e3bc08f9ef",
+  "dependency_files_verified": 31,
+  "source_checks": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "v1_preservation": {
+    "verified_files": 65,
+    "all_bytes_unchanged": true
+  },
+  "prediction_sha256": {
+    "F_mia.csv": "590c64201806312c1611be9bb276a24b74ba1fce292acac81355f8b6768cf7c6",
+    "F_aia.csv": "a37f32567cce12a818fe7b5a5a5be1820b327e51391ac20e0443bea3996ec577"
+  },
+  "local_readme_links_verified": 24,
+  "final_check_sha256": "85fea083c8e2a53294cc6b0d6101195ec7b854304eb21590881aa7cdadbb67d5",
+  "prediction_validation_sha256": "34a7a7ba519e7488df89e202dd9b53bf6814a686e00606439708288cc101a1d2",
+  "official_submission_performed": false,
+  "github_push_performed": false
+}

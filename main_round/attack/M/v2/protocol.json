@@ -1,0 +1,46 @@
+{
+  "version": "M/v2",
+  "created_date": "2026-09-30",
+  "purpose": "Develop a second local attack using the rule and target diagnosis, preserve v1, and generate validated predictions for all 22 opponents.",
+  "baseline": "M/v1: full_reference_aia, with the same independently established private-negative mask",
+  "aia_hypothesis": "Very small sex/prefecture blocks can make the reference lookup unusable. A data-dependent fallback can help, but must also be tested when prefecture retains useful correspondence.",
+  "mia_hypothesis": "Cross-target median subtraction may remove candidate-specific background difficulty without forcing a target assignment. Improvement is judged on low-FPR ground-truth scores, not reduced overlap alone.",
+  "components_selected_separately": true,
+  "additional_development_check": {
+    "reason": "Initial joint worlds reuse noncandidate source donors across targets much more than the contest allocation, potentially favoring cross-target centering.",
+    "comparison": "Keep the development-selected MIA strength and baseline fixed, and compare them in additional development worlds with independently synthesized noncandidate fillers.",
+    "label": "Development robustness stress check; not an untouched final holdout",
+    "limits": "Zero shared synthetic fillers and heavily reused source fillers bracket two different approximations; neither reconstructs every true pairwise block."
+  },
+  "component_protocols": ["aia_protocol.json", "mia_protocol.json"],
+  "selection_order": [
+    "Specify component candidates, development and check seeds before scoring",
+    "Run development only, retain every candidate result",
+    "Audit model and evaluation, run meaningful invariance and reference tests",
+    "Freeze both selected components, shared dependencies and settings",
+    "Run selected methods and fixed v1 baselines on the final-check draws",
+    "Record results without post-check parameter tuning",
+    "Generate every real prediction twice and validate exact IDs and bytes"
+  ],
+  "inference_inputs": "Only contest C, public background, own candidates, public challenge QI and public settings. Exact self-challenge deductions are isolated in M/v1/actual.py.",
+  "not_used_for_prediction": ["shadow membership truth", "shadow time truth", "shadow rare labels", "sampling seed", "target number as a feature", "other worker v88"],
+  "constraints": [
+    "Keep all distributed C rows including suspected imputation and background-donor rows",
+    "Do not force exactly 25-27 positives or assign every person to an opponent",
+    "Do not force all unknown rare candidates to belong to participating opponents",
+    "Do not assume cross-team challenge county/sex composition is equal",
+    "Do not enforce unverified age-bin half-membership constraints"
+  ],
+  "evaluation_limits": [
+    "Public-background people are used as shadow source and own B as shadow background, reversing the real roles",
+    "Previously used person partitions remain previously used despite fresh sampling seeds",
+    "Generated anonymization styles and their mixture are not known real opponent methods",
+    "AIA phi is unknown and is not borrowed from team10",
+    "MIA attack-success scores are not the multi-attacker anonymity aggregation",
+    "MIA and AIA component experiments are reported separately, not added as a forecast of official total score"
+  ],
+  "v1_preservation_record": "../local-output/v2/v1_preservation.json",
+  "official_submission": false,
+  "submission_zip_creation": false,
+  "github_upload": false
+}

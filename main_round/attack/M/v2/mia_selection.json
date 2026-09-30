@@ -1,0 +1,36 @@
+{
+  "adjustment": "subtract_candidate_cross_target_median",
+  "strength": 1.0,
+  "selected_method": "median_1",
+  "selection_stage": "dev",
+  "selected_before_holdout": true,
+  "holdout_inspected": false,
+  "model_sha256": "014120a128bd3b6351b5af756e018055fc46ef62d5d31b436b63d205095220d2",
+  "base_model_sha256": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+  "frozen_hashes": {
+    "mia.py": "014120a128bd3b6351b5af756e018055fc46ef62d5d31b436b63d205095220d2",
+    "shadow_joint.py": "b84faf5f63cf4d016c83fe6ba215e8f891ab6a0c4b317f70696ba16c4e532bfd",
+    "evaluate_mia.py": "b7ccb97e79854d5cba5e21a216e2d7d900faedb9eb9eeb651e713c0258d2e802",
+    "mia_protocol.json": "f515f6feded966f9263a14c90d3f8c421a8b6b12fcb7e9440d80152088ce6a35",
+    "base_model.py": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+    "base_actual.py": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393",
+    "generic_data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84"
+  },
+  "selection_rule": "Highest mean of per-world primary-target official MIA scores; ties within 1e-12 choose smaller strength. Worlds receive equal weight.",
+  "development_summary": {
+    "method": "median_1",
+    "strength": 1.0,
+    "private_mask_applied": true,
+    "worlds": 18,
+    "mean_mia": 0.7901527424403242,
+    "mean_all_population_tpr": 0.7702558093080969,
+    "mean_rare_max_uplift": 0.01989693313222725,
+    "paired_delta_mean": 0.03650125352739728,
+    "paired_delta_min": -0.006063348416289527,
+    "wins": 16,
+    "ties": 0,
+    "losses": 2
+  },
+  "development_results_sha256": "011666682a3daeb8b01e46b2d41e234ce34eaa51857f45053453d9ceed94213b",
+  "official_submission": false
+}

@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Position = 0)]
-    [ValidateSet('check', 'baseline', 'validate', 'M-v1-diagnose', 'M-v1-evaluate', 'M-v1-predict', 'M-v1-test', 'v1-diagnose', 'v1-evaluate', 'v1-predict', 'v1-test')]
+    [ValidateSet('check', 'baseline', 'validate', 'M-v1-diagnose', 'M-v1-evaluate', 'M-v1-predict', 'M-v1-test', 'v1-diagnose', 'v1-evaluate', 'v1-predict', 'v1-test', 'M-v2-aia-evaluate', 'M-v2-mia-evaluate', 'M-v2-predict', 'M-v2-test', 'M-v2-freeze', 'M-v2-complete')]
     [string]$Action = 'check',
     [Parameter(Position = 1)]
     [string]$SubmissionZip,
@@ -43,6 +43,21 @@ try {
         $attackArgs = @('-B', (Join-Path $PSScriptRoot "M/v1/$scriptName"))
         if ($versionAction -eq 'v1-evaluate') { $attackArgs += @('--stage', $Stage, '--selected', $Selected) }
         if ($OutputDirectory) { $attackArgs += @('--output', $OutputDirectory) }
+    }
+    if ($Action -like 'M-v2-*') {
+        foreach ($threadKey in $oldThreads.Keys) { [Environment]::SetEnvironmentVariable($threadKey, '1', 'Process') }
+        $scriptName = switch ($Action) {
+            'M-v2-aia-evaluate' { 'evaluate_aia.py' }
+            'M-v2-mia-evaluate' { 'evaluate_mia.py' }
+            'M-v2-predict' { 'run.py' }
+            'M-v2-test' { 'test_v2.py' }
+            'M-v2-freeze' { 'freeze.py' }
+            'M-v2-complete' { 'freeze.py' }
+        }
+        $attackArgs = @('-B', (Join-Path $PSScriptRoot "M/v2/$scriptName"))
+        if ($Action -like '*-evaluate') { $attackArgs += @('--stage', $Stage) }
+        if ($Action -eq 'M-v2-complete') { $attackArgs += @('--action', 'complete') }
+        if ($OutputDirectory -and $Action -in @('M-v2-predict', 'M-v2-aia-evaluate', 'M-v2-mia-evaluate')) { $attackArgs += @('--output', $OutputDirectory) }
     }
     & $attackPython @attackArgs
     if ($LASTEXITCODE -ne 0) { throw "Attack workspace command failed (exit $LASTEXITCODE)." }

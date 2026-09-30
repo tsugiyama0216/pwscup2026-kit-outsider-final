@@ -1,5 +1,9 @@
 # PWSCUP2026 引き継ぎ
 
+**2026-09-30、完成済みMのv2をユーザー依頼で非公開GitHubへ保存。** 保存ブランチは`codex/m-v2`、基点は`fad8253`。取得済み最新mainの`45511cf`は共有評価コード・検証補助・v1評価コードの配置を変更しており、v2が固定した依存ハッシュと一致しない。今回の保存はコード・設定・CSV・生成時記録を保持するため専用ブランチで行い、mainへの統合は含めない。詳細は[Mのv2の案内](main_round/attack/M/v2/README.md)と[保存時検証](main_round/attack/M/local-output/v2/github_upload_verification.json)。生成時JSONの未送信フラグは当時の記録として保持する。
+
+**2026-09-30、ユーザー依頼で作業者Mの本戦攻撃[v2](main_round/attack/M/v2/README.md)を作成・検証。** コードと固定設定は`main_round/attack/M/v2/`、全結果は`M/local-output/v2/`。v88・attack_researchは参照せず、v1の65ファイルをバイト保持。MIAはv1密度比から候補ごとの22相手中央値を強度1で減算、AIAは県・性別候補40未満かつ県固定距離が性別のみ距離の1.5倍超なら性別のみへ切替（guarded40）。厳密な非共有163人のMIA=0を保持。調整・非候補独立合成ストレス検査後に全依存と方式を固定し、別抽出の最終確認を実施、確認後再調整なし。MIA世界等重み平均.778927→.815411（18世界全改善、主351対象条件173改善169同等9悪化）。AIAφ未控除.274991→.370155（主135条件25改善108同等2悪化、最悪−.103408）。両者は別実験で合算しない。人物分割は過去研究で既使用、MIAの非候補共有・AIAの県集中も模擬条件で公式得点予測ではない。22相手MIA1049行・AIA7172行、公式形式とCSV再読込・2回生成バイト一致、24テスト、原本94件不変を確認。AIA変更はC6=297、C8=74、C14=92、他19対象はv1と同一。入口は`attack.ps1 M-v2-*`。選択済みコード・JSONはハッシュ固定されているので改修は次版で行う。公式提出・試行消費・提出ZIP作成・GitHub送信は行っていない。
+
 **2026-09-30、ユーザー指定により「作業者Mのv1」と分かる[配置](main_round/attack/M/README.md)へ整理。** コードは`main_round/attack/M/v1/`、保存予測・検証は`M/local-output/v1/`、初期作戦は`M/strategy/`。版名はv1を保持。共有データ・公式キット・他作業者の成果は移動しない。実行入口は`attack.ps1 M-v1-*`（旧`v1-*`も同じMのコードへ接続）。旧CSV・モデル・生成時JSONはバイト保持し、[layout_migration.json](main_round/attack/M/layout_migration.json)へ照合を記録する。進行中の研究が読む旧パスはローカル互換コピーとして保持し、GitHubの正本はM配下とする。
 
 **2026-09-30、ユーザーが完成済み本戦攻撃v1の非公開GitHub保存を依頼。** v1コード・実行入口・説明、`M/local-output/v1/`の診断・調整・最終確認・予測CSVと検証記録、初期作戦と公開手掛かり監査を保存対象とする。固定CSV・モデル・生成時記録のバイトは保持し、後続研究と無関係なローカル変更は含めない。保存時の検証は[M/v1/github_snapshot_verification.json](main_round/attack/M/v1/github_snapshot_verification.json)。生成時記録の`github_push_performed:false`は当時の履歴として維持。CodaBenchへの提出やトークン入りZIPの作成・保存は行わない。

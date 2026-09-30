@@ -1,0 +1,53 @@
+{
+  "completed": true,
+  "created_utc": "2026-09-30T05:35:29.175283+00:00",
+  "selection_sha256": "37acc76547e6533fd903a88dd112b0a2d4806f5c5232893701b107e3bc08f9ef",
+  "selected_before_holdout": true,
+  "post_holdout_tuning": false,
+  "aia": {
+    "conditions": 135.0,
+    "aia_no_phi_mean": 0.3701550786503386,
+    "paired_delta_mean": 0.0951643540178889,
+    "paired_delta_min": -0.1034077555816685,
+    "wins": 25.0,
+    "ties": 108.0,
+    "losses": 2.0,
+    "member_success_mean": 0.7729152465348784,
+    "control_success_mean": 0.6710293115201091
+  },
+  "mia": {
+    "strength": 1.0,
+    "private_mask_applied": true,
+    "worlds": 18,
+    "mean_mia": 0.8154106931557912,
+    "mean_all_population_tpr": 0.7743400233269514,
+    "mean_rare_max_uplift": 0.0410706698288397,
+    "paired_delta_mean": 0.0364839275950387,
+    "paired_delta_min": 0.013671861907156,
+    "wins": 18,
+    "ties": 0,
+    "losses": 0
+  },
+  "component_scores_are_separate_experiments": true,
+  "aia_phi_applied": false,
+  "official_score_measured": false,
+  "evidence_sha256": {
+    "aia-holdout/results.csv": "904f2eff65af8eaf5859ccc85fae4fb824774c34f4123c31c3d7dade96572024",
+    "aia-holdout/summary.csv": "a91540daabda9201e6b0090144a754d293c443954fa8b64c39126bad4ca94d9f",
+    "aia-holdout/run.json": "611aac4602c267d52cf466564ebba2a65a988770e87d85f0f2921f4f93bd99a5",
+    "aia-holdout/freeze.json": "6eca753b2a5916923979bc973f0bd8b8d85e8392131e475708d2d2ddbd84224e",
+    "mia-holdout/results.csv": "bde9c7d0c68ee1aff316fe56e5916309327ee0baa8e8b6b9309d402b9be0918e",
+    "mia-holdout/summary.csv": "bd0a22fa1d035fa6c3e282852bc0a3663e48863945ca0e071f024e0cffd70187",
+    "mia-holdout/run.json": "bc0df40f982228c27ad2f288ab6ed118e3dfe4f8e4f0332fc0b7918b253f95b0",
+    "mia-holdout/freeze.json": "51aae32173f55ebce008287717ce287ab091248823251086e8ee5f2d5e1ffb3a"
+  },
+  "source_checks": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "v1_preservation": {
+    "verified_files": 65,
+    "all_bytes_unchanged": true
+  }
+}
