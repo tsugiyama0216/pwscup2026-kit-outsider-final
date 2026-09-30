@@ -76,8 +76,8 @@ def dependency_hashes():
     """Freeze v1 sources/settings and the general evaluator's direct dependencies."""
     paths = {
         workspace.ROOT / "attack_workspace.py",
-        workspace.ROOT / "local_eval" / "data.py",
-        workspace.ROOT / "local_eval" / "scoring.py",
+        workspace.TS_ROOT / "local_eval" / "data.py",
+        workspace.TS_ROOT / "local_eval" / "scoring.py",
         workspace.ROOT / "source_manifest.json",
     }
     suffixes = {".py", ".json", ".yaml", ".yml", ".toml"}

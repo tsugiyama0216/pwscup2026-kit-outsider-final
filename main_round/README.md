@@ -10,7 +10,10 @@
 
 | 内容 | 場所 |
 |---|---|
+| 本戦の匿名化手法を理解する M1_v5の解説 | [method_explanation/01_anonymization.md](method_explanation/01_anonymization.md) |
 | 本戦攻撃データ・実行と検証の手順 | [attack/README.md](attack/README.md) |
+| TS本人の本戦攻撃 | [attack/attack_TS/README.md](attack/attack_TS/README.md) |
+| 作業者Mの本戦攻撃 | [attack/M/README.md](attack/M/README.md) |
 | 本戦加工データの案内・取扱い | [anonymization/team10/README.md](anonymization/team10/README.md) |
 | 配布原本 B・B_self・A_bg・schema・utility_ref・README | [anonymization/team10/participant_data/](anonymization/team10/participant_data/) |
 | 配布原本6ファイルのサイズ・SHA-256 | [anonymization/team10/data_manifest.json](anonymization/team10/data_manifest.json) |

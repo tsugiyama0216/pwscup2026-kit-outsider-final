@@ -2,6 +2,8 @@
 
 予備戦の作業は **[`prelim/`](prelim/README.md)** に集約しました。本戦は [`main_round/`](main_round/README.md) で別管理します。
 
+**別PCでTSのv88を使う前に：** 取得元 `main`（`fad8253`）には必須の `prelim_transfer.methods` が未収録です。ファイルのハッシュ照合が成功してもv88全体は起動できません。[不足コード・回収先の候補・復旧確認の引き継ぎ](CODEX_HANDOFF.md#v88_cross_pc_handoff)を先に読んでください。
+
 **本戦・攻撃フェーズ：2026-09-27に[作業環境と配布物](main_round/attack/README.md)を整備しました。** team10用の起動・データ確認・参照攻撃・提出形式検証はここから始めます。ユーザーの依頼により配布原本・固定版キット・参照出力も既存の非公開GitHubへ保存します。配布C_10と最終選択モデル[M1_v5の原本](main_round/anonymization/team10/M/M1_v5/C.csv)の一致を確認しました。
 
 **2026-09-17時点の匿名化修正版は[S2](main_round/anonymization/team10/S/S2/README.md)です。** S1の条件付きround処理をsampleへ修正し、ローカル有用性U=0.5484134662543412。学習済みDPモデル・検証記録・[提出用ZIP](main_round/anonymization/team10/S/S2/submission/team10_S2_defense.zip)をまとめています。当時のS2のCodaBench提出は未実施です。以後のモデルと選定の履歴は[引き継ぎ](CODEX_HANDOFF.md)を参照してください。
@@ -12,6 +14,7 @@
 |---|---|
 | 本戦・攻撃フェーズの配布物、起動・検証手順 | [`main_round/attack/`](main_round/attack/README.md) |
 | 作業者Mの本戦攻撃・v1のコードと予測 | [`main_round/attack/M/`](main_round/attack/M/README.md) |
+| TS本人の本戦攻撃・v88・模擬評価・学習済みモデル | [`main_round/attack/attack_TS/`](main_round/attack/attack_TS/README.md) |
 | 予備戦・匿名化フェーズの提出物 `C.csv` | [`prelim/anonymization/anonymization-submitted-v5/`](prelim/anonymization/anonymization-submitted-v5/) |
 | 予備戦・攻撃フェーズの最終提出、候補、採点結果 | [`prelim/attack/`](prelim/attack/README.md) |
 | 予備戦の実装、実験記録、当時のキット・ルール | [`prelim/workspace/`](prelim/workspace/README.md) |

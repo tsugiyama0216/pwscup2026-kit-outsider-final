@@ -1,5 +1,36 @@
 # PWSCUP2026 引き継ぎ
 
+## V88_CROSS_PC_HANDOFF
+
+**別PCで取得した担当者・エージェントへ：TSのv88は依存コードが不足しており、まだ実行一式がそろっていません。** 2026-09-30に取得した `main`（`fad8253860066b43bbed38e33f3fb5bbacf56a12`）で確認しました。`attack_TS/` への整理前から存在した不足です。
+
+- **不足しているコード：** `prelim_transfer.methods`。必要な関数は `load_legacy()` と `build_aia()` です。元の作業PCの `main_round/attack/prelim_transfer/` または `main_round/attack/attack_TS/prelim_transfer/` を探索先の候補とし、元コードとそこから読み込む依存コードを一緒に確認してください。元PCでの存在や回収はまだ確認していません。
+- **必要な理由：** [v88](main_round/attack/attack_TS/attack_research/v88/predict.py) は過去版を順に呼び、その先の [v10](main_round/attack/attack_TS/attack_research/v10/predict.py) が初期化時に `load_legacy()`、予測時に `build_aia()` と `modules['structured'].stratified_half_selection` を使います。現在は `CombinedAttack()` の初期化が `ModuleNotFoundError: No module named 'prelim_transfer'` で停止します。
+- **照合成功の意味：** `attack_research.published_v88.check` は、マニフェストに列挙されたファイルと原本のハッシュを確認します。列挙されていない依存モジュールの有無や予測の完走は確認しません。106ファイル・原本94件の照合成功、学習済みモデル11件の読み込み成功を、v88全体の実行成功と扱わないでください。
+- **配置：** TSの正本は `main_round/attack/attack_TS/`、Mの攻撃は `main_round/attack/M/`。回収する `prelim_transfer/` はTS配下で既存の `from prelim_transfer.methods import ...` が解決するように配置し、元コードが参照する予備戦モジュールのパスも確認します。実装を推測して置き換えず、元のv88を再現できるコードを回収してください。
+- **実行環境：** 本戦専用 `.venv/` はGitに含まれません。別PCでは `main_round/attack/setup.ps1` で固定版公式環境を構築・確認します。このPCの既存の予備戦Pythonには公式指定と異なる依存版が6件あり、v88全体の実行確認には使っていません。環境の構築だけでは不足コードは補われません。
+
+復旧を依頼された担当者は、元コードと再帰的な依存先を回収し、相対パスを確認してから専用環境を構築します。その後、ファイル照合、TS配下からのimportと `load_legacy()`、v88の初期化、最後に固定条件の `benchmark` の順で確認してください。既存の学習済みモデル・選択記録・予測CSVは保持します。回収した実行時コードを現在の `manifest.json` の検証対象に追加し、`manifest_before_attack_TS.json` と過去の検証JSONは元の記録として残します。復旧後の結果は日時・使用コミット・コマンドとともに新しく記録し、この「不足中」の案内も更新してください。
+
+復旧後の最小確認例（リポジトリ直下から。**現状では依存コード不足で途中停止します**）：
+
+```powershell
+Set-Location main_round/attack/attack_TS
+..\setup.ps1
+..\.venv\Scripts\python.exe -m attack_research.published_v88.check
+..\.venv\Scripts\python.exe -c "import attack_research; from prelim_transfer.methods import load_legacy, build_aia; modules = load_legacy(); assert callable(modules['structured'].stratified_half_selection)"
+..\.venv\Scripts\python.exe -c "from attack_research.v88.predict import CombinedAttack; CombinedAttack(); print('v88 initialization OK')"
+..\.venv\Scripts\python.exe -m attack_research.published_v88.benchmark
+```
+
+元の記録にあるbenchmarkの参照値は、固定25条件でMIA平均 `0.7307692307692308`、AIA平均 `0.8473837794327597`、両方1.0が `8/25` です。別PCで復旧後に再現を確認する値であり、このPCで今回実行した結果や公式得点ではありません。
+
+今回の依頼では、この案内と前段の `attack_TS/` 整理を同じ非公開GitHubで共有し、別PCのclone/pullで読めるようにします。不足コードの回収・復旧と公式提出はまだ行っていません。
+
+## これまでの作業記録
+
+**2026-09-30、本人の指定によりTSの攻撃を [attack_TS](main_round/attack/attack_TS/README.md) に分離。** `attack_research/`、`local_eval/`、保存済み`local-output/`、`evaluate.ps1`・`generate.ps1`を `main_round/attack/attack_TS/` へ移動。Mの独立攻撃は従来の `M/` に保持し、Mが再利用する模擬評価コードの参照先だけを更新する。配布原本・公式キット・検証・Python環境は共通の親フォルダーに置く。学習済みモデル、予測CSV、過去の評価JSONは保持し、対応と照合は `attack_TS/layout_migration.json` に記録する。今回の依頼はローカル整理であり、新たなGitHub送信・公式提出・モデル再学習は行わない。
+
 **2026-09-30、ユーザー指定により「作業者Mのv1」と分かる[配置](main_round/attack/M/README.md)へ整理。** コードは`main_round/attack/M/v1/`、保存予測・検証は`M/local-output/v1/`、初期作戦は`M/strategy/`。版名はv1を保持。共有データ・公式キット・他作業者の成果は移動しない。実行入口は`attack.ps1 M-v1-*`（旧`v1-*`も同じMのコードへ接続）。旧CSV・モデル・生成時JSONはバイト保持し、[layout_migration.json](main_round/attack/M/layout_migration.json)へ照合を記録する。進行中の研究が読む旧パスはローカル互換コピーとして保持し、GitHubの正本はM配下とする。
 
 **2026-09-30、ユーザーが完成済み本戦攻撃v1の非公開GitHub保存を依頼。** v1コード・実行入口・説明、`M/local-output/v1/`の診断・調整・最終確認・予測CSVと検証記録、初期作戦と公開手掛かり監査を保存対象とする。固定CSV・モデル・生成時記録のバイトは保持し、後続研究と無関係なローカル変更は含めない。保存時の検証は[M/v1/github_snapshot_verification.json](main_round/attack/M/v1/github_snapshot_verification.json)。生成時記録の`github_push_performed:false`は当時の履歴として維持。CodaBenchへの提出やトークン入りZIPの作成・保存は行わない。

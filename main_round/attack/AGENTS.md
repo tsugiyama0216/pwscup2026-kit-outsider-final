@@ -1,5 +1,9 @@
 # Main-round attack workspace
 
+- Before running TS v88 on another PC, read `../../CODEX_HANDOFF.md` section `V88_CROSS_PC_HANDOFF`. Source main `fad8253` lacks `prelim_transfer.methods`; obtain the original adapter and its dependencies, set up the pinned runtime, then verify imports, v88 initialization and benchmark. `published_v88.check` only checks listed files and original inputs, not runnable dependency completeness.
+
+- TS's own attacks, general local evaluation code and fitted assets live in `attack_TS/`. Worker M's attacks remain in `M/`. Official downloads, targets, source manifest, pinned runtime and validation helpers in this directory are shared infrastructure. Keep new TS outputs under `attack_TS/local-output/` and M outputs under `M/local-output/`.
+
 - Worker M's independent v1 lives in `M/v1/`, with archived outputs in `M/local-output/v1/` and initial planning in `M/strategy/`. Use `attack.ps1 M-v1-*`; the shorter `v1-*` aliases are retained for compatibility. Old local copies outside M are not canonical. Preserve ongoing research and other workers' files.
 
 - Read `README.md`, `source_manifest.json`, and the repository root instructions first.
@@ -11,4 +15,4 @@
 - Official CLI `--dist` alone does not load IDs from B.csv. Use the wrapper's explicit team_id=10 and attacker_record_ids checks, including finite values and integer IDs.
 - `baseline` outputs are smoke-test/reference predictions, not an optimized candidate or an estimate of official attack power.
 - On 2026-09-27 the user explicitly requested uploading this prepared state to the existing private repository. The verified public release downloads, raw targets, official runtime source, setup/docs and frozen reference_baseline are included. The public upstream source archive contains public practice/example tokens only and was recursively checked against the live team10 credential. Virtual environments, caches, live credentials and live-token submission ZIPs are not newly included. Do not submit or consume an official attempt without the user's explicit instruction.
-- Put new algorithm code outside `official-kit/`; place experiment outputs under `local-output/` and record inputs/method/config.
+- Put new algorithm code in the corresponding worker directory outside `official-kit/`; place experiment outputs under that worker's `local-output/` and record inputs/method/config. Root `local-output/` is only for shared environment checks and reference-baseline runs.

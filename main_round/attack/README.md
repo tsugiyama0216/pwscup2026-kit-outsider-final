@@ -1,19 +1,24 @@
 # 本戦・攻撃フェーズの作業環境（team10）
 
+**別PCでのv88利用前に：** `prelim_transfer.methods` が取得元 `main` に未収録のため、TSのv88は現在、初期化時に停止します。ハッシュ照合だけでは実行可能性を確認できません。[担当者・エージェント向けの復旧引き継ぎ](../../CODEX_HANDOFF.md#v88_cross_pc_handoff)を参照してください。
+
+**TS本人の攻撃は [attack_TS/](attack_TS/README.md)、作業者Mの攻撃は [M/](M/README.md) です。** 2026-09-30の本人の指定で、M以外の攻撃実装・模擬評価コード・保存済み学習モデルを `attack_TS/` にまとめました。この親フォルダーの配布物・公式キット・検証・Python環境は両者の共通基盤です。
+
 **2026-09-30：作業者Mの[v1の診断・実装・検証結果](M/v1/README.md)。** [Mの作業一覧](M/README.md)にコード・予測CSV・検証記録をまとめています。`M`は作業者、`v1`は版名です。他22対象の予測CSVは形式と再現性を確認済みで、公式提出はしていません。実行入口は`attack.ps1 M-v1-diagnose / M-v1-test / M-v1-evaluate / M-v1-predict`です。
 
 2026-09-27の[事務局メール](source_email_20260927.txt)に基づく、このPCの本戦用作業場所です。チームはアウトサイダー / outsider、コホート番号は **10**。予備戦team24とは別です。
 
 **提出期間：2026年9月28日（月）09:00〜10月11日（日）09:00（日本時間）。採点に通る提出は最大8回。** 9月27日の追加依頼に基づき、この環境の配布データ・コード・手順・検証済み参照出力を既存の非公開GitHubリポジトリに保存します。CodaBenchへの提出は行っていません。
 
-**環境構築・動作確認済み。** 94ファイルのハッシュ、公式指定29ライブラリの版、team10の入力を確認しました。22対象の公式参照攻撃でMIA 1,049行・AIA 7,172行を生成し、公式検証とCSV再読み込み検証を通過しています。誤った行ID・標的不足・重複・無限値・小数ID・誤トークンを拒否する確認も完了しています。
+**元の作業PCでは環境構築・動作確認済み。** 94ファイルのハッシュ、公式指定29ライブラリの版、team10の入力を確認しました。22対象の公式参照攻撃でMIA 1,049行・AIA 7,172行を生成し、公式検証とCSV再読み込み検証を通過しています。誤った行ID・標的不足・重複・無限値・小数ID・誤トークンを拒否する確認も完了しています。仮想環境はGitに含まれないため、別PCでは以下のセットアップが必要です。2026-09-30に同期・整理したこのPCの本戦専用環境は未構築です。
 
 ## 使い始める
 
 PowerShellでこのフォルダーを開きます。
 
 ```powershell
-cd C:\Users\takut\Documents\ChatGPT\PWSCUP2026\pwscup2026-kit-private\main_round\attack
+# リポジトリ直下から
+Set-Location main_round/attack
 
 # 配布物・本戦データ・ライブラリ・認証ファイルの存在と形式を確認
 .\attack.ps1 check
@@ -25,7 +30,7 @@ cd C:\Users\takut\Documents\ChatGPT\PWSCUP2026\pwscup2026-kit-private\main_round
 .\attack.ps1 validate .\local-output\候補名\attack.zip
 ```
 
-このPCの仮想環境は導入済みです。別のPCでcloneした場合や再構築が必要な場合は、このフォルダーで `./setup.ps1` を実行します。Python 3.11以上が必要で、再現用には今回使用した3.12.13を推奨します。既存の予備戦用Python・uv、またはPATH上の環境を利用し、本戦専用 `.venv/` に公式 `requirements-kit.txt` の29ライブラリと公式キットを導入します。システム全体や予備戦環境の設定は変更しません。配布物と公式ランタイムはこのGit保存に含まれ、再ダウンロードは不要です。
+専用の仮想環境がないPCや再構築が必要な場合は、このフォルダーで `./setup.ps1` を実行します。Python 3.11以上が必要で、再現用には元PCで使用した3.12.13を推奨します。既存の予備戦用Python・uv、またはPATH上の環境を利用し、本戦専用 `.venv/` に公式 `requirements-kit.txt` の29ライブラリと公式キットを導入します。システム全体や予備戦環境の設定は変更しません。配布物と公式ランタイムはこのGit保存に含まれ、再ダウンロードは不要です。
 
 自動検出されない場合は `./setup.ps1 -Python <python.exeのパス> -Uv <uv.exeのパス>` で指定できます。uvがなければ通常のvenv/pipを使います。uvだけある場合はPython 3.12を `.tools/python/` へ導入します。`-Offline` はuvと保存済みキャッシュがある場合に使えます。今回、新しい作業コピーで環境の再構築と94ファイルの検証が成功しています。
 
@@ -35,6 +40,8 @@ cd C:\Users\takut\Documents\ChatGPT\PWSCUP2026\pwscup2026-kit-private\main_round
 
 | 内容 | 場所 |
 |---|---|
+| TS本人の攻撃・模擬評価・学習済みモデル | [attack_TS/](attack_TS/README.md) |
+| 作業者Mの独立攻撃・予測・評価結果 | [M/](M/README.md) |
 | 配布案内の本文 | [source_email_20260927.txt](source_email_20260927.txt) |
 | 取得元・固定コミット・ファイルのSHA-256 | [source_manifest.json](source_manifest.json) |
 | ダウンロード原本（攻撃ZIP・PDF・外部ハッシュ一覧・ソースZIP） | `downloads/` |
