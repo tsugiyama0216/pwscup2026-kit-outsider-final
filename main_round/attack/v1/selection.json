@@ -1,0 +1,21 @@
+{
+  "selected_variant": "full_reference_aia",
+  "model_sha256": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+  "development_summary_sha256": "5558e7e316d6c72ebcf0fbf02433f6783f3b713f9df493f1a84c39e0f65a0ce3",
+  "selected_before_final_check": true,
+  "development_primary_conditions": 15,
+  "development_mia": 0.5897435897435898,
+  "development_aia_no_phi": 0.5613500308290836,
+  "development_combined_no_phi": 1.1510936205726734,
+  "official_development_combined_no_phi": 0.8151961846752374,
+  "development_wins_ties_losses": [
+    10,
+    5,
+    0
+  ],
+  "selection_rule": "Maximum mean combined_no_phi on all 15 development primary conditions, after the documented additional MIA/AIA combination",
+  "development_revision": "development_revision.json",
+  "model_default_change_only_after_development": true,
+  "final_check_inspected_at_selection": false,
+  "official_submission": false
+}

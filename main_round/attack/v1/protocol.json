@@ -1,0 +1,17 @@
+{
+  "version": "independent-v1",
+  "declared_before_development_scoring": true,
+  "development_seeds": [2026093000, 2026093001, 2026093002],
+  "final_check_seeds": [2026101000, 2026101001, 2026101002],
+  "primary_styles": ["rounded", "jitter", "strong_jitter", "bootstrap", "copula"],
+  "sanity_styles": ["copy", "independent"],
+  "selection_rule": "Choose the highest equal-weight mean MIA + AIA before phi across the 15 development primary conditions. Exact ties favor the simpler clinical_nearest, full_nearest, ensemble_nearest, ensemble_window, in that order. Do not select separately by target or using final-check outcomes.",
+  "fallback_rule": "If no candidate beats the official reference, retain the official reference plus the actual-only proven-private mask and report the non-improvement.",
+  "no_final_check_retuning": true,
+  "person_partition_previously_used": true,
+  "person_partition_seed": 2026092701,
+  "actual_private_mask_evaluated_separately": true,
+  "c3_sensitivity_selects_no_variant": true,
+  "hard_shared_count_or_cross_team_assignment": false,
+  "official_submission": false
+}

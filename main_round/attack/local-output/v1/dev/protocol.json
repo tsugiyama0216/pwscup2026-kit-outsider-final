@@ -1,0 +1,111 @@
+{
+  "format": "independent-v1-shadow-evaluation-v1",
+  "created_at_utc": "2026-09-30T03:15:34.164434+00:00",
+  "stage": "dev",
+  "selected": "ensemble_nearest",
+  "seeds": [
+    2026093000,
+    2026093001,
+    2026093002
+  ],
+  "styles": [
+    "copy",
+    "rounded",
+    "jitter",
+    "bootstrap",
+    "independent",
+    "strong_jitter",
+    "copula"
+  ],
+  "primary_styles": [
+    "rounded",
+    "jitter",
+    "strong_jitter",
+    "bootstrap",
+    "copula"
+  ],
+  "partition_seed": 2026092701,
+  "partition_sizes": {
+    "dev": 2572,
+    "holdout": 2571
+  },
+  "partition_sha256": {
+    "dev": "c41faab93ae012ab3c9b0cc586b40590fd32d064ac921d3193bc164cf2d9401b",
+    "holdout": "71f7ed1f9776c196dd393e1033f17da3b1514fee01be51bc8e62e54e62125dfc"
+  },
+  "person_partition_previously_used": true,
+  "fresh_sampling_is_independent_person_holdout": false,
+  "input_sha256": {
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+  },
+  "code_and_settings_sha256": {
+    "attack_workspace.py": "6bf5297730cdcd754535dc2173178fdea8e54404dbce6c29c24812978e49f2a8",
+    "local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84",
+    "local_eval/scoring.py": "42f6486ef845008859922ae3cbe063c2e8b11085b0ffdb2649d01caa364dcaed",
+    "source_manifest.json": "57b7dfaa73720740a018404494819beaf40f442944bb9ed91ff2610c9391ae70",
+    "v1/__init__.py": "f482a21e9bc27348e859bdfde915fcdd194cede257fe1a798f566e15a355cac5",
+    "v1/actual.py": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393",
+    "v1/diagnose.py": "050253ddda4dba7d842c9e7f644d90d4c643d53377389a0e487d5fad93e54162",
+    "v1/evaluate.py": "6dc2eedce21f47363765aa48ac367484f96e566167d032d63309e64b6fed821c",
+    "v1/model.py": "55030a2b7e0aa42b29fed97ce7048e5ae7506aa7f8a43a44836adb94ae4efcf7",
+    "v1/protocol.json": "f8ef0e51aaff09f9151668a01a3765688e3244f54931876a87e0e85fbc38e37d",
+    "v1/run.py": "75e4c63fe48ccd83f1df581bdb3878ecb06531f0e747d5235932b6bfab1ed42d",
+    "v1/test_v1.py": "6ae678eca35926e4a993899f5c4de4b5395536796eec594f9625b7cec7327d2a"
+  },
+  "official_config_sha256": "a6a15063a64973a2b3141fe249b396bed14dd2e2626f92f5dc35d6c33f49b767",
+  "schema_sha256": "cd2c2c048d6dfa4e39559545d30777abfc9c081b457d1113955dc909c5b63dff",
+  "dependency_versions": {
+    "autograd": "1.9.0",
+    "autograd-gamma": "0.5.0",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "formulaic": "1.2.2",
+    "interface-meta": "2.0.1",
+    "joblib": "1.5.3",
+    "kiwisolver": "1.5.0",
+    "lifelines": "0.30.3",
+    "matplotlib": "3.11.0",
+    "narwhals": "2.23.0",
+    "numpy": "2.4.6",
+    "packaging": "26.2",
+    "pandas": "2.3.3",
+    "patsy": "1.0.2",
+    "pillow": "12.3.0",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.2",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "six": "1.17.0",
+    "statsmodels": "0.14.6",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.15.0",
+    "tzdata": "2026.2",
+    "wrapt": "2.2.2"
+  },
+  "source_checks_before": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "null_repetitions": 100,
+  "compute_threads": 1,
+  "official_score_estimated": false,
+  "aia_phi": null,
+  "actual_private_masks_used": false,
+  "individual_values_saved": false,
+  "official_submission": false,
+  "scoring": {
+    "low_fpr": 0.01,
+    "tau_time": 0.5,
+    "rare_se_z": 1.64,
+    "aggregate": "equal-weight mean MIA + mean AIA before phi"
+  },
+  "cases": [],
+  "methods": [],
+  "output": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\local-output\\v1\\dev"
+}

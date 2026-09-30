@@ -1,0 +1,291 @@
+{
+  "format": "independent-v1-shadow-evaluation-v1",
+  "created_at_utc": "2026-09-30T03:19:22.699740+00:00",
+  "stage": "holdout",
+  "selected": "full_reference_aia",
+  "seeds": [
+    2026101000,
+    2026101001,
+    2026101002
+  ],
+  "styles": [
+    "copy",
+    "rounded",
+    "jitter",
+    "bootstrap",
+    "independent",
+    "strong_jitter",
+    "copula"
+  ],
+  "primary_styles": [
+    "rounded",
+    "jitter",
+    "strong_jitter",
+    "bootstrap",
+    "copula"
+  ],
+  "partition_seed": 2026092701,
+  "partition_sizes": {
+    "dev": 2572,
+    "holdout": 2571
+  },
+  "partition_sha256": {
+    "dev": "c41faab93ae012ab3c9b0cc586b40590fd32d064ac921d3193bc164cf2d9401b",
+    "holdout": "71f7ed1f9776c196dd393e1033f17da3b1514fee01be51bc8e62e54e62125dfc"
+  },
+  "person_partition_previously_used": true,
+  "fresh_sampling_is_independent_person_holdout": false,
+  "input_sha256": {
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+  },
+  "code_and_settings_sha256": {
+    "attack_workspace.py": "6bf5297730cdcd754535dc2173178fdea8e54404dbce6c29c24812978e49f2a8",
+    "local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84",
+    "local_eval/scoring.py": "42f6486ef845008859922ae3cbe063c2e8b11085b0ffdb2649d01caa364dcaed",
+    "source_manifest.json": "57b7dfaa73720740a018404494819beaf40f442944bb9ed91ff2610c9391ae70",
+    "v1/__init__.py": "f482a21e9bc27348e859bdfde915fcdd194cede257fe1a798f566e15a355cac5",
+    "v1/actual.py": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393",
+    "v1/development_revision.json": "83432ba667943744e46333235a4163d846eec7f0c79dbf1b945519a281abf304",
+    "v1/diagnose.py": "050253ddda4dba7d842c9e7f644d90d4c643d53377389a0e487d5fad93e54162",
+    "v1/evaluate.py": "6dc2eedce21f47363765aa48ac367484f96e566167d032d63309e64b6fed821c",
+    "v1/model.py": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+    "v1/protocol.json": "f8ef0e51aaff09f9151668a01a3765688e3244f54931876a87e0e85fbc38e37d",
+    "v1/run.py": "5cf7c18003457df54cdf28edd9d35aeaf4df5347241a61882be28e5a23eae20e",
+    "v1/selection.json": "aff9133cb077a2be375d810223b346041140a5bf854e3745ac2630425e02b251",
+    "v1/test_v1.py": "2f67e178ab073c504919f8b26da381d3d024d550e71afee33e6f4ae082722aaf"
+  },
+  "official_config_sha256": "a6a15063a64973a2b3141fe249b396bed14dd2e2626f92f5dc35d6c33f49b767",
+  "schema_sha256": "cd2c2c048d6dfa4e39559545d30777abfc9c081b457d1113955dc909c5b63dff",
+  "dependency_versions": {
+    "autograd": "1.9.0",
+    "autograd-gamma": "0.5.0",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "formulaic": "1.2.2",
+    "interface-meta": "2.0.1",
+    "joblib": "1.5.3",
+    "kiwisolver": "1.5.0",
+    "lifelines": "0.30.3",
+    "matplotlib": "3.11.0",
+    "narwhals": "2.23.0",
+    "numpy": "2.4.6",
+    "packaging": "26.2",
+    "pandas": "2.3.3",
+    "patsy": "1.0.2",
+    "pillow": "12.3.0",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.2",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "six": "1.17.0",
+    "statsmodels": "0.14.6",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.15.0",
+    "tzdata": "2026.2",
+    "wrapt": "2.2.2"
+  },
+  "source_checks_before": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "null_repetitions": 100,
+  "compute_threads": 1,
+  "official_score_estimated": false,
+  "aia_phi": null,
+  "actual_private_masks_used": false,
+  "individual_values_saved": false,
+  "official_submission": false,
+  "scoring": {
+    "low_fpr": 0.01,
+    "tau_time": 0.5,
+    "rare_se_z": 1.64,
+    "aggregate": "equal-weight mean MIA + mean AIA before phi"
+  },
+  "cases": [
+    {
+      "split": "holdout",
+      "seed": 2026101000,
+      "partition_seed": 2026092701,
+      "partition_rows": 2571,
+      "target_rows": 1049,
+      "mia_candidates": 1049,
+      "mia_members": 26,
+      "mia_rare_candidates": 24,
+      "mia_rare_members": 0,
+      "aia_members": 163,
+      "aia_controls": 163,
+      "aia_rare_per_side": 13,
+      "aia_onset_per_side": 16,
+      "aia_rare_onset_per_side": 4,
+      "matching_keys": [
+        "detected_rare",
+        "onset",
+        "sex",
+        "prefecture",
+        "age_5year"
+      ],
+      "matching_relaxed": false,
+      "role_assignment_sha256": "01ba3c16775477e1dfea3c9ecde35cde60164b0b8a30f43c9906089c8e13d28e",
+      "rare_label_source": "Public Mahalanobis detector surrogate; not true is_rare",
+      "background_source": "Actual B used only as an independent reference; no B_self labels",
+      "public_input_sha256": {
+        "background": "966d2eed390152c5c04d1381f501646dc2517423a44185c569eb9004ecedc85a",
+        "candidates": "a7ce2d11bff653ea0063c659344206285629c149328ed5aa1b894e8761a054a9",
+        "challenge": "dc73cb9a19f1e31bc2ac6a9dea3214fc0e6b5d494fcd8117a181c0d0b24186ed"
+      },
+      "styles": {
+        "copy": {
+          "release_sha256": "51a0ff8d5d41c3109e7f2caa0a2803de42963330c2af2d6b7c80fd6e9761a3b5"
+        },
+        "rounded": {
+          "release_sha256": "45ad4adee212689b71272e69ee814afeb3a21cd71a9ae96d23c6f2769db75e38"
+        },
+        "jitter": {
+          "release_sha256": "27284c80bf9236d0d4d4b8052da1811590d1f36a7635f7f11a20f15f7ae23ab5"
+        },
+        "bootstrap": {
+          "release_sha256": "062c616bc3ed20fe987c27bb076440f369f2d3b5b7c031334cf113c7c9f5c17c"
+        },
+        "independent": {
+          "release_sha256": "08f490186bf423ef803d52248ddec274c679f19fd3d244d3cd25578004a645a4"
+        },
+        "strong_jitter": {
+          "release_sha256": "46d9ca45973b09f10691f12dc882f6aff64c8ef0a7839158aa65d1a6e4975002"
+        },
+        "copula": {
+          "release_sha256": "7a89e277d5c0016f17c93492dc571c2ca01bc655ae4d2f630bbcd13adac6bb4e"
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 2026101001,
+      "partition_seed": 2026092701,
+      "partition_rows": 2571,
+      "target_rows": 1049,
+      "mia_candidates": 1049,
+      "mia_members": 26,
+      "mia_rare_candidates": 24,
+      "mia_rare_members": 1,
+      "aia_members": 163,
+      "aia_controls": 163,
+      "aia_rare_per_side": 13,
+      "aia_onset_per_side": 16,
+      "aia_rare_onset_per_side": 4,
+      "matching_keys": [
+        "detected_rare",
+        "onset",
+        "sex",
+        "prefecture",
+        "age_5year"
+      ],
+      "matching_relaxed": false,
+      "role_assignment_sha256": "c5d24d2eb2b9e08169e138bc78ab598aaad68917df7b55db0c626ca11f705150",
+      "rare_label_source": "Public Mahalanobis detector surrogate; not true is_rare",
+      "background_source": "Actual B used only as an independent reference; no B_self labels",
+      "public_input_sha256": {
+        "background": "966d2eed390152c5c04d1381f501646dc2517423a44185c569eb9004ecedc85a",
+        "candidates": "e9cc139a453f8ad0d06a57512511ff9722021636f4158c67ac570a9b5ca3c1c7",
+        "challenge": "b23bb68a258228951a5165d14b4e0f4481ecf37d205ba62d71521383b9d50941"
+      },
+      "styles": {
+        "copy": {
+          "release_sha256": "0052176a12cfc6287b9bf2735a73c6ab0e07cc1fa204342448c801fa088631e4"
+        },
+        "rounded": {
+          "release_sha256": "5371de326f236da04d7a80960a69e05b83b6027659a873405f0470709ac32725"
+        },
+        "jitter": {
+          "release_sha256": "88b3d1c67544880e5445af499d9795fb20181b778ade569efeb4c3560fa32a9c"
+        },
+        "bootstrap": {
+          "release_sha256": "15c5d899435ad46fc3b230fcc0739061388cbfb5462105e66de52cecdfff38f6"
+        },
+        "independent": {
+          "release_sha256": "4236bb1299929c48790123f246ef0a6299af7fa2e0f916155ab1e390e97737bd"
+        },
+        "strong_jitter": {
+          "release_sha256": "a908d168361b5deea2eea222906f96ccafd8dd52be12ea70826288a0513c7c34"
+        },
+        "copula": {
+          "release_sha256": "b09369250fa44840044e6ed1e839e43c09759f633c7e8e37f54c8788982c5869"
+        }
+      }
+    },
+    {
+      "split": "holdout",
+      "seed": 2026101002,
+      "partition_seed": 2026092701,
+      "partition_rows": 2571,
+      "target_rows": 1049,
+      "mia_candidates": 1049,
+      "mia_members": 26,
+      "mia_rare_candidates": 24,
+      "mia_rare_members": 2,
+      "aia_members": 163,
+      "aia_controls": 163,
+      "aia_rare_per_side": 13,
+      "aia_onset_per_side": 16,
+      "aia_rare_onset_per_side": 4,
+      "matching_keys": [
+        "detected_rare",
+        "onset",
+        "sex",
+        "prefecture",
+        "age_5year"
+      ],
+      "matching_relaxed": false,
+      "role_assignment_sha256": "ed311fcab108374350cd8f4c2306942ea834c3e63e2ada8c4efd97a3a7174840",
+      "rare_label_source": "Public Mahalanobis detector surrogate; not true is_rare",
+      "background_source": "Actual B used only as an independent reference; no B_self labels",
+      "public_input_sha256": {
+        "background": "966d2eed390152c5c04d1381f501646dc2517423a44185c569eb9004ecedc85a",
+        "candidates": "b8788f3699459713b20d924f26e03c2ff6f147803fb0473c3b5c8cc12e4bbb51",
+        "challenge": "bb394645f839c9199d0046fca4941b829dd9e00df10681b0b2ce372c028fa242"
+      },
+      "styles": {
+        "copy": {
+          "release_sha256": "663005cb9b12d01b6d4dddab488a84e0b221f6367626cd64908800d30e324f7b"
+        },
+        "rounded": {
+          "release_sha256": "3f1f26c8d8a5d1d0fc673157afd82467aef7a452b0b958c988994d62ecb10e5e"
+        },
+        "jitter": {
+          "release_sha256": "2e3e4fa981142246990059d90899b9d3185dec7344c3fcf5204810686f64f7f7"
+        },
+        "bootstrap": {
+          "release_sha256": "b64b55c96c75400e4902bebe95bd9a821b81c714f790f9eebd8073504a0f50f1"
+        },
+        "independent": {
+          "release_sha256": "ce7bfac0b2b67685a0cf663c38a9c7134f99946a4a5519bec993b577a8d2d0c0"
+        },
+        "strong_jitter": {
+          "release_sha256": "0398a4ff57b6698eec6619ecd55bada6521436a322ec873b898e542f29b201e2"
+        },
+        "copula": {
+          "release_sha256": "4bad2bed5700be039444ab024e6cdfb6d9856aac0c042a7903d56f2c22505da1"
+        }
+      }
+    }
+  ],
+  "methods": [
+    "full_reference_aia",
+    "official"
+  ],
+  "output": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\local-output\\v1\\holdout",
+  "source_checks_after": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "elapsed_seconds": 19.73371479997877,
+  "conditions": 21,
+  "rows": 42,
+  "completed": true
+}

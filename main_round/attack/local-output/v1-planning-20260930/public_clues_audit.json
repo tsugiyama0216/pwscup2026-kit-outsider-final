@@ -1,0 +1,474 @@
+{
+  "purpose": "Aggregate evidence for v1 planning; not an attack candidate or official evaluation.",
+  "input_verification": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "self_challenge": {
+    "rows": 326,
+    "exact_qi_matched_rows": 163,
+    "exact_qi_unmatched_rows": 163,
+    "matched_candidate_multiplicities": {
+      "1": 163
+    },
+    "distinct_b_candidates": 163,
+    "matched_onset_count": 16,
+    "matched_true_rare_count": 13,
+    "matched_true_rare_onset_count": 4,
+    "matched_death_count": 12,
+    "matching_balance_checks": {
+      "prefecture_sex": {
+        "strata": 2,
+        "unequal_member_control_strata": 0
+      },
+      "prefecture_sex_5year_hypothesis": {
+        "strata": 14,
+        "unequal_member_control_strata": 0
+      }
+    },
+    "comparison": "Exact decimal equality on all seven public attributes; no tolerance or count fitting."
+  },
+  "own_b_true_rare_count": 24,
+  "own_b_fpg_at_least_126_count": 0,
+  "cross_challenge_qi_keys_in_multiple_targets": 0,
+  "targets": [
+    {
+      "target": 0,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 4,
+      "hypothetical_5year_strata_with_2_rows": 0,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 1,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 2,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 2,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 0,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 3,
+      "last_row_novel_columns": [],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 40,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 3,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 4,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 12,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 1,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 5,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG",
+        "time"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 11,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 3,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 6,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG",
+        "time"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 6,
+      "hypothetical_5year_strata_with_2_rows": 0,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 7,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 12,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 1,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 8,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 0,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 9,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 13,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 1,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 10,
+      "last_row_novel_columns": [
+        "SBP",
+        "TG",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 163,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 0,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 11,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 13,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 0,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 12,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 0,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 13,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 13,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 1,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 14,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 13,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 1,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 15,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 1,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 16,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 2,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 17,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 2,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 22,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 2,
+      "hypothetical_5year_strata_with_2_rows": 1,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 25,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 1,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 26,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 12,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 2,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 27,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG",
+        "time"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 14,
+      "hypothetical_5year_strata_odd_counts": 8,
+      "hypothetical_5year_strata_with_2_rows": 0,
+      "prefecture_sex_strata_odd_counts": 0
+    },
+    {
+      "target": 28,
+      "last_row_novel_columns": [
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG",
+        "time"
+      ],
+      "last_row_full_duplicates_in_previous": 0,
+      "c_exact_full_matches_to_own_b": 0,
+      "c_exact_full_matches_to_background": 0,
+      "challenge_exact_qi_matches_to_own_b": 0,
+      "hypothetical_5year_strata": 11,
+      "hypothetical_5year_strata_odd_counts": 0,
+      "hypothetical_5year_strata_with_2_rows": 1,
+      "prefecture_sex_strata_odd_counts": 0
+    }
+  ],
+  "limitations": [
+    "Exact matching is a data observation, not access to organizer truth.",
+    "Five-year strata are a tested hypothesis; parity does not prove the official matching algorithm.",
+    "A last row made only of pre-existing column values is consistent with the hot-deck notice, not proof of provenance.",
+    "No token or row IDs are read into outputs. No prediction files or submission packages are created."
+  ]
+}

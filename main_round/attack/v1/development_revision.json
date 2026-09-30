@@ -1,0 +1,12 @@
+{
+  "revision": 1,
+  "timing": "After first development comparison, before any final-check prediction or scoring",
+  "original_protocol": "protocol.json",
+  "first_results": "../local-output/v1/dev/summary.csv",
+  "added_candidate": "full_reference_aia",
+  "reason": "Development showed full_nearest had the strongest MIA, while official AIA had a higher primary mean than either new AIA variant. Because MIA and AIA are separate outputs and scores, evaluate their combination on the same development cases.",
+  "parameters_tuned": false,
+  "new_development_seeds_selected": false,
+  "final_check_inspected": false,
+  "selection_rule": "Repeat all six methods including official on the identical development conditions, then select the highest primary mean combined_no_phi. Freeze the choice before final checking. Original fallback to official still applies."
+}

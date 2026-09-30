@@ -1,0 +1,370 @@
+{
+  "created_at_utc": "2026-09-30T04:34:08.932406+00:00",
+  "purpose": "Archive completed independent main-round attack v1 without regeneration",
+  "repository": "tsugiyama0216/pwscup2026-kit-private",
+  "visibility_verified": "private",
+  "base_commit": "bbc95e925989c5a62815193aab36d32357db34ea",
+  "selected_variant": "full_reference_aia",
+  "checks": {
+    "original_files": 94,
+    "frozen_sources_unchanged": true,
+    "prediction_bytes_unchanged": true,
+    "official_csv_validation": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    },
+    "v1_tests_passed": 15,
+    "live_credential_content_found": false
+  },
+  "exclusions": [
+    "ongoing follow-up research",
+    "unrelated M1 documents and output/tmp",
+    "virtual environments and caches",
+    "live credentials and submission ZIPs"
+  ],
+  "submission_performed": false,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 15055,
+      "sha256": "e72ca47c46c8099f4a02663fa3b05d6284c4510b7d70ff7cdf3a9e4cf10724df"
+    },
+    {
+      "path": "CODEX_HANDOFF.md",
+      "bytes": 30411,
+      "sha256": "ee83a0820305140fda7beb56685222f45ae5a8ac4470d5c2d0a1294a8d949985"
+    },
+    {
+      "path": "main_round/attack/attack.ps1",
+      "bytes": 2300,
+      "sha256": "c5b0f2963dabefec93645c11fadeace475caf8ddab1f83dc05b54749cb785f1e"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/by_rare_shared.csv",
+      "bytes": 3889,
+      "sha256": "9879e06d1dd3d47ea13fd99943df175e9d0eec7e0268459312b463b22e28a943"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/by_seed.csv",
+      "bytes": 4012,
+      "sha256": "85271145db35dfbf2db2959871a34280a3146e2fbbdf504152f9b0c5933afc4d"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/by_style.csv",
+      "bytes": 8382,
+      "sha256": "3608498701ecf00d2636c6ff34c76914d5c871f06e784967028f46c5f87e3c96"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/case_summary.json",
+      "bytes": 151246,
+      "sha256": "3ce3c5e099c4a3828e148fdd34a93e6987bcf0d6d84a8f6967b73aff95636abe"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/EVALUATION.md",
+      "bytes": 3307,
+      "sha256": "cfe7e218f22063182e21955c15387d249d229beac4ff093486c18f70d04a5760"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/paired_comparison.csv",
+      "bytes": 67164,
+      "sha256": "fe7e721c401016d0f20903488db5a638dea6893281586c1dea63f478350c73ed"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/progress.json",
+      "bytes": 123,
+      "sha256": "93e58cebac2769de9e3a25c848d24535d481538ca540f600ce6d46dbc5c21c31"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/protocol.json",
+      "bytes": 4029,
+      "sha256": "87cac8d5e9deb45575ad6900d704a0b41b7c7761d86cb1d5197d6ebb9766e34f"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/results.csv",
+      "bytes": 58145,
+      "sha256": "39b4e4e23ddca954a0caa56187d032656a1e9bde91e027a17c115759f5e40ffd"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/run.json",
+      "bytes": 10902,
+      "sha256": "d7baf4b7807733f9a9b984ccab22ed7cd08d9440198b1bedc4e52f4557e5ea00"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/sanity.csv",
+      "bytes": 2210,
+      "sha256": "83552343f7d380aad923f864bdfc65b728d8fdce79db55541da1edfcb0dd920b"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/summary.csv",
+      "bytes": 1416,
+      "sha256": "6527b7ee3a7daf42e3bc6b4d4746a663708b3835a2e677c5ae109c996e7ed573"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev/summary.json",
+      "bytes": 3405,
+      "sha256": "c642e37cf007e197b03124053c59bf05db0ae9d90ef912ceb477eae75560de88"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/by_rare_shared.csv",
+      "bytes": 4587,
+      "sha256": "705ddae0852fb55532f887776889b1d5583f98a09a639bcfbab97726fce2ce32"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/by_seed.csv",
+      "bytes": 4737,
+      "sha256": "b19771791cd955bf43412e1043acbb5c332f1b7c63982f555e97faa30a9b7fd8"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/by_style.csv",
+      "bytes": 9882,
+      "sha256": "9845313f4c5f077fbbba60bd19ece35826e911564280fb4dbefa282689472df5"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/case_summary.json",
+      "bytes": 181112,
+      "sha256": "859f93243ccde1d82edbc221ebca1c946e2a33476e04294ee7b25f3b53121951"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/EVALUATION.md",
+      "bytes": 3394,
+      "sha256": "13e4c4d2ecd519ff0a1900b22a690d8f2a71016118c8c0cd2b1d813e4fdb6cf9"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/paired_comparison.csv",
+      "bytes": 80118,
+      "sha256": "0be0bf4a3c79c8e737f049f085aae01839e64fd9a57eca4320a8597446d0ee87"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/progress.json",
+      "bytes": 124,
+      "sha256": "1759a2c1d5de2d10b316a121f9e0e9d98845b990a011c0b3b038473d416d5d00"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/protocol.json",
+      "bytes": 4140,
+      "sha256": "932ce535416e19bc5941ec8a8975a79d99aac2c26e93f4f7235e06ad58027edb"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/results.csv",
+      "bytes": 69527,
+      "sha256": "9ecd2958fdb3edd8586ce16081b4933d902d99bab2b81e2d8a2494598e1f3575"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/run.json",
+      "bytes": 11040,
+      "sha256": "109954ec77330c021291161c45206fa2f9e5e43ca2d08abb572ebea8722ce29e"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/sanity.csv",
+      "bytes": 2497,
+      "sha256": "36b9ceddb1eecd2eaca1dfb284ad58ed793a6adeeb55dab8dc88379ba0febab1"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/summary.csv",
+      "bytes": 1634,
+      "sha256": "5558e7e316d6c72ebcf0fbf02433f6783f3b713f9df493f1a84c39e0f65a0ce3"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/dev-final/summary.json",
+      "bytes": 4076,
+      "sha256": "696ddb561eeebaf41a710e98e97ba0720477591952923754b49b0330e4699058"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/diagnosis/column_metrics.csv",
+      "bytes": 13381,
+      "sha256": "9c9ee1639ff3fb5bc4e90ce43efb65af1c128666c46255cfabcee14f10bd80a0"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/diagnosis/diagnosis.json",
+      "bytes": 391259,
+      "sha256": "83c27410e508c107f578e11787acd4cf3149ce6934fce32131ac5fcc6b2a483b"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/diagnosis/DIAGNOSIS.md",
+      "bytes": 9367,
+      "sha256": "1da3393fa26a184012c729b7ec0c84bb861d5ad616c3ead52977b9f9b86ca725"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/diagnosis/distance_metrics.csv",
+      "bytes": 109287,
+      "sha256": "d4ec440916e5cf1716b34915c9cb39a9cffb958dfa8e84ede65f6caa3bf4bc61"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/diagnosis/supplement/audit_subset_clues.py",
+      "bytes": 5521,
+      "sha256": "06daeaa6e20865923182c1172e5eb9f2af2f1058660b0f26fe5be104b129d7bd"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/diagnosis/supplement/subset_clues.json",
+      "bytes": 504955,
+      "sha256": "905b3669f3c19b56515bbb665ec0d7d05e5793b86d24cc5cafdc86f51edc5de2"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/diagnosis/team_metrics.csv",
+      "bytes": 6606,
+      "sha256": "bcc17149fa1e3c118d585ce7de933cbb1bc33afb705154cd588f2471dd9c333e"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/final-tests.txt",
+      "bytes": 120,
+      "sha256": "7650bb0e7516d5efbb655af92cbc7083bfd2bb5c2bcadedee8185fcc654c78fc"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/by_rare_shared.csv",
+      "bytes": 1614,
+      "sha256": "40f64dcaa34d1cf6e5d56c7251a9353720d6989aaaa07804c54f2b85a4c74447"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/by_seed.csv",
+      "bytes": 1656,
+      "sha256": "92cc8c51862fb4fee6dae33b2bc27c8fcb50b624e092e5c18efb4a828ad57ed1"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/by_style.csv",
+      "bytes": 3296,
+      "sha256": "325f17fe3b6904b11f7de69d830a9c817b6c5307d57ab4d726138b8f2e99582c"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/case_summary.json",
+      "bytes": 59386,
+      "sha256": "a5850eaec70c2ad4ea87cc794d16a3008be43a97ee7160032204f63ab103416b"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/EVALUATION.md",
+      "bytes": 3159,
+      "sha256": "8ee5139e65563f3dfe64ece6eae2cde69e01c1c4862d8cab6d03c4f38aebf05b"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/freeze.json",
+      "bytes": 4238,
+      "sha256": "491f40e70f55f4596e9ef737b836b4fc8c3d85300e6f4a2d1d2a14ece1f61020"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/paired_comparison.csv",
+      "bytes": 26040,
+      "sha256": "da77632c7689a3c0fff90d134d3d399381de0ce5e9e18fae5124367d42e1b817"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/progress.json",
+      "bytes": 127,
+      "sha256": "cf2fc9cd7060417462063728055f08add5477899bce6ab5e64e974d1a086253f"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/results.csv",
+      "bytes": 23194,
+      "sha256": "4d1d6472cc6d2d4f64405940a62a546b495f308a08bc061fd75bf0f8b6c269a9"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/run.json",
+      "bytes": 11053,
+      "sha256": "065f5bcfec05b4e19734884c180a500660b943e011636c75b5b859084bd52040"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/sanity.csv",
+      "bytes": 1035,
+      "sha256": "1c71a3c67698fb7653bb34ba52441bf769c6c9d7e745bdce2401b8a69cc8a49d"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/summary.csv",
+      "bytes": 724,
+      "sha256": "e3e8c2163bf8aa6ac1aa98227d24ad550018d74f44dabe3167045f33e7d04fa4"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/holdout/summary.json",
+      "bytes": 1354,
+      "sha256": "b365994a4219e17d229c9c0e45a517541487334e80f27481b03757cc9e187df6"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/predictions/F_aia.csv",
+      "bytes": 137233,
+      "sha256": "ffde1f9dece680b1830273ac7b7d9068abcff5e648db528576a08cc15a2f52e9"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/predictions/F_mia.csv",
+      "bytes": 401642,
+      "sha256": "ca1605c5a1cf18d98e16813d309bbbba0d77048bb7a3a85e1db5812f1df19872"
+    },
+    {
+      "path": "main_round/attack/local-output/v1/predictions/validation.json",
+      "bytes": 11301,
+      "sha256": "f42f88ac7d66f1867b612e155ef9a31a67c1eb349ceee19b9c3c44479f614b24"
+    },
+    {
+      "path": "main_round/attack/local-output/v1-planning-20260930/public_clues_audit.json",
+      "bytes": 14197,
+      "sha256": "d31cf7dcea75d7a3ef9ff8d74fa224aeba95564806cc78205818e0e0b336020a"
+    },
+    {
+      "path": "main_round/attack/README.md",
+      "bytes": 8819,
+      "sha256": "557346ac6cc571c7a1d775b3178afcb4fada2a70d91e16126e1776bef059be3e"
+    },
+    {
+      "path": "main_round/attack/strategy/audit_public_clues.py",
+      "bytes": 6196,
+      "sha256": "0d7adb020fe7fd5ee1b0987c224977f6862a604015d5d89c7ab1f74071b665bc"
+    },
+    {
+      "path": "main_round/attack/strategy/V1_STRATEGY.md",
+      "bytes": 14472,
+      "sha256": "4dde7474db6e395da6f53e5a4760c05f7c0e8fa79e893ca3d4c1558cd04586b4"
+    },
+    {
+      "path": "main_round/attack/v1/__init__.py",
+      "bytes": 75,
+      "sha256": "f482a21e9bc27348e859bdfde915fcdd194cede257fe1a798f566e15a355cac5"
+    },
+    {
+      "path": "main_round/attack/v1/actual.py",
+      "bytes": 3975,
+      "sha256": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393"
+    },
+    {
+      "path": "main_round/attack/v1/development_revision.json",
+      "bytes": 863,
+      "sha256": "83432ba667943744e46333235a4163d846eec7f0c79dbf1b945519a281abf304"
+    },
+    {
+      "path": "main_round/attack/v1/diagnose.py",
+      "bytes": 23666,
+      "sha256": "050253ddda4dba7d842c9e7f644d90d4c643d53377389a0e487d5fad93e54162"
+    },
+    {
+      "path": "main_round/attack/v1/evaluate.py",
+      "bytes": 20726,
+      "sha256": "6dc2eedce21f47363765aa48ac367484f96e566167d032d63309e64b6fed821c"
+    },
+    {
+      "path": "main_round/attack/v1/model.py",
+      "bytes": 14031,
+      "sha256": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7"
+    },
+    {
+      "path": "main_round/attack/v1/protocol.json",
+      "bytes": 1107,
+      "sha256": "f8ef0e51aaff09f9151668a01a3765688e3244f54931876a87e0e85fbc38e37d"
+    },
+    {
+      "path": "main_round/attack/v1/README.md",
+      "bytes": 11619,
+      "sha256": "17617e99ced708ff73605a08c9ad512f7a8e772a86991ac98abb08564129d1e6"
+    },
+    {
+      "path": "main_round/attack/v1/run.py",
+      "bytes": 9143,
+      "sha256": "5cf7c18003457df54cdf28edd9d35aeaf4df5347241a61882be28e5a23eae20e"
+    },
+    {
+      "path": "main_round/attack/v1/selection.json",
+      "bytes": 934,
+      "sha256": "aff9133cb077a2be375d810223b346041140a5bf854e3745ac2630425e02b251"
+    },
+    {
+      "path": "main_round/attack/v1/test_v1.py",
+      "bytes": 13370,
+      "sha256": "2f67e178ab073c504919f8b26da381d3d024d550e71afee33e6f4ae082722aaf"
+    }
+  ]
+}

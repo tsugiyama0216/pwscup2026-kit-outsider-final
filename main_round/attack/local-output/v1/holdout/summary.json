@@ -1,0 +1,42 @@
+[
+  {
+    "method": "full_reference_aia",
+    "conditions": 15,
+    "mia_mean": 0.7076923076923076,
+    "mia_all_mean": 0.5153846153846152,
+    "mia_rare_mean": 0.8,
+    "aia_no_phi_mean": 0.5482623709564619,
+    "aia_all_mean": 0.5482623709564619,
+    "aia_rare_mean": 0.1765876039141809,
+    "combined_no_phi_mean": 1.2559546786487699,
+    "combined_no_phi_min": 0.033898305084745874,
+    "combined_no_phi_max": 2.0,
+    "paired_delta_mean": 0.16666666666666669,
+    "paired_delta_min": -0.5,
+    "paired_wins": 5,
+    "paired_ties": 8,
+    "paired_losses": 2,
+    "aia_member_success_mean": 0.8265848670756646,
+    "aia_control_success_mean": 0.6654396728016359
+  },
+  {
+    "method": "official",
+    "conditions": 15,
+    "mia_mean": 0.541025641025641,
+    "mia_all_mean": 0.12051282051282053,
+    "mia_rare_mean": 0.7,
+    "aia_no_phi_mean": 0.5482623709564619,
+    "aia_all_mean": 0.5482623709564619,
+    "aia_rare_mean": 0.1765876039141809,
+    "combined_no_phi_mean": 1.089288011982103,
+    "combined_no_phi_min": 0.038461538461538464,
+    "combined_no_phi_max": 2.0,
+    "paired_delta_mean": 0.0,
+    "paired_delta_min": 0.0,
+    "paired_wins": 0,
+    "paired_ties": 15,
+    "paired_losses": 0,
+    "aia_member_success_mean": 0.8265848670756646,
+    "aia_control_success_mean": 0.6654396728016359
+  }
+]
