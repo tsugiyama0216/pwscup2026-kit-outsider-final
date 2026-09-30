@@ -1,6 +1,6 @@
 """Evaluate the independent v1 on fixed shadow cases; never load actual masks.
 
-Run from main_round/attack: python -m v1.evaluate --stage dev --output ...
+Run from main_round/attack: python -m M.v1.evaluate --stage dev --output ...
 The holdout stage calls only model.predict(..., variant=selected).
 """
 from __future__ import annotations
@@ -18,7 +18,7 @@ from time import perf_counter
 
 for _name in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
     os.environ[_name] = "1"
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 import attack_workspace as workspace
 
 
@@ -228,14 +228,14 @@ def main(argv=None):
         raise ValueError("Evaluation people overlap the independent background")
     partitions = partition_source(source, schema)
     dependencies = dependency_hashes()
-    model = importlib.import_module("v1.model")
+    model = importlib.import_module("M.v1.model")
     function = getattr(model, "predict_variants" if args.stage == "dev" else "predict", None)
     if not callable(function):
-        raise ValueError("v1.model lacks the prediction API required by this stage")
-    output = (args.output or workspace.OUTPUT / "v1" /
+        raise ValueError("M.v1.model lacks the prediction API required by this stage")
+    output = (args.output or workspace.ROOT / "M" / "local-output" / "v1" /
               (args.stage + "-" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"))).resolve()
-    if not output.is_relative_to(workspace.OUTPUT.resolve()):
-        parser.error("output must remain inside main_round/attack/local-output")
+    if not output.is_relative_to((workspace.ROOT / "M" / "local-output").resolve()):
+        parser.error("output must remain inside main_round/attack/M/local-output")
     if output.exists() and any(output.iterdir()):
         parser.error("output must be empty; previous evaluations are preserved")
     output.mkdir(parents=True, exist_ok=True)

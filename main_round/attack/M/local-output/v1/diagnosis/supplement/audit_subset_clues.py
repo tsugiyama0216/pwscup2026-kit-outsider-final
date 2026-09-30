@@ -9,7 +9,7 @@ from collections import Counter
 from decimal import Decimal
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[4]
+ROOT = Path(__file__).resolve().parents[5]
 sys.path.insert(0, str(ROOT))
 from attack_workspace import verify_hashes
 

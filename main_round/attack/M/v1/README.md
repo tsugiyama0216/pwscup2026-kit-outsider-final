@@ -1,10 +1,14 @@
-# 自分の本戦攻撃 v1
+# 作業者Mの本戦攻撃 v1
+
+作業者：**M（ユーザー本人）**／バージョン：**v1**。
 
 2026年9月30日。22チームの加工診断、v1実装、模擬検証、本番用CSVの生成と形式検証を完了した。別の人のv88やattack_researchの手法・結果は参照していない。既存の一般的な模擬データ生成・公式採点呼出しだけを再利用した。
 
 採用したのは **追加属性を使うMIA＋公式参照方式のAIA**（`full_reference_aia`）。本番MIAでは自己challengeから導いた非共有163人を全22相手に対して0にする。CodaBenchへの提出と提出ZIP作成は行っていない。
 
 **2026年9月30日の追加依頼により、完成済みv1を既存の非公開GitHubへ保存する。** コード・実行入口・説明と、下表の予測CSV・診断・比較・検証記録を同じ相対配置で保存対象とする。[保存時の照合記録](github_snapshot_verification.json)に対象ファイルと検証結果を記録する。生成時の`validation.json`にある`github_push_performed:false`は、その時点の履歴として変更しない。
+
+2026年9月30日、所有者が分かるように `M/v1/` と `M/local-output/v1/` へ配置を整理した。旧GitHub保存記録や生成時JSONは元のパスとハッシュを保持し、[移行時の照合記録](../layout_migration.json)に新旧の対応を示す。
 
 ## 成果物
 
@@ -20,7 +24,7 @@
 | 動作テスト | [final-tests.txt](../local-output/v1/final-tests.txt)：15件成功 |
 | 採用方式と固定ハッシュ | [selection.json](selection.json)、[freeze.json](../local-output/v1/holdout/freeze.json) |
 
-完成済みの出力は`local-output/v1/`に保存し、今回の依頼により個別にGitへ追加する。通常の新規実験出力は引き続き無視対象。原本、以前の参照予測、他の人の作業は上書きしていない。
+完成済みの出力は`M/local-output/v1/`に保存し、今回の依頼により個別にGitへ追加する。通常の新規実験出力は引き続き無視対象。原本、以前の参照予測、他の人の作業は上書きしていない。
 
 ## 1. 加工診断から分かったこと
 
@@ -95,11 +99,11 @@
 リポジトリのルートから既存環境で実行する。新規インストールは不要。評価・予測の出力先は空フォルダーを指定し、過去の記録を保持する。
 
 ```powershell
-./main_round/attack/attack.ps1 v1-diagnose
-./main_round/attack/attack.ps1 v1-test
-./main_round/attack/attack.ps1 v1-evaluate -Stage dev -Selected full_reference_aia -OutputDirectory main_round/attack/local-output/v1/recheck-dev
-./main_round/attack/attack.ps1 v1-evaluate -Stage holdout -Selected full_reference_aia -OutputDirectory main_round/attack/local-output/v1/recheck-holdout
-./main_round/attack/attack.ps1 v1-predict -OutputDirectory main_round/attack/local-output/v1/recheck-predictions
+./main_round/attack/attack.ps1 M-v1-diagnose
+./main_round/attack/attack.ps1 M-v1-test
+./main_round/attack/attack.ps1 M-v1-evaluate -Stage dev -Selected full_reference_aia -OutputDirectory main_round/attack/M/local-output/v1/recheck-dev
+./main_round/attack/attack.ps1 M-v1-evaluate -Stage holdout -Selected full_reference_aia -OutputDirectory main_round/attack/M/local-output/v1/recheck-holdout
+./main_round/attack/attack.ps1 M-v1-predict -OutputDirectory main_round/attack/M/local-output/v1/recheck-predictions
 ```
 
 最終確認を見てモデルを変更した後、同じ最終確認をもう一度採点しても独立した確認にはならない。後継の改良では開発履歴として扱う。

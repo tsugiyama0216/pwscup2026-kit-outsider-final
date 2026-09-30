@@ -11,6 +11,7 @@
 | 探したいもの | 場所 |
 |---|---|
 | 本戦・攻撃フェーズの配布物、起動・検証手順 | [`main_round/attack/`](main_round/attack/README.md) |
+| 作業者Mの本戦攻撃・v1のコードと予測 | [`main_round/attack/M/`](main_round/attack/M/README.md) |
 | 予備戦・匿名化フェーズの提出物 `C.csv` | [`prelim/anonymization/anonymization-submitted-v5/`](prelim/anonymization/anonymization-submitted-v5/) |
 | 予備戦・攻撃フェーズの最終提出、候補、採点結果 | [`prelim/attack/`](prelim/attack/README.md) |
 | 予備戦の実装、実験記録、当時のキット・ルール | [`prelim/workspace/`](prelim/workspace/README.md) |

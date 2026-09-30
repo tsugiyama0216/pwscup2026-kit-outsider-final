@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Position = 0)]
-    [ValidateSet('check', 'baseline', 'validate', 'v1-diagnose', 'v1-evaluate', 'v1-predict', 'v1-test')]
+    [ValidateSet('check', 'baseline', 'validate', 'M-v1-diagnose', 'M-v1-evaluate', 'M-v1-predict', 'M-v1-test', 'v1-diagnose', 'v1-evaluate', 'v1-predict', 'v1-test')]
     [string]$Action = 'check',
     [Parameter(Position = 1)]
     [string]$SubmissionZip,
@@ -31,16 +31,17 @@ try {
     New-Item -ItemType Directory -Force -Path $env:MPLCONFIGDIR | Out-Null
     $attackArgs = @((Join-Path $PSScriptRoot 'attack_workspace.py'), $Action)
     if ($Action -eq 'validate') { $attackArgs += $SubmissionZip }
-    if ($Action.StartsWith('v1-')) {
+    if ($Action -like 'M-v1-*' -or $Action -like 'v1-*') {
+        $versionAction = $Action -replace '^M-', ''
         foreach ($threadKey in $oldThreads.Keys) { [Environment]::SetEnvironmentVariable($threadKey, '1', 'Process') }
-        $scriptName = switch ($Action) {
+        $scriptName = switch ($versionAction) {
             'v1-diagnose' { 'diagnose.py' }
             'v1-evaluate' { 'evaluate.py' }
             'v1-predict' { 'run.py' }
             'v1-test' { 'test_v1.py' }
         }
-        $attackArgs = @('-B', (Join-Path $PSScriptRoot "v1/$scriptName"))
-        if ($Action -eq 'v1-evaluate') { $attackArgs += @('--stage', $Stage, '--selected', $Selected) }
+        $attackArgs = @('-B', (Join-Path $PSScriptRoot "M/v1/$scriptName"))
+        if ($versionAction -eq 'v1-evaluate') { $attackArgs += @('--stage', $Stage, '--selected', $Selected) }
         if ($OutputDirectory) { $attackArgs += @('--output', $OutputDirectory) }
     }
     & $attackPython @attackArgs

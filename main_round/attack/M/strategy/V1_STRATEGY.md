@@ -1,6 +1,6 @@
-# 本戦攻撃 v1 の作戦と根拠
+# 作業者Mの本戦攻撃 v1 の作戦と根拠
 
-**実装後の追記（2026年9月30日）：** この文書は作戦検討時点の記録。後続の[自分のv1](../v1/README.md)で22対象の診断・実装・検証・予測CSV作成を完了した。最終採用は追加属性MIA＋公式AIA＋本番専用の非共有163人処理。下記の候補すべてを採用したわけではなく、採否と根拠はv1 READMEに記録した。
+**実装後の追記（2026年9月30日）：** この文書は作戦検討時点の記録。後続の[Mのv1](../v1/README.md)で22対象の診断・実装・検証・予測CSV作成を完了した。最終採用は追加属性MIA＋公式AIA＋本番専用の非共有163人処理。下記の候補すべてを採用したわけではなく、採否と根拠はv1 READMEに記録した。
 
 2026年9月30日。team10の新しい攻撃系列をv1から検討するための作戦メモ。v88と既存のattack_researchは参照していない。今回実施したのは公開仕様の調査と配布物の集計であり、攻撃予測・提出ZIPの作成や公式採点は行っていない。
 
@@ -65,9 +65,9 @@
 
 公開資料にある抽出条件を超えて、年齢帯の境界、候補不足時の対応、ペアごとの希少一致、行順と共有先の対応、生成乱数やプールIDを仮定しない。これらの推測を使う場合は、一般化を確認した独立の実験として扱う。
 
-- [本戦ルールブック](../../rulebook/PWS_Cup2026_ルールブック_main-process-20260912.pdf)：特に§3.1、§4、§5、§6。
-- [9月27日の配布案内](../source_email_20260927.txt)、[本戦配布README](../targets/README.txt)、[source_manifest](../source_manifest.json)。
+- [本戦ルールブック](../../../rulebook/PWS_Cup2026_ルールブック_main-process-20260912.pdf)：特に§3.1、§4、§5、§6。
+- [9月27日の配布案内](../../source_email_20260927.txt)、[本戦配布README](../../targets/README.txt)、[source_manifest](../../source_manifest.json)。
 - [公式配布ページ](https://www.iwsec.org/pws/2026/cup26.html)、[固定release](https://github.com/pwscup/pwscup2026-kit/releases/tag/main-attack-20260928)。
-- [公式生成説明](https://github.com/pwscup/pwscup2026-kit/blob/a490490e11a0ec460a5df9fdefb17c72ad459c1e/notebooks/データはどう作られているか.md)。入門notebookを含む固定原本は[公式ソースZIP](../downloads/official-kit-main-attack-20260928.zip)。
-- [公式MIA](../official-kit/starter/src/pwscup2026/attack/mia.py)、[公式AIA](../official-kit/starter/src/pwscup2026/attack/aia.py)、[攻撃の採点](../official-kit/starter/src/pwscup2026/scoring/attack_score.py)、[提出採点](../official-kit/starter/src/pwscup2026/kit/codabench/scoring_io.py)、[配布形式](../official-kit/starter/src/pwscup2026/common/submission_schema.py)。
-- [自チームの公開スキーマ](../../anonymization/team10/participant_data/schema.json)。秘密tokenは本調査で読み込んでいない。
+- [公式生成説明](https://github.com/pwscup/pwscup2026-kit/blob/a490490e11a0ec460a5df9fdefb17c72ad459c1e/notebooks/データはどう作られているか.md)。入門notebookを含む固定原本は[公式ソースZIP](../../downloads/official-kit-main-attack-20260928.zip)。
+- [公式MIA](../../official-kit/starter/src/pwscup2026/attack/mia.py)、[公式AIA](../../official-kit/starter/src/pwscup2026/attack/aia.py)、[攻撃の採点](../../official-kit/starter/src/pwscup2026/scoring/attack_score.py)、[提出採点](../../official-kit/starter/src/pwscup2026/kit/codabench/scoring_io.py)、[配布形式](../../official-kit/starter/src/pwscup2026/common/submission_schema.py)。
+- [自チームの公開スキーマ](../../../anonymization/team10/participant_data/schema.json)。秘密tokenは本調査で読み込んでいない。

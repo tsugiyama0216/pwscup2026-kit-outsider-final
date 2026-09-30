@@ -1,7 +1,7 @@
 """Behavior checks for v1; no credentials or record-level values are logged.
 
 Run from main_round/attack with the pinned environment:
-    .venv/Scripts/python.exe -m unittest v1.test_v1 -v
+    .venv/Scripts/python.exe -m unittest M.v1.test_v1 -v
 
 Prediction properties use the full generic development protocol, not actual
 attack labels. Actual B/B_self/self-challenge are used only to verify the
@@ -20,11 +20,11 @@ import unittest
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
 from attack_workspace import load_runtime, verify_hashes
-from v1.actual import apply_private_mask, derive_private_mask
+from M.v1.actual import apply_private_mask, derive_private_mask
 
 ORIGINALS = ROOT.parent / "anonymization/team10/participant_data"
 
@@ -175,7 +175,7 @@ class PublicPredictionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         from local_eval.data import build_case, make_release
-        from v1.model import predict
+        from M.v1.model import predict
         verified = verify_hashes()
         if verified["verified_files"] != 94 or verified["warnings"]:
             raise RuntimeError("Unexpected manifest verification result")

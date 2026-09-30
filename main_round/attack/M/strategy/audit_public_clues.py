@@ -11,7 +11,7 @@ from collections import Counter, defaultdict
 from decimal import Decimal
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from attack_workspace import verify_hashes
 
@@ -112,7 +112,7 @@ def main():
             "No token or row IDs are read into outputs. No prediction files or submission packages are created.",
         ],
     }
-    out = ROOT / "local-output/v1-planning-20260930/public_clues_audit.json"
+    out = ROOT / "M/local-output/v1-planning-20260930/public_clues_audit.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))

@@ -25,6 +25,10 @@
 /main_round/**/token.txt
 /main_round/**/*.zip
 /main_round/**/local-output/
+# M's v1 is tracked under main_round/attack/M; retain old local copies for active research.
+/main_round/attack/v1/
+/main_round/attack/strategy/V1_STRATEGY.md
+/main_round/attack/strategy/audit_public_clues.py
 # 2026-09-27: archive the authorized non-secret attack distribution and pinned public kit.
 /main_round/attack/.cache/
 /main_round/attack/.tools/

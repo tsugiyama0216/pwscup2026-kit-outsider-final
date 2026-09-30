@@ -1,6 +1,6 @@
 """Read-only diagnostics of the actual main-round attack inputs.
 
-Run using ../.venv/Scripts/python.exe. This module does not import other v1
+Run using ../../.venv/Scripts/python.exe. This module does not import other v1
 modules, read previous attack candidates, produce predictions, or access tokens.
 Only aggregate diagnostics are written; raw rows and record IDs stay in memory.
 """
@@ -19,7 +19,7 @@ import pandas as pd
 from scipy.stats import spearmanr
 from sklearn.neighbors import NearestNeighbors
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from attack_workspace import verify_hashes  # noqa: E402
 
@@ -294,11 +294,11 @@ def render_report(result: dict, output: Path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "local-output" / "v1" / "diagnosis")
+    parser.add_argument("--output", type=Path, default=ROOT / "M" / "local-output" / "v1" / "diagnosis")
     args = parser.parse_args()
     output = args.output.resolve()
-    if not output.is_relative_to((ROOT / "local-output" / "v1").resolve()):
-        raise ValueError("Diagnostic output must remain under local-output/v1")
+    if not output.is_relative_to((ROOT / "M" / "local-output" / "v1").resolve()):
+        raise ValueError("Diagnostic output must remain under M/local-output/v1")
     integrity = verify_hashes()
     b = read_csv(ORIGINALS / "B.csv")
     background = read_csv(ORIGINALS / "A_bg.csv")

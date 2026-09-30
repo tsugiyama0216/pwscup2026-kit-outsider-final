@@ -14,11 +14,11 @@ from datetime import datetime, timezone
 for _name in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
     os.environ[_name] = "1"
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from attack_workspace import (ATTACK_TARGETS, ORIGINALS, TARGETS, load_inputs,
                               load_runtime, validate_frames, verify_hashes)
-from v1.actual import apply_private_mask, derive_private_mask
+from M.v1.actual import apply_private_mask, derive_private_mask
 
 
 def digest_bytes(data):
@@ -31,16 +31,16 @@ def csv_bytes(frame):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "local-output/v1/predictions")
+    parser.add_argument("--output", type=Path, default=ROOT / "M/local-output/v1/predictions")
     args = parser.parse_args()
     output = args.output.resolve()
-    if not output.is_relative_to((ROOT / "local-output/v1").resolve()):
-        raise ValueError("Output must be within local-output/v1")
+    if not output.is_relative_to((ROOT / "M/local-output/v1").resolve()):
+        raise ValueError("Output must be within M/local-output/v1")
     if output.exists() and any(output.iterdir()):
         raise FileExistsError("Output must be empty; preserve each generation and validation record")
     verified = verify_hashes()
     np, pd, modules, cfg, versions = load_runtime()
-    from v1.model import predict
+    from M.v1.model import predict
     selection_path = Path(__file__).with_name("selection.json")
     selection = json.loads(selection_path.read_text(encoding="utf-8"))
     selected = selection["selected_variant"]

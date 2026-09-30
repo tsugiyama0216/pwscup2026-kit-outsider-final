@@ -1,8 +1,10 @@
 # PWSCUP2026 引き継ぎ
 
-**2026-09-30、ユーザーが完成済み本戦攻撃v1の非公開GitHub保存を依頼。** v1コード・実行入口・説明、`local-output/v1/`の診断・調整・最終確認・予測CSVと検証記録、初期作戦と公開手掛かり監査を保存対象とする。固定CSV・モデル・生成時記録のバイトは保持し、後続研究と無関係なローカル変更は含めない。保存時の検証は[v1/github_snapshot_verification.json](main_round/attack/v1/github_snapshot_verification.json)。生成時記録の`github_push_performed:false`は当時の履歴として維持。CodaBenchへの提出やトークン入りZIPの作成・保存は行わない。
+**2026-09-30、ユーザー指定により「作業者Mのv1」と分かる[配置](main_round/attack/M/README.md)へ整理。** コードは`main_round/attack/M/v1/`、保存予測・検証は`M/local-output/v1/`、初期作戦は`M/strategy/`。版名はv1を保持。共有データ・公式キット・他作業者の成果は移動しない。実行入口は`attack.ps1 M-v1-*`（旧`v1-*`も同じMのコードへ接続）。旧CSV・モデル・生成時JSONはバイト保持し、[layout_migration.json](main_round/attack/M/layout_migration.json)へ照合を記録する。進行中の研究が読む旧パスはローカル互換コピーとして保持し、GitHubの正本はM配下とする。
 
-**2026-09-30、自分の本戦攻撃[v1](main_round/attack/v1/README.md)を実装・ローカル検証。** ユーザー依頼の順に22対象の加工診断、独立v1、具体的検証を完了。v88・attack_researchは参照せず、一般的な模擬データ生成・公式採点のみ再利用。採用は追加属性の近傍距離比MIA＋公式AIA、自己challengeの厳密一致から導く非共有163人を本番MIAで0。調整後固定した15主条件の最終確認は公式1.089288→v1 1.255955（MIA＋AIAのφ未控除代理、5改善8同等2悪化）。人物分割は別研究で既使用で、本戦得点予測ではない。原本94件、15テスト、MIA1049×22・AIA7172行の公式形式、全件2回生成のバイト一致を確認。CSVと記録は `main_round/attack/local-output/v1/`、コード・選択は`main_round/attack/v1/`。入口は`attack.ps1 v1-*`。公式提出・ZIP作成・GitHub送信は行っていない。
+**2026-09-30、ユーザーが完成済み本戦攻撃v1の非公開GitHub保存を依頼。** v1コード・実行入口・説明、`M/local-output/v1/`の診断・調整・最終確認・予測CSVと検証記録、初期作戦と公開手掛かり監査を保存対象とする。固定CSV・モデル・生成時記録のバイトは保持し、後続研究と無関係なローカル変更は含めない。保存時の検証は[M/v1/github_snapshot_verification.json](main_round/attack/M/v1/github_snapshot_verification.json)。生成時記録の`github_push_performed:false`は当時の履歴として維持。CodaBenchへの提出やトークン入りZIPの作成・保存は行わない。
+
+**2026-09-30、自分の本戦攻撃[v1](main_round/attack/M/v1/README.md)を実装・ローカル検証。** ユーザー依頼の順に22対象の加工診断、独立v1、具体的検証を完了。v88・attack_researchは参照せず、一般的な模擬データ生成・公式採点のみ再利用。採用は追加属性の近傍距離比MIA＋公式AIA、自己challengeの厳密一致から導く非共有163人を本番MIAで0。調整後固定した15主条件の最終確認は公式1.089288→v1 1.255955（MIA＋AIAのφ未控除代理、5改善8同等2悪化）。人物分割は別研究で既使用で、本戦得点予測ではない。原本94件、15テスト、MIA1049×22・AIA7172行の公式形式、全件2回生成のバイト一致を確認。CSVと記録は `main_round/attack/M/local-output/v1/`、コード・選択は`main_round/attack/M/v1/`。入口は`attack.ps1 M-v1-*`。公式提出・ZIP作成・GitHub送信は行っていない。
 
 **2026-09-27、[本戦・攻撃環境](main_round/attack/README.md)を整備し、ユーザーが現在の状態の非公開GitHub保存を依頼。** `main-attack-20260928`の配布原本・固定版公式キット・team10用実行と検証の入口を保存対象とします。マニフェスト94件のハッシュ照合、公式指定29ライブラリ、本戦22対象の参照攻撃（MIA 1,049行、AIA 7,172行）の検証は完了しています。保存した参照出力と検証記録は `main_round/attack/reference_baseline/`、実行入口は `main_round/attack/attack.ps1` です。期間は9月28日09:00〜10月11日09:00 JST、採点に通る提出は最大8回。参照攻撃は動作確認用で、最適化済み候補や公式攻撃力ではありません。仮想環境・キャッシュ・新たな実トークンのコピー・提出ZIPは今回の追加対象に含めず、既存の明示許可済み履歴を維持します。CodaBenchへの提出は行っていません。
 

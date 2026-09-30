@@ -1,5 +1,7 @@
 # Main-round attack workspace
 
+- Worker M's independent v1 lives in `M/v1/`, with archived outputs in `M/local-output/v1/` and initial planning in `M/strategy/`. Use `attack.ps1 M-v1-*`; the shorter `v1-*` aliases are retained for compatibility. Old local copies outside M are not canonical. Preserve ongoing research and other workers' files.
+
 - Read `README.md`, `source_manifest.json`, and the repository root instructions first.
 - This workspace is for authorized PWSCup2026 contest data only. Main-round cohort is 10, not preliminary cohort 24.
 - Use `.venv/Scripts/python.exe` through `attack.ps1`. The official release is `main-attack-20260928`, commit `a490490e11a0ec460a5df9fdefb17c72ad459c1e`.
