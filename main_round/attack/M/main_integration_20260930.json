@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-09-30T06:03:11.214641+00:00",
+  "purpose": "Integrate the verified M v2 archive into main while preserving the TS layout and all frozen attack artifacts.",
+  "user_instruction": "Upload to GitHub means integrate into main and push main in this repository.",
+  "repository": "tsugiyama0216/pwscup2026-kit-private",
+  "main_before": "45511cf884537ad5574d71edcd6f12a573958803",
+  "m_v2_archive": "a5706e599ce590e65687c0cc2212c1e7daa0de47",
+  "target_branch": "main",
+  "compatibility": {
+    "frozen_dependencies_verified": 31,
+    "v1_preservation": {
+      "verified_files": 65,
+      "all_bytes_unchanged": true
+    },
+    "frozen_v2_code_selections_and_evidence_files_unchanged": 79,
+    "frozen_hash_gate_code_unchanged": true,
+    "model_reselected": false,
+    "restored_frozen_runtime_paths": [
+      "attack_workspace.py",
+      "M/v1/evaluate.py",
+      "local_eval/__init__.py",
+      "local_eval/data.py",
+      "local_eval/scoring.py"
+    ],
+    "required_v1_evidence_added_to_git": [
+      "M/local-output/v1/layout-recheck-20260930/F_mia.csv",
+      "M/local-output/v1/layout-recheck-20260930/F_aia.csv",
+      "M/local-output/v1/layout-recheck-20260930/validation.json"
+    ],
+    "ts_adapter": "attack_TS/_workspace_compat.py",
+    "ts_unchanged_preexisting_files": 109,
+    "ts_algorithms_fitted_models_selections_and_historical_evidence_unchanged": true,
+    "previous_ts_manifest": "attack_TS/attack_research/published_v88/manifest_before_M_v2_main.json",
+    "previous_ts_manifest_bytes_preserved": true,
+    "ts_active_manifest_verified_files": 108
+  },
+  "validation": {
+    "verified_original_files": 94,
+    "m_v2_tests_passed": 24,
+    "m_v1_tests_passed": 15,
+    "ts_tests_passed": 17,
+    "ts_tests_command": "../.venv/Scripts/python.exe -B -m unittest local_eval.tests.test_generate local_eval.tests.test_local_eval local_eval.tests.test_workspace_compat -v",
+    "ts_tests_cwd": "main_round/attack/attack_TS",
+    "ts_generate_and_evaluate_cli_help_passed": true,
+    "prediction_command": "./main_round/attack/attack.ps1 M-v2-predict -OutputDirectory main_round/attack/M/local-output/v2/main-integration-recheck",
+    "official_format": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    },
+    "two_fresh_complete_runs_byte_identical": true,
+    "fresh_csv_bytes_identical_to_archived_v2": true,
+    "predictions_sha256": {
+      "F_mia.csv": "590c64201806312c1611be9bb276a24b74ba1fce292acac81355f8b6768cf7c6",
+      "F_aia.csv": "a37f32567cce12a818fe7b5a5a5be1820b327e51391ac20e0443bea3996ec577"
+    }
+  },
+  "limitations": [
+    "The pre-existing TS v88 dependency prelim_transfer.methods is still missing; this is not a v88 full-inference reproducibility claim."
+  ],
+  "official_submission_performed": false,
+  "official_attempt_consumed": false,
+  "submission_zip_created": false
+}

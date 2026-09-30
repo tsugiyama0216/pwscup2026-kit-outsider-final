@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-09-30T05:28:53.738163+00:00",
+  "stage": "pre_freeze_integration_only",
+  "model_parameters": {
+    "aia": "guarded40",
+    "mia_strength": 1.0
+  },
+  "official_format_validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "source_checks": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "v1_preservation": {
+    "verified_files": 65,
+    "all_bytes_unchanged": true
+  },
+  "individual_predictions_saved": false,
+  "actual_truth_used": false,
+  "selection_based_on_this_run": false
+}

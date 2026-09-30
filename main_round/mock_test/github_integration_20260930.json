@@ -1,0 +1,52 @@
+{
+  "created_at_utc": "2026-09-30T07:48:21.427388+00:00",
+  "record_phase": "verified_before_push",
+  "repository": "tsugiyama0216/pwscup2026-kit-private",
+  "target_branch": "main",
+  "user_requested_upload": true,
+  "local_extraction_commit": "36d7f03",
+  "upstream_main_before": "f05f4e3996e9c2436e6c3f9f23fc700effb888de",
+  "compatibility": {
+    "canonical_evaluator": "main_round/mock_test/local_eval",
+    "shared_bootstrap": "main_round/mock_test/mock_workspace.py",
+    "frozen_files_unchanged_from_upstream": {
+      "main_round/attack/attack_workspace.py": "6bf5297730cdcd754535dc2173178fdea8e54404dbce6c29c24812978e49f2a8",
+      "main_round/attack/attack.ps1": "d095c54538d78f9e9b6d7abad71978e94ff8ff96b5866e05fe90cb6f2c56373a",
+      "main_round/attack/M/v1/evaluate.py": "8e42173a037e301f7032cdc1f30824ce936439440fa99376d1295df47d9906c9",
+      "main_round/attack/local_eval/__init__.py": "8f487f7f7b86d01c42ba25df821c9315954576e697202cbb83e42470aef2593a",
+      "main_round/attack/local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84",
+      "main_round/attack/local_eval/scoring.py": "42f6486ef845008859922ae3cbe063c2e8b11085b0ffdb2649d01caa364dcaed"
+    },
+    "M_v2_frozen_dependencies_verified": 31,
+    "M_v1_preserved_files_verified": 65,
+    "M_v2_source_and_archived_files_preserved": 80,
+    "hash_gates_modified": false
+  },
+  "validation": {
+    "shared_tests_passed": 29,
+    "M_v1_tests_passed": 15,
+    "M_v2_tests_passed": 24,
+    "total_tests_passed": 68,
+    "published_runtime_files_verified": 111,
+    "original_files_verified": 94,
+    "saved_suite_integration": {
+      "sampling_cases": 3,
+      "styles": 7,
+      "methods": 2,
+      "results": 42,
+      "score_fields_compared": 16,
+      "exact_equal_to_before_merge": true,
+      "report": "local-output/evaluations/main-integration-20260930/REPORT.md"
+    }
+  },
+  "excluded_from_upload": [
+    "main_round/mock_test/local-output/",
+    "virtual environments and caches",
+    "unrelated local S3 and method_explanation work"
+  ],
+  "limitations": [
+    "TS v88 still lacks prelim_transfer.methods; a passed file manifest is not complete inference.",
+    "M v2 uses its frozen multi-target evaluators and does not export the single-target plugin API."
+  ],
+  "official_submission": false
+}

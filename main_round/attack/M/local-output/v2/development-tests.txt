@@ -1,0 +1,29 @@
+test_background_constant_columns_are_finite (M.v2.test_aia.AiaBehaviorTests.test_background_constant_columns_are_finite) ... ok
+test_empty_block_and_absent_sex_use_official_fallback (M.v2.test_aia.AiaBehaviorTests.test_empty_block_and_absent_sex_use_official_fallback) ... ok
+test_empty_queries_and_invalid_features (M.v2.test_aia.AiaBehaviorTests.test_empty_queries_and_invalid_features) ... ok
+test_query_permutation_is_equivariant (M.v2.test_aia.AiaBehaviorTests.test_query_permutation_is_equivariant) ... ok
+test_reference_matches_official_and_tie_average (M.v2.test_aia.AiaBehaviorTests.test_reference_matches_official_and_tie_average) ... ok
+test_rich_reference_block_is_preserved_for_every_variant (M.v2.test_aia.AiaBehaviorTests.test_rich_reference_block_is_preserved_for_every_variant) ... ok
+test_row_order_indexes_hidden_columns_and_input_immutability (M.v2.test_aia.AiaBehaviorTests.test_row_order_indexes_hidden_columns_and_input_immutability) ... ok
+test_sparse_routing_keeps_nearest_when_distance_penalty_small (M.v2.test_aia.AiaBehaviorTests.test_sparse_routing_keeps_nearest_when_distance_penalty_small) ... ok
+test_nonempty_output_is_not_overwritten (M.v2.test_aia.RegionalGenerationTests.test_nonempty_output_is_not_overwritten) ... ok
+test_regional_mapping_is_consistent_across_roles_without_label_leak (M.v2.test_aia.RegionalGenerationTests.test_regional_mapping_is_consistent_across_roles_without_label_leak) ... ok
+test_regional_processing_changes_only_release_county (M.v2.test_aia.RegionalGenerationTests.test_regional_processing_changes_only_release_county) ... ok
+test_full_centering_removes_shared_person_propensity (M.v2.test_mia.AdjustmentTests.test_full_centering_removes_shared_person_propensity) ... ok
+test_invalid_shapes_masks_and_values_are_rejected (M.v2.test_mia.AdjustmentTests.test_invalid_shapes_masks_and_values_are_rejected) ... ok
+test_one_target_has_no_cross_target_adjustment_and_empty_query_is_supported (M.v2.test_mia.AdjustmentTests.test_one_target_has_no_cross_target_adjustment_and_empty_query_is_supported) ... ok
+test_strength_zero_is_exact_frozen_v1_with_and_without_mask (M.v2.test_mia.AdjustmentTests.test_strength_zero_is_exact_frozen_v1_with_and_without_mask) ... ok
+test_target_and_candidate_permutation_invariance_and_input_nonmutation (M.v2.test_mia.AdjustmentTests.test_target_and_candidate_permutation_invariance_and_input_nonmutation) ... ok
+test_ties_bounds_and_known_negatives (M.v2.test_mia.AdjustmentTests.test_ties_bounds_and_known_negatives) ... ok
+test_exclusivity_invisible_cohorts_and_fixed_known_private (M.v2.test_mia.JointWorldTests.test_exclusivity_invisible_cohorts_and_fixed_known_private) ... ok
+test_raw_scores_match_v1_and_ignore_identifiers_or_labels (M.v2.test_mia.JointWorldTests.test_raw_scores_match_v1_and_ignore_identifiers_or_labels) ... ok
+test_raw_scores_preserve_query_alignment_and_reference_permutation (M.v2.test_mia.JointWorldTests.test_raw_scores_preserve_query_alignment_and_reference_permutation) ... ok
+test_same_world_rare_counts_do_not_change_candidates_mask_or_styles (M.v2.test_mia.JointWorldTests.test_same_world_rare_counts_do_not_change_candidates_mask_or_styles) ... ok
+test_official_all_rare_degenerate_and_tied_score_equivalence (M.v2.test_mia.OfficialMetricParityTests.test_official_all_rare_degenerate_and_tied_score_equivalence) ... ok
+test_mismatched_target_sets_rejected (M.v2.test_v2.CompositionTests.test_mismatched_target_sets_rejected) ... ok
+test_target_alignment_and_mask_are_passed_without_ids (M.v2.test_v2.CompositionTests.test_target_alignment_and_mask_are_passed_without_ids) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 3.494s
+
+OK

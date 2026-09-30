@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "stage": "dev",
+  "purpose": "Additional development robustness check; not holdout",
+  "world_seeds": [
+    2026093061,
+    2026093062
+  ],
+  "visible_rare_totals": [
+    0,
+    5,
+    11
+  ],
+  "layout": "mixed",
+  "strengths": [
+    0.0,
+    1.0
+  ],
+  "fixed_selected_strength": 1.0,
+  "excluded_sanity_styles": [
+    "copy",
+    "independent"
+  ],
+  "thread_limit": 1,
+  "underlying_B_generator": {
+    "family": "Gaussian empirical copula",
+    "fit_pool": "A_bg development partition, excluding all 1049 candidate persons",
+    "numeric_columns": [
+      "age",
+      "sex",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "smoking",
+      "FPG",
+      "time",
+      "onset",
+      "death"
+    ],
+    "covariance": "0.95 covariance + 0.05 diagonal, diagonal floor 1e-6",
+    "prefecture": "Independent draw conditional on generated sex, from fit pool",
+    "time": "Copula time quantile within generated onset/death state; non-event rows set to 10",
+    "freshness": "Reject QI collisions with every A_bg/B original and previously accepted fillers in this world",
+    "rare_quota": "Rejection sample exactly 24 minus shared rare per target, using the public detector",
+    "batch_rows": 4096,
+    "maximum_draws_per_target": 250000
+  },
+  "defense_generator": "Original registered mixed style per target, applied after new underlying B is assembled",
+  "comparison": "Fixed strength 1 versus strength 0, both with the same correct proxy-private mask",
+  "selection_action": "None: preserve mia_selection.json and all existing v2 code/results",
+  "limitations": [
+    "Fresh filler QI overlap is zero; original reused-filler worlds had at least about 673 common donors per pair. Neither matches the full real 25-27-person pairwise topology.",
+    "Only the 1049 candidate persons have exact real-style exclusive membership; the other original target overlaps are absent.",
+    "The background is B and person source is A_bg; actual contest roles are reversed.",
+    "Rare labels use the public detector surrogate, not true is_rare.",
+    "Development person partitions were used in prior work; new seeds are not new held-out people.",
+    "Synthetic population assumptions and separate defense assumptions both affect results."
+  ]
+}

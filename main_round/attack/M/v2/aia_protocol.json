@@ -1,0 +1,106 @@
+{
+  "format": "M-v2-aia-regional-protocol-v1",
+  "seeds": {
+    "dev": [
+      2026093061,
+      2026093062,
+      2026093063
+    ],
+    "holdout": [
+      2026101061,
+      2026101062,
+      2026101063
+    ]
+  },
+  "regions": [
+    "rare",
+    "medium",
+    "common"
+  ],
+  "region_selection": "background proportions closest to 0.003, 0.04, and maximum; three distinct counties",
+  "region_names_from_public_background": {
+    "rare": "宮城県",
+    "medium": "愛知県",
+    "common": "東京都"
+  },
+  "region_processing": [
+    "preserve",
+    "background_mix",
+    "shuffle"
+  ],
+  "styles": [
+    "copy",
+    "rounded",
+    "jitter",
+    "bootstrap",
+    "independent",
+    "strong_jitter",
+    "copula"
+  ],
+  "primary_styles": [
+    "rounded",
+    "jitter",
+    "strong_jitter",
+    "bootstrap",
+    "copula"
+  ],
+  "variants": [
+    "v1_reference",
+    "support8",
+    "support20",
+    "support40",
+    "guarded40",
+    "soft40"
+  ],
+  "settings": {
+    "support_thresholds": {
+      "support8": 8,
+      "support20": 20,
+      "support40": 40,
+      "guarded40": 40,
+      "soft40": 40
+    },
+    "distance_ratio": 1.5,
+    "soft_prefecture_penalty": 0.15
+  },
+  "person_partition_seed": 2026092701,
+  "partition_sha256": {
+    "dev": "c41faab93ae012ab3c9b0cc586b40590fd32d064ac921d3193bc164cf2d9401b",
+    "holdout": "71f7ed1f9776c196dd393e1033f17da3b1514fee01be51bc8e62e54e62125dfc"
+  },
+  "selection_rule": "Among candidates with preserve-primary mean delta >= -0.005, maximize equal-weight primary dev AIA before phi; tie by variant order. Require >1e-6 gain over reference, otherwise keep reference.",
+  "scoring": {
+    "tau": 0.5,
+    "rare_z": 1.64,
+    "phi": null
+  },
+  "quota": {
+    "members": 163,
+    "controls": 163,
+    "rare_each": 13,
+    "onset_each": 16,
+    "rare_onset_each": 4
+  },
+  "input_hashes": {
+    "B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+  },
+  "dependencies": {
+    "M/v2/aia.py": "30f961bc7d390029ca00c09409e278b47ffae363df148286c7a90a2bab9c9f90",
+    "M/v2/evaluate_aia.py": "988b0184b790870cad8334063520be2b33af8ed1279e1bb18161114e0e0ecbaa",
+    "M/v2/test_aia.py": "6722aa29eda8c24095d71ea97f9d8370b467b8407191e540ca86586998f977a3",
+    "local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84",
+    "local_eval/scoring.py": "42f6486ef845008859922ae3cbe063c2e8b11085b0ffdb2649d01caa364dcaed",
+    "M/v1/model.py": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7"
+  },
+  "limitations": [
+    "Target phi unknown; scores are uncorrected local proxies, not official attack scores.",
+    "The dev/holdout person partition has already been used in prior local work; seeds are new samples, not entirely unseen people.",
+    "Source people are A_bg and background is own B, reversing their real-world roles.",
+    "Rare labels are public-detector proxies, not true is_rare labels.",
+    "County rewriting creates controlled counterfactual regional cohorts rather than recreating private generation.",
+    "Region mapping is applied to all same-person roles before C-only anonymization.",
+    "Seven stylized defenses and equal weighting do not estimate their prevalence among actual targets."
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "stage": "holdout",
+  "primary_worlds": 18,
+  "all_target_conditions": 396,
+  "summary": [
+    {
+      "method": "median_0",
+      "strength": 0.0,
+      "private_mask_applied": true,
+      "worlds": 18,
+      "mean_mia": 0.7789267655607525,
+      "mean_all_population_tpr": 0.7363177526903018,
+      "mean_rare_max_uplift": 0.04260901287045078,
+      "paired_delta_mean": 0.0,
+      "paired_delta_min": 0.0,
+      "wins": 0,
+      "ties": 18,
+      "losses": 0
+    },
+    {
+      "method": "median_1",
+      "strength": 1.0,
+      "private_mask_applied": true,
+      "worlds": 18,
+      "mean_mia": 0.8154106931557912,
+      "mean_all_population_tpr": 0.7743400233269514,
+      "mean_rare_max_uplift": 0.041070669828839765,
+      "paired_delta_mean": 0.03648392759503871,
+      "paired_delta_min": 0.01367186190715608,
+      "wins": 18,
+      "ties": 0,
+      "losses": 0
+    }
+  ],
+  "input_verification_before": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "input_verification_after": {
+    "manifest": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "source_rows": 5143,
+  "reference_rows": 1049,
+  "source_reference_qi_overlap": 0,
+  "frozen_hashes": {
+    "mia.py": "014120a128bd3b6351b5af756e018055fc46ef62d5d31b436b63d205095220d2",
+    "shadow_joint.py": "b84faf5f63cf4d016c83fe6ba215e8f891ab6a0c4b317f70696ba16c4e532bfd",
+    "evaluate_mia.py": "b7ccb97e79854d5cba5e21a216e2d7d900faedb9eb9eeb651e713c0258d2e802",
+    "mia_protocol.json": "f515f6feded966f9263a14c90d3f8c421a8b6b12fcb7e9440d80152088ce6a35",
+    "base_model.py": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+    "base_actual.py": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393",
+    "generic_data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84"
+  },
+  "official_runtime_versions": {
+    "autograd": "1.9.0",
+    "autograd-gamma": "0.5.0",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "formulaic": "1.2.2",
+    "interface-meta": "2.0.1",
+    "joblib": "1.5.3",
+    "kiwisolver": "1.5.0",
+    "lifelines": "0.30.3",
+    "matplotlib": "3.11.0",
+    "narwhals": "2.23.0",
+    "numpy": "2.4.6",
+    "packaging": "26.2",
+    "pandas": "2.3.3",
+    "patsy": "1.0.2",
+    "pillow": "12.3.0",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.2",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "six": "1.17.0",
+    "statsmodels": "0.14.6",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.15.0",
+    "tzdata": "2026.2",
+    "wrapt": "2.2.2"
+  },
+  "elapsed_seconds": 56.18800000002375,
+  "official_submission": false,
+  "limitations": [
+    "Candidate membership is globally exclusive, but noncandidate source donors recur across targets because A_bg is small.",
+    "Public rare detection is a proxy, not true is_rare.",
+    "Existing person partitions were used in prior v1 work; new world seeds are not fully untouched people.",
+    "The source is A_bg and the independent reference is B; their actual contest roles are reversed."
+  ],
+  "fixed_selection": {
+    "adjustment": "subtract_candidate_cross_target_median",
+    "strength": 1.0,
+    "selected_method": "median_1",
+    "selection_stage": "dev",
+    "selected_before_holdout": true,
+    "holdout_inspected": false,
+    "model_sha256": "014120a128bd3b6351b5af756e018055fc46ef62d5d31b436b63d205095220d2",
+    "base_model_sha256": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+    "frozen_hashes": {
+      "mia.py": "014120a128bd3b6351b5af756e018055fc46ef62d5d31b436b63d205095220d2",
+      "shadow_joint.py": "b84faf5f63cf4d016c83fe6ba215e8f891ab6a0c4b317f70696ba16c4e532bfd",
+      "evaluate_mia.py": "b7ccb97e79854d5cba5e21a216e2d7d900faedb9eb9eeb651e713c0258d2e802",
+      "mia_protocol.json": "f515f6feded966f9263a14c90d3f8c421a8b6b12fcb7e9440d80152088ce6a35",
+      "base_model.py": "70822c903ea6e1a194a56b7398db0f0d62076b07bff7768be2a66beca21259a7",
+      "base_actual.py": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393",
+      "generic_data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84"
+    },
+    "selection_rule": "Highest mean of per-world primary-target official MIA scores; ties within 1e-12 choose smaller strength. Worlds receive equal weight.",
+    "development_summary": {
+      "method": "median_1",
+      "strength": 1.0,
+      "private_mask_applied": true,
+      "worlds": 18,
+      "mean_mia": 0.7901527424403242,
+      "mean_all_population_tpr": 0.7702558093080969,
+      "mean_rare_max_uplift": 0.01989693313222725,
+      "paired_delta_mean": 0.03650125352739728,
+      "paired_delta_min": -0.006063348416289527,
+      "wins": 16,
+      "ties": 0,
+      "losses": 2
+    },
+    "development_results_sha256": "011666682a3daeb8b01e46b2d41e234ce34eaa51857f45053453d9ceed94213b",
+    "official_submission": false
+  }
+}

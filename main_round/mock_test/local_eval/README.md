@@ -147,7 +147,7 @@ def predict(*, c, background, candidates, challenge, cfg):
 ## 検証
 
 ```powershell
-..\attack\.venv\Scripts\python.exe -m unittest local_eval.tests.test_local_eval local_eval.tests.test_generate local_eval.tests.test_evaluate_case -v
+..\attack\.venv\Scripts\python.exe -B -m unittest local_eval.tests.test_local_eval local_eval.tests.test_generate local_eval.tests.test_evaluate_case local_eval.tests.test_workspace_compat -v
 ```
 
 分割非交差、AIAの厳密対応と人数、MIA希少構成、予測APIへの正解混入防止、入力変更の隔離、不正出力拒否、定数MIA=0.01、完全予測の点数方向、独立生成の標的不使用、コピー漏洩、コピュラ生成、入替診断の再現性を検証します。公式キットのファイルは変更せず、その関数を直接呼びます。

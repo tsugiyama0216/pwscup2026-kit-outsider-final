@@ -1,5 +1,7 @@
 # Main-round attack workspace
 
+- M v2 freezes the shared `attack_workspace.py`, `attack.ps1`, M v1 sources, and root `local_eval/{data,scoring}.py`. Keep their exact bytes and hash gates. The root `local_eval` package contains only the three frozen files required by M v1/v2 compatibility; the canonical shared evaluator is `../mock_test/local_eval/`. The shared mock-test initializer supplies its own runtime paths and workspace attributes; TS initialization delegates to that shared setup. Use the separate M wrapper and common mock-test/TS entry points. `M/main_integration_20260930.json` preserves the earlier M v2 integration verification.
+
 - Before running TS v88 on another PC, read `../../CODEX_HANDOFF.md` section `V88_CROSS_PC_HANDOFF`. Source main `fad8253` lacks `prelim_transfer.methods`; obtain the original adapter and its dependencies, set up the pinned runtime, then verify imports, v88 initialization and benchmark. `published_v88.check` only checks listed files and original inputs, not runnable dependency completeness.
 
 - TS's own attacks and fitted assets live in `attack_TS/`. Worker M's attacks remain in `M/`. Shared mock-problem generation and evaluation live outside this folder in `../mock_test/`; use its `generate.ps1` and `evaluate.ps1` with saved cases and an attack plugin. Official downloads, targets, source manifest, pinned runtime and validation helpers in this directory remain shared infrastructure. New common evaluation outputs belong in `../mock_test/local-output/`; worker-specific and historical outputs stay with TS or M.
