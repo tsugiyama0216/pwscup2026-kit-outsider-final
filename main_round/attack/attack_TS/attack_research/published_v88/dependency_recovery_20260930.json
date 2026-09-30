@@ -1,0 +1,65 @@
+{
+  "completed_jst": "2026-09-30T23:16:00.631695+09:00",
+  "base_commit": "9f774b5e9d65ecbdb644a255a4ba57ce6c66f691",
+  "state": "Verified local recovery patch; GitHub upload has not been performed",
+  "cause": "Original prelim_transfer adapter was present only as untracked local files",
+  "canonical_adapter": "main_round/attack/attack_TS/prelim_transfer",
+  "original_adapter_bytes_preserved": {
+    "__init__.py": "026e646cbfaf6dffa1c8f46b6c830b611a74cbbbe25572b2793bb099e99987f5",
+    "methods.py": "ed9509024e761debc2741d02877637577ba0d5f5153005036293804c58a640fa"
+  },
+  "published_manifest_files": 130,
+  "verified_original_files": 94,
+  "historical_dependency_source_files": 16,
+  "previous_manifest_files_preserved_except_checker": 110,
+  "preserved_fitted_models": 11,
+  "preserved_selection_files": 6,
+  "clean_source_verification": {
+    "source": "git archive of base_commit plus only the five explicitly listed recovery files",
+    "overlay_sha256": {
+      "main_round/attack/attack_TS/attack_research/published_v88/check.py": "0d001d3c61e84453f67f8a5cb4101840a07dabc121e5c188da0147b68b2245e6",
+      "main_round/attack/attack_TS/attack_research/published_v88/manifest.json": "805ad71868dc23fd8296048ee01015c5e04f618338418e5ec02fc8482bdf65a1",
+      "main_round/attack/attack_TS/attack_research/published_v88/manifest_before_dependency_recovery.json": "1ed90a0cfef049c9c03cc06bfd8c6adb86050c321836f6b9e08254b501527185",
+      "main_round/attack/attack_TS/prelim_transfer/__init__.py": "026e646cbfaf6dffa1c8f46b6c830b611a74cbbbe25572b2793bb099e99987f5",
+      "main_round/attack/attack_TS/prelim_transfer/methods.py": "ed9509024e761debc2741d02877637577ba0d5f5153005036293804c58a640fa"
+    },
+    "borrowed_pinned_interpreter": true,
+    "isolated_python": "-I -B; clean-source TS and official-kit/src paths explicitly selected",
+    "baseline_hash_check_passed_but_initialization_failed": "ModuleNotFoundError: No module named 'prelim_transfer'",
+    "recovered_initialization_passed": true,
+    "canonical_dependency_origins_checked": true,
+    "missing_adapter_negative_check_passed": true,
+    "frozen_25_case_benchmark_passed": true,
+    "score_assertion_absolute_tolerance": 1e-10,
+    "mia_mean_reference_reproduced": 0.7307692307692308,
+    "aia_no_phi_mean_reference_reproduced": 0.8473837794327597,
+    "joint_perfect_cases": 8,
+    "case_count": 25,
+    "physical_second_PC_tested": false
+  },
+  "M_preservation": {
+    "clean_source_frozen_v2_dependencies": 31,
+    "clean_source_v1_files": 65,
+    "local_v1_tests_passed": 15,
+    "local_v2_tests_passed": 24,
+    "frozen_shared_files_changed": false
+  },
+  "commands_from_attack_TS": [
+    "../setup.ps1 (only when environment is absent)",
+    "../.venv/Scripts/python.exe -m attack_research.published_v88.check --runtime",
+    "../.venv/Scripts/python.exe -m attack_research.published_v88.benchmark"
+  ],
+  "local_evidence_directory": "local-output/v88-portability-20260930-230929",
+  "evidence_log_sha256": {
+    "before-recovery.txt": "51e70ea441536c0e5e420fbe0b3e4a499e2a16b9a9abff80a06e6f7bf0b6c4cb",
+    "after-recovery-runtime.txt": "4d5fea5ce1e37ad40daaf697bd21e3b494781e7e00d9aa8babd5ecc64a253ea6",
+    "after-recovery-benchmark.txt": "868579256f7b843df805e1ebf966dee34ca762c268dbc9b3dca05489e8d62521",
+    "M-frozen-gates.txt": "3a874d74ed9118ba1c0c27052bd37dc87ce4eee70287192a2ea11527fa737d2d",
+    "missing-adapter-negative-check.txt": "e0d74a0465538fc1b8922239a0ce3eaa76ff9d0d2aead2fd1739450857dccd47",
+    "final-runtime-check.txt": "1dbd63c1d25f8dc87b9e6c395c33416106d9583142f6309ec03441475b696f97"
+  },
+  "github_push_performed": false,
+  "official_submission_performed": false,
+  "model_retraining_performed": false,
+  "official_score_claimed": false
+}

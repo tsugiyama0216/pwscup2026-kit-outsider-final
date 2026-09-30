@@ -15,36 +15,35 @@ Set-Location main_round/mock_test
 .\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927-n3 -Plugin ..\attack\M\v1\model.py
 ```
 
-同じ保存スイートを使って平均・最小最大・問題別・方式別・公式参照との勝敗を比較します。候補選択はdevで行い、候補を固定してからholdoutを確認します。人物分割のholdoutは既使用であり、新seedでも独立した未知人物とは呼べません。単一抽出の主5条件、既定3抽出の主15条件、v88の固定25条件は抽出条件を確認して区別します。この整理ではモデル再学習・過去の結果の再生成・公式提出を行いません。このPCの本戦専用環境は構築済みで、原本94件・公式指定29ライブラリの確認に成功しました。以下のv88依存不足は未解決です。
+同じ保存スイートを使って平均・最小最大・問題別・方式別・公式参照との勝敗を比較します。候補選択はdevで行い、候補を固定してからholdoutを確認します。人物分割のholdoutは既使用であり、新seedでも独立した未知人物とは呼べません。単一抽出の主5条件、既定3抽出の主15条件、v88の固定25条件は抽出条件を確認して区別します。この整理ではモデル再学習・過去の結果の再生成・公式提出を行いません。このPCの本戦専用環境は構築済みで、原本94件・公式指定29ライブラリの確認に成功しました。その後のv88依存復旧と固定25条件の再現確認は次節を参照してください。
 
-**2026-09-30、ユーザーが「アップロード＝mainへ統合して保存」と明示。** 今後このリポジトリのアップロード依頼は、指定成果物をmainへ統合・pushするところまでを含む。Mのv2も対象。先行保存`a5706e5`の固定コード・設定・CSV・生成時記録を保ち、TSと共通模擬テストの配置と両立させる。`attack_workspace.py`・`attack.ps1`・Mのv1評価コード・`attack/local_eval/`の3ファイルはv2固定時のバイトを保持する。`attack/local_eval/`はM v1/v2専用の互換スナップショットで、共通評価器の正本は`mock_test/local_eval/`。共通ツールが必要なパスと保存先属性を初期化し、TS側もその処理を利用する。ハッシュ検証の迂回や再選択はしない。M v2を最初にmainへ統合した時点の記録は[統合検証記録](main_round/attack/M/main_integration_20260930.json)を参照。TSの不足依存に関する次の引き継ぎは引き続き有効。
+**2026-09-30、ユーザーが「アップロード＝mainへ統合して保存」と明示。** 今後このリポジトリのアップロード依頼は、指定成果物をmainへ統合・pushするところまでを含む。Mのv2も対象。先行保存`a5706e5`の固定コード・設定・CSV・生成時記録を保ち、TSと共通模擬テストの配置と両立させる。`attack_workspace.py`・`attack.ps1`・Mのv1評価コード・`attack/local_eval/`の3ファイルはv2固定時のバイトを保持する。`attack/local_eval/`はM v1/v2専用の互換スナップショットで、共通評価器の正本は`mock_test/local_eval/`。共通ツールが必要なパスと保存先属性を初期化し、TS側もその処理を利用する。ハッシュ検証の迂回や再選択はしない。M v2を最初にmainへ統合した時点の記録は[統合検証記録](main_round/attack/M/main_integration_20260930.json)を参照。TSの復旧状況と別PC向けの確認手順は次節を参照。
 
 ## V88_CROSS_PC_HANDOFF
 
-**別PCで取得した担当者・エージェントへ：TSのv88は依存コードが不足しており、まだ実行一式がそろっていません。** 2026-09-30に取得した `main`（`fad8253860066b43bbed38e33f3fb5bbacf56a12`）で確認しました。`attack_TS/` への整理前から存在した不足です。
+**2026-10-01、ユーザーが検証済みv88の復旧状態をGitHubへ保存するよう明示しました。** 復旧コード・検査・有効マニフェストと旧版の保存・手順書・復旧検証記録を、既存の非公開リポジトリの `main` へ反映する対象とします。`dependency_recovery_20260930.json` の未送信状態は9月30日の検証完了時点の履歴です。
 
-- **不足しているコード：** `prelim_transfer.methods`。必要な関数は `load_legacy()` と `build_aia()` です。元の作業PCの `main_round/attack/prelim_transfer/` または `main_round/attack/attack_TS/prelim_transfer/` を探索先の候補とし、元コードとそこから読み込む依存コードを一緒に確認してください。元PCでの存在や回収はまだ確認していません。
-- **必要な理由：** [v88](main_round/attack/attack_TS/attack_research/v88/predict.py) は過去版を順に呼び、その先の [v10](main_round/attack/attack_TS/attack_research/v10/predict.py) が初期化時に `load_legacy()`、予測時に `build_aia()` と `modules['structured'].stratified_half_selection` を使います。現在は `CombinedAttack()` の初期化が `ModuleNotFoundError: No module named 'prelim_transfer'` で停止します。
-- **照合成功の意味：** `attack_research.published_v88.check` は、マニフェストに列挙されたファイルと原本のハッシュを確認します。列挙されていない依存モジュールの有無や予測の完走は確認しません。106ファイル・原本94件の照合成功、学習済みモデル11件の読み込み成功を、v88全体の実行成功と扱わないでください。
-- **配置：** TSの正本は `main_round/attack/attack_TS/`、Mの攻撃は `main_round/attack/M/`。回収する `prelim_transfer/` はTS配下で既存の `from prelim_transfer.methods import ...` が解決するように配置し、元コードが参照する予備戦モジュールのパスも確認します。実装を推測して置き換えず、元のv88を再現できるコードを回収してください。
-- **実行環境：** 本戦専用 `.venv/` はGitに含まれません。別PCでは `main_round/attack/setup.ps1` で固定版公式環境を構築・確認します。このPCでは2026-09-30に専用環境を構築し、原本94件と公式指定29ライブラリの確認に成功しました。当初の予備戦Pythonには公式指定と異なる依存版が6件あり、v88全体の実行確認には使用していません。専用環境の構築後も、不足コードの復旧とv88全体の実行確認は未完了です。
+**2026-09-30にTS v88の不足依存を復旧し、Git管理ソースから作った独立コピーで固定25条件を再現しました。** 元の `main_round/attack/prelim_transfer/` に残っていた `__init__.py` と `methods.py` を、TSの正本 `main_round/attack/attack_TS/prelim_transfer/` へバイト一致で回収しました。実装を推測して置き換えず、アルゴリズム・学習済みモデル・候補選択・予測CSVを保持しています。[復旧検証記録](main_round/attack/attack_TS/attack_research/published_v88/dependency_recovery_20260930.json)を参照してください。
 
-復旧を依頼された担当者は、元コードと再帰的な依存先を回収し、相対パスを確認してから専用環境を構築します。その後、ファイル照合、TS配下からのimportと `load_legacy()`、v88の初期化、最後に固定条件の `benchmark` の順で確認してください。既存の学習済みモデル・選択記録・予測CSVは保持します。回収した実行時コードを現在の `manifest.json` の検証対象に追加し、`manifest_before_attack_TS.json` と過去の検証JSONは元の記録として残します。復旧後の結果は日時・使用コミット・コマンドとともに新しく記録し、この「不足中」の案内も更新してください。
+- **原因と旧状態の再現：** 先に確認した `main`（`fad8253860066b43bbed38e33f3fb5bbacf56a12`）から、必須の `prelim_transfer.methods` がGitに収録されていませんでした。最新取得状態 `9f774b5` のGit管理ファイルだけを展開したコピーでも、旧111ファイル・原本94件の照合が成功した後、`CombinedAttack()` が `ModuleNotFoundError: No module named 'prelim_transfer'` で停止することを再現しました。TS整理前から存在した不足です。
+- **必要な処理と配置：** [v88](main_round/attack/attack_TS/attack_research/v88/predict.py) から呼ばれる [v10](main_round/attack/attack_TS/attack_research/v10/predict.py) は、初期化時に `load_legacy()`、予測時に `build_aia()` と `modules['structured'].stratified_half_selection` を使います。正規のアダプターはTS配下に置き、元からGit管理されている `prelim/workspace/` の依存ソース16件を確認しました。実行入口とimport名は従来どおりです。
+- **照合と実行確認の違い：** 有効な `manifest.json` はリポジトリ直下を基準とし、回収アダプターと予備戦依存を含む130ファイルを照合します。通常の `published_v88.check` はハッシュ照合だけです。`check --runtime` は照合に加えてアダプター・予備戦コードの読み込み元、必要な関数、v88初期化を確認し、`benchmark` は予測と採点を固定25条件で確認します。以前の106ファイル照合・モデル11件の読み込み成功は、その時点で確認した範囲の履歴として残します。
+- **今回の検証範囲：** Git管理ファイルに復旧対象の5ファイルだけを追加した独立コピーで、130ファイル・原本94件の照合、正規TSアダプターと予備戦依存16件の読み込み、v88初期化、固定25条件benchmarkが成功しました。実行にはこのPCの固定Pythonを `-I -B` で使用し、展開コピーの公式ソースを明示しました。ローカルの未追跡互換コピーに依存せず再現できることを確認しています。別の実機PCでの実行は未確認です。
+- **共有コードの保全：** M v2の固定依存31件とM v1の保全対象65件を独立コピーでも照合し、ローカルのM v1テスト15件・M v2テスト24件が成功しました。`attack_workspace.py`・`attack.ps1`・M v1評価コード・`attack/local_eval/`の3ファイル、過去のマニフェスト・生成時検証JSONは保持しています。
+- **別PCの実行環境：** 本戦専用 `.venv/` はGitに含まれません。`main_round/attack/setup.ps1` で固定版公式環境を構築・確認してください。このPCでは同日に原本94件と公式指定29ライブラリの版を確認しました。当初の予備戦Pythonには公式指定と異なる依存版が6件あったため、今回の再現確認には本戦専用の固定環境を使っています。
 
-復旧後の最小確認例（リポジトリ直下から。**現状では依存コード不足で途中停止します**）：
+別PCでの最小確認例です（リポジトリ直下から）。専用環境が構築済みならセットアップは省略できます。
 
 ```powershell
 Set-Location main_round/attack/attack_TS
 ..\setup.ps1
-..\.venv\Scripts\python.exe -m attack_research.published_v88.check
-..\.venv\Scripts\python.exe -c "import attack_research; from prelim_transfer.methods import load_legacy, build_aia; modules = load_legacy(); assert callable(modules['structured'].stratified_half_selection)"
-..\.venv\Scripts\python.exe -c "from attack_research.v88.predict import CombinedAttack; CombinedAttack(); print('v88 initialization OK')"
+..\.venv\Scripts\python.exe -m attack_research.published_v88.check --runtime
 ..\.venv\Scripts\python.exe -m attack_research.published_v88.benchmark
 ```
 
-元の記録にあるbenchmarkの参照値は、固定25条件でMIA平均 `0.7307692307692308`、AIA平均 `0.8473837794327597`、両方1.0が `8/25` です。別PCで復旧後に再現を確認する値であり、このPCで今回実行した結果や公式得点ではありません。
+元の記録にあるbenchmarkの参照値は、固定25条件でMIA平均 `0.7307692307692308`、AIA平均 `0.8473837794327597`、両方1.0が `8/25` です。今回の独立コピーでも平均値の許容差 `1e-10` と両方1.0の条件数の照合を通過しました。これは固定されたローカル代理条件の再現結果であり、本戦の公式得点ではありません。
 
-この復旧案内を作成した時点の依頼では、この案内と前段の `attack_TS/` 整理を同じ非公開GitHubで共有し、別PCのclone/pullで読めるようにしました。不足コードの回収・復旧と公式提出はまだ行っていません。現在の共通模擬テストの配置は冒頭を参照してください。
+以前はこの案内と `attack_TS/` 整理だけを非公開GitHubで共有し、コード回収は未完了と記録していました。回収・検証結果は新しい復旧記録に保存し、過去の記録は書き換えません。9月30日の検証完了時点では復旧ファイルのGitHubアップロードは未実施でしたが、10月1日の明示的な依頼により上記の保存対象となりました。公式提出・試行消費・モデル再学習は行っていません。現在の共通模擬テストの配置は冒頭を参照してください。
 
 ## これまでの作業記録
 
