@@ -1,5 +1,8 @@
 # Worker M's attack series
 
+- Canonical folder: `Attack_M/`. Use `run.ps1` from this folder. The parent preparation script creates ignored `../M/` source copies for unchanged frozen modules; outputs share this folder through a junction. Only update canonical files. Existing v1/v2 docs and hash records are frozen historical artifacts.
+
+
 - M identifies the user/worker; v1 identifies the version. Do not rename this version to M1.
 - Keep M's versioned implementations in `v1/`, `v2/`, and so on, and their outputs under `local-output/<version>/`.
 - Reuse the shared pinned runtime, official data, and validators from the parent attack workspace.

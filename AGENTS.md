@@ -1,5 +1,8 @@
 # PWSCUP2026 repository instructions
 
+- On 2026-10-01 the user requested renaming main-round attack `M/` to `Attack_M/` and explicitly requested committing and pushing this change to the existing private main. `main_round/attack/Attack_M/` is canonical. Preserve frozen v1/v2 source, selections, predictions and historical JSON bytes. `prepare_attack_m.ps1` generates an ignored local `M/` compatibility copy of frozen source and a junction from `M/local-output` to `Attack_M/local-output`; do not edit the compatibility copy. Use `Attack_M/run.ps1` (or run preparation before the unchanged shared wrapper). This does not authorize unrelated local defense-score work or official submissions.
+
+
 ## Scope and authorization
 
 - On 2026-10-01, after the recovered v88 was verified locally and in a clean tracked-source export, the user explicitly requested uploading this state to GitHub. This authorizes the canonical `attack_TS/prelim_transfer/` adapter, v88 dependency checker and manifest, recovery verification record, previous manifest snapshot, and related documentation in the existing private origin `tsugiyama0216/pwscup2026-kit-private`, integrated into `main`. Preserve M's frozen dependencies, fitted models, selections and predictions. Unrelated preliminary documents, old untracked research, local environments and outputs remain excluded. No official submission is authorized. This supersedes the earlier local-only publication scope of the v88 recovery.

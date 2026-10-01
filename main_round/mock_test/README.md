@@ -1,6 +1,8 @@
 # 本戦の共通模擬テスト
 
-**模擬問題を生成・保存し、MやTSなどの攻撃手法を同じ問題で比較する共通ツールです。** 攻撃実装は `../attack/M/`・`../attack/attack_TS/` に置き、このフォルダーには問題生成と採点をまとめています。
+Mの正本は `../attack/Attack_M/` です。既存環境で固定版Mのテストを実行するときは、最初に `../attack/prepare_attack_m.ps1` で旧import名のローカル互換配置を準備します。`setup.ps1` と `Attack_M/run.ps1` からも自動準備されます。
+
+**模擬問題を生成・保存し、MやTSなどの攻撃手法を同じ問題で比較する共通ツールです。** 攻撃実装は `../attack/Attack_M/`・`../attack/attack_TS/` に置き、このフォルダーには問題生成と採点をまとめています。
 
 PowerShellでリポジトリ直下から実行します。
 
@@ -13,7 +15,7 @@ Set-Location main_round/mock_test
 .\generate.ps1 -Split dev -Seed 20260927 -Count 3
 
 # 保存した同じ問題をMのv1で評価
-.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927-n3 -Plugin ..\attack\M\v1\model.py
+.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927-n3 -Plugin ..\attack\Attack_M\v1\model.py
 ```
 
 Mのv1は既定の採用方式 `full_reference_aia` で動きます。別の手法を比較するときは `-Plugin` をその実装へ替え、同じ `-CaseDirectory` を指定します。`-Count` の既定は3で、開始seedから連続する抽出を保存します。6に増やすと、希少共有0・1・2人を各2抽出ずつ確認できます。複数の保存問題もカンマ区切りで指定できます。

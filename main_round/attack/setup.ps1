@@ -6,6 +6,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+& (Join-Path $PSScriptRoot 'prepare_attack_m.ps1')
 $repoRoot = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $legacyUv = Join-Path $repoRoot 'prelim/workspace/.tools/uv/uv.exe'
 $legacyPython = Join-Path $repoRoot 'prelim/workspace/.tools/python/cpython-3.12.13-windows-x86_64-none/python.exe'

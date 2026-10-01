@@ -25,7 +25,9 @@
 /main_round/**/token.txt
 /main_round/**/*.zip
 /main_round/**/local-output/
-# M's v1 is tracked under main_round/attack/M; retain old local copies for active research.
+# Attack_M is canonical; M is a generated local compatibility view for frozen code.
+/main_round/attack/M/
+# Retain older local copies for active research.
 /main_round/attack/v1/
 /main_round/attack/strategy/V1_STRATEGY.md
 /main_round/attack/strategy/audit_public_clues.py

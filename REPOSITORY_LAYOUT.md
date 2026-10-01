@@ -12,7 +12,7 @@ main_round/
 │   └── local-output/              # 新しい問題・評価結果（Git対象外）
 └── attack/
     ├── attack_TS/                 # TSの攻撃・モデル・過去の評価記録
-    ├── M/                         # Mの攻撃・モデル・過去の評価記録
+    ├── Attack_M/                         # Mの攻撃・モデル・過去の評価記録
     └── targets/・official-kit/など # 共通配布物・検証・Python環境
 ```
 
@@ -20,7 +20,7 @@ main_round/
 
 以下は同日までの配置変更の履歴です。本人（TS）の本戦攻撃は [`main_round/attack/attack_TS/`](main_round/attack/attack_TS/README.md) にまとめました。当初は `attack_research/`・`local_eval/`・既存の`local-output/`・`evaluate.ps1`・`generate.ps1`を同フォルダーへ移動しました。その時点の対応・照合は `attack_TS/layout_migration.json` に残しています。現在の共通ツールの場所は上記を参照してください。
 
-2026-09-30追加：作業者Mの本戦攻撃は [`main_round/attack/M/`](main_round/attack/M/README.md) にまとめます。Mの第1版は `M/v1/`、予測CSV・診断・検証記録は `M/local-output/v1/`、初期作戦は `M/strategy/` です。旧 `attack/v1/`・`attack/local-output/v1/` の保存対象をM配下へ移し、版名v1と保存CSVのバイトを保持しました。旧パスのローカル互換コピーはGit対象外です。
+2026-09-30追加：作業者Mの本戦攻撃は [`main_round/attack/Attack_M/`](main_round/attack/Attack_M/README.md) にまとめます。Mの第1版は `Attack_M/v1/`、予測CSV・診断・検証記録は `Attack_M/local-output/v1/`、初期作戦は `Attack_M/strategy/` です。旧 `attack/v1/`・`attack/local-output/v1/` の保存対象をM配下へ移し、版名v1と保存CSVのバイトを保持しました。旧パスのローカル互換コピーはGit対象外です。
 
 2026-09-27追加：[main_round/attack/](main_round/attack/README.md) に本戦の攻撃配布物・固定版キット・実行と検証の入口を配置しました。ユーザーの明示的依頼により、`downloads/` の配布原本、`targets/` の本戦攻撃対象、`official-kit/starter/` の固定版実行ソース、`reference_baseline/` の参照CSV・検証記録も既存の非公開リポジトリに保存します。専用Pythonの仮想環境・キャッシュ・今後の `local-output/` はローカル管理です。
 

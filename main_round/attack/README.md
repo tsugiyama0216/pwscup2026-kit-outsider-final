@@ -1,14 +1,16 @@
 # 本戦・攻撃フェーズの作業環境（team10）
 
+作業者Mの正本は `Attack_M/` です。Mの固定版を実行するときは `Attack_M/run.ps1 M-v2-test` 等を使用します。既存環境で旧コマンドを使う場合は、先に `./prepare_attack_m.ps1` でGit管理外の互換配置を準備してください。新規環境では `setup.ps1` が準備します。
+
 **TSのv88の不足依存を2026-09-30に復旧しました。** 元の `prelim_transfer.methods` を `attack_TS/prelim_transfer/` に回収し、予備戦の依存コードも検証対象へ追加しました。別PCでは環境構築後に `published_v88.check --runtime` と固定25条件の `benchmark` を実行します。[担当者・エージェント向けの復旧記録と確認手順](../../CODEX_HANDOFF.md#v88_cross_pc_handoff)を参照してください。
 
-**TS本人の攻撃は [attack_TS/](attack_TS/README.md)、作業者Mの攻撃は [M/](M/README.md)、共通の模擬問題生成・採点は [../mock_test/](../mock_test/README.md) です。** 共通ツールで複数抽出を保存し、同じ問題に各攻撃を適用できます。このフォルダーの配布物・公式キット・検証・Python環境を共用し、各作業者のモデル・予測・過去の評価記録は元の場所に保持します。
+**TS本人の攻撃は [attack_TS/](attack_TS/README.md)、作業者Mの攻撃は [Attack_M/](Attack_M/README.md)、共通の模擬問題生成・採点は [../mock_test/](../mock_test/README.md) です。** 共通ツールで複数抽出を保存し、同じ問題に各攻撃を適用できます。このフォルダーの配布物・公式キット・検証・Python環境を共用し、各作業者のモデル・予測・過去の評価記録は元の場所に保持します。
 
 `attack/local_eval/` の3ファイルは、M v1/v2が固定した依存ハッシュを保つための互換スナップショットです。新しい共通評価器は `../mock_test/local_eval/` を使用します。固定された共有コードは変更せず、共通ツールとTSの入口で必要なパスを初期化します。
 
-**2026-09-30：作業者Mの[v2](M/v2/README.md)を作成・検証。** 県の照合候補が少なく遠い場合に条件を緩めるAIAと、相手間中央値を差し引くMIAを採用しました。固定後の模擬確認でMIA平均.778927→.815411、AIA（φ未控除）.274991→.370155。別実験であり公式得点の予測ではありません。22対象の[予測CSVと検証記録](M/local-output/v2/predictions/)を保存し、公式形式・2回生成のバイト一致を確認。v1は保存し、公式提出・ZIP作成はしていません。v2は`main`へ統合し、固定依存とTSの配置の両立を[統合検証記録](M/main_integration_20260930.json)にまとめています。入口は`attack.ps1 M-v2-test / M-v2-predict`です。
+**2026-09-30：作業者Mの[v2](Attack_M/v2/README.md)を作成・検証。** 県の照合候補が少なく遠い場合に条件を緩めるAIAと、相手間中央値を差し引くMIAを採用しました。固定後の模擬確認でMIA平均.778927→.815411、AIA（φ未控除）.274991→.370155。別実験であり公式得点の予測ではありません。22対象の[予測CSVと検証記録](Attack_M/local-output/v2/predictions/)を保存し、公式形式・2回生成のバイト一致を確認。v1は保存し、公式提出・ZIP作成はしていません。v2は`main`へ統合し、固定依存とTSの配置の両立を[統合検証記録](Attack_M/main_integration_20260930.json)にまとめています。入口は`attack.ps1 M-v2-test / M-v2-predict`です。
 
-**2026-09-30：作業者Mの[v1の診断・実装・検証結果](M/v1/README.md)。** [Mの作業一覧](M/README.md)にコード・予測CSV・検証記録をまとめています。`M`は作業者、`v1`は版名です。他22対象の予測CSVは形式と再現性を確認済みで、公式提出はしていません。実行入口は`attack.ps1 M-v1-diagnose / M-v1-test / M-v1-evaluate / M-v1-predict`です。
+**2026-09-30：作業者Mの[v1の診断・実装・検証結果](Attack_M/v1/README.md)。** [Mの作業一覧](Attack_M/README.md)にコード・予測CSV・検証記録をまとめています。`M`は作業者、`v1`は版名です。他22対象の予測CSVは形式と再現性を確認済みで、公式提出はしていません。実行入口は`attack.ps1 M-v1-diagnose / M-v1-test / M-v1-evaluate / M-v1-predict`です。
 
 2026-09-27の[事務局メール](source_email_20260927.txt)に基づく、このPCの本戦用作業場所です。チームはアウトサイダー / outsider、コホート番号は **10**。予備戦team24とは別です。
 
@@ -46,7 +48,7 @@ Set-Location main_round/attack
 |---|---|
 | 共通の模擬問題生成・保存・手法比較 | [../mock_test/](../mock_test/README.md) |
 | TS本人の攻撃・学習済みモデル・過去の評価 | [attack_TS/](attack_TS/README.md) |
-| 作業者Mの独立攻撃・予測・評価結果 | [M/](M/README.md) |
+| 作業者Mの独立攻撃・予測・評価結果 | [Attack_M/](Attack_M/README.md) |
 | 配布案内の本文 | [source_email_20260927.txt](source_email_20260927.txt) |
 | 取得元・固定コミット・ファイルのSHA-256 | [source_manifest.json](source_manifest.json) |
 | ダウンロード原本（攻撃ZIP・PDF・外部ハッシュ一覧・ソースZIP） | `downloads/` |

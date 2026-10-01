@@ -31,10 +31,10 @@
 
 ```powershell
 # 先にgenerate.ps1で保存した問題へMのv1を適用
-.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927-n3 -Plugin ..\attack\M\v1\model.py
+.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927-n3 -Plugin ..\attack\Attack_M\v1\model.py
 
 # 複数の保存先も指定可能（各問題を先に-Count 1で生成しておく）
-.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927,.\local-output\shadow-cases\dev-20260928,.\local-output\shadow-cases\dev-20260929 -Plugin ..\attack\M\v1\model.py
+.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\dev-20260927,.\local-output\shadow-cases\dev-20260928,.\local-output\shadow-cases\dev-20260929 -Plugin ..\attack\Attack_M\v1\model.py
 ```
 
 Mのv1の既定は採用済み `full_reference_aia` です。攻撃関数へ渡すのは公開入力だけで、採点用の `private/` は評価器が読みます。本番だけの自己163人マスクはこのAPIには含みません。
@@ -45,7 +45,7 @@ devで候補と設定を決めた後、固定した候補の確認には別の�
 
 ```powershell
 .\generate.ps1 -Split holdout -Seed 20261001 -Count 3
-.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\holdout-20261001-n3 -Plugin ..\attack\M\v1\model.py
+.\evaluate.ps1 -CaseDirectory .\local-output\shadow-cases\holdout-20261001-n3 -Plugin ..\attack\Attack_M\v1\model.py
 ```
 
 holdoutの結果を見て候補を変更した場合、その結果は以後の開発履歴として扱います。この人物分割は既に使用されているため、新しい抽出を増やしても完全に独立した人物検証にはなりません。

@@ -15,7 +15,7 @@
 | 探したいもの | 場所 |
 |---|---|
 | 本戦・攻撃フェーズの配布物、起動・検証手順 | [`main_round/attack/`](main_round/attack/README.md) |
-| 作業者Mの本戦攻撃・v1のコードと予測 | [`main_round/attack/M/`](main_round/attack/M/README.md) |
+| 作業者Mの本戦攻撃・v1のコードと予測 | [`main_round/attack/Attack_M/`](main_round/attack/Attack_M/README.md) |
 | 共通の模擬問題生成・保存・攻撃手法の比較 | [`main_round/mock_test/`](main_round/mock_test/README.md) |
 | TS本人の本戦攻撃・v88・学習済みモデル | [`main_round/attack/attack_TS/`](main_round/attack/attack_TS/README.md) |
 | 予備戦・匿名化フェーズの提出物 `C.csv` | [`prelim/anonymization/anonymization-submitted-v5/`](prelim/anonymization/anonymization-submitted-v5/) |

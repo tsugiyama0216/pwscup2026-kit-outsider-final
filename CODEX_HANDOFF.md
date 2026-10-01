@@ -1,5 +1,11 @@
 # PWSCUP2026 引き継ぎ
 
+## 2026-10-01：作業者Mのフォルダー名変更
+
+作業者Mの正本を `main_round/attack/M/` から [`main_round/attack/Attack_M/`](main_round/attack/Attack_M/README.md) に変更。ユーザーはコミットと既存非公開GitHubのmainへのpushも明示。v1/v2の固定コード・選択JSON・予測CSV・過去の検証記録を保持し、`Attack_M/run.ps1` から旧名の互換コピーを準備して実行する。`M/` はGit管理外で、出力は `Attack_M/local-output/` と共有する。`setup.ps1` も互換配置を準備する。旧文書のパスは当時の記録。本PC独自の防御評価コミット・未コミットの加工候補は今回のアップロード対象外。専用Python環境はこのPCに未構築のため、数値テストの再実行は未確認。
+
+
+
 ## 共通模擬テストの現在の入口
 
 GitHub保存前の統合確認では、共通テスト29件・M v1の15件・M v2の24件が成功しました。M v2の固定依存31件とv1の保持対象65件を照合し、保存済み3抽出×7方式の採点42件も統合前と一致しています。[今回の統合検証記録](main_round/mock_test/github_integration_20260930.json)を参照してください。過去の移行・評価JSONは作成当時の記録として保持しています。

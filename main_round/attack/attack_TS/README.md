@@ -2,7 +2,7 @@
 
 **別PCで取得した方へ：** 2026-09-30にv88の不足依存を復旧し、元の `prelim_transfer.methods` をこのフォルダーの `prelim_transfer/` に回収しました。[別PC向け引き継ぎ](../../../CODEX_HANDOFF.md#v88_cross_pc_handoff)に復旧記録と確認手順を記載しています。環境構築後、`published_v88.check --runtime` で依存元と初期化、`benchmark` で固定25条件の再現を確認してください。
 
-ここは **TS（リポジトリ所有者本人）が作成した本戦攻撃** の保存先です。2026-09-30の本人の指定により、Mの攻撃と区別して `attack_TS/` にまとめました。作業者Mの独立攻撃は [../M/](../M/README.md) にあります。
+ここは **TS（リポジトリ所有者本人）が作成した本戦攻撃** の保存先です。2026-09-30の本人の指定により、Mの攻撃と区別して `attack_TS/` にまとめました。作業者Mの独立攻撃は [../Attack_M/](../Attack_M/README.md) にあります。
 
 共通の模擬問題生成・採点は [../../mock_test/](../../mock_test/README.md) へ分離しました。同じ保存問題へTSやMの攻撃を適用できます。TSの学習済みモデル・選択記録・過去の評価結果はこのフォルダーに保持します。
 
@@ -13,7 +13,7 @@ main_round/attack/
 │   ├── prelim_transfer/          # 回収した元の予備戦コード接続アダプター
 │   ├── local-output/attack-research/ # 保存済み学習モデル・選択記録
 │   └── layout_migration.json     # 移動前後の対応・ハッシュ照合
-├── M/                            # 作業者Mの攻撃と予測・評価結果
+├── Attack_M/                            # 作業者Mの攻撃と予測・評価結果
 └── targets/・official-kit/など    # 両者が参照する共通の配布物・実行環境
 ```
 
