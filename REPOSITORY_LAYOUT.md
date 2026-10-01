@@ -11,14 +11,15 @@ main_round/
 │   ├── local_eval/                # 生成・読込・採点コード
 │   └── local-output/              # 新しい問題・評価結果（Git対象外）
 └── attack/
-    ├── attack_TS/                 # TSの攻撃・モデル・過去の評価記録
+    ├── Attak_R/                   # Rの攻撃用フォルダー（準備のみ）
+    ├── Attak_T/                 # TSの攻撃・モデル・過去の評価記録
     ├── Attack_M/                         # Mの攻撃・モデル・過去の評価記録
     └── targets/・official-kit/など # 共通配布物・検証・Python環境
 ```
 
-`attack/attack_TS/local_eval/`・`generate.ps1`・`evaluate.ps1` は `mock_test/` へ移動しました。Pythonパッケージ名 `local_eval` と既存のTS/Mのモデル・予測・評価記録は維持します。新しい共通ツールの出力は `mock_test/local-output/` へ保存し、過去の記録に残るパスは当時の履歴として扱います。
+`attack/Attak_T/local_eval/`・`generate.ps1`・`evaluate.ps1` は `mock_test/` へ移動しました。Pythonパッケージ名 `local_eval` と既存のTS/Mのモデル・予測・評価記録は維持します。新しい共通ツールの出力は `mock_test/local-output/` へ保存し、過去の記録に残るパスは当時の履歴として扱います。
 
-以下は同日までの配置変更の履歴です。本人（TS）の本戦攻撃は [`main_round/attack/attack_TS/`](main_round/attack/attack_TS/README.md) にまとめました。当初は `attack_research/`・`local_eval/`・既存の`local-output/`・`evaluate.ps1`・`generate.ps1`を同フォルダーへ移動しました。その時点の対応・照合は `attack_TS/layout_migration.json` に残しています。現在の共通ツールの場所は上記を参照してください。
+以下は同日までの配置変更の履歴です。本人（TS）の本戦攻撃は [`main_round/attack/Attak_T/`](main_round/attack/Attak_T/README.md) にまとめました。当初は `attack_research/`・`local_eval/`・既存の`local-output/`・`evaluate.ps1`・`generate.ps1`を同フォルダーへ移動しました。その時点の対応・照合は `Attak_T/layout_migration.json` に残しています。現在の共通ツールの場所は上記を参照してください。
 
 2026-09-30追加：作業者Mの本戦攻撃は [`main_round/attack/Attack_M/`](main_round/attack/Attack_M/README.md) にまとめます。Mの第1版は `Attack_M/v1/`、予測CSV・診断・検証記録は `Attack_M/local-output/v1/`、初期作戦は `Attack_M/strategy/` です。旧 `attack/v1/`・`attack/local-output/v1/` の保存対象をM配下へ移し、版名v1と保存CSVのバイトを保持しました。旧パスのローカル互換コピーはGit対象外です。
 

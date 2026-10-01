@@ -1,14 +1,17 @@
 # TS（本人）の本戦攻撃
 
+2026-10-01に、ユーザー指定の綴りで `attack_TS` から **`Attak_T`** へ名前を変更しました。以下の手順は新しい配置で実行します。攻撃手法・学習済みモデル・過去の結果は保持しています。今回の配置確認は [rename_verification_20261001.json](rename_verification_20261001.json) を参照してください。
+
+
 **別PCで取得した方へ：** 2026-09-30にv88の不足依存を復旧し、元の `prelim_transfer.methods` をこのフォルダーの `prelim_transfer/` に回収しました。[別PC向け引き継ぎ](../../../CODEX_HANDOFF.md#v88_cross_pc_handoff)に復旧記録と確認手順を記載しています。環境構築後、`published_v88.check --runtime` で依存元と初期化、`benchmark` で固定25条件の再現を確認してください。
 
-ここは **TS（リポジトリ所有者本人）が作成した本戦攻撃** の保存先です。2026-09-30の本人の指定により、Mの攻撃と区別して `attack_TS/` にまとめました。作業者Mの独立攻撃は [../Attack_M/](../Attack_M/README.md) にあります。
+ここは **TS（リポジトリ所有者本人）が作成した本戦攻撃** の保存先です。2026-09-30の本人の指定により、Mの攻撃と区別して `Attak_T/` にまとめました。作業者Mの独立攻撃は [../Attack_M/](../Attack_M/README.md) にあります。
 
 共通の模擬問題生成・採点は [../../mock_test/](../../mock_test/README.md) へ分離しました。同じ保存問題へTSやMの攻撃を適用できます。TSの学習済みモデル・選択記録・過去の評価結果はこのフォルダーに保持します。
 
 ```text
 main_round/attack/
-├── attack_TS/                    # TS本人の攻撃
+├── Attak_T/                    # TS本人の攻撃
 │   ├── attack_research/          # 各候補の実装とv88の再現入口
 │   ├── prelim_transfer/          # 回収した元の予備戦コード接続アダプター
 │   ├── local-output/attack-research/ # 保存済み学習モデル・選択記録

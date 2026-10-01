@@ -2,9 +2,9 @@
 
 作業者Mの正本は `Attack_M/` です。Mの固定版を実行するときは `Attack_M/run.ps1 M-v2-test` 等を使用します。既存環境で旧コマンドを使う場合は、先に `./prepare_attack_m.ps1` でGit管理外の互換配置を準備してください。新規環境では `setup.ps1` が準備します。
 
-**TSのv88の不足依存を2026-09-30に復旧しました。** 元の `prelim_transfer.methods` を `attack_TS/prelim_transfer/` に回収し、予備戦の依存コードも検証対象へ追加しました。別PCでは環境構築後に `published_v88.check --runtime` と固定25条件の `benchmark` を実行します。[担当者・エージェント向けの復旧記録と確認手順](../../CODEX_HANDOFF.md#v88_cross_pc_handoff)を参照してください。
+**TSのv88の不足依存を2026-09-30に復旧しました。** 元の `prelim_transfer.methods` を `Attak_T/prelim_transfer/` に回収し、予備戦の依存コードも検証対象へ追加しました。別PCでは環境構築後に `published_v88.check --runtime` と固定25条件の `benchmark` を実行します。[担当者・エージェント向けの復旧記録と確認手順](../../CODEX_HANDOFF.md#v88_cross_pc_handoff)を参照してください。
 
-**TS本人の攻撃は [attack_TS/](attack_TS/README.md)、作業者Mの攻撃は [Attack_M/](Attack_M/README.md)、共通の模擬問題生成・採点は [../mock_test/](../mock_test/README.md) です。** 共通ツールで複数抽出を保存し、同じ問題に各攻撃を適用できます。このフォルダーの配布物・公式キット・検証・Python環境を共用し、各作業者のモデル・予測・過去の評価記録は元の場所に保持します。
+**TS本人の攻撃は [Attak_T/](Attak_T/README.md)、作業者Mの攻撃は [Attack_M/](Attack_M/README.md)、共通の模擬問題生成・採点は [../mock_test/](../mock_test/README.md) です。** 共通ツールで複数抽出を保存し、同じ問題に各攻撃を適用できます。このフォルダーの配布物・公式キット・検証・Python環境を共用し、各作業者のモデル・予測・過去の評価記録は元の場所に保持します。
 
 `attack/local_eval/` の3ファイルは、M v1/v2が固定した依存ハッシュを保つための互換スナップショットです。新しい共通評価器は `../mock_test/local_eval/` を使用します。固定された共有コードは変更せず、共通ツールとTSの入口で必要なパスを初期化します。
 
@@ -16,7 +16,7 @@
 
 **提出期間：2026年9月28日（月）09:00〜10月11日（日）09:00（日本時間）。採点に通る提出は最大8回。** 9月27日の追加依頼に基づき、この環境の配布データ・コード・手順・検証済み参照出力を既存の非公開GitHubリポジトリに保存します。CodaBenchへの提出は行っていません。
 
-**このPCでも2026-09-30に本戦専用環境を構築し、原本94件の照合と公式指定29ライブラリの版を確認しました。** 元の作業PCでは、22対象の公式参照攻撃でMIA 1,049行・AIA 7,172行を生成し、公式検証とCSV再読み込み検証を通過しています。誤った行ID・標的不足・重複・無限値・小数ID・誤トークンを拒否する確認も当時完了しています。仮想環境はGitに含まれないため、別PCでは以下のセットアップが必要です。TS v88は同日の依存復旧後、このPCで初期化に成功しました。固定25条件の再現確認は[復旧記録](attack_TS/attack_research/published_v88/dependency_recovery_20260930.json)を参照してください。
+**このPCでも2026-09-30に本戦専用環境を構築し、原本94件の照合と公式指定29ライブラリの版を確認しました。** 元の作業PCでは、22対象の公式参照攻撃でMIA 1,049行・AIA 7,172行を生成し、公式検証とCSV再読み込み検証を通過しています。誤った行ID・標的不足・重複・無限値・小数ID・誤トークンを拒否する確認も当時完了しています。仮想環境はGitに含まれないため、別PCでは以下のセットアップが必要です。TS v88は同日の依存復旧後、このPCで初期化に成功しました。固定25条件の再現確認は[復旧記録](Attak_T/attack_research/published_v88/dependency_recovery_20260930.json)を参照してください。
 
 ## 使い始める
 
@@ -47,7 +47,8 @@ Set-Location main_round/attack
 | 内容 | 場所 |
 |---|---|
 | 共通の模擬問題生成・保存・手法比較 | [../mock_test/](../mock_test/README.md) |
-| TS本人の攻撃・学習済みモデル・過去の評価 | [attack_TS/](attack_TS/README.md) |
+| TS本人の攻撃・学習済みモデル・過去の評価 | [Attak_T/](Attak_T/README.md) |
+| 作業者Rの本戦攻撃（準備用） | [Attak_R/](Attak_R/README.md) |
 | 作業者Mの独立攻撃・予測・評価結果 | [Attack_M/](Attack_M/README.md) |
 | 配布案内の本文 | [source_email_20260927.txt](source_email_20260927.txt) |
 | 取得元・固定コミット・ファイルのSHA-256 | [source_manifest.json](source_manifest.json) |

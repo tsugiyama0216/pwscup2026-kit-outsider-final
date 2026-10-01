@@ -4,7 +4,7 @@
 
 **攻撃手法を模擬問題で比較する入口は [`main_round/mock_test/`](main_round/mock_test/README.md) です。** 複数の模擬問題を保存し、M・TSなどの手法を同じ問題へ適用できます。問題生成・採点はこの共通ツール、攻撃実装は各作業者のフォルダーに分けています。
 
-**TSのv88の不足依存を2026-09-30に復旧しました。** 元の `prelim_transfer.methods` を `main_round/attack/attack_TS/prelim_transfer/` に回収し、予備戦の依存コードもマニフェストへ追加しました。別PCでは専用環境を用意し、`published_v88.check --runtime` と固定25条件の `benchmark` を実行してください。[復旧状況と別PC向けの確認手順](CODEX_HANDOFF.md#v88_cross_pc_handoff)に、ローカル検証の範囲と記録をまとめています。
+**TSのv88の不足依存を2026-09-30に復旧しました。** 元の `prelim_transfer.methods` を `main_round/attack/Attak_T/prelim_transfer/` に回収し、予備戦の依存コードもマニフェストへ追加しました。別PCでは専用環境を用意し、`published_v88.check --runtime` と固定25条件の `benchmark` を実行してください。[復旧状況と別PC向けの確認手順](CODEX_HANDOFF.md#v88_cross_pc_handoff)に、ローカル検証の範囲と記録をまとめています。
 
 **本戦・攻撃フェーズ：2026-09-27に[作業環境と配布物](main_round/attack/README.md)を整備しました。** team10用の起動・データ確認・参照攻撃・提出形式検証はここから始めます。ユーザーの依頼により配布原本・固定版キット・参照出力も既存の非公開GitHubへ保存します。配布C_10と最終選択モデル[M1_v5の原本](main_round/anonymization/team10/M/M1_v5/C.csv)の一致を確認しました。
 
@@ -15,9 +15,10 @@
 | 探したいもの | 場所 |
 |---|---|
 | 本戦・攻撃フェーズの配布物、起動・検証手順 | [`main_round/attack/`](main_round/attack/README.md) |
+| 作業者Rの本戦攻撃（準備用） | [Attak_R/](main_round/attack/Attak_R/README.md) |
 | 作業者Mの本戦攻撃・v1のコードと予測 | [`main_round/attack/Attack_M/`](main_round/attack/Attack_M/README.md) |
 | 共通の模擬問題生成・保存・攻撃手法の比較 | [`main_round/mock_test/`](main_round/mock_test/README.md) |
-| TS本人の本戦攻撃・v88・学習済みモデル | [`main_round/attack/attack_TS/`](main_round/attack/attack_TS/README.md) |
+| TS本人の本戦攻撃・v88・学習済みモデル | [`main_round/attack/Attak_T/`](main_round/attack/Attak_T/README.md) |
 | 予備戦・匿名化フェーズの提出物 `C.csv` | [`prelim/anonymization/anonymization-submitted-v5/`](prelim/anonymization/anonymization-submitted-v5/) |
 | 予備戦・攻撃フェーズの最終提出、候補、採点結果 | [`prelim/attack/`](prelim/attack/README.md) |
 | 予備戦の実装、実験記録、当時のキット・ルール | [`prelim/workspace/`](prelim/workspace/README.md) |

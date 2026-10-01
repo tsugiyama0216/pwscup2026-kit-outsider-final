@@ -10,7 +10,7 @@ def initialize():
     """Use the shared evaluator and attach paths to the unchanged attack runtime."""
     mock_root = Path(__file__).resolve().parent
     shared_root = mock_root.parent / "attack"
-    ts_root = shared_root / "attack_TS"
+    ts_root = shared_root / "Attak_T"
     package_root = mock_root / "local_eval"
     # Changing sys.path cannot safely replace modules already cached by Python.
     # M's legacy evaluator snapshot must keep its identity in an existing process.

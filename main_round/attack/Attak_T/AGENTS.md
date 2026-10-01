@@ -1,5 +1,8 @@
 # TS's main-round attack work
 
+- Current folder name is `Attak_T` (the exact user-requested spelling). The previous v88 manifest is preserved as `attack_research/published_v88/manifest_before_Attak_T.json`; active paths and bootstrap source hashes are updated. Keep historical manifests, result JSON and fitted assets byte-identical.
+
+
 - This directory contains TS's (the repository owner's) attack implementations, fitted models and archived selection records. Worker M's independent attacks remain in `../Attack_M/`. Shared local evaluation tools are in `../../mock_test/`, outside both workers' attacks.
 - Read the parent `AGENTS.md` and `README.md`. Official inputs, pinned runtime, environment and validation stay in the parent shared workspace.
 - Use `../.venv/Scripts/python.exe` from this directory. Keep the Python module names `attack_research` and `local_eval` for existing fitted-model compatibility.

@@ -11,7 +11,7 @@ import unittest
 
 MOCK_ROOT = Path(__file__).resolve().parents[2]
 SHARED_ROOT = MOCK_ROOT.parent / "attack"
-TS_ROOT = SHARED_ROOT / "attack_TS"
+TS_ROOT = SHARED_ROOT / "Attak_T"
 
 
 class WorkspaceCompatibilityTests(unittest.TestCase):
@@ -58,7 +58,7 @@ class WorkspaceCompatibilityTests(unittest.TestCase):
             import local_eval.tests
             assert Path(local_eval.__file__).resolve() == mock_root / 'local_eval/__init__.py'
             assert local_eval.tests.__file__ is None
-            from attack_TS._workspace_compat import initialize
+            from Attak_T._workspace_compat import initialize
             from mock_workspace import initialize as initialize_shared
             workspace = initialize()
             before = list(sys.path)
@@ -120,7 +120,7 @@ class WorkspaceCompatibilityTests(unittest.TestCase):
         result = self.run_python("""
             import json, types
             sys.path.insert(0, str(shared_root))
-            from attack_TS._workspace_compat import initialize
+            from Attak_T._workspace_compat import initialize
             sys.modules['attack_workspace'] = types.SimpleNamespace(
                 __file__=str(ts_root / 'wrong_checkout/attack_workspace.py'))
             try:

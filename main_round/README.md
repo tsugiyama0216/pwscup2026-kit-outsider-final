@@ -1,6 +1,6 @@
 # 本戦
 
-**模擬問題の生成と攻撃手法の比較は [mock_test/](mock_test/README.md) から始めます。** 複数抽出を保存してM・TSの手法を同じ問題へ適用し、平均に加えて問題別・加工方式別の差を確認できます。攻撃実装は引き続き `attack/Attack_M/`・`attack/attack_TS/` に置きます。
+**模擬問題の生成と攻撃手法の比較は [mock_test/](mock_test/README.md) から始めます。** 複数抽出を保存してM・TSの手法を同じ問題へ適用し、平均に加えて問題別・加工方式別の差を確認できます。攻撃実装は引き続き `attack/Attack_M/`・`attack/Attak_T/` に置きます。
 
 [予備戦の匿名化から得た示唆](../prelim/results/20260909/README.md#匿名化から得た示唆)を本戦の比較方針として参照します。有用性の一部を犠牲にするなら、損失に見合う匿名性の改善を同じ条件で確認します。U_specの低さだけを保護の強さとみなさず、希少群へのMIA耐性と総合得点も確認します。
 
@@ -15,7 +15,8 @@
 | 本戦の匿名化手法を理解する M1_v5の解説 | [method_explanation/01_anonymization.md](method_explanation/01_anonymization.md) |
 | 本戦攻撃データ・実行と検証の手順 | [attack/README.md](attack/README.md) |
 | 共通の模擬問題生成・保存・攻撃手法の比較 | [mock_test/README.md](mock_test/README.md) |
-| TS本人の本戦攻撃 | [attack/attack_TS/README.md](attack/attack_TS/README.md) |
+| TS本人の本戦攻撃 | [attack/Attak_T/README.md](attack/Attak_T/README.md) |
+| 作業者Rの本戦攻撃（準備用） | [Attak_R/](attack/Attak_R/README.md) |
 | 作業者Mの本戦攻撃 | [attack/Attack_M/README.md](attack/Attack_M/README.md) |
 | 本戦加工データの案内・取扱い | [anonymization/team10/README.md](anonymization/team10/README.md) |
 | 配布原本 B・B_self・A_bg・schema・utility_ref・README | [anonymization/team10/participant_data/](anonymization/team10/participant_data/) |

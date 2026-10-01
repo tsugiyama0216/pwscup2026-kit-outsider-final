@@ -1,5 +1,8 @@
 # PWSCUP2026 repository instructions
 
+- On 2026-10-01 the user requested the exact folder names `main_round/attack/Attak_R/` (new R workspace) and `main_round/attack/Attak_T/` (renamed from `attack_TS/`). Keep Python package names `attack_research` and `local_eval`, frozen M dependencies, fitted models, selections and historical records unchanged. The active v88 manifest follows the new paths; the previous bytes are archived as `manifest_before_Attak_T.json`. The user subsequently requested completing the work, authorizing this addition/rename and its necessary reference updates to be committed and pushed to the existing private main. Exclude unrelated local defense work.
+
+
 - On 2026-10-01 the user requested renaming main-round attack `M/` to `Attack_M/` and explicitly requested committing and pushing this change to the existing private main. `main_round/attack/Attack_M/` is canonical. Preserve frozen v1/v2 source, selections, predictions and historical JSON bytes. `prepare_attack_m.ps1` generates an ignored local `M/` compatibility copy of frozen source and a junction from `M/local-output` to `Attack_M/local-output`; do not edit the compatibility copy. Use `Attack_M/run.ps1` (or run preparation before the unchanged shared wrapper). This does not authorize unrelated local defense-score work or official submissions.
 
 

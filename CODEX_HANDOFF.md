@@ -1,5 +1,10 @@
 # PWSCUP2026 引き継ぎ
 
+## 2026-10-01：Attak_R追加・Attak_Tへの名前変更
+
+指定の綴りで [`main_round/attack/Attak_R/`](main_round/attack/Attak_R/README.md) を追加し、`attack_TS/` を [`Attak_T/`](main_round/attack/Attak_T/README.md) に変更しました。Rは保存先の準備のみで、攻撃コードは未追加です。TSのimport初期化と共通評価器の参照先を更新し、旧v88マニフェストを `manifest_before_Attak_T.json` に保持。既存モデル・予測・選択・過去の検証JSONは保持し、有効マニフェストだけを新配置に対応させます。旧記録中の `attack_TS` は当時の名称です。 続く「全部完了して」の依頼により、この配置変更と必要な参照更新をコミットし、既存非公開GitHubのmainへ反映します。既存のローカル独自評価機能や未コミット加工成果物は対象外です。
+
+
 ## 2026-10-01：作業者Mのフォルダー名変更
 
 作業者Mの正本を `main_round/attack/M/` から [`main_round/attack/Attack_M/`](main_round/attack/Attack_M/README.md) に変更。ユーザーはコミットと既存非公開GitHubのmainへのpushも明示。v1/v2の固定コード・選択JSON・予測CSV・過去の検証記録を保持し、`Attack_M/run.ps1` から旧名の互換コピーを準備して実行する。`M/` はGit管理外で、出力は `Attack_M/local-output/` と共有する。`setup.ps1` も互換配置を準備する。旧文書のパスは当時の記録。本PC独自の防御評価コミット・未コミットの加工候補は今回のアップロード対象外。専用Python環境はこのPCに未構築のため、数値テストの再実行は未確認。
@@ -29,10 +34,10 @@ Set-Location main_round/mock_test
 
 **2026-10-01、ユーザーが検証済みv88の復旧状態をGitHubへ保存するよう明示しました。** 復旧コード・検査・有効マニフェストと旧版の保存・手順書・復旧検証記録を、既存の非公開リポジトリの `main` へ反映する対象とします。`dependency_recovery_20260930.json` の未送信状態は9月30日の検証完了時点の履歴です。
 
-**2026-09-30にTS v88の不足依存を復旧し、Git管理ソースから作った独立コピーで固定25条件を再現しました。** 元の `main_round/attack/prelim_transfer/` に残っていた `__init__.py` と `methods.py` を、TSの正本 `main_round/attack/attack_TS/prelim_transfer/` へバイト一致で回収しました。実装を推測して置き換えず、アルゴリズム・学習済みモデル・候補選択・予測CSVを保持しています。[復旧検証記録](main_round/attack/attack_TS/attack_research/published_v88/dependency_recovery_20260930.json)を参照してください。
+**2026-09-30にTS v88の不足依存を復旧し、Git管理ソースから作った独立コピーで固定25条件を再現しました。** 元の `main_round/attack/prelim_transfer/` に残っていた `__init__.py` と `methods.py` を、TSの正本 `main_round/attack/attack_TS/prelim_transfer/` へバイト一致で回収しました。実装を推測して置き換えず、アルゴリズム・学習済みモデル・候補選択・予測CSVを保持しています。[復旧検証記録](main_round/attack/Attak_T/attack_research/published_v88/dependency_recovery_20260930.json)を参照してください。
 
 - **原因と旧状態の再現：** 先に確認した `main`（`fad8253860066b43bbed38e33f3fb5bbacf56a12`）から、必須の `prelim_transfer.methods` がGitに収録されていませんでした。最新取得状態 `9f774b5` のGit管理ファイルだけを展開したコピーでも、旧111ファイル・原本94件の照合が成功した後、`CombinedAttack()` が `ModuleNotFoundError: No module named 'prelim_transfer'` で停止することを再現しました。TS整理前から存在した不足です。
-- **必要な処理と配置：** [v88](main_round/attack/attack_TS/attack_research/v88/predict.py) から呼ばれる [v10](main_round/attack/attack_TS/attack_research/v10/predict.py) は、初期化時に `load_legacy()`、予測時に `build_aia()` と `modules['structured'].stratified_half_selection` を使います。正規のアダプターはTS配下に置き、元からGit管理されている `prelim/workspace/` の依存ソース16件を確認しました。実行入口とimport名は従来どおりです。
+- **必要な処理と配置：** [v88](main_round/attack/Attak_T/attack_research/v88/predict.py) から呼ばれる [v10](main_round/attack/Attak_T/attack_research/v10/predict.py) は、初期化時に `load_legacy()`、予測時に `build_aia()` と `modules['structured'].stratified_half_selection` を使います。正規のアダプターはTS配下に置き、元からGit管理されている `prelim/workspace/` の依存ソース16件を確認しました。実行入口とimport名は従来どおりです。
 - **照合と実行確認の違い：** 有効な `manifest.json` はリポジトリ直下を基準とし、回収アダプターと予備戦依存を含む130ファイルを照合します。通常の `published_v88.check` はハッシュ照合だけです。`check --runtime` は照合に加えてアダプター・予備戦コードの読み込み元、必要な関数、v88初期化を確認し、`benchmark` は予測と採点を固定25条件で確認します。以前の106ファイル照合・モデル11件の読み込み成功は、その時点で確認した範囲の履歴として残します。
 - **今回の検証範囲：** Git管理ファイルに復旧対象の5ファイルだけを追加した独立コピーで、130ファイル・原本94件の照合、正規TSアダプターと予備戦依存16件の読み込み、v88初期化、固定25条件benchmarkが成功しました。実行にはこのPCの固定Pythonを `-I -B` で使用し、展開コピーの公式ソースを明示しました。ローカルの未追跡互換コピーに依存せず再現できることを確認しています。別の実機PCでの実行は未確認です。
 - **共有コードの保全：** M v2の固定依存31件とM v1の保全対象65件を独立コピーでも照合し、ローカルのM v1テスト15件・M v2テスト24件が成功しました。`attack_workspace.py`・`attack.ps1`・M v1評価コード・`attack/local_eval/`の3ファイル、過去のマニフェスト・生成時検証JSONは保持しています。
@@ -41,7 +46,7 @@ Set-Location main_round/mock_test
 別PCでの最小確認例です（リポジトリ直下から）。専用環境が構築済みならセットアップは省略できます。
 
 ```powershell
-Set-Location main_round/attack/attack_TS
+Set-Location main_round/attack/Attak_T
 ..\setup.ps1
 ..\.venv\Scripts\python.exe -m attack_research.published_v88.check --runtime
 ..\.venv\Scripts\python.exe -m attack_research.published_v88.benchmark
@@ -53,7 +58,7 @@ Set-Location main_round/attack/attack_TS
 
 ## これまでの作業記録
 
-**2026-09-30、本人の指定によりTSの攻撃を [attack_TS](main_round/attack/attack_TS/README.md) に分離。** `attack_research/`、`local_eval/`、保存済み`local-output/`、`evaluate.ps1`・`generate.ps1`を `main_round/attack/attack_TS/` へ移動。Mの独立攻撃は従来の `M/` に保持し、Mが再利用する模擬評価コードの参照先だけを更新する。配布原本・公式キット・検証・Python環境は共通の親フォルダーに置く。学習済みモデル、予測CSV、過去の評価JSONは保持し、対応と照合は `attack_TS/layout_migration.json` に記録する。今回の依頼はローカル整理であり、新たなGitHub送信・公式提出・モデル再学習は行わない。
+**2026-09-30、本人の指定によりTSの攻撃を [attack_TS](main_round/attack/Attak_T/README.md) に分離。** `attack_research/`、`local_eval/`、保存済み`local-output/`、`evaluate.ps1`・`generate.ps1`を `main_round/attack/attack_TS/` へ移動。Mの独立攻撃は従来の `M/` に保持し、Mが再利用する模擬評価コードの参照先だけを更新する。配布原本・公式キット・検証・Python環境は共通の親フォルダーに置く。学習済みモデル、予測CSV、過去の評価JSONは保持し、対応と照合は `attack_TS/layout_migration.json` に記録する。今回の依頼はローカル整理であり、新たなGitHub送信・公式提出・モデル再学習は行わない。
 
 **2026-09-30、完成済みMのv2をユーザー依頼で非公開GitHubへ保存。** 保存ブランチは`codex/m-v2`、基点は`fad8253`。取得済み最新mainの`45511cf`は共有評価コード・検証補助・v1評価コードの配置を変更しており、v2が固定した依存ハッシュと一致しない。先行保存はコード・設定・CSV・生成時記録を保持するため専用ブランチで行った。その後、ユーザーの明示に従い、上記の互換対応を含めてmainへ統合する。詳細は[Mのv2の案内](main_round/attack/M/v2/README.md)と[保存時検証](main_round/attack/M/local-output/v2/github_upload_verification.json)。生成時JSONの未送信フラグは当時の記録として保持する。
 

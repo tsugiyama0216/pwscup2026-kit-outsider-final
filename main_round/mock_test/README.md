@@ -2,7 +2,7 @@
 
 Mの正本は `../attack/Attack_M/` です。既存環境で固定版Mのテストを実行するときは、最初に `../attack/prepare_attack_m.ps1` で旧import名のローカル互換配置を準備します。`setup.ps1` と `Attack_M/run.ps1` からも自動準備されます。
 
-**模擬問題を生成・保存し、MやTSなどの攻撃手法を同じ問題で比較する共通ツールです。** 攻撃実装は `../attack/Attack_M/`・`../attack/attack_TS/` に置き、このフォルダーには問題生成と採点をまとめています。
+**模擬問題を生成・保存し、MやTSなどの攻撃手法を同じ問題で比較する共通ツールです。** 攻撃実装は `../attack/Attack_M/`・`../attack/Attak_T/` に置き、このフォルダーには問題生成と採点をまとめています。
 
 PowerShellでリポジトリ直下から実行します。
 
@@ -32,4 +32,4 @@ Mのv1は既定の採用方式 `full_reference_aia` で動きます。別の手�
 
 複数抽出で、一つの問題だけで高得点になる影響を確認します。候補選択はdevで行い、候補を固定してからholdoutで確認してください。抽出条件が違う得点は直接比較できません。主指標はMIA＋AIAのφ未控除代理値であり、本戦の公式得点ではありません。人物分割のholdoutは既使用で、新seedでも完全に未知の人物による検証にはなりません。
 
-詳細な問題構成、採点、プラグインAPI、複数問題の指定は [local_eval/README.md](local_eval/README.md) を参照してください。公式キット・Python環境・配布原本の参照は [../attack/](../attack/README.md) を共用します。既存のTS/Mのモデル・評価記録は元の作業者フォルダーに保持しています。TS v88の不足依存 `prelim_transfer.methods` は2026-09-30に元コードを回収して復旧しました。v88を使う前に、[専用の再現手順](../attack/attack_TS/attack_research/published_v88/README.md)の `check --runtime` と固定25条件benchmarkを確認してください。
+詳細な問題構成、採点、プラグインAPI、複数問題の指定は [local_eval/README.md](local_eval/README.md) を参照してください。公式キット・Python環境・配布原本の参照は [../attack/](../attack/README.md) を共用します。既存のTS/Mのモデル・評価記録は元の作業者フォルダーに保持しています。TS v88の不足依存 `prelim_transfer.methods` は2026-09-30に元コードを回収して復旧しました。v88を使う前に、[専用の再現手順](../attack/Attak_T/attack_research/published_v88/README.md)の `check --runtime` と固定25条件benchmarkを確認してください。
