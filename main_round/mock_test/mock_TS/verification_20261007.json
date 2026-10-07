@@ -1,0 +1,109 @@
+{
+  "verified_date": "2026-10-07",
+  "scope": "mock_TS only; local existing-C comparison, not official score prediction",
+  "tests": {
+    "command": "../attack/.venv/Scripts/python.exe -B -m unittest discover -s mock_TS/tests -v",
+    "passed": 23,
+    "failed": 0
+  },
+  "end_to_end": {
+    "wrapper": "run.ps1 default Run",
+    "releases": [
+      "M1_v5",
+      "S1",
+      "R1",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R9",
+      "R10",
+      "R11",
+      "R12"
+    ],
+    "case_count": 3,
+    "primary_attacks": 36,
+    "background_only_attacks": 3,
+    "distinct_worker_pids": 39,
+    "official_scoring_recomputed_from_saved_CSV": 39,
+    "floor_estimates": {
+      "case_001": {
+        "phi": 0.007509949067599273,
+        "se": 0.0008173907919825338,
+        "repetitions": 1000,
+        "seed": 2027100704
+      },
+      "case_002": {
+        "phi": 0.01586199371567183,
+        "se": 0.0012349176661499278,
+        "repetitions": 1000,
+        "seed": 2027100705
+      },
+      "case_003": {
+        "phi": 0.010127064170895355,
+        "se": 0.0009248744711791798,
+        "repetitions": 1000,
+        "seed": 2027100706
+      }
+    },
+    "suite": "main_round/mock_test/local-output/mock_TS/reference_20261007_v1/suite",
+    "suite_manifest_sha256": "09ae6df307383e2b102c0ba38a52e0f41d258d6be7c1f88246d3a2f2d4f98950",
+    "report": "main_round/mock_test/local-output/mock_TS/reference_20261007_v1/evaluation/detailed_results.html",
+    "report_sha256": "e27d035a545e1f08e833e0cfd5eb01cd2696c0f40eb2dbd2e4b16d41a4071414",
+    "results_sha256": "9d4b5d032e28728c3b13e5b61e82f354b6d48c2e161c76a6e28107c795fcee09"
+  },
+  "external_plugin_flow": {
+    "steps": [
+      "Export",
+      "Attack",
+      "Score"
+    ],
+    "plugin": "mock_TS/example_attack.py",
+    "prediction_CSV_byte_equality_to_builtin": true,
+    "score_equality_to_builtin": true,
+    "path": "main_round/mock_test/local-output/mock_TS/plugin_probe_20261007_v1"
+  },
+  "original_official_sources": {
+    "verified_files": 94,
+    "manifest_sha256": "57b7dfaa73720740a018404494819beaf40f442944bb9ed91ff2610c9391ae70"
+  },
+  "source_sha256": {
+    "main_round/attack/official-kit/starter/reference/_common.py": "bf0a62bc0dfbb3e32b8ec017ca2d1930f9c9bb2664a8ac689255c72950cafc0e",
+    "main_round/attack/official-kit/starter/src/pwscup2026/attack/aia.py": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a",
+    "main_round/attack/official-kit/starter/src/pwscup2026/attack/mia.py": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf",
+    "main_round/attack/official-kit/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+    "main_round/attack/official-kit/starter/src/pwscup2026/kit/kit_config.yaml": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157",
+    "main_round/attack/official-kit/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "main_round/mock_test/mock_TS/__init__.py": "19f51016c3978f8e83cb0cc4aba6dc87bb31a3ff887160e65945728235ebfdac",
+    "main_round/mock_test/mock_TS/__main__.py": "5d84e452f4546813cf34225e4e0dd7cf6ad83b4faf1d86efaf21750eea343ef2",
+    "main_round/mock_test/mock_TS/common.py": "c947a7fd837f5e8e674e7618919a6c42b67e30b2b6c2afc559ae88ed7b1eca30",
+    "main_round/mock_test/mock_TS/example_attack.py": "5947e07b29d3865894e2b7b1dc87689bd0b5b3774b0f9fe98c851d638df1a019",
+    "main_round/mock_test/mock_TS/generation.py": "a4e65347a362ce8d5d40415f65bc155117ade1ff089402109d3feed601e297f5",
+    "main_round/mock_test/mock_TS/report.py": "7a569d89b80a0a839cc99cb11af0760815816580ef416fc17756a03354dcaab2",
+    "main_round/mock_test/mock_TS/runner.py": "3debaa246d805a1fcfcd67ab52f743aa2e2ef6ebbdfab4f3415ea2fd8fa1f750",
+    "main_round/mock_test/mock_TS/scoring.py": "f7e0fe38a72e9e1958f29fb1676af2370595335001844e379bc310e3d894860e",
+    "main_round/mock_test/mock_TS/worker.py": "20f0d707246751935aba2f81c9b6bd36fc5927a71a7a49721cb5b91ec9e24054"
+  },
+  "test_source_sha256": {
+    "main_round/mock_test/mock_TS/tests/test_generation.py": "fbb58adcc822882619db48c85a58d62085391d698c7a88397ce4a2297e27a447",
+    "main_round/mock_test/mock_TS/tests/test_runner.py": "29b6cf5644826820734feeb336c38408c59f956d69839ca81fe1413aa71b9b86",
+    "main_round/mock_test/mock_TS/tests/test_scoring.py": "01ce6f781213097a9fe2fbc6fb3eb8e1e45c0f81f6bd99de31ca2bd0d3202dd0"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1"
+  },
+  "limitations": [
+    "Official scoring arithmetic is reused; these cases and floors are not official hidden tests or leaderboard predictions.",
+    "AIA controls are synthetic and can be distinguishable from real members; matching and distance checks do not prove distribution equivalence.",
+    "A_bg rare labels and synthetic control rare strata are proxies, not official birth labels.",
+    "MIA negatives must be excluded from training/cache use, not only the current public background. Prior access cannot be undone.",
+    "Existing releases may have used all of A_bg during creation; background removal does not change their history.",
+    "All releases derive from the same B; each run must have fresh attack state. Repeated cases reuse one finite population."
+  ],
+  "html_verification": "Portable HTML and escaping tested. Browser UI unavailable in this environment; no screenshot review claimed.",
+  "official_submission_performed": false
+}
