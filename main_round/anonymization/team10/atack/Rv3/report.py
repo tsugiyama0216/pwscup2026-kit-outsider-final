@@ -1,0 +1,69 @@
+"""Write the final Japanese explanation from saved measured results."""
+from pathlib import Path
+import json
+import pandas as pd
+HERE=Path(__file__).resolve().parent
+def read(name):return json.loads((HERE/name).read_text(encoding='utf-8'))
+def main():
+    s=read('selection.json');dev=read('final_development.json');conf=read('confirmation.json')
+    rows=pd.read_csv(HERE/'evidence/confirmation_official.csv')
+    means=rows.groupby('release')[['score_1','mia_power','aia_power']].mean()
+    means.to_csv(HERE/'evidence/confirmation_by_release.csv')
+    table='\n'.join(f'| {name} | {r.score_1:.6f} | {r.mia_power:.6f} | {r.aia_power:.6f} |' for name,r in means.iterrows())
+    joint=read('joint_confirmation.json') if (HERE/'joint_confirmation.json').exists() else None
+    joint_text=(f"追加の杉山22対象共同評価は2世界平均 **{joint['mean_attack_power']:.9f}**。同条件のR v2 **0.699956858** を下回りました。R v2の保存済み確認世界・同じ1,000回の模擬φを再利用した補助診断です。上のmock_TSとは問題構成が違うため、直接比較や合算をしません。候補の選び直しには使っていません。Rv3が既存版より全般的に強いとは結論できず、既存R v2を性能面で置き換える根拠は得られていません。" if joint else '杉山22対象の追加診断は未記録です。')
+    text=f'''# Rv3 — team10の攻撃プログラム
+
+目標は公式攻撃力0.4。**Rv3の公式得点は未測定**です。確認用mock_TSの平均は **{conf['selected_total']:.9f}**。これは模擬値で、公式0.4の達成を示しません。確認模擬値についても0.4{'以上です' if conf['selected_total']>=.4 else 'には未達です'}。
+
+ユーザー訂正に従い版名はRv3。指定の綴り `team10/atack/Rv3` を、既存team10配下の `main_round/anonymization/team10/atack/Rv3/` に保存します。R v1・v2f・v2とM/Tは変更しません。
+
+## 採用方式
+
+- MIA：`{s['mia']}`。加工Cと許可背景の密度差から、候補の所属確信度を作ります。本番だけは既存の厳密な自己公開情報による非共有163人を0にします。
+- AIA：`{s['aia']}`。Cと背景で±0.5年の時刻成功確率を別々に推定し、背景との差が最も大きい時刻を選びます。差が小さい場合は許容形式内の11年で棄権します。
+- 旧Tの学習済みモデル・保存ドナーは使用しません。各対象について、渡された公開Cと背景から学習します。攻撃関数に正解・加工方式名・生成seed・ファイルパスを渡しません。
+
+探索したMIAは近傍距離比、連続属性の分布、勾配ブースティング、カテゴリ頻度、混合ガウス、KDEとそれらの混合。AIAは最近傍、局所時刻窓、背景との差、ランダム化木の時刻窓です。最初の部分探索はローカル `Rv3_exploratory_initial` に保存。36条件の初期比較と、追加密度候補の比較を行い、調整平均からMIA・AIAを別々に選びました。初期選択は `initial_selection.json`、最終固定は `selection.json` です。
+
+`selected.py` は採用した成分だけを計算します。全36調整条件で探索版との予測完全一致を確認してから、別seedの確認を開始しました。`production_sources.json` と `production_dependencies.json` は確認前の固定記録です。
+
+## 模擬評価
+
+| 段階 | 条件数 | 合計 | MIA | AIA（模擬φ控除後） |
+| --- | ---: | ---: | ---: | ---: |
+| 調整 | 12加工版 × 3問題 | {dev['selected_total']:.9f} | {dev['means']['mia'][s['mia']]:.9f} | {dev['means']['aia'][s['aia']]:.9f} |
+| 固定後確認 | 同じ12加工版 × 別3問題 | {conf['selected_total']:.9f} | {conf['mia_power']:.9f} | {conf['aia_power']:.9f} |
+
+確認seedは20261007311、希少所属0・1・2人の3条件。各条件のφは許可背景から1,049人を非復元抽出する公式参照攻撃1,000回で推定します。保存CSVを固定公式 `score_attack` で採点しました。
+
+| 加工版 | 確認平均 | MIA | AIA |
+| --- | ---: | ---: | ---: |
+{table}
+
+既存R v2の同じ調整suiteでの凍結診断は0.136173461。ただし旧R v2は学習済みモデルの過去の人物露出を保持しており、今回の新規学習条件とは異なります。R v1のユーザー提供公式値0.169387840941965と、これらの模擬値も直接比較できません。
+
+{joint_text}
+
+**限界**：同じ有限集団の再抽出であり、別の未知人物集団ではありません。12加工版は同じ1コホートから作った代替データです。合成対照と、所属者・非所属者で定義の異なる希少ラベルを含みます。3問題の平均を公式の期待値や22本番対象の得点予測と解釈しません。公式の非公開正解・φは使っていません。
+
+## 提出データと再現
+
+- `submission/F_mia.csv`：実team10の1,049人 × record_idと22対象。
+- `submission/F_aia.csv`：22対象 × 326問＝7,172行。
+- `submission/team10_Rv3_attack.zip`：両CSVと配布原本のtoken.txt。PCのみ、Git除外。
+- `submission/verification.json`：独立2回生成、CSV再読込、公式ZIPと実IDの検証記録。
+- `evidence/`：調整・確認・追加共同評価の集計。
+
+GitHubにはソース、提出CSV、検証記録を既存非公開mainへ保存します。トークン入りZIPはアップロードしません。CodaBenchへの提出や公式試行消費はしていません。
+
+本戦環境を `main_round/attack/setup.ps1` で準備した後、リポジトリ直下から新しい出力先を指定します。既存提出先は上書きしません。
+
+```powershell
+./main_round/anonymization/team10/atack/Rv3/run.ps1 -OutputDirectory main_round/anonymization/team10/atack/Rv3/reproduced-submission
+```
+
+生成には同じリポジトリの公式キット、targets、team10配布原本が必要です。新しい平文トークンのコピーは作りません。確認実行は `confirm.py confirmation`、単一対象プラグインは `plugin.py`、共同評価プラグインは `world.py`。完了済み評価先は上書きしない設計です。`experiment.py` の初期比較は履歴として保存し、最終選択の確認には `confirm.py` を使います。
+'''
+    (HERE/'README.md').write_text(text,encoding='utf-8')
+if __name__=='__main__':main()

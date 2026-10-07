@@ -1,0 +1,22 @@
+{
+  "completed": true,
+  "tests": [
+    {
+      "file": "test_model.py",
+      "passed": 3
+    },
+    {
+      "file": "test_submission.py",
+      "passed": 2
+    }
+  ],
+  "malformed_CSV_variants_rejected": 20,
+  "selection_and_production_sources_unchanged_since_freeze_and_confirmation_start": true,
+  "preservation": {
+    "frozen_Rv2_dependency_files_verified": 219,
+    "frozen_Rv1_Rv2f_Rv2_submissions_unchanged": true
+  },
+  "package_verification_sha256": "92a112cec1033dfa42db96106e9ab261f373885a283f57d3a2ed422238adbc4b",
+  "official_score_measured": false,
+  "official_submission_performed": false
+}

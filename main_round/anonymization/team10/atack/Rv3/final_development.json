@@ -1,0 +1,71 @@
+{
+  "completed": true,
+  "means": {
+    "mia": {
+      "attributes1": 0.07799145299145299,
+      "attributes20": 0.04487179487179487,
+      "attributes5": 0.05128205128205129,
+      "boost15": 0.008547008547008548,
+      "boost7": 0.017094017094017096,
+      "boost_mix": 0.004273504273504274,
+      "category0": 0.03082607385492001,
+      "category1": 0.032352973127839975,
+      "category2": 0.029214941437163657,
+      "category3": 0.040105856971799,
+      "category4": 0.0016473108528969336,
+      "category_geometry": 0.041666666666666664,
+      "category_mix": 0.04790781993270681,
+      "density_mix": 0.012820512820512822,
+      "ensemble": 0.05235042735042735,
+      "full1": 0.03311965811965812,
+      "full20": 0.03311965811965812,
+      "full5": 0.0811965811965812,
+      "gaussian": 0.03632478632478633,
+      "gmm2": 0.008547008547008548,
+      "gmm4": 0.00747863247863248,
+      "gmm8": 0.01495726495726496,
+      "gmm_mix": 0.013888888888888888,
+      "kde0.25": 0.011752136752136754,
+      "kde0.5": 0.011752136752136754,
+      "kde1.0": 0.04914529914529915
+    },
+    "aia": {
+      "contrast20_hard": 0.036779018014476285,
+      "contrast20_soft": 0.020623952712364155,
+      "contrast50_hard": 0.01661204432815024,
+      "contrast50_soft": 0.041742600541357186,
+      "contrast5_hard": 0.005879473681762847,
+      "contrast5_soft": 0.00810358589860458,
+      "forest_contrast20_0.5": 0.008529073847796716,
+      "forest_contrast20_1.0": 0.03836509917859849,
+      "forest_contrast5_0.5": 0.010785960747195301,
+      "forest_contrast5_1.0": 0.05841168520498721,
+      "forest_mode20": 0.008529073847796716,
+      "forest_mode5": 0.008529073847796716,
+      "mode20_hard": 0.008529073847796716,
+      "mode20_soft": 0.008529073847796716,
+      "mode50_hard": 0.008529073847796716,
+      "mode50_soft": 0.008529073847796716,
+      "mode5_hard": 0.0031730175077471874,
+      "mode5_soft": 0.002247091581821267,
+      "nearest_hard": 0.02321067345473176,
+      "nearest_soft": 0.021128064657726663
+    }
+  },
+  "selection": {
+    "mia": "full5",
+    "aia": "forest_contrast5_1.0",
+    "source_sha256": {
+      "model.py": "d72d8556fda4a2679f9e5e77538db25afa70c0a68c4887d267b5ba374a4c684d",
+      "protocol.json": "3ae0e0ecafc7e3460869a7b5cb7dc1ed1799072afd405f762bd4809f411c179b",
+      "experiment.py": "61b3fa3f659181cc61a94ca0e3d0c566ebf8a4f9d345c36e055617404b779605",
+      "density.py": "dce8a62b3d7b890b8e9e6c0a7c4b65a752735bf0ca2e6e4f671c82b91e4bf815",
+      "refine.py": "1b9b43323769aa5ca37996c1a970c385cfe4a389efa17b6c48100f725291265a"
+    },
+    "frozen_utc": "2026-10-07T07:20:33.149621+00:00",
+    "confirmation_not_started": true,
+    "selection_scope": "All initial and density refinement development candidates; confirmation not used"
+  },
+  "selected_total": 0.13960826640156843,
+  "official_score_measured": false
+}

@@ -1,0 +1,16 @@
+{
+  "model": "Rv3",
+  "goal_official_attack_power": 0.4,
+  "goal_is_not_a_guarantee": true,
+  "development": "existing mock_TS/rv2_20261007/suite, all 3 cases and 12 releases; byte-verified copy of reference suite",
+  "confirmation": {"seed": 20261007311, "count": 3, "selection_seed": 20261007, "r_count": 10},
+  "selection": "Select MIA and AIA independently by mean official component across all development cases/releases. Freeze before confirmation. Do not reselect on confirmation.",
+  "training": "Only C and permitted background supplied to each invocation; no previous fitted assets, original B or private truth reads by model.",
+  "floor_repetitions": 1000,
+  "development_revision": "Initial exploratory partial run retained in local-output/mock_TS/Rv3_exploratory_initial. Expanded numeric candidates before final selection; scheduling uses three isolated child processes. Official component scoring is checked against full score_attack for every selected case.",
+  "limitations": ["Repeated finite population, not unseen people", "Alternative local releases from one cohort, not 22 independent actual targets", "Synthetic controls and mixed rare-label definitions", "Official hidden truths and floors unavailable"],
+  "destination": "main_round/anonymization/team10/atack/Rv3",
+  "github": "existing private origin/main, code, CSV and verification records",
+  "submission_zip": "local only; token must not be displayed",
+  "official_submission_authorized": false
+}

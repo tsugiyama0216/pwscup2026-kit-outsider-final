@@ -1,0 +1,12 @@
+{
+  "completed": true,
+  "stage": "confirmation",
+  "conditions": 36,
+  "selected_total": 0.0631327285534048,
+  "mia_power": 0.03311965811965813,
+  "aia_power": 0.030013070433746666,
+  "selection_sha256": "f26a204044f4226a87d087bee9938000dd68ec4f47000f9b3031c5c9cf4a6b22",
+  "production_sources_sha256": "6d95bdda9e7a8e7d22c74f5c8b0c86add75f1b10e6ffe7a440663850412ac2ad",
+  "suite_manifest_sha256": "05beda59fd2b828730878e573df14e858d926e21ee8d426aef77f3c08fbb175e",
+  "official_score_measured": false
+}

@@ -1,0 +1,8 @@
+{
+  "completed": true,
+  "mean_attack_power": 0.0718701314786052,
+  "mean_mia": 0.05668091168091169,
+  "mean_aia": 0.015189219797693509,
+  "conditions": "Previously used 2 worlds, 22 targets each, same saved 1000-draw mock floors as Rv2; diagnostic only, no reselection",
+  "official_score_measured": false
+}

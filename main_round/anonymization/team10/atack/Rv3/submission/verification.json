@@ -1,0 +1,73 @@
+{
+  "model": "Rv3",
+  "completed": true,
+  "utc": "2026-10-07T07:44:27.230428+00:00",
+  "official_zip_and_real_id_validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "two_independent_runs_byte_identical": true,
+  "csv_roundtrip_byte_identical": true,
+  "original_token_bytes_match": true,
+  "file_sha256": {
+    "F_mia.csv": "2cbfb862fc40ec040a6f03dd109b3b8bb25b8703dd91b3c875b7e146b7604060",
+    "F_aia.csv": "c5898611a9958bd72c5671dab440f46d77c3649f2ff763a4a39a9cf85ffd9d66",
+    "team10_Rv3_attack.zip": "20037bc0bba5f8078791c503c6eaaa2314c1869867f419636c7f63a36cac98e1"
+  },
+  "inference": {
+    "validation": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    },
+    "private_mask": {
+      "exact_private_rows": 163,
+      "remaining_unknown_rows": 886,
+      "private_true_rare": 13,
+      "private_onset": 16,
+      "private_rare_onset": 4,
+      "private_death": 12,
+      "comparison": "Exact decimal public-QI equality; unique matches; no tolerance",
+      "deduction": "All 163 self members are private by the contest definition; exactly 163 unique B matches exhaust them.",
+      "limitations": "Other 886 rows remain unknown. This selected negative set does not estimate population FPR."
+    },
+    "versions": {
+      "autograd": "1.9.0",
+      "autograd-gamma": "0.5.0",
+      "contourpy": "1.3.3",
+      "cycler": "0.12.1",
+      "fonttools": "4.63.0",
+      "formulaic": "1.2.2",
+      "interface-meta": "2.0.1",
+      "joblib": "1.5.3",
+      "kiwisolver": "1.5.0",
+      "lifelines": "0.30.3",
+      "matplotlib": "3.11.0",
+      "narwhals": "2.23.0",
+      "numpy": "2.4.6",
+      "packaging": "26.2",
+      "pandas": "2.3.3",
+      "patsy": "1.0.2",
+      "pillow": "12.3.0",
+      "pyparsing": "3.3.2",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2026.2",
+      "pyyaml": "6.0.3",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.17.1",
+      "six": "1.17.0",
+      "statsmodels": "0.14.6",
+      "threadpoolctl": "3.6.0",
+      "typing-extensions": "4.15.0",
+      "tzdata": "2026.2",
+      "wrapt": "2.2.2"
+    }
+  },
+  "official_score_measured": false,
+  "official_submission_performed": false,
+  "official_attempts_consumed": 0,
+  "zip_uploaded": false
+}

@@ -1,0 +1,14 @@
+{
+  "mia": "full5",
+  "aia": "forest_contrast5_1.0",
+  "source_sha256": {
+    "model.py": "d72d8556fda4a2679f9e5e77538db25afa70c0a68c4887d267b5ba374a4c684d",
+    "protocol.json": "3ae0e0ecafc7e3460869a7b5cb7dc1ed1799072afd405f762bd4809f411c179b",
+    "experiment.py": "61b3fa3f659181cc61a94ca0e3d0c566ebf8a4f9d345c36e055617404b779605",
+    "density.py": "dce8a62b3d7b890b8e9e6c0a7c4b65a752735bf0ca2e6e4f671c82b91e4bf815",
+    "refine.py": "1b9b43323769aa5ca37996c1a970c385cfe4a389efa17b6c48100f725291265a"
+  },
+  "frozen_utc": "2026-10-07T07:20:33.149621+00:00",
+  "confirmation_not_started": true,
+  "selection_scope": "All initial and density refinement development candidates; confirmation not used"
+}
