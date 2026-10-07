@@ -1,0 +1,18 @@
+{
+  "model": "Attack_R/v2f",
+  "unit_tests_passed": 4,
+  "submission_tests_passed": 4,
+  "damaged_submission_variants_rejected": 20,
+  "MIA_changed_target_columns_vs_R_v1": 22,
+  "MIA_changed_cells_vs_R_v1": 19492,
+  "known_nonshared_zero_rows": 163,
+  "AIA_byte_identical_to_R_v1": true,
+  "non_zip_files_secret_scanned": 24,
+  "plaintext_token_copies": 0,
+  "zip_ignored_by_git": true,
+  "test_files_sha256": {
+    "test_model.py": "34315d939a1b03b8d0fb2a6563048047da5b62302290defafb44b708117709ff",
+    "test_submission.py": "e2b1d422fbb7e10d9d8e4852110b703f262972f78f27b3fa2039bd42e0eb277e"
+  },
+  "official_submission_performed": false
+}

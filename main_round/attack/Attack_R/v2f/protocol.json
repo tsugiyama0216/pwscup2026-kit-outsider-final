@@ -1,0 +1,19 @@
+{
+  "version": "R/v2f",
+  "mock_source": "T v88 build_case/make_release on supplied A_bg, with B as reference",
+  "development_split": "dev",
+  "development_seeds": [2026100101, 2026100102, 2026100103],
+  "confirmation_split": "holdout",
+  "confirmation_seeds": [971001, 971002, 971003, 971004, 971005],
+  "primary_styles": ["rounded", "jitter", "strong_jitter", "bootstrap", "copula"],
+  "development_diagnostics": ["copy", "independent"],
+  "selection": "Component-wise highest development mean among candidates whose style mean never falls more than 0.02 below T and whose independent diagnostic mean never exceeds T by more than 0.02; ties prefer first declared option. Freeze before confirmation; do not select on confirmation.",
+  "official_feedback_used": "Only aggregate R v1 feedback and the prior matched comparison motivated robustness checks; no official queries or truth used.",
+  "limitations": [
+    "Existing T person partitions and benchmark are previously used, not fresh unseen people.",
+    "Scores are local proxies without official AIA floor phi; no prediction of official score.",
+    "R v1 uses joint MIA across 22 targets. M-only scores on this single-target T benchmark are diagnostics, not a reproduction of full R v1 MIA.",
+    "This benchmark supplies no known-private mask; production applies the independently proven own-163 mask.",
+    "Do not modify the submitted R v1 files or upstream M/T frozen assets."
+  ]
+}

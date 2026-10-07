@@ -1,0 +1,96 @@
+{
+  "mia": "T",
+  "aia": "T",
+  "selected_before_confirmation": true,
+  "created_utc": "2026-10-01T04:38:49.562210+00:00",
+  "source_sha256": {
+    "runtime.py": "2f2f31a04e76c90faf50eb791b326ed7a9d46e2586b62d0820785965555d451d",
+    "model.py": "ecbb20494e21818e8598f18fa16a7f558c6c82e69dbcd87b2a12833fa0735f6e",
+    "evaluate.py": "bba39a95d604b68045d819e5e3ba9e0ed98cf0f1daeb67423fcc8680e2c98cc8",
+    "protocol.json": "85185025d20c762a0a8fad2f0b4e3f0d147c147b36f346528e9958b8e094e169"
+  },
+  "development_scores_sha256": "76b743425340d3376fdba2eb84b67f420e153d1025796d837490db7239403a16",
+  "audit": [
+    {
+      "component": "mia",
+      "option": "T",
+      "mean": 0.7948717948717949,
+      "minimum_style_delta_vs_T": 0.0,
+      "independent_delta_vs_T": 0.0,
+      "eligible": true
+    },
+    {
+      "component": "mia",
+      "option": "T90_M10",
+      "mean": 0.7358974358974358,
+      "minimum_style_delta_vs_T": -0.25641025641025644,
+      "independent_delta_vs_T": 0.0,
+      "eligible": false
+    },
+    {
+      "component": "mia",
+      "option": "T75_M25",
+      "mean": 0.7,
+      "minimum_style_delta_vs_T": -0.4230769230769231,
+      "independent_delta_vs_T": 0.0,
+      "eligible": false
+    },
+    {
+      "component": "mia",
+      "option": "T50_M50",
+      "mean": 0.6769230769230768,
+      "minimum_style_delta_vs_T": -0.4743589743589744,
+      "independent_delta_vs_T": 0.0,
+      "eligible": false
+    },
+    {
+      "component": "mia",
+      "option": "M",
+      "mean": 0.6205128205128205,
+      "minimum_style_delta_vs_T": -0.5,
+      "independent_delta_vs_T": 0.012820512820512822,
+      "eligible": false
+    },
+    {
+      "component": "aia",
+      "option": "T",
+      "mean": 0.8550957807535506,
+      "minimum_style_delta_vs_T": 0.0,
+      "independent_delta_vs_T": 0.0,
+      "eligible": true
+    },
+    {
+      "component": "aia",
+      "option": "activate_025",
+      "mean": 0.8542046339183635,
+      "minimum_style_delta_vs_T": -0.0034035948259240056,
+      "independent_delta_vs_T": 0.0,
+      "eligible": true
+    },
+    {
+      "component": "aia",
+      "option": "activate_040",
+      "mean": 0.8545436456757197,
+      "minimum_style_delta_vs_T": -0.00206687335400213,
+      "independent_delta_vs_T": 0.0,
+      "eligible": true
+    },
+    {
+      "component": "aia",
+      "option": "retime_040",
+      "mean": 0.8550957807535506,
+      "minimum_style_delta_vs_T": 0.0,
+      "independent_delta_vs_T": 0.0,
+      "eligible": true
+    },
+    {
+      "component": "aia",
+      "option": "nearest_guard",
+      "mean": 0.8532583466293743,
+      "minimum_style_delta_vs_T": -0.008366013071895329,
+      "independent_delta_vs_T": 0.0,
+      "eligible": true
+    }
+  ],
+  "official_result_predicted": false
+}

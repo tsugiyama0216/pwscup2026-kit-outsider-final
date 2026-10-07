@@ -1,0 +1,21 @@
+{
+  "model": "Attack_R/v1",
+  "date": "2026-10-01",
+  "composition_unit_tests": 4,
+  "submission_unit_tests": 4,
+  "all_tests_passed": true,
+  "damaged_submission_variants_rejected": 20,
+  "rejection_categories": [
+    "MIA missing target, wrong ID, duplicate ID, fractional ID, low/high score, NaN, infinity",
+    "AIA self target, wrong challenge ID, negative time, NaN, infinity, missing row, duplicate row",
+    "ZIP extra file, missing token, duplicate member, altered CSV, wrong token"
+  ],
+  "test_files_sha256": {
+    "test_model.py": "bad755ef2082bdaa4244f4f7bb41d6a25120d1503765ac57857cc969a1c957da",
+    "test_submission.py": "a3d6293738645ba07a213f8dca4ad64c6c40be8ebc9b39c2e5fac79da9121aa9"
+  },
+  "new_R_non_zip_files_secret_scanned": 23,
+  "plaintext_token_copies": 0,
+  "zip_ignored_by_git": true,
+  "official_submission_performed": false
+}

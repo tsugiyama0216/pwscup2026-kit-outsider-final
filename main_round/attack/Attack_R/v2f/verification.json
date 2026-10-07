@@ -1,0 +1,323 @@
+{
+  "model": "Attack_R/v2f",
+  "completed": true,
+  "created_utc": "2026-10-01T11:11:00.951871+00:00",
+  "selection": {
+    "mia": "T",
+    "aia": "T",
+    "selected_before_confirmation": true,
+    "created_utc": "2026-10-01T04:38:49.562210+00:00",
+    "source_sha256": {
+      "runtime.py": "2f2f31a04e76c90faf50eb791b326ed7a9d46e2586b62d0820785965555d451d",
+      "model.py": "ecbb20494e21818e8598f18fa16a7f558c6c82e69dbcd87b2a12833fa0735f6e",
+      "evaluate.py": "bba39a95d604b68045d819e5e3ba9e0ed98cf0f1daeb67423fcc8680e2c98cc8",
+      "protocol.json": "85185025d20c762a0a8fad2f0b4e3f0d147c147b36f346528e9958b8e094e169"
+    },
+    "development_scores_sha256": "76b743425340d3376fdba2eb84b67f420e153d1025796d837490db7239403a16",
+    "audit": [
+      {
+        "component": "mia",
+        "option": "T",
+        "mean": 0.7948717948717949,
+        "minimum_style_delta_vs_T": 0.0,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "mia",
+        "option": "T90_M10",
+        "mean": 0.7358974358974358,
+        "minimum_style_delta_vs_T": -0.25641025641025644,
+        "independent_delta_vs_T": 0.0,
+        "eligible": false
+      },
+      {
+        "component": "mia",
+        "option": "T75_M25",
+        "mean": 0.7,
+        "minimum_style_delta_vs_T": -0.4230769230769231,
+        "independent_delta_vs_T": 0.0,
+        "eligible": false
+      },
+      {
+        "component": "mia",
+        "option": "T50_M50",
+        "mean": 0.6769230769230768,
+        "minimum_style_delta_vs_T": -0.4743589743589744,
+        "independent_delta_vs_T": 0.0,
+        "eligible": false
+      },
+      {
+        "component": "mia",
+        "option": "M",
+        "mean": 0.6205128205128205,
+        "minimum_style_delta_vs_T": -0.5,
+        "independent_delta_vs_T": 0.012820512820512822,
+        "eligible": false
+      },
+      {
+        "component": "aia",
+        "option": "T",
+        "mean": 0.8550957807535506,
+        "minimum_style_delta_vs_T": 0.0,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "aia",
+        "option": "activate_025",
+        "mean": 0.8542046339183635,
+        "minimum_style_delta_vs_T": -0.0034035948259240056,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "aia",
+        "option": "activate_040",
+        "mean": 0.8545436456757197,
+        "minimum_style_delta_vs_T": -0.00206687335400213,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "aia",
+        "option": "retime_040",
+        "mean": 0.8550957807535506,
+        "minimum_style_delta_vs_T": 0.0,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "aia",
+        "option": "nearest_guard",
+        "mean": 0.8532583466293743,
+        "minimum_style_delta_vs_T": -0.008366013071895329,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      }
+    ],
+    "official_result_predicted": false
+  },
+  "production_dependencies": {
+    "verified_files": 187,
+    "manifest_sha256": "6cf80387805b34bec8ea6eb7b14ddaecf406a6ad1e996c3d4cbc4edaca72eeaa"
+  },
+  "validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "official_zip_validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "two_independent_process_runs_byte_identical": true,
+  "csv_roundtrip_byte_identical": true,
+  "original_token_bytes_match": true,
+  "token_registration_checked": false,
+  "R_v1_artifacts_unchanged": true,
+  "AIA_byte_identical_to_R_v1": true,
+  "runs": [
+    {
+      "completed": true,
+      "selection_sha256": "77f9480ca4cf9f6906a321377eef65f093747ccf17092323f4eb61f97d3ffe33",
+      "selected_mia": "T",
+      "selected_aia": "T",
+      "validation": {
+        "ok": true,
+        "mia_rows": 1049,
+        "mia_target_columns": 22,
+        "aia_rows": 7172
+      },
+      "private_proof": {
+        "exact_private_rows": 163,
+        "remaining_unknown_rows": 886,
+        "private_true_rare": 13,
+        "private_onset": 16,
+        "private_rare_onset": 4,
+        "private_death": 12,
+        "comparison": "Exact decimal public-QI equality; unique matches; no tolerance",
+        "deduction": "All 163 self members are private by the contest definition; exactly 163 unique B matches exhaust them.",
+        "limitations": "Other 886 rows remain unknown. This selected negative set does not estimate population FPR."
+      },
+      "routes": {
+        "0": "independent",
+        "1": "independent",
+        "2": "copy",
+        "3": "independent",
+        "4": "independent",
+        "5": "independent",
+        "6": "copy",
+        "7": "copy",
+        "8": "copy",
+        "9": "copy",
+        "11": "copula",
+        "12": "copy",
+        "13": "independent",
+        "14": "independent",
+        "15": "copy",
+        "16": "independent",
+        "17": "copy",
+        "22": "independent",
+        "25": "independent",
+        "26": "independent",
+        "27": "independent",
+        "28": "independent"
+      },
+      "upstream": {
+        "T_v88": {
+          "published_files": 130,
+          "verified_original_files": 94,
+          "version": "v88"
+        },
+        "M_v1": {
+          "verified_files": 65,
+          "all_bytes_unchanged": true
+        },
+        "R_v1_files": 172,
+        "M_v2_strength": 1.0
+      },
+      "versions": {
+        "autograd": "1.9.0",
+        "autograd-gamma": "0.5.0",
+        "contourpy": "1.3.3",
+        "cycler": "0.12.1",
+        "fonttools": "4.63.0",
+        "formulaic": "1.2.2",
+        "interface-meta": "2.0.1",
+        "joblib": "1.5.3",
+        "kiwisolver": "1.5.0",
+        "lifelines": "0.30.3",
+        "matplotlib": "3.11.0",
+        "narwhals": "2.23.0",
+        "numpy": "2.4.6",
+        "packaging": "26.2",
+        "pandas": "2.3.3",
+        "patsy": "1.0.2",
+        "pillow": "12.3.0",
+        "pyparsing": "3.3.2",
+        "python-dateutil": "2.9.0.post0",
+        "pytz": "2026.2",
+        "pyyaml": "6.0.3",
+        "scikit-learn": "1.9.0",
+        "scipy": "1.17.1",
+        "six": "1.17.0",
+        "statsmodels": "0.14.6",
+        "threadpoolctl": "3.6.0",
+        "typing-extensions": "4.15.0",
+        "tzdata": "2026.2",
+        "wrapt": "2.2.2"
+      },
+      "file_sha256": {
+        "F_mia.csv": "691443c8a8d7d2311b5d52d59a0635dc370f3a3008f94b4a3f83843196b8e4ce",
+        "F_aia.csv": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88"
+      }
+    },
+    {
+      "completed": true,
+      "selection_sha256": "77f9480ca4cf9f6906a321377eef65f093747ccf17092323f4eb61f97d3ffe33",
+      "selected_mia": "T",
+      "selected_aia": "T",
+      "validation": {
+        "ok": true,
+        "mia_rows": 1049,
+        "mia_target_columns": 22,
+        "aia_rows": 7172
+      },
+      "private_proof": {
+        "exact_private_rows": 163,
+        "remaining_unknown_rows": 886,
+        "private_true_rare": 13,
+        "private_onset": 16,
+        "private_rare_onset": 4,
+        "private_death": 12,
+        "comparison": "Exact decimal public-QI equality; unique matches; no tolerance",
+        "deduction": "All 163 self members are private by the contest definition; exactly 163 unique B matches exhaust them.",
+        "limitations": "Other 886 rows remain unknown. This selected negative set does not estimate population FPR."
+      },
+      "routes": {
+        "0": "independent",
+        "1": "independent",
+        "2": "copy",
+        "3": "independent",
+        "4": "independent",
+        "5": "independent",
+        "6": "copy",
+        "7": "copy",
+        "8": "copy",
+        "9": "copy",
+        "11": "copula",
+        "12": "copy",
+        "13": "independent",
+        "14": "independent",
+        "15": "copy",
+        "16": "independent",
+        "17": "copy",
+        "22": "independent",
+        "25": "independent",
+        "26": "independent",
+        "27": "independent",
+        "28": "independent"
+      },
+      "upstream": {
+        "T_v88": {
+          "published_files": 130,
+          "verified_original_files": 94,
+          "version": "v88"
+        },
+        "M_v1": {
+          "verified_files": 65,
+          "all_bytes_unchanged": true
+        },
+        "R_v1_files": 172,
+        "M_v2_strength": 1.0
+      },
+      "versions": {
+        "autograd": "1.9.0",
+        "autograd-gamma": "0.5.0",
+        "contourpy": "1.3.3",
+        "cycler": "0.12.1",
+        "fonttools": "4.63.0",
+        "formulaic": "1.2.2",
+        "interface-meta": "2.0.1",
+        "joblib": "1.5.3",
+        "kiwisolver": "1.5.0",
+        "lifelines": "0.30.3",
+        "matplotlib": "3.11.0",
+        "narwhals": "2.23.0",
+        "numpy": "2.4.6",
+        "packaging": "26.2",
+        "pandas": "2.3.3",
+        "patsy": "1.0.2",
+        "pillow": "12.3.0",
+        "pyparsing": "3.3.2",
+        "python-dateutil": "2.9.0.post0",
+        "pytz": "2026.2",
+        "pyyaml": "6.0.3",
+        "scikit-learn": "1.9.0",
+        "scipy": "1.17.1",
+        "six": "1.17.0",
+        "statsmodels": "0.14.6",
+        "threadpoolctl": "3.6.0",
+        "typing-extensions": "4.15.0",
+        "tzdata": "2026.2",
+        "wrapt": "2.2.2"
+      },
+      "file_sha256": {
+        "F_mia.csv": "691443c8a8d7d2311b5d52d59a0635dc370f3a3008f94b4a3f83843196b8e4ce",
+        "F_aia.csv": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88"
+      }
+    }
+  ],
+  "file_sha256": {
+    "F_mia.csv": "691443c8a8d7d2311b5d52d59a0635dc370f3a3008f94b4a3f83843196b8e4ce",
+    "F_aia.csv": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88",
+    "team10_R_v2f_attack.zip": "22f84267275367937983fc20b36c9256a825ffc49e191997d18877799a6e2c80"
+  },
+  "official_submission_performed": false,
+  "official_attempts_consumed": 0,
+  "official_v2f_score_measured": false
+}

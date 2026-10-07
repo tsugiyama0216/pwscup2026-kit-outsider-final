@@ -1,0 +1,71 @@
+"""R v2 paths, serialization and preservation of frozen upstream artifacts."""
+from pathlib import Path
+import hashlib
+import importlib.util
+import json
+import os
+import sys
+
+for key in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
+    os.environ[key] = "1"
+HERE = Path(__file__).resolve().parent
+ATTACK = HERE.parents[1]
+REPO = ATTACK.parents[1]
+OUTPUT = ATTACK.parent / "mock_test/local-output/R-v2"
+sys.path.insert(0, str(ATTACK))
+sys.path.insert(0, str(ATTACK / "Attak_T"))
+import attack_research
+import attack_workspace as workspace
+
+
+def read_json(path):
+    return json.loads(Path(path).read_text(encoding="utf-8-sig"))
+
+
+def save_json(path, value):
+    from sugiyama_v2.io import save_json as save
+    save(path, value)
+
+
+def sha(path):
+    if Path(path).name.lower() == "token.txt":
+        raise ValueError("Never hash a live token")
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def load_file(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+def upstream_check():
+    from attack_research.published_v88.check import verify_package
+    from M.v2.artifacts import load_selection, check_v1_preserved
+    answer = {"T_v88": verify_package(), "M_v1": check_v1_preserved()}
+    if load_selection()["mia_strength"] != 1.0:
+        raise ValueError("Unexpected frozen M selection")
+    for version, manifest in (("v1", "dependencies.json"), ("v2f", "production_dependencies.json")):
+        files = read_json(HERE.parent / version / manifest)["files_sha256"]
+        for name, expected in files.items():
+            if sha(REPO / name) != expected:
+                raise ValueError("Frozen upstream dependency changed: " + name)
+        for name, expected in read_json(HERE.parent/version/"verification.json")["file_sha256"].items():
+            if sha(HERE.parent/version/"submission"/name) != expected:
+                raise ValueError("Frozen submission changed: " + version + "/" + name)
+        answer[version] = {"dependencies": len(files), "submission_unchanged": True}
+    return answer
+
+
+def selected_check():
+    selected = read_json(HERE / "selection.json")
+    for name, expected in selected["source_sha256"].items():
+        if sha(HERE / name) != expected:
+            raise ValueError("Selected v2 source changed: " + name)
+    return selected
+
+
+def csv_bytes(frame):
+    return frame.to_csv(index=False, lineterminator="\n", float_format="%.17g").encode("utf-8")

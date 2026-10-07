@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-07T05:16:58.725530+00:00",
+  "purpose": "Protect historical verification receipts and completed evaluation stage records when rerunning tools after GitHub checkout. This changes output-write guards only.",
+  "selection_components_changed": false,
+  "numerical_model_changed": false,
+  "comparison_or_scoring_formulas_changed": false,
+  "confirmation_completed_before_revision": true,
+  "before_selection_sha256": "4be8c3d91c1b673150396f51d8906c143247798834a85ae1fc5ef889a3d5461d",
+  "after_selection_sha256": "944cac58dcc77ef086f6657a29021684a0b888eb538e790acf7e7c418df2ac03",
+  "changed_source_files": [
+    "evaluate.py",
+    "run.py"
+  ],
+  "original_sources_saved_under": "evidence/*_before_write_guards.py.txt",
+  "model_sha256": "5e4c82b5e54bb39651d0c4ace0e7e9ae8cb99193ca7cf9241cd2e2c11b6a3c88"
+}

@@ -1,0 +1,293 @@
+{
+  "completed": true,
+  "stage": "dev",
+  "selection": {
+    "mia": "T",
+    "aia": "T",
+    "selected_before_confirmation": true,
+    "created_utc": "2026-10-01T04:38:49.562210+00:00",
+    "source_sha256": {
+      "runtime.py": "2f2f31a04e76c90faf50eb791b326ed7a9d46e2586b62d0820785965555d451d",
+      "model.py": "ecbb20494e21818e8598f18fa16a7f558c6c82e69dbcd87b2a12833fa0735f6e",
+      "evaluate.py": "bba39a95d604b68045d819e5e3ba9e0ed98cf0f1daeb67423fcc8680e2c98cc8",
+      "protocol.json": "85185025d20c762a0a8fad2f0b4e3f0d147c147b36f346528e9958b8e094e169"
+    },
+    "development_scores_sha256": "76b743425340d3376fdba2eb84b67f420e153d1025796d837490db7239403a16",
+    "audit": [
+      {
+        "component": "mia",
+        "option": "T",
+        "mean": 0.7948717948717949,
+        "minimum_style_delta_vs_T": 0.0,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "mia",
+        "option": "T90_M10",
+        "mean": 0.7358974358974358,
+        "minimum_style_delta_vs_T": -0.25641025641025644,
+        "independent_delta_vs_T": 0.0,
+        "eligible": false
+      },
+      {
+        "component": "mia",
+        "option": "T75_M25",
+        "mean": 0.7,
+        "minimum_style_delta_vs_T": -0.4230769230769231,
+        "independent_delta_vs_T": 0.0,
+        "eligible": false
+      },
+      {
+        "component": "mia",
+        "option": "T50_M50",
+        "mean": 0.6769230769230768,
+        "minimum_style_delta_vs_T": -0.4743589743589744,
+        "independent_delta_vs_T": 0.0,
+        "eligible": false
+      },
+      {
+        "component": "mia",
+        "option": "M",
+        "mean": 0.6205128205128205,
+        "minimum_style_delta_vs_T": -0.5,
+        "independent_delta_vs_T": 0.012820512820512822,
+        "eligible": false
+      },
+      {
+        "component": "aia",
+        "option": "T",
+        "mean": 0.8550957807535506,
+        "minimum_style_delta_vs_T": 0.0,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "aia",
+        "option": "activate_025",
+        "mean": 0.8542046339183635,
+        "minimum_style_delta_vs_T": -0.0034035948259240056,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "aia",
+        "option": "activate_040",
+        "mean": 0.8545436456757197,
+        "minimum_style_delta_vs_T": -0.00206687335400213,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "aia",
+        "option": "retime_040",
+        "mean": 0.8550957807535506,
+        "minimum_style_delta_vs_T": 0.0,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      },
+      {
+        "component": "aia",
+        "option": "nearest_guard",
+        "mean": 0.8532583466293743,
+        "minimum_style_delta_vs_T": -0.008366013071895329,
+        "independent_delta_vs_T": 0.0,
+        "eligible": true
+      }
+    ],
+    "official_result_predicted": false
+  },
+  "summary": [
+    {
+      "component": "aia",
+      "option": "T",
+      "mean": 0.8550957807535506
+    },
+    {
+      "component": "aia",
+      "option": "activate_025",
+      "mean": 0.8542046339183635
+    },
+    {
+      "component": "aia",
+      "option": "activate_040",
+      "mean": 0.8545436456757197
+    },
+    {
+      "component": "aia",
+      "option": "nearest_guard",
+      "mean": 0.8532583466293743
+    },
+    {
+      "component": "aia",
+      "option": "retime_040",
+      "mean": 0.8550957807535506
+    },
+    {
+      "component": "mia",
+      "option": "M",
+      "mean": 0.6205128205128205
+    },
+    {
+      "component": "mia",
+      "option": "T",
+      "mean": 0.7948717948717949
+    },
+    {
+      "component": "mia",
+      "option": "T50_M50",
+      "mean": 0.6769230769230768
+    },
+    {
+      "component": "mia",
+      "option": "T75_M25",
+      "mean": 0.7
+    },
+    {
+      "component": "mia",
+      "option": "T90_M10",
+      "mean": 0.7358974358974358
+    }
+  ],
+  "cases": [
+    {
+      "split": "dev",
+      "seed": 2026100101,
+      "partition_seed": 2026092701,
+      "partition_rows": 2572,
+      "target_rows": 1049,
+      "mia_candidates": 1049,
+      "mia_members": 26,
+      "mia_rare_candidates": 24,
+      "mia_rare_members": 1,
+      "aia_members": 163,
+      "aia_controls": 163,
+      "aia_rare_per_side": 13,
+      "aia_onset_per_side": 16,
+      "aia_rare_onset_per_side": 4,
+      "matching_keys": [
+        "detected_rare",
+        "onset",
+        "sex",
+        "prefecture",
+        "age_5year"
+      ],
+      "matching_relaxed": false,
+      "role_assignment_sha256": "c301244a94620d201e170268e8f5c5674d38d5d5e2e7dbcabfd21fc505138156",
+      "rare_label_source": "Public Mahalanobis detector surrogate; not true is_rare",
+      "background_source": "Actual B used only as an independent reference; no B_self labels"
+    },
+    {
+      "split": "dev",
+      "seed": 2026100102,
+      "partition_seed": 2026092701,
+      "partition_rows": 2572,
+      "target_rows": 1049,
+      "mia_candidates": 1049,
+      "mia_members": 26,
+      "mia_rare_candidates": 24,
+      "mia_rare_members": 2,
+      "aia_members": 163,
+      "aia_controls": 163,
+      "aia_rare_per_side": 13,
+      "aia_onset_per_side": 16,
+      "aia_rare_onset_per_side": 4,
+      "matching_keys": [
+        "detected_rare",
+        "onset",
+        "sex",
+        "prefecture",
+        "age_5year"
+      ],
+      "matching_relaxed": false,
+      "role_assignment_sha256": "f63614a985a9d3b9a8897829d7178813d08ddd2dce27394fe4d3dd3bf4f614ef",
+      "rare_label_source": "Public Mahalanobis detector surrogate; not true is_rare",
+      "background_source": "Actual B used only as an independent reference; no B_self labels"
+    },
+    {
+      "split": "dev",
+      "seed": 2026100103,
+      "partition_seed": 2026092701,
+      "partition_rows": 2572,
+      "target_rows": 1049,
+      "mia_candidates": 1049,
+      "mia_members": 26,
+      "mia_rare_candidates": 24,
+      "mia_rare_members": 0,
+      "aia_members": 163,
+      "aia_controls": 163,
+      "aia_rare_per_side": 13,
+      "aia_onset_per_side": 16,
+      "aia_rare_onset_per_side": 4,
+      "matching_keys": [
+        "detected_rare",
+        "onset",
+        "sex",
+        "prefecture",
+        "age_5year"
+      ],
+      "matching_relaxed": false,
+      "role_assignment_sha256": "36d1dc2a6b65c474be5ce9837fe84a7d5469bf807cd3b9aaa2caca07bef9db7b",
+      "rare_label_source": "Public Mahalanobis detector surrogate; not true is_rare",
+      "background_source": "Actual B used only as an independent reference; no B_self labels"
+    }
+  ],
+  "versions": {
+    "autograd": "1.9.0",
+    "autograd-gamma": "0.5.0",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "formulaic": "1.2.2",
+    "interface-meta": "2.0.1",
+    "joblib": "1.5.3",
+    "kiwisolver": "1.5.0",
+    "lifelines": "0.30.3",
+    "matplotlib": "3.11.0",
+    "narwhals": "2.23.0",
+    "numpy": "2.4.6",
+    "packaging": "26.2",
+    "pandas": "2.3.3",
+    "patsy": "1.0.2",
+    "pillow": "12.3.0",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.2",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "six": "1.17.0",
+    "statsmodels": "0.14.6",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.15.0",
+    "tzdata": "2026.2",
+    "wrapt": "2.2.2"
+  },
+  "upstream": {
+    "T_v88": {
+      "published_files": 130,
+      "verified_original_files": 94,
+      "version": "v88"
+    },
+    "M_v1": {
+      "verified_files": 65,
+      "all_bytes_unchanged": true
+    },
+    "R_v1_files": 172,
+    "M_v2_strength": 1.0
+  },
+  "source_sha256": {
+    "runtime.py": "2f2f31a04e76c90faf50eb791b326ed7a9d46e2586b62d0820785965555d451d",
+    "model.py": "ecbb20494e21818e8598f18fa16a7f558c6c82e69dbcd87b2a12833fa0735f6e",
+    "evaluate.py": "bba39a95d604b68045d819e5e3ba9e0ed98cf0f1daeb67423fcc8680e2c98cc8",
+    "protocol.json": "85185025d20c762a0a8fad2f0b4e3f0d147c147b36f346528e9958b8e094e169"
+  },
+  "official_submission": false,
+  "limitations": [
+    "Existing T person partitions and benchmark are previously used, not fresh unseen people.",
+    "Scores are local proxies without official AIA floor phi; no prediction of official score.",
+    "R v1 uses joint MIA across 22 targets. M-only scores on this single-target T benchmark are diagnostics, not a reproduction of full R v1 MIA.",
+    "This benchmark supplies no known-private mask; production applies the independently proven own-163 mask.",
+    "Do not modify the submitted R v1 files or upstream M/T frozen assets."
+  ]
+}

@@ -103,3 +103,5 @@ Set-Location main_round/attack
 採点まで通ると、リーダーボード掲載の有無に関係なく1回消費します。Failedとなる形式・値域違反は回数に算入しないと案内されています。順位に使うのは終了時点でリーダーボードに掲載された1件です。
 
 事務局はCodaBenchのRunning/Scoringが完了しない不具合を案内しています。該当提出のCancelに伴う回数の差し戻しは事務局へ相談する扱いです。締切は10月11日の**午前9時**です。詳細は保存した案内本文と[公式CodaBench](https://www.codabench.org/competitions/17698)を参照してください。
+
+2026-10-07：[R v2の提出データ・検証記録](Attack_R/v2/README.md)を保存。MIAをT v88由来へ変更し、AIAは維持。既存v2fと同じCSVで、公式点は未測定。提出ZIPはPCのみ、モデル・CSV・検証記録は既存非公開GitHubのmainへの保存対象。

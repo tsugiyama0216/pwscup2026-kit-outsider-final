@@ -1,0 +1,23 @@
+{
+  "model": "Attack_R/v2",
+  "motivation": "R v1 user-supplied official feedback: attack power 0.169387840941965; large mock-to-official gap, especially AIA. Compare public geometry without a release-style classifier and soft cross-target MIA correction. Do not fit to the aggregate official score.",
+  "official_feedback": "../v1/official_feedback_user_supplied_20261001.json",
+  "development": [
+    {"seed": 2026100711, "profile": "mixed", "split": "dev"},
+    {"seed": 2026100712, "profile": "stress", "split": "dev"}
+  ],
+  "confirmation": [
+    {"seed": 2026100721, "profile": "mixed", "split": "holdout"},
+    {"seed": 2026100722, "profile": "stress", "split": "holdout"}
+  ],
+  "mia_options": ["R_v1", "T", "T_cross", "TM", "geometry", "geometry_half", "geometry_cross"],
+  "aia_options": ["T", "nearest", "window5", "window15", "contrast15", "gated15", "T_rescue"],
+  "baseline": {"mia": "R_v1", "aia": "T"},
+  "scoring": "Pinned official score_attack on each complete 22-target world; estimate each mock AIA floor with 1000 official reference draws, shared across candidates. Include all targets and independent releases.",
+  "floor_repetitions": 1000,
+  "selection": "Choose MIA and AIA separately by mean corrected component score across both development worlds. Eligible candidates cannot lose more than 0.03 in either world or 0.10 in any pooled release-style mean relative to R v1. Require mean improvement greater than 0.005; otherwise preserve that baseline component. Prefer listed-first in a tie. Freeze selection and source hashes before confirmation; do not reselect using confirmation.",
+  "limitations": ["Mock generator and people partitions have already been used; new seeds are not unseen real people.", "Profiles are sensitivity scenarios, not estimates of actual defenses.", "Official hidden truth/floors are unavailable. A higher mock score does not establish a higher official score."],
+  "official_submission_authorized": false,
+  "github_upload_authorized": false,
+  "local_zip_authorized": "main_round/attack/Attack_R/v2/submission/team10_R_v2_attack.zip"
+}

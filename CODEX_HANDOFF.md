@@ -1,5 +1,16 @@
 # PWSCUP2026 引き継ぎ
 
+## 2026-10-07：R v2の提出データとGitHub保存
+
+ユーザーがR v1の公式結果（0.169387840941965）に基づく改良をR v2として保存し、続けてこのPCと既存非公開GitHubへ保存するよう依頼。正本は `main_round/attack/Attack_R/v2/`。MIAはT v88由来の対象内順位＋既知非共有163人の0、AIAはT v88を採用した。新しい距離・時刻窓候補も比較したが不採用で、採用成分・本番CSVは既存v2fと同じ。v2fを上回る新アルゴリズムとは扱わない。
+
+共通杉山v2の調整2世界でR v1/R v2の模擬合計は0.572243701/0.685215729。選択固定後の別2世界では0.631323084/0.699956858、両世界で改善。各世界22対象、固定公式集計、模擬φ各1,000回、独立生成も主集計に含む。既使用の人物分割・生成器であり、未知の本番正解や公式点の再現ではない。数値モデルを固定し、移植性・記録の上書き防止だけを別記録付きで修正した。
+
+本番2回生成の一致、R v1/v2fの再現、公式ZIPと実ID検査、計11テスト・20種類の不正提出拒否を確認。MIA1,049行×23列、AIA7,172行×3列。R v1からMIA19,492セル更新、AIA不変。R v1/v2f、M/Tと原本を保持。再生成は新しいv2内の出力先を指定する。詳細はv2のREADME・verification・acceptance_checks・production_dependenciesを参照。
+
+GitHubはモデル・提出CSV・検証記録と必要な旧R非認証依存を既存private origin/mainへ保存する範囲。提出ZIP `main_round/attack/Attack_R/v2/submission/team10_R_v2_attack.zip` はこのPCのみでGit除外。トークンの表示・新しい平文コピー、CodaBench提出・試行消費は行っていない。R v2の公式点は未測定。
+
+
 ## 2026-10-07：retestをattack配下へ配置
 
 ユーザーは改善した杉山採点をGitHubにも保存するよう明示し、保存先を「attack」に修正しました。正規入口は [main_round/attack/retest/run.ps1](main_round/attack/retest/run.ps1)、説明は [retest/README.md](main_round/attack/retest/README.md) です。初回の `team10/attack/retest` 配置は採用せず、移動前の確認は `save_verification_before_attack_move_20261007.json` に履歴として残します。この依頼は既存非公開リポジトリ `tsugiyama0216/pwscup2026-kit-private` のmainへの反映を許可します。

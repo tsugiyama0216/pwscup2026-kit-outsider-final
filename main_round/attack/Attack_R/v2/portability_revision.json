@@ -1,0 +1,15 @@
+{
+  "reason": "Later GitHub request: historical token ZIPs must not be required on a fresh checkout. Mandatory CSV and dependency hashes remain enforced; any existing local ZIP remains verified.",
+  "numeric_model_changed": false,
+  "selection_changed": false,
+  "confirmation_not_started": true,
+  "before_selection_sha256": "a3d8d622824d3f870c1e63200e3f6db7771271cabd11fa150085a0cbaf518478",
+  "after_selection_sha256": "4be8c3d91c1b673150396f51d8906c143247798834a85ae1fc5ef889a3d5461d",
+  "changed_source_files": [
+    "runtime.py"
+  ],
+  "before_runtime_sha256": "e4bde9769c95254bc609310e30be43e404d2c3c8d03b4971b34755a4594a4b6f",
+  "after_runtime_sha256": "d7ae66b6ac4131ef6e85b8e5ce15be500a5c6d3dfed200edeec575b7603c952a",
+  "original_runtime_snapshot": "evidence/runtime_before_portability.py.txt",
+  "original_runtime_snapshot_matches_development_hash": true
+}

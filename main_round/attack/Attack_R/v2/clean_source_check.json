@@ -1,0 +1,31 @@
+{
+  "date_jst": "2026-10-07",
+  "scope": "Fresh managed worktree based on existing origin/main plus the scoped non-credential R source, baseline CSVs and records. Current checkout's pinned Python environment was reused; official source imports were redirected to the isolated worktree.",
+  "isolated_workspace_confirmed": true,
+  "historical_R_v1_and_v2f_token_ZIPs_present": false,
+  "R_v1_dependency_files_verified": 172,
+  "R_v2f_dependency_files_verified": 187,
+  "T_v88_files_verified": 130,
+  "official_original_files_verified": 94,
+  "M_v1_preserved_files_verified": 65,
+  "baseline_submission_CSVs_verified": 4,
+  "selected_source_hashes_verified": true,
+  "selected_mia": "T",
+  "selected_aia": "T",
+  "model_unit_tests_passed": 7,
+  "full_production_inference_in_this_worktree": false,
+  "another_physical_PC_tested": false,
+  "official_submission_performed": false,
+  "T_v88_runtime_initialization": {
+    "runtime_initialized": true,
+    "adapter": "main_round/attack/Attak_T/prelim_transfer/methods.py",
+    "legacy_source_files": 16
+  },
+  "final_production_check": {
+    "verified_files": 219,
+    "manifest_sha256": "943b3ad1e9ca2c8427ceec870d5ec43a6bee35e7a077ae9f7902029959fdd505"
+  },
+  "final_selected_source_hashes_verified": true,
+  "final_submission_CSV_hashes_verified": true,
+  "published_tree_contains_no_submission_ZIP": true
+}

@@ -1,0 +1,27 @@
+{
+  "model": "Attack_R/v1",
+  "source": "User supplied the official result in this chat; not independently fetched",
+  "received_date_jst": "2026-10-01",
+  "status": "OK",
+  "scores": {
+    "score_1": 0.169387840941965,
+    "score_2": 0.04720279720279719,
+    "score_3": 0.16666666666666666,
+    "score_4": 0.10896113803011742,
+    "score_5": 0.016103721599397856
+  },
+  "mapping": {
+    "score_1": "attack_power",
+    "score_2": "mia_all",
+    "score_3": "mia_rare",
+    "score_4": "aia_all",
+    "score_5": "aia_rare"
+  },
+  "submission_id": null,
+  "submission_performed_by_this_agent": false,
+  "limitations": [
+    "Cannot reconstruct final mia_power/aia_power separately from these five aggregate numbers.",
+    "Rare MIA averages exclude targets with no rare positives; denominators can differ.",
+    "AIA leaderboard channels precede the hidden per-target floor phi; score_1 is not a sum of score_2 through score_5."
+  ]
+}

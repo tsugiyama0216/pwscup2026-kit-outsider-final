@@ -1,0 +1,140 @@
+"""Matched Sugiyama v2 development and frozen confirmation, with separate truth."""
+import argparse
+from datetime import datetime, timezone
+from pathlib import Path
+import shutil
+import runtime as rt
+import numpy as np
+import pandas as pd
+from threadpoolctl import threadpool_limits
+from model import compute_world, MIA_OPTIONS, AIA_OPTIONS
+from sugiyama_v2.generate import build_world
+from sugiyama_v2.io import export_world, load_world, prediction_arguments, csv, snapshot
+from sugiyama_v2.scoring import estimate_floors, score_world, validate_predictions
+from sugiyama_v2.runner import per_target_diagnostics
+
+
+def source_hashes():
+    return {p.name: rt.sha(p) for p in sorted(rt.HERE.glob("*.py"))} | {"protocol.json": rt.sha(rt.HERE/"protocol.json")}
+
+
+def evaluate_world(spec, folder, cfg, options):
+    folder.mkdir(parents=True)
+    case = folder/"case"
+    export_world(build_world(**spec), case)
+    public, private, manifest, original = load_world(case)
+    answers = compute_world(**prediction_arguments(public, cfg))
+    for component, names in options.items():
+        for name in names:
+            target = folder/"predictions"/component/name
+            target.mkdir(parents=True)
+            csv(target/("F_mia.csv" if component == "mia" else "F_aia.csv"), answers[component][name])
+    rt.save_json(folder/"prediction_diagnostics.json", answers["diagnostics"])
+    truth = folder/"scoring_truth"
+    shutil.copytree(private, truth)
+    print("Estimating common mock floors (1000 draws per target)", flush=True)
+    floors, floor_meta = estimate_floors(public, truth, cfg, spec["seed"]+1000003, 1000)
+    csv(truth/"aia_floor.csv", floors)
+    rt.save_json(truth/"aia_floor_metadata.json", floor_meta)
+    records = []
+    for component, names in options.items():
+        for name in names:
+            fm = answers["mia"][name if component == "mia" else "R_v1"]
+            fa = answers["aia"][name if component == "aia" else "T"]
+            # Score the exact serialized values that can be reproduced in a submission.
+            import io
+            fm = pd.read_csv(io.BytesIO(rt.csv_bytes(fm)), float_precision="round_trip")
+            fa = pd.read_csv(io.BytesIO(rt.csv_bytes(fa)), float_precision="round_trip")
+            result = score_world(fm, fa, public, truth, cfg)
+            rows = per_target_diagnostics(fm, fa, public, truth, cfg, manifest["metadata"], result)
+            rows["component"], rows["option"], rows["seed"] = component, name, spec["seed"]
+            records.extend(rows.to_dict(orient="records"))
+            rt.save_json(folder/f"score-{component}-{name}.json", result)
+            print(f"{spec['seed']} {component} {name}: {result[component+'_power']:.9f}", flush=True)
+    if snapshot(case)[1] != original:
+        raise ValueError("Saved evaluation input changed")
+    return records
+
+
+def choose(rows, protocol):
+    selected, audit = {}, []
+    for component in ("mia", "aia"):
+        col = component + "_power"
+        part = rows[rows.component == component]
+        baseline = protocol["baseline"][component]
+        reference = part[part.option == baseline]
+        options = protocol[component+"_options"]
+        eligible = []
+        for name in options:
+            current = part[part.option == name]
+            mean = float(current[col].mean())
+            delta = mean-float(reference[col].mean())
+            world_min = float((current.groupby("seed")[col].mean()-reference.groupby("seed")[col].mean()).min())
+            style_min = float((current.groupby("style")[col].mean()-reference.groupby("style")[col].mean()).min())
+            ok = world_min >= -.03-1e-12 and style_min >= -.10-1e-12
+            audit.append({"component": component, "option": name, "mean": mean,
+                "delta": delta, "minimum_world_delta": world_min, "minimum_style_delta": style_min,
+                "eligible": ok})
+            if ok and (name == baseline or delta > .005):
+                eligible.append((mean, -options.index(name), name))
+        selected[component] = max(eligible)[2]
+    return selected, audit
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("stage", choices=("development", "confirmation"))
+    args = parser.parse_args()
+    protocol = rt.read_json(rt.HERE/"protocol.json")
+    output = rt.OUTPUT/args.stage
+    if output.exists():
+        raise ValueError("Preserve previous or incomplete stage outputs")
+    selected = rt.selected_check() if args.stage == "confirmation" else None
+    before = rt.upstream_check()
+    rt.workspace.verify_hashes()
+    _, _, _, cfg, versions = rt.workspace.load_runtime()
+    sources = source_hashes()
+    output.mkdir(parents=True)
+    rt.save_json(output/"started.json", {"utc": datetime.now(timezone.utc).isoformat(), "source_sha256": sources,
+        "selection_sha256": rt.sha(rt.HERE/"selection.json") if selected else None})
+    options = {"mia": list(MIA_OPTIONS), "aia": list(AIA_OPTIONS)} if selected is None else {
+        "mia": list(dict.fromkeys(["R_v1", "T", selected["mia"]])),
+        "aia": list(dict.fromkeys(["T", selected["aia"]]))}
+    rows = []
+    with threadpool_limits(limits=1):
+        for spec in protocol[args.stage]:
+            rows.extend(evaluate_world(spec, output/str(spec["seed"]), cfg, options))
+            pd.DataFrame(rows).to_csv(output/"by_target.csv", index=False)
+    frame = pd.DataFrame(rows)
+    summary = {component: frame[frame.component == component].groupby("option")[component+"_power"].mean().to_dict()
+               for component in ("mia", "aia")}
+    if sources != source_hashes() or before != rt.upstream_check():
+        raise ValueError("Source or frozen upstream changed during evaluation")
+    if selected is None:
+        selected, audit = choose(frame, protocol)
+        selected.update({"frozen_utc": datetime.now(timezone.utc).isoformat(), "source_sha256": sources,
+            "audit": audit, "development_csv_sha256": rt.sha(output/"by_target.csv"),
+            "confirmation_not_started": not (rt.OUTPUT/"confirmation").exists(),
+            "official_score_predicted": False})
+        if (rt.HERE/"selection.json").exists():
+            raise ValueError("Never overwrite selection")
+        rt.save_json(rt.HERE/"selection.json", selected)
+    else:
+        rt.selected_check()
+    totals = {}
+    for version, mia_name, aia_name in (("R_v1", "R_v1", "T"), ("R_v2f", "T", "T"),
+                                       ("R_v2", selected["mia"], selected["aia"])):
+        totals[version] = float(summary["mia"][mia_name]+summary["aia"][aia_name])
+    record = {"completed": True, "stage": args.stage, "created_utc": datetime.now(timezone.utc).isoformat(),
+        "worlds": protocol[args.stage], "per_component": summary, "matched_world_attack_power": totals,
+        "selected": {k: selected[k] for k in ("mia", "aia")}, "source_sha256": sources,
+        "upstream": before, "runtime_versions": versions,
+        "by_target_sha256": rt.sha(output/"by_target.csv"), "official_score_measured": False,
+        "limitations": protocol["limitations"]}
+    rt.save_json(rt.HERE/(args.stage+".json"), record)
+    print(record["matched_world_attack_power"], flush=True)
+    print("Selected: " + str(record["selected"]), flush=True)
+
+
+if __name__ == "__main__":
+    main()

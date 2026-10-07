@@ -159,3 +159,5 @@ python -m unittest discover -v
 ## 整理時の確認
 
 全177テストと、v9生成器・ZIP作成器のコマンド起動を確認しました。攻撃ファイル集の43件は、移動後の元ファイルとサイズ・SHA-256が一致します。提出CSV、公式結果JSON、Word原本、配布キットのバイト列は保持しています。公開前には秘密情報検査とGitステージのmanifest照合も行います。今回、公式提出や攻撃アルゴリズムの変更は行っていません。
+
+2026-10-07：本戦攻撃R v2の正本は `main_round/attack/Attack_R/v2/`。モデル・提出CSV・検証記録をPCとprivate GitHubに保存し、token入り提出ZIPは同版の `submission/` にローカル保存。R v1/v2fと共通杉山採点を保持する。

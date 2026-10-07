@@ -1,0 +1,147 @@
+{
+  "mia": "T",
+  "aia": "T",
+  "frozen_utc": "2026-10-07T04:32:56.398041+00:00",
+  "source_sha256": {
+    "evaluate.py": "2a71ffd55db5d6eb6cda43e3046e43392275f2e315bd0c1331b6b4e9b0953b14",
+    "infer.py": "354c1ab07fb609f2b7fc5cd538ca240a39547f79eca06eabdfbd72843a31e49d",
+    "model.py": "5e4c82b5e54bb39651d0c4ace0e7e9ae8cb99193ca7cf9241cd2e2c11b6a3c88",
+    "plugin.py": "eb5031bd16a4577e332c5e561b443426c6f9b7e9817e878e06501b1d8e43ed5d",
+    "run.py": "5ce93aada1b603c615869e804dd3517ce04ba5bc26a27506932a579c30826ba2",
+    "runtime.py": "e4bde9769c95254bc609310e30be43e404d2c3c8d03b4971b34755a4594a4b6f",
+    "test_model.py": "cb330ae7d55954a2b65e7b2648d5f88e54e6a77fc1e47574cb58753d0e060725",
+    "test_submission.py": "6cf5c7bb8277494ec4cb80ebe591da2cceb23dabd1726a2312e03bb61c06d32c",
+    "protocol.json": "649b92a985b587464865a7c45822a0301dc7f3b1c3b7fccecd8b6282571b0b5b"
+  },
+  "audit": [
+    {
+      "component": "mia",
+      "option": "R_v1",
+      "mean": 0.1647668997668998,
+      "delta": 0.0,
+      "minimum_world_delta": 0.0,
+      "minimum_style_delta": 0.0,
+      "eligible": true
+    },
+    {
+      "component": "mia",
+      "option": "T",
+      "mean": 0.2777389277389277,
+      "delta": 0.11297202797202793,
+      "minimum_world_delta": 0.11188811188811187,
+      "minimum_style_delta": -0.060576923076923056,
+      "eligible": true
+    },
+    {
+      "component": "mia",
+      "option": "T_cross",
+      "mean": 0.17888111888111885,
+      "delta": 0.014114219114219062,
+      "minimum_world_delta": 0.008787878787878789,
+      "minimum_style_delta": -0.3277777777777778,
+      "eligible": false
+    },
+    {
+      "component": "mia",
+      "option": "TM",
+      "mean": 0.20455710955710957,
+      "delta": 0.03979020979020978,
+      "minimum_world_delta": 0.030769230769230743,
+      "minimum_style_delta": -0.013333333333333336,
+      "eligible": true
+    },
+    {
+      "component": "mia",
+      "option": "geometry",
+      "mean": 0.22772727272727267,
+      "delta": 0.06296037296037288,
+      "minimum_world_delta": 0.031515151515151496,
+      "minimum_style_delta": -0.27999999999999997,
+      "eligible": false
+    },
+    {
+      "component": "mia",
+      "option": "geometry_half",
+      "mean": 0.23496503496503493,
+      "delta": 0.07019813519813514,
+      "minimum_world_delta": 0.042354312354312335,
+      "minimum_style_delta": -0.19999999999999998,
+      "eligible": false
+    },
+    {
+      "component": "mia",
+      "option": "geometry_cross",
+      "mean": 0.21506993006993003,
+      "delta": 0.05030303030303024,
+      "minimum_world_delta": 0.044172494172494164,
+      "minimum_style_delta": -0.15999999999999998,
+      "eligible": false
+    },
+    {
+      "component": "aia",
+      "option": "T",
+      "mean": 0.4074768010674185,
+      "delta": 0.0,
+      "minimum_world_delta": 0.0,
+      "minimum_style_delta": 0.0,
+      "eligible": true
+    },
+    {
+      "component": "aia",
+      "option": "nearest",
+      "mean": 0.12336516804878751,
+      "delta": -0.284111633018631,
+      "minimum_world_delta": -0.31460130594231656,
+      "minimum_style_delta": -0.6680628162726805,
+      "eligible": false
+    },
+    {
+      "component": "aia",
+      "option": "window5",
+      "mean": 0.06746501463430433,
+      "delta": -0.3400117864331142,
+      "minimum_world_delta": -0.34899952769325526,
+      "minimum_style_delta": -0.6839365819386799,
+      "eligible": false
+    },
+    {
+      "component": "aia",
+      "option": "window15",
+      "mean": 0.0335589194736966,
+      "delta": -0.3739178815937219,
+      "minimum_world_delta": -0.39089016754463685,
+      "minimum_style_delta": -0.6563404748118126,
+      "eligible": false
+    },
+    {
+      "component": "aia",
+      "option": "contrast15",
+      "mean": 0.020798782344467553,
+      "delta": -0.38667801872295093,
+      "minimum_world_delta": -0.39446328660625773,
+      "minimum_style_delta": -0.8150411941251177,
+      "eligible": false
+    },
+    {
+      "component": "aia",
+      "option": "gated15",
+      "mean": 0.04604343802148528,
+      "delta": -0.3614333630459332,
+      "minimum_world_delta": -0.36527927314114983,
+      "minimum_style_delta": -0.7845222929936306,
+      "eligible": false
+    },
+    {
+      "component": "aia",
+      "option": "T_rescue",
+      "mean": 0.39833449137627447,
+      "delta": -0.009142309691144046,
+      "minimum_world_delta": -0.010949078889322228,
+      "minimum_style_delta": -0.0415550407788543,
+      "eligible": true
+    }
+  ],
+  "development_csv_sha256": "953cea9b70033dd9a30f21b4de3786ec416bc105d1d7dbcea2f5bbc4a3fe560a",
+  "confirmation_not_started": true,
+  "official_score_predicted": false
+}

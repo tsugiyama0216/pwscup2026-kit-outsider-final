@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "created_utc": "2026-10-07T05:39:53.582314+00:00",
+  "model_tests_passed": 7,
+  "submission_tests_passed": 4,
+  "total_tests_passed": 11,
+  "malformed_submission_variants_rejected": 20,
+  "model_tests_also_passed_in_clean_source_tree": true,
+  "completed_evaluation_overwrite_rejected": true,
+  "existing_submission_overwrite_rejected": true,
+  "submission_and_verification_bytes_preserved_on_rejected_rerun": true,
+  "plaintext_token_absent_outside_authorized_zip": true,
+  "scanned_nonzip_files": 29,
+  "tests_source_sha256": {
+    "test_model.py": "cb330ae7d55954a2b65e7b2648d5f88e54e6a77fc1e47574cb58753d0e060725",
+    "test_submission.py": "6cf5c7bb8277494ec4cb80ebe591da2cceb23dabd1726a2312e03bb61c06d32c"
+  },
+  "official_submission_performed": false,
+  "official_v2_score_measured": false
+}

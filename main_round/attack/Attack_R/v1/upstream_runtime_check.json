@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-01",
+  "published_v88_files": 130,
+  "original_files": 94,
+  "legacy_source_files": 16,
+  "runtime_initialized": true,
+  "frozen_benchmark_cases": 25,
+  "benchmark_reproduced": true,
+  "expected_MIA": 0.7307692307692308,
+  "expected_AIA_no_phi": 0.8473837794327597,
+  "both_one": 8,
+  "composite_official_score": null,
+  "composition_unit_tests_passed": 4
+}
