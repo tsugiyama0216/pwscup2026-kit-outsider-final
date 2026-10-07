@@ -1,0 +1,47 @@
+{
+  "received_date": "2026-10-07",
+  "source": "C:\\Users\\Sugiyama Takumi\\Downloads\\M1_v2_package\\M1_v2",
+  "destination": "main_round/anonymization/team10/M/M1_v2",
+  "files": {
+    "C.csv": {
+      "bytes": 156016,
+      "sha256": "11337028feb55a766093d9d3b0c283d85c7727c3cfd917db498e4e7f5cb78e31",
+      "source_destination_match": true
+    },
+    "DOMIAS_same20.csv": {
+      "bytes": 413,
+      "sha256": "7ee47da77a262cc5ea57c08f73cda3fb1762a7d77c3bfb2248ce0157d1ea14e1",
+      "source_destination_match": true
+    },
+    "generate_m1_v2.py": {
+      "bytes": 6808,
+      "sha256": "c6121706af523af4959679471d00526b0b94d179f0fc02806f0c8c3d5efccd2f",
+      "source_destination_match": true
+    },
+    "README.md": {
+      "bytes": 541,
+      "sha256": "37e6a80b391616553bf0c54e41478d520d90753a1c414b2421aa2952104585cf",
+      "source_destination_match": true
+    },
+    "report.json": {
+      "bytes": 1792,
+      "sha256": "e07b42879ec3c445fa44cdf195acb075ac24e270b10898e7e10ba11845daedc2",
+      "source_destination_match": true
+    },
+    "resistance_stress.json": {
+      "bytes": 7047,
+      "sha256": "5b0a300420be4c211fff3946f2860793be494494fa368e3892cfebb8d50e796f",
+      "source_destination_match": true
+    }
+  },
+  "verification": {
+    "all_six_files_match": true,
+    "csv_matches_package_report_hash": true,
+    "csv_rows": 1049,
+    "csv_columns": 13,
+    "csv_shape_and_header_match_schema": true,
+    "generation_executed": false,
+    "utility_recalculated": false,
+    "official_submission_performed": false
+  }
+}

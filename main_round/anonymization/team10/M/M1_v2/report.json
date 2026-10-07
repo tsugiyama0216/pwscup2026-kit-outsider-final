@@ -1,0 +1,50 @@
+{
+  "model": "M1-v2",
+  "base": "M1",
+  "method": "smoking permutation plus time/onset row reassignment; all other semantic values including death fixed",
+  "parameters": {
+    "smoking_swap_fraction": 0.05,
+    "seed": 20260924,
+    "outcome_max_steps": 80,
+    "rare_target_source": "B_self true-rare onset rate × M1 detected-rare count"
+  },
+  "changed_cells_by_column_tolerance": {
+    "smoking": 22,
+    "time": 56,
+    "onset": 54
+  },
+  "utility_estimate_main_round": {
+    "U": 0.8427783866304094,
+    "U_gen": 0.919490298703082,
+    "U_spec": 0.8427783866304094,
+    "U_rare": 0.8628578842660675,
+    "U_valid": 0.8747894476382988,
+    "U_spec_io": 0.8427783866304094,
+    "U_spec_tstr_cal": 0.9998605656387256
+  },
+  "M1_baseline": {
+    "U": 0.7521530456176521,
+    "U_gen": 0.9214155715372894,
+    "U_spec": 0.7521530456176521,
+    "U_rare": 0.8183050847457627,
+    "U_valid": 0.8727753152771738
+  },
+  "key_effects": {
+    "smoking_cox_beta_M1": 0.5310897313402168,
+    "smoking_cox_beta_M1v2": 0.2583216196695579,
+    "smoking_significant_M1": true,
+    "smoking_significant_M1v2": false,
+    "rare_onset_cal_M1": 0.8183050847457627,
+    "rare_onset_cal_M1v2": 1.0
+  },
+  "DOMIAS_same20": {
+    "beta_raw": 0.13076923076923078,
+    "beta_chance95": 0.059615384615384626,
+    "beta": 0.08115384615384615,
+    "a_MIA_K12": 0.6468531468531468,
+    "note": "identical to M1 because DOMIAS proxy uses continuous covariates unchanged by M1-v2"
+  },
+  "AIA_local_worst_before_phi": 0.07509797690922551,
+  "sha256_C": "11337028feb55a766093d9d3b0c283d85c7727c3cfd917db498e4e7f5cb78e31",
+  "caveat": "Utility values are reconstructed main-round scores; U_spec PHReg reproduces M1 official U_spec to <3e-7, but final official score should be confirmed with the official kit/CodaBench."
+}
