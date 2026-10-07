@@ -1,0 +1,77 @@
+{
+  "received_date_jst": "2026-10-07",
+  "phase": "main-attack",
+  "team_id": 10,
+  "source": "Official scoring exports supplied by the user; not independently fetched from CodaBench.",
+  "date_directory_meaning": "Date received and archived, not the scoring or submission date.",
+  "scoring_date": null,
+  "submission_id": null,
+  "files_preserved_byte_for_byte": true,
+  "validation": {
+    "all_six_files_match_source_bytes_and_sha256": true,
+    "both_reports_show_team10_and_success": true,
+    "score_2_to_5_match_detailed_json": true,
+    "score_1_to_5_match_rounded_html_table": true,
+    "v1_scores_match_prior_user_supplied_feedback": true
+  },
+  "results": [
+    {
+      "model": "Attack_R/v1",
+      "source_folder": "scoring_result_R_v1_attack",
+      "status": "OK",
+      "scores": {
+        "score_1": 0.169387840941965,
+        "score_2": 0.04720279720279719,
+        "score_3": 0.16666666666666666,
+        "score_4": 0.10896113803011742,
+        "score_5": 0.016103721599397856
+      },
+      "files": [
+        {
+          "path": "main_round/attack/Attack_R/v1/official_results/20261007/detailed_results.html",
+          "size_bytes": 3858,
+          "sha256": "633c03982856bd52eb41ee2a34514439fc9327eab85894230d1e243cf7f2bbee"
+        },
+        {
+          "path": "main_round/attack/Attack_R/v1/official_results/20261007/metadata",
+          "size_bytes": 94,
+          "sha256": "04bbcd7acb257750902fddac80d2d6f076127655555b002e195f096618dc1f42"
+        },
+        {
+          "path": "main_round/attack/Attack_R/v1/official_results/20261007/scores.json",
+          "size_bytes": 159,
+          "sha256": "c2bb95b8e219cd1fb80797e70a74008d20ab8d435937e6d28b4a08d1e111c6d0"
+        }
+      ]
+    },
+    {
+      "model": "Attack_R/v2",
+      "source_folder": "scoring_result_R_v2_attack",
+      "status": "OK",
+      "scores": {
+        "score_1": 0.1966605682146923,
+        "score_2": 0.07447552447552448,
+        "score_3": 0.16666666666666666,
+        "score_4": 0.10896113803011742,
+        "score_5": 0.016103721599397856
+      },
+      "files": [
+        {
+          "path": "main_round/attack/Attack_R/v2/official_results/20261007/detailed_results.html",
+          "size_bytes": 3858,
+          "sha256": "e6bdcd9470645280ab135ba41452349caf78da1c84e1668f1292ba9bd3b56d90"
+        },
+        {
+          "path": "main_round/attack/Attack_R/v2/official_results/20261007/metadata",
+          "size_bytes": 95,
+          "sha256": "33f4f4f811e69a5e005827ccdb6ca2f99817317bc3f5b5fd231bae539ae3150d"
+        },
+        {
+          "path": "main_round/attack/Attack_R/v2/official_results/20261007/scores.json",
+          "size_bytes": 160,
+          "sha256": "bc112a824651d107a44b5b6fdd0de10ccdea09889f8b896440f93308f6cc7ba6"
+        }
+      ]
+    }
+  ]
+}
