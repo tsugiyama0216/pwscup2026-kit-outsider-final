@@ -1,5 +1,7 @@
 # 杉山採点：本番形式の共同模擬評価
 
+**予備戦の実問題・公開正解を使う評価は [mock_TS_using_prelim](mock_TS_using_prelim/README.md) です。** team24の実配布原本、全21チームの匿名化データ・公開回答、運営の正解をコピーし、予備戦ルールでMIA・AIAを採点します。`mock_TS_using_prelim/run.ps1` で公開21回答の公表値との照合、`-Action Run -Plugin <攻撃.py>` で自作攻撃を評価できます。
+
 実行用保存版は、保存先訂正に従い **[attack/retest](../attack/retest/README.md)** に保存しています。`retest/run.ps1` からその保存版を実行できます。
 
 **通常の入口は `sugiyama.ps1` です。** 1つの模擬世界の22対象に対してMIA・AIAを同時に実行し、保存済みの公式 `score_attack` で `score_1`～`score_5` を算出します。既定の攻撃は、M v2のMIAとT v88のAIAを使う、変更していないR v1です。

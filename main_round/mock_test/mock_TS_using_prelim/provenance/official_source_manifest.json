@@ -1,0 +1,294 @@
+{
+  "release": "prelim-attack-20260825",
+  "source_url": "https://github.com/pwscup/pwscup2026-kit/tree/prelim-attack-20260825",
+  "files": [
+    {
+      "path": "official-kit/rulebook/PWS_Cup2026_ルールブック_orientation-20260730c.pdf",
+      "source": "prelim/workspace/rulebook/PWS_Cup2026_ルールブック_orientation-20260730c.pdf",
+      "sha256": "f316f69ea4d0e3c2e4f683e73362aa977165497d3964779b843c34e98bd40dfa",
+      "bytes": 538960,
+      "upstream_git_blob_sha1": "58c558391bf8c864710d5f4fcc91ecca935d68df",
+      "upstream_match": "exact"
+    },
+    {
+      "path": "official-kit/rulebook/PWS_Cup2026_ルールブック_prelim-attack-20260825.pdf",
+      "source": "prelim/workspace/rulebook/PWS_Cup2026_ルールブック_prelim-attack-20260825.pdf",
+      "sha256": "344399a6c2b688f845d8dfc3056c129649476636c5f7c5208d62b5fdb785d12d",
+      "bytes": 556234,
+      "upstream_git_blob_sha1": "6f8cd81535dd4e9fb916cce704ac724749c49b9f",
+      "upstream_match": "exact"
+    },
+    {
+      "path": "official-kit/rulebook/PWS_Cup2026_ルールブック_prelim-process-20260808.pdf",
+      "source": "prelim/workspace/rulebook/PWS_Cup2026_ルールブック_prelim-process-20260808.pdf",
+      "sha256": "4be79a77b15ced28a6d6fca8fde8f2341f1c37b5c3aaa5d49ad7ba871f672df8",
+      "bytes": 547100,
+      "upstream_git_blob_sha1": "f49ea0d8dac645147af8c02515e9f3ae4a7e4058",
+      "upstream_match": "exact"
+    },
+    {
+      "path": "official-kit/starter/pyproject.toml",
+      "source": "prelim/workspace/starter/pyproject.toml",
+      "sha256": "48af9cd5fb8e4b50632dc8da6653db822618207718481d6999333e2926102524",
+      "bytes": 1430,
+      "upstream_git_blob_sha1": "0b34a47dffc987db97c21fbf6727d13464f9d682",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/reference/_common.py",
+      "source": "prelim/workspace/starter/reference/_common.py",
+      "sha256": "cf34a4ab2b4fd3e05092624e9eb6a757406db78b4f32857d0544fa0c5e8d2ca1",
+      "bytes": 4162,
+      "upstream_git_blob_sha1": "8a086e2f45eb203d9ed5d560e3a6d4255cd4fb64",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/reference/run_aia.py",
+      "source": "prelim/workspace/starter/reference/run_aia.py",
+      "sha256": "ad94aa704a5c974e3503551653436ab1c8df5605fd44842ba874a4d1fcbd2311",
+      "bytes": 2462,
+      "upstream_git_blob_sha1": "afcc868f3056b2ea081864c2340d4fca86e86f9d",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/reference/run_defense.py",
+      "source": "prelim/workspace/starter/reference/run_defense.py",
+      "sha256": "168ac17181215af7e1d1cee073c78d70f589d63923498ff9708c5e818864ea9f",
+      "bytes": 2223,
+      "upstream_git_blob_sha1": "e3fba442b63ec60672f5e5caea5e97f05f751ba5",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/reference/run_mia.py",
+      "source": "prelim/workspace/starter/reference/run_mia.py",
+      "sha256": "1f9278430495ddd923e9d40b1e7d34d4f885453465613e56d7aa8fbb568a6fec",
+      "bytes": 2095,
+      "upstream_git_blob_sha1": "2fa48f47b2dfe4676191cb68bcbfd1e545132e5e",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/reference/strong_synth.py",
+      "source": "prelim/workspace/starter/reference/strong_synth.py",
+      "sha256": "ab2be6f98f59f5e90dd49c54a6066fe8f8843c9813672832c84094deaa2811d8",
+      "bytes": 5869,
+      "upstream_git_blob_sha1": "ff39a7579304528d91c30ba2066739bf2175a264",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/requirements-kit.txt",
+      "source": "prelim/workspace/starter/requirements-kit.txt",
+      "sha256": "4345a246d0c346259f807551be7738a82e2327f7f90f9372211e63e758a8d288",
+      "bytes": 1031,
+      "upstream_git_blob_sha1": "4dc80594e4ec0526bcf8e101562bdf309d821d95",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/__init__.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/__init__.py",
+      "sha256": "d9b37b0a68b2215e99989ffa46596d47bf69b2eb315a735c2e28054364cdcb17",
+      "bytes": 110,
+      "upstream_git_blob_sha1": "482d7c6bfb440694436ba843a016d50b31c07c7b",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/attack/__init__.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/attack/__init__.py",
+      "sha256": "47cc5e9d6961997b2e5067d33254ab9cad535e0e32b8a7b82ffd2f60f07d2d1a",
+      "bytes": 116,
+      "upstream_git_blob_sha1": "75c1bb89faa42e07c27c1540b8d9bf722eee491a",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/attack/aia.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/attack/aia.py",
+      "sha256": "654f363ed7b140e6807acc7a6f8a99ad96598a58620335dd7e6e44767fbd0edd",
+      "bytes": 4478,
+      "upstream_git_blob_sha1": "7d1092cf0ace578ef83e70f81c517950860da2ff",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/attack/mia.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/attack/mia.py",
+      "sha256": "07e37d1020b8cdf03c4814983c8ea2553445420c2db119f5f25ae733646597d6",
+      "bytes": 2451,
+      "upstream_git_blob_sha1": "7af779a12bdad3bf3f1658d48767cc42b072b66c",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/common/__init__.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/common/__init__.py",
+      "sha256": "e4b9797688bf7a9c3d39ea6cf8215d132c0300d5d1ce3e9666400cb92cf4ff02",
+      "bytes": 54,
+      "upstream_git_blob_sha1": "d2fe9b1ec5bf1cf8837185f9b11e6124c5ea8cba",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/common/config.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/common/config.py",
+      "sha256": "0b15704749c6a443db1d514f921550ec689faf91619ac3825dd18f05a4500e98",
+      "bytes": 374,
+      "upstream_git_blob_sha1": "190ccd928938266dfe7ecd7f52b26da2d361899f",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/common/schema.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/common/schema.py",
+      "sha256": "ac6eb6088b5a22bb7d6f5e54ca1d0dcb781035566c48dfc6a7d82f6b4e5147a5",
+      "bytes": 301,
+      "upstream_git_blob_sha1": "ef91a9698520e555efefd02b6274055c82821282",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/common/submission_schema.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/common/submission_schema.py",
+      "sha256": "2577bea468531ee906f5056092add8de20cdf936282a3ab0327c4c4caac482a8",
+      "bytes": 12528,
+      "upstream_git_blob_sha1": "aa2e7db935fb1c85a39d7f1c000e6d1142a3cde4",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/defense/__init__.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/defense/__init__.py",
+      "sha256": "424c40d592579a279f541c132fc047e745ffd273c201b65a2a8f34c9991ffed3",
+      "bytes": 695,
+      "upstream_git_blob_sha1": "54f593667475516fcdd24f1206518ccd684393ea",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/defense/perturb.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/defense/perturb.py",
+      "sha256": "b78c6497a20c9350f7f0636b1992fe3a443c4fe5d93ddd20535f674406fa89f9",
+      "bytes": 2255,
+      "upstream_git_blob_sha1": "e06ece2b03b9806b26bd3382843fde1f39ddd73f",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/defense/synth.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/defense/synth.py",
+      "sha256": "0fa833ef136220eb5153c75af6f3763aa589aa339e1083e3d409a85d378fc043",
+      "bytes": 10868,
+      "upstream_git_blob_sha1": "e09ddfe0da5122b6603903ea6db80d6848211b3e",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/__init__.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/kit/__init__.py",
+      "sha256": "2b5fb95cf78a47e9c46ba1c5c1a0e77021272bda38a039e9c33c3ddaf2aecb21",
+      "bytes": 92,
+      "upstream_git_blob_sha1": "b13f3c9e13ce99c6a375e4ae31113edae7f90a10",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "sha256": "c12a74be39ba92bce64c5cbaae0f7ed5115bc9e13577fd1280069cbe57ccd114",
+      "bytes": 396,
+      "upstream_git_blob_sha1": "2df611a0ad358e363e51a609c24e007e451dd35a",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/codabench/run.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/kit/codabench/run.py",
+      "sha256": "53c8270bb796c7bc8e077642a58962691513f8cc384aec18b267f13f033e48cf",
+      "bytes": 12737,
+      "upstream_git_blob_sha1": "8bb252365b174e4ead079e79a27fb1823568339b",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "sha256": "27d34d6147d8942f8cecb84d37312a5bc80e89ebf209957df73a9767d24cd785",
+      "bytes": 21865,
+      "upstream_git_blob_sha1": "8997fdcf6b44e5f4a67e1abb08c4a22144429a95",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/kit_config.yaml",
+      "source": "prelim/workspace/starter/src/pwscup2026/kit/kit_config.yaml",
+      "sha256": "c067e78d32442c59a43689ac736ac25c74266d508fe846d01f8573013bf6429d",
+      "bytes": 1159,
+      "upstream_git_blob_sha1": "a9b59ea90a98343133a3e15cf438b75ccc890f05",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/selfscore.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/kit/selfscore.py",
+      "sha256": "f9e351692f6bbfcf6303145c451ab463438bacd58984272ab83f56c3385230a7",
+      "bytes": 10672,
+      "upstream_git_blob_sha1": "bc6dec9daf14e6e3f9d7169e7e5d28f9bdc042a7",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/kit/validate.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/kit/validate.py",
+      "sha256": "93872522166f8388336433162286ad741fc58b22d02f482aedaa65bf147add54",
+      "bytes": 26088,
+      "upstream_git_blob_sha1": "92eaed1874a97d128366c5bbbd544fb2403b14b4",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/rare/__init__.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/rare/__init__.py",
+      "sha256": "61d46c97762740bb1a83aed3473361e1df4dc8e83bb3bb132a80d58561eb46fa",
+      "bytes": 85,
+      "upstream_git_blob_sha1": "004a6de7098b141ade125aeb0e258af630482695",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/rare/outlier.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/rare/outlier.py",
+      "sha256": "1778faabbad5efc0e3129f6ef258d810d3b215a948ecad4adffab78fd45d0aba",
+      "bytes": 1149,
+      "upstream_git_blob_sha1": "47631e386710989beab0e76aa93ca503975fa7ab",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/scoring/__init__.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/scoring/__init__.py",
+      "sha256": "28ef1af19c101b58079e99873b9c21d478af2c03cdccf8e049f4f2fc32e6c367",
+      "bytes": 56,
+      "upstream_git_blob_sha1": "12d0440a481b1b75bea2259525951767bb7b1c6c",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/scoring/attack_score.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/scoring/attack_score.py",
+      "sha256": "aea6deae1b87957a0a8553a9328a4e312d6ce7adc077793802de3c4b65117dad",
+      "bytes": 10269,
+      "upstream_git_blob_sha1": "d7fc73a993c66f2ce4b831053529c2eb4b46eac8",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/scoring/result.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/scoring/result.py",
+      "sha256": "f58a308b8bf9b99e25e767f7fa98446d015ab15849238ce53bdd5a69f97c554b",
+      "bytes": 3209,
+      "upstream_git_blob_sha1": "800df5a345b326b6758439f355ec6d461be80474",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/src/pwscup2026/scoring/utility.py",
+      "source": "prelim/workspace/starter/src/pwscup2026/scoring/utility.py",
+      "sha256": "7c81c353687383e59aff10b44b434bdac1c5ea83f28c6dae05b42a3e76cdb320",
+      "bytes": 37307,
+      "upstream_git_blob_sha1": "827effe1a17de8414afca45da0494a4678cddca4",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/starter/uv.lock",
+      "source": "prelim/workspace/starter/uv.lock",
+      "sha256": "0a5bfe15125a75807dfbc626496914f2beda2d251defdfc64e17a3850ef66eab",
+      "bytes": 499930,
+      "upstream_git_blob_sha1": "c5a4e70450e43c5b35e86a953579851ae7c0dd5e",
+      "upstream_match": "LF-normalized"
+    },
+    {
+      "path": "official-kit/LICENSE",
+      "source": "LICENSE",
+      "sha256": "5f13e73a54eade7f42e2ee0c7855027bd58143d4296ca4b62df2e18496e9c9a3",
+      "bytes": 12262,
+      "upstream_git_blob_sha1": "368b2a3cab4f839a761fc4b7ecda5f86b6e739c6",
+      "upstream_match": "LF-normalized"
+    }
+  ]
+}

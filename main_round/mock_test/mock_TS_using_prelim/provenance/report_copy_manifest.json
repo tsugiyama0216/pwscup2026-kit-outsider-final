@@ -1,0 +1,190 @@
+{
+  "files": [
+    {
+      "path": "verification_reports/published_replay/all_by_target.csv",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/all_by_target.csv",
+      "sha256": "5d006fa60fd79069f038785b47eefae7c4e3fc240127445b04fb5b80c3a59ed8",
+      "bytes": 105848
+    },
+    {
+      "path": "verification_reports/published_replay/comparison.csv",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/comparison.csv",
+      "sha256": "62dc4b745771bb96c267f46b188f55f2f309dd71d1bad5f644f08c5a6b1875e7",
+      "bytes": 6676
+    },
+    {
+      "path": "verification_reports/published_replay/input_verification.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/input_verification.json",
+      "sha256": "a91ac5b0f2022869dde0d7d2f70f04c254674396f12751bff37df42feebdaf43",
+      "bytes": 522
+    },
+    {
+      "path": "verification_reports/published_replay/report.html",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/report.html",
+      "sha256": "5e030f35273758536def074114467d403aefaa35ed4874faba8fd64ea99a6272",
+      "bytes": 6992
+    },
+    {
+      "path": "verification_reports/published_replay/result.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/result.json",
+      "sha256": "8d983b4e2d40d39678a7f66c51a6def450640349f64a03eaad14e95535be9991",
+      "bytes": 396499
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort01.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort01.json",
+      "sha256": "0d5501e988115440fa6551fcc777b51358fdcf207d41a9a834accafebc500087",
+      "bytes": 16263
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort02.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort02.json",
+      "sha256": "8a37933889ebb58a02730770539b448e8cc57eb2844d934ff8a6291f05a69c18",
+      "bytes": 16535
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort03.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort03.json",
+      "sha256": "c5588537dcb4923580c3ab34a9cfc4948244bd4fd8742f6daebbf6737848a734",
+      "bytes": 16757
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort04.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort04.json",
+      "sha256": "6a47321ffe5f74ebc620d69ceb7224c410f81a5af925026022b674ae3ad585c4",
+      "bytes": 16775
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort05.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort05.json",
+      "sha256": "f30516f074ecf794c3d8308ebb6147d2a36380c2c9cf1536c6c490b93e3fb5de",
+      "bytes": 16875
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort06.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort06.json",
+      "sha256": "8d7e648bf2db68e5decc13791e1d55fcb7b350bb2d573e04aa4a6c42c1bde5e0",
+      "bytes": 16557
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort07.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort07.json",
+      "sha256": "da490a88f079bd6110b8046ee294f6ae267de98e6c20a3029ce51dd400e4b1c5",
+      "bytes": 16694
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort08.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort08.json",
+      "sha256": "fd9edf98d7a7eb8f7777713994fbb69c1f093773c14e600bbc2503fbc9f199e1",
+      "bytes": 16335
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort09.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort09.json",
+      "sha256": "9881f03ff3f19a20314ff0e015dcf094e699b4b15be5104fa9f9af7111bd505c",
+      "bytes": 16655
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort10.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort10.json",
+      "sha256": "a9ca6b23ed73ecb2b95aacae99e32aeb0c2af24c4843c7e05acdfddc513866ac",
+      "bytes": 16430
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort12.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort12.json",
+      "sha256": "4698ffe3b02d255a864ca9e3a75af0a1a5ba1d548df414f032740763d5bb278c",
+      "bytes": 16463
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort13.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort13.json",
+      "sha256": "516485332e8e462dfd46384821b720c8a5d0c237b9ec8064748d0fad3d17a828",
+      "bytes": 16298
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort17.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort17.json",
+      "sha256": "8418dd7f776f24c98f09c4e7803b2e6c8153ee00df66ddfcc2e419bb2f1b855f",
+      "bytes": 16622
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort18.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort18.json",
+      "sha256": "21e3ea674f46741852b91c3a932c1621f129092f664f958fcf04f5695e6799c3",
+      "bytes": 16456
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort19.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort19.json",
+      "sha256": "ee78f10bdb215900c8e25f2eedcfced612f3ba9c13bcb69bfcd042152547c025",
+      "bytes": 16983
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort20.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort20.json",
+      "sha256": "02735d0466e919701587ddbe9bea0f7d4ea8a17dd9be5aec0b7c060331001006",
+      "bytes": 16639
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort22.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort22.json",
+      "sha256": "ddeae1aa800bf32a12a57f6b643a312a692e10c6fec1821425eac8e7f58cbe49",
+      "bytes": 16238
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort23.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort23.json",
+      "sha256": "8f812e044b98d1bbea3e29fd85c66e2e5076fc26de07647aaad1fea598e10959",
+      "bytes": 16529
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort24.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort24.json",
+      "sha256": "cfd0dcbd0201cd57d3c26acfa6090b91967d0966edc7994a1f8818319ec92a33",
+      "bytes": 16630
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort26.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort26.json",
+      "sha256": "ae3b78207b1c3052d6e8bf6536a06094f58dfbb53aff911d0512d00ed3238b39",
+      "bytes": 16323
+    },
+    {
+      "path": "verification_reports/published_replay/teams/cohort29.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/teams/cohort29.json",
+      "sha256": "3635328c322c551d91261b021b10e51f8bbc3567823615b77685e97ebb287378",
+      "bytes": 16637
+    },
+    {
+      "path": "verification_reports/reference_baseline/by_target.csv",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/reference_baseline_20261007_verified/evaluation/by_target.csv",
+      "sha256": "c483a1e8c624526052c0814b2c10a6e44742a22395dc150346038f3466f53b16",
+      "bytes": 4316
+    },
+    {
+      "path": "verification_reports/reference_baseline/F_aia.csv",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/reference_baseline_20261007_verified/evaluation/F_aia.csv",
+      "sha256": "2985968bc6508f99a06c9df29861c6e6e09365db33ed2fb773192b4393f88d18",
+      "bytes": 128130
+    },
+    {
+      "path": "verification_reports/reference_baseline/F_mia.csv",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/reference_baseline_20261007_verified/evaluation/F_mia.csv",
+      "sha256": "002b698dd2a6147ec529d187f676b731b09dac53f80aef42c9410f390e2e7000",
+      "bytes": 422505
+    },
+    {
+      "path": "verification_reports/reference_baseline/report.html",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/reference_baseline_20261007_verified/evaluation/report.html",
+      "sha256": "3ee96f75ccb39235af33858b058161d15bdfd6ec21bb87d2020f4f2e20d79043",
+      "bytes": 7317
+    },
+    {
+      "path": "verification_reports/reference_baseline/result.json",
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/reference_baseline_20261007_verified/evaluation/result.json",
+      "sha256": "c9ed8ce87a853125fd220412b38fa782414b6c6951713117aaada7aaafd2cd58",
+      "bytes": 25949
+    }
+  ]
+}

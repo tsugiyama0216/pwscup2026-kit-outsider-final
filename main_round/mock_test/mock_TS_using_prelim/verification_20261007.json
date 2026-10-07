@@ -1,0 +1,108 @@
+{
+  "verified_date_jst": "2026-10-07",
+  "round": "preliminary",
+  "attacker_id": 24,
+  "data_files": 178,
+  "data_bytes": 18670707,
+  "original_copies_rechecked": 126,
+  "official_files": 36,
+  "tests": {
+    "command": ".\\main_round\\attack\\.venv\\Scripts\\python.exe -I -B -m unittest discover -s main_round/mock_test/mock_TS_using_prelim/tests -v",
+    "passed": 13,
+    "failed": 0
+  },
+  "published_replay": {
+    "passed": true,
+    "team_count": 21,
+    "mia_pairs": 420,
+    "aia_pairs": 419,
+    "compared_numeric_values": 5589,
+    "maximum_absolute_error": 5.551115123125783e-17,
+    "tolerance": 1e-10
+  },
+  "team24": {
+    "attack_power": 0.34066814461322326,
+    "mia_power": 0.15792307692307692,
+    "aia_power": 0.18274506769014637,
+    "mia_all": 0.10236752136752136,
+    "mia_rare": 0.3333333333333333,
+    "aia_all": 0.1658175911401578,
+    "aia_rare": 0.1,
+    "score_1": 0.34066814461322326,
+    "score_2": 0.10236752136752136,
+    "score_3": 0.3333333333333333,
+    "score_4": 0.1658175911401578,
+    "score_5": 0.1,
+    "mia_target_count": 20,
+    "aia_target_count": 20
+  },
+  "reference_attack": {
+    "attack_power": 0.18479789679645733,
+    "mia_power": 0.06385185185185185,
+    "aia_power": 0.12094604494460548,
+    "mia_all": 0.017555555555555557,
+    "mia_rare": 0.16666666666666666,
+    "aia_all": 0.12094604494460548,
+    "aia_rare": 0.03391275367944327,
+    "score_1": 0.18479789679645733,
+    "score_2": 0.017555555555555557,
+    "score_3": 0.16666666666666666,
+    "score_4": 0.12094604494460548,
+    "score_5": 0.03391275367944327,
+    "mia_target_count": 20,
+    "aia_target_count": 20
+  },
+  "reports": [
+    {
+      "path": "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/report.html",
+      "rows_including_header": 22,
+      "links_checked": 3,
+      "sha256": "5e030f35273758536def074114467d403aefaa35ed4874faba8fd64ea99a6272"
+    },
+    {
+      "path": "main_round/mock_test/local-output/mock_TS_using_prelim/reference_baseline_20261007_verified/evaluation/report.html",
+      "rows_including_header": 21,
+      "links_checked": 2,
+      "sha256": "3ee96f75ccb39235af33858b058161d15bdfd6ec21bb87d2020f4f2e20d79043"
+    }
+  ],
+  "result_sha256": {
+    "main_round/mock_test/local-output/mock_TS_using_prelim/published_replay_20261007_verified/result.json": "8d983b4e2d40d39678a7f66c51a6def450640349f64a03eaad14e95535be9991",
+    "main_round/mock_test/local-output/mock_TS_using_prelim/reference_baseline_20261007_verified/evaluation/result.json": "c9ed8ce87a853125fd220412b38fa782414b6c6951713117aaada7aaafd2cd58"
+  },
+  "source_sha256": {
+    "__init__.py": "cb73dbc1d7b7dd87e1744d9522f83371a78e286067b8c5eb01d61bd2b54c4330",
+    "cli.py": "587ac7c1d71909a982c2572ed866a3b79aa5057943f88c135166ae6d632740b7",
+    "common.py": "9698d2ff93894ee627b2e6315380d528e2e4e2726c841d156da38769c98a6769",
+    "example_attack.py": "0ab9da66d1720b6323df412e21b083e5c6f251cab719386ba41c66847e474aeb",
+    "provenance/copy_data.py": "50527781f30131a52474298a2ec1a08e418e47e1cf4f3d676ddcfe81d9adcf4d",
+    "provenance/data_manifest.json": "39a8f0da08936d54ede6c866422c4bf396e0815bd6c709fa8dd420dd61f8b789",
+    "provenance/official_source_manifest.json": "445227a77c7ef15abf68ce7610b56a85328b6253b7aeb8b63e43026315de699e",
+    "provenance/official_upstream_tree.json": "5c8c5e425d5c47212803d293adf7c5be9dea8a55948318e66bae6dc7b5ebdd80",
+    "provenance/README.md": "180c4526cb5edcc37aaff894d6985a21f4e875274329122692b50968c72c3c60",
+    "README.md": "6068bab71b3be2c1c81e718f84b3221a7211c80634315a7b7f2444b1348dbd3c",
+    "report.py": "3433bb6788eb4de3c1494690bd95964308fc5693cf89e98a0bc0fc209794eb36",
+    "run.ps1": "59be3304efba65629c899cc7789b22811577eadb676e033f72ab9e02fe5e6ab6",
+    "runner.py": "685936c9d907232f5803c9245357ba5a7ad85d586500f5f940fb9f8dda30fda6",
+    "scoring.py": "8dd1e0aca4db377445c022f8a5e5eaa96b2c6ad035974375e1ca85bd22ae7814",
+    "tests/test_runner.py": "919e59ade1228becd7632577a60cc9d6c5d70a6a8d2d75388ace9845445e9614",
+    "tests/test_scoring.py": "e5ea89556c624ca05ab0cae22cddb61b858428028d47debf05e77c7d5d04bea5",
+    "worker.py": "6d1d661a323304f1878bee5854e2dd9a999607527f8ba215bc0a1b49339c8f79"
+  },
+  "data_manifest_sha256": "39a8f0da08936d54ede6c866422c4bf396e0815bd6c709fa8dd420dd61f8b789",
+  "original_tracked_files_changed": [
+    "main_round/mock_test/README.md"
+  ],
+  "scope": [
+    "Local preliminary benchmark and copies only",
+    "Full pipeline with official baseline and both plugin signatures verified",
+    "No main-round hidden truth or phi correction",
+    "No contest submission or GitHub publication"
+  ],
+  "limits": [
+    "Trusted plugins are not filesystem-sandboxed",
+    "Other teams raw B/B_self are not supplied; their archived answers can be rescored",
+    "Existing main-round adapters require preliminary cohort and target support",
+    "Historical cohort04 AIA target23 omission is preserved"
+  ]
+}

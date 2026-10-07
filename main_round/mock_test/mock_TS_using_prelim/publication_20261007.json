@@ -1,0 +1,60 @@
+{
+  "date_jst": "2026-10-07",
+  "repository": "tsugiyama0216/pwscup2026-kit-private",
+  "private": true,
+  "branch": "main",
+  "authorization": "User explicitly requested GitHub upload after the data-complete preliminary evaluator was created.",
+  "supersedes_initial_local_only_scope": true,
+  "upstream_base_commit": "b3f3b6dd606de5877ba1f0f7f3861e26e9be20e8",
+  "included_data_files": 178,
+  "included_official_files": 36,
+  "included_report_files": 31,
+  "staged_files_before_this_record": 269,
+  "archive_zip_content_checks": 21,
+  "clean_export_from_git_index": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\tmp\\prelim-upload-lxlpewjs\\clean",
+  "checks": {
+    "tests": {
+      "exit_code": 0,
+      "log": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\tmp\\prelim-upload-lxlpewjs\\tests.log"
+    },
+    "replay": {
+      "exit_code": 0,
+      "log": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\tmp\\prelim-upload-lxlpewjs\\replay.log"
+    },
+    "run": {
+      "exit_code": 0,
+      "log": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\tmp\\prelim-upload-lxlpewjs\\run.log"
+    }
+  },
+  "tests_passed": 13,
+  "replay": {
+    "passed": true,
+    "team_count": 21,
+    "mia_pairs": 420,
+    "aia_pairs": 419,
+    "compared_numeric_values": 5589,
+    "maximum_absolute_error": 5.551115123125783e-17,
+    "tolerance": 1e-10
+  },
+  "reference_attack": {
+    "attack_power": 0.18479789679645733,
+    "mia_power": 0.06385185185185185,
+    "aia_power": 0.12094604494460548,
+    "mia_all": 0.017555555555555557,
+    "mia_rare": 0.16666666666666666,
+    "aia_all": 0.12094604494460548,
+    "aia_rare": 0.03391275367944327,
+    "score_1": 0.18479789679645733,
+    "score_2": 0.017555555555555557,
+    "score_3": 0.16666666666666666,
+    "score_4": 0.12094604494460548,
+    "score_5": 0.03391275367944327,
+    "mia_target_count": 20,
+    "aia_target_count": 20
+  },
+  "copied_bytes_verified_against_manifests": 214,
+  "data_manifest_sha256": "39a8f0da08936d54ede6c866422c4bf396e0815bd6c709fa8dd420dd61f8b789",
+  "initial_verification_preserved_sha256": "696dff5c478f663ba22ad28f4fb625057491942e8b3feaa18bae2d5a92238a19",
+  "scope": "Evaluator, all manifested data and pinned official files, copied verification reports, documentation. No credentials, environment, unrelated work or contest submission.",
+  "git_tree_sha_before_this_record": "b38f234e2e55857a5b2e5746d97040e448930bc3"
+}
