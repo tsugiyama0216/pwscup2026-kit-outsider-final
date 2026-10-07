@@ -1,0 +1,205 @@
+{
+  "created_utc": "2026-10-07T02:29:58.552826+00:00",
+  "standard_entry": "main_round/mock_test/sugiyama.ps1",
+  "test_runs": [
+    {
+      "suite": "sugiyama_v2/tests",
+      "tests": 42,
+      "status": "passed"
+    },
+    {
+      "suite": "shared local_eval compatibility",
+      "tests": 29,
+      "status": "passed"
+    },
+    {
+      "suite": "frozen M v2",
+      "tests": 24,
+      "status": "passed"
+    }
+  ],
+  "test_execution_note": "The two frozen suites required a normal-permission retry because Windows tempfile ACLs fail in the restricted token. No frozen code was edited. New 42 tests passed under the restricted token.",
+  "test_sources_sha256": {
+    "main_round/mock_test/sugiyama_v2/tests/test_generate.py": "f4130705b18919ce5e9733b285b87543b3c135c046b39d15bf7df920da0f3ec5",
+    "main_round/mock_test/sugiyama_v2/tests/test_io.py": "98a77a6b61200daf79eabcf94734d31fb0640be631540ef5f74e390520b072c4",
+    "main_round/mock_test/sugiyama_v2/tests/test_releases.py": "026afc8fb4251a14defccba6d40f2adc14839e75527dc75dd8e56e0bef4e829e",
+    "main_round/mock_test/sugiyama_v2/tests/test_runner.py": "d4debbb96e108358172fdbcbdb30eb0c237f027df169d07d3be609d8052cf841",
+    "main_round/mock_test/sugiyama_v2/tests/test_scoring.py": "387c17e4f2e2ceb1ee1d837212950ce7bf6702e721d43167d200903271f5cb6b"
+  },
+  "implementation_sha256": {
+    "main_round/mock_test/sugiyama_v2/__init__.py": "36a841ace95bb3e18645b97133980911dfb29f2c832d051ef782f6a4106979a1",
+    "main_round/mock_test/sugiyama_v2/__main__.py": "6066e05f68e62b6285f6a0495dc804667320680bc1ecd4994976fdf60caa2bb0",
+    "main_round/mock_test/sugiyama_v2/generate.py": "8c8a629edc04c85a06fd45d1702d76fa9037eef12e64bc97a046673d6adcf34b",
+    "main_round/mock_test/sugiyama_v2/io.py": "070430a76ad9f9ed89c506d26987541e22b4e8136a51fb32aeac51d717de9148",
+    "main_round/mock_test/sugiyama_v2/releases.py": "ce03aaa44a3afee71eede6dd29d2ae71a1dee918c5651e0eac1885450d80ceed",
+    "main_round/mock_test/sugiyama_v2/runner.py": "971816d56f2d7c11e3af32ac23f67a9ae67fe31b2737acd84bbed03cddd003c1",
+    "main_round/mock_test/sugiyama_v2/scoring.py": "0697f19ba2cc7787a3806978007334a693da7b47b0b74ae571112ba77d219992",
+    "main_round/mock_test/sugiyama.ps1": "ba6e46660013fb60350f54b7c36fe72633a8aedb35f924fa82501f1963791243",
+    "main_round/attack/Attack_R/sugiyama_adapter.py": "9b19a016501086dc337f315ec2fa9cfa41f9a77712f6c039b9e5a5519e31f604"
+  },
+  "frozen_dependency_checks": {
+    "main_round/attack/Attack_R/v1/dependencies.json": {
+      "verified_files": 172,
+      "manifest_sha256": "df499ded0b0056ccc64290884c1ea80f435016ceca79900cff25adfb9cd03521"
+    },
+    "main_round/attack/Attack_R/v2f/production_dependencies.json": {
+      "verified_files": 187,
+      "manifest_sha256": "6cf80387805b34bec8ea6eb7b14ddaecf406a6ad1e996c3d4cbc4edaca72eeaa"
+    }
+  },
+  "official_source_check": {
+    "manifest": "C:\\Users\\Owner\\OneDrive\\ドキュメント\\ChatGPT\\pws2026abe2\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "R_v1_submission_zip_unchanged": true,
+  "R_v1_submission_zip_sha256": "b7c7e43fd75ed906dcc09d285bd3d7118ae1f3137978795321f182778aa3eb75",
+  "full_R_v1_runs": [
+    {
+      "result_path": "main_round/mock_test/local-output/sugiyama/rv1-dev-2026100701/evaluation/result.json",
+      "result_sha256": "12961c5f884eb17e1a92d71d7701aa52fb175765bd23d2a1c4b78edd607c6571",
+      "seed": 2026100701,
+      "profile": "mixed",
+      "split": "dev",
+      "leaderboard": {
+        "score_1": 0.6789093236285094,
+        "score_2": 0.19008029008029007,
+        "score_3": 0.1875,
+        "score_4": 0.4839140592603883,
+        "score_5": 0.1418987463723463
+      },
+      "mia_power": 0.2216783216783217,
+      "aia_power": 0.45723100195018773,
+      "pre_floor": {
+        "attack_power": 0.7095223283779402,
+        "mia_all": 0.19008029008029007,
+        "mia_rare": 0.1875,
+        "aia_all": 0.4839140592603883,
+        "aia_rare": 0.1418987463723463,
+        "mia_power": 0.2216783216783217,
+        "aia_power": 0.4878440066996185
+      },
+      "denominators": {
+        "target_count": 22,
+        "mia_rare_defined_targets": 8,
+        "aia_rare_defined_targets": 22
+      },
+      "floor_repetitions": 1000,
+      "floor_seed": 2027100704,
+      "floor_mean": 0.03790433816098674,
+      "largest_floor_monte_carlo_se": 0.0021920687198528042,
+      "elapsed_seconds": 572.977447399986,
+      "direct_official_score_exact_parity": true,
+      "all_saved_output_hashes_verified": true,
+      "original_case_unchanged": true,
+      "R_T_M_gates": {
+        "R_v1_dependencies": {
+          "verified_files": 172,
+          "manifest_sha256": "df499ded0b0056ccc64290884c1ea80f435016ceca79900cff25adfb9cd03521"
+        },
+        "T_v88": {
+          "published_files": 130,
+          "verified_original_files": 94,
+          "version": "v88"
+        },
+        "M_v1_preservation": {
+          "verified_files": 65,
+          "all_bytes_unchanged": true
+        }
+      },
+      "independent_targets": [
+        {
+          "target_k": 7,
+          "mia_power": 0.04,
+          "aia_power": 0.0
+        },
+        {
+          "target_k": 22,
+          "mia_power": 0.0,
+          "aia_power": 0.0
+        }
+      ]
+    },
+    {
+      "result_path": "main_round/mock_test/local-output/sugiyama/rv1-holdout-2026100702/evaluation/result.json",
+      "result_sha256": "a824526f4f22629e8cca43ddd6995e615bffd3aabdc456b620c43d5bbcc56109",
+      "seed": 2026100702,
+      "profile": "stress",
+      "split": "holdout",
+      "leaderboard": {
+        "score_1": 0.5636688656587673,
+        "score_2": 0.1298601398601399,
+        "score_3": 0.2857142857142857,
+        "score_4": 0.38680044097337674,
+        "score_5": 0.08286487667446386
+      },
+      "mia_power": 0.21027972027972028,
+      "aia_power": 0.353389145379047,
+      "pre_floor": {
+        "attack_power": 0.597080161253097,
+        "mia_all": 0.1298601398601399,
+        "mia_rare": 0.2857142857142857,
+        "aia_all": 0.38680044097337674,
+        "aia_rare": 0.08286487667446386,
+        "mia_power": 0.21027972027972028,
+        "aia_power": 0.38680044097337674
+      },
+      "denominators": {
+        "target_count": 22,
+        "mia_rare_defined_targets": 7,
+        "aia_rare_defined_targets": 22
+      },
+      "floor_repetitions": 1000,
+      "floor_seed": 2027100705,
+      "floor_mean": 0.04177768749826355,
+      "largest_floor_monte_carlo_se": 0.002042737397510219,
+      "elapsed_seconds": 599.5557605000213,
+      "direct_official_score_exact_parity": true,
+      "all_saved_output_hashes_verified": true,
+      "original_case_unchanged": true,
+      "R_T_M_gates": {
+        "R_v1_dependencies": {
+          "verified_files": 172,
+          "manifest_sha256": "df499ded0b0056ccc64290884c1ea80f435016ceca79900cff25adfb9cd03521"
+        },
+        "T_v88": {
+          "published_files": 130,
+          "verified_original_files": 94,
+          "version": "v88"
+        },
+        "M_v1_preservation": {
+          "verified_files": 65,
+          "all_bytes_unchanged": true
+        }
+      },
+      "independent_targets": [
+        {
+          "target_k": 3,
+          "mia_power": 0.0,
+          "aia_power": 0.0
+        },
+        {
+          "target_k": 8,
+          "mia_power": 0.0,
+          "aia_power": 0.019866048943533957
+        },
+        {
+          "target_k": 12,
+          "mia_power": 0.0,
+          "aia_power": 0.0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Published official scoring computation is reused exactly, not hidden official truth or floors.",
+    "Mock scores remain different from the user-provided official score 0.169387840941965; these runs do not establish leaderboard predictive accuracy.",
+    "Synthetic profile mixes are predeclared sensitivity scenarios, not inferred real defenses.",
+    "Empirical donors are reused; dev/holdout donor-row separation is not an unseen population for frozen models.",
+    "Non-IID private-prefecture concentration is not reproduced.",
+    "Floor Monte Carlo SE excludes population and defense distribution mismatch."
+  ],
+  "fitted_to_official_feedback": false,
+  "official_submission_performed": false,
+  "github_upload_performed": false
+}

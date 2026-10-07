@@ -12,7 +12,9 @@ if (-not (Test-Path -LiteralPath (Join-Path $canonical 'v2/selection.json'))) {
 }
 if (Test-Path -LiteralPath $compat) {
     $item = Get-Item -LiteralPath $compat -Force
-    if (($item.Attributes -band [IO.FileAttributes]::ReparsePoint) -or
+    # OneDrive also sets ReparsePoint on ordinary cloud-backed directories.
+    # Reject directory links, while allowing the managed local OneDrive folder.
+    if ($item.LinkType -in @('Junction', 'SymbolicLink') -or
         -not $item.PSIsContainer -or -not (Test-Path -LiteralPath $marker)) {
         throw 'M already exists and is not a managed compatibility directory. Preserve it and resolve the collision first.'
     }

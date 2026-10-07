@@ -1,8 +1,27 @@
 # リポジトリ構成と移動先
 
+2026-10-07の現在の入口：改善した杉山採点の保存版は [main_round/attack/retest/](main_round/attack/retest/README.md) です。ユーザーの保存先修正に従い、`team10/attack` ではなく本戦の `attack` 直下へ置きます。入口は `run.ps1`、生成出力は共通のGit除外領域 `main_round/mock_test/local-output/retest/` です。
+
+```text
+main_round/
+├── mock_test/
+│   ├── sugiyama.ps1 / sugiyama_v2/ # 杉山採点の元実装・テスト・検証記録
+│   ├── local_eval/                # 既存の凍結依存・初期化
+│   └── local-output/retest/       # 生成問題・採点結果（Git対象外）
+└── attack/
+    ├── retest/                    # 実行用保存版。run.ps1が入口
+    ├── Attack_R/
+    │   ├── sugiyama_adapter.py    # 凍結R v1を公開入力へ適用
+    │   └── v1/                   # retestに必要な凍結ソースと依存マニフェスト
+    ├── Attack_M/ / Attak_T/       # 既存の凍結モデル・選択・記録
+    └── official-kit/など         # 既存の固定公式ランタイム・入力
+```
+
+R v1の提出データや別の研究成果は今回のGitHub保存対象に含めません。元の杉山採点の95テストと初回保存版42テストは、2026-10-07の既存検証記録として保存します。公式採点コードを使いますが、本番の非公開正解・φ・加工分布を再現するものではありません。
+
 予備戦は `prelim/`、本戦は `main_round/` です。リポジトリ直下には共通の案内、Git 設定、ライセンスなどを残しています。
 
-2026-09-30の最新配置：共通の模擬問題生成・採点を [`main_round/mock_test/`](main_round/mock_test/README.md) へ分離しました。複数抽出をスイートとして保存し、各作業者の攻撃を同じ問題へ適用します。
+以下は2026-09-30時点の配置記録：共通の模擬問題生成・採点を [`main_round/mock_test/`](main_round/mock_test/README.md) へ分離しました。複数抽出をスイートとして保存し、各作業者の攻撃を同じ問題へ適用します。
 
 ```text
 main_round/

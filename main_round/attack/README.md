@@ -1,5 +1,11 @@
 # 本戦・攻撃フェーズの作業環境（team10）
 
+**2026-10-07：改善した杉山採点の保存版は [retest/](retest/README.md) です。** リポジトリ直下から `.\main_round\attack\retest\run.ps1` で実行します。22対象のMIA・AIAを同じ模擬世界で評価し、固定公式採点コードと既定1,000回の模擬φ推定を使います。ユーザーの修正に従い、この `attack` 直下が保存先です。
+
+既定R v1を動かす [Attack_R/sugiyama_adapter.py](Attack_R/sugiyama_adapter.py) と必要な凍結依存ソースを同梱します。[収録範囲](Attack_R/v1/RETEST_DEPENDENCIES.md)は採点用ランタイムに限り、Rの提出データを含めません。共有の元実装は [../mock_test/sugiyama_v2/](../mock_test/sugiyama_v2/) に保持し、出力は `../mock_test/local-output/retest/` へ保存します。元の95テスト・初回保存版42テストの記録も保持します。非公開の本番正解・φ・実加工分布は再現しておらず、模擬得点は公式点の予測値ではありません。
+
+ユーザーは既存非公開リポジトリのmainへのGitHub保存を明示的に許可しました。公式提出は行いません。
+
 作業者Mの正本は `Attack_M/` です。Mの固定版を実行するときは `Attack_M/run.ps1 M-v2-test` 等を使用します。既存環境で旧コマンドを使う場合は、先に `./prepare_attack_m.ps1` でGit管理外の互換配置を準備してください。新規環境では `setup.ps1` が準備します。
 
 **TSのv88の不足依存を2026-09-30に復旧しました。** 元の `prelim_transfer.methods` を `Attak_T/prelim_transfer/` に回収し、予備戦の依存コードも検証対象へ追加しました。別PCでは環境構築後に `published_v88.check --runtime` と固定25条件の `benchmark` を実行します。[担当者・エージェント向けの復旧記録と確認手順](../../CODEX_HANDOFF.md#v88_cross_pc_handoff)を参照してください。
@@ -46,9 +52,11 @@ Set-Location main_round/attack
 
 | 内容 | 場所 |
 |---|---|
+| 杉山採点の実行用保存版 | [retest/](retest/README.md) |
 | 共通の模擬問題生成・保存・手法比較 | [../mock_test/](../mock_test/README.md) |
 | TS本人の攻撃・学習済みモデル・過去の評価 | [Attak_T/](Attak_T/README.md) |
-| 作業者Rの本戦攻撃（準備用） | [Attak_R/](Attak_R/README.md) |
+| retest用の凍結R v1アダプター・必要依存 | [Attack_R/](Attack_R/README.md) |
+| 以前のR準備用フォルダー | [Attak_R/](Attak_R/README.md) |
 | 作業者Mの独立攻撃・予測・評価結果 | [Attack_M/](Attack_M/README.md) |
 | 配布案内の本文 | [source_email_20260927.txt](source_email_20260927.txt) |
 | 取得元・固定コミット・ファイルのSHA-256 | [source_manifest.json](source_manifest.json) |

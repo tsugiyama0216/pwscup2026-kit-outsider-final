@@ -1,5 +1,28 @@
 # PWSCUP2026 引き継ぎ
 
+## 2026-10-07：retestをattack配下へ配置
+
+ユーザーは改善した杉山採点をGitHubにも保存するよう明示し、保存先を「attack」に修正しました。正規入口は [main_round/attack/retest/run.ps1](main_round/attack/retest/run.ps1)、説明は [retest/README.md](main_round/attack/retest/README.md) です。初回の `team10/attack/retest` 配置は採用せず、移動前の確認は `save_verification_before_attack_move_20261007.json` に履歴として残します。この依頼は既存非公開リポジトリ `tsugiyama0216/pwscup2026-kit-private` のmainへの反映を許可します。
+
+22対象を同じ模擬世界で生成し、MIA・AIAを固定公式 `score_attack` で集計します。対象内のmax、希少SE補正、対象ごとのφ控除・clip、22対象平均、score_1～5を公式コードに委ねます。模擬φは背景1,049行を抽出した公式参照AIAの既定1,000回平均で推定し、推定値・標準誤差・seedを保存します。攻撃への引数は公開テーブルだけで、隠れた正解・生成方式名・生成seedを渡しません。旧共有実装は凍結依存のため保持し、共有側の標準入口は [mock_test/sugiyama.ps1](main_round/mock_test/sugiyama.ps1) です。
+
+既定モデルはM v2 MIAとT v88 AIAを組み合わせた凍結R v1です。[Attack_R/sugiyama_adapter.py](main_round/attack/Attack_R/sugiyama_adapter.py) と、172件の依存照合に必要なR v1の6ソース・`dependencies.json` を収録対象とします。内訳は [RETEST_DEPENDENCIES.md](main_round/attack/Attack_R/v1/RETEST_DEPENDENCIES.md) を参照してください。Rの提出CSV・提出ZIPや別の研究成果はこの保存対象に含めません。M互換配置を生成する `prepare_attack_m.ps1` はOneDrive通常フォルダーを許可する既存修正を含み、モデル・選択・ハッシュゲートは維持します。
+
+元の2026-10-07検証では新42・旧共有29・M v2 24の計95テストと、R v1の2世界の通し評価が成功しています。移動前の保存版でも42テストと、同一seedの公開入力・正解96ファイルのバイト一致、保存した予測・1,000回補正値の再採点一致を確認しました。元の [verification_20261007.json](main_round/attack/retest/sugiyama_v2/verification_20261007.json) は当時のパス・ハッシュを含む履歴をそのまま保持します。これらは元の検証範囲であり、別の実機PCでの検証を意味しません。
+
+公開対象だけを最新origin/main（00b1026）に重ねた作業ツリーでも、42テストと既定R v1の初期化が成功しました。R v1の172依存、T v88の130公開ファイル、M v1の65依存、公式原本94ファイルを照合済みです。導入済みのPython環境を共用した検証であり、別実機PCの確認ではありません。詳細は [publication_verification_20261007.json](main_round/attack/retest/publication_verification_20261007.json) に記録します。
+
+元のR v1模擬合計はmixed/devで **0.6789093236285094**、stress/holdoutで **0.5636688656587673**。ユーザー共有の公式値 **0.169387840941965** との差は残ります。運営の非公開正解・φ・実際の加工分布を再現できず、生成元の再利用もあるため、公式点の予測や未知人物評価とは扱いません。
+
+新規環境は `main_round/attack/setup.ps1` で既存の固定環境を準備し、リポジトリ直下から次を実行します。
+
+```powershell
+.\main_round\attack\retest\run.ps1
+.\main_round\attack\retest\run.ps1 -Profile stress -Split holdout -Seed 2026100702
+```
+
+生成問題・評価結果は共通のGit除外領域 `main_round/mock_test/local-output/retest/` に保存します。新規トークン・提出ZIP・仮想環境・キャッシュ、無関係なローカル変更は公開対象外です。公式提出は行いません。
+
 ## 2026-10-01：Attak_R追加・Attak_Tへの名前変更
 
 指定の綴りで [`main_round/attack/Attak_R/`](main_round/attack/Attak_R/README.md) を追加し、`attack_TS/` を [`Attak_T/`](main_round/attack/Attak_T/README.md) に変更しました。Rは保存先の準備のみで、攻撃コードは未追加です。TSのimport初期化と共通評価器の参照先を更新し、旧v88マニフェストを `manifest_before_Attak_T.json` に保持。既存モデル・予測・選択・過去の検証JSONは保持し、有効マニフェストだけを新配置に対応させます。旧記録中の `attack_TS` は当時の名称です。 続く「全部完了して」の依頼により、この配置変更と必要な参照更新をコミットし、既存非公開GitHubのmainへ反映します。既存のローカル独自評価機能や未コミット加工成果物は対象外です。

@@ -1,0 +1,113 @@
+{
+  "verified_utc": "2026-10-07T03:10:08.0412734Z",
+  "status": "validated_for_publication",
+  "repository": "tsugiyama0216/pwscup2026-kit-private",
+  "target_branch": "main",
+  "base_commit": "00b10263e9c74221633bf226f96b5156b7795452",
+  "canonical_directory": "main_round/attack/retest",
+  "scope": "Retest, original joint evaluator, necessary frozen R v1 runtime support, tests and scoped documentation.",
+  "unit_tests": {
+    "passed": 42,
+    "elapsed_seconds": 50.241,
+    "cwd": "main_round/attack/retest",
+    "command": "python -B -m unittest discover -s sugiyama_v2/tests -v"
+  },
+  "runtime_verification": {
+    "R_v1": {
+      "verified_files": 172,
+      "manifest_sha256": "df499ded0b0056ccc64290884c1ea80f435016ceca79900cff25adfb9cd03521"
+    },
+    "T_v88": {
+      "published_files": 130,
+      "verified_original_files": 94,
+      "version": "v88"
+    },
+    "M_v1": {
+      "verified_files": 65,
+      "all_bytes_unchanged": true
+    },
+    "M_v2_strength": 1.0,
+    "runtime": {
+      "runtime_initialized": true,
+      "adapter": "main_round/attack/Attak_T/prelim_transfer/methods.py",
+      "legacy_source_files": 16
+    },
+    "versions": 29,
+    "official_originals": {
+      "manifest": "main_round/attack/source_manifest.json",
+      "verified_files": 94,
+      "warnings": []
+    },
+    "loaded_evaluator": "main_round/attack/retest/sugiyama_v2/__init__.py",
+    "loaded_R_v1_model": "main_round/attack/Attack_R/v1/model.py"
+  },
+  "environment": "Fresh publication source tree based on latest origin/main plus the listed files; existing pinned Python 3.12 environment reused, with official-kit PYTHONPATH redirected to this tree. No primary local untracked source required. A separate physical PC was not tested.",
+  "relocation_verification": {
+    "record": "save_verification_20261007.json",
+    "sha256": "2d9d8f73ee633db86c44b67680f924d98cd4be5ef0f601fbd0289165d0c019ad",
+    "matched_case_files": 96,
+    "previously_saved_world_scores_reproduced": 2,
+    "floor_draws_per_target": 1000
+  },
+  "limitations": "Official hidden truths, floors and actual defense distributions are unavailable; synthetic scores are not predictions of official results.",
+  "excluded": [
+    "unrelated local defense work",
+    "R submission CSVs and ZIPs",
+    "R v2f and other local research",
+    "generated mock cases/results",
+    "virtual environments and caches",
+    "new credential copies"
+  ],
+  "official_submission_performed": false,
+  "files_sha256": {
+    "AGENTS.md": "20e636d4ec4bf022972a736e0ea959efb033d63cbfdf8e80fe8e920cf3cf91fa",
+    "CODEX_HANDOFF.md": "37b4f2480d159714ff442ff8c7a1958c427bbf7d56a825e61dc4510071bedd08",
+    "main_round/attack/Attack_R/README.md": "122cbfa0ff1e2868066f3780dc951da2d4a5860362c8f4acdfa7962b97552010",
+    "main_round/attack/Attack_R/sugiyama_adapter.py": "9b19a016501086dc337f315ec2fa9cfa41f9a77712f6c039b9e5a5519e31f604",
+    "main_round/attack/Attack_R/v1/common.py": "34331b4aa4e7c5bbd0c432a1feb2f27df5e4c2c2b3e40c34bb7eab5618ff166c",
+    "main_round/attack/Attack_R/v1/dependencies.json": "df499ded0b0056ccc64290884c1ea80f435016ceca79900cff25adfb9cd03521",
+    "main_round/attack/Attack_R/v1/infer.py": "ae3d88cab27eb676167dc73e99b19fcf348d7ceccbcd1c2d6415c6ad655ca457",
+    "main_round/attack/Attack_R/v1/model.py": "6cf56fe1bd4ad4545f97c03dd910a73c642873186c00328ee1340302ae96c7fb",
+    "main_round/attack/Attack_R/v1/RETEST_DEPENDENCIES.md": "114d9c846b0da1dddae4bd8b53a6265c551712b663a83bcb30cc8c3f70350ff8",
+    "main_round/attack/Attack_R/v1/run.ps1": "0366c37f6d5ea11c16a14636afefa67fd538af2141e3adc938aacc58423f1d41",
+    "main_round/attack/Attack_R/v1/run.py": "e3c9cbb1ed4acc42cc958be65aa61f72fd96445d24eacece4859287d458edb00",
+    "main_round/attack/Attack_R/v1/test_model.py": "bad755ef2082bdaa4244f4f7bb41d6a25120d1503765ac57857cc969a1c957da",
+    "main_round/attack/prepare_attack_m.ps1": "b9e7fea8f70f43963d46853c3e30c33322d09758224dcb67851c1798d3683580",
+    "main_round/attack/README.md": "aab53c91c87e0c996049e1e0398d974b7b155f7c48403ba85a2a70cadecd282f",
+    "main_round/attack/retest/AGENTS.md": "fe1c63699293a13e46d297d43c792ee18b528679334c4051b62124c115b500cc",
+    "main_round/attack/retest/README.md": "6c49bbdebd5a786b22c2b6e0a83d86aa0f0cf0d9e229bfcf41455d1ebc03a791",
+    "main_round/attack/retest/run.ps1": "31dbf6e3386f2249e5ef3468593c8b665d78acbc4ad866643bb6bdf851a34ac0",
+    "main_round/attack/retest/save_verification_20261007.json": "2d9d8f73ee633db86c44b67680f924d98cd4be5ef0f601fbd0289165d0c019ad",
+    "main_round/attack/retest/save_verification_before_attack_move_20261007.json": "c2cd6fd08cc2cb6bb42fb5a20a78d5361e26278f0c927261c276edca5a189c01",
+    "main_round/attack/retest/sugiyama_v2/__init__.py": "af2565166baba23ad26b714963876d998ab48152d12738828e4315f1b442e276",
+    "main_round/attack/retest/sugiyama_v2/__main__.py": "6066e05f68e62b6285f6a0495dc804667320680bc1ecd4994976fdf60caa2bb0",
+    "main_round/attack/retest/sugiyama_v2/generate.py": "61ecb9d27e9633c93d8033b7b05f284427d85a6448c40851b45bd5cd9675c9ad",
+    "main_round/attack/retest/sugiyama_v2/io.py": "070430a76ad9f9ed89c506d26987541e22b4e8136a51fb32aeac51d717de9148",
+    "main_round/attack/retest/sugiyama_v2/releases.py": "ce03aaa44a3afee71eede6dd29d2ae71a1dee918c5651e0eac1885450d80ceed",
+    "main_round/attack/retest/sugiyama_v2/runner.py": "971816d56f2d7c11e3af32ac23f67a9ae67fe31b2737acd84bbed03cddd003c1",
+    "main_round/attack/retest/sugiyama_v2/scoring.py": "76748d51bf4af464dbec8b773129f9d0a57473a2991f33aaa6ad7c434fadf755",
+    "main_round/attack/retest/sugiyama_v2/tests/test_generate.py": "f4130705b18919ce5e9733b285b87543b3c135c046b39d15bf7df920da0f3ec5",
+    "main_round/attack/retest/sugiyama_v2/tests/test_io.py": "98a77a6b61200daf79eabcf94734d31fb0640be631540ef5f74e390520b072c4",
+    "main_round/attack/retest/sugiyama_v2/tests/test_releases.py": "026afc8fb4251a14defccba6d40f2adc14839e75527dc75dd8e56e0bef4e829e",
+    "main_round/attack/retest/sugiyama_v2/tests/test_runner.py": "d4debbb96e108358172fdbcbdb30eb0c237f027df169d07d3be609d8052cf841",
+    "main_round/attack/retest/sugiyama_v2/tests/test_scoring.py": "387c17e4f2e2ceb1ee1d837212950ce7bf6702e721d43167d200903271f5cb6b",
+    "main_round/attack/retest/sugiyama_v2/verification_20261007.json": "b5f1bf6ed5fbc72763cc4adf4fb3460c701745d28bd5c49735b34676c735b4c2",
+    "main_round/mock_test/AGENTS.md": "34f0cf082d0daa936969d56f811f30aa79c2902117b3a0614520148e88456b08",
+    "main_round/mock_test/README.md": "5add2e8133fb5f466d09f533332f443ba33b65b404191d92571fa320a39702bd",
+    "main_round/mock_test/sugiyama_v2/__init__.py": "36a841ace95bb3e18645b97133980911dfb29f2c832d051ef782f6a4106979a1",
+    "main_round/mock_test/sugiyama_v2/__main__.py": "6066e05f68e62b6285f6a0495dc804667320680bc1ecd4994976fdf60caa2bb0",
+    "main_round/mock_test/sugiyama_v2/generate.py": "8c8a629edc04c85a06fd45d1702d76fa9037eef12e64bc97a046673d6adcf34b",
+    "main_round/mock_test/sugiyama_v2/io.py": "070430a76ad9f9ed89c506d26987541e22b4e8136a51fb32aeac51d717de9148",
+    "main_round/mock_test/sugiyama_v2/releases.py": "ce03aaa44a3afee71eede6dd29d2ae71a1dee918c5651e0eac1885450d80ceed",
+    "main_round/mock_test/sugiyama_v2/runner.py": "971816d56f2d7c11e3af32ac23f67a9ae67fe31b2737acd84bbed03cddd003c1",
+    "main_round/mock_test/sugiyama_v2/scoring.py": "0697f19ba2cc7787a3806978007334a693da7b47b0b74ae571112ba77d219992",
+    "main_round/mock_test/sugiyama_v2/tests/test_generate.py": "f4130705b18919ce5e9733b285b87543b3c135c046b39d15bf7df920da0f3ec5",
+    "main_round/mock_test/sugiyama_v2/tests/test_io.py": "98a77a6b61200daf79eabcf94734d31fb0640be631540ef5f74e390520b072c4",
+    "main_round/mock_test/sugiyama_v2/tests/test_releases.py": "026afc8fb4251a14defccba6d40f2adc14839e75527dc75dd8e56e0bef4e829e",
+    "main_round/mock_test/sugiyama_v2/tests/test_runner.py": "d4debbb96e108358172fdbcbdb30eb0c237f027df169d07d3be609d8052cf841",
+    "main_round/mock_test/sugiyama_v2/tests/test_scoring.py": "387c17e4f2e2ceb1ee1d837212950ce7bf6702e721d43167d200903271f5cb6b",
+    "main_round/mock_test/sugiyama_v2/verification_20261007.json": "b5f1bf6ed5fbc72763cc4adf4fb3460c701745d28bd5c49735b34676c735b4c2",
+    "main_round/mock_test/sugiyama.ps1": "ba6e46660013fb60350f54b7c36fe72633a8aedb35f924fa82501f1963791243",
+    "REPOSITORY_LAYOUT.md": "ae8e235822cf2552ecab9f21c81075f80d57e6dc242a6266dda5ef3142af16e5"
+  }
+}

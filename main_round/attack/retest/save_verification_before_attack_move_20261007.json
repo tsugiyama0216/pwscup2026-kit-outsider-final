@@ -1,0 +1,181 @@
+{
+  "saved_utc": "2026-10-07T02:48:42.935000+00:00",
+  "name": "retest",
+  "directory": "main_round/anonymization/team10/attack/retest",
+  "entry": "run.ps1",
+  "python_package": "sugiyama_v2",
+  "source_snapshot": "main_round/mock_test/sugiyama_v2",
+  "copied_files": [
+    {
+      "source": "main_round/mock_test/sugiyama_v2/__init__.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/__init__.py",
+      "source_sha256": "36a841ace95bb3e18645b97133980911dfb29f2c832d051ef782f6a4106979a1",
+      "saved_sha256": "26502ae30b3bc758e5cebb80f79d0e63d0026f51eafca924a7da9cde049fa701",
+      "identical_bytes": false
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/__main__.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/__main__.py",
+      "source_sha256": "6066e05f68e62b6285f6a0495dc804667320680bc1ecd4994976fdf60caa2bb0",
+      "saved_sha256": "6066e05f68e62b6285f6a0495dc804667320680bc1ecd4994976fdf60caa2bb0",
+      "identical_bytes": true
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/generate.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/generate.py",
+      "source_sha256": "8c8a629edc04c85a06fd45d1702d76fa9037eef12e64bc97a046673d6adcf34b",
+      "saved_sha256": "61ecb9d27e9633c93d8033b7b05f284427d85a6448c40851b45bd5cd9675c9ad",
+      "identical_bytes": false
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/io.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/io.py",
+      "source_sha256": "070430a76ad9f9ed89c506d26987541e22b4e8136a51fb32aeac51d717de9148",
+      "saved_sha256": "070430a76ad9f9ed89c506d26987541e22b4e8136a51fb32aeac51d717de9148",
+      "identical_bytes": true
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/releases.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/releases.py",
+      "source_sha256": "ce03aaa44a3afee71eede6dd29d2ae71a1dee918c5651e0eac1885450d80ceed",
+      "saved_sha256": "ce03aaa44a3afee71eede6dd29d2ae71a1dee918c5651e0eac1885450d80ceed",
+      "identical_bytes": true
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/runner.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/runner.py",
+      "source_sha256": "971816d56f2d7c11e3af32ac23f67a9ae67fe31b2737acd84bbed03cddd003c1",
+      "saved_sha256": "971816d56f2d7c11e3af32ac23f67a9ae67fe31b2737acd84bbed03cddd003c1",
+      "identical_bytes": true
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/scoring.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/scoring.py",
+      "source_sha256": "0697f19ba2cc7787a3806978007334a693da7b47b0b74ae571112ba77d219992",
+      "saved_sha256": "76748d51bf4af464dbec8b773129f9d0a57473a2991f33aaa6ad7c434fadf755",
+      "identical_bytes": false
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/tests/test_generate.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/tests/test_generate.py",
+      "source_sha256": "f4130705b18919ce5e9733b285b87543b3c135c046b39d15bf7df920da0f3ec5",
+      "saved_sha256": "f4130705b18919ce5e9733b285b87543b3c135c046b39d15bf7df920da0f3ec5",
+      "identical_bytes": true
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/tests/test_io.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/tests/test_io.py",
+      "source_sha256": "98a77a6b61200daf79eabcf94734d31fb0640be631540ef5f74e390520b072c4",
+      "saved_sha256": "98a77a6b61200daf79eabcf94734d31fb0640be631540ef5f74e390520b072c4",
+      "identical_bytes": true
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/tests/test_releases.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/tests/test_releases.py",
+      "source_sha256": "026afc8fb4251a14defccba6d40f2adc14839e75527dc75dd8e56e0bef4e829e",
+      "saved_sha256": "026afc8fb4251a14defccba6d40f2adc14839e75527dc75dd8e56e0bef4e829e",
+      "identical_bytes": true
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/tests/test_runner.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/tests/test_runner.py",
+      "source_sha256": "d4debbb96e108358172fdbcbdb30eb0c237f027df169d07d3be609d8052cf841",
+      "saved_sha256": "d4debbb96e108358172fdbcbdb30eb0c237f027df169d07d3be609d8052cf841",
+      "identical_bytes": true
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/tests/test_scoring.py",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/tests/test_scoring.py",
+      "source_sha256": "387c17e4f2e2ceb1ee1d837212950ce7bf6702e721d43167d200903271f5cb6b",
+      "saved_sha256": "387c17e4f2e2ceb1ee1d837212950ce7bf6702e721d43167d200903271f5cb6b",
+      "identical_bytes": true
+    },
+    {
+      "source": "main_round/mock_test/sugiyama_v2/verification_20261007.json",
+      "saved": "main_round/anonymization/team10/attack/retest/sugiyama_v2/verification_20261007.json",
+      "source_sha256": "b5f1bf6ed5fbc72763cc4adf4fb3460c701745d28bd5c49735b34676c735b4c2",
+      "saved_sha256": "b5f1bf6ed5fbc72763cc4adf4fb3460c701745d28bd5c49735b34676c735b4c2",
+      "identical_bytes": true
+    }
+  ],
+  "path_adjusted_python_files": [
+    "__init__.py",
+    "generate.py",
+    "scoring.py"
+  ],
+  "copy_changes_only": "Bootstrap location, original-input lookup, pinned-package lookup, ignored scratch location. No scoring/generation/model algorithm changes.",
+  "original_implementation_unchanged": true,
+  "historical_verification_identical_bytes": true,
+  "saved_package_tests": {
+    "count": 42,
+    "passed": true,
+    "command": "../../../../attack/.venv/Scripts/python.exe -B -m unittest discover -s sugiyama_v2/tests -v"
+  },
+  "wrapper_generate": {
+    "passed": true,
+    "seed": 2026100701,
+    "profile": "mixed",
+    "split": "dev",
+    "case": "main_round/mock_test/local-output/retest/save-check-20261007",
+    "public_and_private_files_identical_to_previous_case": 96
+  },
+  "saved_package_rescoring": [
+    {
+      "saved_result": "main_round/mock_test/local-output/sugiyama/rv1-dev-2026100701/evaluation/result.json",
+      "result_sha256": "12961c5f884eb17e1a92d71d7701aa52fb175765bd23d2a1c4b78edd607c6571",
+      "leaderboard": {
+        "score_1": 0.6789093236285094,
+        "score_2": 0.19008029008029007,
+        "score_3": 0.1875,
+        "score_4": 0.4839140592603883,
+        "score_5": 0.1418987463723463
+      },
+      "exact_match": true,
+      "reused_previously_verified_predictions_and_1000_draw_floors": true
+    },
+    {
+      "saved_result": "main_round/mock_test/local-output/sugiyama/rv1-holdout-2026100702/evaluation/result.json",
+      "result_sha256": "a824526f4f22629e8cca43ddd6995e615bffd3aabdc456b620c43d5bbcc56109",
+      "leaderboard": {
+        "score_1": 0.5636688656587673,
+        "score_2": 0.1298601398601399,
+        "score_3": 0.2857142857142857,
+        "score_4": 0.38680044097337674,
+        "score_5": 0.08286487667446386
+      },
+      "exact_match": true,
+      "reused_previously_verified_predictions_and_1000_draw_floors": true
+    }
+  ],
+  "frozen_dependencies_verified": {
+    "main_round/attack/Attack_R/v1/dependencies.json": 172,
+    "main_round/attack/Attack_R/v2f/production_dependencies.json": 187
+  },
+  "official_originals": {
+    "manifest": "C:\\Users\\Owner\\OneDrive\\ドキュメント\\ChatGPT\\pws2026abe2\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "github_push_performed": false,
+  "official_submission_performed": false,
+  "saved_files_sha256": {
+    "AGENTS.md": "46e31696a009aa1d354f8f8adc04996aaca642c783b35c445bba117327884b42",
+    "README.md": "0dec1583c0a74a3dc87d65fb7187663a541c724be010fe086a98a8d1fa0b1861",
+    "run.ps1": "432dbdddc8729e9f97a2215b7358853f7da6431b68258a0659b89edb9ff34c26",
+    "sugiyama_v2/__init__.py": "26502ae30b3bc758e5cebb80f79d0e63d0026f51eafca924a7da9cde049fa701",
+    "sugiyama_v2/__main__.py": "6066e05f68e62b6285f6a0495dc804667320680bc1ecd4994976fdf60caa2bb0",
+    "sugiyama_v2/generate.py": "61ecb9d27e9633c93d8033b7b05f284427d85a6448c40851b45bd5cd9675c9ad",
+    "sugiyama_v2/io.py": "070430a76ad9f9ed89c506d26987541e22b4e8136a51fb32aeac51d717de9148",
+    "sugiyama_v2/releases.py": "ce03aaa44a3afee71eede6dd29d2ae71a1dee918c5651e0eac1885450d80ceed",
+    "sugiyama_v2/runner.py": "971816d56f2d7c11e3af32ac23f67a9ae67fe31b2737acd84bbed03cddd003c1",
+    "sugiyama_v2/scoring.py": "76748d51bf4af464dbec8b773129f9d0a57473a2991f33aaa6ad7c434fadf755",
+    "sugiyama_v2/tests/test_generate.py": "f4130705b18919ce5e9733b285b87543b3c135c046b39d15bf7df920da0f3ec5",
+    "sugiyama_v2/tests/test_io.py": "98a77a6b61200daf79eabcf94734d31fb0640be631540ef5f74e390520b072c4",
+    "sugiyama_v2/tests/test_releases.py": "026afc8fb4251a14defccba6d40f2adc14839e75527dc75dd8e56e0bef4e829e",
+    "sugiyama_v2/tests/test_runner.py": "d4debbb96e108358172fdbcbdb30eb0c237f027df169d07d3be609d8052cf841",
+    "sugiyama_v2/tests/test_scoring.py": "387c17e4f2e2ceb1ee1d837212950ce7bf6702e721d43167d200903271f5cb6b",
+    "sugiyama_v2/verification_20261007.json": "b5f1bf6ed5fbc72763cc4adf4fb3460c701745d28bd5c49735b34676c735b4c2"
+  },
+  "outputs": "main_round/mock_test/local-output/retest/",
+  "limits": "Requires existing repository runtime, original contest inputs and frozen models. Official hidden truths and floors are unavailable; mock scores are not leaderboard predictions."
+}
