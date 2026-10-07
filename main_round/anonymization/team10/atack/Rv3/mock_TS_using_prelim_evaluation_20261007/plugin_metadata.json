@@ -1,0 +1,54 @@
+{
+  "name": "Rv3 frozen / preliminary team24 adapter",
+  "arguments": [
+    "candidates",
+    "self_labels",
+    "background",
+    "self_challenge",
+    "targets",
+    "schema",
+    "cfg",
+    "self_release",
+    "utility_reference",
+    "attacker_id"
+  ],
+  "diagnostics": {
+    "adapter_only": true,
+    "algorithm_or_parameters_changed": false,
+    "attacker_id": 24,
+    "target_count": 20,
+    "private_mask": {
+      "exact_private_rows": 163,
+      "remaining_unknown_rows": 886,
+      "private_true_rare": 13,
+      "private_onset": 16,
+      "private_rare_onset": 4,
+      "private_death": 6,
+      "comparison": "Exact decimal public-QI equality; unique matches; no tolerance",
+      "deduction": "All 163 self members are private by the contest definition; exactly 163 unique B matches exhaust them.",
+      "limitations": "Other 886 rows remain unknown. This selected negative set does not estimate population FPR."
+    },
+    "selection": {
+      "mia": "full5",
+      "aia": "forest_contrast5_1.0"
+    },
+    "selection_sha256": "f26a204044f4226a87d087bee9938000dd68ec4f47000f9b3031c5c9cf4a6b22",
+    "verified_Rv3_sources": {
+      "model.py": "d72d8556fda4a2679f9e5e77538db25afa70c0a68c4887d267b5ba374a4c684d",
+      "protocol.json": "3ae0e0ecafc7e3460869a7b5cb7dc1ed1799072afd405f762bd4809f411c179b",
+      "experiment.py": "61b3fa3f659181cc61a94ca0e3d0c566ebf8a4f9d345c36e055617404b779605",
+      "density.py": "dce8a62b3d7b890b8e9e6c0a7c4b65a752735bf0ca2e6e4f671c82b91e4bf815",
+      "refine.py": "1b9b43323769aa5ca37996c1a970c385cfe4a389efa17b6c48100f725291265a",
+      "selected.py": "40ac0c24a2db6d4e06c01aa04746e2779cdf35cb512196ef725c95ceb45d582b",
+      "run.py": "82b387932fe72a76845b23c15e2878f3d499300f6bfc1ee495c70a90639bdd56",
+      "plugin.py": "5c516461c505db7526952c764e4c9ae48aa33cbb3395bbd17f62b95042bbc966",
+      "confirm.py": "e85ece19ce9d9453fe1f1af63ec0d467ff86a60197b3693544a76d1c8f1c9947",
+      "world.py": "e576cd03af857c9fa08a106d1a98be65d843be43997bdfb589458581fbae575f"
+    },
+    "mask_source_sha256": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393",
+    "input_scope": "Supplied preliminary public tables only",
+    "blocked_data_file_reads": [],
+    "stored_fitted_assets_used": false,
+    "official_submission_performed": false
+  }
+}
