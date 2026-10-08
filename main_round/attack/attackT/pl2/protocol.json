@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-08",
+  "status": "prespecified_before_new_scores",
+  "request": "Tv101-Tv104, mock_TS matched Rv2/Rv4 comparison, selected pl2 saved locally and private origin/main",
+  "variants": {
+    "Tv101": "Public-background shadow router retraining; leave-one-generator-family-out diagnostics; frozen T88 experts",
+    "Tv102": "Frozen T88 plus unknown-route confidence gate and public official fallback",
+    "Tv103": "Frozen T88 plus sex/prefecture/age matched background-corrected MIA",
+    "Tv104": "Tv101 router plus Tv102 uncertainty fallback plus Tv103 MIA; frozen confirmation (item 4 is evaluation, not itself an algorithm)"
+  },
+  "evaluation": "mock_TS; 12 fixed local anonymization releases x 3 cases per phase; isolated single-target diagnostic, not joint 22-target Sugiyama",
+  "development_seed": 2026100811,
+  "confirmation_seed": 2026100821,
+  "case_count": 3,
+  "release_selection_seed": 20261007,
+  "floor_repetitions": 1000,
+  "router_training_seed": 101081,
+  "router_validation_seed": 101091,
+  "router_draws": 6,
+  "router_validation_draws": 3,
+  "unknown_max_probability": 0.60,
+  "unknown_margin": 0.15,
+  "fallback": "Unknown gate: 50% rank mixture with official MIA; choose official AIA (never average incompatible event times)",
+  "background_mia_weight": 0.25,
+  "selection": "pl2 is newly synthesized, not a renamed Tv candidate. On development only, choose MIA rank blend from all 6 Tv pairs with weights .25/.5/.75 (18 candidates) and choose AIA weighted +/-0.5-year window consensus across all four Tv outputs with each of four possible double-weight anchors. Score components with official mock_TS code. Freeze chosen blend/consensus and hashes before confirmation; no reselection. Ties use enumeration order. Rv2/Rv4 are comparators only. Report any degradation explicitly.",
+  "isolation": "Fresh process per case/release; baseline computed once and pure transformations shared within process; only public tables, schema and hash-pinned existing fitted assets available to inference",
+  "limitations": ["Same finite people and fixed releases reused; new seeds are not new populations", "Frozen T88 components retain historical training exposure and do not satisfy fresh-background-only training", "Synthetic AIA controls and proxy rare labels", "No official score prediction or official contest submission"],
+  "publication": "New non-credential source, comparison summaries and reproduction evidence only; no token, ZIP or generated mock truths"
+}

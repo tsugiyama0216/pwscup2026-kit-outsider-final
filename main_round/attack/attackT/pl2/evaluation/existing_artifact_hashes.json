@@ -1,0 +1,20 @@
+{
+  "note": "Read-only preservation snapshot; ZIP content never extracted",
+  "files": {
+    "main_round/attack/Attack_R/v1/submission/F_aia.csv": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88",
+    "main_round/attack/Attack_R/v1/submission/F_mia.csv": "590c64201806312c1611be9bb276a24b74ba1fce292acac81355f8b6768cf7c6",
+    "main_round/attack/Attack_R/v1/submission/team10_R_v1_attack.zip": "b7c7e43fd75ed906dcc09d285bd3d7118ae1f3137978795321f182778aa3eb75",
+    "main_round/attack/Attack_R/v2/submission/F_aia.csv": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88",
+    "main_round/attack/Attack_R/v2/submission/F_mia.csv": "691443c8a8d7d2311b5d52d59a0635dc370f3a3008f94b4a3f83843196b8e4ce",
+    "main_round/attack/Attack_R/v2/submission/team10_R_v2_attack.zip": "adc4219eb5e4ff00f216203286987a7cc8dbcae89872ced52234de30b7d49a78",
+    "main_round/attack/Attack_R/v2f/submission/F_aia.csv": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88",
+    "main_round/attack/Attack_R/v2f/submission/F_mia.csv": "691443c8a8d7d2311b5d52d59a0635dc370f3a3008f94b4a3f83843196b8e4ce",
+    "main_round/attack/Attack_R/v2f/submission/team10_R_v2f_attack.zip": "22f84267275367937983fc20b36c9256a825ffc49e191997d18877799a6e2c80",
+    "main_round/anonymization/team10/attack/attackR/Rv4/submission/F_aia.csv": "e19087838a6dc49bbfdbd36113451dfc85168b4713ca1727bccbac8fdc6be4cb",
+    "main_round/anonymization/team10/attack/attackR/Rv4/submission/F_mia.csv": "140991948a9f988cc2dd6d7e516833d688b7dec349ab5cc88b8617c7eaa4828e",
+    "main_round/anonymization/team10/attack/attackR/Rv4/submission/team10_Rv4_attack.zip": "31ff70fe3c128239cf864857acbc40cf17573f31e397c4061cf5d04519280b6e",
+    "main_round/attack/attackT/pl1/submission/F_aia.csv": "5bce3c6d1e55cdafa0ea0870153260deac9e83e5316dd7b21f6c65ad35220357",
+    "main_round/attack/attackT/pl1/submission/F_mia.csv": "247bed21bd44ff653f0838028782bd5553a2bba23d9ed10b8eaffe6054f296a4",
+    "main_round/attack/attackT/pl1/submission/team10_pl1_attack.zip": "8e6f9143ff1b08a9f26153d1aed184b070a36ec28fb6e54f5fbf528e711a72e5"
+  }
+}

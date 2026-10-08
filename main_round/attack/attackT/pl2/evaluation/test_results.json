@@ -1,0 +1,9 @@
+{
+  "new_model_numerical_tests": 3,
+  "synthesis_tests": 3,
+  "mock_TS_runner_and_scoring_tests": 18,
+  "mock_TS_generation_tests": 5,
+  "generation_retry": "Initial sandbox TemporaryDirectory PermissionError; unchanged test code passed at normal permissions",
+  "initial_test_discovery": "Wrong cwd corrected to main_round/mock_test; no source change",
+  "official_submission": false
+}

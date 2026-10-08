@@ -1,0 +1,23 @@
+{
+  "model": "pl2",
+  "mia_blend": [
+    "Tv101",
+    "Tv104",
+    0.5
+  ],
+  "aia_anchor": "Tv101",
+  "development_mia": 0.025641025641025644,
+  "development_aia": 0.0347306089213079,
+  "source_hashes": {
+    "experiment.py": "11b359b419b2902989f67476b4e680535cee8bff82e3212f55687b3cfee2799f",
+    "model.py": "a6fcceab223f171b35bdf00e4dc727a838db57ad30cedd1838775ea4be20f73a",
+    "plugin.py": "26599f5f6da396516068bcf4508d0c8a08b40dfcfc10d878e3f0795776bd0c2e",
+    "protocol.json": "03478a4a8313a8efe8d405cecdfbe2d02166a669824b9088929fb7ad6eb59209",
+    "runtime.py": "a7da176fd1ac1ef1586a3af2560819362a8b1153e19ac0bffe70dd3ea0a0ced8",
+    "synthesis.py": "4d35430068e875614be8d182c53fb031c0524314509660afb713332e4096cf5e",
+    "test_model.py": "742ac2f20797ab2b4b881a87eb2f15940bb49bf724adf14695efc8fb84abfbc8",
+    "worker.py": "f4257c8a797dd3c084e559e5473099f95d01efb2935334ba14454666a79c3e19"
+  },
+  "confirmation_used": false,
+  "rule": "pl2 is newly synthesized, not a renamed Tv candidate. On development only, choose MIA rank blend from all 6 Tv pairs with weights .25/.5/.75 (18 candidates) and choose AIA weighted +/-0.5-year window consensus across all four Tv outputs with each of four possible double-weight anchors. Score components with official mock_TS code. Freeze chosen blend/consensus and hashes before confirmation; no reselection. Ties use enumeration order. Rv2/Rv4 are comparators only. Report any degradation explicitly."
+}

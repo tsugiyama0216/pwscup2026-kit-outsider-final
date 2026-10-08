@@ -1,0 +1,18 @@
+{
+  "source": "Existing anonymization README descriptions, diagnostic only; never passed into inference",
+  "families": {
+    "M1_v5": "S1-derived public-reference rank/copula correction plus later local rare adjustments; mixed pipeline, not the simple copy generator",
+    "S1": "Preliminary v5 DP synthesis transferred to main cohort; not one of the seven simple shadow families",
+    "R1": "Stratified Gaussian copula full synthesis",
+    "R3": "Postprocessed R2 synthesis, Cox coefficient correction",
+    "R4": "R3 synthesis with joint-distribution/risk-preserving correction",
+    "R5": "Sequential conditional CART synthesis; not in the seven-class router vocabulary",
+    "R6": "R4-based rare Gaussian-copula correction",
+    "R7": "R6-based majority/rare copula and aggregate event assignment",
+    "R9": "Copula-derived synthesis plus aggregate distribution/correlation/Cox constraints",
+    "R10": "Postprocessed R9",
+    "R11": "Postprocessed R9 rare-distribution utility improvement",
+    "R12": "R11 rank/quantile reconstruction"
+  },
+  "interpretation": "Hard router labels on these compound real releases are not a valid exact 7-class accuracy test. In particular R1 is known copula-derived although T88 often calls it independent."
+}

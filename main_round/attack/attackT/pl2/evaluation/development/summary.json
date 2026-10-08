@@ -1,0 +1,67 @@
+{
+  "means": {
+    "Rv2": {
+      "score_1": 0.04434599353669252,
+      "mia_power": 0.009615384615384616,
+      "aia_power": 0.0347306089213079,
+      "score_2": 0.009615384615384616,
+      "score_3": 0.0,
+      "score_4": 0.04446685677796094,
+      "score_5": 0.0016666666666666679
+    },
+    "Rv4": {
+      "score_1": 0.04434599353669252,
+      "mia_power": 0.009615384615384616,
+      "aia_power": 0.0347306089213079,
+      "score_2": 0.009615384615384616,
+      "score_3": 0.0,
+      "score_4": 0.04446685677796094,
+      "score_5": 0.0016666666666666679
+    },
+    "Tv101": {
+      "score_1": 0.05396137815207713,
+      "mia_power": 0.019230769230769232,
+      "aia_power": 0.0347306089213079,
+      "score_2": 0.019230769230769232,
+      "score_3": 0.0,
+      "score_4": 0.04446685677796094,
+      "score_5": 0.0016666666666666679
+    },
+    "Tv102": {
+      "score_1": 0.014722302393633199,
+      "mia_power": 0.0032051282051282055,
+      "aia_power": 0.011517174188504994,
+      "score_2": 0.0032051282051282055,
+      "score_3": 0.0,
+      "score_4": 0.018810981583589226,
+      "score_5": 0.0
+    },
+    "Tv103": {
+      "score_1": 0.050756249946948925,
+      "mia_power": 0.016025641025641028,
+      "aia_power": 0.0347306089213079,
+      "score_2": 0.016025641025641028,
+      "score_3": 0.0,
+      "score_4": 0.04446685677796094,
+      "score_5": 0.0016666666666666679
+    },
+    "Tv104": {
+      "score_1": 0.02587104864877504,
+      "mia_power": 0.019230769230769232,
+      "aia_power": 0.006640279418005811,
+      "score_2": 0.019230769230769232,
+      "score_3": 0.0,
+      "score_4": 0.010861051843293789,
+      "score_5": 0.0
+    }
+  },
+  "conditions_per_attack": 36,
+  "suite_manifest_sha256": "d9ad72b60838a840df96e134482cd42344a10717c031c6d6188b3a9628f3755a",
+  "source_freeze_sha256": "798051d090a03828f59719da5c6143797a0d6a4e74587a58f8e46ca0445c415c",
+  "limitations": [
+    "Same finite people and fixed releases reused; new seeds are not new populations",
+    "Frozen T88 components retain historical training exposure and do not satisfy fresh-background-only training",
+    "Synthetic AIA controls and proxy rare labels",
+    "No official score prediction or official contest submission"
+  ]
+}

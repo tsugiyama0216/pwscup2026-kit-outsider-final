@@ -1,0 +1,4826 @@
+[
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.5415632754342432
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.5153374233128835,
+        "p_c": 0.5950920245398773,
+        "p_m_rare": 0.5384615384615384,
+        "p_c_rare": 0.6153846153846154
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.5415632754342432
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.5153374233128835,
+          "p_c": 0.5950920245398773,
+          "p_m_rare": 0.5384615384615384,
+          "p_c_rare": 0.6153846153846154
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "M1_v5",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.14321338779775084,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.16666666666666663,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.14321338779775084,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.2896270396270397
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.16666666666666663,
+        "r_time_rare": 0.0,
+        "p_m": 0.6932515337423313,
+        "p_c": 0.6319018404907976,
+        "p_m_rare": 0.5384615384615384,
+        "p_c_rare": 0.5384615384615384
+      },
+      "aia_per_target": {
+        "0": 0.14321338779775084
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.14321338779775084,
+      "attack_power": 0.14321338779775084,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.16666666666666663,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.2896270396270397
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.16666666666666663,
+          "r_time_rare": 0.0,
+          "p_m": 0.6932515337423313,
+          "p_c": 0.6319018404907976,
+          "p_m_rare": 0.5384615384615384,
+          "p_c_rare": 0.5384615384615384
+        },
+        "aia_per_target": {
+          "0": 0.14321338779775084
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.16666666666666663,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.13977966666666664,
+      "attack_power": 0.13977966666666664,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "S1",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.1395901993919537,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.16304347826086948,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.1395901993919537,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.6183359651101588
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.16304347826086948,
+        "r_time_rare": 0.0,
+        "p_m": 0.5276073619631901,
+        "p_c": 0.43558282208588955,
+        "p_m_rare": 0.23076923076923078,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.1395901993919537
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.1395901993919537,
+      "attack_power": 0.1395901993919537,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.16304347826086948,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.6183359651101588
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.16304347826086948,
+          "r_time_rare": 0.0,
+          "p_m": 0.5276073619631901,
+          "p_c": 0.43558282208588955,
+          "p_m_rare": 0.23076923076923078,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.1395901993919537
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.16304347826086948,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.1361564782608695,
+      "attack_power": 0.1361564782608695,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R1",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.07066436818990762,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.09411764705882342,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.07066436818990762,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.5256222272351305
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.09411764705882342,
+        "r_time_rare": 0.0,
+        "p_m": 0.5276073619631901,
+        "p_c": 0.4785276073619632,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.38461538461538464
+      },
+      "aia_per_target": {
+        "0": 0.07066436818990762
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.07066436818990762,
+      "attack_power": 0.07066436818990762,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.09411764705882342,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.5256222272351305
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.09411764705882342,
+          "r_time_rare": 0.0,
+          "p_m": 0.5276073619631901,
+          "p_c": 0.4785276073619632,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.38461538461538464
+        },
+        "aia_per_target": {
+          "0": 0.07066436818990762
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.09411764705882342,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.06723064705882342,
+      "attack_power": 0.06723064705882342,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R3",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.011494252873563255,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.5168809684938718
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.011494252873563255,
+        "r_time_rare": 0.0,
+        "p_m": 0.4723926380368098,
+        "p_c": 0.4662576687116564,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.011494252873563255,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.5168809684938718
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.011494252873563255,
+          "r_time_rare": 0.0,
+          "p_m": 0.4723926380368098,
+          "p_c": 0.4662576687116564,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.011494252873563255,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R4",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0447285393129024,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0681818181818182,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0447285393129024,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.526204977817881
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0681818181818182,
+        "r_time_rare": 0.0,
+        "p_m": 0.49693251533742333,
+        "p_c": 0.4601226993865031,
+        "p_m_rare": 0.07692307692307693,
+        "p_c_rare": 0.15384615384615385
+      },
+      "aia_per_target": {
+        "0": 0.0447285393129024
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0447285393129024,
+      "attack_power": 0.0447285393129024,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0681818181818182,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.526204977817881
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0681818181818182,
+          "r_time_rare": 0.0,
+          "p_m": 0.49693251533742333,
+          "p_c": 0.4601226993865031,
+          "p_m_rare": 0.07692307692307693,
+          "p_c_rare": 0.15384615384615385
+        },
+        "aia_per_target": {
+          "0": 0.0447285393129024
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0681818181818182,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0412948181818182,
+      "attack_power": 0.0412948181818182,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R5",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.011430442061316763,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.034883720930232565,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.011430442061316763,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.5031017369727048
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.034883720930232565,
+        "r_time_rare": 0.0,
+        "p_m": 0.49079754601226994,
+        "p_c": 0.4723926380368098,
+        "p_m_rare": 0.23076923076923078,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.011430442061316763
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.011430442061316763,
+      "attack_power": 0.011430442061316763,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.034883720930232565,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.5031017369727048
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.034883720930232565,
+          "r_time_rare": 0.0,
+          "p_m": 0.49079754601226994,
+          "p_c": 0.4723926380368098,
+          "p_m_rare": 0.23076923076923078,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.011430442061316763
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.034883720930232565,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.007996720930232563,
+      "attack_power": 0.007996720930232563,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R6",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.038461538461538464,
+    "score_2": 0.038461538461538464,
+    "score_3": 0.0,
+    "score_4": 0.011627906976744222,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.038461538461538464,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.038461538461538464,
+        "tpr_rare": 0.0,
+        "auc": 0.5196631325663583
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.011627906976744222,
+        "r_time_rare": 0.0,
+        "p_m": 0.4785276073619632,
+        "p_c": 0.4723926380368098,
+        "p_m_rare": 0.07692307692307693,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.038461538461538464,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "mia_all": 0.038461538461538464,
+      "mia_rare": 0.0,
+      "aia_all": 0.011627906976744222,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.038461538461538464,
+          "tpr_rare": 0.0,
+          "auc": 0.5196631325663583
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.011627906976744222,
+          "r_time_rare": 0.0,
+          "p_m": 0.4785276073619632,
+          "p_c": 0.4723926380368098,
+          "p_m_rare": 0.07692307692307693,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.011627906976744222,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R7",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.038461538461538464,
+    "score_2": 0.038461538461538464,
+    "score_3": 0.0,
+    "score_4": 0.02298850574712651,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.038461538461538464,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.038461538461538464,
+        "tpr_rare": 0.0,
+        "auc": 0.5810399278141214
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.02298850574712651,
+        "r_time_rare": 0.0,
+        "p_m": 0.4785276073619632,
+        "p_c": 0.4662576687116564,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.038461538461538464,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "mia_all": 0.038461538461538464,
+      "mia_rare": 0.0,
+      "aia_all": 0.02298850574712651,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.038461538461538464,
+          "tpr_rare": 0.0,
+          "auc": 0.5810399278141214
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.02298850574712651,
+          "r_time_rare": 0.0,
+          "p_m": 0.4785276073619632,
+          "p_c": 0.4662576687116564,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.02298850574712651,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R9",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.038461538461538464,
+    "score_2": 0.038461538461538464,
+    "score_3": 0.0,
+    "score_4": 0.011363636363636298,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.038461538461538464,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.038461538461538464,
+        "tpr_rare": 0.0,
+        "auc": 0.5889540566959921
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.011363636363636298,
+        "r_time_rare": 0.0,
+        "p_m": 0.4662576687116564,
+        "p_c": 0.4601226993865031,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.15384615384615385
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.038461538461538464,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "mia_all": 0.038461538461538464,
+      "mia_rare": 0.0,
+      "aia_all": 0.011363636363636298,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.038461538461538464,
+          "tpr_rare": 0.0,
+          "auc": 0.5889540566959921
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.011363636363636298,
+          "r_time_rare": 0.0,
+          "p_m": 0.4662576687116564,
+          "p_c": 0.4601226993865031,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.15384615384615385
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.011363636363636298,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R10",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.038461538461538464,
+    "score_2": 0.038461538461538464,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.038461538461538464,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.038461538461538464,
+        "tpr_rare": 0.0,
+        "auc": 0.5959658620948944
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.4723926380368098,
+        "p_c": 0.4785276073619632,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.38461538461538464
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.038461538461538464,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "mia_all": 0.038461538461538464,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.038461538461538464,
+          "tpr_rare": 0.0,
+          "auc": 0.5959658620948944
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.4723926380368098,
+          "p_c": 0.4785276073619632,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.38461538461538464
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R11",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.038461538461538464,
+    "score_2": 0.038461538461538464,
+    "score_3": 0.0,
+    "score_4": 0.02325581395348834,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.038461538461538464,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.038461538461538464,
+        "tpr_rare": 0.0,
+        "auc": 0.5575043236333559
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.02325581395348834,
+        "r_time_rare": 0.0,
+        "p_m": 0.48466257668711654,
+        "p_c": 0.4723926380368098,
+        "p_m_rare": 0.23076923076923078,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.038461538461538464,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "mia_all": 0.038461538461538464,
+      "mia_rare": 0.0,
+      "aia_all": 0.02325581395348834,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.038461538461538464,
+          "tpr_rare": 0.0,
+          "auc": 0.5575043236333559
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.02325581395348834,
+          "r_time_rare": 0.0,
+          "p_m": 0.48466257668711654,
+          "p_c": 0.4723926380368098,
+          "p_m_rare": 0.23076923076923078,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.02325581395348834,
+    "phi_mock": 0.023453278868915853,
+    "floor_estimate": {
+      "phi": 0.023453278868915853,
+      "sd": 0.04651980503774331,
+      "se": 0.001471085402262441,
+      "repetitions": 1000,
+      "seed": 2027100814,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2307692307692308,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "35b3c9ad22bbc1c5f3f0664959a690ad93750122a016e8c770bf168f21eda895",
+        "public/aia_challenge_0.csv": "5e1052f5880ff89388cec0be941ea0b46cb7610faa90d1bf5fa5edf6961aef34",
+        "private/aia_truth.csv": "9a807999716eeafcb9f17d841d50c59d67b9df4a1a472dfa0805c1c77582329a",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 0,
+      "mia_rare_negative": 24,
+      "mia_rare_defined": false,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_001",
+    "release": "R12",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.5129333032558839
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.5214723926380368,
+        "p_c": 0.5705521472392638,
+        "p_m_rare": 0.46153846153846156,
+        "p_c_rare": 0.3076923076923077
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.5129333032558839
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.5214723926380368,
+          "p_c": 0.5705521472392638,
+          "p_m_rare": 0.46153846153846156,
+          "p_c_rare": 0.3076923076923077
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "M1_v5",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.024598103692061182,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.03846153846153858,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.024598103692061182,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.5284795849311978
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.03846153846153858,
+        "r_time_rare": 0.0,
+        "p_m": 0.6932515337423313,
+        "p_c": 0.6809815950920245,
+        "p_m_rare": 0.46153846153846156,
+        "p_c_rare": 0.38461538461538464
+      },
+      "aia_per_target": {
+        "0": 0.024598103692061182
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.024598103692061182,
+      "attack_power": 0.024598103692061182,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.03846153846153858,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.5284795849311978
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.03846153846153858,
+          "r_time_rare": 0.0,
+          "p_m": 0.6932515337423313,
+          "p_c": 0.6809815950920245,
+          "p_m_rare": 0.46153846153846156,
+          "p_c_rare": 0.38461538461538464
+        },
+        "aia_per_target": {
+          "0": 0.024598103692061182
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.03846153846153858,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.01157453846153858,
+      "attack_power": 0.01157453846153858,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "S1",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.15717728921242294,
+    "score_2": 0.07692307692307693,
+    "score_3": 0.0,
+    "score_4": 0.09411764705882342,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.07692307692307693,
+    "aia_power": 0.08025421228934601,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.07692307692307693,
+        "tpr_rare": 0.0,
+        "auc": 0.6513271674561998
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.09411764705882342,
+        "r_time_rare": 0.0,
+        "p_m": 0.5276073619631901,
+        "p_c": 0.4785276073619632,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.07692307692307693
+      },
+      "aia_per_target": {
+        "0": 0.08025421228934601
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.07692307692307693,
+      "aia_power": 0.08025421228934601,
+      "attack_power": 0.15717728921242294,
+      "mia_all": 0.07692307692307693,
+      "mia_rare": 0.0,
+      "aia_all": 0.09411764705882342,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.07692307692307693,
+          "tpr_rare": 0.0,
+          "auc": 0.6513271674561998
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.09411764705882342,
+          "r_time_rare": 0.0,
+          "p_m": 0.5276073619631901,
+          "p_c": 0.4785276073619632,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.07692307692307693
+        },
+        "aia_per_target": {
+          "0": 0.08025421228934601
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.09411764705882342,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.06723064705882342,
+      "attack_power": 0.14415372398190035,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R1",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.07398081974144372,
+    "score_2": 0.038461538461538464,
+    "score_3": 0.0,
+    "score_4": 0.04938271604938265,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.038461538461538464,
+    "aia_power": 0.03551928127990525,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.038461538461538464,
+        "tpr_rare": 0.0,
+        "auc": 0.4748289345063539
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.04938271604938265,
+        "r_time_rare": 0.0,
+        "p_m": 0.5276073619631901,
+        "p_c": 0.5030674846625767,
+        "p_m_rare": 0.23076923076923078,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.03551928127990525
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.038461538461538464,
+      "aia_power": 0.03551928127990525,
+      "attack_power": 0.07398081974144372,
+      "mia_all": 0.038461538461538464,
+      "mia_rare": 0.0,
+      "aia_all": 0.04938271604938265,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.038461538461538464,
+          "tpr_rare": 0.0,
+          "auc": 0.4748289345063539
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.04938271604938265,
+          "r_time_rare": 0.0,
+          "p_m": 0.5276073619631901,
+          "p_c": 0.5030674846625767,
+          "p_m_rare": 0.23076923076923078,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.03551928127990525
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.04938271604938265,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.02249571604938265,
+      "attack_power": 0.06095725451092111,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R3",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.038461538461538464,
+    "score_2": 0.038461538461538464,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.038461538461538464,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.038461538461538464,
+        "tpr_rare": 0.0,
+        "auc": 0.5326152342281375
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.48466257668711654,
+        "p_c": 0.49693251533742333,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.07692307692307693
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.038461538461538464,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "mia_all": 0.038461538461538464,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.038461538461538464,
+          "tpr_rare": 0.0,
+          "auc": 0.5326152342281375
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.48466257668711654,
+          "p_c": 0.49693251533742333,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.07692307692307693
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R4",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.18585853001272842,
+    "score_2": 0.11538461538461539,
+    "score_3": 0.0,
+    "score_4": 0.08433734939759042,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.11538461538461539,
+    "aia_power": 0.07047391462811303,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.11538461538461539,
+        "tpr_rare": 0.0,
+        "auc": 0.5935972629521017
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.08433734939759042,
+        "r_time_rare": 0.0,
+        "p_m": 0.5337423312883436,
+        "p_c": 0.49079754601226994,
+        "p_m_rare": 0.38461538461538464,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.07047391462811303
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.11538461538461539,
+      "aia_power": 0.07047391462811303,
+      "attack_power": 0.18585853001272842,
+      "mia_all": 0.11538461538461539,
+      "mia_rare": 0.0,
+      "aia_all": 0.08433734939759042,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.11538461538461539,
+          "tpr_rare": 0.0,
+          "auc": 0.5935972629521017
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.08433734939759042,
+          "r_time_rare": 0.0,
+          "p_m": 0.5337423312883436,
+          "p_c": 0.49079754601226994,
+          "p_m_rare": 0.38461538461538464,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.07047391462811303
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.08433734939759042,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.057450349397590424,
+      "attack_power": 0.1728349647822058,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R5",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.038461538461538464,
+    "score_2": 0.038461538461538464,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.038461538461538464,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.038461538461538464,
+        "tpr_rare": 0.0,
+        "auc": 0.5262425746296714
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.4785276073619632,
+        "p_c": 0.48466257668711654,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.07692307692307693
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.038461538461538464,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "mia_all": 0.038461538461538464,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.038461538461538464,
+          "tpr_rare": 0.0,
+          "auc": 0.5262425746296714
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.4785276073619632,
+          "p_c": 0.48466257668711654,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.07692307692307693
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.038461538461538464,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R6",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.10903665364785245,
+    "score_2": 0.07692307692307693,
+    "score_3": 0.0,
+    "score_4": 0.045977011494252915,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.07692307692307693,
+    "aia_power": 0.032113576724775515,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.07692307692307693,
+        "tpr_rare": 0.0,
+        "auc": 0.6259493194977066
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.045977011494252915,
+        "r_time_rare": 0.0,
+        "p_m": 0.49079754601226994,
+        "p_c": 0.4662576687116564,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.07692307692307693
+      },
+      "aia_per_target": {
+        "0": 0.032113576724775515
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.07692307692307693,
+      "aia_power": 0.032113576724775515,
+      "attack_power": 0.10903665364785245,
+      "mia_all": 0.07692307692307693,
+      "mia_rare": 0.0,
+      "aia_all": 0.045977011494252915,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.07692307692307693,
+          "tpr_rare": 0.0,
+          "auc": 0.6259493194977066
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.045977011494252915,
+          "r_time_rare": 0.0,
+          "p_m": 0.49079754601226994,
+          "p_c": 0.4662576687116564,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.07692307692307693
+        },
+        "aia_per_target": {
+          "0": 0.032113576724775515
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.045977011494252915,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.019090011494252913,
+      "attack_power": 0.09601308841732983,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R7",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.11987782397178133,
+    "score_2": 0.07692307692307693,
+    "score_3": 0.0,
+    "score_4": 0.0568181818181818,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.07692307692307693,
+    "aia_power": 0.0429547470487044,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.07692307692307693,
+        "tpr_rare": 0.0,
+        "auc": 0.6542221219640575
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0568181818181818,
+        "r_time_rare": 0.0,
+        "p_m": 0.49079754601226994,
+        "p_c": 0.4601226993865031,
+        "p_m_rare": 0.23076923076923078,
+        "p_c_rare": 0.15384615384615385
+      },
+      "aia_per_target": {
+        "0": 0.0429547470487044
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.07692307692307693,
+      "aia_power": 0.0429547470487044,
+      "attack_power": 0.11987782397178133,
+      "mia_all": 0.07692307692307693,
+      "mia_rare": 0.0,
+      "aia_all": 0.0568181818181818,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.07692307692307693,
+          "tpr_rare": 0.0,
+          "auc": 0.6542221219640575
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0568181818181818,
+          "r_time_rare": 0.0,
+          "p_m": 0.49079754601226994,
+          "p_c": 0.4601226993865031,
+          "p_m_rare": 0.23076923076923078,
+          "p_c_rare": 0.15384615384615385
+        },
+        "aia_per_target": {
+          "0": 0.0429547470487044
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0568181818181818,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0299311818181818,
+      "attack_power": 0.10685425874125873,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R9",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.10851418760814494,
+    "score_2": 0.07692307692307693,
+    "score_3": 0.0,
+    "score_4": 0.0454545454545454,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.07692307692307693,
+    "aia_power": 0.031591110685068,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.07692307692307693,
+        "tpr_rare": 0.0,
+        "auc": 0.6541657267463721
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0454545454545454,
+        "r_time_rare": 0.0,
+        "p_m": 0.48466257668711654,
+        "p_c": 0.4601226993865031,
+        "p_m_rare": 0.23076923076923078,
+        "p_c_rare": 0.15384615384615385
+      },
+      "aia_per_target": {
+        "0": 0.031591110685068
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.07692307692307693,
+      "aia_power": 0.031591110685068,
+      "attack_power": 0.10851418760814494,
+      "mia_all": 0.07692307692307693,
+      "mia_rare": 0.0,
+      "aia_all": 0.0454545454545454,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.07692307692307693,
+          "tpr_rare": 0.0,
+          "auc": 0.6541657267463721
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0454545454545454,
+          "r_time_rare": 0.0,
+          "p_m": 0.48466257668711654,
+          "p_c": 0.4601226993865031,
+          "p_m_rare": 0.23076923076923078,
+          "p_c_rare": 0.15384615384615385
+        },
+        "aia_per_target": {
+          "0": 0.031591110685068
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0454545454545454,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0185675454545454,
+      "attack_power": 0.09549062237762232,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R10",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.1336478774477172,
+    "score_2": 0.07692307692307693,
+    "score_3": 0.0,
+    "score_4": 0.07058823529411767,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.07692307692307693,
+    "aia_power": 0.056724800524640275,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.07692307692307693,
+        "tpr_rare": 0.0,
+        "auc": 0.6564779306714792
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.07058823529411767,
+        "r_time_rare": 0.0,
+        "p_m": 0.5153374233128835,
+        "p_c": 0.4785276073619632,
+        "p_m_rare": 0.3076923076923077,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.056724800524640275
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.07692307692307693,
+      "aia_power": 0.056724800524640275,
+      "attack_power": 0.1336478774477172,
+      "mia_all": 0.07692307692307693,
+      "mia_rare": 0.0,
+      "aia_all": 0.07058823529411767,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.07692307692307693,
+          "tpr_rare": 0.0,
+          "auc": 0.6564779306714792
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.07058823529411767,
+          "r_time_rare": 0.0,
+          "p_m": 0.5153374233128835,
+          "p_c": 0.4785276073619632,
+          "p_m_rare": 0.3076923076923077,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.056724800524640275
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.07058823529411767,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.04370123529411767,
+      "attack_power": 0.12062431221719461,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R11",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.156082897967553,
+    "score_2": 0.07692307692307693,
+    "score_3": 0.0,
+    "score_4": 0.09302325581395347,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.07692307692307693,
+    "aia_power": 0.07915982104447608,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.07692307692307693,
+        "tpr_rare": 0.0,
+        "auc": 0.6562711482066321
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.09302325581395347,
+        "r_time_rare": 0.0,
+        "p_m": 0.5214723926380368,
+        "p_c": 0.4723926380368098,
+        "p_m_rare": 0.23076923076923078,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.07915982104447608
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.07692307692307693,
+      "aia_power": 0.07915982104447608,
+      "attack_power": 0.156082897967553,
+      "mia_all": 0.07692307692307693,
+      "mia_rare": 0.0,
+      "aia_all": 0.09302325581395347,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.07692307692307693,
+          "tpr_rare": 0.0,
+          "auc": 0.6562711482066321
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.09302325581395347,
+          "r_time_rare": 0.0,
+          "p_m": 0.5214723926380368,
+          "p_c": 0.4723926380368098,
+          "p_m_rare": 0.23076923076923078,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.07915982104447608
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.09302325581395347,
+    "phi_mock": 0.013863434769477479,
+    "floor_estimate": {
+      "phi": 0.013863434769477479,
+      "sd": 0.0361218055313318,
+      "se": 0.0011422717867667713,
+      "repetitions": 1000,
+      "seed": 2027100815,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2363636363636366,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "8245fab9c00dc00f0034e75a3eac052b76fc2a4c31e928c804847abc22048a1c",
+        "public/aia_challenge_0.csv": "23e060fa677d8fddd462e746acd0a41348bb0c6e568552db49fa9fdaf62408d3",
+        "private/aia_truth.csv": "eefd92be4281ab6c185a692bca77dbe8cd931f442652f8b1ba1e01332c6acd5b",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.06613625581395347,
+      "attack_power": 0.1430593327370304,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 1,
+      "mia_rare_negative": 23,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_002",
+    "release": "R12",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.5093804045416948
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.48466257668711654,
+        "p_c": 0.588957055214724,
+        "p_m_rare": 0.46153846153846156,
+        "p_c_rare": 0.38461538461538464
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.5093804045416948
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.48466257668711654,
+          "p_c": 0.588957055214724,
+          "p_m_rare": 0.46153846153846156,
+          "p_c_rare": 0.38461538461538464
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "M1_v5",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.1668662931724335,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.1724137931034485,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.1668662931724335,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.476614783066396
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.1724137931034485,
+        "r_time_rare": 0.0,
+        "p_m": 0.7055214723926381,
+        "p_c": 0.6441717791411042,
+        "p_m_rare": 0.38461538461538464,
+        "p_c_rare": 0.5384615384615384
+      },
+      "aia_per_target": {
+        "0": 0.1668662931724335
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.1668662931724335,
+      "attack_power": 0.1668662931724335,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.1724137931034485,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.476614783066396
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.1724137931034485,
+          "r_time_rare": 0.0,
+          "p_m": 0.7055214723926381,
+          "p_c": 0.6441717791411042,
+          "p_m_rare": 0.38461538461538464,
+          "p_c_rare": 0.5384615384615384
+        },
+        "aia_per_target": {
+          "0": 0.1668662931724335
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.1724137931034485,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.14552679310344852,
+      "attack_power": 0.14552679310344852,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "S1",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.06674165669549094,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.07228915662650594,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.06674165669549094,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.4769907511842996
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.07228915662650594,
+        "r_time_rare": 0.0,
+        "p_m": 0.5276073619631901,
+        "p_c": 0.49079754601226994,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.15384615384615385
+      },
+      "aia_per_target": {
+        "0": 0.06674165669549094
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.06674165669549094,
+      "attack_power": 0.06674165669549094,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.07228915662650594,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.4769907511842996
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.07228915662650594,
+          "r_time_rare": 0.0,
+          "p_m": 0.5276073619631901,
+          "p_c": 0.49079754601226994,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.15384615384615385
+        },
+        "aia_per_target": {
+          "0": 0.06674165669549094
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.07228915662650594,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.045402156626505936,
+      "attack_power": 0.045402156626505936,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R1",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.006952500068985153,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.012500000000000153,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.006952500068985153,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.4602037747199038
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.012500000000000153,
+        "r_time_rare": 0.0,
+        "p_m": 0.5153374233128835,
+        "p_c": 0.50920245398773,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.07692307692307693
+      },
+      "aia_per_target": {
+        "0": 0.006952500068985153
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.006952500068985153,
+      "attack_power": 0.006952500068985153,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.012500000000000153,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.4602037747199038
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.012500000000000153,
+          "r_time_rare": 0.0,
+          "p_m": 0.5153374233128835,
+          "p_c": 0.50920245398773,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.07692307692307693
+        },
+        "aia_per_target": {
+          "0": 0.006952500068985153
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.012500000000000153,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R3",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.4606737348672833
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.4662576687116564,
+        "p_c": 0.50920245398773,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.15384615384615385
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.4606737348672833
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.4662576687116564,
+          "p_c": 0.50920245398773,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.15384615384615385
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R4",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.1677454992046807,
+    "score_2": 0.038461538461538464,
+    "score_3": 0.0,
+    "score_4": 0.13483146067415724,
+    "score_5": 0.06000000000000004,
+    "score_6": null,
+    "mia_power": 0.038461538461538464,
+    "aia_power": 0.12928396074314225,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.038461538461538464,
+        "tpr_rare": 0.0,
+        "auc": 0.4765019926310249
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.13483146067415724,
+        "r_time_rare": 0.06000000000000004,
+        "p_m": 0.5276073619631901,
+        "p_c": 0.4539877300613497,
+        "p_m_rare": 0.38461538461538464,
+        "p_c_rare": 0.07692307692307693
+      },
+      "aia_per_target": {
+        "0": 0.12928396074314225
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.038461538461538464,
+      "aia_power": 0.12928396074314225,
+      "attack_power": 0.1677454992046807,
+      "mia_all": 0.038461538461538464,
+      "mia_rare": 0.0,
+      "aia_all": 0.13483146067415724,
+      "aia_rare": 0.06000000000000004,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.038461538461538464,
+          "tpr_rare": 0.0,
+          "auc": 0.4765019926310249
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.13483146067415724,
+          "r_time_rare": 0.06000000000000004,
+          "p_m": 0.5276073619631901,
+          "p_c": 0.4539877300613497,
+          "p_m_rare": 0.38461538461538464,
+          "p_c_rare": 0.07692307692307693
+        },
+        "aia_per_target": {
+          "0": 0.12928396074314225
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.13483146067415724,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.10794446067415725,
+      "attack_power": 0.1464059991356957,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R5",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.46227159936837364
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.48466257668711654,
+        "p_c": 0.49693251533742333,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.07692307692307693
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.46227159936837364
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.48466257668711654,
+          "p_c": 0.49693251533742333,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.07692307692307693
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R6",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.017441005816111507,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.02298850574712651,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.017441005816111507,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.4502030227836679
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.02298850574712651,
+        "r_time_rare": 0.0,
+        "p_m": 0.4785276073619632,
+        "p_c": 0.4662576687116564,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.07692307692307693
+      },
+      "aia_per_target": {
+        "0": 0.017441005816111507
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.017441005816111507,
+      "attack_power": 0.017441005816111507,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.02298850574712651,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.4502030227836679
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.02298850574712651,
+          "r_time_rare": 0.0,
+          "p_m": 0.4785276073619632,
+          "p_c": 0.4662576687116564,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.07692307692307693
+        },
+        "aia_per_target": {
+          "0": 0.017441005816111507
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.02298850574712651,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R7",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.44082261824197305
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.4785276073619632,
+        "p_c": 0.49079754601226994,
+        "p_m_rare": 0.23076923076923078,
+        "p_c_rare": 0.07692307692307693
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.44082261824197305
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.4785276073619632,
+          "p_c": 0.49079754601226994,
+          "p_m_rare": 0.23076923076923078,
+          "p_c_rare": 0.07692307692307693
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R9",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.4707308820212046
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.4662576687116564,
+        "p_c": 0.49079754601226994,
+        "p_m_rare": 0.15384615384615385,
+        "p_c_rare": 0.15384615384615385
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.4707308820212046
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.4662576687116564,
+          "p_c": 0.49079754601226994,
+          "p_m_rare": 0.15384615384615385,
+          "p_c_rare": 0.15384615384615385
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R10",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.46127528385592903
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.4662576687116564,
+        "p_c": 0.5153374233128835,
+        "p_m_rare": 0.23076923076923078,
+        "p_c_rare": 0.23076923076923078
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.46127528385592903
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.4662576687116564,
+          "p_c": 0.5153374233128835,
+          "p_m_rare": 0.23076923076923078,
+          "p_c_rare": 0.23076923076923078
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R11",
+    "phase": "development"
+  },
+  {
+    "score_1": 0.0,
+    "score_2": 0.0,
+    "score_3": 0.0,
+    "score_4": 0.0,
+    "score_5": 0.0,
+    "score_6": null,
+    "mia_power": 0.0,
+    "aia_power": 0.0,
+    "breakdown": {
+      "mia": {
+        "tpr_at_low_fpr": 0.0,
+        "tpr_rare": 0.0,
+        "auc": 0.4405970373712309
+      },
+      "mia_per_target": {
+        "0": 1
+      },
+      "aia": {
+        "r_time_all": 0.0,
+        "r_time_rare": 0.0,
+        "p_m": 0.4785276073619632,
+        "p_c": 0.50920245398773,
+        "p_m_rare": 0.3076923076923077,
+        "p_c_rare": 0.15384615384615385
+      },
+      "aia_per_target": {
+        "0": 0.0
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    "official_result": {
+      "mia_power": 0.0,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "mia_all": 0.0,
+      "mia_rare": 0.0,
+      "aia_all": 0.0,
+      "aia_rare": 0.0,
+      "_breakdown": {
+        "mia": {
+          "tpr_at_low_fpr": 0.0,
+          "tpr_rare": 0.0,
+          "auc": 0.4405970373712309
+        },
+        "mia_per_target": {
+          "0": 1
+        },
+        "aia": {
+          "r_time_all": 0.0,
+          "r_time_rare": 0.0,
+          "p_m": 0.4785276073619632,
+          "p_c": 0.50920245398773,
+          "p_m_rare": 0.3076923076923077,
+          "p_c_rare": 0.15384615384615385
+        },
+        "aia_per_target": {
+          "0": 0.0
+        },
+        "constants": {
+          "low_fpr": 0.01,
+          "tau_time": 0.5,
+          "aia_rare_se_z": 1.64,
+          "mia_band_edges": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    "aia_before_floor": 0.0,
+    "phi_mock": 0.005547499931015077,
+    "floor_estimate": {
+      "phi": 0.005547499931015077,
+      "sd": 0.023028812342590844,
+      "se": 0.0007282349881118487,
+      "repetitions": 1000,
+      "seed": 2027100816,
+      "sample_rows": 1049,
+      "method": "mock_TS_background_reference_1049_without_replacement_v1",
+      "minimum": 0.0,
+      "maximum": 0.2222222222222223,
+      "reference_rulebook_repetitions": 1000,
+      "diagnostic_reduced_repetitions": false,
+      "mock_truth_only": true,
+      "official_hidden_floors_known": false,
+      "input_sha256": {
+        "public/A_bg.csv": "9978564259c6408f54af2447adcf76bacd9df3b67bfd7a7eea8035404fbd6472",
+        "public/aia_challenge_0.csv": "f33a19e5dcc8b2f10392e3bc6536152110909c546c739a10abdff621d5952838",
+        "private/aia_truth.csv": "21180d33e81db9ceb0c7a7cf43c961a69080faf4a71f6e9e9aaaadf58158f00d",
+        "official_config": "a58e59290787fdbaf7b07306019bb986aa89f10551133b1dc3970be35e3886c7"
+      },
+      "draw_statistic": "official score_aia: max(all, rare after SE deadzone)",
+      "limitation": "Monte Carlo SE excludes population and synthetic-control mismatch."
+    },
+    "provided_phi10_sensitivity": {
+      "phi": 0.026887,
+      "aia_power": 0.0,
+      "attack_power": 0.0,
+      "label": "Reference sensitivity only; supplied phi does not belong to these mock questions"
+    },
+    "denominators": {
+      "mia_positive": 26,
+      "mia_negative": 1023,
+      "mia_rare_positive": 2,
+      "mia_rare_negative": 22,
+      "mia_rare_defined": true,
+      "aia_member": 163,
+      "aia_control": 163,
+      "aia_rare_member": 13,
+      "aia_rare_control": 13
+    },
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 326,
+      "target_count": 1
+    },
+    "official_score_prediction": false,
+    "score_6_reason": "Mock releases are alternative versions of the same B; no official final ranking score.",
+    "attack": "pl2",
+    "case_id": "case_003",
+    "release": "R12",
+    "phase": "development"
+  }
+]

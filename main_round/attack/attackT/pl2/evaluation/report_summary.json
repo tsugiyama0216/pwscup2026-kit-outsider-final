@@ -1,0 +1,154 @@
+{
+  "selection": {
+    "model": "pl2",
+    "mia_blend": [
+      "Tv101",
+      "Tv104",
+      0.5
+    ],
+    "aia_anchor": "Tv101",
+    "development_mia": 0.025641025641025644,
+    "development_aia": 0.0347306089213079,
+    "source_hashes": {
+      "experiment.py": "11b359b419b2902989f67476b4e680535cee8bff82e3212f55687b3cfee2799f",
+      "model.py": "a6fcceab223f171b35bdf00e4dc727a838db57ad30cedd1838775ea4be20f73a",
+      "plugin.py": "26599f5f6da396516068bcf4508d0c8a08b40dfcfc10d878e3f0795776bd0c2e",
+      "protocol.json": "03478a4a8313a8efe8d405cecdfbe2d02166a669824b9088929fb7ad6eb59209",
+      "runtime.py": "a7da176fd1ac1ef1586a3af2560819362a8b1153e19ac0bffe70dd3ea0a0ced8",
+      "synthesis.py": "4d35430068e875614be8d182c53fb031c0524314509660afb713332e4096cf5e",
+      "test_model.py": "742ac2f20797ab2b4b881a87eb2f15940bb49bf724adf14695efc8fb84abfbc8",
+      "worker.py": "f4257c8a797dd3c084e559e5473099f95d01efb2935334ba14454666a79c3e19"
+    },
+    "confirmation_used": false,
+    "rule": "pl2 is newly synthesized, not a renamed Tv candidate. On development only, choose MIA rank blend from all 6 Tv pairs with weights .25/.5/.75 (18 candidates) and choose AIA weighted +/-0.5-year window consensus across all four Tv outputs with each of four possible double-weight anchors. Score components with official mock_TS code. Freeze chosen blend/consensus and hashes before confirmation; no reselection. Ties use enumeration order. Rv2/Rv4 are comparators only. Report any degradation explicitly."
+  },
+  "paired": [
+    {
+      "phase": "confirmation",
+      "baseline": "Rv2",
+      "mean_delta": 0.02136752136752138,
+      "wins": 11,
+      "ties": 18,
+      "losses": 7,
+      "worst_delta": -0.07692307692307689
+    },
+    {
+      "phase": "confirmation",
+      "baseline": "Rv4",
+      "mean_delta": 0.02136752136752138,
+      "wins": 11,
+      "ties": 18,
+      "losses": 7,
+      "worst_delta": -0.07692307692307689
+    },
+    {
+      "phase": "confirmation",
+      "baseline": "Tv101",
+      "mean_delta": -0.0010683760683760568,
+      "wins": 5,
+      "ties": 25,
+      "losses": 6,
+      "worst_delta": -0.5
+    },
+    {
+      "phase": "confirmation",
+      "baseline": "Tv102",
+      "mean_delta": 0.029553062618640134,
+      "wins": 16,
+      "ties": 15,
+      "losses": 5,
+      "worst_delta": -0.0574712643678163
+    },
+    {
+      "phase": "confirmation",
+      "baseline": "Tv103",
+      "mean_delta": 0.02136752136752138,
+      "wins": 11,
+      "ties": 17,
+      "losses": 8,
+      "worst_delta": -0.0384615384615385
+    },
+    {
+      "phase": "confirmation",
+      "baseline": "Tv104",
+      "mean_delta": 0.017818403860532447,
+      "wins": 15,
+      "ties": 15,
+      "losses": 6,
+      "worst_delta": -0.0574712643678163
+    },
+    {
+      "phase": "development",
+      "baseline": "Rv2",
+      "mean_delta": 0.016025641025641024,
+      "wins": 14,
+      "ties": 16,
+      "losses": 6,
+      "worst_delta": -0.0769230769230769
+    },
+    {
+      "phase": "development",
+      "baseline": "Rv4",
+      "mean_delta": 0.016025641025641024,
+      "wins": 14,
+      "ties": 16,
+      "losses": 6,
+      "worst_delta": -0.0769230769230769
+    },
+    {
+      "phase": "development",
+      "baseline": "Tv101",
+      "mean_delta": 0.006410256410256411,
+      "wins": 14,
+      "ties": 15,
+      "losses": 7,
+      "worst_delta": -0.0769230769230769
+    },
+    {
+      "phase": "development",
+      "baseline": "Tv102",
+      "mean_delta": 0.045649332168700325,
+      "wins": 22,
+      "ties": 12,
+      "losses": 2,
+      "worst_delta": -0.0384615384615385
+    },
+    {
+      "phase": "development",
+      "baseline": "Tv103",
+      "mean_delta": 0.009615384615384625,
+      "wins": 7,
+      "ties": 24,
+      "losses": 5,
+      "worst_delta": -0.0384615384615385
+    },
+    {
+      "phase": "development",
+      "baseline": "Tv104",
+      "mean_delta": 0.0345005859135585,
+      "wins": 22,
+      "ties": 11,
+      "losses": 3,
+      "worst_delta": -0.041708291708291594
+    }
+  ],
+  "routing_summary": {
+    "T88_unknown": {
+      "confirmation": 0.5555555555555556,
+      "development": 0.5555555555555556
+    },
+    "Tv101_unknown": {
+      "confirmation": 1.0,
+      "development": 1.0
+    },
+    "Tv101_validation_accuracy": {
+      "confirmation": 0.8571428571428571,
+      "development": 0.9047619047619047
+    },
+    "leave_family_out_unknown_recall": {
+      "confirmation": 0.8888888888888888,
+      "development": 0.9206349206349205
+    }
+  },
+  "note": "各段階は同じ12加工データ×3問題、36条件。AIA補正φは問題ごとに1,000回推定し全モデルで共有。mockTSの単一対象診断であり、22対象共同評価でも公式点の予測でもありません。既使用人物・既存Tの学習履歴・代理希少ラベル・合成対照への依存が残ります。確認結果による再選択なし。"
+}

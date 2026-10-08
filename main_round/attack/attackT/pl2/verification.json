@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "six_model_scored_predictions": 432,
+  "pl2_scored_predictions": 72,
+  "fresh_case_release_processes": 72,
+  "unique_pids": 72,
+  "forbidden_data_reads": 0,
+  "frozen_dependencies_preserved": 219,
+  "rv4_sources_preserved": true,
+  "selection_sha256": "17018ec0d91ff7917e47df314ab19eac0db31ba67c1a925cbedd1a17b7515182",
+  "new_numerical_tests_passed": 6,
+  "mock_TS_tests_passed": 23,
+  "generation_tests_retried_for_temp_directory_permission": true,
+  "confirmation_reselection": false,
+  "official_submission": false,
+  "official_score_prediction": false,
+  "limitations": [
+    "Same finite people and fixed releases reused; new seeds are not new populations",
+    "Frozen T88 components retain historical training exposure and do not satisfy fresh-background-only training",
+    "Synthetic AIA controls and proxy rare labels",
+    "No official score prediction or official contest submission"
+  ]
+}
