@@ -1,4 +1,4 @@
-"""Create non-credential, actual team10 CSVs from frozen pl2."""
+"""Create non-credential, actual team10 CSVs from frozen Tv105."""
 import os,sys,argparse,json
 from pathlib import Path
 for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','NUMEXPR_NUM_THREADS'):os.environ[key]='1'
@@ -11,7 +11,7 @@ from plugin import predict
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);a=p.parse_args()
     out=a.output.resolve()
-    if not out.is_relative_to(HERE) or out.exists():raise ValueError('Choose a new directory under pl2')
+    if not out.is_relative_to(HERE) or out.exists():raise ValueError('Choose a new directory under Tv105')
     if not (HERE/'evaluation/confirmation/comparison_summary.csv').exists():raise ValueError('Complete frozen confirmation first')
     rt.dependencies()
     common=rt.load('_pl2_actual',rt.ATTACK/'Attack_R/v1/common.py')
@@ -26,7 +26,7 @@ def main():
         ans=predict(c=cs[k],background=bg,candidates=b,challenge=qs[k],cfg=cfg)
         ans['mia'][mask]=0;mia[str(k)]=ans['mia']
         aia.append(pd.DataFrame({'target_k':k,'challenge_row_id':qs[k].challenge_row_id,'time_hat':ans['aia']}))
-        print('pl2 actual target',k,'complete',flush=True)
+        print('Tv105 actual target',k,'complete',flush=True)
     aia=pd.concat(aia,ignore_index=True)
     valid=w.validate_frames(np,pd,validator,mia,aia,cfg,dist)
     out.mkdir(parents=True)

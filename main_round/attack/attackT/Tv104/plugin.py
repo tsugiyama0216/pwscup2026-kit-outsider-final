@@ -1,6 +1,6 @@
 from pathlib import Path
 import sys,json
-P=Path(__file__).resolve().parents[1]/'pl2';sys.path.insert(0,str(P))
+P=Path(__file__).resolve().parents[1]/'Tv105';sys.path.insert(0,str(P))
 import runtime as rt
 from model import predict_all
 def predict(*,c,background,candidates,challenge,cfg):
