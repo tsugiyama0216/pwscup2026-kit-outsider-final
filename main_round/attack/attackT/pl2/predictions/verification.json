@@ -1,0 +1,33 @@
+{
+  "validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "readback_validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "known_negative_proof": {
+    "exact_private_rows": 163,
+    "remaining_unknown_rows": 886,
+    "private_true_rare": 13,
+    "private_onset": 16,
+    "private_rare_onset": 4,
+    "private_death": 12,
+    "comparison": "Exact decimal public-QI equality; unique matches; no tolerance",
+    "deduction": "All 163 self members are private by the contest definition; exactly 163 unique B matches exhaust them.",
+    "limitations": "Other 886 rows remain unknown. This selected negative set does not estimate population FPR."
+  },
+  "selection_sha256": "17018ec0d91ff7917e47df314ab19eac0db31ba67c1a925cbedd1a17b7515182",
+  "sha256": {
+    "F_mia.csv": "9b5346d02880f707605e2d5974b6d48bc204e85eb706f04c3a2364908721406f",
+    "F_aia.csv": "85dd1a4a69bb21d361f278e8b78b3dcbf8b24db4157de79ecfb6b4a2c5762db4"
+  },
+  "zip_created": false,
+  "official_submission": false,
+  "official_score_measured": false
+}
