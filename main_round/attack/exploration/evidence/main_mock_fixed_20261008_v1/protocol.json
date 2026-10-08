@@ -1,0 +1,446 @@
+{
+  "created_utc": "2026-10-08T02:40:50.585591+00:00",
+  "worlds": [
+    {
+      "id": "mixed_holdout_2026100801",
+      "profile": "mixed",
+      "split": "holdout",
+      "seed": 2026100801,
+      "floor_seed": 2027100804
+    },
+    {
+      "id": "stress_holdout_2026100801",
+      "profile": "stress",
+      "split": "holdout",
+      "seed": 2026100801,
+      "floor_seed": 2027100804
+    },
+    {
+      "id": "mixed_holdout_2026100802",
+      "profile": "mixed",
+      "split": "holdout",
+      "seed": 2026100802,
+      "floor_seed": 2027100805
+    },
+    {
+      "id": "stress_holdout_2026100802",
+      "profile": "stress",
+      "split": "holdout",
+      "seed": 2026100802,
+      "floor_seed": 2027100805
+    }
+  ],
+  "methods": [
+    "baseline",
+    "explore_1_distance",
+    "explore_2_density",
+    "explore_3_gen_lra",
+    "explore_4_predictor"
+  ],
+  "floor_repetitions": 1000,
+  "source_sha256": {
+    "explore_1_distance/config.json": "78defc7efa5cb5a6ccbf1419533170e42bacc80548e8de67fb92128a6ddd60b3",
+    "explore_1_distance/plugin.py": "691c87a26cae2cb6713bc4a6a061fb9ab5e5fc70c78f303419c90dc998722f46",
+    "explore_2_density/config.json": "570b218f35825d26a7f84719f2d5866bbae00eafa134bba02cee3c9270781f75",
+    "explore_2_density/plugin.py": "4baabfc819231b38c00c2245580d6ada361bbde5ce220f272af5f80e12ff5cd7",
+    "explore_3_gen_lra/__init__.py": "c7734b02c00ac63fa87c6373ced52bc3733f2cd47e73e0c1b0cfa69ab8dad384",
+    "explore_3_gen_lra/config.json": "b53b96fab55074473c04be42535c1335e4f610a71a632b10bc416a8b49589f58",
+    "explore_3_gen_lra/model.py": "4952d1135003cb4a965bef529d4493306dba6d4dc65987e88365eadb7cd65d6d",
+    "explore_3_gen_lra/plugin.py": "6bc79e19effd239799c60a56b49aecdad3e0b58738f97199b159c9534db7aed8",
+    "explore_3_gen_lra/tests/test_model.py": "8168e57309542bf1578db956842517a9d391e48b82a6f98f01284528d101444d",
+    "explore_4_predictor/config.json": "25987d056eda00b3c3d3488d8858a44a020c79de9cbe42c5d4a14c3d259c74d0",
+    "explore_4_predictor/plugin.py": "7545c1226b361468c72ccfbea97982e5174fdebf96dcc58cc3d1fbe34eeabe11",
+    "explore_4_predictor/tests/test_plugin.py": "a057b4a2b6cc3c86dd861e0ea72bdf10dc46701135e35c515e7076feebfc0ea8",
+    "explore_common/__init__.py": "20abbd66a016473d04943acd4fed21d8eaf7f591fc31eb07d878b79765f8dc3e",
+    "explore_common/core.py": "55acb7863fadedd15fccd878715ffeeda10cc58bcbd1498a3b08a3b5b5569c45",
+    "explore_common/test_core.py": "7b3f63f62202c09719baf8d1c3654611322b0563a5b20ee5519981c3af93cff7",
+    "main_mock/official_baseline.py": "cc2c38b0f0c2c68c85cfbe5c0968093f729768aaba4dcf792ac103be01dfcfe7",
+    "main_mock/worker.py": "0e5f1dd06e3922c8fc282363244c59905d5136648bca5e37095bb4580112e63f",
+    "run_main_mock.py": "1567318a89667b28448bc46cdabb940e0db76d78cf9b8893a033e5cfc0f76017"
+  },
+  "evaluator_sha256": {
+    "main_round/mock_test/sugiyama_v2/__init__.py": "36a841ace95bb3e18645b97133980911dfb29f2c832d051ef782f6a4106979a1",
+    "main_round/mock_test/sugiyama_v2/__main__.py": "6066e05f68e62b6285f6a0495dc804667320680bc1ecd4994976fdf60caa2bb0",
+    "main_round/mock_test/sugiyama_v2/generate.py": "8c8a629edc04c85a06fd45d1702d76fa9037eef12e64bc97a046673d6adcf34b",
+    "main_round/mock_test/sugiyama_v2/io.py": "070430a76ad9f9ed89c506d26987541e22b4e8136a51fb32aeac51d717de9148",
+    "main_round/mock_test/sugiyama_v2/releases.py": "ce03aaa44a3afee71eede6dd29d2ae71a1dee918c5651e0eac1885450d80ceed",
+    "main_round/mock_test/sugiyama_v2/runner.py": "971816d56f2d7c11e3af32ac23f67a9ae67fe31b2737acd84bbed03cddd003c1",
+    "main_round/mock_test/sugiyama_v2/scoring.py": "0697f19ba2cc7787a3806978007334a693da7b47b0b74ae571112ba77d219992"
+  },
+  "donor_sha256": {
+    "B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+  },
+  "official_sources": {
+    "manifest": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-current\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "runtime_versions": {
+    "autograd": "1.9.0",
+    "autograd-gamma": "0.5.0",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "formulaic": "1.2.2",
+    "interface-meta": "2.0.1",
+    "joblib": "1.5.3",
+    "kiwisolver": "1.5.0",
+    "lifelines": "0.30.3",
+    "matplotlib": "3.11.0",
+    "narwhals": "2.23.0",
+    "numpy": "2.4.6",
+    "packaging": "26.2",
+    "pandas": "2.3.3",
+    "patsy": "1.0.2",
+    "pillow": "12.3.0",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.2",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "six": "1.17.0",
+    "statsmodels": "0.14.6",
+    "threadpoolctl": "3.6.0",
+    "typing-extensions": "4.15.0",
+    "tzdata": "2026.2",
+    "wrapt": "2.2.2"
+  },
+  "cfg": {
+    "aia": {
+      "tau_time": 0.5,
+      "qi_continuous": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      "block_keys": [
+        "sex",
+        "prefecture"
+      ],
+      "k_nn_onset": 5
+    },
+    "attack": {
+      "mia_density_estimator": "kde"
+    },
+    "onset": {
+      "horizon_years": 10.0
+    },
+    "population": {
+      "age_range": [
+        40,
+        74
+      ]
+    },
+    "schema": {
+      "ranges": {
+        "ALT": [
+          0.1,
+          700.0
+        ],
+        "BMI": [
+          10.0,
+          55.0
+        ],
+        "FPG": [
+          40.0,
+          400.0
+        ],
+        "HDL": [
+          10.0,
+          160.0
+        ],
+        "SBP": [
+          40.0,
+          250.0
+        ],
+        "TG": [
+          1.0,
+          3000.0
+        ]
+      }
+    },
+    "scoring": {
+      "aia_rare_se_z": 1.64,
+      "anonymity_facets": [
+        "mia",
+        "aia"
+      ],
+      "km_tau_years": 10.0,
+      "low_fpr": 0.01,
+      "mia_fold_K": 12,
+      "rmst_tau_years": 5.0,
+      "round_weights": {
+        "final": 0.9,
+        "prelim": 0.1
+      },
+      "u_gen": {
+        "tail": {
+          "enabled": true,
+          "floor_sd": {
+            "ALT_q0.1": 0.220869,
+            "ALT_q1": 0.210292,
+            "ALT_q5": 0.290767,
+            "ALT_q95": 4.34779,
+            "ALT_q99": 10.3073,
+            "ALT_q99.9": 32.6288,
+            "BMI_q0.1": 0.776767,
+            "BMI_q1": 0.682569,
+            "BMI_q5": 0.402778,
+            "BMI_q95": 0.415386,
+            "BMI_q99": 0.522764,
+            "BMI_q99.9": 1.4888,
+            "FPG_q0.1": 3.53362,
+            "FPG_q1": 1.33555,
+            "FPG_q5": 1.02516,
+            "FPG_q95": 1.26154,
+            "FPG_q99": 0.670097,
+            "FPG_q99.9": 0.26179,
+            "HDL_q0.1": 3.10918,
+            "HDL_q1": 1.48876,
+            "HDL_q5": 0.166002,
+            "HDL_q95": 0.895643,
+            "HDL_q99": 1.85015,
+            "HDL_q99.9": 2.16295,
+            "SBP_q0.1": 9.88755,
+            "SBP_q1": 3.16199,
+            "SBP_q5": 1.93559,
+            "SBP_q95": 1.7476,
+            "SBP_q99": 3.75378,
+            "SBP_q99.9": 6.46491,
+            "TG_q0.1": 2.04054,
+            "TG_q1": 1.93209,
+            "TG_q5": 1.89912,
+            "TG_q95": 16.1852,
+            "TG_q99": 41.511,
+            "TG_q99.9": 130.886,
+            "maha_q95": 0.161134,
+            "maha_q99": 0.563894,
+            "maha_q99.9": 1.82635
+          },
+          "iqr_guard": 0.05,
+          "ratio": {
+            "ALT_q0.1": 1.27939,
+            "ALT_q1": 1.0116,
+            "ALT_q5": 0.985701,
+            "ALT_q95": 1.01606,
+            "ALT_q99": 1.18393,
+            "ALT_q99.9": 0.886652,
+            "BMI_q0.1": 1.36512,
+            "BMI_q1": 1.0333,
+            "BMI_q5": 1.07909,
+            "BMI_q95": 0.748556,
+            "BMI_q99": 1.11703,
+            "BMI_q99.9": 0.782028,
+            "FPG_q0.1": 1.11229,
+            "FPG_q1": 1.61169,
+            "FPG_q5": 1.50827,
+            "FPG_q95": 0.675785,
+            "FPG_q99": 1.03633,
+            "FPG_q99.9": 1.39481,
+            "HDL_q0.1": 0.707434,
+            "HDL_q1": 0.979232,
+            "HDL_q5": 0.837766,
+            "HDL_q95": 1.1688,
+            "HDL_q99": 0.82863,
+            "HDL_q99.9": 1.47664,
+            "SBP_q0.1": 0.838015,
+            "SBP_q1": 0.862397,
+            "SBP_q5": 0.719767,
+            "SBP_q95": 0.87246,
+            "SBP_q99": 0.7633,
+            "SBP_q99.9": 0.905826,
+            "TG_q0.1": 1.01599,
+            "TG_q1": 0.850423,
+            "TG_q5": 0.837884,
+            "TG_q95": 0.92657,
+            "TG_q99": 1.18639,
+            "TG_q99.9": 0.917627,
+            "maha_q95": 1.03691,
+            "maha_q99": 1.03532,
+            "maha_q99.9": 0.972173
+          },
+          "ratio_max": 1.4,
+          "shift_deadzone_z": 3.0,
+          "shift_norm_dn": 0.3412,
+          "shift_norm_up": 0.3054,
+          "shift_scale": 5.0,
+          "spike_cap": 10.0,
+          "spike_scale": 0.5
+        }
+      },
+      "u_rare": {
+        "aggregate": "min",
+        "c2st": {
+          "min_rare_n": 8,
+          "n_estimators": 200
+        },
+        "markers": null,
+        "mass_se_z": 2.0,
+        "min_rare_n": 3
+      },
+      "u_time": {
+        "floor_nboot": 200,
+        "floor_pct": 95
+      },
+      "u_valid": {
+        "no_dup": {
+          "scale": 0.2,
+          "tol": 0.0
+        },
+        "no_fab": {
+          "scale": 0.5,
+          "tol": 0.08
+        },
+        "novel": {
+          "deadzone": 0.0534,
+          "features": null
+        }
+      }
+    },
+    "submission": {
+      "max_unzipped_mb": 100,
+      "max_zip_mb": 20,
+      "token_pattern": "^[A-Za-z0-9]{16,}$"
+    }
+  },
+  "workers": 2,
+  "configs": {
+    "explore_1_distance": {
+      "method": "ClosestDistanceMIA + closest-QI time AIA",
+      "mia_features": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      "categorical_blocks": [
+        "sex",
+        "prefecture"
+      ],
+      "fallback": [
+        "sex",
+        "all"
+      ],
+      "scale": "background standard deviation, ddof=1",
+      "distance": "root mean square standardized QI distance",
+      "mia_score": "negative nearest distance, transformed to tie-preserving midranks",
+      "aia": "nearest time; equal-distance nearest ties use sorted mean",
+      "uses_target_truth": false,
+      "tuned_on_prelim_truth": false
+    },
+    "explore_2_density": {
+      "method": "Official preliminary DOMIAS KDE + local time window",
+      "mia_features": [
+        "age",
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "mia": "unchanged pinned official overlap_mia",
+      "mia_bandwidth": "official scipy gaussian_kde default Scott",
+      "aia_continuous": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      "aia_blocks": [
+        "sex",
+        "prefecture"
+      ],
+      "aia_fallback": [
+        "sex",
+        "all"
+      ],
+      "aia_scale": "background standard deviation, ddof=1",
+      "aia_k": 10,
+      "aia_kth_ties": "include all",
+      "aia_tau": 0.5,
+      "aia_window_ties": "earliest window, midpoint of occupied endpoints",
+      "uses_target_truth": false,
+      "tuned_on_prelim_truth": false
+    },
+    "explore_3_gen_lra": {
+      "model_name": "explore_3_gen_lra_fixed_kernel_k10",
+      "version": 1,
+      "selection": "fixed_before_preliminary_evaluation",
+      "mia": {
+        "method": "fixed_kernel_Gen_LRA",
+        "features": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "reference": "supplied_background",
+        "k": 10,
+        "neighborhood": "Euclidean_after_reference_standardization",
+        "missing_values": "reference_column_median",
+        "standardization": "reference_mean_and_sample_std",
+        "covariance": "reference_sample_covariance_after_standardization",
+        "minimum_covariance_eigenvalue": 1e-06,
+        "bandwidth": "Silverman_factor_(m*(d+2)/4)^(-1/(d+4))",
+        "augmented_kde": "reuse_reference_covariance_and_bandwidth",
+        "raw_score": "log(sum_s softplus(log_K_H(s-x)-log(m*p_R(s))))",
+        "confidence": "explore_common.core.score_to_confidence",
+        "batch_size": 256,
+        "distance_tie_policy": "lexicographic_standardized_seven_features_fixed_k",
+        "numerical_variant": "monotone_log_positive_evidence_no_density_floor_no_subtractive_baseline"
+      },
+      "aia": {
+        "method": "explore_common.core.local_time_predictions",
+        "k": 10,
+        "mode": "window"
+      },
+      "reads": "supplied_public_tables_only",
+      "not_used": [
+        "target_truth",
+        "public_answer_archives",
+        "self_labels",
+        "self_challenge",
+        "self_release",
+        "utility_reference"
+      ]
+    },
+    "explore_4_predictor": {
+      "method": "time_cart_residual_difference",
+      "numeric_qi": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      "categorical_qi": [
+        "sex",
+        "prefecture"
+      ],
+      "tree": {
+        "max_depth": 6,
+        "min_samples_leaf": 10,
+        "random_state": 20261008
+      },
+      "horizon_years": 10.0,
+      "preprocessor_fit_source": "background_only",
+      "mia_raw_score": "abs(f_bg(QI)-time)-abs(f_C(QI)-time)",
+      "mia_confidence_transform": "explore_common.core.score_to_confidence",
+      "aia_prediction": "f_C(QI)"
+    }
+  },
+  "selection": "Same attack settings as prelim; worlds fixed before main mock scores; no tuning",
+  "aggregation": "equal weight across four worlds, official equal weight across 22 targets each",
+  "official_score_prediction": false
+}

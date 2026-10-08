@@ -1,0 +1,349 @@
+{
+  "mia_power": 0.05972027972027973,
+  "aia_power": 0.019486756558169935,
+  "attack_power": 0.07920703627844966,
+  "mia_all": 0.016013986013986015,
+  "mia_rare": 0.1111111111111111,
+  "aia_all": 0.03276605164477016,
+  "aia_rare": 0.0,
+  "_breakdown": {
+    "mia": {
+      "tpr_at_low_fpr": 0.016013986013986015,
+      "tpr_rare": 0.1111111111111111,
+      "auc": 0.5573121327635281
+    },
+    "mia_per_target": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "22": 1,
+      "25": 1,
+      "26": 1,
+      "27": 1,
+      "28": 1
+    },
+    "aia": {
+      "r_time_all": 0.03276605164477016,
+      "r_time_rare": 0.0,
+      "p_m": 0.818739542665923,
+      "p_c": 0.8237590630228667,
+      "p_m_rare": 0.6783216783216782,
+      "p_c_rare": 0.7027972027972026
+    },
+    "aia_per_target": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.050418766381655204,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "11": 0.1316708706949265,
+      "12": 0.1325503487164622,
+      "13": 0.0,
+      "14": 0.035105786751618774,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "22": 0.0,
+      "25": 0.0,
+      "26": 0.07896287173507593,
+      "27": 0.0,
+      "28": 0.0
+    },
+    "constants": {
+      "low_fpr": 0.01,
+      "tau_time": 0.5,
+      "aia_rare_se_z": 1.64,
+      "mia_band_edges": [
+        0.25,
+        0.5,
+        0.75
+      ]
+    }
+  },
+  "leaderboard": {
+    "score_1": 0.07920703627844966,
+    "score_2": 0.016013986013986015,
+    "score_3": 0.1111111111111111,
+    "score_4": 0.03276605164477016,
+    "score_5": 0.0
+  },
+  "pre_floor": {
+    "attack_power": 0.09248633136504988,
+    "mia_all": 0.016013986013986015,
+    "mia_rare": 0.1111111111111111,
+    "aia_all": 0.03276605164477016,
+    "aia_rare": 0.0,
+    "mia_power": 0.05972027972027973,
+    "aia_power": 0.03276605164477016
+  },
+  "denominators": {
+    "target_count": 22,
+    "mia_rare_defined_targets": 9,
+    "aia_rare_defined_targets": 22
+  },
+  "validation": {
+    "mia_rows": 1049,
+    "aia_rows": 7172,
+    "target_count": 22
+  },
+  "floor_mode": "estimated",
+  "floor_estimate": {
+    "method": "mock_background_reference_aia_1049_without_replacement",
+    "seed": 2027100804,
+    "repetitions": 1000,
+    "reference_rulebook_repetitions": 1000,
+    "sample_rows": 1049,
+    "diagnostic_reduced_repetitions": false,
+    "official_hidden_floors_known": false,
+    "mock_truth_only": true,
+    "cached_reference_distance_calculation": true,
+    "per_target": {
+      "0": {
+        "mean": 0.004423979122452376,
+        "sample_sd": 0.015392385417898257,
+        "monte_carlo_se": 0.00048674996543721186,
+        "minimum": 0.0,
+        "maximum": 0.14814814814814797
+      },
+      "1": {
+        "mean": 0.0011216603309944122,
+        "sample_sd": 0.0074098391649520135,
+        "monte_carlo_se": 0.00023431968856768473,
+        "minimum": 0.0,
+        "maximum": 0.09302325581395378
+      },
+      "2": {
+        "mean": 0.014595032808885928,
+        "sample_sd": 0.029259818240060662,
+        "monte_carlo_se": 0.000925276695611311,
+        "minimum": 0.0,
+        "maximum": 0.18750000000000008
+      },
+      "3": {
+        "mean": 0.03012182984005324,
+        "sample_sd": 0.04349924505641113,
+        "monte_carlo_se": 0.0013755669087607875,
+        "minimum": 0.0,
+        "maximum": 0.24390243902439016
+      },
+      "4": {
+        "mean": 0.014894374854662357,
+        "sample_sd": 0.032550214315596404,
+        "monte_carlo_se": 0.0010293281556390348,
+        "minimum": 0.0,
+        "maximum": 0.2325581395348836
+      },
+      "5": {
+        "mean": 0.015387275812424047,
+        "sample_sd": 0.0318858875269327,
+        "monte_carlo_se": 0.0010083202980106086,
+        "minimum": 0.0,
+        "maximum": 0.1886792452830188
+      },
+      "6": {
+        "mean": 0.04958123361834486,
+        "sample_sd": 0.05175667468358643,
+        "monte_carlo_se": 0.0016366897611650771,
+        "minimum": 0.0,
+        "maximum": 0.24444444444444427
+      },
+      "7": {
+        "mean": 0.05999131284958002,
+        "sample_sd": 0.057645432690474854,
+        "monte_carlo_se": 0.0018229086400782862,
+        "minimum": 0.0,
+        "maximum": 0.2500000000000003
+      },
+      "8": {
+        "mean": 0.05970665448453734,
+        "sample_sd": 0.06090124547751954,
+        "monte_carlo_se": 0.0019258664804999057,
+        "minimum": 0.0,
+        "maximum": 0.2666666666666669
+      },
+      "9": {
+        "mean": 0.032042261267580995,
+        "sample_sd": 0.04726675153083959,
+        "monte_carlo_se": 0.0014947059243470358,
+        "minimum": 0.0,
+        "maximum": 0.22222222222222218
+      },
+      "11": {
+        "mean": 0.022175283151227285,
+        "sample_sd": 0.0373121830238957,
+        "monte_carlo_se": 0.0011799148282857922,
+        "minimum": 0.0,
+        "maximum": 0.24000000000000005
+      },
+      "12": {
+        "mean": 0.07257785641174275,
+        "sample_sd": 0.05835622761375113,
+        "monte_carlo_se": 0.001845385949146663,
+        "minimum": 0.0,
+        "maximum": 0.2641509433962266
+      },
+      "13": {
+        "mean": 0.026929493203600646,
+        "sample_sd": 0.04346784644240907,
+        "monte_carlo_se": 0.0013745739974045977,
+        "minimum": 0.0,
+        "maximum": 0.23404255319148956
+      },
+      "14": {
+        "mean": 0.03156087991504814,
+        "sample_sd": 0.04569136278886021,
+        "monte_carlo_se": 0.0014448877580986142,
+        "minimum": 0.0,
+        "maximum": 0.23076923076923042
+      },
+      "15": {
+        "mean": 0.012222867969350397,
+        "sample_sd": 0.028505979291334093,
+        "monte_carlo_se": 0.0009014382149420825,
+        "minimum": 0.0,
+        "maximum": 0.18604651162790714
+      },
+      "16": {
+        "mean": 0.009304753006551422,
+        "sample_sd": 0.02306639282224224,
+        "monte_carlo_se": 0.000729423387224449,
+        "minimum": 0.0,
+        "maximum": 0.16279069767441892
+      },
+      "17": {
+        "mean": 0.06475749907439447,
+        "sample_sd": 0.06213835082437318,
+        "monte_carlo_se": 0.001964987186516207,
+        "minimum": 0.0,
+        "maximum": 0.2894736842105261
+      },
+      "22": {
+        "mean": 0.01492599839568697,
+        "sample_sd": 0.03241462574837731,
+        "monte_carlo_se": 0.001025040468668123,
+        "minimum": 0.0,
+        "maximum": 0.1999999999999999
+      },
+      "25": {
+        "mean": 0.033768231186040304,
+        "sample_sd": 0.045833753424730714,
+        "monte_carlo_se": 0.0014493905453669188,
+        "minimum": 0.0,
+        "maximum": 0.2181818181818182
+      },
+      "26": {
+        "mean": 0.051471910873619825,
+        "sample_sd": 0.05480212545411409,
+        "monte_carlo_se": 0.0017329953705328988,
+        "minimum": 0.0,
+        "maximum": 0.2500000000000003
+      },
+      "27": {
+        "mean": 0.0034096818421574114,
+        "sample_sd": 0.014061201399455539,
+        "monte_carlo_se": 0.000444654230606266,
+        "minimum": 0.0,
+        "maximum": 0.16000000000000017
+      },
+      "28": {
+        "mean": 0.037484447236978295,
+        "sample_sd": 0.046268453841051695,
+        "monte_carlo_se": 0.0014631369795208961,
+        "minimum": 0.0,
+        "maximum": 0.22222222222222218
+      }
+    },
+    "draw_statistic": "official score_aia score: max(all, rare after SE deadzone)",
+    "limitation": "Mock floors only; Monte Carlo SE excludes population and generator mismatch."
+  },
+  "official_score_prediction": false,
+  "completed": true,
+  "created_utc": "2026-10-08T02:41:57.399091+00:00",
+  "method": "explore_2_density",
+  "world": {
+    "id": "mixed_holdout_2026100801",
+    "profile": "mixed",
+    "split": "holdout",
+    "seed": 2026100801,
+    "floor_seed": 2027100804
+  },
+  "plugin_sha256": "4baabfc819231b38c00c2245580d6ada361bbde5ce220f272af5f80e12ff5cd7",
+  "case_manifest_sha256": "c02cc50750caa4b0ef3e8bb31be582c1a3fb8edb3c460cac302ea658a56e640e",
+  "shared_scoring_truth": "../scoring_truth",
+  "scoring_truth_sha256": {
+    "aia_floor.csv": "ec5740a7c8a6326cfca106998fc8754ebbeb58b4dd82e1d06b9542999fa78ae2",
+    "aia_floor_metadata.json": "1e489006a3e29eef326fab082a5d8c907280e1f708fc95d1a950713c467649f1",
+    "aia_truth_0.csv": "036e34a02e389f075961806b1c7b67c003b408e9cd7de2ee45b4db505643ce79",
+    "aia_truth_1.csv": "a213c86fb422853d8b62fa4474f4c334c5e463aaae5be5c195f4d5d90d10ea0d",
+    "aia_truth_11.csv": "83f9f8a2674ff1d3c55575ba92c4e162ddf30f9b01972669784667942bbc840e",
+    "aia_truth_12.csv": "3874fe4e480b3fe076f22be565f16af93400950020bbb0947d75b8c7b3cb7108",
+    "aia_truth_13.csv": "c896a787b7d28796c83f624a5d5b19f345a6bbead712c1b030777a6b18a7f492",
+    "aia_truth_14.csv": "5df833dd4e8960451ab399988568e0dda8cdf13618f29fe946402b35aae97f83",
+    "aia_truth_15.csv": "075ebd7f13b2a6740cd4e796f8a6428c9960945f30b31abe96fcc32e45e1665f",
+    "aia_truth_16.csv": "ac1a989f6f1a7b9127328627a08e970b662772a32da9ee7dc9dd954c688bfcad",
+    "aia_truth_17.csv": "91381406301894462f6614ea414662792ebb48a6010386c2cb651c17284ddb9d",
+    "aia_truth_2.csv": "bfcc459fae2f14c14bc8bd60cc0b17e9931af9b391ef687ba66c1fc096e4edb5",
+    "aia_truth_22.csv": "98c98afa3eb95aa95a93169640034a167d99b4c515d3612931f65aaad302c862",
+    "aia_truth_25.csv": "c3866b1bc303d489ebe127122d8144f3c6ff42e30a2d7d85f116093ce41ddd2b",
+    "aia_truth_26.csv": "f6b09c4dc7f36a0f70cb59b28ce7fbad7c09633e667b0d3f9895253718c30991",
+    "aia_truth_27.csv": "04e14a217339fd743854ad81eb79795387c1001b5cd5677fb94dd0673cd8e498",
+    "aia_truth_28.csv": "60c44eb5cf1b303069d8035d272aaabed3512829d42337d420d611338cf9a3ab",
+    "aia_truth_3.csv": "c2f5457b63babb23719b089444f873800bee9512161849f7d147731a0e2b14b6",
+    "aia_truth_4.csv": "b4d57a00918ff376aad744f87181795542c489dab58313f97ecf32520c71e394",
+    "aia_truth_5.csv": "061b2a121d146e18335d1a991a6f1eb781a52f9c08c0a594f06f99412726ff7c",
+    "aia_truth_6.csv": "f966f98e5a9fdf802d289adfe24cff748105fe537b897350f1d91abdb0341267",
+    "aia_truth_7.csv": "5b6cf21e4cadcc7396487279a612059953b065bba676e50802771edd846594ea",
+    "aia_truth_8.csv": "3d9e96ac3fc1fb64db6472f8af8c1240ade53a67cf4f5929c2215edc21c0e36b",
+    "aia_truth_9.csv": "cd8e17ea11674107b057d37fcd01c11f467ebceba949ae1ae752f27a6e1c0819",
+    "case_metadata.json": "e539e138d08392915b3563d9f2abfe540c9a7f7a66f19fe009b710243d10c371",
+    "pool_ids_0.csv": "e17a549e5787da6bd9dcf5bed3ed201b8aee75da18eb61b6a46d7e4872885dc7",
+    "pool_ids_1.csv": "91ccfffb1cf659f28f33fc21692c20a85e56b3e13b07436d0a880faa9d90ee02",
+    "pool_ids_10.csv": "81227c511ae2cead72c27017d8600434506a7b6ad12f732ea205f440fa180afb",
+    "pool_ids_11.csv": "63729baf7cc21ba175868eed6eddd2bcbc4d717db1332ffa71543a97e359eafb",
+    "pool_ids_12.csv": "1cf78411fa1fe9ce51b740332ac5e58e4202ae3e405d6e403b13bdf6712dbefd",
+    "pool_ids_13.csv": "8b73e6a703d9f8d45b53a088b0561fc9ab7790ce95dbab4bf655efdc1d9914e7",
+    "pool_ids_14.csv": "824f68e2e18cca19febb5b7567321914868866337b40f7ae743f28395bee5c8d",
+    "pool_ids_15.csv": "508f641c84df7502db52045bf7eec4039903a06b580d40345f3542bd0ef2fbbe",
+    "pool_ids_16.csv": "d2b760ec37de10ca479169259ba8cc4a4b5f9bd5d081eae7ee0a615f95150f6c",
+    "pool_ids_17.csv": "61d0dfbcb3762eb7822ccaf2adaf9d47bfd623b1e267cdd9c91e71dfe8c3defa",
+    "pool_ids_2.csv": "ba141d1b6565bc0b30ce2922e0b2dede210608a389995c2112cfc7b39b37ed49",
+    "pool_ids_22.csv": "0c03256aa318b724268c5f79cf8b8b402dac15d6e3e81ade1817f3c8aa964b65",
+    "pool_ids_25.csv": "f9eca78148cb4dbe279aca42eb8a6b3fd0413a45090523a864deaa4e815e5e2b",
+    "pool_ids_26.csv": "3a4499ea23643df1dde5d33777be6453e9e17cc155a30de45f24bf1f37717cb3",
+    "pool_ids_27.csv": "705bfeb1bc374cf124e9835c197fa9de65d5294d30669407d12c25bf1da52823",
+    "pool_ids_28.csv": "04dd4ed530ac596fefac5d9818d218b25bd59c4e27d738fae3f52d2b3ac68d25",
+    "pool_ids_3.csv": "0a5eb07f1723433b801bdeb69c67436ad75950fa34739ed733ad5d15b60009a2",
+    "pool_ids_4.csv": "8ecfd0a0fd6a943ca04657094244882f32546eede6c559cf9a91a259b20df9a5",
+    "pool_ids_5.csv": "f80989470a56a39620962b7e6a4c77a6a41a4281fd74e5cfc6b936335529b951",
+    "pool_ids_6.csv": "e6d9f847929221b60a932e8ef81ada019e213a578b659203f2c4eb2af7a827e8",
+    "pool_ids_7.csv": "82638ab61ab13da76c2ca5f47b50431798178afd191081c79b3d69e2dba80f21",
+    "pool_ids_8.csv": "a37655f1ef236628b2483143460997cf3c6fecb45555e1ad1a85c471c40620bd",
+    "pool_ids_9.csv": "d554f5c06be88789821e621ccaf5467411868072655cef50b88b29ca07950550",
+    "roles.json": "d7ca48217605a6c7a6788ce25e16ed39ba796d6601f96170a6c755ef74d40707"
+  },
+  "prediction_seconds": 7.33803660000558,
+  "shared_floor_seconds": 50.96386170000187,
+  "output_sha256": {
+    "F_mia.csv": "065692b4a8e68b04899e899525301aaa0834fbb622880048654091696e6ad2fa",
+    "F_aia.csv": "58a6338666a04173d40bae90644ecd13867950248f6d150546c8d10f58fda3e8"
+  }
+}

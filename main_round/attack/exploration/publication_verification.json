@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-10-08T03:15:16.064018+00:00",
+  "destination": "origin/main",
+  "repository": "tsugiyama0216/pwscup2026-kit-private",
+  "scope": "main_round/attack/exploration/",
+  "evidence_files": 136,
+  "evidence_copy_hashes_match_original": true,
+  "prelim_source_hash_count": 16,
+  "main_source_hash_count": 18,
+  "evaluated_source_hashes_unchanged": true,
+  "local_links_checked": 68,
+  "local_links_resolve_to_publication_or_existing_tracked_files": true,
+  "added_files_have_no_live_credential_matches": true,
+  "generated_inputs_predictions_and_truth_rows_remain_local": true,
+  "prior_validation": "24 exploration tests and 42 Sugiyama tests passed; saved scores independently verified. Algorithms were not changed for publication."
+}

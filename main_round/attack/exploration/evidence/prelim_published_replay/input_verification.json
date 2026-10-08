@@ -1,0 +1,18 @@
+{
+  "data_manifest.json": {
+    "files": 178,
+    "manifest_sha256": "39a8f0da08936d54ede6c866422c4bf396e0815bd6c709fa8dd420dd61f8b789"
+  },
+  "official_source_manifest.json": {
+    "files": 36,
+    "manifest_sha256": "445227a77c7ef15abf68ce7610b56a85328b6253b7aeb8b63e43026315de699e"
+  },
+  "round": "prelim-attack-20260825",
+  "attacker_id": 24,
+  "candidate_rows": 1049,
+  "runtime": {
+    "python": "3.12.13 (main, Jul 18 2026, 17:08:38) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3"
+  }
+}

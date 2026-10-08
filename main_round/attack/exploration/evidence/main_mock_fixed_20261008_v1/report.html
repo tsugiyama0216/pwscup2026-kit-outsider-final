@@ -1,0 +1,48 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>本戦疑似環境：4方式比較</title><style>body{font:16px system-ui;max-width:1200px;margin:32px;color:#172338}table{border-collapse:collapse}th,td{padding:12px;border-bottom:1px solid #ddd;text-align:right}th:first-child,td:first-child{text-align:left}p{line-height:1.8}</style><h1>本戦疑似環境：4方式比較</h1><p>2seed × mixed/stress、同じholdout生成元、22標的／世界。AIAは共通の模擬φ（1,000反復）控除後。4世界等重み平均。</p><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>手法</th>
+      <th>MIA力</th>
+      <th>AIA力（φ控除後）</th>
+      <th>合計</th>
+      <th>公式参照との差</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>公式参照 DOMIAS + 1-NN</td>
+      <td>0.060598</td>
+      <td>0.090096</td>
+      <td>0.150694</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>① QI最近傍距離 + 1-NN</td>
+      <td>0.246678</td>
+      <td>0.090096</td>
+      <td>0.336775</td>
+      <td>0.186080</td>
+    </tr>
+    <tr>
+      <td>② DOMIAS + 近傍時間区間</td>
+      <td>0.060598</td>
+      <td>0.021919</td>
+      <td>0.082517</td>
+      <td>-0.068177</td>
+    </tr>
+    <tr>
+      <td>③ 固定カーネルGen-LRA + 近傍時間区間</td>
+      <td>0.045635</td>
+      <td>0.021919</td>
+      <td>0.067554</td>
+      <td>-0.083141</td>
+    </tr>
+    <tr>
+      <td>④ 予測残差差 + time回帰</td>
+      <td>0.050935</td>
+      <td>0.024476</td>
+      <td>0.075412</td>
+      <td>-0.075283</td>
+    </tr>
+  </tbody>
+</table><p>③は固定カーネルGen-LRA変種。疑似データでの結果であり、公式点の予測値ではありません。</p><p><a href="SUMMARY.md">世界別結果・条件</a> · <a href="by_target.csv">標的別CSV</a> · <a href="protocol.json">固定条件</a></p></html>
