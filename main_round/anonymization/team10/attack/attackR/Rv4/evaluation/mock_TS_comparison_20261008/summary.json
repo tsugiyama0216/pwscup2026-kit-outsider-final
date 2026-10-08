@@ -1,0 +1,58 @@
+{
+  "completed": true,
+  "means": {
+    "Rv2": {
+      "score_1": 0.13617346054094548,
+      "mia_power": 0.10576923076923078,
+      "aia_power": 0.030404229771714714
+    },
+    "Rv3": {
+      "score_1": 0.13960826640156845,
+      "mia_power": 0.0811965811965812,
+      "aia_power": 0.05841168520498726
+    },
+    "Rv4": {
+      "score_1": 0.13617346054094548,
+      "mia_power": 0.10576923076923078,
+      "aia_power": 0.030404229771714714
+    }
+  },
+  "paired_vs_Rv2": {
+    "Rv3": {
+      "mean": 0.003434805860622968,
+      "wins": 17,
+      "ties": 0,
+      "losses": 19,
+      "minimum": -0.45655563559946677,
+      "maximum": 0.5652325355789484
+    },
+    "Rv4": {
+      "mean": 0.0,
+      "wins": 0,
+      "ties": 36,
+      "losses": 0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    }
+  },
+  "conditions": 36,
+  "models": 12,
+  "cases": 3,
+  "Rv2_rescored_results_match_archive": 36,
+  "fresh_correction_and_Rv3_processes": 36,
+  "unique_pids": 36,
+  "all_frozen_models_and_submissions_preserved": true,
+  "Rv4_status": "candidate_not_finalized",
+  "official_score_prediction": false,
+  "limitations": [
+    "One-target diagnostic; self labels and self challenge unavailable",
+    "Rv2 and Rv4 retain historical T fitted-model exposure; not fresh-background-only training",
+    "Synthetic AIA controls and proxy rare labels",
+    "Same finite population and previously used suite; not independent official-score evidence",
+    "This exact suite was used to select Rv3 components; its small advantage is a development-set replay, not independent confirmation"
+  ],
+  "Rv3_evaluation_suite_used_for_prior_selection": true,
+  "Rv3_prior_selection_evidence": "existing mock_TS/rv2_20261007/suite, all 3 cases and 12 releases; byte-verified copy of reference suite",
+  "Rv4_MIA_rank_changes": 409,
+  "Rv4_AIA_time_changes": 6
+}

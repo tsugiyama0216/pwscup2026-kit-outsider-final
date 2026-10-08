@@ -1,0 +1,9 @@
+{
+  "version": "Rv4",
+  "status": "candidate_not_finalized",
+  "official_score": null,
+  "official_Rv2_score": 0.1966605682146923,
+  "goal": 0.3,
+  "reason": "Official superiority has not been verified; see the matched mock_TS comparison",
+  "submission_unchanged": true
+}

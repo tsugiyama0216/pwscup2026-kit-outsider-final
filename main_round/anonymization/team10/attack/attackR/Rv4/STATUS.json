@@ -1,0 +1,26 @@
+{
+  "version": "Rv4",
+  "status": "candidate_not_finalized",
+  "official_score": null,
+  "official_Rv2_score": 0.1966605682146923,
+  "goal": 0.3,
+  "reason": "Official superiority has not been verified; see the matched mock_TS comparison",
+  "submission_unchanged": true,
+  "mock_TS_means": {
+    "Rv2": {
+      "score_1": 0.13617346054094548,
+      "mia_power": 0.10576923076923078,
+      "aia_power": 0.030404229771714714
+    },
+    "Rv3": {
+      "score_1": 0.13960826640156845,
+      "mia_power": 0.0811965811965812,
+      "aia_power": 0.05841168520498726
+    },
+    "Rv4": {
+      "score_1": 0.13617346054094548,
+      "mia_power": 0.10576923076923078,
+      "aia_power": 0.030404229771714714
+    }
+  }
+}
