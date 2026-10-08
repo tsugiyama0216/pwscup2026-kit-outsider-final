@@ -1,0 +1,169 @@
+{
+  "method": "mock_background_reference_aia_1049_without_replacement",
+  "seed": 2027100704,
+  "repetitions": 1000,
+  "reference_rulebook_repetitions": 1000,
+  "sample_rows": 1049,
+  "diagnostic_reduced_repetitions": false,
+  "official_hidden_floors_known": false,
+  "mock_truth_only": true,
+  "cached_reference_distance_calculation": true,
+  "per_target": {
+    "0": {
+      "mean": 0.07139646789767429,
+      "sample_sd": 0.06164000190782962,
+      "monte_carlo_se": 0.0019492280100586589,
+      "minimum": 0.0,
+      "maximum": 0.3157894736842106
+    },
+    "1": {
+      "mean": 0.07026601140391012,
+      "sample_sd": 0.05648357302159518,
+      "monte_carlo_se": 0.001786167411326798,
+      "minimum": 0.0,
+      "maximum": 0.24193548387096778
+    },
+    "2": {
+      "mean": 0.022571689340210362,
+      "sample_sd": 0.03906642792127259,
+      "monte_carlo_se": 0.0012353889227801852,
+      "minimum": 0.0,
+      "maximum": 0.2203389830508474
+    },
+    "3": {
+      "mean": 0.052403415785597596,
+      "sample_sd": 0.05492570419500313,
+      "monte_carlo_se": 0.0017369032734487503,
+      "minimum": 0.0,
+      "maximum": 0.2909090909090912
+    },
+    "4": {
+      "mean": 0.0012567734949930549,
+      "sample_sd": 0.007444221632475912,
+      "monte_carlo_se": 0.0002354069576572076,
+      "minimum": 0.0,
+      "maximum": 0.07547169811320745
+    },
+    "5": {
+      "mean": 0.059176602270267054,
+      "sample_sd": 0.05773121570358784,
+      "monte_carlo_se": 0.0018256213371381778,
+      "minimum": 0.0,
+      "maximum": 0.29411764705882365
+    },
+    "6": {
+      "mean": 0.019161028197475716,
+      "sample_sd": 0.034598222097500075,
+      "monte_carlo_se": 0.0010940918482046846,
+      "minimum": 0.0,
+      "maximum": 0.1730769230769231
+    },
+    "7": {
+      "mean": 0.08530844581954554,
+      "sample_sd": 0.06793734188500997,
+      "monte_carlo_se": 0.0021483673853418856,
+      "minimum": 0.0,
+      "maximum": 0.3478260869565217
+    },
+    "8": {
+      "mean": 0.01615121504180199,
+      "sample_sd": 0.03579652135781024,
+      "monte_carlo_se": 0.0011319853980154358,
+      "minimum": 0.0,
+      "maximum": 0.22222222222222218
+    },
+    "9": {
+      "mean": 0.014158040026016503,
+      "sample_sd": 0.03347057883311692,
+      "monte_carlo_se": 0.0010584326371687026,
+      "minimum": 0.0,
+      "maximum": 0.24000000000000005
+    },
+    "11": {
+      "mean": 0.021617593401176378,
+      "sample_sd": 0.03691140478216885,
+      "monte_carlo_se": 0.0011672411074808485,
+      "minimum": 0.0,
+      "maximum": 0.16981132075471703
+    },
+    "12": {
+      "mean": 0.022708763467318295,
+      "sample_sd": 0.03847286344232029,
+      "monte_carlo_se": 0.0012166187658635818,
+      "minimum": 0.0,
+      "maximum": 0.22807017543859645
+    },
+    "13": {
+      "mean": 0.03806604472271445,
+      "sample_sd": 0.046494737885317335,
+      "monte_carlo_se": 0.001470292709301234,
+      "minimum": 0.0,
+      "maximum": 0.2807017543859649
+    },
+    "14": {
+      "mean": 0.07121150723899677,
+      "sample_sd": 0.056399537384928825,
+      "monte_carlo_se": 0.0017835099711619176,
+      "minimum": 0.0,
+      "maximum": 0.25423728813559326
+    },
+    "15": {
+      "mean": 0.04969814012263312,
+      "sample_sd": 0.0504806306555086,
+      "monte_carlo_se": 0.001596337705931259,
+      "minimum": 0.0,
+      "maximum": 0.2461538461538461
+    },
+    "16": {
+      "mean": 0.04627238801304597,
+      "sample_sd": 0.0531568906288476,
+      "monte_carlo_se": 0.0016809684771961863,
+      "minimum": 0.0,
+      "maximum": 0.2800000000000002
+    },
+    "17": {
+      "mean": 0.006494803892478812,
+      "sample_sd": 0.02009049674318209,
+      "monte_carlo_se": 0.0006353172903265031,
+      "minimum": 0.0,
+      "maximum": 0.14285714285714313
+    },
+    "22": {
+      "mean": 0.11016733339364765,
+      "sample_sd": 0.0693192994234442,
+      "monte_carlo_se": 0.0021920687198528042,
+      "minimum": 0.0,
+      "maximum": 0.3333333333333332
+    },
+    "25": {
+      "mean": 0.019100393878237608,
+      "sample_sd": 0.0345563703105047,
+      "monte_carlo_se": 0.0010927683784941486,
+      "minimum": 0.0,
+      "maximum": 0.19607843137254896
+    },
+    "26": {
+      "mean": 0.005960166776814228,
+      "sample_sd": 0.019780517705733084,
+      "monte_carlo_se": 0.0006255148924740482,
+      "minimum": 0.0,
+      "maximum": 0.18000000000000005
+    },
+    "27": {
+      "mean": 0.008637050657721157,
+      "sample_sd": 0.02503683668571128,
+      "monte_carlo_se": 0.000791734293325089,
+      "minimum": 0.0,
+      "maximum": 0.19230769230769257
+    },
+    "28": {
+      "mean": 0.02211156469943262,
+      "sample_sd": 0.03620012019463163,
+      "monte_carlo_se": 0.0011447483138689381,
+      "minimum": 0.0,
+      "maximum": 0.1886792452830188
+    }
+  },
+  "draw_statistic": "official score_aia score: max(all, rare after SE deadzone)",
+  "limitation": "Mock floors only; Monte Carlo SE excludes population and generator mismatch."
+}

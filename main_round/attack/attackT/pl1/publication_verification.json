@@ -1,0 +1,11 @@
+{
+  "source_files_verified": 42,
+  "published_source_regeneration_byte_identical": true,
+  "runtime": "Existing Python environment shared; PYTHONPATH points to publication checkout official kit",
+  "initial_export_check": "Shared environment initially resolved original checkout official kit; strict origin check rejected it. Explicit checkout PYTHONPATH resolved this without code changes.",
+  "contract_tests": 4,
+  "scorer_tests": 42,
+  "invalid_submission_rejections": 7,
+  "official_submission_performed": false,
+  "zip_uploaded": false
+}

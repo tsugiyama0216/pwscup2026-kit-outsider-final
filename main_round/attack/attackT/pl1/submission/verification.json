@@ -1,0 +1,20 @@
+{
+  "model": "attackT/pl1",
+  "created_utc": "2026-10-08T01:30:51.222244+00:00",
+  "two_processes_byte_identical": true,
+  "official_zip_valid": true,
+  "actual_id_validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "original_token_bytes_match": true,
+  "official_submission_performed": false,
+  "official_score_measured": false,
+  "sha256": {
+    "F_mia.csv": "247bed21bd44ff653f0838028782bd5553a2bba23d9ed10b8eaffe6054f296a4",
+    "F_aia.csv": "5bce3c6d1e55cdafa0ea0870153260deac9e83e5316dd7b21f6c65ad35220357",
+    "team10_pl1_attack.zip": "8e6f9143ff1b08a9f26153d1aed184b070a36ec28fb6e54f5fbf528e711a72e5"
+  }
+}

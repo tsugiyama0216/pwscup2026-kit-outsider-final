@@ -1,0 +1,3 @@
+*.zip
+.work/
+__pycache__/

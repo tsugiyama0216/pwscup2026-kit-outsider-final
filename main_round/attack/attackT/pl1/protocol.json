@@ -1,0 +1,12 @@
+{
+  "model": "attackT/pl1",
+  "fixed_before_evaluation": true,
+  "mia": "preliminary selected v4 conformal/transport rank fusion; main-round 25-27 peer overlap prior",
+  "aia": "preliminary v5 consensus_v4_copula__v4_event_margin; fixed for every target",
+  "reason": "Portable preliminary mathematical methods; v9 official-feedback target-number routing cannot transfer to new cohorts",
+  "selection": "No selection using main-round answers, preliminary published truths, or confirmation scores",
+  "confirmation": ["mixed/dev/2026100701", "stress/holdout/2026100702"],
+  "floor_repetitions": 1000,
+  "limitations": ["Previously used source partitions", "Mock scores do not predict official scores", "Not a reproduction of v9 target-specific CSV blocks"],
+  "official_submission_authorized": false
+}

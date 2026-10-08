@@ -1,0 +1,13 @@
+{
+  "rejected_invalid_submissions": [
+    "duplicate_mia_id",
+    "nonfinite_mia",
+    "out_of_range_mia",
+    "missing_target",
+    "self_aia_target",
+    "negative_time",
+    "missing_aia_row"
+  ],
+  "contract_tests_passed": 4,
+  "scorer_tests_passed": 42
+}
