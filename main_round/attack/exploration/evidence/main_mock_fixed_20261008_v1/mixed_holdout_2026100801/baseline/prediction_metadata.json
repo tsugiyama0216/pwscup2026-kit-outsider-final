@@ -1,0 +1,22 @@
+{
+  "model": "main_mock_official: DOMIAS + 1-NN time (main-attack-20260928)",
+  "public_arguments_only": true,
+  "attacker_id": 10,
+  "validation": {
+    "mia_rows": 1049,
+    "aia_rows": 7172,
+    "target_count": 22
+  },
+  "diagnostics": {
+    "model_name": "main_mock_official: DOMIAS + 1-NN time (main-attack-20260928)",
+    "official_release": "main-attack-20260928",
+    "official_commit": "a490490e11a0ec460a5df9fdefb17c72ad459c1e",
+    "official_import_origins": {
+      "mia": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-current\\main_round\\attack\\official-kit\\starter\\src\\pwscup2026\\attack\\mia.py",
+      "aia": "C:\\Users\\Sugiyama Takumi\\Documents\\PWSCUP2026\\pwscup2026-current\\main_round\\attack\\official-kit\\starter\\src\\pwscup2026\\attack\\aia.py"
+    },
+    "inputs": "supplied public tables and cfg only",
+    "target_count": 22
+  },
+  "filesystem_sandbox": false
+}

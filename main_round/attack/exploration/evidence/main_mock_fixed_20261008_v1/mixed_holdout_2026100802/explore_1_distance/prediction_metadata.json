@@ -1,0 +1,35 @@
+{
+  "model": "explore_1_distance: closest QI MIA + 1-NN time",
+  "public_arguments_only": true,
+  "attacker_id": 10,
+  "validation": {
+    "mia_rows": 1049,
+    "aia_rows": 7172,
+    "target_count": 22
+  },
+  "diagnostics": {
+    "method": "ClosestDistanceMIA + closest-QI time AIA",
+    "mia_features": [
+      "age",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT"
+    ],
+    "categorical_blocks": [
+      "sex",
+      "prefecture"
+    ],
+    "fallback": [
+      "sex",
+      "all"
+    ],
+    "scale": "background standard deviation, ddof=1",
+    "distance": "root mean square standardized QI distance",
+    "mia_score": "negative nearest distance, transformed to tie-preserving midranks",
+    "aia": "nearest time; equal-distance nearest ties use sorted mean",
+    "uses_target_truth": false,
+    "tuned_on_prelim_truth": false
+  },
+  "filesystem_sandbox": false
+}

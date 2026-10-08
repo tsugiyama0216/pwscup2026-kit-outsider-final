@@ -1,0 +1,220 @@
+{
+  "model": "explore_4_predictor: time CART residual difference",
+  "public_arguments_only": true,
+  "attacker_id": 10,
+  "validation": {
+    "mia_rows": 1049,
+    "aia_rows": 7172,
+    "target_count": 22
+  },
+  "diagnostics": {
+    "model_name": "explore_4_predictor: time CART residual difference",
+    "configuration": {
+      "method": "time_cart_residual_difference",
+      "numeric_qi": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      "categorical_qi": [
+        "sex",
+        "prefecture"
+      ],
+      "tree": {
+        "max_depth": 6,
+        "min_samples_leaf": 10,
+        "random_state": 20261008
+      },
+      "horizon_years": 10.0,
+      "preprocessor_fit_source": "background_only",
+      "mia_raw_score": "abs(f_bg(QI)-time)-abs(f_C(QI)-time)",
+      "mia_confidence_transform": "explore_common.core.score_to_confidence",
+      "aia_prediction": "f_C(QI)"
+    },
+    "preprocessor_fit_on": "background only",
+    "candidate_time_use": "MIA absolute residuals only; never fitted",
+    "background_rows": 5143,
+    "transformed_feature_count": 54,
+    "targets": {
+      "0": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 32,
+        "raw_score_min": -4.21329657892085,
+        "raw_score_max": 4.667650183561055
+      },
+      "1": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 35,
+        "raw_score_min": -4.8275893265502665,
+        "raw_score_max": 4.827843110309528
+      },
+      "2": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 19,
+        "raw_score_min": -4.110951540142222,
+        "raw_score_max": 5.518309351353879
+      },
+      "3": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 29,
+        "raw_score_min": -4.38575767501777,
+        "raw_score_max": 5.3976561176850115
+      },
+      "4": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 33,
+        "raw_score_min": -4.586329024186488,
+        "raw_score_max": 4.586329024186488
+      },
+      "5": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 26,
+        "raw_score_min": -5.4648740811328835,
+        "raw_score_max": 5.073748417987809
+      },
+      "6": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 29,
+        "raw_score_min": -3.8669007035663734,
+        "raw_score_max": 4.507578557251167
+      },
+      "7": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 30,
+        "raw_score_min": -5.316910046574406,
+        "raw_score_max": 4.583544596229606
+      },
+      "8": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 24,
+        "raw_score_min": -4.816777119004862,
+        "raw_score_max": 4.567861441052425
+      },
+      "9": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 22,
+        "raw_score_min": -6.133515795386176,
+        "raw_score_max": 6.192767266348863
+      },
+      "11": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 45,
+        "raw_score_min": -5.10496920778749,
+        "raw_score_max": 4.679585899065925
+      },
+      "12": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 37,
+        "raw_score_min": -7.0357853603285,
+        "raw_score_max": 4.923065878617283
+      },
+      "13": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 36,
+        "raw_score_min": -5.83811706718446,
+        "raw_score_max": 4.763527294606636
+      },
+      "14": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 30,
+        "raw_score_min": -4.831060542573933,
+        "raw_score_max": 4.831060542573933
+      },
+      "15": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 28,
+        "raw_score_min": -4.700406438596229,
+        "raw_score_max": 4.645029962978242
+      },
+      "16": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 18,
+        "raw_score_min": -5.952458090812115,
+        "raw_score_max": 5.264525121545831
+      },
+      "17": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 21,
+        "raw_score_min": -4.350468680042089,
+        "raw_score_max": 4.618504519412303
+      },
+      "22": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 30,
+        "raw_score_min": -4.447923593226737,
+        "raw_score_max": 4.532013814299328
+      },
+      "25": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 17,
+        "raw_score_min": -4.3267325625677,
+        "raw_score_max": 4.5415259524370795
+      },
+      "26": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 35,
+        "raw_score_min": -4.712360154915278,
+        "raw_score_max": 4.571200602875792
+      },
+      "27": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 32,
+        "raw_score_min": -4.682241764283801,
+        "raw_score_max": 4.706299951194124
+      },
+      "28": {
+        "training_rows": 1049,
+        "challenge_rows": 326,
+        "tree_depth": 6,
+        "tree_leaves": 26,
+        "raw_score_min": -4.65033161603009,
+        "raw_score_max": 4.363878231452497
+      }
+    }
+  },
+  "filesystem_sandbox": false
+}

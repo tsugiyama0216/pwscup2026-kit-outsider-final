@@ -1,0 +1,200 @@
+{
+  "created_utc": "2026-10-08T02:27:02.458754+00:00",
+  "round": "prelim-attack-20260825",
+  "attacker_id": 24,
+  "selection": "one fixed configuration per method, before evaluating target truths",
+  "target_truth_used_for_fit_or_tuning": false,
+  "methods": [
+    "baseline",
+    "explore_1_distance",
+    "explore_2_density",
+    "explore_3_gen_lra",
+    "explore_4_predictor"
+  ],
+  "source_sha256": {
+    "explore_1_distance/config.json": "78defc7efa5cb5a6ccbf1419533170e42bacc80548e8de67fb92128a6ddd60b3",
+    "explore_1_distance/plugin.py": "691c87a26cae2cb6713bc4a6a061fb9ab5e5fc70c78f303419c90dc998722f46",
+    "explore_2_density/config.json": "570b218f35825d26a7f84719f2d5866bbae00eafa134bba02cee3c9270781f75",
+    "explore_2_density/plugin.py": "4baabfc819231b38c00c2245580d6ada361bbde5ce220f272af5f80e12ff5cd7",
+    "explore_3_gen_lra/__init__.py": "c7734b02c00ac63fa87c6373ced52bc3733f2cd47e73e0c1b0cfa69ab8dad384",
+    "explore_3_gen_lra/config.json": "b53b96fab55074473c04be42535c1335e4f610a71a632b10bc416a8b49589f58",
+    "explore_3_gen_lra/model.py": "4952d1135003cb4a965bef529d4493306dba6d4dc65987e88365eadb7cd65d6d",
+    "explore_3_gen_lra/plugin.py": "6bc79e19effd239799c60a56b49aecdad3e0b58738f97199b159c9534db7aed8",
+    "explore_3_gen_lra/tests/test_model.py": "8168e57309542bf1578db956842517a9d391e48b82a6f98f01284528d101444d",
+    "explore_4_predictor/config.json": "25987d056eda00b3c3d3488d8858a44a020c79de9cbe42c5d4a14c3d259c74d0",
+    "explore_4_predictor/plugin.py": "7545c1226b361468c72ccfbea97982e5174fdebf96dcc58cc3d1fbe34eeabe11",
+    "explore_4_predictor/tests/test_plugin.py": "a057b4a2b6cc3c86dd861e0ea72bdf10dc46701135e35c515e7076feebfc0ea8",
+    "explore_common/__init__.py": "20abbd66a016473d04943acd4fed21d8eaf7f591fc31eb07d878b79765f8dc3e",
+    "explore_common/core.py": "55acb7863fadedd15fccd878715ffeeda10cc58bcbd1498a3b08a3b5b5569c45",
+    "explore_common/test_core.py": "7b3f63f62202c09719baf8d1c3654611322b0563a5b20ee5519981c3af93cff7",
+    "run_explorations.py": "fff4956947983bcdf8283f43e28c14a7a8d22af5a289fcf128ff545d938a0035"
+  },
+  "evaluator_sha256": {
+    "__init__.py": "cb73dbc1d7b7dd87e1744d9522f83371a78e286067b8c5eb01d61bd2b54c4330",
+    "cli.py": "587ac7c1d71909a982c2572ed866a3b79aa5057943f88c135166ae6d632740b7",
+    "common.py": "9698d2ff93894ee627b2e6315380d528e2e4e2726c841d156da38769c98a6769",
+    "example_attack.py": "0ab9da66d1720b6323df412e21b083e5c6f251cab719386ba41c66847e474aeb",
+    "report.py": "3433bb6788eb4de3c1494690bd95964308fc5693cf89e98a0bc0fc209794eb36",
+    "runner.py": "685936c9d907232f5803c9245357ba5a7ad85d586500f5f940fb9f8dda30fda6",
+    "scoring.py": "8dd1e0aca4db377445c022f8a5e5eaa96b2c6ad035974375e1ca85bd22ae7814",
+    "worker.py": "6d1d661a323304f1878bee5854e2dd9a999607527f8ba215bc0a1b49339c8f79"
+  },
+  "input_verification": {
+    "data_manifest.json": {
+      "files": 178,
+      "manifest_sha256": "39a8f0da08936d54ede6c866422c4bf396e0815bd6c709fa8dd420dd61f8b789"
+    },
+    "official_source_manifest.json": {
+      "files": 36,
+      "manifest_sha256": "445227a77c7ef15abf68ce7610b56a85328b6253b7aeb8b63e43026315de699e"
+    },
+    "round": "prelim-attack-20260825",
+    "attacker_id": 24,
+    "candidate_rows": 1049,
+    "runtime": {
+      "python": "3.12.13 (main, Jul 18 2026, 17:08:38) [MSC v.1944 64 bit (AMD64)]",
+      "numpy": "2.4.6",
+      "pandas": "2.3.3"
+    }
+  },
+  "configs": {
+    "explore_1_distance": {
+      "method": "ClosestDistanceMIA + closest-QI time AIA",
+      "mia_features": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      "categorical_blocks": [
+        "sex",
+        "prefecture"
+      ],
+      "fallback": [
+        "sex",
+        "all"
+      ],
+      "scale": "background standard deviation, ddof=1",
+      "distance": "root mean square standardized QI distance",
+      "mia_score": "negative nearest distance, transformed to tie-preserving midranks",
+      "aia": "nearest time; equal-distance nearest ties use sorted mean",
+      "uses_target_truth": false,
+      "tuned_on_prelim_truth": false
+    },
+    "explore_2_density": {
+      "method": "Official preliminary DOMIAS KDE + local time window",
+      "mia_features": [
+        "age",
+        "BMI",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT",
+        "FPG"
+      ],
+      "mia": "unchanged pinned official overlap_mia",
+      "mia_bandwidth": "official scipy gaussian_kde default Scott",
+      "aia_continuous": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      "aia_blocks": [
+        "sex",
+        "prefecture"
+      ],
+      "aia_fallback": [
+        "sex",
+        "all"
+      ],
+      "aia_scale": "background standard deviation, ddof=1",
+      "aia_k": 10,
+      "aia_kth_ties": "include all",
+      "aia_tau": 0.5,
+      "aia_window_ties": "earliest window, midpoint of occupied endpoints",
+      "uses_target_truth": false,
+      "tuned_on_prelim_truth": false
+    },
+    "explore_3_gen_lra": {
+      "model_name": "explore_3_gen_lra_fixed_kernel_k10",
+      "version": 1,
+      "selection": "fixed_before_preliminary_evaluation",
+      "mia": {
+        "method": "fixed_kernel_Gen_LRA",
+        "features": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "reference": "supplied_background",
+        "k": 10,
+        "neighborhood": "Euclidean_after_reference_standardization",
+        "missing_values": "reference_column_median",
+        "standardization": "reference_mean_and_sample_std",
+        "covariance": "reference_sample_covariance_after_standardization",
+        "minimum_covariance_eigenvalue": 1e-06,
+        "bandwidth": "Silverman_factor_(m*(d+2)/4)^(-1/(d+4))",
+        "augmented_kde": "reuse_reference_covariance_and_bandwidth",
+        "raw_score": "log(sum_s softplus(log_K_H(s-x)-log(m*p_R(s))))",
+        "confidence": "explore_common.core.score_to_confidence",
+        "batch_size": 256,
+        "distance_tie_policy": "lexicographic_standardized_seven_features_fixed_k",
+        "numerical_variant": "monotone_log_positive_evidence_no_density_floor_no_subtractive_baseline"
+      },
+      "aia": {
+        "method": "explore_common.core.local_time_predictions",
+        "k": 10,
+        "mode": "window"
+      },
+      "reads": "supplied_public_tables_only",
+      "not_used": [
+        "target_truth",
+        "public_answer_archives",
+        "self_labels",
+        "self_challenge",
+        "self_release",
+        "utility_reference"
+      ]
+    },
+    "explore_4_predictor": {
+      "method": "time_cart_residual_difference",
+      "numeric_qi": [
+        "age",
+        "SBP",
+        "TG",
+        "HDL",
+        "ALT"
+      ],
+      "categorical_qi": [
+        "sex",
+        "prefecture"
+      ],
+      "tree": {
+        "max_depth": 6,
+        "min_samples_leaf": 10,
+        "random_state": 20261008
+      },
+      "horizon_years": 10.0,
+      "preprocessor_fit_source": "background_only",
+      "mia_raw_score": "abs(f_bg(QI)-time)-abs(f_C(QI)-time)",
+      "mia_confidence_transform": "explore_common.core.score_to_confidence",
+      "aia_prediction": "f_C(QI)"
+    }
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0"
+  },
+  "workers": 2,
+  "note": "Prelim is retrospective and previously used in this project; no claim of untouched holdout."
+}

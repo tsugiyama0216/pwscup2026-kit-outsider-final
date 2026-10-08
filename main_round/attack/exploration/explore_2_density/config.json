@@ -1,0 +1,16 @@
+{
+  "method": "Official preliminary DOMIAS KDE + local time window",
+  "mia_features": ["age", "BMI", "SBP", "TG", "HDL", "ALT", "FPG"],
+  "mia": "unchanged pinned official overlap_mia",
+  "mia_bandwidth": "official scipy gaussian_kde default Scott",
+  "aia_continuous": ["age", "SBP", "TG", "HDL", "ALT"],
+  "aia_blocks": ["sex", "prefecture"],
+  "aia_fallback": ["sex", "all"],
+  "aia_scale": "background standard deviation, ddof=1",
+  "aia_k": 10,
+  "aia_kth_ties": "include all",
+  "aia_tau": 0.5,
+  "aia_window_ties": "earliest window, midpoint of occupied endpoints",
+  "uses_target_truth": false,
+  "tuned_on_prelim_truth": false
+}

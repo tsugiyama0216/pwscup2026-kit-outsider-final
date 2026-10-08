@@ -1,0 +1,198 @@
+{
+  "completed": true,
+  "created_utc": "2026-10-08T02:46:58.107617+00:00",
+  "reviewer": "independent evaluation-review subagent",
+  "protocol_sha256": "28f5ac747ea3a8d120cdaa71adce1148edb27eb00730d43480e89175f9775bef",
+  "source_hash_count": 18,
+  "all_source_and_evaluator_and_donor_hashes_match": true,
+  "public_config_sha256": "e89cda613706600a6a7d9fe13db341e1ddf135f9f3db4d9a92d92d76dbda01ac",
+  "public_config_matches_protocol_and_runtime": true,
+  "unchanged_prelim_attack_file_count": 15,
+  "prelim_attack_code_and_configs_unchanged": true,
+  "method_world_count": 20,
+  "target_evaluation_count": 440,
+  "all_saved_scores_equal_independent_and_direct_official": true,
+  "all_twenty_saved_target_tables_exactly_reproduced": true,
+  "all_world_and_equal_world_summary_csv_values_exactly_reproduced": true,
+  "aia_targetwise_floor_subtraction_and_clipping_verified": true,
+  "all_controlled_comparisons_passed": true,
+  "worlds": [
+    {
+      "world": "mixed_holdout_2026100801",
+      "case_manifest_sha256": "c02cc50750caa4b0ef3e8bb31be582c1a3fb8edb3c460cac302ea658a56e640e",
+      "method_count": 5,
+      "all_saved_scores_equal_direct_official": true,
+      "controlled_checks": {
+        "distance_aia_equals_official": true,
+        "density_mia_bytes_equal_official": true,
+        "density_genlra_aia_equal": true
+      },
+      "floor_csv_sha256": "ec5740a7c8a6326cfca106998fc8754ebbeb58b4dd82e1d06b9542999fa78ae2",
+      "floor_metadata_sha256": "1e489006a3e29eef326fab082a5d8c907280e1f708fc95d1a950713c467649f1",
+      "floor_repetitions": 1000,
+      "floor_seed": 2027100804,
+      "maximum_floor_monte_carlo_se": 0.001964987186516207
+    },
+    {
+      "world": "stress_holdout_2026100801",
+      "case_manifest_sha256": "11201b2f7bf94c6f140e7ae5da26ede856e27eb067fba834e79f287733128fc5",
+      "method_count": 5,
+      "all_saved_scores_equal_direct_official": true,
+      "controlled_checks": {
+        "distance_aia_equals_official": true,
+        "density_mia_bytes_equal_official": true,
+        "density_genlra_aia_equal": true
+      },
+      "floor_csv_sha256": "ec5740a7c8a6326cfca106998fc8754ebbeb58b4dd82e1d06b9542999fa78ae2",
+      "floor_metadata_sha256": "1e489006a3e29eef326fab082a5d8c907280e1f708fc95d1a950713c467649f1",
+      "floor_repetitions": 1000,
+      "floor_seed": 2027100804,
+      "maximum_floor_monte_carlo_se": 0.001964987186516207
+    },
+    {
+      "world": "mixed_holdout_2026100802",
+      "case_manifest_sha256": "a808801ba9f49da1c11caf5ee21e38af2e0d3d208dede27d7e0e09feec0cbcd7",
+      "method_count": 5,
+      "all_saved_scores_equal_direct_official": true,
+      "controlled_checks": {
+        "distance_aia_equals_official": true,
+        "density_mia_bytes_equal_official": true,
+        "density_genlra_aia_equal": true
+      },
+      "floor_csv_sha256": "96cd3cbed3a06626399f996b309054680e255d3fd15d120a64dc25a35c7010fa",
+      "floor_metadata_sha256": "184d4f015d0ccb37762eb299f35d544d6ab5429a1fb7b2821da140a3533dcb13",
+      "floor_repetitions": 1000,
+      "floor_seed": 2027100805,
+      "maximum_floor_monte_carlo_se": 0.002235596533422096
+    },
+    {
+      "world": "stress_holdout_2026100802",
+      "case_manifest_sha256": "4664888a132f78b7354569cb81a8e214d2af048423210c010c6002dfeb7636c5",
+      "method_count": 5,
+      "all_saved_scores_equal_direct_official": true,
+      "controlled_checks": {
+        "distance_aia_equals_official": true,
+        "density_mia_bytes_equal_official": true,
+        "density_genlra_aia_equal": true
+      },
+      "floor_csv_sha256": "96cd3cbed3a06626399f996b309054680e255d3fd15d120a64dc25a35c7010fa",
+      "floor_metadata_sha256": "184d4f015d0ccb37762eb299f35d544d6ab5429a1fb7b2821da140a3533dcb13",
+      "floor_repetitions": 1000,
+      "floor_seed": 2027100805,
+      "maximum_floor_monte_carlo_se": 0.002235596533422096
+    }
+  ],
+  "same_seed_profile_checks": [
+    {
+      "seed": 2026100801,
+      "same_population_inputs_background_questions_and_truth": true,
+      "same_floor_csv_and_metadata_bytes": true,
+      "changed_release_count": 16,
+      "unchanged_release_count": 6,
+      "different_case_files": [
+        "public/targets/C_0.csv",
+        "public/targets/C_1.csv",
+        "public/targets/C_11.csv",
+        "public/targets/C_12.csv",
+        "public/targets/C_13.csv",
+        "public/targets/C_14.csv",
+        "public/targets/C_15.csv",
+        "public/targets/C_2.csv",
+        "public/targets/C_25.csv",
+        "public/targets/C_26.csv",
+        "public/targets/C_27.csv",
+        "public/targets/C_28.csv",
+        "public/targets/C_5.csv",
+        "public/targets/C_6.csv",
+        "public/targets/C_8.csv",
+        "public/targets/C_9.csv",
+        "private/case_metadata.json"
+      ]
+    },
+    {
+      "seed": 2026100802,
+      "same_population_inputs_background_questions_and_truth": true,
+      "same_floor_csv_and_metadata_bytes": true,
+      "changed_release_count": 16,
+      "unchanged_release_count": 6,
+      "different_case_files": [
+        "public/targets/C_0.csv",
+        "public/targets/C_1.csv",
+        "public/targets/C_12.csv",
+        "public/targets/C_13.csv",
+        "public/targets/C_14.csv",
+        "public/targets/C_16.csv",
+        "public/targets/C_17.csv",
+        "public/targets/C_22.csv",
+        "public/targets/C_26.csv",
+        "public/targets/C_27.csv",
+        "public/targets/C_28.csv",
+        "public/targets/C_3.csv",
+        "public/targets/C_5.csv",
+        "public/targets/C_6.csv",
+        "public/targets/C_8.csv",
+        "public/targets/C_9.csv",
+        "private/case_metadata.json"
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "method": "baseline",
+      "mia_power": 0.06059829059829061,
+      "aia_power": 0.0900962011457075,
+      "attack_power": 0.1506944917439981,
+      "aia_before_floor": 0.10583635824652528,
+      "delta_attack_power": 0.0,
+      "attack_power_min": 0.10355073922272326,
+      "attack_power_max": 0.19403755770714975
+    },
+    {
+      "method": "explore_1_distance",
+      "mia_power": 0.24667832167832168,
+      "aia_power": 0.0900962011457075,
+      "attack_power": 0.3367745228240292,
+      "aia_before_floor": 0.10583635824652528,
+      "delta_attack_power": 0.18608003108003107,
+      "attack_power_min": 0.24149211189547334,
+      "attack_power_max": 0.4334677571373492
+    },
+    {
+      "method": "explore_2_density",
+      "mia_power": 0.06059829059829061,
+      "aia_power": 0.021918994643407994,
+      "attack_power": 0.0825172852416986,
+      "aia_before_floor": 0.03463281198226433,
+      "delta_attack_power": -0.06817720650229951,
+      "attack_power_min": 0.06339196630900645,
+      "attack_power_max": 0.09594245746010928
+    },
+    {
+      "method": "explore_3_gen_lra",
+      "mia_power": 0.04563455063455064,
+      "aia_power": 0.021918994643407994,
+      "attack_power": 0.06755354527795863,
+      "aia_before_floor": 0.03463281198226433,
+      "delta_attack_power": -0.08314094646603948,
+      "attack_power_min": 0.01618916910620924,
+      "attack_power_max": 0.09762595914361095
+    },
+    {
+      "method": "explore_4_predictor",
+      "mia_power": 0.05093531468531469,
+      "aia_power": 0.024476495044779965,
+      "attack_power": 0.07541180973009465,
+      "aia_before_floor": 0.03688074866998259,
+      "delta_attack_power": -0.07528268201390345,
+      "attack_power_min": 0.03964616776121263,
+      "attack_power_max": 0.13243600981803544
+    }
+  ],
+  "existing_sugiyama_tests": {
+    "tests": 42,
+    "passed": true,
+    "seconds": 13.884,
+    "evidence": "earlier independent exec transcript; no source edits"
+  },
+  "scope": "Re-scored saved predictions and shared 1000-draw floors; did not refit attacks or recompute floors. Not an official score prediction."
+}

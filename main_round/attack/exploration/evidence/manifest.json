@@ -1,0 +1,686 @@
+{
+  "created_utc": "2026-10-08T03:12:57.218556+00:00",
+  "scope": "Exact-byte snapshots of selected evaluation reports; generated worlds and predictions remain in ignored local-output.",
+  "files": {
+    "prelim_fixed_20261008_v1/protocol.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/protocol.json",
+      "sha256": "d6898d423328c3b241b18a6c5242e172d5724963d12ca549e091e8c0b2dcc8e2",
+      "bytes": 7455
+    },
+    "prelim_fixed_20261008_v1/comparison.csv": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/comparison.csv",
+      "sha256": "9c82e5dcb407d02d137f757e8d79cc8684e4daad261c68b449dde2549f34841a",
+      "bytes": 2150
+    },
+    "prelim_fixed_20261008_v1/by_target.csv": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/by_target.csv",
+      "sha256": "8bacb47a75a7cf13e6df642d1ff9d3409f233e59bd477a23a7d76529e3a48d3b",
+      "bytes": 21998
+    },
+    "prelim_fixed_20261008_v1/comparison.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/comparison.json",
+      "sha256": "d350b4125981c60af8c4f5eefb620a794fc3f11171a3f9a8217a6d6bdd50c94a",
+      "bytes": 13220
+    },
+    "prelim_fixed_20261008_v1/SUMMARY.md": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/SUMMARY.md",
+      "sha256": "79f3cbf3484ecabc1937ae588790a9779261e233b67801b5f501613c190a8e35",
+      "bytes": 2693
+    },
+    "prelim_fixed_20261008_v1/report.html": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/report.html",
+      "sha256": "bdef5afb2b2341a129f6b942fd7e5ca10b99c9270ee4ae730df1bbbf7e345ad0",
+      "bytes": 2664
+    },
+    "prelim_fixed_20261008_v1/baseline/evaluation/result.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/baseline/evaluation/result.json",
+      "sha256": "205717411de2428d8767b9c58b104403ee6eef4baa7841ab23441c8914210a0e",
+      "bytes": 25947
+    },
+    "prelim_fixed_20261008_v1/baseline/evaluation/by_target.csv": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/baseline/evaluation/by_target.csv",
+      "sha256": "c483a1e8c624526052c0814b2c10a6e44742a22395dc150346038f3466f53b16",
+      "bytes": 4316
+    },
+    "prelim_fixed_20261008_v1/baseline/evaluation/report.html": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/baseline/evaluation/report.html",
+      "sha256": "3ee96f75ccb39235af33858b058161d15bdfd6ec21bb87d2020f4f2e20d79043",
+      "bytes": 7317
+    },
+    "prelim_fixed_20261008_v1/baseline/timing.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/baseline/timing.json",
+      "sha256": "3213d43b5858c2f75ad6d31cc69b3f1263aca20838a5bf8e33b57fafcd944c5e",
+      "bytes": 98
+    },
+    "prelim_fixed_20261008_v1/explore_1_distance/evaluation/result.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_1_distance/evaluation/result.json",
+      "sha256": "2bb859f4a7724908d5b1fb3ffc13987c922021d2a1237d22acfe57b09f635a22",
+      "bytes": 25916
+    },
+    "prelim_fixed_20261008_v1/explore_1_distance/evaluation/by_target.csv": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_1_distance/evaluation/by_target.csv",
+      "sha256": "09d75187b9f35d7081166f722c28788d5d15e7f7819fb8c6ffd037f1c5972bc9",
+      "bytes": 4289
+    },
+    "prelim_fixed_20261008_v1/explore_1_distance/evaluation/report.html": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_1_distance/evaluation/report.html",
+      "sha256": "1f4200211d708aefd9748d6578474d418e9d6b3e9097952b690eda0280074d7a",
+      "bytes": 7317
+    },
+    "prelim_fixed_20261008_v1/explore_1_distance/timing.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_1_distance/timing.json",
+      "sha256": "5ace7dc9816e316a0647419142ff4eb42d1fa66abac13f75783c370a8b0072b2",
+      "bytes": 99
+    },
+    "prelim_fixed_20261008_v1/explore_2_density/evaluation/result.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_2_density/evaluation/result.json",
+      "sha256": "4311fb42e1e1a00cad03bdbb14b400ffb49cc1688b042ae74bf6449ad718b015",
+      "bytes": 25681
+    },
+    "prelim_fixed_20261008_v1/explore_2_density/evaluation/by_target.csv": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_2_density/evaluation/by_target.csv",
+      "sha256": "f5b9e1b59d0ac7c254a45930640c52c6521654509894f3218d89c0eeff385853",
+      "bytes": 4165
+    },
+    "prelim_fixed_20261008_v1/explore_2_density/evaluation/report.html": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_2_density/evaluation/report.html",
+      "sha256": "f48d37eaef84a0ea9b1955c41e61f081b13ff3e4302e630e082de189e6c99d26",
+      "bytes": 7317
+    },
+    "prelim_fixed_20261008_v1/explore_2_density/timing.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_2_density/timing.json",
+      "sha256": "ddf58083b2c47f58790611ccf71c94ecf67219e635660b820bc336049dad2156",
+      "bytes": 98
+    },
+    "prelim_fixed_20261008_v1/explore_3_gen_lra/evaluation/result.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_3_gen_lra/evaluation/result.json",
+      "sha256": "4813d89b08aff8cab847e418c0ca2887ae3432a851b8dbe64828c84535be9123",
+      "bytes": 25716
+    },
+    "prelim_fixed_20261008_v1/explore_3_gen_lra/evaluation/by_target.csv": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_3_gen_lra/evaluation/by_target.csv",
+      "sha256": "0005d7a03b523e124a0b202c852235b363bc323e6268349da86a5c45ae6c00bd",
+      "bytes": 4262
+    },
+    "prelim_fixed_20261008_v1/explore_3_gen_lra/evaluation/report.html": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_3_gen_lra/evaluation/report.html",
+      "sha256": "c9f7512d8da91e290cf85327e93d740ae9cfd7408778195096065934485c9543",
+      "bytes": 7317
+    },
+    "prelim_fixed_20261008_v1/explore_3_gen_lra/timing.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_3_gen_lra/timing.json",
+      "sha256": "b8ee8c13fbb3ad2a9c85a94348e6e52b1cc4aea785fd1fd62c9901cfdc3b7338",
+      "bytes": 99
+    },
+    "prelim_fixed_20261008_v1/explore_4_predictor/evaluation/result.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_4_predictor/evaluation/result.json",
+      "sha256": "309380bf617544a1c26bfa341adb8462cc766ad443062c248bc31898366eeb1e",
+      "bytes": 25847
+    },
+    "prelim_fixed_20261008_v1/explore_4_predictor/evaluation/by_target.csv": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_4_predictor/evaluation/by_target.csv",
+      "sha256": "900808eab12c89b45874b2684b2c0b1b7f66a87a4e46fe59cc265c595d5056f5",
+      "bytes": 4266
+    },
+    "prelim_fixed_20261008_v1/explore_4_predictor/evaluation/report.html": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_4_predictor/evaluation/report.html",
+      "sha256": "38aafc1893237cfb461674218ac356f872f35ae95756d5941c92bdb39dd97dc2",
+      "bytes": 7317
+    },
+    "prelim_fixed_20261008_v1/explore_4_predictor/timing.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/prelim_fixed_20261008_v1/explore_4_predictor/timing.json",
+      "sha256": "d2ab57c893d161453daebc3eec19b53d96d4f1dfc5c5b40c0d7eeaa2a85c402c",
+      "bytes": 98
+    },
+    "main_mock_fixed_20261008_v1/protocol.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/protocol.json",
+      "sha256": "28f5ac747ea3a8d120cdaa71adce1148edb27eb00730d43480e89175f9775bef",
+      "bytes": 14197
+    },
+    "main_mock_fixed_20261008_v1/comparison.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/comparison.csv",
+      "sha256": "9be4d6cfe17dda93e36046694bae914695e97e2afbf76d15e6361c2b0f8c71ac",
+      "bytes": 899
+    },
+    "main_mock_fixed_20261008_v1/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/by_target.csv",
+      "sha256": "2980c0bbc73665b87fc6d39951e703c172a268486bb7013cbcf507e03d90a8e0",
+      "bytes": 82685
+    },
+    "main_mock_fixed_20261008_v1/by_world.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/by_world.csv",
+      "sha256": "0a328b171f3ae6f0f9d52cc0b832599207e837c81f268f2d2c3805dcf7dccb61",
+      "bytes": 5561
+    },
+    "main_mock_fixed_20261008_v1/comparison.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/comparison.json",
+      "sha256": "85e75e9eac6b71535ca1cb42ec8c05f865d9263c84e02939c5c1ea1c9f67dffa",
+      "bytes": 15234
+    },
+    "main_mock_fixed_20261008_v1/SUMMARY.md": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/SUMMARY.md",
+      "sha256": "f1f659e766b621fa3d135d9d5c9ff5bc47f3befb02fe8ee67ea7963194448e23",
+      "bytes": 2476
+    },
+    "main_mock_fixed_20261008_v1/report.html": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/report.html",
+      "sha256": "dc29c3cc5c7f03f63e01b6f2dc5de4e1b6b050c012f62d13b831478e85c0612a",
+      "bytes": 2026
+    },
+    "main_mock_fixed_20261008_v1/verification.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/verification.json",
+      "sha256": "f8f61eaf20584d9776b5b0242a54e65ffc5b93914b8f58f6f6f56847f944aeea",
+      "bytes": 251
+    },
+    "main_mock_fixed_20261008_v1/independent_verification.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/independent_verification.json",
+      "sha256": "e39b619acc3e53191c074467dc98cdc9f299c2381e057b3abb8067cfda98a605",
+      "bytes": 7919
+    },
+    "main_mock_fixed_20261008_v1/public_config.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/public_config.json",
+      "sha256": "e89cda613706600a6a7d9fe13db341e1ddf135f9f3db4d9a92d92d76dbda01ac",
+      "bytes": 4555
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/verification.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/verification.json",
+      "sha256": "9677f19f4f6651aca8c1b08124fafb1718c98fb8f6494d133aa3d54c7028a1c2",
+      "bytes": 4911
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/case/manifest.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/case/manifest.json",
+      "sha256": "c02cc50750caa4b0ef3e8bb31be582c1a3fb8edb3c460cac302ea658a56e640e",
+      "bytes": 14473
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/scoring_truth/aia_floor.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/scoring_truth/aia_floor.csv",
+      "sha256": "ec5740a7c8a6326cfca106998fc8754ebbeb58b4dd82e1d06b9542999fa78ae2",
+      "bytes": 539
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/scoring_truth/aia_floor_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/scoring_truth/aia_floor_metadata.json",
+      "sha256": "1e489006a3e29eef326fab082a5d8c907280e1f708fc95d1a950713c467649f1",
+      "bytes": 5113
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/baseline/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/baseline/result.json",
+      "sha256": "45d80e636fb665fbd8a56cbeb1d907dbdfa0491701c2c1454d0dcbd8f196c4fc",
+      "bytes": 13355
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/baseline/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/baseline/by_target.csv",
+      "sha256": "0bb426ffe2d7dc591a4ba0d12717006d1513f1db315ce8b6d412f96cc3e41cb4",
+      "bytes": 3304
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/baseline/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/baseline/by_style.csv",
+      "sha256": "0be837bf9bb94e1193a610cac26e00d5de0dce0b95eef5064ece5eeebd94bf53",
+      "bytes": 636
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/baseline/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/baseline/prediction_metadata.json",
+      "sha256": "0b91aa1c6c3baf6b27600fe8fa9356d371d811fd391d7847cb708929c1cf021b",
+      "bytes": 937
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_1_distance/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_1_distance/result.json",
+      "sha256": "ee5ac7d063f20c3f29489e48926030e1935668c438423005f086e472ff0133d9",
+      "bytes": 13356
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_1_distance/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_1_distance/by_target.csv",
+      "sha256": "f066a8ac5cf9b4c515336d4847e8ead5c8a560f873e6d6df6f72bc9537e4ffe4",
+      "bytes": 3528
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_1_distance/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_1_distance/by_style.csv",
+      "sha256": "6f7e66eea91dab038e0d939a005c7c500803608a5a115467b58f95673b3bbfa0",
+      "bytes": 608
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_1_distance/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_1_distance/prediction_metadata.json",
+      "sha256": "4a5292154bfe7b779005bf53416808931f3f35f6fe11be6f172a10140affb9e8",
+      "bytes": 905
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_2_density/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_2_density/result.json",
+      "sha256": "d1868bff6957f9ba1a05b42c32f8612e67a0d05b51b4e348cdf6159fb95923cf",
+      "bytes": 13272
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_2_density/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_2_density/by_target.csv",
+      "sha256": "2c889f1b28ad39154fefc55fe6cea33abbf9de2a82da767ba18e7a61e8b0682c",
+      "bytes": 3013
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_2_density/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_2_density/by_style.csv",
+      "sha256": "4fed1fb743f17cb4420d72ec2a31099052b08d617d1dcd5e35e509ceb976754a",
+      "bytes": 610
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_2_density/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_2_density/prediction_metadata.json",
+      "sha256": "82179351653fc51c13e0a7375d40d34da2b4558eaaaed1883358914896b398e8",
+      "bytes": 1101
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_3_gen_lra/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_3_gen_lra/result.json",
+      "sha256": "805d2abf8af423e67364676344ca54db33f006facdab8619b8ed77de76c2b7a2",
+      "bytes": 13273
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_3_gen_lra/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_3_gen_lra/by_target.csv",
+      "sha256": "f72222cb220562fc947a185264047bb3ef834dfa2393ca1547a7139463342042",
+      "bytes": 2951
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_3_gen_lra/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_3_gen_lra/by_style.csv",
+      "sha256": "59f29d0781f73029733af307a80be37baa21944ef26ab7b2196c092174f99caf",
+      "bytes": 566
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_3_gen_lra/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_3_gen_lra/prediction_metadata.json",
+      "sha256": "1569b671b7e8512dc7ce8c72677f22f237de0ec60a0d10f177a7039302308c69",
+      "bytes": 2162
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_4_predictor/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_4_predictor/result.json",
+      "sha256": "7238f1de45fcef70856b004503971a34a1cfd14584903dd231850dd444825e5b",
+      "bytes": 13475
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_4_predictor/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_4_predictor/by_target.csv",
+      "sha256": "c46b0d8d25ef1b2093aff0318caaec1919297793411de21e1b6fced526b8ed42",
+      "bytes": 3693
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_4_predictor/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_4_predictor/by_style.csv",
+      "sha256": "c5fc4ce74b3ba4c979ffdb7af7621775f107b676846cf6167dbc9ef9d8a1f028",
+      "bytes": 774
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_4_predictor/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100801/explore_4_predictor/prediction_metadata.json",
+      "sha256": "57f9bb3d577f9512c229e8d0aa76289c18658b1e14ac998082e1bc65c8700cea",
+      "bytes": 6325
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/verification.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/verification.json",
+      "sha256": "e26f8c134783e794c5dfd20f14bbdbad7392b533e7d62a24747a9ee367ab074b",
+      "bytes": 4911
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/case/manifest.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/case/manifest.json",
+      "sha256": "11201b2f7bf94c6f140e7ae5da26ede856e27eb067fba834e79f287733128fc5",
+      "bytes": 14493
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/scoring_truth/aia_floor.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/scoring_truth/aia_floor.csv",
+      "sha256": "ec5740a7c8a6326cfca106998fc8754ebbeb58b4dd82e1d06b9542999fa78ae2",
+      "bytes": 539
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/scoring_truth/aia_floor_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/scoring_truth/aia_floor_metadata.json",
+      "sha256": "1e489006a3e29eef326fab082a5d8c907280e1f708fc95d1a950713c467649f1",
+      "bytes": 5113
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/baseline/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/baseline/result.json",
+      "sha256": "6e62ad132d80f87499377309d996d1053b77dfe65aa4f8f0afb9f6d09e74ec3c",
+      "bytes": 13416
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/baseline/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/baseline/by_target.csv",
+      "sha256": "3d63f96e57a8840f4bfcf17b37ee5bd347f5d98d8c841bd0431369ced299a7d2",
+      "bytes": 3472
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/baseline/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/baseline/by_style.csv",
+      "sha256": "ee1d8826624de6fbda4f13cb8d5609450a3c08aa94612879c00a1abd645d3935",
+      "bytes": 528
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/baseline/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/baseline/prediction_metadata.json",
+      "sha256": "0b91aa1c6c3baf6b27600fe8fa9356d371d811fd391d7847cb708929c1cf021b",
+      "bytes": 937
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_1_distance/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_1_distance/result.json",
+      "sha256": "45a8fe04766c0c7a5a254897d67c8dbe99c5bb06ffc07fcb3f9dd90797e2c96a",
+      "bytes": 13423
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_1_distance/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_1_distance/by_target.csv",
+      "sha256": "a188b95cea9db520a43f26a107a17e21ea875dba7039e959fd79bfc50ac8dcc8",
+      "bytes": 3654
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_1_distance/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_1_distance/by_style.csv",
+      "sha256": "f89a6aca1cab162a1db57e2321d9d889fd71eac79d91ae1cfb77cc617516c50c",
+      "bytes": 531
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_1_distance/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_1_distance/prediction_metadata.json",
+      "sha256": "4a5292154bfe7b779005bf53416808931f3f35f6fe11be6f172a10140affb9e8",
+      "bytes": 905
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_2_density/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_2_density/result.json",
+      "sha256": "03aa8175a2a81b39125f469f5ecc452d4cd784981c3de7cfc3834afc2fd6bd26",
+      "bytes": 13283
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_2_density/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_2_density/by_target.csv",
+      "sha256": "3b4c9bcb37231f951cfc3a8e8adef2645cefe4b75c978613af56cdc31154d2c8",
+      "bytes": 3118
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_2_density/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_2_density/by_style.csv",
+      "sha256": "5745459b04e0e7a9c4c048a9f2deecdcc26ab44de3e9f9628dd8d4ddd23fae36",
+      "bytes": 575
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_2_density/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_2_density/prediction_metadata.json",
+      "sha256": "82179351653fc51c13e0a7375d40d34da2b4558eaaaed1883358914896b398e8",
+      "bytes": 1101
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_3_gen_lra/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_3_gen_lra/result.json",
+      "sha256": "3678f21e400bdade85764afdce766799a0bfb4016a51892f9fc9e87518d70a29",
+      "bytes": 13228
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_3_gen_lra/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_3_gen_lra/by_target.csv",
+      "sha256": "03235bd3c0c1fb684c0c83e99165e46a15bcaa6fd017056a7ea9426ec258b025",
+      "bytes": 2987
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_3_gen_lra/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_3_gen_lra/by_style.csv",
+      "sha256": "55d2519d06db53867e0f1a45f828513d74bfda3e9843a106f638e1783ed93fca",
+      "bytes": 558
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_3_gen_lra/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_3_gen_lra/prediction_metadata.json",
+      "sha256": "1569b671b7e8512dc7ce8c72677f22f237de0ec60a0d10f177a7039302308c69",
+      "bytes": 2162
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_4_predictor/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_4_predictor/result.json",
+      "sha256": "ecd32a8b9e8e9b317ed6f1eefc2b41b6c36106ab5d53d5a45172e745f657a7de",
+      "bytes": 13438
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_4_predictor/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_4_predictor/by_target.csv",
+      "sha256": "06a1fd9794ea8d2b41d548e1829812f462b57c499f606c8f45692a0c84eec8c3",
+      "bytes": 3367
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_4_predictor/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_4_predictor/by_style.csv",
+      "sha256": "ebdd79edee399b421b75a61280528d83a45d01930345d91827cba910bc2674ae",
+      "bytes": 589
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_4_predictor/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100801/explore_4_predictor/prediction_metadata.json",
+      "sha256": "02ae249391f9c651765c278089bf509c18d6798eda2a8add6fb65c3d4c6d0505",
+      "bytes": 6323
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/verification.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/verification.json",
+      "sha256": "2b01ef46c8b5a167b97f46202f5172e3ed39828ed4c910ae90b3ed5f02ef36cd",
+      "bytes": 4911
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/case/manifest.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/case/manifest.json",
+      "sha256": "a808801ba9f49da1c11caf5ee21e38af2e0d3d208dede27d7e0e09feec0cbcd7",
+      "bytes": 14474
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/scoring_truth/aia_floor.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/scoring_truth/aia_floor.csv",
+      "sha256": "96cd3cbed3a06626399f996b309054680e255d3fd15d120a64dc25a35c7010fa",
+      "bytes": 536
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/scoring_truth/aia_floor_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/scoring_truth/aia_floor_metadata.json",
+      "sha256": "184d4f015d0ccb37762eb299f35d544d6ab5429a1fb7b2821da140a3533dcb13",
+      "bytes": 5113
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/baseline/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/baseline/result.json",
+      "sha256": "15f066a5f9f429db3046466e3c76b4f3eedebf0e2bcab0bab2cc60acbb1ad937",
+      "bytes": 13390
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/baseline/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/baseline/by_target.csv",
+      "sha256": "5f7f46171867752946b945ab8cd9eb493cf26a2f1ba50bdb0a6f1e47f42be980",
+      "bytes": 3616
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/baseline/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/baseline/by_style.csv",
+      "sha256": "043eebf45324e4a25a69e6946208d834ad84dc91293b5327c2f17a895aac2144",
+      "bytes": 781
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/baseline/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/baseline/prediction_metadata.json",
+      "sha256": "0b91aa1c6c3baf6b27600fe8fa9356d371d811fd391d7847cb708929c1cf021b",
+      "bytes": 937
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_1_distance/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_1_distance/result.json",
+      "sha256": "ebd7e9285e83e0115476134f3764738e41a803a0a55a6b52f2937d2d30eba2dd",
+      "bytes": 13333
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_1_distance/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_1_distance/by_target.csv",
+      "sha256": "2c973e0a7497db20cc7ab475871fd3a83df055c243b2f7a2f6b2e86dbde6f9f8",
+      "bytes": 3538
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_1_distance/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_1_distance/by_style.csv",
+      "sha256": "f0af366aca6df59eab951656a61b1dd5667d8489e1e553b592517742b97f36c5",
+      "bytes": 763
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_1_distance/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_1_distance/prediction_metadata.json",
+      "sha256": "4a5292154bfe7b779005bf53416808931f3f35f6fe11be6f172a10140affb9e8",
+      "bytes": 905
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_2_density/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_2_density/result.json",
+      "sha256": "cf46422ed2c0ce93d9d17ce3b9ec56f2f7ae631845c8a7f699c88f3e548a7e30",
+      "bytes": 13321
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_2_density/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_2_density/by_target.csv",
+      "sha256": "60d64ec1cf55e3aa72623ca06da985ddf14a499eee0030bf81c0f1a7a1b54dcb",
+      "bytes": 3386
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_2_density/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_2_density/by_style.csv",
+      "sha256": "31abd7956bc237789191709a0007f64182d77069fab301f87c986c807d9ed1c7",
+      "bytes": 676
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_2_density/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_2_density/prediction_metadata.json",
+      "sha256": "82179351653fc51c13e0a7375d40d34da2b4558eaaaed1883358914896b398e8",
+      "bytes": 1101
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_3_gen_lra/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_3_gen_lra/result.json",
+      "sha256": "73535e78796c1cf8ef5a933251ce4c4b4a6b5b8aa29bb11ad2ea82e2ad4825bb",
+      "bytes": 13327
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_3_gen_lra/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_3_gen_lra/by_target.csv",
+      "sha256": "b84e4b3f2c4e1206f14428dca9c2d6de1e2c8420c1cb1ae2260a523f948aa8d2",
+      "bytes": 3383
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_3_gen_lra/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_3_gen_lra/by_style.csv",
+      "sha256": "2f0f2b690eb947e0ec7067649464070b993de2f3b11b8c44c696b2240e50756e",
+      "bytes": 665
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_3_gen_lra/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_3_gen_lra/prediction_metadata.json",
+      "sha256": "1569b671b7e8512dc7ce8c72677f22f237de0ec60a0d10f177a7039302308c69",
+      "bytes": 2162
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_4_predictor/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_4_predictor/result.json",
+      "sha256": "48060ae2a2f232f5f2dabc447e008c3008b55c1808bcc35866e12b9bcb145e3b",
+      "bytes": 13339
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_4_predictor/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_4_predictor/by_target.csv",
+      "sha256": "788e16e4a7f383153f8bf8c31d82cf4790d70fc26b62d5c6d817719cc413b5cf",
+      "bytes": 3343
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_4_predictor/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_4_predictor/by_style.csv",
+      "sha256": "6ab5cc1d2de52da01d94ebcb07f4a4e74ae47cb8591187d490dd2e49da9b5f2b",
+      "bytes": 760
+    },
+    "main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_4_predictor/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/mixed_holdout_2026100802/explore_4_predictor/prediction_metadata.json",
+      "sha256": "fee1695033830d29efacb6421aea12558ca200b68cbb5b0685435a2f5f4a6f68",
+      "bytes": 6324
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/verification.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/verification.json",
+      "sha256": "1b6bd7400bf01b5eb8253e58eff101557e573e5b498756ca8476ed06e59813cc",
+      "bytes": 4911
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/case/manifest.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/case/manifest.json",
+      "sha256": "4664888a132f78b7354569cb81a8e214d2af048423210c010c6002dfeb7636c5",
+      "bytes": 14494
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/scoring_truth/aia_floor.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/scoring_truth/aia_floor.csv",
+      "sha256": "96cd3cbed3a06626399f996b309054680e255d3fd15d120a64dc25a35c7010fa",
+      "bytes": 536
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/scoring_truth/aia_floor_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/scoring_truth/aia_floor_metadata.json",
+      "sha256": "184d4f015d0ccb37762eb299f35d544d6ab5429a1fb7b2821da140a3533dcb13",
+      "bytes": 5113
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/baseline/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/baseline/result.json",
+      "sha256": "29d52c34c58f18a835ee35b041458e73a93388d64c7fa9d25753cb55fe6a6204",
+      "bytes": 13384
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/baseline/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/baseline/by_target.csv",
+      "sha256": "038d4be63324d1c4283014f1d4d432c2f19e79e3d6c07b512c9bc99ad07cc440",
+      "bytes": 3701
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/baseline/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/baseline/by_style.csv",
+      "sha256": "a8124165257d167972b90fd673456f086a2b9daa188d044a0590837dbf07addc",
+      "bytes": 647
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/baseline/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/baseline/prediction_metadata.json",
+      "sha256": "0b91aa1c6c3baf6b27600fe8fa9356d371d811fd391d7847cb708929c1cf021b",
+      "bytes": 937
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_1_distance/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_1_distance/result.json",
+      "sha256": "73f693b8cb82a9c5981d3e75239977ed868e7561ddb4cf47e0aa86153b99993f",
+      "bytes": 13386
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_1_distance/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_1_distance/by_target.csv",
+      "sha256": "9b59b5110be90d5c4271c3068820273337c08c0c28f837c3ea87a81c679787e7",
+      "bytes": 3429
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_1_distance/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_1_distance/by_style.csv",
+      "sha256": "194aab3e4cde69e98d238171e47f8967dc35c890bf30ca08d75343cbdb1660ef",
+      "bytes": 572
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_1_distance/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_1_distance/prediction_metadata.json",
+      "sha256": "4a5292154bfe7b779005bf53416808931f3f35f6fe11be6f172a10140affb9e8",
+      "bytes": 905
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_2_density/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_2_density/result.json",
+      "sha256": "79c19579ac48f3225308e30d67c2458a8802523bede6fbd7f478d3c8eb612c64",
+      "bytes": 13315
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_2_density/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_2_density/by_target.csv",
+      "sha256": "285ff04c6a4c641696917b87edd5c525501f46e4f5fbda1632d43e5af3162683",
+      "bytes": 3369
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_2_density/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_2_density/by_style.csv",
+      "sha256": "21660e353627a8897428cada409c223754a5846e3d465d79c3d1af7db10dd81c",
+      "bytes": 646
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_2_density/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_2_density/prediction_metadata.json",
+      "sha256": "82179351653fc51c13e0a7375d40d34da2b4558eaaaed1883358914896b398e8",
+      "bytes": 1101
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_3_gen_lra/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_3_gen_lra/result.json",
+      "sha256": "7e055fa22b2f23c6da34d41a784a4fddc8656f6d5eccde8a76a1b237743289e5",
+      "bytes": 13317
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_3_gen_lra/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_3_gen_lra/by_target.csv",
+      "sha256": "2e64b4eb230b69f22ed4c3c4ed94ffe114eae80c11a80686ff24f7e5f70bc220",
+      "bytes": 3104
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_3_gen_lra/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_3_gen_lra/by_style.csv",
+      "sha256": "3870e681d4826e15ac2f8cc608b4b363f3d480290f836d0afb866bbb4137e6ab",
+      "bytes": 608
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_3_gen_lra/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_3_gen_lra/prediction_metadata.json",
+      "sha256": "1569b671b7e8512dc7ce8c72677f22f237de0ec60a0d10f177a7039302308c69",
+      "bytes": 2162
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_4_predictor/result.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_4_predictor/result.json",
+      "sha256": "b7aa7d79f72e0a87c322243411ef704d5e677420c1e3c74c1ab9685e236a50c4",
+      "bytes": 13418
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_4_predictor/by_target.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_4_predictor/by_target.csv",
+      "sha256": "43a9d3b65c9d1afdf7c5022026e3637eea4134e8fc07cae50a99784c7a4de92d",
+      "bytes": 3505
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_4_predictor/by_style.csv": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_4_predictor/by_style.csv",
+      "sha256": "a1f083eac1568e96e6587b0363bbf580b127484c9d4619b85c87f5ac5974d970",
+      "bytes": 621
+    },
+    "main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_4_predictor/prediction_metadata.json": {
+      "source": "main_round/mock_test/local-output/exploration/main_mock_fixed_20261008_v1/stress_holdout_2026100802/explore_4_predictor/prediction_metadata.json",
+      "sha256": "60402684e20304302bd85c5695db415061de28f7198f3cfea38223fbeecd5e87",
+      "bytes": 6330
+    },
+    "prelim_published_replay/result.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/explore_20261008_review/published_replay/result.json",
+      "sha256": "15d9093c1565f9b6e2571c925cef4bb452b1eba9e176a527cd6aaaf1a1179274",
+      "bytes": 396499
+    },
+    "prelim_published_replay/comparison.csv": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/explore_20261008_review/published_replay/comparison.csv",
+      "sha256": "62dc4b745771bb96c267f46b188f55f2f309dd71d1bad5f644f08c5a6b1875e7",
+      "bytes": 6676
+    },
+    "prelim_published_replay/input_verification.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/explore_20261008_review/published_replay/input_verification.json",
+      "sha256": "a91ac5b0f2022869dde0d7d2f70f04c254674396f12751bff37df42feebdaf43",
+      "bytes": 522
+    },
+    "prelim_published_replay/teams/cohort24.json": {
+      "source": "main_round/mock_test/local-output/mock_TS_using_prelim/explore_20261008_review/published_replay/teams/cohort24.json",
+      "sha256": "cfd0dcbd0201cd57d3c26acfa6090b91967d0966edc7994a1f8818319ec92a33",
+      "bytes": 16630
+    }
+  }
+}

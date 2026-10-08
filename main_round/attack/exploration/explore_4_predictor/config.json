@@ -1,0 +1,15 @@
+{
+  "method": "time_cart_residual_difference",
+  "numeric_qi": ["age", "SBP", "TG", "HDL", "ALT"],
+  "categorical_qi": ["sex", "prefecture"],
+  "tree": {
+    "max_depth": 6,
+    "min_samples_leaf": 10,
+    "random_state": 20261008
+  },
+  "horizon_years": 10.0,
+  "preprocessor_fit_source": "background_only",
+  "mia_raw_score": "abs(f_bg(QI)-time)-abs(f_C(QI)-time)",
+  "mia_confidence_transform": "explore_common.core.score_to_confidence",
+  "aia_prediction": "f_C(QI)"
+}
