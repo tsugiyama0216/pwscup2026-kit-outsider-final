@@ -13,6 +13,7 @@
 | 内容 | 場所 |
 |---|---|
 | 本戦の匿名化手法を理解する M1_v5の解説 | [method_explanation/01_anonymization.md](method_explanation/01_anonymization.md) |
+| 本戦攻撃 T v88を学部1年生向けに理解する | [method_explanation/03_T_v88_attack.md](method_explanation/03_T_v88_attack.md) |
 | 本戦攻撃データ・実行と検証の手順 | [attack/README.md](attack/README.md) |
 | 共通の模擬問題生成・保存・攻撃手法の比較 | [mock_test/README.md](mock_test/README.md) |
 | TS本人の本戦攻撃 | [attack/Attak_T/README.md](attack/Attak_T/README.md) |
