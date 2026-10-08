@@ -1,0 +1,16 @@
+{
+  "version": "Rv4",
+  "date_jst": "2026-10-08",
+  "goal": 0.3,
+  "baseline": "Frozen Rv2: T v88 MIA and AIA, exact self-private mask",
+  "development": [2026100711, 2026100712],
+  "confirmation": [2026100721, 2026100722],
+  "scoring": "Latest local Sugiyama v2 matched 22-target official-shape evaluator; same saved 1000-draw estimated floors as Rv2",
+  "mia_candidates": ["Rv2", "blend15", "blend35", "confident"],
+  "aia_candidates": ["Rv2", "rescue10", "rescue25", "contrast_gate"],
+  "selection": "Select each component by development mean; require >0.001 gain and no world loss >0.01. Preserve baseline otherwise. Freeze numerical source hashes before confirmation.",
+  "additional_check": "Preliminary real-data replay after selection only; never select target-specific methods using released target truth.",
+  "limitations": ["Saved development and confirmation worlds have been used by prior research", "Frozen T models retain historical fitted assets and population exposure", "Mock score is not a prediction of official main-round score", "Preliminary replay uses a different round and no main-round floors"],
+  "official_submission_authorized": false,
+  "github_scope": "New Rv4 source, submission CSVs and evidence in existing private main; live-token ZIP local only"
+}

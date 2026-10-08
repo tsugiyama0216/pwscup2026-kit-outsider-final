@@ -1,0 +1,33 @@
+{
+  "completed": true,
+  "two_independent_process_runs_byte_identical": true,
+  "csv_roundtrip_byte_identical": true,
+  "official_zip_validation": true,
+  "actual_team10_validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "original_token_matches": true,
+  "zip_members": [
+    "F_mia.csv",
+    "F_aia.csv",
+    "token.txt"
+  ],
+  "sha256": {
+    "F_mia.csv": "140991948a9f988cc2dd6d7e516833d688b7dec349ab5cc88b8617c7eaa4828e",
+    "F_aia.csv": "e19087838a6dc49bbfdbd36113451dfc85168b4713ca1727bccbac8fdc6be4cb",
+    "team10_Rv4_attack.zip": "31ff70fe3c128239cf864857acbc40cf17573f31e397c4061cf5d04519280b6e"
+  },
+  "changed_cells_from_Rv2": {
+    "F_mia.csv": 19492,
+    "F_aia.csv": 48
+  },
+  "preservation": {
+    "verified_files": 219,
+    "manifest_sha256": "943b3ad1e9ca2c8427ceec870d5ec43a6bee35e7a077ae9f7902029959fdd505"
+  },
+  "official_submission_performed": false,
+  "official_score_measured": false
+}

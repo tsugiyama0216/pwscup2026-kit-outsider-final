@@ -1,0 +1,8 @@
+{
+  "checked": 219,
+  "missing": [],
+  "different": [],
+  "raw_byte_differences": [],
+  "compatibility_paths_mapped_to_canonical": true,
+  "note": "Content comparison with origin/main; not an execution on another PC"
+}

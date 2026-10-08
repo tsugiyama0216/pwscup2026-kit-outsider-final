@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "numeric_unit_tests_passed": 3,
+  "cached_Rv2_correction_matches_full_T_regeneration": true,
+  "invalid_submission_cases_rejected": [
+    "missing_mia_row",
+    "duplicate_mia_id",
+    "nan_mia",
+    "mia_above_one",
+    "missing_aia_row",
+    "duplicate_aia_id",
+    "negative_time",
+    "infinite_time"
+  ],
+  "prediction_sha256": {
+    "F_mia": "140991948a9f988cc2dd6d7e516833d688b7dec349ab5cc88b8617c7eaa4828e",
+    "F_aia": "e19087838a6dc49bbfdbd36113451dfc85168b4713ca1727bccbac8fdc6be4cb"
+  },
+  "frozen_dependencies": {
+    "verified_files": 219,
+    "manifest_sha256": "943b3ad1e9ca2c8427ceec870d5ec43a6bee35e7a077ae9f7902029959fdd505"
+  }
+}

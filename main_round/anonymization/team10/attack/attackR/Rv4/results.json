@@ -1,0 +1,137 @@
+{
+  "model": "Rv4",
+  "goal": 0.3,
+  "official_score": null,
+  "official_goal_achieved": null,
+  "Sugiyama_v2": {
+    "Rv2": 0.6999568576344237,
+    "Rv4": 0.7323571283928929,
+    "delta": 0.032400270758469185,
+    "MIA": 0.34685573685573684,
+    "AIA": 0.3855013915371561,
+    "target_count": 22,
+    "worlds": 2,
+    "floor_repetitions": 1000
+  },
+  "preliminary_real_data": {
+    "Rv2": 0.4012200918440345,
+    "Rv4": 0.3906505282297184,
+    "delta": -0.010569563614316102,
+    "target_count": 20,
+    "main_round_floors_applied": false
+  },
+  "development": {
+    "Rv2": 0.6852157288063461,
+    "Rv4": 0.7531022920849726
+  },
+  "changed_MIA_rank_rows_by_target": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 5,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "22": 0,
+    "25": 0,
+    "26": 0,
+    "27": 0,
+    "28": 0
+  },
+  "changed_AIA_rows_by_target": {
+    "0": 2,
+    "1": 0,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 4,
+    "8": 0,
+    "9": 35,
+    "11": 2,
+    "12": 2,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "22": 0,
+    "25": 0,
+    "26": 0,
+    "27": 0,
+    "28": 0
+  },
+  "total_changed_AIA_rows": 48,
+  "limitations": [
+    "Previous population/model exposure and previously used confirmation cases",
+    "Preliminary replay worsened; no universal improvement claim",
+    "Neither evaluation estimates the hidden official main-round result"
+  ],
+  "validated_submission": {
+    "completed": true,
+    "two_independent_process_runs_byte_identical": true,
+    "csv_roundtrip_byte_identical": true,
+    "official_zip_validation": true,
+    "actual_team10_validation": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    },
+    "original_token_matches": true,
+    "zip_members": [
+      "F_mia.csv",
+      "F_aia.csv",
+      "token.txt"
+    ],
+    "sha256": {
+      "F_mia.csv": "140991948a9f988cc2dd6d7e516833d688b7dec349ab5cc88b8617c7eaa4828e",
+      "F_aia.csv": "e19087838a6dc49bbfdbd36113451dfc85168b4713ca1727bccbac8fdc6be4cb",
+      "team10_Rv4_attack.zip": "31ff70fe3c128239cf864857acbc40cf17573f31e397c4061cf5d04519280b6e"
+    },
+    "changed_cells_from_Rv2": {
+      "F_mia.csv": 19492,
+      "F_aia.csv": 48
+    },
+    "preservation": {
+      "verified_files": 219,
+      "manifest_sha256": "943b3ad1e9ca2c8427ceec870d5ec43a6bee35e7a077ae9f7902029959fdd505"
+    },
+    "official_submission_performed": false,
+    "official_score_measured": false
+  },
+  "acceptance": {
+    "completed": true,
+    "numeric_unit_tests_passed": 3,
+    "cached_Rv2_correction_matches_full_T_regeneration": true,
+    "invalid_submission_cases_rejected": [
+      "missing_mia_row",
+      "duplicate_mia_id",
+      "nan_mia",
+      "mia_above_one",
+      "missing_aia_row",
+      "duplicate_aia_id",
+      "negative_time",
+      "infinite_time"
+    ],
+    "prediction_sha256": {
+      "F_mia": "140991948a9f988cc2dd6d7e516833d688b7dec349ab5cc88b8617c7eaa4828e",
+      "F_aia": "e19087838a6dc49bbfdbd36113451dfc85168b4713ca1727bccbac8fdc6be4cb"
+    },
+    "frozen_dependencies": {
+      "verified_files": 219,
+      "manifest_sha256": "943b3ad1e9ca2c8427ceec870d5ec43a6bee35e7a077ae9f7902029959fdd505"
+    }
+  }
+}

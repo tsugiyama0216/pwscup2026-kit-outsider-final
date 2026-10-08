@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "means": {
+    "mia": {
+      "Rv2": 0.31531727531727527,
+      "confident": 0.34685573685573684
+    },
+    "aia": {
+      "Rv2": 0.3846395823171485,
+      "rescue10": 0.3855013915371561
+    }
+  },
+  "Rv2": 0.6999568576344237,
+  "Rv4": 0.7323571283928929,
+  "selection": {
+    "mia": "confident",
+    "aia": "rescue10",
+    "source_sha256": {
+      "model.py": "e3ff6d1eff4c2f81b19d4d88baf7d8215ab3fa2f4ad86d256c05ab31c22c1974",
+      "plugin.py": "977ad8fc17acd7373bd6359a3fdcdee5d471d0aeb47b11123da9503dea2a65d7",
+      "runtime.py": "fdb57c3caef0c3b768e7297dfcce61ca375d571104ed8d404f0a8cce6d94194c"
+    },
+    "confirmation_not_started": true,
+    "basis": "2 previously used development worlds; mean gain > .001, no world loss > .01"
+  },
+  "official_score": null
+}
