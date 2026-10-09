@@ -1,0 +1,21 @@
+{
+  "model": "Rv5",
+  "date_jst": "2026-10-09",
+  "basis": "User-supplied Rv2 official feedback; public actual inputs; fixed official scoring semantics",
+  "excluded_selection_sources": ["Sugiyama scoring", "mock_TS", "mock_TS_robust", "retest", "previous mock rankings"],
+  "baseline": "Hash-verified frozen Rv2 submitted CSVs, used as model inputs; no replay of prior mock-based selection",
+  "mia": "Two multivariate nearest-release/background density-ratio views. Empirical conditional background tail calibration; bounded positive evidence addition to baseline logit; do not penalize unsupported rows. Exact self-private negatives remain zero.",
+  "mia_logit_evidence_weight": 0.5,
+  "mia_max_log10_evidence": 2.0,
+  "mia_null_tail": 0.01,
+  "aia": "Local release-vs-background half-year-window contrast. Change Rv2 only with strong unique geometric link or >=0.8 local time mass, >=0.25 excess gain over baseline, and substantially closer release neighbors. Preserve already-supported baseline times.",
+  "aia_neighbors": 7,
+  "aia_min_excess_gain": 0.25,
+  "aia_concentration": 0.8,
+  "aia_distance_ratio": 0.25,
+  "aia_unique_margin": 0.05,
+  "aia_unique_ratio": 0.05,
+  "parameters": "Fixed design constants before actual-output diagnostics; no target-specific parameters or feedback-derived row labels",
+  "confirmation": "Deterministic independent regeneration, official format and actual-ID validation, invariance tests, source/input preservation; no claim of measured official improvement",
+  "publication": "Source, fixed parameters, noncredential CSVs and evidence to existing private main; token-bearing ZIP local only"
+}

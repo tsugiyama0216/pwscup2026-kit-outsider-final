@@ -1,0 +1,10 @@
+{
+  "mia_changed_cells": 84,
+  "mia_changed_ranks": 669,
+  "mia_targets_with_rank_changes": 18,
+  "aia_changed_rows": 15,
+  "baseline_top30_sets_preserved_all_targets": true,
+  "numeric_unit_tests_passed": 7,
+  "official_negative_input_tests_passed": 8,
+  "performance_improvement_measured": false
+}

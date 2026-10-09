@@ -1,0 +1,33 @@
+{
+  "model": "Rv5",
+  "completed": true,
+  "validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "two_independent_runs_byte_identical": true,
+  "csv_roundtrip_identical": true,
+  "official_zip_valid": true,
+  "token_bytes_match_original": true,
+  "negative_checks": {
+    "missing_mia": true,
+    "duplicate_mia": true,
+    "nan_mia": true,
+    "out_of_range": true,
+    "missing_aia": true,
+    "duplicate_aia": true,
+    "negative_time": true,
+    "bad_target": true
+  },
+  "prior_R_preservation_files": 83,
+  "prediction_sha256": {
+    "F_mia.csv": "a971e0e9d9b981833a416be128116d4ce9bbb9e802062259914eadb86c0694f7",
+    "F_aia.csv": "b7abc9a496388053451894c780ac2eac4af95cb75258c75d92fa59f87c9a8b05"
+  },
+  "zip_sha256": "e69eb026d8ecefc309268d9a26e8cd0b01cbbf45cedca58cb9dc745608d7f9e5",
+  "official_score_measured": false,
+  "mock_scores_used": false,
+  "official_submission_performed": false
+}

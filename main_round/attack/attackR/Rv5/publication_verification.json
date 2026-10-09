@@ -1,0 +1,7 @@
+{
+  "clean_tracked_source_reproduction_csvs_byte_identical": true,
+  "dependency_files_verified": 109,
+  "same_pc_existing_python_environment": true,
+  "another_physical_pc_tested": false,
+  "zip_copied_to_publish_tree": false
+}
