@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-09T08:56:54.028685+00:00",
+  "publication_target": "https://github.com/tsugiyama0216/pwscup2026-kit-private",
+  "target_branch": "main",
+  "visibility_verified": "private",
+  "base_commit": "5056664b9a2e1bc8003bba6db03649074dab1e04",
+  "validation": {
+    "frozen_artifact_counts": {
+      "Rv13": 8,
+      "Rv14": 8,
+      "Rv15": 8
+    },
+    "score_evidence_and_summaries_match": true,
+    "both_requested_scores_exceed_Rv2": false
+  },
+  "production_reproduction": {
+    "Rv13": {
+      "new_generation_matches_archived_bytes": true,
+      "prediction_sha256": {
+        "F_mia.csv": "754b4c4e3cdf7ef3624e5c5fa6838ad40c9c18907ec47661e9dff7c5a93555e7",
+        "F_aia.csv": "0148a99e7af26a61af0ae09a63f979cef3dc5f5445fea8fd9d645ef668355858"
+      },
+      "public_input_count": 50,
+      "public_input_hashes_unchanged": true,
+      "read_audit_passed": true,
+      "format_validation": {
+        "mia_rows": 1049,
+        "aia_rows": 7172,
+        "target_count": 22
+      }
+    },
+    "Rv14": {
+      "new_generation_matches_archived_bytes": true,
+      "prediction_sha256": {
+        "F_mia.csv": "754b4c4e3cdf7ef3624e5c5fa6838ad40c9c18907ec47661e9dff7c5a93555e7",
+        "F_aia.csv": "2b7803b99a90d9261c7101b249a2275351a1e1f167e08d14836b03d4294f5ad8"
+      },
+      "public_input_count": 50,
+      "public_input_hashes_unchanged": true,
+      "read_audit_passed": true,
+      "format_validation": {
+        "mia_rows": 1049,
+        "aia_rows": 7172,
+        "target_count": 22
+      }
+    },
+    "Rv15": {
+      "new_generation_matches_archived_bytes": true,
+      "prediction_sha256": {
+        "F_mia.csv": "78369b8f933869299659ac7adcd6a1401ca09d2dc8b2248614ab61ccfaf0cf23",
+        "F_aia.csv": "657e925b5c83af7217ef9ef7319453458b010f08f03f6ad5ea1892abb40b0b74"
+      },
+      "public_input_count": 50,
+      "public_input_hashes_unchanged": true,
+      "read_audit_passed": true,
+      "format_validation": {
+        "mia_rows": 1049,
+        "aia_rows": 7172,
+        "target_count": 22
+      }
+    }
+  },
+  "official_originals": {
+    "manifest": "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\attack\\source_manifest.json",
+    "verified_files": 94,
+    "warnings": []
+  },
+  "tests": {
+    "command": "python -B main_round/attack/attackR/Rv13_research/test_models.py",
+    "passed": 7,
+    "fixture": "committed public main inputs; no ignored development panels required",
+    "log": "evidence/publication_tests.log"
+  },
+  "old_records_preserved": true,
+  "selection_or_model_changed": false,
+  "both_requested_scores_above_Rv2": false,
+  "excluded": [
+    "exploratory engines and trial workers",
+    "generated cases and truth",
+    "local trial output",
+    "environments and caches",
+    "credentials and ZIPs",
+    "unrelated primary worktree changes"
+  ],
+  "official_submission_performed": false,
+  "status": "validated_for_authorized_main_upload"
+}

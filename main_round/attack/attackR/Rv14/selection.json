@@ -1,0 +1,17 @@
+{
+  "model": "Rv14",
+  "status": "research_candidate_not_qualified",
+  "frozen_utc": "2026-10-09T08:22:26.611430+00:00",
+  "selection_uses": [
+    "preliminary public evaluation",
+    "main v5 61/62 development"
+  ],
+  "confirmation_cases": [
+    2026100981,
+    2026100982
+  ],
+  "selection_after_confirmation": false,
+  "both_evaluators_above_Rv2": false,
+  "source_sha256": "1cd9049edee903490d18bef497a0bd784d8e5718fb4d7c21d564bbb0d1910f55",
+  "baseline_models_used_for_inference": []
+}

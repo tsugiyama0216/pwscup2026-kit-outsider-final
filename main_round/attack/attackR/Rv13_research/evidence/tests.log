@@ -1,0 +1,12 @@
+test_copy_signal (__main__.Contracts.test_copy_signal) ... ok
+test_frozen_sources (__main__.Contracts.test_frozen_sources) ... ok
+test_insufficient_private_proof_rejected (__main__.Contracts.test_insufficient_private_proof_rejected) ... ok
+test_invariance_and_no_mutation (__main__.Contracts.test_invariance_and_no_mutation) ... ok
+test_nonfinite_rejected (__main__.Contracts.test_nonfinite_rejected) ... ok
+test_private_proof (__main__.Contracts.test_private_proof) ... ok
+test_tie_rule (__main__.Contracts.test_tie_rule) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.328s
+
+OK

@@ -1,0 +1,186 @@
+{
+  "model_id": "Rv13",
+  "pid": 31044,
+  "fresh_process": true,
+  "public_input_sha256": {
+    "B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "aia_challenge_10.csv": "18c67f92e2111fa756e5f64fbf86a187fdabcc01970b7480b02b0a84dbc2c0bd",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+    "cfg.json": "4c356ad4833278deed7e3c31e58e207e0474adf5598c5956ad9c22e5add87eb0",
+    "targets/C_0.csv": "525ff7b79815190d2512ea7716bd5b5198c611ba66b54c24fa58933f6e1d44c1",
+    "targets/aia_challenge_0.csv": "4ca93cd9e8c29809ccef2a36ef25a4153bc1a263c742e86a25b56220caaa5854",
+    "targets/C_1.csv": "eb990d1d41419743273b082e931afc259d4ce251a2a9ab059198b097d85e44dd",
+    "targets/aia_challenge_1.csv": "d806921494158a3ef9cee0ddbe163b810ffef9d00167dd0eb8323225ddd67ff3",
+    "targets/C_2.csv": "8c1f30b15451864a6373bad76c8bce873ea82da8137e48f824fe3f02f57c1c1b",
+    "targets/aia_challenge_2.csv": "b5cac6afa9e18b8e9a6d734ac7d83b14500672138bc8b505c0fc371d379d516d",
+    "targets/C_3.csv": "1240d0483abe84e7f5997872f144b0428ec0ac2d11c662dcc33146371eaa9384",
+    "targets/aia_challenge_3.csv": "82cedd6ad7693425241c2b7da16fd4ee2ac96cd1aeb8657caf2d664ca6167962",
+    "targets/C_4.csv": "b722a3cdd357af845a10e3bdc312b27570fdea2aa66eb0f688c9c9ca494dbc2b",
+    "targets/aia_challenge_4.csv": "ccd28be9738fee38a1ebca2a128555040ed702afb0a30ff83911f83de5cae87b",
+    "targets/C_5.csv": "0f3d7b95ef1e8380d865de6728397d5f75b04f66ab0218391979a4ce8171628a",
+    "targets/aia_challenge_5.csv": "426250fb74741680d16258e9bbbf536b79b0ba7c29828acd5382038780ddcc02",
+    "targets/C_6.csv": "f9439ff60b33f7976c22280265b309f27382ce85fb6e2c3fdeeb2644bf6c62db",
+    "targets/aia_challenge_6.csv": "5bd3ea48a7e40ac46cfa0bb256f95f17a5f0cc5a2b788ae5fcf7f43bfc28e35b",
+    "targets/C_7.csv": "071b81d7b8a37e245b2b20c5b6f89f419fc8005ad772e5352ca568e40a85262e",
+    "targets/aia_challenge_7.csv": "b4bef96e9acc9e8ac0f76033e2af99e4dc3292f6bb9a03dd36319cd4fc2fa984",
+    "targets/C_8.csv": "d5e52dfdc45c7a7a89318c5abc32aa0e80136fe35093d051f01127b985f879a7",
+    "targets/aia_challenge_8.csv": "cbeef3c78f15cffb9028a9d163151b3e3af45685fb350f1473854c6fd4871238",
+    "targets/C_9.csv": "b5489304725517b445529e1614682042473f16489148d3267c08e0aff59e3af6",
+    "targets/aia_challenge_9.csv": "0580e6ca24b2e6a4e4071aacedec3b32fd0063d2506cd9f70e847e8e27aabe9a",
+    "targets/C_11.csv": "ec79f5531ffda71f2fddc34e0f30e5f312b5f7d3ca78b95973c56c64bb6790f7",
+    "targets/aia_challenge_11.csv": "f6612c96ee551b00070ec2a33d69ad948427b361cc8d32ea71969d8acacff97a",
+    "targets/C_12.csv": "33848d8bd09942287f5c0d52d2092f4b6c19ccfd6a9ecad677209899f15400e1",
+    "targets/aia_challenge_12.csv": "a5863b3a1af33f0319a33861aa7e607d5d9c443c11420e6b268fe9580c5968ac",
+    "targets/C_13.csv": "90b09027567281647a3a3388c359ee73733af63638c9d4c920f202639140dee7",
+    "targets/aia_challenge_13.csv": "06f41260e135ec7a6ab1ad4773dc2b665390457d7d7db0f32a6993d5da98c9b9",
+    "targets/C_14.csv": "b37067cd9508864d7fb85ef5bf122235391b71a10b76c964328ef4f6cef6c4ba",
+    "targets/aia_challenge_14.csv": "ac0eb4bbfe2cece2f52ab93c7a06b542453d61884a38468e0d7eb5204cd6ddad",
+    "targets/C_15.csv": "046ba97c34f0c3d4ef6a6729b629068934de4c9f75c378f61f112f62a557368e",
+    "targets/aia_challenge_15.csv": "ff400ab6e1ec812e4ef6c4eeec0a86f40de674fbb7f250c41a21f7d991e2def3",
+    "targets/C_16.csv": "8481f1279635e1aa6db654895a5a2c6cb4d602ac42c47d30eca48c160f471470",
+    "targets/aia_challenge_16.csv": "4755f4222a5f16eed4520d9566722bff22086e3ee8d98952e38e54e75e0db7f5",
+    "targets/C_17.csv": "cd7f29fbfc8ac9860ceaa3646e125390ce9ed4ac2802134a1ccbc0dbc53c3994",
+    "targets/aia_challenge_17.csv": "73f438ccb4a15d5f12a7f489f58e839c77d35e7fe53d70a01c2e33b8a6410b57",
+    "targets/C_22.csv": "a2d10f282ba255739a95ad3500e9325d8897f0632833274432bbf5795fcaceea",
+    "targets/aia_challenge_22.csv": "0850a1b890095927da4d73aa0ca77ee616927bc1886d1d6573143342239e7e00",
+    "targets/C_25.csv": "35ad7bd8fa4ddd3d3657372b4f0b07b52ebaa2f70466e84f44a0aed8aed2351a",
+    "targets/aia_challenge_25.csv": "c73fe7fedaa726965f0bec91e5cdabab4630c4a04b648447872c72119115230c",
+    "targets/C_26.csv": "f9f978a770147891419e80a3a8c3fe799e38a4d0eb1803d86ee05c14aeb9fa38",
+    "targets/aia_challenge_26.csv": "0fa2f579c42a0e1227e10efba916da681d98e2f91055b62121b17b0532370b07",
+    "targets/C_27.csv": "cd9e330eba7e2300f7ae745b70113237ba20660fa24794726d8bfa7beac650d4",
+    "targets/aia_challenge_27.csv": "46fefc3d83639f8987fc2cd08daa30ba4f8d933ca7a8d912c2334d642b9c8c05",
+    "targets/C_28.csv": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091",
+    "targets/aia_challenge_28.csv": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26"
+  },
+  "output_sha256": {
+    "F_mia.csv": "754b4c4e3cdf7ef3624e5c5fa6838ad40c9c18907ec47661e9dff7c5a93555e7",
+    "F_aia.csv": "0148a99e7af26a61af0ae09a63f979cef3dc5f5445fea8fd9d645ef668355858"
+  },
+  "adapter_sha256": "36002d58c98b13d37c220f751f6fad11b2f1d309127ecd584c8bd9de8dd5187f",
+  "worker_sha256": "6e3c2a28b404a34d2c0902542ec85636e7d1ad10b11896ef0f98feddcb86a561",
+  "plugin_runtime_sha256": "01118942e1f74380b2592149c7260d986f4105a54215fed1d7e829ba3c2a4a97",
+  "input_files_unchanged": true,
+  "diagnostics": {
+    "model_id": "Rv13",
+    "trusted_plugin": true,
+    "plugin_path": "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\attack\\attackR\\Rv13\\model.py",
+    "plugin_sha256": "0d6281c5891f5999c7075c2803b5222f1e821e9b30a28d681304cacd2a08dd51",
+    "fitted_assets_sha256": {},
+    "validation": {
+      "mia_rows": 1049,
+      "aia_rows": 7172,
+      "target_count": 22
+    },
+    "fitted_asset_policy": "fixed_attack_model_directories_only_no_evaluation_material_v2",
+    "imported_source_sha256": {
+      "main_round/attack/attack_workspace.py": "6bf5297730cdcd754535dc2173178fdea8e54404dbce6c29c24812978e49f2a8",
+      "main_round/attack/attackR/Rv13/model.py": "0d6281c5891f5999c7075c2803b5222f1e821e9b30a28d681304cacd2a08dd51",
+      "main_round/attack/Attak_T/_workspace_compat.py": "afa687577f027af58948fe4d9336538009fbf5fafbd00a0089f49cfe796d3c79",
+      "main_round/attack/Attak_T/attack_research/__init__.py": "1b8b0bdf020cebfdeeffb497eeb204a5b9db7546cddbf81a2b75c46e99a785d6",
+      "main_round/mock_test/mock_workspace.py": "0f257b999ea5b42d9ef85dc028f9c7697b01615ddf8c7f1cd8181db5499d833e",
+      "main_round/mock_test/rank_validation/__init__.py": "fb06774fa79349c8ccdc480efbf2044559260a3b04c76db9abc2854a7d107fd7",
+      "main_round/mock_test/rank_validation/adapters.py": "36002d58c98b13d37c220f751f6fad11b2f1d309127ecd584c8bd9de8dd5187f",
+      "main_round/mock_test/rank_validation/model_worker.py": "6e3c2a28b404a34d2c0902542ec85636e7d1ad10b11896ef0f98feddcb86a561",
+      "main_round/mock_test/rank_validation/plugins.py": "01118942e1f74380b2592149c7260d986f4105a54215fed1d7e829ba3c2a4a97",
+      "main_round/mock_test/rank_validation/provenance.py": "a14322a311c736b405128ce07db9a7872ffd9526b2227ded608f5f9606cf477d",
+      "main_round/mock_test/rank_validation/replay.py": "2444480f1c8c2633ff4b80d50cf9d3eff3e1a7087d87e94870056c8044e775d9"
+    },
+    "imported_dependency_capture": "repository_python_reads_and_preloaded_module_origins_v1",
+    "imported_sources_unchanged": true,
+    "public_only_arguments": [
+      "candidates",
+      "self_labels",
+      "background",
+      "self_challenge",
+      "targets",
+      "schema",
+      "cfg"
+    ],
+    "repository_data_read_audit": true,
+    "blocked_reads": [],
+    "declared_source_and_asset_reads": [
+      "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\attack\\attackR\\Rv13\\model.py"
+    ],
+    "plugin_diagnostics": {
+      "model": "Rv13",
+      "known_self_private": 163,
+      "targets": {
+        "0": {
+          "suppressed": 0
+        },
+        "1": {
+          "suppressed": 0
+        },
+        "2": {
+          "suppressed": 0
+        },
+        "3": {
+          "suppressed": 0
+        },
+        "4": {
+          "suppressed": 0
+        },
+        "5": {
+          "suppressed": 0
+        },
+        "6": {
+          "suppressed": 0
+        },
+        "7": {
+          "suppressed": 0
+        },
+        "8": {
+          "suppressed": 0
+        },
+        "9": {
+          "suppressed": 0
+        },
+        "11": {
+          "suppressed": 0
+        },
+        "12": {
+          "suppressed": 0
+        },
+        "13": {
+          "suppressed": 0
+        },
+        "14": {
+          "suppressed": 0
+        },
+        "15": {
+          "suppressed": 0
+        },
+        "16": {
+          "suppressed": 0
+        },
+        "17": {
+          "suppressed": 0
+        },
+        "22": {
+          "suppressed": 0
+        },
+        "25": {
+          "suppressed": 0
+        },
+        "26": {
+          "suppressed": 0
+        },
+        "27": {
+          "suppressed": 0
+        },
+        "28": {
+          "suppressed": 0
+        }
+      },
+      "old_models_used": false,
+      "fitted_assets_used": false,
+      "source_of_learning": "provided public tables only"
+    },
+    "limitation": "Trusted local Python, run in a fresh worker. The audit covers repository data and Python file origins, not an OS sandbox, third-party packages, or helper code outside the repository. Preloaded module origins are conservatively fingerprinted; arbitrary dynamically generated code is not fully captured."
+  },
+  "seconds": 10.312999999994645,
+  "official_truth_read": false,
+  "official_submission_performed": false
+}

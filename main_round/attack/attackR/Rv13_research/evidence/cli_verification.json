@@ -1,0 +1,10 @@
+{
+  "model": "Rv13",
+  "entrypoint": "Rv13_research/run_model.py",
+  "command_completed": true,
+  "byte_identical_to_archived_predictions": true,
+  "sha256": {
+    "F_mia.csv": "754b4c4e3cdf7ef3624e5c5fa6838ad40c9c18907ec47661e9dff7c5a93555e7",
+    "F_aia.csv": "0148a99e7af26a61af0ae09a63f979cef3dc5f5445fea8fd9d645ef668355858"
+  }
+}

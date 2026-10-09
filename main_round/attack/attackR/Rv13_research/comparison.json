@@ -1,0 +1,512 @@
+{
+  "goal_met": false,
+  "definition": {
+    "prelim": "Original preliminary MIA power + AIA power over 20 targets; no main AIA floor.",
+    "main": "Existing stable-index-v1-20261009-2: equal-target mean(mia_all + corrected aia_power), 22 targets; mean of two cases in each split."
+  },
+  "models": [
+    {
+      "model": "Rv2",
+      "prelim_attack_power": 0.4012200918440345,
+      "prelim_mia_power": 0.20948000000000003,
+      "prelim_aia_power": 0.19174009184403445,
+      "development_stable_index": 0.8861435990871156,
+      "development_official_attack_power": 0.9796750676185839,
+      "development_mean_mia_all": 0.3892113442113442,
+      "development_mean_mia_power": 0.4827428127428127,
+      "development_mean_aia_power": 0.4969322548757713,
+      "confirmation_stable_index": 1.0029809851295584,
+      "confirmation_official_attack_power": 1.0580185401671134,
+      "confirmation_mean_mia_all": 0.44055685055685057,
+      "confirmation_mean_mia_power": 0.4955944055944056,
+      "confirmation_mean_aia_power": 0.5624241345727077,
+      "prelim_attack_power_delta_vs_Rv2": 0.0,
+      "development_stable_index_delta_vs_Rv2": 0.0,
+      "confirmation_stable_index_delta_vs_Rv2": 0.0,
+      "both_requested_scores_above_Rv2": false
+    },
+    {
+      "model": "Rv13",
+      "prelim_attack_power": 0.24954268744160774,
+      "prelim_mia_power": 0.1406923076923077,
+      "prelim_aia_power": 0.10885037974930005,
+      "development_stable_index": 1.0087440852920722,
+      "development_official_attack_power": 1.1048979314459184,
+      "development_mean_mia_all": 0.4476314426314426,
+      "development_mean_mia_power": 0.5437852887852888,
+      "development_mean_aia_power": 0.5611126426606295,
+      "confirmation_stable_index": 1.0732395583527858,
+      "confirmation_official_attack_power": 1.134428369541597,
+      "confirmation_mean_mia_all": 0.4435353535353535,
+      "confirmation_mean_mia_power": 0.5047241647241647,
+      "confirmation_mean_aia_power": 0.6297042048174324,
+      "prelim_attack_power_delta_vs_Rv2": -0.15167740440242677,
+      "development_stable_index_delta_vs_Rv2": 0.12260048620495656,
+      "confirmation_stable_index_delta_vs_Rv2": 0.07025857322322748,
+      "both_requested_scores_above_Rv2": false
+    },
+    {
+      "model": "Rv14",
+      "prelim_attack_power": 0.24206407877836456,
+      "prelim_mia_power": 0.1406923076923077,
+      "prelim_aia_power": 0.10137177108605684,
+      "development_stable_index": 0.9989285713627858,
+      "development_official_attack_power": 1.095082417516632,
+      "development_mean_mia_all": 0.4476314426314426,
+      "development_mean_mia_power": 0.5437852887852888,
+      "development_mean_aia_power": 0.5512971287313433,
+      "confirmation_stable_index": 1.0527191789979788,
+      "confirmation_official_attack_power": 1.11390799018679,
+      "confirmation_mean_mia_all": 0.4435353535353535,
+      "confirmation_mean_mia_power": 0.5047241647241647,
+      "confirmation_mean_aia_power": 0.6091838254626254,
+      "prelim_attack_power_delta_vs_Rv2": -0.15915601306566995,
+      "development_stable_index_delta_vs_Rv2": 0.11278497227567019,
+      "confirmation_stable_index_delta_vs_Rv2": 0.04973819386842049,
+      "both_requested_scores_above_Rv2": false
+    },
+    {
+      "model": "Rv15",
+      "prelim_attack_power": 0.3398145026326754,
+      "prelim_mia_power": 0.21032615384615383,
+      "prelim_aia_power": 0.12948834878652155,
+      "development_stable_index": 0.6779038659555423,
+      "development_official_attack_power": 0.7883802645569409,
+      "development_mean_mia_all": 0.17596556267806268,
+      "development_mean_mia_power": 0.28644196127946125,
+      "development_mean_aia_power": 0.5019383032774797,
+      "confirmation_stable_index": 0.761548137340191,
+      "confirmation_official_attack_power": 0.8386978394898931,
+      "confirmation_mean_mia_all": 0.1946892488992489,
+      "confirmation_mean_mia_power": 0.27183895104895106,
+      "confirmation_mean_aia_power": 0.566858888440942,
+      "prelim_attack_power_delta_vs_Rv2": -0.061405589211359135,
+      "development_stable_index_delta_vs_Rv2": -0.2082397331315733,
+      "confirmation_stable_index_delta_vs_Rv2": -0.24143284778936736,
+      "both_requested_scores_above_Rv2": false
+    }
+  ],
+  "sensitivity": {
+    "Rv2-development": {
+      "cases": [
+        {
+          "seed": "2026100961",
+          "delta_vs_Rv2": -7.569702440626067e-18,
+          "targets_won": 0,
+          "targets_lost": 0,
+          "targets_tied": 22
+        },
+        {
+          "seed": "2026100962",
+          "delta_vs_Rv2": -9.462128050782583e-18,
+          "targets_won": 0,
+          "targets_lost": 0,
+          "targets_tied": 22
+        }
+      ],
+      "target_averaged_deltas": {
+        "0": -5.551115123125783e-17,
+        "1": -5.551115123125783e-17,
+        "2": 5.551115123125783e-17,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": -1.3877787807814457e-17,
+        "7": 0.0,
+        "8": -1.3877787807814457e-17,
+        "9": -5.551115123125783e-17,
+        "11": 5.551115123125783e-17,
+        "12": 0.0,
+        "13": 0.0,
+        "14": -6.938893903907228e-17,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "22": -6.938893903907228e-18,
+        "25": 2.7755575615628914e-17,
+        "26": 0.0,
+        "27": 0.0,
+        "28": -5.551115123125783e-17
+      },
+      "leave_one_target_out_delta_range": [
+        -1.1564823173178714e-17,
+        -5.617199826972518e-18
+      ],
+      "inference": "Descriptive sensitivity only; cases share a population and are not independent contest estimates."
+    },
+    "Rv2-confirmation": {
+      "cases": [
+        {
+          "seed": "2026100981",
+          "delta_vs_Rv2": 2.2078298785159362e-17,
+          "targets_won": 0,
+          "targets_lost": 0,
+          "targets_tied": 22
+        },
+        {
+          "seed": "2026100982",
+          "delta_vs_Rv2": -2.5863150005472395e-17,
+          "targets_won": 0,
+          "targets_lost": 0,
+          "targets_tied": 22
+        }
+      ],
+      "target_averaged_deltas": {
+        "0": 5.551115123125783e-17,
+        "1": 5.551115123125783e-17,
+        "2": -5.551115123125783e-17,
+        "3": 0.0,
+        "4": -5.551115123125783e-17,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 1.1102230246251565e-16,
+        "8": 0.0,
+        "9": -5.551115123125783e-17,
+        "11": 5.551115123125783e-17,
+        "12": 0.0,
+        "13": -1.1102230246251565e-16,
+        "14": 2.7755575615628914e-17,
+        "15": -1.1102230246251565e-16,
+        "16": 0.0,
+        "17": 0.0,
+        "22": -6.938893903907228e-18,
+        "25": -6.938893903907228e-18,
+        "26": 5.551115123125783e-17,
+        "27": 5.551115123125783e-17,
+        "28": -5.551115123125783e-17
+      },
+      "leave_one_target_out_delta_range": [
+        -7.269317423140906e-18,
+        3.3042351923367752e-18
+      ],
+      "inference": "Descriptive sensitivity only; cases share a population and are not independent contest estimates."
+    },
+    "Rv13-development": {
+      "cases": [
+        {
+          "seed": "2026100961",
+          "delta_vs_Rv2": 0.15813805538709358,
+          "targets_won": 14,
+          "targets_lost": 7,
+          "targets_tied": 1
+        },
+        {
+          "seed": "2026100962",
+          "delta_vs_Rv2": 0.08706291702281983,
+          "targets_won": 10,
+          "targets_lost": 12,
+          "targets_tied": 0
+        }
+      ],
+      "target_averaged_deltas": {
+        "0": -0.024309086332746033,
+        "1": 0.06318504190844632,
+        "2": -0.0028702931479301363,
+        "3": -0.2017337890335095,
+        "4": -0.0201592319400537,
+        "5": -0.07980597907725814,
+        "6": 0.6896726616644713,
+        "7": -0.15112720612720631,
+        "8": 0.6690775913914724,
+        "9": 0.027909722950075266,
+        "11": 0.44812183383991894,
+        "12": 0.0997966001790358,
+        "13": -0.06986295313881496,
+        "14": -0.1950889869023773,
+        "15": 0.014493284493284408,
+        "16": -0.08037948887420163,
+        "17": 0.04508556548900863,
+        "22": 0.12990297329758077,
+        "25": 0.25379349816849817,
+        "26": 0.5970698485343793,
+        "27": -0.020347203399984887,
+        "28": 0.5047862925669587
+      },
+      "leave_one_target_out_delta_range": [
+        0.09559704927831314,
+        0.1380449755020265
+      ],
+      "inference": "Descriptive sensitivity only; cases share a population and are not independent contest estimates."
+    },
+    "Rv13-confirmation": {
+      "cases": [
+        {
+          "seed": "2026100981",
+          "delta_vs_Rv2": 0.10279705275064925,
+          "targets_won": 14,
+          "targets_lost": 8,
+          "targets_tied": 0
+        },
+        {
+          "seed": "2026100982",
+          "delta_vs_Rv2": 0.037720093695806,
+          "targets_won": 8,
+          "targets_lost": 13,
+          "targets_tied": 1
+        }
+      ],
+      "target_averaged_deltas": {
+        "0": -0.017378077991759777,
+        "1": 0.4740053773549429,
+        "2": -0.18635860542335353,
+        "3": -0.052292721349786075,
+        "4": -0.16746613175184594,
+        "5": -0.07664811888723677,
+        "6": 0.6149743607383258,
+        "7": 0.11078206465067786,
+        "8": 0.9149052287632027,
+        "9": 0.00800446905664054,
+        "11": -0.2060207847707845,
+        "12": -0.015818177441028494,
+        "13": 0.03682967833526363,
+        "14": -0.3481850175967822,
+        "15": -0.0450130261894966,
+        "16": 0.017637211475130712,
+        "17": -0.16073306638524068,
+        "22": 0.3976271761543078,
+        "25": 0.25429203539823014,
+        "26": 0.09759085812206938,
+        "27": -0.16091959972394715,
+        "28": 0.055873478373478086
+      },
+      "leave_one_target_out_delta_range": [
+        0.030037303911800244,
+        0.09018445850037093
+      ],
+      "inference": "Descriptive sensitivity only; cases share a population and are not independent contest estimates."
+    },
+    "Rv14-development": {
+      "cases": [
+        {
+          "seed": "2026100961",
+          "delta_vs_Rv2": 0.16631776883953198,
+          "targets_won": 13,
+          "targets_lost": 9,
+          "targets_tied": 0
+        },
+        {
+          "seed": "2026100962",
+          "delta_vs_Rv2": 0.05925217571180872,
+          "targets_won": 9,
+          "targets_lost": 13,
+          "targets_tied": 0
+        }
+      ],
+      "target_averaged_deltas": {
+        "0": -0.024309086332746033,
+        "1": 0.06318504190844632,
+        "2": -0.0028702931479301363,
+        "3": -0.2156623109465317,
+        "4": -0.053492565273386805,
+        "5": -0.020552289844740446,
+        "6": 0.8281983026901119,
+        "7": -0.11077632893422351,
+        "8": 0.4637895927601807,
+        "9": 0.05171924675959899,
+        "11": 0.48714695345714404,
+        "12": 0.09788089136677525,
+        "13": -0.028196286472148557,
+        "14": -0.30223184404523423,
+        "15": -0.04037684537684538,
+        "16": -0.05710260987184186,
+        "17": 0.14086028008722895,
+        "22": 0.10950507054673729,
+        "25": 0.259967505612667,
+        "26": 0.5594819173537708,
+        "27": -0.1849348679876492,
+        "28": 0.4600399157553645
+      },
+      "leave_one_target_out_delta_range": [
+        0.07871767082736361,
+        0.13254767781476104
+      ],
+      "inference": "Descriptive sensitivity only; cases share a population and are not independent contest estimates."
+    },
+    "Rv14-confirmation": {
+      "cases": [
+        {
+          "seed": "2026100981",
+          "delta_vs_Rv2": 0.08436197279175812,
+          "targets_won": 11,
+          "targets_lost": 10,
+          "targets_tied": 1
+        },
+        {
+          "seed": "2026100982",
+          "delta_vs_Rv2": 0.01511441494508315,
+          "targets_won": 7,
+          "targets_lost": 14,
+          "targets_tied": 1
+        }
+      ],
+      "target_averaged_deltas": {
+        "0": -0.06946141132509348,
+        "1": 0.4519923903419559,
+        "2": -0.21016812923287725,
+        "3": 0.009272449590385146,
+        "4": -0.16746613175184594,
+        "5": -0.08620320658290437,
+        "6": 0.649361712516982,
+        "7": 0.09078206465067784,
+        "8": 0.9623275890116498,
+        "9": 0.00800446905664054,
+        "11": -0.19461205461205483,
+        "12": -0.13733615221987305,
+        "13": 0.0074179136293813785,
+        "14": -0.3875016797838423,
+        "15": -0.11319484437131477,
+        "16": 0.0,
+        "17": -0.27999862157756883,
+        "22": 0.3341987744906121,
+        "25": 0.2469984094839145,
+        "26": -0.01876879100073761,
+        "27": -0.15138052768487514,
+        "28": 0.14997604247604232
+      },
+      "leave_one_target_out_delta_range": [
+        0.006281556004457342,
+        0.0705591402328141
+      ],
+      "inference": "Descriptive sensitivity only; cases share a population and are not independent contest estimates."
+    },
+    "Rv15-development": {
+      "cases": [
+        {
+          "seed": "2026100961",
+          "delta_vs_Rv2": -0.20768025316623684,
+          "targets_won": 6,
+          "targets_lost": 16,
+          "targets_tied": 0
+        },
+        {
+          "seed": "2026100962",
+          "delta_vs_Rv2": -0.20879921309690938,
+          "targets_won": 5,
+          "targets_lost": 17,
+          "targets_tied": 0
+        }
+      ],
+      "target_averaged_deltas": {
+        "0": -0.484309086332746,
+        "1": -0.39961402569062116,
+        "2": -0.5018126008402377,
+        "3": -0.3041576215676984,
+        "4": -0.5453592319400535,
+        "5": 0.061564921071839265,
+        "6": -0.017378620386810664,
+        "7": -0.5615759240759243,
+        "8": 0.014027245474193609,
+        "9": -0.44058844554809334,
+        "11": -0.25610435663627173,
+        "12": 0.29067635151226495,
+        "13": -0.37537577365163544,
+        "14": -0.26138375690805354,
+        "15": -0.2596088814567078,
+        "16": 0.039087640042080235,
+        "17": -0.22901639447871386,
+        "22": -0.0705626543209874,
+        "25": -0.08382387882387854,
+        "26": -0.05237958942606645,
+        "27": -0.15730544515822636,
+        "28": 0.0137260002477394
+      },
+      "leave_one_target_out_delta_range": [
+        -0.23199764192413683,
+        -0.19141420022946112
+      ],
+      "inference": "Descriptive sensitivity only; cases share a population and are not independent contest estimates."
+    },
+    "Rv15-confirmation": {
+      "cases": [
+        {
+          "seed": "2026100981",
+          "delta_vs_Rv2": -0.22503609101083058,
+          "targets_won": 4,
+          "targets_lost": 18,
+          "targets_tied": 0
+        },
+        {
+          "seed": "2026100982",
+          "delta_vs_Rv2": -0.2578296045679041,
+          "targets_won": 5,
+          "targets_lost": 16,
+          "targets_tied": 1
+        }
+      ],
+      "target_averaged_deltas": {
+        "0": -0.4774272007987774,
+        "1": -0.10483505391190331,
+        "2": -0.47939889846364653,
+        "3": -0.11722084877791311,
+        "4": -0.4886912029769172,
+        "5": -0.028107968487666217,
+        "6": 0.0009479523640916199,
+        "7": -0.5930274591588459,
+        "8": 0.08681984503419751,
+        "9": -0.49759553094335945,
+        "11": -0.4952256077256076,
+        "12": 0.04078744831752071,
+        "13": -0.2400933985878133,
+        "14": -0.34147603875820104,
+        "15": -0.4289897248720775,
+        "16": 0.07834525343317272,
+        "17": -0.3429094957529737,
+        "22": 0.19065747918461104,
+        "25": -0.15694578511459056,
+        "26": -0.23520927185547993,
+        "27": -0.4800862663906141,
+        "28": -0.20184087712328808
+      },
+      "leave_one_target_out_delta_range": [
+        -0.2620085776452711,
+        -0.2246902472479636
+      ],
+      "inference": "Descriptive sensitivity only; cases share a population and are not independent contest estimates."
+    }
+  },
+  "evidence_sha256": {
+    "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\mock_test\\local-output\\rv_prelim_20261009\\evaluations\\Rv2.json": "2e8eb3d6378a351c8a3e913bfce56db2feed170ee5dedec093a4718d941236ad",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100961\\scores\\Rv2\\by_target.csv": "11adf7d540f1ae955c9d9a4cd983d40c45e8ec006f5113ce1aec40cf41fce972",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100961\\scores\\Rv2\\result.json": "6add194c36b0f779f3854e18e8002785c5ea2d022214cd317c0118936b77b92f",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100962\\scores\\Rv2\\by_target.csv": "6124a03bbf9f265139ec703b1fedbd951fe963fad5ad2b2d828943440facb183",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100962\\scores\\Rv2\\result.json": "26b116d1694b623a1264fd623ae0fb7ee19ac7384bb451b7586e4a03bdf233af",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100981\\scores\\Rv2\\by_target.csv": "3172407a1635b50f74877009997f6129f7e86eb9e3d66b22ecaf4f5fd3779398",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100981\\scores\\Rv2\\result.json": "244eb2338167f1b656822d174c0bebe96ae09e22532b0720ac67c88c9a02547f",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100982\\scores\\Rv2\\by_target.csv": "a5818025d839d2e1b92dac69fc82e4d97c5fcbe2235ebe8be54d20f166f255c3",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100982\\scores\\Rv2\\result.json": "9268bc83ea31e0de18f0a37b84a900527ac5db8d3d44ac7f1bcdc5a6776dc6a9",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\final-prelim\\Rv13\\result.json": "352dfc98298aacb08c60091d9555f603126f8545f18854afe02e5d57d6a3b3a7",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100961\\scores\\Rv13\\by_target.csv": "ec9280e04e14d572ff5cbf25d586de1a64bed41142c20fb53684b3b827c0f94c",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100961\\scores\\Rv13\\result.json": "c74a836147c5fbaa8f92dffa53cfd200c30723eaaeda2a35194aac5bdb81d3d3",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100962\\scores\\Rv13\\by_target.csv": "b3d9561e4b821ad4f28d9e607c59efd5ec074b0218ded526d8e685dda63d977e",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100962\\scores\\Rv13\\result.json": "2848bd642ce1a8a06a5cff7a07c10205332f4a18814237e68a772050942a80bd",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100981\\scores\\Rv13\\by_target.csv": "8c37631ae2248ef9d370639423035235eac53b91449877e1d50e8a946a13d107",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100981\\scores\\Rv13\\result.json": "de35ce2c87b3d6a95429ec508198804e71cacf1364ec7b3efbe83d7e57d6e37b",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100982\\scores\\Rv13\\by_target.csv": "25c73d301ed4b6015e61dad0104d0e01b4525cbfb9dd7c62c6c06944e9af2b1e",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100982\\scores\\Rv13\\result.json": "596f1800fb968dc3fadd41363a695933ad7aa52c211b79605b7874d28cd1d4f4",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\final-prelim\\Rv14\\result.json": "4132ebae11545b235f5c51d8a02f47a900500d349c3da643e22a3837840266f3",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100961\\scores\\Rv14\\by_target.csv": "abd11ac6ca7ded4cc6dfedf586c1eb281ea7bfc6f4a8eff11d15b6d07113036b",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100961\\scores\\Rv14\\result.json": "c9d58502be9e416f99f6d3c52b0442c511d4f29981d37bdfea50269aa44d9bdf",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100962\\scores\\Rv14\\by_target.csv": "b886e014308fb1f123c870151be89a24dc2f5c27d4536030aacca068eb8d8a8b",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100962\\scores\\Rv14\\result.json": "47ae654964b8663508570648e65a2985a5c32cb1ef1c5f61030191d01d02332b",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100981\\scores\\Rv14\\by_target.csv": "7c9b4ebbc5fd5900b20b6d1693f3d70af47c158ca91c7d78c3abecb340eed940",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100981\\scores\\Rv14\\result.json": "94e19a896bb2f33344ad6702bb2a929f9ecb50642fe1203790542515730eaba8",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100982\\scores\\Rv14\\by_target.csv": "351882d200ddf6ffe47bd48c2c959f00269391445f0861f656e3fd7d574f6c06",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100982\\scores\\Rv14\\result.json": "2176d6223810ded7d3a402774a7394c7d02ca9efbcaf0997bedeb05b6ab4db7f",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\final-prelim\\Rv15\\result.json": "d4930dc055231a3cf31bf05ecb0766642df7b16a72b1fb3747762e739e11a6d7",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100961\\scores\\Rv15\\by_target.csv": "1136a4788e00667de6abec3869f21c4ef3570056d480a979ce6b4b3cf940cc99",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100961\\scores\\Rv15\\result.json": "4cece77556203314d5d8af663d8c0bfcfab1ea9bbf0235d98e3ad878ef86d1c3",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100962\\scores\\Rv15\\by_target.csv": "38f42bdfc02572b51736727a489c33f064fd3d713ee23c6c155ac0ebb64cb7fb",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100962\\scores\\Rv15\\result.json": "677c756eb6a7dcea868920864276dc9889ed2853f04a4ddf34d9fb971c565bc7",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100981\\scores\\Rv15\\by_target.csv": "0c6cbfe7bcde2f105705d53a4a7ccc8f5f59a50a06cdf0a65f6f78bc0759982f",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100981\\scores\\Rv15\\result.json": "35159e21bc387656ca8f795a9a30734e86ad18ffbaa9beb3886695d4cd4c5143",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100982\\scores\\Rv15\\by_target.csv": "0f255d37a11b178f4cc696d1e9fc8b92797b8cf136ec72a8170b248a49c64210",
+    "C:\\Users\\miina\\.codex\\worktrees\\rv13-new-attacks\\PWScup2026\\main_round\\mock_test\\local-output\\rv13-research-20261009\\panels\\2026100982\\scores\\Rv15\\result.json": "e048b2208d7a968cd34e86a9df2daba6133cdd382431ff3b40d5a4bacc843e46"
+  },
+  "limitations": [
+    "Preliminary public truth and development cases were used for model selection; they are not held-out validation.",
+    "Confirmation seeds were previously generated for another research task; models were frozen before accessing their evaluation and not retuned afterward. The family and population match development.",
+    "Eleven families and many settings were explored. Best development results have selection bias.",
+    "Actual main-round CSVs have no known truth here; synthetic results are not official attack scores.",
+    "None of Rv13/Rv14/Rv15 beats Rv2 on both requested scoring methods."
+  ]
+}

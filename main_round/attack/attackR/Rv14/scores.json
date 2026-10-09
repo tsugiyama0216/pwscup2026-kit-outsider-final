@@ -1,0 +1,20 @@
+{
+  "model": "Rv14",
+  "prelim_attack_power": 0.24206407877836456,
+  "prelim_mia_power": 0.1406923076923077,
+  "prelim_aia_power": 0.10137177108605684,
+  "development_stable_index": 0.9989285713627858,
+  "development_official_attack_power": 1.095082417516632,
+  "development_mean_mia_all": 0.4476314426314426,
+  "development_mean_mia_power": 0.5437852887852888,
+  "development_mean_aia_power": 0.5512971287313433,
+  "confirmation_stable_index": 1.0527191789979788,
+  "confirmation_official_attack_power": 1.11390799018679,
+  "confirmation_mean_mia_all": 0.4435353535353535,
+  "confirmation_mean_mia_power": 0.5047241647241647,
+  "confirmation_mean_aia_power": 0.6091838254626254,
+  "prelim_attack_power_delta_vs_Rv2": -0.15915601306566995,
+  "development_stable_index_delta_vs_Rv2": 0.11278497227567019,
+  "confirmation_stable_index_delta_vs_Rv2": 0.04973819386842049,
+  "both_requested_scores_above_Rv2": false
+}

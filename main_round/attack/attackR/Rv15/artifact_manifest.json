@@ -1,0 +1,10 @@
+{
+  "model.py": "e1e996bc2ed69aaee6f528894002374d31fe08b55e7548c53174084c543f41f1",
+  "README.md": "478966715a235d4021840ddade75c490e728609f4c6ea0d965934b41ffa920ce",
+  "scores.json": "bff5b8135cc851b5a7ee4b4db561d1b58c8eb728843c734399ddafad59961445",
+  "selection.json": "06234627956a9f243391a26bad83f1ac5c531792a355f927d883f3ec2f649c70",
+  "verification.json": "6274ce61dd3e47f8cc11d9c0b4d19fa89e378a070cffd47bfa9229f7cd98af52",
+  "predictions/diagnostics.json": "1132d81f3e09964a9d60825a8f9127c5611da25a11dd2accf7d3c4d0700d070d",
+  "predictions/F_aia.csv": "657e925b5c83af7217ef9ef7319453458b010f08f03f6ad5ea1892abb40b0b74",
+  "predictions/F_mia.csv": "78369b8f933869299659ac7adcd6a1401ca09d2dc8b2248614ab61ccfaf0cf23"
+}
