@@ -1,0 +1,307 @@
+{
+  "model_id": "Rv12",
+  "public_input_sha256": {
+    "B.csv": "68c5748ce137313d04ac82d64e421ed18948a5d0d34136f36941c069d12afeff",
+    "B_self.csv": "5a9f0f5f7e8998e970c4eafb789ebdf170f93e7a39b49ccf379472c516407df8",
+    "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "aia_challenge_10.csv": "18c67f92e2111fa756e5f64fbf86a187fdabcc01970b7480b02b0a84dbc2c0bd",
+    "schema.json": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18",
+    "cfg.json": "e89cda613706600a6a7d9fe13db341e1ddf135f9f3db4d9a92d92d76dbda01ac",
+    "targets/C_0.csv": "525ff7b79815190d2512ea7716bd5b5198c611ba66b54c24fa58933f6e1d44c1",
+    "targets/aia_challenge_0.csv": "4ca93cd9e8c29809ccef2a36ef25a4153bc1a263c742e86a25b56220caaa5854",
+    "targets/C_1.csv": "eb990d1d41419743273b082e931afc259d4ce251a2a9ab059198b097d85e44dd",
+    "targets/aia_challenge_1.csv": "d806921494158a3ef9cee0ddbe163b810ffef9d00167dd0eb8323225ddd67ff3",
+    "targets/C_2.csv": "8c1f30b15451864a6373bad76c8bce873ea82da8137e48f824fe3f02f57c1c1b",
+    "targets/aia_challenge_2.csv": "b5cac6afa9e18b8e9a6d734ac7d83b14500672138bc8b505c0fc371d379d516d",
+    "targets/C_3.csv": "1240d0483abe84e7f5997872f144b0428ec0ac2d11c662dcc33146371eaa9384",
+    "targets/aia_challenge_3.csv": "82cedd6ad7693425241c2b7da16fd4ee2ac96cd1aeb8657caf2d664ca6167962",
+    "targets/C_4.csv": "b722a3cdd357af845a10e3bdc312b27570fdea2aa66eb0f688c9c9ca494dbc2b",
+    "targets/aia_challenge_4.csv": "ccd28be9738fee38a1ebca2a128555040ed702afb0a30ff83911f83de5cae87b",
+    "targets/C_5.csv": "0f3d7b95ef1e8380d865de6728397d5f75b04f66ab0218391979a4ce8171628a",
+    "targets/aia_challenge_5.csv": "426250fb74741680d16258e9bbbf536b79b0ba7c29828acd5382038780ddcc02",
+    "targets/C_6.csv": "f9439ff60b33f7976c22280265b309f27382ce85fb6e2c3fdeeb2644bf6c62db",
+    "targets/aia_challenge_6.csv": "5bd3ea48a7e40ac46cfa0bb256f95f17a5f0cc5a2b788ae5fcf7f43bfc28e35b",
+    "targets/C_7.csv": "071b81d7b8a37e245b2b20c5b6f89f419fc8005ad772e5352ca568e40a85262e",
+    "targets/aia_challenge_7.csv": "b4bef96e9acc9e8ac0f76033e2af99e4dc3292f6bb9a03dd36319cd4fc2fa984",
+    "targets/C_8.csv": "d5e52dfdc45c7a7a89318c5abc32aa0e80136fe35093d051f01127b985f879a7",
+    "targets/aia_challenge_8.csv": "cbeef3c78f15cffb9028a9d163151b3e3af45685fb350f1473854c6fd4871238",
+    "targets/C_9.csv": "b5489304725517b445529e1614682042473f16489148d3267c08e0aff59e3af6",
+    "targets/aia_challenge_9.csv": "0580e6ca24b2e6a4e4071aacedec3b32fd0063d2506cd9f70e847e8e27aabe9a",
+    "targets/C_11.csv": "ec79f5531ffda71f2fddc34e0f30e5f312b5f7d3ca78b95973c56c64bb6790f7",
+    "targets/aia_challenge_11.csv": "f6612c96ee551b00070ec2a33d69ad948427b361cc8d32ea71969d8acacff97a",
+    "targets/C_12.csv": "33848d8bd09942287f5c0d52d2092f4b6c19ccfd6a9ecad677209899f15400e1",
+    "targets/aia_challenge_12.csv": "a5863b3a1af33f0319a33861aa7e607d5d9c443c11420e6b268fe9580c5968ac",
+    "targets/C_13.csv": "90b09027567281647a3a3388c359ee73733af63638c9d4c920f202639140dee7",
+    "targets/aia_challenge_13.csv": "06f41260e135ec7a6ab1ad4773dc2b665390457d7d7db0f32a6993d5da98c9b9",
+    "targets/C_14.csv": "b37067cd9508864d7fb85ef5bf122235391b71a10b76c964328ef4f6cef6c4ba",
+    "targets/aia_challenge_14.csv": "ac0eb4bbfe2cece2f52ab93c7a06b542453d61884a38468e0d7eb5204cd6ddad",
+    "targets/C_15.csv": "046ba97c34f0c3d4ef6a6729b629068934de4c9f75c378f61f112f62a557368e",
+    "targets/aia_challenge_15.csv": "ff400ab6e1ec812e4ef6c4eeec0a86f40de674fbb7f250c41a21f7d991e2def3",
+    "targets/C_16.csv": "8481f1279635e1aa6db654895a5a2c6cb4d602ac42c47d30eca48c160f471470",
+    "targets/aia_challenge_16.csv": "4755f4222a5f16eed4520d9566722bff22086e3ee8d98952e38e54e75e0db7f5",
+    "targets/C_17.csv": "cd7f29fbfc8ac9860ceaa3646e125390ce9ed4ac2802134a1ccbc0dbc53c3994",
+    "targets/aia_challenge_17.csv": "73f438ccb4a15d5f12a7f489f58e839c77d35e7fe53d70a01c2e33b8a6410b57",
+    "targets/C_22.csv": "a2d10f282ba255739a95ad3500e9325d8897f0632833274432bbf5795fcaceea",
+    "targets/aia_challenge_22.csv": "0850a1b890095927da4d73aa0ca77ee616927bc1886d1d6573143342239e7e00",
+    "targets/C_25.csv": "35ad7bd8fa4ddd3d3657372b4f0b07b52ebaa2f70466e84f44a0aed8aed2351a",
+    "targets/aia_challenge_25.csv": "c73fe7fedaa726965f0bec91e5cdabab4630c4a04b648447872c72119115230c",
+    "targets/C_26.csv": "f9f978a770147891419e80a3a8c3fe799e38a4d0eb1803d86ee05c14aeb9fa38",
+    "targets/aia_challenge_26.csv": "0fa2f579c42a0e1227e10efba916da681d98e2f91055b62121b17b0532370b07",
+    "targets/C_27.csv": "cd9e330eba7e2300f7ae745b70113237ba20660fa24794726d8bfa7beac650d4",
+    "targets/aia_challenge_27.csv": "46fefc3d83639f8987fc2cd08daa30ba4f8d933ca7a8d912c2334d642b9c8c05",
+    "targets/C_28.csv": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091",
+    "targets/aia_challenge_28.csv": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26"
+  },
+  "output_sha256": {
+    "F_mia.csv": "b2d931c68e5228368369a36ae5749966c0f552631df3fff9d817f2bad5bb21a3",
+    "F_aia.csv": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88"
+  },
+  "input_files_unchanged": true,
+  "source_sha256": {
+    "model.py": "a10d472323d77cb82e140abbfd5fff03634145bc2ecbbead0f610bbdfae4d031",
+    "protocol.json": "68ef9cec26c3d3600a22e93216f6537caffba27b05ae39fc7e949c2bde98d920",
+    "worker.py": "3b249fdbb7736bc7cf059c1b2d6dee3c491a296a68aa2a9e52a59b46886e4fcf",
+    "learned_veto.py": "ffb22ac233ae778118085c73c010a120c585dceaf8f6a70c41bcd6706e78c712"
+  },
+  "imported_source_sha256": {
+    "main_round/attack/Attack_M/v1/actual.py": "3a9b3ce631d17f60192c1815bf73d9bdfeaba64b415ad4c7f6b4ff0ef49f5393",
+    "main_round/attack/attack_workspace.py": "6bf5297730cdcd754535dc2173178fdea8e54404dbce6c29c24812978e49f2a8",
+    "main_round/attack/attackR/Rv12/learned_veto.py": "ffb22ac233ae778118085c73c010a120c585dceaf8f6a70c41bcd6706e78c712",
+    "main_round/attack/attackR/Rv12/model.py": "a10d472323d77cb82e140abbfd5fff03634145bc2ecbbead0f610bbdfae4d031",
+    "main_round/attack/attackR/Rv12/select.py": "a8155188f4338c0a1ae0b65847fcf1d1083f6d3f32c654fdd2bd3bcc334bd748",
+    "main_round/attack/attackR/Rv12/worker.py": "3b249fdbb7736bc7cf059c1b2d6dee3c491a296a68aa2a9e52a59b46886e4fcf",
+    "main_round/attack/Attak_T/_workspace_compat.py": "afa687577f027af58948fe4d9336538009fbf5fafbd00a0089f49cfe796d3c79",
+    "main_round/attack/Attak_T/attack_research/__init__.py": "1b8b0bdf020cebfdeeffb497eeb204a5b9db7546cddbf81a2b75c46e99a785d6",
+    "main_round/attack/Attak_T/attack_research/features.py": "dc9a092b1d70b253246c851e3fe7045e6cc6134c52aac1ab7c2b9cd93c11d55c",
+    "main_round/attack/Attak_T/attack_research/v2/__init__.py": "2e29b2ba0761400e7e50c9b003c8ca10efac2c19fb3dfb1845dc0ca6972b3df0",
+    "main_round/attack/Attak_T/attack_research/v2/features.py": "0679ba283aeda2e6559988d32319f7b03bf65e2d42f8ba940924e90b057c1210",
+    "main_round/attack/Attak_T/attack_research/v3/__init__.py": "deed2ad0894db5ae8aae0123d4d427e88ce711967f388f725516f25a0aad34e1",
+    "main_round/attack/Attak_T/attack_research/v3/fusion.py": "02d8bedc0bf202555a3b293a3e84ff4a7a71e3ffd58c357d0f295454e7bb4dcd",
+    "main_round/attack/Attak_T/attack_research/v5/__init__.py": "31af2ebd02c7a3c8ea7569fd9ae533817ee4f452ca4b8a3d5bac0263eaf3c261",
+    "main_round/attack/Attak_T/attack_research/v5/conditioned.py": "adfc7ea5cc9c6f70b0f5cb3add61a031466392c6a9c857b9d1752eb27e604745",
+    "main_round/attack/official-kit/starter/src/pwscup2026/__init__.py": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177",
+    "main_round/attack/official-kit/starter/src/pwscup2026/attack/__init__.py": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc",
+    "main_round/attack/official-kit/starter/src/pwscup2026/attack/mia.py": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf",
+    "main_round/attack/official-kit/starter/src/pwscup2026/common/__init__.py": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787",
+    "main_round/attack/official-kit/starter/src/pwscup2026/common/schema.py": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e",
+    "main_round/attack/official-kit/starter/src/pwscup2026/common/submission_schema.py": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9",
+    "main_round/attack/official-kit/starter/src/pwscup2026/kit/__init__.py": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5",
+    "main_round/attack/official-kit/starter/src/pwscup2026/kit/codabench/__init__.py": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f",
+    "main_round/attack/official-kit/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+    "main_round/attack/official-kit/starter/src/pwscup2026/rare/__init__.py": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e",
+    "main_round/attack/official-kit/starter/src/pwscup2026/rare/outlier.py": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47",
+    "main_round/attack/official-kit/starter/src/pwscup2026/scoring/__init__.py": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802",
+    "main_round/attack/official-kit/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "main_round/attack/official-kit/starter/src/pwscup2026/scoring/result.py": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+    "main_round/attack/official-kit/starter/src/pwscup2026/scoring/utility.py": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932",
+    "main_round/mock_test/local_eval/__init__.py": "a7ae40c42ed37a7e055b9e0b341a075645d7fb05e09efa0d2c8ce108ad942982",
+    "main_round/mock_test/local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84",
+    "main_round/mock_test/mock_workspace.py": "0f257b999ea5b42d9ef85dc028f9c7697b01615ddf8c7f1cd8181db5499d833e",
+    "main_round/mock_test/rank_validation/__init__.py": "fb06774fa79349c8ccdc480efbf2044559260a3b04c76db9abc2854a7d107fd7",
+    "main_round/mock_test/rank_validation/adapters.py": "36002d58c98b13d37c220f751f6fad11b2f1d309127ecd584c8bd9de8dd5187f",
+    "main_round/mock_test/rank_validation/model_worker.py": "6e3c2a28b404a34d2c0902542ec85636e7d1ad10b11896ef0f98feddcb86a561",
+    "main_round/mock_test/rank_validation/plugins.py": "01118942e1f74380b2592149c7260d986f4105a54215fed1d7e829ba3c2a4a97",
+    "main_round/mock_test/rank_validation/provenance.py": "a14322a311c736b405128ce07db9a7872ffd9526b2227ded608f5f9606cf477d",
+    "main_round/mock_test/rank_validation/replay.py": "2444480f1c8c2633ff4b80d50cf9d3eff3e1a7087d87e94870056c8044e775d9",
+    "main_round/mock_test/rank_validation/series_worker.py": "f7aa2bc65d4a575cd85ad1664e5f9a15d935a4e7613e47ad15ac543924ab216c",
+    "main_round/mock_test/sugiyama_v2/__init__.py": "36a841ace95bb3e18645b97133980911dfb29f2c832d051ef782f6a4106979a1",
+    "main_round/mock_test/sugiyama_v2/scoring.py": "0697f19ba2cc7787a3806978007334a693da7b47b0b74ae571112ba77d219992"
+  },
+  "imported_sources_unchanged": true,
+  "baseline_output_sha256": {
+    "F_mia.csv": "691443c8a8d7d2311b5d52d59a0635dc370f3a3008f94b4a3f83843196b8e4ce",
+    "F_aia.csv": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88"
+  },
+  "baseline_diagnostics_sha256": "e9b1329107ddcf13457a8d29898f6e3f304fbbba65f433370cfb520111ee5c0b",
+  "baseline_files_unchanged": true,
+  "baseline_model_signature": {
+    "format": "panel-model-signature-v1",
+    "model_id": "Rv2",
+    "kind": "frozen_individual",
+    "inference_sources": {
+      "adapter_sha256": "36002d58c98b13d37c220f751f6fad11b2f1d309127ecd584c8bd9de8dd5187f",
+      "worker_sha256": "6e3c2a28b404a34d2c0902542ec85636e7d1ad10b11896ef0f98feddcb86a561"
+    },
+    "frozen_gates": {
+      "R_v1": {
+        "verified_files": 172,
+        "manifest_sha256": "df499ded0b0056ccc64290884c1ea80f435016ceca79900cff25adfb9cd03521"
+      },
+      "T_v88": {
+        "published_files": 130,
+        "verified_original_files": 94,
+        "version": "v88"
+      },
+      "M_v1": {
+        "verified_files": 65,
+        "all_bytes_unchanged": true
+      },
+      "R_v2_upstream": {
+        "T_v88": {
+          "published_files": 130,
+          "verified_original_files": 94,
+          "version": "v88"
+        },
+        "M_v1": {
+          "verified_files": 65,
+          "all_bytes_unchanged": true
+        },
+        "v1": {
+          "dependencies": 172,
+          "csv_verified": 2,
+          "local_zip_present_and_verified": false
+        },
+        "v2f": {
+          "dependencies": 187,
+          "csv_verified": 2,
+          "local_zip_present_and_verified": false
+        }
+      },
+      "R_v2_dependencies": 219,
+      "selection_sha256": "944cac58dcc77ef086f6657a29021684a0b888eb538e790acf7e7c418df2ac03"
+    },
+    "frozen_gate_evidence": "Recorded successful gate output; counts alone are not complete source hashes.",
+    "imported_dependency_capture": "not_recorded",
+    "imported_source_sha256": null,
+    "signature_sha256": "52b50ee520ab559b738ccfda99d060ecfb3ea2b5af45c3dd11b0419efe03eb94"
+  },
+  "private_proof": {
+    "exact_private_rows": 163,
+    "remaining_unknown_rows": 886,
+    "private_true_rare": 13,
+    "private_onset": 16,
+    "private_rare_onset": 4,
+    "private_death": 12,
+    "comparison": "Exact decimal public-QI equality; unique matches; no tolerance",
+    "deduction": "All 163 self members are private by the contest definition; exactly 163 unique B matches exhaust them.",
+    "limitations": "Other 886 rows remain unknown. This selected negative set does not estimate population FPR."
+  },
+  "targets": {
+    "0": {
+      "suppressed": 0,
+      "old_active": 244,
+      "strong_links": 33
+    },
+    "1": {
+      "suppressed": 0,
+      "old_active": 243,
+      "strong_links": 8
+    },
+    "2": {
+      "suppressed": 0,
+      "old_active": 249,
+      "strong_links": 9
+    },
+    "3": {
+      "suppressed": 0,
+      "old_active": 244,
+      "strong_links": 4
+    },
+    "4": {
+      "suppressed": 0,
+      "old_active": 227,
+      "strong_links": 15
+    },
+    "5": {
+      "suppressed": 0,
+      "old_active": 266,
+      "strong_links": 4
+    },
+    "6": {
+      "suppressed": 0,
+      "old_active": 317,
+      "strong_links": 0
+    },
+    "7": {
+      "suppressed": 0,
+      "old_active": 251,
+      "strong_links": 28
+    },
+    "8": {
+      "suppressed": 0,
+      "old_active": 301,
+      "strong_links": 0
+    },
+    "9": {
+      "suppressed": 0,
+      "old_active": 221,
+      "strong_links": 87
+    },
+    "11": {
+      "suppressed": 0,
+      "old_active": 267,
+      "strong_links": 8
+    },
+    "12": {
+      "suppressed": 0,
+      "old_active": 285,
+      "strong_links": 2
+    },
+    "13": {
+      "suppressed": 0,
+      "old_active": 217,
+      "strong_links": 10
+    },
+    "14": {
+      "suppressed": 0,
+      "old_active": 272,
+      "strong_links": 4
+    },
+    "15": {
+      "suppressed": 0,
+      "old_active": 264,
+      "strong_links": 8
+    },
+    "16": {
+      "suppressed": 0,
+      "old_active": 241,
+      "strong_links": 5
+    },
+    "17": {
+      "suppressed": 0,
+      "old_active": 263,
+      "strong_links": 6
+    },
+    "22": {
+      "suppressed": 0,
+      "old_active": 225,
+      "strong_links": 9
+    },
+    "25": {
+      "suppressed": 0,
+      "old_active": 261,
+      "strong_links": 4
+    },
+    "26": {
+      "suppressed": 0,
+      "old_active": 272,
+      "strong_links": 6
+    },
+    "27": {
+      "suppressed": 0,
+      "old_active": 206,
+      "strong_links": 27
+    },
+    "28": {
+      "suppressed": 0,
+      "old_active": 265,
+      "strong_links": 6
+    }
+  },
+  "public_only": true,
+  "learned_dependency_verification": {
+    "source_sha256": {
+      "main_round/attack/Attak_T/attack_research/features.py": "dc9a092b1d70b253246c851e3fe7045e6cc6134c52aac1ab7c2b9cd93c11d55c",
+      "main_round/attack/Attak_T/attack_research/v2/features.py": "0679ba283aeda2e6559988d32319f7b03bf65e2d42f8ba940924e90b057c1210",
+      "main_round/attack/Attak_T/attack_research/v3/fusion.py": "02d8bedc0bf202555a3b293a3e84ff4a7a71e3ffd58c357d0f295454e7bb4dcd",
+      "main_round/attack/Attak_T/attack_research/v5/conditioned.py": "adfc7ea5cc9c6f70b0f5cb3add61a031466392c6a9c857b9d1752eb27e604745",
+      "main_round/mock_test/local_eval/data.py": "6980de7bc4f9374bc0a4aba1d56dabb631d7306e2314dcd1d04ba9f04e4e2e84"
+    },
+    "fitted_assets_sha256": {
+      "main_round/attack/Attak_T/local-output/attack-research/round02/models.joblib": "3aa172327b1b2d20d0161ecbf1e7c02efe7da89e99e2d86e0f08e725b6ba38fd",
+      "main_round/attack/Attak_T/local-output/attack-research/round03/router.joblib": "972bd93365e642073551164b2f8248efbb0b9d920f72462b564455a23aff75e9"
+    }
+  },
+  "blocked_reads": [],
+  "official_submission_performed": false
+}

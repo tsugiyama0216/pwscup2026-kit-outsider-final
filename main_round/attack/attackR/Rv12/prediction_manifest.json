@@ -1,0 +1,12 @@
+{
+  "model": "Rv12",
+  "files_sha256": {
+    "F_mia.csv": "b2d931c68e5228368369a36ae5749966c0f552631df3fff9d817f2bad5bb21a3",
+    "F_aia.csv": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88",
+    "diagnostics.json": "ffc3979d77a4ce7ba956822ac9b46c2974134a2457ff1d684dd82323f999475b"
+  },
+  "selection_sha256": "2fdd92c657ea0b41c71d844f516581063cbcf1818d73268b5632757537769f77",
+  "copied_without_regeneration": true,
+  "official_submission_performed": false,
+  "credential_package_created": false
+}

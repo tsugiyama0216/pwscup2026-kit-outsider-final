@@ -1,0 +1,41 @@
+{
+  "frozen_utc": "2026-10-09T06:26:18.156765+00:00",
+  "base_generator": "main_round\\mock_test\\rank_validation\\generation_v5.py",
+  "base_generator_sha256": "01bdeead6bd65d5cdc08e202c033ebb60207b889545389c2fbcca9f850d62b94",
+  "base_protocol_sha256": "9d8b655c88dfae568a657d4a0ca217fec20d5e43acc18c8224a12c688c700c64",
+  "new_generator_sha256": "3e79c9eecb65a9e6ca21c633e3819f0d94de062694e03664698dcc47eb6842f9",
+  "new_protocol_sha256": "59d768bb5334018deb2f9277cf361c1b22dbf98cf1f7ea2647362331e5889871",
+  "source_replacements": [
+    {
+      "before": "generation_v5_protocol.json",
+      "after": "generation_protocol.json"
+    },
+    {
+      "before": "sys.path.insert(0, str(Path(__file__).resolve().parents[1]))",
+      "after": "sys.path.insert(0, str(Path(__file__).resolve().parents[4] / 'main_round/mock_test'))"
+    },
+    {
+      "before": "ROOT = HERE.parents[2]",
+      "after": "ROOT = HERE.parents[3]"
+    },
+    {
+      "before": "PROTOCOL_SHA256 = '9d8b655c88dfae568a657d4a0ca217fec20d5e43acc18c8224a12c688c700c64'",
+      "after": "PROTOCOL_SHA256 = '59d768bb5334018deb2f9277cf361c1b22dbf98cf1f7ea2647362331e5889871'"
+    },
+    {
+      "before": "'profile_v5_'",
+      "after": "'profile_rv12_'"
+    },
+    {
+      "before": "'generator':'public_profile_joint_v5','version':5,'profile':'public_main_profile_v5'",
+      "after": "'generator':'public_profile_joint_rv12','version':12,'profile':'public_main_profile_rv12'"
+    }
+  ],
+  "numeric_algorithm_changed": false,
+  "old_files_unchanged": true,
+  "attack_scores_inspected": false,
+  "seeds": [
+    2026100981,
+    2026100982
+  ]
+}

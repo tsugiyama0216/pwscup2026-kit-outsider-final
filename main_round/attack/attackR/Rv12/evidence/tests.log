@@ -1,0 +1,26 @@
+test_entire_target_baseline_parity_is_required (test_learned_veto.LearnedDecisionTests.test_entire_target_baseline_parity_is_required) ... ok
+test_frozen_dependency_gate_rejects_hash_mismatch (test_learned_veto.LearnedDecisionTests.test_frozen_dependency_gate_rejects_hash_mismatch) ... ok
+test_malformed_or_nonfinite_probabilities_rejected (test_learned_veto.LearnedDecisionTests.test_malformed_or_nonfinite_probabilities_rejected) ... ok
+test_rows_equivariant_under_permutation (test_learned_veto.LearnedDecisionTests.test_rows_equivariant_under_permutation) ... ok
+test_specialized_and_unknown_routes_are_untouched (test_learned_veto.LearnedDecisionTests.test_specialized_and_unknown_routes_are_untouched) ... ok
+test_suppression_monotonic_penalty_exact_and_old_times (test_learned_veto.LearnedDecisionTests.test_suppression_monotonic_penalty_exact_and_old_times) ... ok
+test_invalid_horizon_rejected_before_router (test_learned_veto.PublicInferenceTests.test_invalid_horizon_rejected_before_router) ... ok
+test_original_half_penalty_reconstructed_and_exact_match_kept (test_learned_veto.PublicInferenceTests.test_original_half_penalty_reconstructed_and_exact_match_kept) ... ok
+test_unsupported_route_skips_feature_extraction (test_learned_veto.PublicInferenceTests.test_unsupported_route_skips_feature_extraction) ... ok
+test_candidate_and_target_order_equivariance (test_model.MembershipTests.test_candidate_and_target_order_equivariance) ... ok
+test_invalid_mia_rejected (test_model.MembershipTests.test_invalid_mia_rejected) ... ok
+test_matches_frozen_rv8_on_ties_extremes_and_known_negatives (test_model.MembershipTests.test_matches_frozen_rv8_on_ties_extremes_and_known_negatives) ... ok
+test_complete_outputs_same_mia_and_no_input_mutation (test_model.PublicWorldTests.test_complete_outputs_same_mia_and_no_input_mutation) ... ok
+test_mismatched_targets_or_nonpublic_arguments_rejected (test_model.PublicWorldTests.test_mismatched_targets_or_nonpublic_arguments_rejected) ... ok
+test_public_id_alignment_survives_all_row_permutations (test_model.PublicWorldTests.test_public_id_alignment_survives_all_row_permutations) ... ok
+test_all_conditions_and_threshold_boundaries (test_model.VetoTests.test_all_conditions_and_threshold_boundaries) ... ok
+test_bad_baseline_qi_and_short_reference_rejected (test_model.VetoTests.test_bad_baseline_qi_and_short_reference_rejected) ... ok
+test_exact_link_exemption_and_reference_permutation (test_model.VetoTests.test_exact_link_exemption_and_reference_permutation) ... ok
+test_retain_is_unchanged_independent_copy (test_model.VetoTests.test_retain_is_unchanged_independent_copy) ... ok
+test_sentinel_validity_requires_public_time_range (test_model.VetoTests.test_sentinel_validity_requires_public_time_range) ... ok
+test_window_mass_includes_endpoints_and_respects_weight (test_model.VetoTests.test_window_mass_includes_endpoints_and_respects_weight) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.216s
+
+OK

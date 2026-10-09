@@ -1,0 +1,32 @@
+{
+  "name": "Rv12",
+  "created_date_jst": "2026-10-09",
+  "source_ref": "461874b",
+  "baseline": "frozen Rv2 from identical public tables",
+  "mia": "Rv8-equivalent specificity: centered cross-target median logit rank, strength 0.35, cap 7",
+  "aia_candidates": [
+    "retain",
+    "censor_strict",
+    "censor_moderate",
+    "contrast_strict",
+    "contrast_moderate",
+    "learned_075",
+    "learned_100",
+    "learned_150"
+  ],
+  "development_seeds_previously_exposed": [
+    2026100961,
+    2026100962
+  ],
+  "new_confirmation_seeds": [
+    2026100981,
+    2026100982
+  ],
+  "confirmation_generator": "exact v5 generation algorithm with new separately reserved seeds, original files unchanged",
+  "selection": "AIA must improve corrected AIA on both development cases by at least 0.001, average >=0.003, and worst per-case target-deletion mean >=0; maximize worst-case gain, ties prefer fewer suppressed rows. Otherwise retain Rv2 AIA. Freeze source/selection before new confirmation. No post-confirmation tuning.",
+  "performance_claim": "local synthetic paired evidence only; independent seed is not independent population",
+  "official_submission_authorized": false,
+  "github_push_authorized": false,
+  "credential_package_requested": false,
+  "learned_veto": "Only copy/independent router branches with exact conditioned_0.5 parity; stronger penalties 0.75/1/1.5 veto old active predictions, protect exact QI links. Existing trained assets unchanged."
+}

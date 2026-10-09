@@ -1,0 +1,6 @@
+test_failed_reference_rank_is_not_displayed_as_success (rank_validation.tests.test_additional_worker.AdditionalWorkerTests.test_failed_reference_rank_is_not_displayed_as_success) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+OK

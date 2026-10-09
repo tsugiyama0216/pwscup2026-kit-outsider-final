@@ -1,0 +1,285 @@
+{
+  "protocol_version": "rv12-confirmation-public-profile-v5-20261009-1",
+  "selection_uses_official_feedback": false,
+  "selection_uses_attack_predictions": false,
+  "selection_uses_membership_or_aia_labels": false,
+  "development_seeds": [],
+  "confirmation_seeds": [
+    2026100981,
+    2026100982
+  ],
+  "seed_policy": "Run every reserved world; retain failures. No seed selection by attack performance.",
+  "splits": {
+    "development": "dev",
+    "confirmation": "holdout"
+  },
+  "topology": "Unchanged sugiyama_v2 30-cohort overlap topology and birth rare-label allocation.",
+  "population": "Shared clinical labeled-donor kernel for pool, matched AIA controls and independent background draws, followed by symmetric private demographic transport for pool members/controls. Population demographics differ after transport. Same finite donor population; independent random draws are not independent people.",
+  "censoring": "Set time=10 for onset=0 and death=0 consistently in pool, candidate, self-label, AIA truth, background and releases. Event times and event labels are unchanged.",
+  "target_profile_source": "Actual 22 main-round C/challenge files and participant A_bg; no private target truth.",
+  "profile_metrics": [
+    "challenge_qi_nn_median",
+    "challenge_to_background_nn_ratio",
+    "correlation_abs_difference_bg",
+    "wasserstein_sd_mean",
+    "time_ge_9p5_fraction",
+    "clinical_unique_fraction_mean"
+  ],
+  "scale_rule": "Per metric max(actual-target IQR, fixed floor). Public-only calibration.",
+  "scale_floors": {
+    "challenge_qi_nn_median": 0.05,
+    "challenge_to_background_nn_ratio": 0.1,
+    "correlation_abs_difference_bg": 0.02,
+    "wasserstein_sd_mean": 0.03,
+    "time_ge_9p5_fraction": 0.02,
+    "clinical_unique_fraction_mean": 0.05
+  },
+  "loss": "Sum weighted Huber losses for standardized profile differences; quadratic to abs(z)=2 then linear 4*abs(z)-4. Missing/nonfinite values disqualify candidate. Ties keep first grid candidate.",
+  "metric_weights": {
+    "challenge_qi_nn_median": 2.0,
+    "challenge_to_background_nn_ratio": 2.0,
+    "correlation_abs_difference_bg": 1.0,
+    "wasserstein_sd_mean": 1.0,
+    "time_ge_9p5_fraction": 1.0,
+    "clinical_unique_fraction_mean": 1.0
+  },
+  "grid": [
+    {
+      "family": "jitter",
+      "strength": 0.02
+    },
+    {
+      "family": "jitter",
+      "strength": 0.08
+    },
+    {
+      "family": "jitter",
+      "strength": 0.18
+    },
+    {
+      "family": "jitter",
+      "strength": 0.35
+    },
+    {
+      "family": "jitter",
+      "strength": 0.65
+    },
+    {
+      "family": "jitter",
+      "strength": 1.0
+    },
+    {
+      "family": "resample",
+      "strength": 0.05
+    },
+    {
+      "family": "resample",
+      "strength": 0.15
+    },
+    {
+      "family": "resample",
+      "strength": 0.35
+    },
+    {
+      "family": "resample",
+      "strength": 0.65
+    },
+    {
+      "family": "conditional",
+      "strength": 0.05
+    },
+    {
+      "family": "conditional",
+      "strength": 0.18
+    },
+    {
+      "family": "conditional",
+      "strength": 0.4
+    },
+    {
+      "family": "copula",
+      "strength": 0.03
+    },
+    {
+      "family": "copula",
+      "strength": 0.15
+    },
+    {
+      "family": "copula",
+      "strength": 0.35
+    },
+    {
+      "family": "independent",
+      "strength": 0.05
+    },
+    {
+      "family": "independent",
+      "strength": 0.2
+    },
+    {
+      "family": "independent",
+      "strength": 0.5
+    },
+    {
+      "family": "shifted",
+      "strength": 0.3
+    },
+    {
+      "family": "shifted",
+      "strength": 0.7
+    },
+    {
+      "family": "shifted",
+      "strength": 1.2
+    },
+    {
+      "family": "shifted",
+      "strength": 2.0
+    },
+    {
+      "family": "category_redraw",
+      "strength": 0.2
+    },
+    {
+      "family": "category_redraw",
+      "strength": 0.6
+    },
+    {
+      "family": "category_redraw",
+      "strength": 1.0
+    }
+  ],
+  "family_parameters": {
+    "all": "Positive numeric QI perturbation, legal schema clipping, shuffled rows; time/onset/death treated coherently. No pure copy or QI-only-preserving release is selected.",
+    "jitter": "All target rows, Gaussian noise in background SD units at strength; event-time noise SD=0.10+0.5*strength; independent category redraw probability min(0.3,0.10*strength).",
+    "resample": "Bootstrap target rows then same jitter rule.",
+    "conditional": "Pinned v2 conditional QI-neighbor release then additional positive jitter at strength; v2's 12-50-neighbor draw is seed-fixed.",
+    "copula": "Pinned v2 rank Gaussian copula then positive jitter at strength.",
+    "independent": "Background-only bootstrap then positive jitter; does not read target B.",
+    "shifted": "Target copula plus alternating signed shift strength times background SD over continuous columns; additional numeric jitter 0.08; event-time noise 0.3.",
+    "category_redraw": "Target resample with numeric jitter 0.08 and category redraw probability=strength for sex/prefecture; event-time noise 0.3."
+  },
+  "fit_policy": "Select lowest public-profile loss per corresponding target cohort, using no attack model or truth. All 22 targets remain equally weighted by official scorer. Save full grid profiles and fit residuals; coverage failures remain unsupported.",
+  "coverage_tolerance_policy": "Use existing exact marginal range gate, without expanding intervals after observing rank results. It may fail at empirical extrema; targetwise residuals are also retained.",
+  "leakage_boundary": "Generation may know synthetic B, birth labels and roles; release candidate ranking consumes only candidate C, public challenge, public background and public target profile. Metadata, fit settings, roles and truths never enter prediction_arguments.",
+  "limitations": [
+    "This is public-distribution calibration, not reconstruction of hidden defenses or official truth.",
+    "Finite B_self donors and prior-used split remain; holdout seeds are not independent unknown persons.",
+    "Matching a few public profiles cannot prove attack ranking transfer, and no target-profile metric is anonymization strength.",
+    "Background generation differs from v2 and its metrics must be recomputed rather than compared as the same world.",
+    "Public demographic transport preserves member/control symmetry but may create artificial relationships between age/sex/prefecture and clinical values or outcomes. It does not reconstruct missing conditional donors.",
+    "Four public challenges have odd demographic cells, so exact observed counts and exact member/control cell symmetry cannot both hold; balanced projection is recorded."
+  ],
+  "frozen_utc": "2026-10-09T05:03:00.214117+00:00",
+  "base_v3_protocol_sha256": "ae12168b0dfc48ec64ccb767683fd89e6e389e7cd9bbc1a9487c16b2006216b2",
+  "change_basis": "Reserve two unused holdout random worlds with the numerically unchanged v4 generation algorithm to confirm a separately preregistered stable indicator. v4 worlds are retrospective metric-design data.",
+  "demographic_transport": {
+    "scope": "Actual 23 public challenge demographic distributions, including self10; only synthetic private-core and control persons change. Shared persons and all cohort/pool IDs remain unchanged.",
+    "cells": [
+      "prefecture",
+      "sex",
+      "age_5year"
+    ],
+    "pair_count": 163,
+    "public_cells_even_policy": "Split each observed cell equally across member and control. Ages are randomly divided within cell; pooled exact-age counts are retained.",
+    "public_cells_odd_policy": "Balanced nearest-integer half counts: all odd cells start floor(n/2), then a seed-fixed random half of odd cells receive +1. Both member and control use identical projected counts; each odd pooled cell differs from observed by exactly one. Add/drop one observed age within odd cell using the same fixed seed. No feedback-driven choice.",
+    "pair_assignment": "Hungarian minimum cost 25*sex_mismatch+((old_pair_mean_age-new_pair_mean_age)/5)^2, plus seed-fixed 1e-10 tie jitter. Both old and new pair means average member/control ages so assignment is invariant to role exchange. Apply desired prefecture/sex to both and corresponding new ages within the same age bin.",
+    "other_private_150": "Draw 150 demographic records from the same public challenge and assign with identical minimum-cost rule; unchanged clinical/time/onset/rare values.",
+    "conditioned_donor_shortage": "No invented rare-by-prefecture donor is claimed. This is explicit demographic transport/overwriting of both member and control from the same original conditional-kernel population; numeric clinical distributions are not re-estimated for unavailable strata.",
+    "unchanged": [
+      "all shared-person values",
+      "pool_id and membership topology",
+      "is_rare birth labels",
+      "onset",
+      "death",
+      "time after common v3 censoring correction"
+    ],
+    "diagnostics": [
+      "odd-cell projection differences",
+      "per-side sex/prefecture modification fractions",
+      "per-side age absolute changes",
+      "shared-person exact preservation",
+      "pooled challenge demographic counts versus observed/projected"
+    ]
+  },
+  "profile_fit_policy": "Same 26 release candidates, scales, weights and public loss as v3; no attack/official score used. New synthetic private demographics are constructed before release fitting.",
+  "background_diagnostics": "Record actual and synthetic background prefecture, sex and integer-age distributions, maximum prefecture fraction, observed self-private prefecture fraction and total variation distances; diagnostic only, no selection or adjustment.",
+  "prefit_revision": "No generation or score formula tuning: only version identifiers, protocol hashes and reserved seed list differ from v4.",
+  "supersedes_protocol_sha256": "db99c23515e41b6e9a933db4b39c5d9619872aeee0b09bfe2853183fd46330b7",
+  "base_v4_protocol_sha256": "c383c5fe06136fdbdd11d501467c7c4731919137cf2c8b7b8d701a524dc95038",
+  "base_v4_generator_sha256": "0beb17f2c741829c2bae5b820eac27711c2da4034eebde246fc865030da5c7a6",
+  "metric_design_uses_retrospective_feedback": true,
+  "metric_validation": {
+    "version": "stable-index-v1-20261009-2",
+    "frozen_utc": "2026-10-09T05:03:00.214117+00:00",
+    "primary_indicator": "stable_index = equal_target_mean(mia_all + aia_power_after_floor)",
+    "mia_all_definition": "Per-target official score_mia breakdown tpr_at_low_fpr at FPR=0.01, before max with rare TPR.",
+    "aia_definition": "The existing official target AIA power after rare SE deadzone, max(all,rare), and target floor subtraction/clipping; unchanged.",
+    "separate_diagnostics": {
+      "official_attack_power": "equal_target_mean(mia_power + aia_power_after_floor)",
+      "mia_rare_max_uplift": "equal_target_mean(mia_power - mia_all)",
+      "mia_rare_tpr": "Official rare TPR per target; preserve undefined as null rather than zero.",
+      "all_components": "Retain per-target mia_all, mia_power, mia_rare, aia_power and positive/rare-positive counts."
+    },
+    "coefficients_fitted": false,
+    "retrospective_design_cases": [
+      2026100941,
+      2026100951,
+      2026100952
+    ],
+    "retrospective_design_note": "The stable indicator was proposed after observing reference-model reversals on v4. All three v4 worlds are retrospective design data and are not validation evidence for this new indicator.",
+    "confirmation_seeds": [
+      2026100981,
+      2026100982
+    ],
+    "split": "holdout",
+    "case_selection": "Run both reserved worlds once and retain all outcomes; no seed/model/official-feedback-based selection.",
+    "reference_models": [
+      "Rv2",
+      "Rv1",
+      "pl1",
+      "Tv105"
+    ],
+    "known_reference_order_best_first": [
+      "Rv2",
+      "Rv1",
+      "pl1",
+      "Tv105"
+    ],
+    "validation": "Primary: compute each reference model stable_index in BOTH reserved confirmation cases, average those two case scores equally, and check all six strict known-reference pairwise directions. Missing cases fail completeness. A tie with absolute delta <= 1e-12 is not a hit. No case selection, weighting or refitting.",
+    "target_aggregation": "All 22 targets equally weighted; no exclusions, weights, model-specific rules or fitted coefficients.",
+    "official_scorer_or_scores_changed": false,
+    "generator_numeric_algorithm_changed": false,
+    "limitations": [
+      "This is a separate candidate-order diagnostic, not the official contest score.",
+      "Suppressing rare MIA max uplift may hide real rare-person attack strength. Always show it separately.",
+      "New seeds reuse holdout donor rows, the same population construction and public profiles. They are scenario replications, not independent unseen people.",
+      "Passing two known-reference scenarios does not establish accuracy for unknown future models.",
+      "Public-profile coverage failures remain visible; no coverage gate is relaxed."
+    ],
+    "sensitivity_diagnostics": [
+      "Show every individual case score, all six pair directions, rank and mismatch without requiring every case to match as the primary criterion.",
+      "Show each pair difference in both cases and its min/max range. This is a sensitivity range, not a confidence interval.",
+      "Leave the same target out of both cases, recompute each 21-target stable_index and its equal-case mean, and report all 22 resulting six-pair rank checks. Also show per-case leave-one-target-out results."
+    ],
+    "old_v4_gate_unchanged": "The older v4 official-score all-case agreement gate remains unchanged. This new mean-first rule applies only to the separately frozen stable-index v5 hypothesis.",
+    "pre_generation_revision": "Before any v5 case generation or new stable-index result: separate mean-rank primary criterion from case and target sensitivity diagnostics.",
+    "secondary_validation": "Report whether each of the two individual cases matches all six pairs, the fraction of cases with all-six agreement, and the stronger both-cases-all-six flag separately from the mean-rank primary criterion."
+  },
+  "metric_protocol_sha256": "b467755264f0ecaef6c78280b640a316b155ae768a800baa89b7c11ec04315e4",
+  "pre_generation_protocol_revision_sha256": "93544faec10f82b1b04c7e25c914f488ee44d0f8098191fd9f3ceb90ddc5d35d",
+  "rv12_confirmation": {
+    "frozen_utc": "2026-10-09T06:26:18.156765+00:00",
+    "base_generator_sha256": "01bdeead6bd65d5cdc08e202c033ebb60207b889545389c2fbcca9f850d62b94",
+    "base_protocol_sha256": "9d8b655c88dfae568a657d4a0ca217fec20d5e43acc18c8224a12c688c700c64",
+    "numeric_generation_algorithm_changed": false,
+    "base_metadata_preserved_as_historical": true,
+    "changed_fields": [
+      "protocol_version",
+      "confirmation_seeds",
+      "metric_validation.confirmation_seeds"
+    ],
+    "selection_policy": "Freeze Rv12 variant before inspecting any attack scores from these two worlds. Preserve both outcomes without retuning. Generation may precede variant selection because it reads no attack model or scores.",
+    "new_population_claimed": false
+  }
+}

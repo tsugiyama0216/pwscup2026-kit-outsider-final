@@ -1,0 +1,50 @@
+{
+  "evidence\\development-61\\summary.csv": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\rv12-improvement\\PWScup2026\\main_round\\mock_test\\local-output\\rv12-development\\scores-all-61\\summary.csv",
+    "sha256": "aabd1a61b238077d4d851c4e61fb52e6da3bc996ad5b12ae4dd80acc29f8b2a0"
+  },
+  "evidence\\development-61\\by_target.csv": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\rv12-improvement\\PWScup2026\\main_round\\mock_test\\local-output\\rv12-development\\scores-all-61\\by_target.csv",
+    "sha256": "34a72902d8aaf53428ab3c5f0aaa3e4e390e75040b2216558a09b70c7c058d13"
+  },
+  "evidence\\development-61\\result.json": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\rv12-improvement\\PWScup2026\\main_round\\mock_test\\local-output\\rv12-development\\scores-all-61\\result.json",
+    "sha256": "1fc65fb88058d193404e88478042cdd4eac9fddb48180100487a6397bb77c57f"
+  },
+  "evidence\\development-62\\summary.csv": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\rv12-improvement\\PWScup2026\\main_round\\mock_test\\local-output\\rv12-development\\scores-all-62\\summary.csv",
+    "sha256": "fb97ff558d994de4c151f2631c667dd2d3c0a8e4495b6b915e2a0e13fdbab5e6"
+  },
+  "evidence\\development-62\\by_target.csv": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\rv12-improvement\\PWScup2026\\main_round\\mock_test\\local-output\\rv12-development\\scores-all-62\\by_target.csv",
+    "sha256": "82f6e8add49ff860b258e0e1e2296529201c3c8ebc9111109043a0cf34234ba8"
+  },
+  "evidence\\development-62\\result.json": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\rv12-improvement\\PWScup2026\\main_round\\mock_test\\local-output\\rv12-development\\scores-all-62\\result.json",
+    "sha256": "a09ac20042bd74bdb1baf4130c816a3407247aef907ca84313fde5cea3e93b15"
+  },
+  "evidence\\prior\\scores.json": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\rv12-improvement\\PWScup2026\\main_round\\attack\\Attack_R\\v2\\official_results\\20261007\\scores.json",
+    "sha256": "bc112a824651d107a44b5b6fdd0de10ccdea09889f8b896440f93308f6cc7ba6"
+  },
+  "evidence\\prior\\official_feedback_Rv2_user_supplied.json": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\rv12-improvement\\PWScup2026\\main_round\\attack\\attackR\\Rv5\\official_feedback_Rv2_user_supplied.json",
+    "sha256": "63cdf1a6863d5c7a815c1c38076e867cbecae90b25b9d83f583a87e1d7e43c33"
+  },
+  "evidence\\prior\\ranking.csv": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\rv12-improvement\\PWScup2026\\main_round\\mock_test\\rank_validation\\evidence\\rv6_series_20261009\\ranking.csv",
+    "sha256": "a71ff4270abc7742a87a2328a8eb42f19e90bf300980f1820528a8517a9da88b"
+  },
+  "evidence\\prior\\additional_20261009\\ranking.csv": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\score-ranking-20261009\\PWScup2026\\main_round\\mock_test\\rank_validation\\evidence\\additional_20261009\\ranking.csv",
+    "sha256": "a464d546e1adb31357dc6cf2806a3254afb46f9b11b401c8105be1f577f45a3a"
+  },
+  "evidence\\prior\\additional_20261009\\verification.json": {
+    "source": "C:\\Users\\miina\\.codex\\worktrees\\score-ranking-20261009\\PWScup2026\\main_round\\mock_test\\rank_validation\\evidence\\additional_20261009\\verification.json",
+    "sha256": "45c24ef62f5089cb988f1893c7272cdd4117abbd2ab3e219c544506a8303a7c7"
+  },
+  "evidence\\prior\\preliminary_replay_summary.csv": {
+    "source": "C:\\Users\\miina\\Documents\\ChatGPT\\PWScup2026\\main_round\\mock_test\\local-output\\rv_prelim_20261009_additional\\summary.csv",
+    "sha256": "68a0c57602a46b9e68e310cf12f7bcf5556e5b8d0bf6437862bb1273190222c2"
+  }
+}

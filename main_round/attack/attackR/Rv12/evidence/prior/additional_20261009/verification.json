@@ -1,0 +1,88 @@
+{
+  "format": "additional-models-evidence-v1",
+  "source_base_commit": "461874b707c853ed863185e9e9546237c6d04354",
+  "models": [
+    "Rv3",
+    "Mv1",
+    "Mv2"
+  ],
+  "seeds": [
+    2026100961,
+    2026100962
+  ],
+  "files": [
+    {
+      "path": "case_metrics.csv",
+      "source": "main_round/mock_test/local-output/additional-scoring-20261009/final-report/case_metrics.csv",
+      "bytes": 1547,
+      "sha256": "98c34c844b05f556e26fad9f389b82431f436e23d75f9ea2e76aae90f44ffcc0"
+    },
+    {
+      "path": "pair_sensitivity.csv",
+      "source": "main_round/mock_test/local-output/additional-scoring-20261009/final-report/pair_sensitivity.csv",
+      "bytes": 5254,
+      "sha256": "594f8aab298c22ea736465a7f12a27d974da18edbb101f5a005e8d40cdf23eb2"
+    },
+    {
+      "path": "ranking.csv",
+      "source": "main_round/mock_test/local-output/additional-scoring-20261009/final-report/ranking.csv",
+      "bytes": 2373,
+      "sha256": "a464d546e1adb31357dc6cf2806a3254afb46f9b11b401c8105be1f577f45a3a"
+    },
+    {
+      "path": "report.html",
+      "source": "main_round/mock_test/local-output/additional-scoring-20261009/final-report/report.html",
+      "bytes": 4512,
+      "sha256": "dbc5a8c6cc73680df1f26d2018ecb75af5edaa7826318cf9c647c964d7920078"
+    },
+    {
+      "path": "result.json",
+      "source": "main_round/mock_test/local-output/additional-scoring-20261009/final-report/result.json",
+      "bytes": 1028148,
+      "sha256": "a44f0e45d6e6eda0b8af807d806150e3a45d88d41aac011bc0a9d5b28affeb7d"
+    },
+    {
+      "path": "verified_parity.json",
+      "source": "main_round/mock_test/local-output/additional_production_parity_20261009/verified/verified_parity.json",
+      "bytes": 105490,
+      "sha256": "4a8eaaa9dee3788505f2b16fbcf48c126275b032fd991e5b17fe04ad4731fceb"
+    },
+    {
+      "path": "additional_tests_20261009.log",
+      "source": "main_round/mock_test/local-output/additional_tests_20261009.log",
+      "bytes": 36418,
+      "sha256": "b4f56c5b0a4fa0ce7a14d672345ff5c5585e481e86515a845b00031fb1dd14a4"
+    },
+    {
+      "path": "additional_provenance_joint_tests_20261009.log",
+      "source": "main_round/mock_test/local-output/additional_provenance_joint_tests_20261009.log",
+      "bytes": 4244,
+      "sha256": "ca9392906ebc3210907edcda498a8166ec9fa2947d78cb6713709c9556aaa02a"
+    },
+    {
+      "path": "additional_report_status_test_20261009.log",
+      "source": "main_round/mock_test/local-output/additional_report_status_test_20261009.log",
+      "bytes": 289,
+      "sha256": "0c2f6f052173546bec0a0a649c3f75cf781d131571abf3dbf3893a7dbba3c83b"
+    },
+    {
+      "path": "additional_report_binding_test_20261009.log",
+      "source": "main_round/mock_test/local-output/additional_report_binding_test_20261009.log",
+      "bytes": 289,
+      "sha256": "d4937443eb00a2505813986a7a49bc23382c1757f3875981074a12a97dce285c"
+    }
+  ],
+  "tests_passed": {
+    "regression": 241,
+    "new_provenance_and_joint": 23,
+    "report_status": 1,
+    "report_binding": 1,
+    "total_distinct_tests": 266
+  },
+  "production_and_both_case_model_signatures_identical": true,
+  "previous_seven_model_rows_unchanged": true,
+  "all_six_production_prediction_csvs_byte_identical": true,
+  "model_source_or_parameters_changed": false,
+  "official_submission_performed": false,
+  "official_attempts_consumed": 0
+}

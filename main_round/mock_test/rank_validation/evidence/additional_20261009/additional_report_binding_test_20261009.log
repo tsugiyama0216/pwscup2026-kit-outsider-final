@@ -1,0 +1,6 @@
+test_report_rejects_reference_signature_or_case_switch (rank_validation.tests.test_additional_worker.AdditionalWorkerTests.test_report_rejects_reference_signature_or_case_switch) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK

@@ -2,6 +2,8 @@
 
 **2026-10-07：改善した杉山採点の保存版は [retest/](retest/README.md) です。** リポジトリ直下から `.\main_round\attack\retest\run.ps1` で実行します。22対象のMIA・AIAを同じ模擬世界で評価し、固定公式採点コードと既定1,000回の模擬φ推定を使います。ユーザーの修正に従い、この `attack` 直下が保存先です。
 
+**2026-10-09：[Rv12](attackR/Rv12/README.md)を作成・検証しました。** MIAはRv8方式、AIAはRv2を維持し、比較した対照抑制案は悪化したため不採用です。新しい固定2ケースでは順位比較指標がRv2より平均+0.011923、公式方式の模擬合計が平均+0.020664でしたが、本番得点を保証するものではありません。保存CSV・再現コード・選択根拠・検証記録を非公開GitHubへ保存し、公式提出やトークン入りZIP作成は行いません。
+
 既定R v1を動かす [Attack_R/sugiyama_adapter.py](Attack_R/sugiyama_adapter.py) と必要な凍結依存ソースを同梱します。[収録範囲](Attack_R/v1/RETEST_DEPENDENCIES.md)は採点用ランタイムに限り、Rの提出データを含めません。共有の元実装は [../mock_test/sugiyama_v2/](../mock_test/sugiyama_v2/) に保持し、出力は `../mock_test/local-output/retest/` へ保存します。元の95テスト・初回保存版42テストの記録も保持します。非公開の本番正解・φ・実加工分布は再現しておらず、模擬得点は公式点の予測値ではありません。
 
 ユーザーは既存非公開リポジトリのmainへのGitHub保存を明示的に許可しました。公式提出は行いません。
@@ -58,6 +60,7 @@ Set-Location main_round/attack
 | retest用の凍結R v1アダプター・必要依存 | [Attack_R/](Attack_R/README.md) |
 | 以前のR準備用フォルダー | [Attak_R/](Attak_R/README.md) |
 | 作業者Mの独立攻撃・予測・評価結果 | [Attack_M/](Attack_M/README.md) |
+| Rv12のコード・予測・選択根拠・検証記録 | [attackR/Rv12/](attackR/Rv12/README.md) |
 | 配布案内の本文 | [source_email_20260927.txt](source_email_20260927.txt) |
 | 取得元・固定コミット・ファイルのSHA-256 | [source_manifest.json](source_manifest.json) |
 | ダウンロード原本（攻撃ZIP・PDF・外部ハッシュ一覧・ソースZIP） | `downloads/` |

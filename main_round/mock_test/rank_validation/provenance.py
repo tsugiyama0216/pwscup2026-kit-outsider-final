@@ -31,6 +31,12 @@ LOCAL_MODULES = ("sugiyama_v2.scoring", "sugiyama_v2.runner", "sugiyama_v2.io")
 GENERATOR_KEYS = ("generator_source_sha256", "inherited_generator_sha256", "inherited_releases_sha256")
 FROZEN_MODELS = {"Rv1", "Rv2", "pl1", "Tv105"}
 DERIVED_MODELS = {f"Rv{i}" for i in range(6, 12)}
+ADDITIONAL_MODELS = {"Rv3", "Mv1", "Mv2"}
+ADDITIONAL_MAIN_SOURCES = {
+    "Rv3": "main_round/anonymization/team10/atack/Rv3/model.py",
+    "Mv1": "main_round/attack/Attack_M/v1/model.py",
+    "Mv2": "main_round/attack/Attack_M/v2/model.py",
+}
 
 
 def _validate_json(value):
@@ -176,17 +182,46 @@ def model_signature(diagnostics):
     plugin = detail.get("trusted_plugin") is True
     batch = diagnostics.get("shared_batch") is True
     derived = diagnostics.get("derived_series_batch") is True
-    if sum((plugin, batch, derived)) > 1:
+    additional = diagnostics.get("additional_frozen") is True
+    if sum((plugin, batch, derived, additional)) > 1:
         raise ValueError("Inference identity kinds cannot be combined")
     result = {"format": "panel-model-signature-v1", "model_id": name,
-              "kind": "derived_series_batch" if derived else "plugin" if plugin else "frozen_batch" if batch else "frozen_individual",
+              "kind": "frozen_additional" if additional else "derived_series_batch" if derived else "plugin" if plugin else "frozen_batch" if batch else "frozen_individual",
               "inference_sources": sources}
     if plugin:
-        if name.casefold() in {n.casefold() for n in FROZEN_MODELS | DERIVED_MODELS}:
+        if name.casefold() in {n.casefold() for n in FROZEN_MODELS | DERIVED_MODELS | ADDITIONAL_MODELS}:
             raise ValueError("Plugin uses a reserved frozen model identity")
         sources["plugin_runtime_sha256"] = _digest(diagnostics.get("plugin_runtime_sha256"), "plugin runtime")
         result["plugin_sha256"] = _digest(detail.get("plugin_sha256"), "plugin source")
         result["fitted_assets_sha256"] = _path_hashes(detail.get("fitted_assets_sha256"), "fitted assets")
+    elif additional:
+        if name not in ADDITIONAL_MODELS:
+            raise ValueError("Unrecognized additional frozen model identity")
+        additional_sources = _path_hashes(
+            diagnostics.get("additional_source_sha256"), "additional sources", nonempty=True)
+        prefix = "main_round/mock_test/rank_validation/"
+        adapter_name = "additional_r.py" if name == "Rv3" else "additional_m.py"
+        if (additional_sources.get(prefix + "additional_worker.py") != sources["worker_sha256"]
+                or additional_sources.get(prefix + adapter_name) != sources["adapter_sha256"]):
+            raise ValueError("Additional worker or adapter source identities differ")
+        gates = detail.get("frozen_gates")
+        if not isinstance(gates, dict) or not gates:
+            raise ValueError("Missing additional frozen dependency gates")
+        canonical_sha256(gates)
+        gate_sources = _path_hashes(gates.get("files_sha256"), "additional gate sources", nonempty=True)
+        if ADDITIONAL_MAIN_SOURCES[name] not in gate_sources:
+            raise ValueError("Additional gate lacks the named canonical model source")
+        if any(additional_sources.get(path) != digest for path, digest in gate_sources.items()):
+            raise ValueError("Additional source snapshot differs from frozen gate dependencies")
+        imports = _path_hashes(detail.get("imported_source_sha256"), "imported sources", nonempty=True)
+        if detail.get("imported_sources_unchanged") is not True:
+            raise ValueError("Additional model lacks an imported-source preservation check")
+        if any(path in additional_sources and additional_sources[path] != digest
+               for path, digest in imports.items()):
+            raise ValueError("Imported additional model code differs from the recorded source snapshot")
+        result.update(additional_source_sha256=additional_sources,
+                      frozen_gates=json.loads(json.dumps(gates)),
+                      frozen_gate_evidence="Recorded successful original gates with full dependency/source hash maps; no retrospective gate execution.")
     elif derived:
         if name not in DERIVED_MODELS:
             raise ValueError("Unrecognized fixed Rv6-series identity")
@@ -251,7 +286,7 @@ def model_signature(diagnostics):
                 raise ValueError("Batch worker dependency identities differ")
             result["batch_dependency_sha256"] = dependencies
     imports = detail.get("imported_source_sha256")
-    if (plugin or derived) and imports is None:
+    if (plugin or derived or additional) and imports is None:
         raise ValueError("Imported dependency hashes were not recorded; rerun with the new worker")
     result["imported_dependency_capture"] = "recorded" if imports is not None else "not_recorded"
     result["imported_source_sha256"] = _path_hashes(imports, "imported sources") if imports is not None else None

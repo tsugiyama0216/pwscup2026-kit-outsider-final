@@ -1,0 +1,218 @@
+{
+  "created_utc": "2026-10-09T06:39:58.952332+00:00",
+  "selection_sha256": "2fdd92c657ea0b41c71d844f516581063cbcf1818d73268b5632757537769f77",
+  "same_algorithm_as_Rv8": true,
+  "all_selected_sources_unchanged": true,
+  "no_post_confirmation_tuning": true,
+  "means": [
+    {
+      "phase": "development",
+      "model": "Rv2",
+      "stable_index": 0.8861435990871156,
+      "official_attack_power": 0.9796750676185839,
+      "mean_mia_all": 0.3892113442113442,
+      "mean_mia_power": 0.4827428127428127,
+      "mean_aia_power": 0.4969322548757713,
+      "delta_vs_Rv2": 0.0,
+      "official_delta_vs_Rv2": 0.0,
+      "mean_member_hit_rate": 0.7624093697713331,
+      "mean_control_hit_rate": 0.34369771332961513
+    },
+    {
+      "phase": "development",
+      "model": "Rv12",
+      "stable_index": 0.9048175177610341,
+      "official_attack_power": 0.9904818534253697,
+      "mean_mia_all": 0.4078852628852629,
+      "mean_mia_power": 0.49354959854959857,
+      "mean_aia_power": 0.4969322548757713,
+      "delta_vs_Rv2": 0.0186739186739186,
+      "official_delta_vs_Rv2": 0.010806785806785735,
+      "mean_member_hit_rate": 0.7624093697713331,
+      "mean_control_hit_rate": 0.34369771332961513
+    },
+    {
+      "phase": "confirmation",
+      "model": "Rv2",
+      "stable_index": 1.0029809851295584,
+      "official_attack_power": 1.0580185401671134,
+      "mean_mia_all": 0.44055685055685057,
+      "mean_mia_power": 0.4955944055944056,
+      "mean_aia_power": 0.5624241345727077,
+      "delta_vs_Rv2": 0.0,
+      "official_delta_vs_Rv2": 0.0,
+      "mean_member_hit_rate": 0.7812325711098717,
+      "mean_control_hit_rate": 0.31678750697155605
+    },
+    {
+      "phase": "confirmation",
+      "model": "Rv12",
+      "stable_index": 1.0149040620526353,
+      "official_attack_power": 1.078682875831449,
+      "mean_mia_all": 0.4524799274799275,
+      "mean_mia_power": 0.5162587412587412,
+      "mean_aia_power": 0.5624241345727077,
+      "delta_vs_Rv2": 0.011923076923077036,
+      "official_delta_vs_Rv2": 0.020664335664335787,
+      "mean_member_hit_rate": 0.7812325711098717,
+      "mean_control_hit_rate": 0.31678750697155605
+    }
+  ],
+  "cases": [
+    {
+      "phase": "development",
+      "seed": 2026100961,
+      "model": "Rv2",
+      "stable_index": 0.850308727384462,
+      "official_attack_power": 0.9237353008110353,
+      "mean_mia_all": 0.378003108003108,
+      "mean_mia_power": 0.45142968142968143,
+      "mean_aia_power": 0.4723056193813539,
+      "delta_vs_Rv2": 0.0,
+      "official_delta_vs_Rv2": 0.0,
+      "mean_member_hit_rate": 0.7668711656441719,
+      "mean_control_hit_rate": 0.3600111544896821
+    },
+    {
+      "phase": "development",
+      "seed": 2026100961,
+      "model": "Rv12",
+      "stable_index": 0.8698943269700614,
+      "official_attack_power": 0.9363278934036278,
+      "mean_mia_all": 0.3975887075887076,
+      "mean_mia_power": 0.4640222740222741,
+      "mean_aia_power": 0.4723056193813539,
+      "delta_vs_Rv2": 0.019585599585599467,
+      "official_delta_vs_Rv2": 0.012592592592592489,
+      "mean_member_hit_rate": 0.7668711656441719,
+      "mean_control_hit_rate": 0.3600111544896821
+    },
+    {
+      "phase": "development",
+      "seed": 2026100962,
+      "model": "Rv2",
+      "stable_index": 0.9219784707897691,
+      "official_attack_power": 1.0356148344261327,
+      "mean_mia_all": 0.4004195804195804,
+      "mean_mia_power": 0.514055944055944,
+      "mean_aia_power": 0.5215588903701888,
+      "delta_vs_Rv2": 0.0,
+      "official_delta_vs_Rv2": 0.0,
+      "mean_member_hit_rate": 0.7579475738984943,
+      "mean_control_hit_rate": 0.3273842721695482
+    },
+    {
+      "phase": "development",
+      "seed": 2026100962,
+      "model": "Rv12",
+      "stable_index": 0.9397407085520069,
+      "official_attack_power": 1.0446358134471116,
+      "mean_mia_all": 0.41818181818181815,
+      "mean_mia_power": 0.5230769230769231,
+      "mean_aia_power": 0.5215588903701888,
+      "delta_vs_Rv2": 0.01776223776223773,
+      "official_delta_vs_Rv2": 0.00902097902097898,
+      "mean_member_hit_rate": 0.7579475738984943,
+      "mean_control_hit_rate": 0.3273842721695482
+    },
+    {
+      "phase": "confirmation",
+      "seed": 2026100981,
+      "model": "Rv2",
+      "stable_index": 1.0232256296993425,
+      "official_attack_power": 1.0966522031259158,
+      "mean_mia_all": 0.45223776223776224,
+      "mean_mia_power": 0.5256643356643357,
+      "mean_aia_power": 0.5709878674615803,
+      "delta_vs_Rv2": 0.0,
+      "official_delta_vs_Rv2": 0.0,
+      "mean_member_hit_rate": 0.7869492470719464,
+      "mean_control_hit_rate": 0.3095370886781929
+    },
+    {
+      "phase": "confirmation",
+      "seed": 2026100981,
+      "model": "Rv12",
+      "stable_index": 1.0289598954336083,
+      "official_attack_power": 1.10063821711193,
+      "mean_mia_all": 0.457972027972028,
+      "mean_mia_power": 0.5296503496503496,
+      "mean_aia_power": 0.5709878674615803,
+      "delta_vs_Rv2": 0.005734265734265831,
+      "official_delta_vs_Rv2": 0.00398601398601417,
+      "mean_member_hit_rate": 0.7869492470719464,
+      "mean_control_hit_rate": 0.3095370886781929
+    },
+    {
+      "phase": "confirmation",
+      "seed": 2026100982,
+      "model": "Rv2",
+      "stable_index": 0.982736340559774,
+      "official_attack_power": 1.0193848772083107,
+      "mean_mia_all": 0.42887593887593883,
+      "mean_mia_power": 0.4655244755244755,
+      "mean_aia_power": 0.5538604016838352,
+      "delta_vs_Rv2": 0.0,
+      "official_delta_vs_Rv2": 0.0,
+      "mean_member_hit_rate": 0.775515895147797,
+      "mean_control_hit_rate": 0.3240379252649192
+    },
+    {
+      "phase": "confirmation",
+      "seed": 2026100982,
+      "model": "Rv12",
+      "stable_index": 1.0008482286716622,
+      "official_attack_power": 1.0567275345509681,
+      "mean_mia_all": 0.446987826987827,
+      "mean_mia_power": 0.5028671328671328,
+      "mean_aia_power": 0.5538604016838352,
+      "delta_vs_Rv2": 0.01811188811188824,
+      "official_delta_vs_Rv2": 0.037342657342657404,
+      "mean_member_hit_rate": 0.775515895147797,
+      "mean_control_hit_rate": 0.3240379252649192
+    }
+  ],
+  "target_deletion_sensitivity": {
+    "development": {
+      "paired_leave_one_target_min": 0.014947768281101606,
+      "paired_leave_one_target_max": 0.023372676706010023,
+      "individual_leave_one_target_min": 0.01319223985890651,
+      "individual_leave_one_target_max": 0.02813729480396144
+    },
+    "confirmation": {
+      "paired_leave_one_target_min": 0.003186813186813175,
+      "paired_leave_one_target_max": 0.016190476190476182,
+      "individual_leave_one_target_min": -0.004981684981685005,
+      "individual_leave_one_target_max": 0.020879120879120888
+    }
+  },
+  "source_reports_sha256": {
+    "development-61": {
+      "result.json": "1fc65fb88058d193404e88478042cdd4eac9fddb48180100487a6397bb77c57f",
+      "summary.csv": "aabd1a61b238077d4d851c4e61fb52e6da3bc996ad5b12ae4dd80acc29f8b2a0",
+      "by_target.csv": "34a72902d8aaf53428ab3c5f0aaa3e4e390e75040b2216558a09b70c7c058d13"
+    },
+    "development-62": {
+      "result.json": "a09ac20042bd74bdb1baf4130c816a3407247aef907ca84313fde5cea3e93b15",
+      "summary.csv": "fb97ff558d994de4c151f2631c667dd2d3c0a8e4495b6b915e2a0e13fdbab5e6",
+      "by_target.csv": "82f6e8add49ff860b258e0e1e2296529201c3c8ebc9111109043a0cf34234ba8"
+    },
+    "confirmation-81": {
+      "result.json": "040f19bf2d44ddbc07a122ac7ef10184d8fbf3585d6ae86d7bc2e56a3ad6f4bb",
+      "summary.csv": "f0962b9ecfe30d69ffb88aea4e90710893150e3e8fe4414f2cd584ab440e49ba",
+      "by_target.csv": "7e1f3fc814547b71390ce8135f67839d9795998b870f00ab202ad42cd0b104c0"
+    },
+    "confirmation-82": {
+      "result.json": "0ac8b89fc19ea00cd02175ef44dc22a3e1a1dfa058e8d81d1bb6a8d852a100ee",
+      "summary.csv": "0c0e474539e11cc57a71bed22305bd9966af6e843f2587d062c60d72e550361c",
+      "by_target.csv": "95bcfd5f863d9c910ab4527062ee5b3d7dbdc0bb7a7b885aa3d6bf4c9ab5b2ce"
+    }
+  },
+  "official_score_prediction": false,
+  "limitations": [
+    "New seeds share the same donor population and generator assumptions; not an independent population.",
+    "Historical fitted models retain earlier training exposure.",
+    "This is Rv8-equivalent, not an improvement over Rv8.",
+    "No official Rv12 score has been obtained."
+  ]
+}

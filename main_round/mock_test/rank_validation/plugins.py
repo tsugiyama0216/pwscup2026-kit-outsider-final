@@ -17,7 +17,7 @@ import sys
 from uuid import uuid4
 
 from .adapters import ROOT, MOCK, ATTACK, MODELS, _bootstrap, sha, validate_public
-from .provenance import DERIVED_MODELS
+from .provenance import DERIVED_MODELS, ADDITIONAL_MODELS
 
 
 def candidate_name(value):
@@ -25,7 +25,7 @@ def candidate_name(value):
         raise ValueError("Candidate name must be 1-64 safe ASCII letters/digits/underscore/dot/hyphen and start with a letter")
     if value.upper().split('.')[0] in {"CON", "PRN", "AUX", "NUL", *(f"COM{i}" for i in range(1, 10)), *(f"LPT{i}" for i in range(1, 10))}:
         raise ValueError("Reserved candidate name")
-    if value.casefold() in {model.casefold() for model in set(MODELS) | DERIVED_MODELS}:
+    if value.casefold() in {model.casefold() for model in set(MODELS) | DERIVED_MODELS | ADDITIONAL_MODELS}:
         raise ValueError("Frozen model names are reserved; choose a distinct candidate name")
     return value
 
