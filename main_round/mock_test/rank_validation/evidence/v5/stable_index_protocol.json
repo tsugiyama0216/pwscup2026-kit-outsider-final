@@ -1,0 +1,57 @@
+{
+  "version": "stable-index-v1-20261009-2",
+  "frozen_utc": "2026-10-09T05:03:00.214117+00:00",
+  "primary_indicator": "stable_index = equal_target_mean(mia_all + aia_power_after_floor)",
+  "mia_all_definition": "Per-target official score_mia breakdown tpr_at_low_fpr at FPR=0.01, before max with rare TPR.",
+  "aia_definition": "The existing official target AIA power after rare SE deadzone, max(all,rare), and target floor subtraction/clipping; unchanged.",
+  "separate_diagnostics": {
+    "official_attack_power": "equal_target_mean(mia_power + aia_power_after_floor)",
+    "mia_rare_max_uplift": "equal_target_mean(mia_power - mia_all)",
+    "mia_rare_tpr": "Official rare TPR per target; preserve undefined as null rather than zero.",
+    "all_components": "Retain per-target mia_all, mia_power, mia_rare, aia_power and positive/rare-positive counts."
+  },
+  "coefficients_fitted": false,
+  "retrospective_design_cases": [
+    2026100941,
+    2026100951,
+    2026100952
+  ],
+  "retrospective_design_note": "The stable indicator was proposed after observing reference-model reversals on v4. All three v4 worlds are retrospective design data and are not validation evidence for this new indicator.",
+  "confirmation_seeds": [
+    2026100961,
+    2026100962
+  ],
+  "split": "holdout",
+  "case_selection": "Run both reserved worlds once and retain all outcomes; no seed/model/official-feedback-based selection.",
+  "reference_models": [
+    "Rv2",
+    "Rv1",
+    "pl1",
+    "Tv105"
+  ],
+  "known_reference_order_best_first": [
+    "Rv2",
+    "Rv1",
+    "pl1",
+    "Tv105"
+  ],
+  "validation": "Primary: compute each reference model stable_index in BOTH reserved confirmation cases, average those two case scores equally, and check all six strict known-reference pairwise directions. Missing cases fail completeness. A tie with absolute delta <= 1e-12 is not a hit. No case selection, weighting or refitting.",
+  "target_aggregation": "All 22 targets equally weighted; no exclusions, weights, model-specific rules or fitted coefficients.",
+  "official_scorer_or_scores_changed": false,
+  "generator_numeric_algorithm_changed": false,
+  "limitations": [
+    "This is a separate candidate-order diagnostic, not the official contest score.",
+    "Suppressing rare MIA max uplift may hide real rare-person attack strength. Always show it separately.",
+    "New seeds reuse holdout donor rows, the same population construction and public profiles. They are scenario replications, not independent unseen people.",
+    "Passing two known-reference scenarios does not establish accuracy for unknown future models.",
+    "Public-profile coverage failures remain visible; no coverage gate is relaxed."
+  ],
+  "sensitivity_diagnostics": [
+    "Show every individual case score, all six pair directions, rank and mismatch without requiring every case to match as the primary criterion.",
+    "Show each pair difference in both cases and its min/max range. This is a sensitivity range, not a confidence interval.",
+    "Leave the same target out of both cases, recompute each 21-target stable_index and its equal-case mean, and report all 22 resulting six-pair rank checks. Also show per-case leave-one-target-out results."
+  ],
+  "old_v4_gate_unchanged": "The older v4 official-score all-case agreement gate remains unchanged. This new mean-first rule applies only to the separately frozen stable-index v5 hypothesis.",
+  "pre_generation_revision": "Before any v5 case generation or new stable-index result: separate mean-rank primary criterion from case and target sensitivity diagnostics.",
+  "secondary_validation": "Report whether each of the two individual cases matches all six pairs, the fraction of cases with all-six agreement, and the stronger both-cases-all-six flag separately from the mean-rank primary criterion."
+}

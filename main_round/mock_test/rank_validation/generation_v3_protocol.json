@@ -1,0 +1,42 @@
+{
+  "protocol_version": "public-profile-joint-v3-20261009-1",
+  "selection_uses_official_feedback": false,
+  "selection_uses_attack_predictions": false,
+  "selection_uses_membership_or_aia_labels": false,
+  "development_seeds": [2026100901],
+  "confirmation_seeds": [2026100911, 2026100912],
+  "seed_policy": "Run every reserved world; retain failures. No seed selection by attack performance.",
+  "splits": {"development": "dev", "confirmation": "holdout"},
+  "topology": "Unchanged sugiyama_v2 30-cohort overlap topology and birth rare-label allocation.",
+  "population": "Reuse identical conditional labeled-donor kernel for pool, matched AIA controls and independently generated public background. Same finite donor population; independent random draws are not independent people.",
+  "censoring": "Set time=10 for onset=0 and death=0 consistently in pool, candidate, self-label, AIA truth, background and releases. Event times and event labels are unchanged.",
+  "target_profile_source": "Actual 22 main-round C/challenge files and participant A_bg; no private target truth.",
+  "profile_metrics": ["challenge_qi_nn_median", "challenge_to_background_nn_ratio", "correlation_abs_difference_bg", "wasserstein_sd_mean", "time_ge_9p5_fraction", "clinical_unique_fraction_mean"],
+  "scale_rule": "Per metric max(actual-target IQR, fixed floor). Public-only calibration.",
+  "scale_floors": {"challenge_qi_nn_median": 0.05, "challenge_to_background_nn_ratio": 0.10, "correlation_abs_difference_bg": 0.02, "wasserstein_sd_mean": 0.03, "time_ge_9p5_fraction": 0.02, "clinical_unique_fraction_mean": 0.05},
+  "loss": "Sum weighted Huber losses for standardized profile differences; quadratic to abs(z)=2 then linear 4*abs(z)-4. Missing/nonfinite values disqualify candidate. Ties keep first grid candidate.",
+  "metric_weights": {"challenge_qi_nn_median": 2.0, "challenge_to_background_nn_ratio": 2.0, "correlation_abs_difference_bg": 1.0, "wasserstein_sd_mean": 1.0, "time_ge_9p5_fraction": 1.0, "clinical_unique_fraction_mean": 1.0},
+  "grid": [
+    {"family":"jitter", "strength":0.02}, {"family":"jitter", "strength":0.08}, {"family":"jitter", "strength":0.18}, {"family":"jitter", "strength":0.35}, {"family":"jitter", "strength":0.65}, {"family":"jitter", "strength":1.0},
+    {"family":"resample", "strength":0.05}, {"family":"resample", "strength":0.15}, {"family":"resample", "strength":0.35}, {"family":"resample", "strength":0.65},
+    {"family":"conditional", "strength":0.05}, {"family":"conditional", "strength":0.18}, {"family":"conditional", "strength":0.40},
+    {"family":"copula", "strength":0.03}, {"family":"copula", "strength":0.15}, {"family":"copula", "strength":0.35},
+    {"family":"independent", "strength":0.05}, {"family":"independent", "strength":0.20}, {"family":"independent", "strength":0.50},
+    {"family":"shifted", "strength":0.30}, {"family":"shifted", "strength":0.70}, {"family":"shifted", "strength":1.20}, {"family":"shifted", "strength":2.00},
+    {"family":"category_redraw", "strength":0.20}, {"family":"category_redraw", "strength":0.60}, {"family":"category_redraw", "strength":1.00}
+  ],
+  "family_parameters": {
+    "all": "Positive numeric QI perturbation, legal schema clipping, shuffled rows; time/onset/death treated coherently. No pure copy or QI-only-preserving release is selected.",
+    "jitter": "All target rows, Gaussian noise in background SD units at strength; event-time noise SD=0.10+0.5*strength; independent category redraw probability min(0.3,0.10*strength).",
+    "resample": "Bootstrap target rows then same jitter rule.",
+    "conditional": "Pinned v2 conditional QI-neighbor release then additional positive jitter at strength; v2's 12-50-neighbor draw is seed-fixed.",
+    "copula": "Pinned v2 rank Gaussian copula then positive jitter at strength.",
+    "independent": "Background-only bootstrap then positive jitter; does not read target B.",
+    "shifted": "Target copula plus alternating signed shift strength times background SD over continuous columns; additional numeric jitter 0.08; event-time noise 0.3.",
+    "category_redraw": "Target resample with numeric jitter 0.08 and category redraw probability=strength for sex/prefecture; event-time noise 0.3."
+  },
+  "fit_policy": "Select lowest public-profile loss per corresponding target cohort, using no attack model or truth. All 22 targets remain equally weighted by official scorer. Save full grid profiles and fit residuals; coverage failures remain unsupported.",
+  "coverage_tolerance_policy": "Use existing exact marginal range gate, without expanding intervals after observing rank results. It may fail at empirical extrema; targetwise residuals are also retained.",
+  "leakage_boundary": "Generation may know synthetic B, birth labels and roles; release candidate ranking consumes only candidate C, public challenge, public background and public target profile. Metadata, fit settings, roles and truths never enter prediction_arguments.",
+  "limitations": ["This is public-distribution calibration, not reconstruction of hidden defenses or official truth.", "Finite B_self donors and prior-used split remain; holdout seeds are not independent unknown persons.", "Matching a few public profiles cannot prove attack ranking transfer, and no target-profile metric is anonymization strength.", "Background generation differs from v2 and its metrics must be recomputed rather than compared as the same world."]
+}

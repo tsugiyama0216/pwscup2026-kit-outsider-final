@@ -1,0 +1,18 @@
+{
+  "frozen_utc": "2026-10-09T05:03:00.214117+00:00",
+  "protocol_sha256": "9d8b655c88dfae568a657d4a0ca217fec20d5e43acc18c8224a12c688c700c64",
+  "metric_protocol_sha256": "b467755264f0ecaef6c78280b640a316b155ae768a800baa89b7c11ec04315e4",
+  "generator_source_sha256": "01bdeead6bd65d5cdc08e202c033ebb60207b889545389c2fbcca9f850d62b94",
+  "base_v4_protocol_sha256": "c383c5fe06136fdbdd11d501467c7c4731919137cf2c8b7b8d701a524dc95038",
+  "base_v4_generator_sha256": "0beb17f2c741829c2bae5b820eac27711c2da4034eebde246fc865030da5c7a6",
+  "development_seeds": [],
+  "confirmation_seeds": [
+    2026100961,
+    2026100962
+  ],
+  "prior_case_manifest_seed_matches": 0,
+  "v5_generation_started": false,
+  "new_seed_model_results_exist": false,
+  "v4_retrospective_design_data": true,
+  "pre_generation_revision": true
+}

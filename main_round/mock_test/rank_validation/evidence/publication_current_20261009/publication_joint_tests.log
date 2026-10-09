@@ -1,0 +1,14 @@
+test_all_pair_order (rank_validation.test_joint_report.RankEvidenceTests.test_all_pair_order) ... ok
+test_complete_valid_official_components_pass (rank_validation.test_joint_report.RankEvidenceTests.test_complete_valid_official_components_pass) ... ok
+test_matching_mean_does_not_hide_wrong_component_sum (rank_validation.test_joint_report.RankEvidenceTests.test_matching_mean_does_not_hide_wrong_component_sum) ... ok
+test_mismatched_model_sets_fail (rank_validation.test_joint_report.RankEvidenceTests.test_mismatched_model_sets_fail) ... ok
+test_missing_component_cannot_be_silently_dropped (rank_validation.test_joint_report.RankEvidenceTests.test_missing_component_cannot_be_silently_dropped) ... ok
+test_nonfinite_fails (rank_validation.test_joint_report.RankEvidenceTests.test_nonfinite_fails) ... ok
+test_overlapping_rounded_scores_are_not_labelled (rank_validation.test_joint_report.RankEvidenceTests.test_overlapping_rounded_scores_are_not_labelled) ... ok
+test_tie_is_not_a_correct_strict_rank (rank_validation.test_joint_report.RankEvidenceTests.test_tie_is_not_a_correct_strict_rank) ... ok
+test_twenty_two_rows_with_self_substitution_are_rejected (rank_validation.test_joint_report.RankEvidenceTests.test_twenty_two_rows_with_self_substitution_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.005s
+
+OK

@@ -1,0 +1,175 @@
+{
+  "schema_version": "rank-validation-publication-evidence-v1",
+  "created_utc": "2026-10-09T05:32:53.598338+00:00",
+  "purpose": "Portable, byte-preserved historical verification evidence for the rank_validation source package.",
+  "verification_base_commit": "9e5e2af75d38709ecf9b66785e51e79f2d087b94",
+  "verification_base_commit_role": "Base of the worktree used to develop and perform the original v5 validation. This is not the commit of the subsequently added rank_validation source.",
+  "publication_preparation_base_commit": "93b6f664dd2ba95a971ae09d9ffb7f47c3d89606",
+  "publication_preparation_base_commit_role": "Repository main base when this evidence archive was prepared; distinct from the original validation base.",
+  "copy_policy": "Every archived file is a byte-for-byte copy. Absolute paths and historical action flags within source records remain unchanged as historical labels, not portable runtime instructions.",
+  "path_policy": "All source_path and archived_path values in this manifest are repository-relative POSIX paths. source_path values identify original local records, which need not exist in a new clone.",
+  "scope": {
+    "official_known_reference_order": [
+      "Rv2",
+      "Rv1",
+      "pl1",
+      "Tv105"
+    ],
+    "new_model_official_rank_accuracy_validated": false,
+    "generated_case_truth_or_prediction_files_included": false,
+    "credentials_user_archive_virtualenv_or_cache_included": false,
+    "original_records_modified": false,
+    "original_verification_total_tests": 175,
+    "test_record_breakdown": {
+      "final_tests_confirmed.log": 166,
+      "joint_report_tests.log": 9
+    },
+    "fresh_clone_execution_verified_by_this_archive": false,
+    "new_series_results_included": false
+  },
+  "reproduction_note": "Use the tracked source and pinned dependency setup to regenerate the two v5 cases, common floors, four reference predictions and reports. Archived results do not replace regenerated panel inputs. Newly evaluated Rv6-Rv11 results are outside this historical snapshot.",
+  "file_count": 20,
+  "total_size_bytes": 1619849,
+  "files": [
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/final-report/result.json",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/v5-final/result.json",
+      "size_bytes": 688739,
+      "sha256": "17ca258aff35e237845a502e3334235ffdc58a274a23305994f7b12b9e64406e",
+      "role": "frozen_v5_confirmation_result"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/final-report/report.html",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/v5-final/report.html",
+      "size_bytes": 7281,
+      "sha256": "a79dd2580f7fed971290220789cdef05be0845ad301c06a95792565df063f336",
+      "role": "frozen_v5_confirmation_result"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/final-report/case_metrics.csv",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/v5-final/case_metrics.csv",
+      "size_bytes": 3138,
+      "sha256": "63361c1e4af5a13960abe568715b307d2c842c74fd589e16581ab9761fdceb74",
+      "role": "frozen_v5_confirmation_result"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/final-report/confirmation_means.csv",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/v5-final/confirmation_means.csv",
+      "size_bytes": 687,
+      "sha256": "30960abea39e977f1da3af9ecdbb4e4329c11c6e6f339210c0e826509f32c436",
+      "role": "frozen_v5_confirmation_result"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/final-report/pair_differences.csv",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/v5-final/pair_differences.csv",
+      "size_bytes": 970,
+      "sha256": "32e3c732be7f1d645a44173a812f0dab65ddbf00b63f6487bed0b8a7952cf24c",
+      "role": "frozen_v5_confirmation_result"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/final-report/target_metrics.csv",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/v5-final/target_metrics.csv",
+      "size_bytes": 46656,
+      "sha256": "b193b71155d7bdb443782180d8fd409bc3378c4fcfa8dddfab4c6dcf99feb4e9",
+      "role": "frozen_v5_confirmation_result"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/final-report/same_target_leave_one_out.csv",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/v5-final/same_target_leave_one_out.csv",
+      "size_bytes": 5626,
+      "sha256": "19421bf54a5c87917696346d1a1ce15d8faa07f20591c7682d941aae78e0b308",
+      "role": "frozen_v5_confirmation_result"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/final-report/case_leave_one_out.csv",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/v5-final/case_leave_one_out.csv",
+      "size_bytes": 14075,
+      "sha256": "acfc64f06cef8cb2cc612d3a6f5f63c2ff9a98fc004be58a06b1a65b21e73f07",
+      "role": "frozen_v5_confirmation_result"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/verification_summary.json",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/verification/verification_summary.json",
+      "size_bytes": 6715,
+      "sha256": "03541a8b545eface4f6250328be7e200c4d4b996e8dc38021a8cb0d06e11d124",
+      "role": "completed_validation_record"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/final_tests_confirmed.log",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/verification/final_tests_confirmed.log",
+      "size_bytes": 24415,
+      "sha256": "f975ec89b14d08afdbf772a54cc9a00e226a6b8b720f6aa5bca73c9fc2d91c3a",
+      "role": "completed_validation_record"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/joint_report_tests.log",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/verification/joint_report_tests.log",
+      "size_bytes": 1391,
+      "sha256": "4fc469eaedb406c3ff4cc02daa42246afc3c61c21f88acb75220113f88fea45c",
+      "role": "completed_validation_record"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/generator_checks.json",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/verification/generator_checks.json",
+      "size_bytes": 23265,
+      "sha256": "a88dc0036e0f418eda3cc049a05c8eb45329806881d6a7b9514d40547519c01e",
+      "role": "completed_validation_record"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/generator_audit/implementation_checks.json",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/verification/implementation_checks.json",
+      "size_bytes": 873,
+      "sha256": "e362391684f3435db24715e6b7651914abd0b311cde82872d416801cccc9998b",
+      "role": "generation_freeze_and_input_audit"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/generator_audit/verification-2026100961.json",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/verification/verification-2026100961.json",
+      "size_bytes": 11105,
+      "sha256": "1dab6f5842eb5a51e9ab6ae6c7302dbcf4e9a0ed7768d4eb05401382a4866481",
+      "role": "generation_freeze_and_input_audit"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/generator_audit/verification-2026100962.json",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/verification/verification-2026100962.json",
+      "size_bytes": 11090,
+      "sha256": "297ca79a047aaf2d566222211554ef5194b4f785207803947782a0896baba939",
+      "role": "generation_freeze_and_input_audit"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/adapter_production_parity_20261009/verified_parity.json",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/parity/production_verified.json",
+      "size_bytes": 11417,
+      "sha256": "5fda8d3246eef3fff4bb902f65e265706de9e2af8acead9cbd4048d06ddc7f6e",
+      "role": "independent_production_prediction_parity"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/adapter_batch_parity_20261009/verified_parity.json",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/parity/batch_verified.json",
+      "size_bytes": 16257,
+      "sha256": "f442cf45fc6bb009d9f8653df2fc2ac1ea0a965597fb225557a357d95926ebfa",
+      "role": "production_and_batch_prediction_parity"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/candidate-smoke-report/result.json",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/candidate-smoke/result.json",
+      "size_bytes": 743756,
+      "sha256": "bb50fbdac872193ca64074520f58b1e6ef164e447d0d3c7659ac85a312d50505",
+      "role": "constant_candidate_end_to_end_smoke"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/candidate-smoke-report/report.html",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/candidate-smoke/report.html",
+      "size_bytes": 1598,
+      "sha256": "134e3c4bdb2590049898a45b3b07ab6ff7d725c11a65e7156cbc9423699c977d",
+      "role": "constant_candidate_end_to_end_smoke"
+    },
+    {
+      "source_path": "main_round/mock_test/local-output/ranking-v5-20261009/candidate-smoke-report/comparison.csv",
+      "archived_path": "main_round/mock_test/rank_validation/evidence/publication/candidate-smoke/comparison.csv",
+      "size_bytes": 795,
+      "sha256": "7289a49725abde1f2f88a711f0c5ac8012c4729bab1cfbc5dcbcef5deb694f40",
+      "role": "constant_candidate_end_to_end_smoke"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # 杉山採点：本番形式の共同模擬評価
 
+**本番でのモデル順序との照合と新候補の比較は [rank_validation](rank_validation/README.md) を使います。** 既知4モデルの順位を確認した固定v5の2ケースで、全体MIA＋補正済みAIAの順位比較指標、公式方式の模擬点、希少者MIA上乗せ、ケース・対象別の変動を表示します。Rv2とRv6〜Rv11の一括比較は `rank_validation/run_series.ps1`。未提出モデルの本番順位を保証するものではありません。
+
 **予備戦の実問題・公開正解を使う評価は [mock_TS_using_prelim](mock_TS_using_prelim/README.md) です。** team24の実配布原本、全21チームの匿名化データ・公開回答、運営の正解をコピーし、予備戦ルールでMIA・AIAを採点します。`mock_TS_using_prelim/run.ps1` で公開21回答の公表値との照合、`-Action Run -Plugin <攻撃.py>` で自作攻撃を評価できます。
 
 実行用保存版は、保存先訂正に従い **[attack/retest](../attack/retest/README.md)** に保存しています。`retest/run.ps1` からその保存版を実行できます。

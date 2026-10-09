@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "utc": "2026-10-09T05:04:01.777150+00:00",
+  "unit_tests": 4,
+  "all_function_ASTs_identical_except_explicit_version_metadata": true,
+  "numeric_protocol_fields_unchanged": true,
+  "v4_cases_manifest_sha256": {
+    "2026100941": "0dbb27680e203372f753f74d07ce9d38a2a080312d1d65fd889136bcca5c59fd",
+    "2026100951": "6c65e8fdf7f341bc4aa22856b04b924cea8a3757bfad0a78036b4a05c479da14",
+    "2026100952": "db943973adf3bfce5f066a7d2804d2e296f7ce89cf0189e6cdb0de961b1a8b03"
+  },
+  "v4_generator_source_sha256": "0beb17f2c741829c2bae5b820eac27711c2da4034eebde246fc865030da5c7a6",
+  "v4_protocol_sha256": "c383c5fe06136fdbdd11d501467c7c4731919137cf2c8b7b8d701a524dc95038",
+  "v5_frozen_hashes_verified": true,
+  "test_source_sha256": "b04dbf6f88bdd12a19487604c84f2d8ecf362a7fcb4e87d1bbe9391db8e10392",
+  "new_seed_model_scores_read": false
+}

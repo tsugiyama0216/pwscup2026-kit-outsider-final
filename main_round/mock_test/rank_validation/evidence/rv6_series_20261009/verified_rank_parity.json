@@ -1,0 +1,848 @@
+{
+  "comparison": "Full candidate ranking equality including every tie, independently for all 22 targets; AIA retains exact numeric comparison.",
+  "source_parity_report_sha256": "5510e6a6977a90a01267457f190105491c10214249298237aa9bb7290c1c691a",
+  "all_mia_target_rankings_exact": true,
+  "all_aia_numeric_exact": true,
+  "models": {
+    "Rv6": {
+      "targets": {
+        "0": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "1": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "2": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "3": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "4": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "5": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "6": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "7": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "8": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "9": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "11": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "12": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "13": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "14": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "15": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "16": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "17": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "22": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "25": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "26": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "27": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "28": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        }
+      },
+      "aia_numeric_identical": true,
+      "mia_total_values": 23078,
+      "mia_different_values": 0
+    },
+    "Rv7": {
+      "targets": {
+        "0": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "1": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "2": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "3": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "4": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "5": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "6": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "7": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "8": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "9": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "11": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "12": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "13": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "14": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "15": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "16": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "17": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "22": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "25": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "26": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "27": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "28": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        }
+      },
+      "aia_numeric_identical": true,
+      "mia_total_values": 23078,
+      "mia_different_values": 0
+    },
+    "Rv8": {
+      "targets": {
+        "0": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "1": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "2": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "3": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "4": {
+          "ranking_identical_including_ties": true,
+          "different_values": 1,
+          "max_absolute_error": 1.3877787807814457e-17,
+          "identical_stable_sort_order": true
+        },
+        "5": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "6": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "7": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "8": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "9": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "11": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "12": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "13": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "14": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "15": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "16": {
+          "ranking_identical_including_ties": true,
+          "different_values": 1,
+          "max_absolute_error": 1.3877787807814457e-17,
+          "identical_stable_sort_order": true
+        },
+        "17": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "22": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "25": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "26": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "27": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "28": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        }
+      },
+      "aia_numeric_identical": true,
+      "mia_total_values": 23078,
+      "mia_different_values": 2
+    },
+    "Rv9": {
+      "targets": {
+        "0": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "1": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "2": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "3": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "4": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "5": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "6": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "7": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "8": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "9": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "11": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "12": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "13": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "14": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "15": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "16": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "17": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "22": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "25": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "26": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "27": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "28": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        }
+      },
+      "aia_numeric_identical": true,
+      "mia_total_values": 23078,
+      "mia_different_values": 0
+    },
+    "Rv10": {
+      "targets": {
+        "0": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "1": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "2": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "3": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "4": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "5": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "6": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "7": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "8": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "9": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "11": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "12": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "13": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "14": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "15": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "16": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "17": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "22": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "25": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "26": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "27": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "28": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        }
+      },
+      "aia_numeric_identical": true,
+      "mia_total_values": 23078,
+      "mia_different_values": 0
+    },
+    "Rv11": {
+      "targets": {
+        "0": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "1": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "2": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "3": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "4": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "5": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "6": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "7": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "8": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "9": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "11": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "12": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "13": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "14": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "15": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "16": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "17": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "22": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "25": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "26": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "27": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        },
+        "28": {
+          "ranking_identical_including_ties": true,
+          "different_values": 0,
+          "max_absolute_error": 0.0,
+          "identical_stable_sort_order": true
+        }
+      },
+      "aia_numeric_identical": true,
+      "mia_total_values": 23078,
+      "mia_different_values": 0
+    }
+  },
+  "official_submission_performed": false,
+  "limitations": [
+    "Rv8 has 2 one-ULP values differing from the archived CSV; byte and numeric exact parity are not claimed for that CSV.",
+    "The source of the one-ULP variation is not established. No rounding, prediction replacement or model change was performed.",
+    "Rank equality proves equivalent ranking-based MIA scoring for any membership truth; it does not provide official hidden scores."
+  ]
+}

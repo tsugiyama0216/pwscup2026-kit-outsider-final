@@ -1,0 +1,51 @@
+{
+  "format": "rv6-series-result-publication-v1",
+  "model_source_commit": "93b6f664dd2ba95a971ae09d9ffb7f47c3d89606",
+  "files": [
+    {
+      "source": "main_round/mock_test/local-output/rv6-series-scoring-20261009/final-report/case_metrics.csv",
+      "path": "case_metrics.csv",
+      "bytes": 1089,
+      "sha256": "42cada583adb22eabf803032b853e785e07d628a651b5b704c9b8102c9e0444e"
+    },
+    {
+      "source": "main_round/mock_test/local-output/rv6-series-scoring-20261009/final-report/pair_sensitivity.csv",
+      "path": "pair_sensitivity.csv",
+      "bytes": 2513,
+      "sha256": "2ac7195d7c52a824f41e68ed43728dcdb8df313fc7e2f9a12b5d519a8a7c6d32"
+    },
+    {
+      "source": "main_round/mock_test/local-output/rv6-series-scoring-20261009/final-report/ranking.csv",
+      "path": "ranking.csv",
+      "bytes": 1695,
+      "sha256": "a71ff4270abc7742a87a2328a8eb42f19e90bf300980f1820528a8517a9da88b"
+    },
+    {
+      "source": "main_round/mock_test/local-output/rv6-series-scoring-20261009/final-report/report.html",
+      "path": "report.html",
+      "bytes": 3750,
+      "sha256": "2734265175000236964cb6ae3fcf80bcad70084ceea0fa5740213d91275242ae"
+    },
+    {
+      "source": "main_round/mock_test/local-output/rv6-series-scoring-20261009/final-report/result.json",
+      "path": "result.json",
+      "bytes": 882350,
+      "sha256": "d86b9e744de3a5715dc65d78f78f76e67a25b20fb676ecc48b1e11a7a49bfcb5"
+    },
+    {
+      "source": "main_round/mock_test/local-output/series_production_parity_20261009/verified_parity.json",
+      "path": "verified_parity.json",
+      "bytes": 75529,
+      "sha256": "5510e6a6977a90a01267457f190105491c10214249298237aa9bb7290c1c691a"
+    },
+    {
+      "source": "main_round/mock_test/local-output/series_production_parity_20261009/verified_rank_parity.json",
+      "path": "verified_rank_parity.json",
+      "bytes": 28257,
+      "sha256": "81f02ef9c2e7975f50f4d53ed9bd0366df457eba01599fde57dc4a94570bab8c"
+    }
+  ],
+  "official_submissions_performed": false,
+  "model_tuning_performed": false,
+  "scope": "Read-only scoring of six fixed models on the two existing v5 panels, against the same-world Rv2 baseline."
+}

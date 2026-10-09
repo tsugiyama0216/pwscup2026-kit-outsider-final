@@ -1,0 +1,15 @@
+{
+  "source_type": "user_supplied_codabench_screenshot",
+  "received_date_jst": "2026-10-09",
+  "source_filename": "image (2).png",
+  "source_sha256": "c68143bd9410072706be498894e2a55a3df9376f528730271f7f95badece3ee1",
+  "precision": "displayed_to_four_decimal_places_not_exact_scores",
+  "unknown_breakdown_mapping_resolved": false,
+  "submission_bytes_independently_verified": false,
+  "rows": [
+    {"model_id": "Tv105", "submission_id": 968207, "filename": "team10_Tv105_attack.zip", "displayed_date": "2026-10-08 13:13", "displayed_status": "Finished", "score_1_display": 0.0981, "decimal_places": 4},
+    {"model_id": "pl1", "submission_id": 967868, "filename": "team10_pl1_attack.zip", "displayed_date": "2026-10-08 10:40", "displayed_status": "Finished", "score_1_display": 0.0996, "decimal_places": 4},
+    {"model_id": "Rv2", "submission_id": 966378, "filename": "team10_R_v2_attack.zip", "displayed_date": "2026-10-07 16:42", "displayed_status": "Finished", "score_1_display": 0.1967, "decimal_places": 4},
+    {"model_id": "Rv1", "submission_id": 954439, "filename": "team10_R_v1_attack.zip", "displayed_date": "2026-10-01 13:11", "displayed_status": "Finished", "score_1_display": 0.1694, "decimal_places": 4}
+  ]
+}
