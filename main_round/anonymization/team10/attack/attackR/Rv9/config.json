@@ -1,0 +1,7 @@
+{
+  "model": "Rv9",
+  "description": "背景との差を使う近傍時刻窓AIA",
+  "baseline": "Rv2",
+  "shared_protocol": "../rv6_series/protocol.json",
+  "official_score_measured": false
+}

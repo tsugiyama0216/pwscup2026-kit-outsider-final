@@ -1,0 +1,55 @@
+{
+  "models": {
+    "Rv6": {
+      "mia_values_changed": 19492,
+      "mia_ranks_changed": 19284,
+      "mia_top30_replaced": 159,
+      "aia_changed": 0,
+      "aia_changed_over_half_year": 0,
+      "submission_zip_local": "main_round/anonymization/team10/attack/attackR/Rv6/submission/team10_Rv6_attack.zip"
+    },
+    "Rv7": {
+      "mia_values_changed": 19492,
+      "mia_ranks_changed": 19320,
+      "mia_top30_replaced": 175,
+      "aia_changed": 0,
+      "aia_changed_over_half_year": 0,
+      "submission_zip_local": "main_round/anonymization/team10/attack/attackR/Rv7/submission/team10_Rv7_attack.zip"
+    },
+    "Rv8": {
+      "mia_values_changed": 19492,
+      "mia_ranks_changed": 19105,
+      "mia_top30_replaced": 99,
+      "aia_changed": 0,
+      "aia_changed_over_half_year": 0,
+      "submission_zip_local": "main_round/anonymization/team10/attack/attackR/Rv8/submission/team10_Rv8_attack.zip"
+    },
+    "Rv9": {
+      "mia_values_changed": 0,
+      "mia_ranks_changed": 0,
+      "mia_top30_replaced": 0,
+      "aia_changed": 600,
+      "aia_changed_over_half_year": 496,
+      "submission_zip_local": "main_round/anonymization/team10/attack/attackR/Rv9/submission/team10_Rv9_attack.zip"
+    },
+    "Rv10": {
+      "mia_values_changed": 0,
+      "mia_ranks_changed": 0,
+      "mia_top30_replaced": 0,
+      "aia_changed": 854,
+      "aia_changed_over_half_year": 756,
+      "submission_zip_local": "main_round/anonymization/team10/attack/attackR/Rv10/submission/team10_Rv10_attack.zip"
+    },
+    "Rv11": {
+      "mia_values_changed": 19492,
+      "mia_ranks_changed": 19200,
+      "mia_top30_replaced": 118,
+      "aia_changed": 781,
+      "aia_changed_over_half_year": 652,
+      "submission_zip_local": "main_round/anonymization/team10/attack/attackR/Rv11/submission/team10_Rv11_attack.zip"
+    }
+  },
+  "score_measured": false,
+  "interpretation": "Behavior differences versus Rv2, not score estimates.",
+  "prior_files_preserved": 178
+}

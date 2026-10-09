@@ -1,0 +1,7 @@
+{
+  "model": "Rv10",
+  "description": "ExtraTreesの葉から時刻分布を推定するAIA",
+  "baseline": "Rv2",
+  "shared_protocol": "../rv6_series/protocol.json",
+  "official_score_measured": false
+}

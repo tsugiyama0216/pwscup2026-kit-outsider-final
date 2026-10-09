@@ -1,0 +1,7 @@
+{
+  "model": "Rv11",
+  "description": "Rv6・Rv7・Rv8のMIAと近傍・森林AIAの固定統合",
+  "baseline": "Rv2",
+  "shared_protocol": "../rv6_series/protocol.json",
+  "official_score_measured": false
+}

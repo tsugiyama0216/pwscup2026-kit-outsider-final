@@ -1,0 +1,7 @@
+{
+  "model": "Rv8",
+  "description": "対象間で共通する人物傾向を弱く補正するMIA",
+  "baseline": "Rv2",
+  "shared_protocol": "../rv6_series/protocol.json",
+  "official_score_measured": false
+}

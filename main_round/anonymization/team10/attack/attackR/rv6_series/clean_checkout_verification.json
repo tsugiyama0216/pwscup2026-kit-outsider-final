@@ -1,0 +1,51 @@
+{
+  "context": "Fresh managed worktree based on private origin/main; proposed scoped files copied unchanged.",
+  "dependency_files_verified": 126,
+  "mechanism_tests_run": 9,
+  "test_success": true,
+  "submitted_models": {
+    "Rv6": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    },
+    "Rv7": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    },
+    "Rv8": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    },
+    "Rv9": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    },
+    "Rv10": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    },
+    "Rv11": {
+      "ok": true,
+      "mia_rows": 1049,
+      "mia_target_columns": 22,
+      "aia_rows": 7172
+    }
+  },
+  "copied_files_verified": 72,
+  "official_package_from_clean_checkout": true,
+  "existing_project_environment_used": true,
+  "new_pc_physically_tested": false,
+  "full_production_runs": "Two independent original-workspace runs, byte-identical.",
+  "zip_uploaded": false,
+  "credential_scan_passed": true
+}

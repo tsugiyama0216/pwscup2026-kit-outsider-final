@@ -1,0 +1,32 @@
+{
+  "model": "Rv11",
+  "validation": {
+    "ok": true,
+    "mia_rows": 1049,
+    "mia_target_columns": 22,
+    "aia_rows": 7172
+  },
+  "two_independent_runs_byte_identical": true,
+  "csv_roundtrip_identical": true,
+  "official_zip_valid": true,
+  "token_matches_original": true,
+  "negative_checks": {
+    "missing_mia": true,
+    "duplicate_mia": true,
+    "nan_mia": true,
+    "out_of_range": true,
+    "missing_aia": true,
+    "duplicate_aia": true,
+    "negative_time": true,
+    "bad_target": true
+  },
+  "prediction_sha256": {
+    "F_mia.csv": "9643714ee9f129c3d6b4fe4c68de3af5e38f63fde383c3d2d099d716003c84b4",
+    "F_aia.csv": "28cfe4a4460b5c69f8a38a0efaf5a664c31b4d668588fca5d5caf19417418d9b"
+  },
+  "zip_sha256": "7db28565c7428bf992fdea10b8b66913f569355be9ea35e50bfeaee45cf9ee64",
+  "dependency_manifest_sha256": "7cf53abc98cef3533ecf865a19ef325a9b7eb289e779a217ed4fce79e830e0e5",
+  "official_score_measured": false,
+  "mock_scores_used": false,
+  "official_submission_performed": false
+}

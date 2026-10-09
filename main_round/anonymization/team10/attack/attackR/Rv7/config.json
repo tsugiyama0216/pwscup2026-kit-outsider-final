@@ -1,0 +1,7 @@
+{
+  "model": "Rv7",
+  "description": "共分散を考慮する距離MIA",
+  "baseline": "Rv2",
+  "shared_protocol": "../rv6_series/protocol.json",
+  "official_score_measured": false
+}

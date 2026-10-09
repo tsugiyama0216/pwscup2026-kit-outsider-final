@@ -1,0 +1,28 @@
+{
+  "mechanism_tests_passed": 9,
+  "score_benchmark": false,
+  "test_source_sha256": "7b9a520d36dad91520fce539697fd28487cb68ee369f5a934d89f780f0b01123",
+  "component_isolation": {
+    "Rv6": {
+      "unchanged_component": "F_aia.csv",
+      "byte_identical_to_Rv2": true
+    },
+    "Rv7": {
+      "unchanged_component": "F_aia.csv",
+      "byte_identical_to_Rv2": true
+    },
+    "Rv8": {
+      "unchanged_component": "F_aia.csv",
+      "byte_identical_to_Rv2": true
+    },
+    "Rv9": {
+      "unchanged_component": "F_mia.csv",
+      "byte_identical_to_Rv2": true
+    },
+    "Rv10": {
+      "unchanged_component": "F_mia.csv",
+      "byte_identical_to_Rv2": true
+    }
+  },
+  "six_distinct_prediction_pairs": true
+}
