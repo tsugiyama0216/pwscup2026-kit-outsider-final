@@ -12,6 +12,7 @@
 
 | 内容 | 場所 |
 |---|---|
+| ポスター発表の図表を理解する補足資料 | [Poster/](../Poster/README.md) |
 | 本戦の匿名化手法を理解する M1_v5の解説 | [method_explanation/01_anonymization.md](method_explanation/01_anonymization.md) |
 | 本戦攻撃 T v88を学部1年生向けに理解する | [method_explanation/03_T_v88_attack.md](method_explanation/03_T_v88_attack.md) |
 | 本戦攻撃データ・実行と検証の手順 | [attack/README.md](attack/README.md) |

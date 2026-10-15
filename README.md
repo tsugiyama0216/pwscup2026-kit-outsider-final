@@ -14,6 +14,7 @@
 
 | 探したいもの | 場所 |
 |---|---|
+| ポスター発表の図表を理解する補足資料 | [Poster/](Poster/README.md) |
 | 本戦・攻撃フェーズの配布物、起動・検証手順 | [`main_round/attack/`](main_round/attack/README.md) |
 | 作業者Rの本戦攻撃（準備用） | [Attak_R/](main_round/attack/Attak_R/README.md) |
 | 作業者Mの本戦攻撃・v1のコードと予測 | [`main_round/attack/Attack_M/`](main_round/attack/Attack_M/README.md) |
