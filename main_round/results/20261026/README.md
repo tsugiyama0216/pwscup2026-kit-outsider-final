@@ -4,6 +4,14 @@
 
 [公式ページ「本戦と総合の結果」](https://www.iwsec.org/pws/2026/cup26.html#final-results)から、2026-10-26公開のExcel・正解データ・攻撃提出物を2026-10-28（JST）に保存しました。フォルダー名は資料の公開日です。結果発表会は2026-10-20に開催されました。
 
+## ZIPを開かずにデータを見る
+
+- [攻撃提出物：全23チームのMIA・AIA予測CSV](submissions/README.md)
+- [正解データ：全23コホートの正解とφ](truth/README.md)
+- [結果表：Excel全9シートのCSV](tables/README.md)
+
+提出物ZIPの中にある23個のチーム別ZIPも展開済みです。各一覧からCSVを直接開けます。[原本フォルダーにも展開先の案内](sources/README.md)を置いています。
+
 ## 最初に見る資料
 
 | 調べたいこと | 保存先 |
@@ -12,8 +20,8 @@
 | GitHub上で全23チームの最終得点を読む | [最終得点CSV](tables/最終得点.csv) |
 | 本戦の有用性・匿名性・攻撃力の内訳 | [総括CSV](tables/総括.csv) |
 | 標的別の値、φ、採点条件、公式ハッシュ | [全9シートの案内](tables/README.md) |
-| 公開された正解を使う | [正解データと公式の説明](truth/README_正解データ.md) |
-| 各チームの提出した予測を見る | [攻撃提出物と公式の説明](submissions/README_攻撃フェーズの提出物.md) |
+| 公開された正解を使う | [コホート別の正解データ一覧](truth/README.md) |
+| 各チームの提出した予測を見る | [チーム別の攻撃提出物一覧](submissions/README.md) |
 | アウトサイダーの公式掲載版の予測 | [F_mia.csv](submissions/cohort10/F_mia.csv)・[F_aia.csv](submissions/cohort10/F_aia.csv) |
 | 公式採点コードでの照合結果と再実行方法 | [採点の検証記録](verification/README.md) |
 | ダウンロード元・保存日・ファイルのハッシュ | [sources.json](sources.json)・[manifest.json](manifest.json) |
@@ -89,8 +97,8 @@
 ## 原本と展開データ
 
 - `sources/`：公式Excel、公開ZIP2点、出典ページのHTML。受信したバイト列のまま保存しています。
-- `truth/`：正解ZIPから展開した48ファイル。23コホート分の `pool_ids_<k>.csv` と `aia_truth_<k>.csv`、`aia_floor.csv`、公式READMEです。
-- `submissions/`：23チーム×2ファイルの予測CSVと公式README。内側のZIPの原本は、`sources/`の提出物ZIPに含まれています。
+- `truth/`：正解ZIPから展開した48ファイルと閲覧用README。23コホート分の `pool_ids_<k>.csv` と `aia_truth_<k>.csv`、`aia_floor.csv`、公式READMEです。
+- `submissions/`：23チーム×2ファイルの予測CSV、公式READMEと閲覧用README。内側のZIPの原本は、`sources/`の提出物ZIPに含まれています。
 - `tables/`：Excel全9シートのCSVと、表内の計算・掲載順位の照合記録です。CSVは値の閲覧用です。書式・注釈はExcel原本で確認してください。
 - `verification/`：公開予測と正解に公式の攻撃採点処理を適用した検証記録です。
 - [archive_inventory.csv](archive_inventory.csv)：外側ZIP・内側ZIPの118項目と、展開先・サイズ・SHA-256の対応表です。

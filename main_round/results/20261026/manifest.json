@@ -20,12 +20,16 @@
       "sha256": "147539d4f26d1b97976f71630b123161663e4f4591d153ea9f0ec3354c12c7fc"
     },
     "README.md": {
-      "bytes": 9320,
-      "sha256": "42ed859991f5f6fa9da58934796e81da3c83808aea381b2bb7a55944e55cc66c"
+      "bytes": 9779,
+      "sha256": "15b35a488a20502fa9ac93d179dcbe90f29cce7c65fb1daf083a10849543e3f1"
     },
     "sources/cup26_20261028.html": {
       "bytes": 52673,
       "sha256": "d772868e23ab025e6feaf826be266e16e2a74bd14fd074084c0d6769b2f90ce5"
+    },
+    "sources/README.md": {
+      "bytes": 945,
+      "sha256": "09c7bdf3cf105d9568113f079045f4a73ecc42f801b6e6ee98a09347f96289f8"
     },
     "sources/公開用結果表_本戦_20261026.xlsx": {
       "bytes": 71943,
@@ -226,6 +230,10 @@
     "submissions/cohort28/F_mia.csv": {
       "bytes": 391518,
       "sha256": "5b28253a5d64543257cbb411a6fa42352080c260509129a8e4f05c9b6ff3f184"
+    },
+    "submissions/README.md": {
+      "bytes": 3502,
+      "sha256": "5b6e0b9c12b03b55cb0636ca3093354b4abd65262d9481ec385b3df3fb2b22b9"
     },
     "submissions/README_攻撃フェーズの提出物.md": {
       "bytes": 1415,
@@ -466,6 +474,10 @@
     "truth/pool_ids_9.csv": {
       "bytes": 12042,
       "sha256": "5b2f6fd68ee2e4e3d24c6f182640b75ecd64274c1e9cffe3316f91a34c973a43"
+    },
+    "truth/README.md": {
+      "bytes": 3499,
+      "sha256": "3aba5c43c86020061e7215dd80d31678ab19e9c68bff7b10dfeebc890b90f074"
     },
     "truth/README_正解データ.md": {
       "bytes": 3011,
