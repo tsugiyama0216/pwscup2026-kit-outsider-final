@@ -1,0 +1,621 @@
+{
+  "saved_on": "2026-10-28",
+  "timezone": "Asia/Tokyo",
+  "official_publication_date": "2026-10-26",
+  "files": {
+    ".gitattributes": {
+      "bytes": 150,
+      "sha256": "52450faea0d883f603f66dc12e624774c2669e7b72bbd3fe43804cbee1e8778f"
+    },
+    ".gitignore": {
+      "bytes": 87,
+      "sha256": "56385bc48e3c2f5f1c62f7b3b76a305d0fe56142c1f41c98dfdc18c83b4e3c3e"
+    },
+    "archive_inventory.csv": {
+      "bytes": 20042,
+      "sha256": "9c18f8bdbef1a6b1be2d8f924ca726cbf4fa0377b8826a2054244632a1275af7"
+    },
+    "prepare_archive.py": {
+      "bytes": 4513,
+      "sha256": "147539d4f26d1b97976f71630b123161663e4f4591d153ea9f0ec3354c12c7fc"
+    },
+    "README.md": {
+      "bytes": 9320,
+      "sha256": "42ed859991f5f6fa9da58934796e81da3c83808aea381b2bb7a55944e55cc66c"
+    },
+    "sources/cup26_20261028.html": {
+      "bytes": 52673,
+      "sha256": "d772868e23ab025e6feaf826be266e16e2a74bd14fd074084c0d6769b2f90ce5"
+    },
+    "sources/公開用結果表_本戦_20261026.xlsx": {
+      "bytes": 71943,
+      "sha256": "0337b6235c38d9ca8d2b71834664dd149ccb47e4ebc4019816ea1001c79d6b8d"
+    },
+    "sources/攻撃提出物_20261026.zip": {
+      "bytes": 2861349,
+      "sha256": "a448a8880b4df4866fa76c50b887fe98560f38ac783be637fc27cb444e96e415"
+    },
+    "sources/本戦正解データ_20261026.zip": {
+      "bytes": 164469,
+      "sha256": "f04f47fb0b3a09b723f8fc1df2946a7ef773322074a4d0066ccbd9db1ca4faaf"
+    },
+    "sources.json": {
+      "bytes": 1663,
+      "sha256": "f7d436c0c4cb04190aa23958c83a1fac6abe96970866d3b7641ffb6ad219ec2a"
+    },
+    "submissions/cohort00/F_aia.csv": {
+      "bytes": 123478,
+      "sha256": "6c909e8e59118fbf07459474ef46abb64fe874bf910dc172be37882ac05e03be"
+    },
+    "submissions/cohort00/F_mia.csv": {
+      "bytes": 357069,
+      "sha256": "6ff86e21f82d2329562a8ed5ad9a8fa23bf72a452185ce175e3f7a1fd45d9d5d"
+    },
+    "submissions/cohort01/F_aia.csv": {
+      "bytes": 138710,
+      "sha256": "70c0fa3f85cd79c0005fce027d26fd466a5bc7e0b05fa8b896d87d039d30f8bb"
+    },
+    "submissions/cohort01/F_mia.csv": {
+      "bytes": 395838,
+      "sha256": "99c42bfafeac008fc12bfc6bf0299460c09097d01ccf0d12b8c9279eab50fcbc"
+    },
+    "submissions/cohort02/F_aia.csv": {
+      "bytes": 114707,
+      "sha256": "fe807e1f434aa170439c6fd93fcb070b7f5a7285fa43433d2147988d839f6b42"
+    },
+    "submissions/cohort02/F_mia.csv": {
+      "bytes": 384915,
+      "sha256": "cf2efeb10c93a01d264f31564c6df06a6dae775c94b0e0afb16f3c68f0b04942"
+    },
+    "submissions/cohort03/F_aia.csv": {
+      "bytes": 92256,
+      "sha256": "73552b8e91332fb9e0e779646a48c3b4749ec7fd64875019d241132eb156721a"
+    },
+    "submissions/cohort03/F_mia.csv": {
+      "bytes": 445129,
+      "sha256": "069cd5127bfbbb5324d07de76b31419420a348d8771316bfcf2bcd4def1db027"
+    },
+    "submissions/cohort04/F_aia.csv": {
+      "bytes": 139913,
+      "sha256": "a355de2ac03c35f007f7dafad38b5b319132a48ffb2ac5c6b2271f93d439ed8b"
+    },
+    "submissions/cohort04/F_mia.csv": {
+      "bytes": 439516,
+      "sha256": "60de470c561bef71dcc058baf415a456c315eece788faff5863211d9cd16bf68"
+    },
+    "submissions/cohort05/F_aia.csv": {
+      "bytes": 174178,
+      "sha256": "a2ce6362ac8e82b5c1ad09a7bc26f93368ccb1d5b1e76a04585244580d52609a"
+    },
+    "submissions/cohort05/F_mia.csv": {
+      "bytes": 410210,
+      "sha256": "bce376d1017e4f86c960a0f8b226ef91f32202ad391ba53c09edd55104e7c583"
+    },
+    "submissions/cohort06/F_aia.csv": {
+      "bytes": 133716,
+      "sha256": "b1df79964d4e17706a34dd448cd75e4df2c16a6c1bcb772aac41140ed490d4e5"
+    },
+    "submissions/cohort06/F_mia.csv": {
+      "bytes": 386985,
+      "sha256": "92c8a5d94384cda519890fae2d9bf0c61bbd10a8585da57a87e3c5ab195191b3"
+    },
+    "submissions/cohort07/F_aia.csv": {
+      "bytes": 69905,
+      "sha256": "c7ff02821e0677bec24f321ad8109d82b530dfd5693afb3f3f2096420cb59986"
+    },
+    "submissions/cohort07/F_mia.csv": {
+      "bytes": 231624,
+      "sha256": "a328438ab399176e8a7a60765455c63c9134573679fec779948802d584d8ff42"
+    },
+    "submissions/cohort08/F_aia.csv": {
+      "bytes": 158670,
+      "sha256": "09e0bc0c3c9727a392b1dde6e62f132759120476ce79d0b81d871e06bdd2c3d3"
+    },
+    "submissions/cohort08/F_mia.csv": {
+      "bytes": 465476,
+      "sha256": "b332055045fa8cc84baf160bc2b71b6e8652470e3b9700372645458537a09a6a"
+    },
+    "submissions/cohort09/F_aia.csv": {
+      "bytes": 147393,
+      "sha256": "04209d34a0c3cf515535652cfb7447b57b9800b5bdb34cf75784ae70fc549f04"
+    },
+    "submissions/cohort09/F_mia.csv": {
+      "bytes": 452246,
+      "sha256": "5836fa642da40dd30973a37b7a812f03d582c74279f71e20746f50545043aa38"
+    },
+    "submissions/cohort10/F_aia.csv": {
+      "bytes": 84524,
+      "sha256": "0f0742bb0c8fd001e027c0c96357ba6349a9b5be0dc5524256a75821c8d16c88"
+    },
+    "submissions/cohort10/F_mia.csv": {
+      "bytes": 401189,
+      "sha256": "691443c8a8d7d2311b5d52d59a0635dc370f3a3008f94b4a3f83843196b8e4ce"
+    },
+    "submissions/cohort11/F_aia.csv": {
+      "bytes": 108636,
+      "sha256": "b87941011aeed46f2908898539c499408d71a7084b29937368e87c32c028012c"
+    },
+    "submissions/cohort11/F_mia.csv": {
+      "bytes": 429876,
+      "sha256": "6ae62d553c1da229d8941d35c441e2be263ed12fc036ed554d0290c2f760e7b9"
+    },
+    "submissions/cohort12/F_aia.csv": {
+      "bytes": 174877,
+      "sha256": "5df8747f054d4f50389396a98ebae6e64e4a52343670b2faf44866fd8736a449"
+    },
+    "submissions/cohort12/F_mia.csv": {
+      "bytes": 389459,
+      "sha256": "e55f97b08cdd9a1e199ecae6a1cabddf6a239e6874333c491f3b6a9a56cbed1f"
+    },
+    "submissions/cohort13/F_aia.csv": {
+      "bytes": 94348,
+      "sha256": "73207ab05538e4b0f19ae963d090c85497ce110869fa0d005206298e77e7a4ce"
+    },
+    "submissions/cohort13/F_mia.csv": {
+      "bytes": 439971,
+      "sha256": "1a6166970e399f58f4d232335251ff3c4ea737283c1dc95a37e33f4094085263"
+    },
+    "submissions/cohort14/F_aia.csv": {
+      "bytes": 134645,
+      "sha256": "981f44db2aec69a13dfc0602e2f330d9cb418b629c3046cb10e707327fc66d05"
+    },
+    "submissions/cohort14/F_mia.csv": {
+      "bytes": 448623,
+      "sha256": "6dbad5aae85d69d5d0a1cfbe96cdda9d12c516c7ed267a9ab7d189c0c61e10d2"
+    },
+    "submissions/cohort15/F_aia.csv": {
+      "bytes": 161275,
+      "sha256": "a43125cea0b6658b0c5ca337bc8bb8082f28cdb033e1583d9ca2e251e8424d3d"
+    },
+    "submissions/cohort15/F_mia.csv": {
+      "bytes": 449371,
+      "sha256": "cb6ef130d4ede199460545efdfb0db820afa699947a49bea39cc4552ae6b019c"
+    },
+    "submissions/cohort16/F_aia.csv": {
+      "bytes": 148548,
+      "sha256": "6e8735117319b20d68f1567932401dcecbeaaedd93cb88df97f2d9817b54dbba"
+    },
+    "submissions/cohort16/F_mia.csv": {
+      "bytes": 456860,
+      "sha256": "fba2d390b0cf24ffa85ab2fd82c9a82c744338b56bbb9269dadf80632444223d"
+    },
+    "submissions/cohort17/F_aia.csv": {
+      "bytes": 138188,
+      "sha256": "6d724d20060f4e2954af94174d22047f303dd969dec37363edd2d70a032bf1df"
+    },
+    "submissions/cohort17/F_mia.csv": {
+      "bytes": 439011,
+      "sha256": "f42d6750b5877a97b886b4b37b3f2fe10b95efc0c6c41eef325f4688e09fdbdc"
+    },
+    "submissions/cohort22/F_aia.csv": {
+      "bytes": 134375,
+      "sha256": "ddfaa95631ab2fdb017a3558513c7f23309ab2126f8e42a4e42ce75879364e81"
+    },
+    "submissions/cohort22/F_mia.csv": {
+      "bytes": 401667,
+      "sha256": "e44b6bc57bc232c36e67e40404ac70a28e7ed987787428e61b59469b6f1cd1e7"
+    },
+    "submissions/cohort25/F_aia.csv": {
+      "bytes": 138074,
+      "sha256": "0afb72f590a4fec31e95616f649a2ddc13f21953ea2e8b946dcf79a6c115d981"
+    },
+    "submissions/cohort25/F_mia.csv": {
+      "bytes": 445292,
+      "sha256": "7f1c8d25d098a976b57576b909e5bd73ab3c11558bf2a66f4aec3453be68c998"
+    },
+    "submissions/cohort26/F_aia.csv": {
+      "bytes": 103725,
+      "sha256": "9cf377c1ad2ed3bc0f2bfa7b7841efbfe262eb8c920209a09d833d31432b622e"
+    },
+    "submissions/cohort26/F_mia.csv": {
+      "bytes": 335629,
+      "sha256": "8b0d5d9497a728383a161662fb3e913597a23de5cb98001741711c0f5837fcaa"
+    },
+    "submissions/cohort27/F_aia.csv": {
+      "bytes": 83676,
+      "sha256": "dec8e71d16e71d01e988922ac09ac3735e5f8eed71f68ba1897ec914a25571f5"
+    },
+    "submissions/cohort27/F_mia.csv": {
+      "bytes": 393886,
+      "sha256": "a3abf1f96cdf4845df8227db7b2068b5bc4d40193747bcc7d5ff5573cd7b0921"
+    },
+    "submissions/cohort28/F_aia.csv": {
+      "bytes": 79205,
+      "sha256": "94551043ad4f9401d6158fd0f1fbbcb09ef4daf374c677bea74f30938ddba7bd"
+    },
+    "submissions/cohort28/F_mia.csv": {
+      "bytes": 391518,
+      "sha256": "5b28253a5d64543257cbb411a6fa42352080c260509129a8e4f05c9b6ff3f184"
+    },
+    "submissions/README_攻撃フェーズの提出物.md": {
+      "bytes": 1415,
+      "sha256": "685ffebd4488ae0c4a3f7e699580862153515079545ee63dbb3d3ea9f4b67e78"
+    },
+    "tables/AIAの差し引く水準.csv": {
+      "bytes": 1308,
+      "sha256": "8876cdca84c9fba66de229cda610b984fd035703f15cb23c2797cd5162681f6f"
+    },
+    "tables/extract_tables.py": {
+      "bytes": 9388,
+      "sha256": "065deea65ae111715a9ab5b628c5a9cd720ef3d0e0079f8580f4fad33875f370"
+    },
+    "tables/README.md": {
+      "bytes": 3669,
+      "sha256": "e868c1dbc08efbc2bd4a279111936ef8df57d7027fbdad255b11b4a3939e7071"
+    },
+    "tables/workbook_summary.json": {
+      "bytes": 20037,
+      "sha256": "482070b8a4057cb0f1b8629548de902686d34e756aa5414d5dd3c332f21e91d1"
+    },
+    "tables/メタ.csv": {
+      "bytes": 7698,
+      "sha256": "912274c75eef517f4aa238d484d6f77ccc24663fea4d568c6f8392ad175b6dfa"
+    },
+    "tables/加工者x攻撃者_AIA.csv": {
+      "bytes": 8105,
+      "sha256": "394c2f211b48dc8001d2230985bb6e5f2ea2f1e7080532e4fd1a201e540b5692"
+    },
+    "tables/加工者x攻撃者_MIA.csv": {
+      "bytes": 2301,
+      "sha256": "9591bdc4fdbca5ad73fa66e4e084ec758be752d1af9f13b7f38f93e66dc7bc5c"
+    },
+    "tables/攻撃_標的別_AIA.csv": {
+      "bytes": 63473,
+      "sha256": "c91a8781bc4f292b159db68c6a70aa23d57094605a18365a3956f8e5d097bedd"
+    },
+    "tables/攻撃_標的別_MIA.csv": {
+      "bytes": 18631,
+      "sha256": "ed978a503c895e0638905fc1ec874224031e94e6aabb76ee2b907aba33aa6980"
+    },
+    "tables/最終得点.csv": {
+      "bytes": 3937,
+      "sha256": "77ebf77fe7c8bfd0c2945904b4d41c047373b9ec86225c7c7e4f54edd6c946f5"
+    },
+    "tables/総括.csv": {
+      "bytes": 6777,
+      "sha256": "c18a94b740f54445e61beed981536a9f03d7ef5516db02d02047090f704f3bd3"
+    },
+    "tables/診断.csv": {
+      "bytes": 1149,
+      "sha256": "24310dd39903ce3cb02892fd74045b1b0c669112661e6d742d26b6b8f5f1db2e"
+    },
+    "truth/aia_floor.csv": {
+      "bytes": 539,
+      "sha256": "1dc7575e07619ddfca5e465cf793f2138ac8a292bc13f3314e951f2be35e8757"
+    },
+    "truth/aia_truth_0.csv": {
+      "bytes": 10868,
+      "sha256": "9663f77ed846b4472d7d5408cb415b260c4c1cb417a7423bc8b30385713fdf64"
+    },
+    "truth/aia_truth_1.csv": {
+      "bytes": 10873,
+      "sha256": "2efc4c34f41743bcb6dbbf7c4e05c48cd188a9b5f4e3cfdda1c6c63005508bab"
+    },
+    "truth/aia_truth_10.csv": {
+      "bytes": 10873,
+      "sha256": "8690a288211f4179d02871aace4392360c158f12d1b0800ababb629d786c3417"
+    },
+    "truth/aia_truth_11.csv": {
+      "bytes": 10865,
+      "sha256": "414bbaef1f34a1388dbf97117d5cc748ab315f129cf36b282fd1beeeaad1d380"
+    },
+    "truth/aia_truth_12.csv": {
+      "bytes": 10875,
+      "sha256": "9702cfaae8d52c6f19240832086a2b57496ed86aec744585454ddb1f4d097ff2"
+    },
+    "truth/aia_truth_13.csv": {
+      "bytes": 10859,
+      "sha256": "f761baf3e711e57561dfbce6eea1fd96740d280dffb8b46b14d08d1dfd8d247b"
+    },
+    "truth/aia_truth_14.csv": {
+      "bytes": 10865,
+      "sha256": "5ef9f0c648316b83f4aedb19395c62d7899802e211b02f356b833015e9b0881e"
+    },
+    "truth/aia_truth_15.csv": {
+      "bytes": 10878,
+      "sha256": "302e0f2f98b4f88d62d055e880140580dd867217505617c7fc33a925cb461eae"
+    },
+    "truth/aia_truth_16.csv": {
+      "bytes": 10863,
+      "sha256": "71274e59a89779f675f319e933042190dacf7afa5a6608b762a68a2a9619a4b4"
+    },
+    "truth/aia_truth_17.csv": {
+      "bytes": 10872,
+      "sha256": "f300efc63e5aaed3be4b214beabe3526ca9b766621ef2982b5acb44292600a6c"
+    },
+    "truth/aia_truth_2.csv": {
+      "bytes": 10873,
+      "sha256": "8b13f0fa581ce814b2891429360f531f2ca007e93b2e88d849cf336415f9d8ae"
+    },
+    "truth/aia_truth_22.csv": {
+      "bytes": 10879,
+      "sha256": "48395b1a66134d3cc734a7e7f7e596297e38970ad6a7b380861ea7ace6fa31c2"
+    },
+    "truth/aia_truth_25.csv": {
+      "bytes": 10883,
+      "sha256": "e17db983646b832b5d66d6ad509fcf0c3f0cecdb77ad61b1bdb1008bcfe54fe9"
+    },
+    "truth/aia_truth_26.csv": {
+      "bytes": 10865,
+      "sha256": "0988cf65f8605de40b7b3ed27d370002ecff2b85256c477d839e69440d9dc137"
+    },
+    "truth/aia_truth_27.csv": {
+      "bytes": 10878,
+      "sha256": "b2466186933ffc0720966b280b032bca90b231e414af9d30a9927d33404d1bf6"
+    },
+    "truth/aia_truth_28.csv": {
+      "bytes": 10878,
+      "sha256": "4ceb5d823bcdb7b91d43c68a39d565c43013673d8ed95988aad00f2d3755f140"
+    },
+    "truth/aia_truth_3.csv": {
+      "bytes": 10868,
+      "sha256": "0dd5116e2c88c6f3f29ec3cf910410df3adf860f0e58ff43a96bcdaed319b9ec"
+    },
+    "truth/aia_truth_4.csv": {
+      "bytes": 10869,
+      "sha256": "e95696a8c10beb7eb9ca1f99ccced4e7d9c35ba3520429050d4cacd325f434cb"
+    },
+    "truth/aia_truth_5.csv": {
+      "bytes": 10874,
+      "sha256": "9b065dfc20da95e06e1f21d7bc58853a204c2eb1debc3884e4fcf6732faae4c2"
+    },
+    "truth/aia_truth_6.csv": {
+      "bytes": 10873,
+      "sha256": "6cd3d366dfc4e3cfb1bc0c297286d8aaf7983485b2a2319a3acd527b2cce8b25"
+    },
+    "truth/aia_truth_7.csv": {
+      "bytes": 10870,
+      "sha256": "6db7c503d0b227fac99dc7665c16483b35a419ae2376525b120fe97eddc4e1f6"
+    },
+    "truth/aia_truth_8.csv": {
+      "bytes": 10882,
+      "sha256": "b1e2e02c0e47998b9ef91e1d78b5244380cf7ac25ecfbe4d82200ad7e7ac9c98"
+    },
+    "truth/aia_truth_9.csv": {
+      "bytes": 10864,
+      "sha256": "9e3ec2712418fac3c9592b9d4207e8001e6931f42d55bb530d1acb940a3389d5"
+    },
+    "truth/pool_ids_0.csv": {
+      "bytes": 11757,
+      "sha256": "d31618ca553d296d91e9984823b621d33be6d6855ba1cf5a4d3e8e277cba4308"
+    },
+    "truth/pool_ids_1.csv": {
+      "bytes": 12344,
+      "sha256": "f65f3f583d9a7c72432252114ef388011263e05d35ae831987509ba01ddc85bd"
+    },
+    "truth/pool_ids_10.csv": {
+      "bytes": 12340,
+      "sha256": "7766f5c1dad59092b6a906dc6aab989a5be23032860329d40f0ed7a36bd48df7"
+    },
+    "truth/pool_ids_11.csv": {
+      "bytes": 12332,
+      "sha256": "36e5816009f77b9958da8a50d9ae483a9cdb83eedd439118c15169ca8d5359ef"
+    },
+    "truth/pool_ids_12.csv": {
+      "bytes": 12338,
+      "sha256": "bc95b373231174a4fc062283055b10656789bf9be3d579000fdf29a7d4ca96e9"
+    },
+    "truth/pool_ids_13.csv": {
+      "bytes": 12322,
+      "sha256": "78c792f85099dab43ff3e3a13d6855528d2a41f51da94c3d96548cde29465c09"
+    },
+    "truth/pool_ids_14.csv": {
+      "bytes": 12041,
+      "sha256": "b4ec3eb161174786236f451606561380d34fc25b1361ad11e1f63c2631b9fc5e"
+    },
+    "truth/pool_ids_15.csv": {
+      "bytes": 12344,
+      "sha256": "9b0e9924e03b314ed0ab4fd381d4487bb6fcde6b961dfddcba67137e4268853d"
+    },
+    "truth/pool_ids_16.csv": {
+      "bytes": 12333,
+      "sha256": "96dc33c78a53c4b0334ef8ebc202d8ae47c1b00027b217dca5552d8af6582d5c"
+    },
+    "truth/pool_ids_17.csv": {
+      "bytes": 12109,
+      "sha256": "213a1241cc9dabe964023679e51efe56584ba7885ea07d0605542768ce675a23"
+    },
+    "truth/pool_ids_2.csv": {
+      "bytes": 12335,
+      "sha256": "9ddd0f85c31be12e69c08509ed17c7e48663ff1805bdfd20374d8db0ec59955b"
+    },
+    "truth/pool_ids_22.csv": {
+      "bytes": 12018,
+      "sha256": "6abf6deb26daea83fb1b075bcef1ef25be38d47620fd280513c0a2b6b0747c74"
+    },
+    "truth/pool_ids_25.csv": {
+      "bytes": 12133,
+      "sha256": "c04bec1f05ddcaa83110a791817a0ecb1ba4d273877dd29179bf74ea622256ee"
+    },
+    "truth/pool_ids_26.csv": {
+      "bytes": 12338,
+      "sha256": "d3225bb10bc21f8549bd6fca29c29e196889b2727017b09d6d9580ca9edd0459"
+    },
+    "truth/pool_ids_27.csv": {
+      "bytes": 12359,
+      "sha256": "919e7a92b85ce2b97eea8f12f6e617e7ee3db93e862fe17362acf10c4ef75ca6"
+    },
+    "truth/pool_ids_28.csv": {
+      "bytes": 12314,
+      "sha256": "dafaa23634bbaf7985a0add4c1c6eea5556ce58d92743a1705a00e722232386e"
+    },
+    "truth/pool_ids_3.csv": {
+      "bytes": 12130,
+      "sha256": "e30b1205c2e6a4b9a86508b7d937208f8186d72458b30526fa76ff61c24d5316"
+    },
+    "truth/pool_ids_4.csv": {
+      "bytes": 12064,
+      "sha256": "9704105dd82f59f9c5ac3221abebed6e1c3f44e6de5a28fcd974754363491300"
+    },
+    "truth/pool_ids_5.csv": {
+      "bytes": 12325,
+      "sha256": "06b09ef85b1983b59679e71f986b42878598b1fa5fc014150595bfab4d23a3dd"
+    },
+    "truth/pool_ids_6.csv": {
+      "bytes": 12357,
+      "sha256": "5e4fca3cafa7e0ee8b44f35313afa8695b7f4ae932a5584e5fd4c2ca0bd899d7"
+    },
+    "truth/pool_ids_7.csv": {
+      "bytes": 12033,
+      "sha256": "61a296e6e9b3321da254fa55039e12a76cd3d7b9fcae3f87d75c9d2d6fde7393"
+    },
+    "truth/pool_ids_8.csv": {
+      "bytes": 12042,
+      "sha256": "aa67120f80e0854b7a38fb569c4c1a362162ebe6449ee84287018a35cd7a2d80"
+    },
+    "truth/pool_ids_9.csv": {
+      "bytes": 12042,
+      "sha256": "5b2f6fd68ee2e4e3d24c6f182640b75ecd64274c1e9cffe3316f91a34c973a43"
+    },
+    "truth/README_正解データ.md": {
+      "bytes": 3011,
+      "sha256": "5b74b072ede7dd08e5b2b1eb0d0e2a73c462024903226967a145b2332f8ef23b"
+    },
+    "verification/attack_scores.csv": {
+      "bytes": 3017,
+      "sha256": "395bcd1284e6416c30b3ad6c8663cbeb61b7cedd86974bfd614651ae3e707150"
+    },
+    "verification/per_target_aia.csv": {
+      "bytes": 85397,
+      "sha256": "2947af3e319c0a83ae83f8f04fa32f26f6731b0cd3d0aea73acfa271d45522a3"
+    },
+    "verification/per_target_mia.csv": {
+      "bytes": 20162,
+      "sha256": "c817232176f8febd6e6a92e2f5c936fb29ed0eb7aba7be9faea032137d7c4d94"
+    },
+    "verification/README.md": {
+      "bytes": 3096,
+      "sha256": "4e2155d97499931358a8ed889142e6d53b820e0606b7d0b15bc29ca44116d880"
+    },
+    "verification/verification_report.json": {
+      "bytes": 5098,
+      "sha256": "36ed3f3a3d71e0a4b072ac7a692bdbb599e8df7e742895eb3881629762dd2ceb"
+    },
+    "verification/verify_official_scores.py": {
+      "bytes": 11322,
+      "sha256": "f8dd02e965a868d312b1fec5d7ff796133af88efabffa98481b2ce6bdf9b4342"
+    },
+    "verify_archive.py": {
+      "bytes": 5365,
+      "sha256": "ab462171c4c07a7c88a41ec5174c059b91a88af8a900e1868c7bbf6319f5333e"
+    }
+  },
+  "external_dependencies_relative_to_repo": [
+    {
+      "path": "main_round/attack/targets/C_0.csv",
+      "sha256": "525ff7b79815190d2512ea7716bd5b5198c611ba66b54c24fa58933f6e1d44c1"
+    },
+    {
+      "path": "main_round/attack/targets/C_1.csv",
+      "sha256": "eb990d1d41419743273b082e931afc259d4ce251a2a9ab059198b097d85e44dd"
+    },
+    {
+      "path": "main_round/attack/targets/C_2.csv",
+      "sha256": "8c1f30b15451864a6373bad76c8bce873ea82da8137e48f824fe3f02f57c1c1b"
+    },
+    {
+      "path": "main_round/attack/targets/C_3.csv",
+      "sha256": "1240d0483abe84e7f5997872f144b0428ec0ac2d11c662dcc33146371eaa9384"
+    },
+    {
+      "path": "main_round/attack/targets/C_4.csv",
+      "sha256": "b722a3cdd357af845a10e3bdc312b27570fdea2aa66eb0f688c9c9ca494dbc2b"
+    },
+    {
+      "path": "main_round/attack/targets/C_5.csv",
+      "sha256": "0f3d7b95ef1e8380d865de6728397d5f75b04f66ab0218391979a4ce8171628a"
+    },
+    {
+      "path": "main_round/attack/targets/C_6.csv",
+      "sha256": "f9439ff60b33f7976c22280265b309f27382ce85fb6e2c3fdeeb2644bf6c62db"
+    },
+    {
+      "path": "main_round/attack/targets/C_7.csv",
+      "sha256": "071b81d7b8a37e245b2b20c5b6f89f419fc8005ad772e5352ca568e40a85262e"
+    },
+    {
+      "path": "main_round/attack/targets/C_8.csv",
+      "sha256": "d5e52dfdc45c7a7a89318c5abc32aa0e80136fe35093d051f01127b985f879a7"
+    },
+    {
+      "path": "main_round/attack/targets/C_9.csv",
+      "sha256": "b5489304725517b445529e1614682042473f16489148d3267c08e0aff59e3af6"
+    },
+    {
+      "path": "main_round/attack/targets/C_10.csv",
+      "sha256": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db"
+    },
+    {
+      "path": "main_round/attack/targets/C_11.csv",
+      "sha256": "ec79f5531ffda71f2fddc34e0f30e5f312b5f7d3ca78b95973c56c64bb6790f7"
+    },
+    {
+      "path": "main_round/attack/targets/C_12.csv",
+      "sha256": "33848d8bd09942287f5c0d52d2092f4b6c19ccfd6a9ecad677209899f15400e1"
+    },
+    {
+      "path": "main_round/attack/targets/C_13.csv",
+      "sha256": "90b09027567281647a3a3388c359ee73733af63638c9d4c920f202639140dee7"
+    },
+    {
+      "path": "main_round/attack/targets/C_14.csv",
+      "sha256": "b37067cd9508864d7fb85ef5bf122235391b71a10b76c964328ef4f6cef6c4ba"
+    },
+    {
+      "path": "main_round/attack/targets/C_15.csv",
+      "sha256": "046ba97c34f0c3d4ef6a6729b629068934de4c9f75c378f61f112f62a557368e"
+    },
+    {
+      "path": "main_round/attack/targets/C_16.csv",
+      "sha256": "8481f1279635e1aa6db654895a5a2c6cb4d602ac42c47d30eca48c160f471470"
+    },
+    {
+      "path": "main_round/attack/targets/C_17.csv",
+      "sha256": "cd7f29fbfc8ac9860ceaa3646e125390ce9ed4ac2802134a1ccbc0dbc53c3994"
+    },
+    {
+      "path": "main_round/attack/targets/C_22.csv",
+      "sha256": "a2d10f282ba255739a95ad3500e9325d8897f0632833274432bbf5795fcaceea"
+    },
+    {
+      "path": "main_round/attack/targets/C_25.csv",
+      "sha256": "35ad7bd8fa4ddd3d3657372b4f0b07b52ebaa2f70466e84f44a0aed8aed2351a"
+    },
+    {
+      "path": "main_round/attack/targets/C_26.csv",
+      "sha256": "f9f978a770147891419e80a3a8c3fe799e38a4d0eb1803d86ee05c14aeb9fa38"
+    },
+    {
+      "path": "main_round/attack/targets/C_27.csv",
+      "sha256": "cd9e330eba7e2300f7ae745b70113237ba20660fa24794726d8bfa7beac650d4"
+    },
+    {
+      "path": "main_round/attack/targets/C_28.csv",
+      "sha256": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091"
+    },
+    {
+      "path": "main_round/attack/targets/mia_columns.json",
+      "sha256": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181"
+    },
+    {
+      "path": "main_round/attack/downloads/PWSCup2026_final_attack.zip",
+      "sha256": "bdab1804efd39e6e227220ede168d2031fe1275b1b46655ef7891116a3160dc3"
+    }
+  ],
+  "checks": {
+    "archive_entries_verified": 118,
+    "official_prediction_hashes_verified": 46,
+    "official_defense_hashes_verified": 23,
+    "existing_attack_distribution_hash_verified": true,
+    "original_self_mia_columns_preserved": [
+      0,
+      3,
+      5,
+      7,
+      11,
+      16,
+      25
+    ],
+    "workbook_and_all_sheet_csv_hashes_verified": true
+  }
+}

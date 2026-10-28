@@ -1,0 +1,40 @@
+{
+  "official_publication_date": "2026-10-26",
+  "saved_on": "2026-10-28",
+  "timezone": "Asia/Tokyo",
+  "sources": [
+    {
+      "path": "sources/公開用結果表_本戦_20261026.xlsx",
+      "source_url": "https://drive.google.com/file/d/1XrCuEDKgbvhL4pvQdlEjn714_C27MB5O/view",
+      "original_filename": "公開用結果表_本戦_20261026.xlsx",
+      "bytes": 71943,
+      "drive_modified_at": "2026-10-25T22:43:33.835Z",
+      "downloaded_on": "2026-10-28",
+      "download_method": "Google Drive connector raw-file fetch; materialized unchanged"
+    },
+    {
+      "path": "sources/本戦正解データ_20261026.zip",
+      "source_url": "https://drive.google.com/file/d/1nW6HNUr-4MgcIi-q8ddxRNGjGCMqEZxN/view",
+      "original_filename": "本戦正解データ_20261026.zip",
+      "bytes": 164469,
+      "drive_modified_at": "2026-10-25T22:44:55.387Z",
+      "downloaded_on": "2026-10-28",
+      "download_method": "Google Drive connector raw-file fetch; materialized unchanged"
+    },
+    {
+      "path": "sources/攻撃提出物_20261026.zip",
+      "source_url": "https://drive.google.com/file/d/1K9Y8RTfTplyo01SBQHWO9wAqsbkzl3T_/view",
+      "original_filename": "攻撃提出物_20261026.zip",
+      "bytes": 2861349,
+      "drive_modified_at": "2026-10-25T22:44:35.770Z",
+      "downloaded_on": "2026-10-28",
+      "download_method": "Google Drive connector raw-file fetch; materialized unchanged"
+    },
+    {
+      "path": "sources/cup26_20261028.html",
+      "source_url": "https://www.iwsec.org/pws/2026/cup26.html#final-results",
+      "downloaded_on": "2026-10-28",
+      "download_method": "HTTPS GET of original HTML"
+    }
+  ]
+}

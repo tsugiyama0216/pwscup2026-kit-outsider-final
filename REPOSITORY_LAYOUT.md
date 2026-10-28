@@ -1,5 +1,7 @@
 # リポジトリ構成と移動先
 
+2026-10-28追加：[main_round/results/20261026/](main_round/results/20261026/README.md) に、大会終了後の公式本戦・最終結果を保存しました。`sources/` は原本、`truth/` は正解、`submissions/` は23チームの公開予測、`tables/` は全9シートのCSV、`verification/` は公式攻撃採点コードとの照合記録です。既存の攻撃用配布物はそのまま参照します。
+
 2026-10-07の現在の入口：改善した杉山採点の保存版は [main_round/attack/retest/](main_round/attack/retest/README.md) です。ユーザーの保存先修正に従い、`team10/attack` ではなく本戦の `attack` 直下へ置きます。入口は `run.ps1`、生成出力は共通のGit除外領域 `main_round/mock_test/local-output/retest/` です。
 
 ```text

@@ -1,0 +1,4 @@
+# Original downloads and extracted bytes retain upstream whitespace unchanged.
+sources/** -whitespace
+truth/** -whitespace
+submissions/** -whitespace

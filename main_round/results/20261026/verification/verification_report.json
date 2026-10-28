@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "official_release": "main-attack-20260928",
+  "official_commit": "a490490e11a0ec460a5df9fdefb17c72ad459c1e",
+  "conditions": {
+    "low_fpr": 0.01,
+    "tau_time": 0.5,
+    "aia_rare_se_z": 1.64,
+    "phi": "published truth/aia_floor.csv, per target",
+    "self_target": "excluded by official score_attack(team_id=attacker)",
+    "aggregation": "22 other targets per attacker; mean MIA plus mean phi-corrected AIA"
+  },
+  "verified_source_manifest_files": 94,
+  "published_submissions": 23,
+  "mia_pairs": 506,
+  "aia_pairs": 506,
+  "numeric_comparisons": 7243,
+  "tolerance": 1e-12,
+  "max_absolute_error": 1.1102230246251565e-16,
+  "original_self_mia_columns": [
+    0,
+    3,
+    5,
+    7,
+    11,
+    16,
+    25
+  ],
+  "mismatches": [],
+  "outsider": {
+    "attacker": 10,
+    "team": "アウトサイダー / outsider",
+    "mia_power": 0.11993006993006995,
+    "aia_power": 0.07673049828462233,
+    "attack_power": 0.1966605682146923,
+    "published_attack_power": 0.1966605682146923,
+    "absolute_error": 0.0
+  },
+  "python": "3.12.13",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "inputs": [
+    {
+      "path": "main_round/results/20261026/sources/公開用結果表_本戦_20261026.xlsx",
+      "sha256": "0337b6235c38d9ca8d2b71834664dd149ccb47e4ebc4019816ea1001c79d6b8d"
+    },
+    {
+      "path": "main_round/results/20261026/sources/攻撃提出物_20261026.zip",
+      "sha256": "a448a8880b4df4866fa76c50b887fe98560f38ac783be637fc27cb444e96e415"
+    },
+    {
+      "path": "main_round/results/20261026/sources/本戦正解データ_20261026.zip",
+      "sha256": "f04f47fb0b3a09b723f8fc1df2946a7ef773322074a4d0066ccbd9db1ca4faaf"
+    }
+  ],
+  "official_loaded_dependencies": [
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/__init__.py",
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/attack/__init__.py",
+      "sha256": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/attack/mia.py",
+      "sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/common/__init__.py",
+      "sha256": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/common/schema.py",
+      "sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/common/submission_schema.py",
+      "sha256": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/kit/__init__.py",
+      "sha256": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "sha256": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/rare/__init__.py",
+      "sha256": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/rare/outlier.py",
+      "sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/scoring/__init__.py",
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/scoring/attack_score.py",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/scoring/result.py",
+      "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/scoring/utility.py",
+      "sha256": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932"
+    },
+    {
+      "path": "main_round/attack/official-kit/starter/src/pwscup2026/kit/kit_config.yaml",
+      "sha256": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157"
+    }
+  ],
+  "limitations": [
+    "This is a local retrospective verification of published results, not a new organizer-issued result.",
+    "Utility U, anonymity aggregation, and final weighted ranks are not recomputed here; this verification covers attack scoring and published per-target attack details.",
+    "No predictions were regenerated or tuned and no CodaBench submission was made."
+  ]
+}

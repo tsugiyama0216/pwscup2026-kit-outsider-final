@@ -1,0 +1,563 @@
+{
+  "source": "../sources/公開用結果表_本戦_20261026.xlsx",
+  "source_sha256": "0337b6235c38d9ca8d2b71834664dd149ccb47e4ebc4019816ea1001c79d6b8d",
+  "numeric_storage": "All source numeric values are strings copied from XLSX XML; no decimal digits are rounded during extraction.",
+  "csv_encoding": "UTF-8 with BOM; LF record separators; blank cells remain empty.",
+  "formula_handling": "Cached values only; no formula recalculation or workbook changes.",
+  "limits": "Arithmetic reconciliation of published values, not independent rerunning of the official scorer. Utility is the published ledger value.",
+  "sheets": [
+    {
+      "sheet": "最終得点",
+      "range": "A1:O24",
+      "rows_including_header": 24,
+      "columns": 15,
+      "csv": "最終得点.csv",
+      "sha256": "77ebf77fe7c8bfd0c2945904b4d41c047373b9ec86225c7c7e4f54edd6c946f5",
+      "formula_cells": [],
+      "error_cells": []
+    },
+    {
+      "sheet": "総括",
+      "range": "A1:S24",
+      "rows_including_header": 24,
+      "columns": 19,
+      "csv": "総括.csv",
+      "sha256": "c18a94b740f54445e61beed981536a9f03d7ef5516db02d02047090f704f3bd3",
+      "formula_cells": [],
+      "error_cells": []
+    },
+    {
+      "sheet": "加工者x攻撃者_MIA",
+      "range": "A1:X24",
+      "rows_including_header": 24,
+      "columns": 24,
+      "csv": "加工者x攻撃者_MIA.csv",
+      "sha256": "9591bdc4fdbca5ad73fa66e4e084ec758be752d1af9f13b7f38f93e66dc7bc5c",
+      "formula_cells": [],
+      "error_cells": []
+    },
+    {
+      "sheet": "加工者x攻撃者_AIA",
+      "range": "A1:X24",
+      "rows_including_header": 24,
+      "columns": 24,
+      "csv": "加工者x攻撃者_AIA.csv",
+      "sha256": "394c2f211b48dc8001d2230985bb6e5f2ea2f1e7080532e4fd1a201e540b5692",
+      "formula_cells": [],
+      "error_cells": []
+    },
+    {
+      "sheet": "攻撃_標的別_MIA",
+      "range": "A1:H507",
+      "rows_including_header": 507,
+      "columns": 8,
+      "csv": "攻撃_標的別_MIA.csv",
+      "sha256": "ed978a503c895e0638905fc1ec874224031e94e6aabb76ee2b907aba33aa6980",
+      "formula_cells": [],
+      "error_cells": []
+    },
+    {
+      "sheet": "攻撃_標的別_AIA",
+      "range": "A1:J507",
+      "rows_including_header": 507,
+      "columns": 10,
+      "csv": "攻撃_標的別_AIA.csv",
+      "sha256": "c91a8781bc4f292b159db68c6a70aa23d57094605a18365a3956f8e5d097bedd",
+      "formula_cells": [],
+      "error_cells": []
+    },
+    {
+      "sheet": "AIAの差し引く水準",
+      "range": "A1:C24",
+      "rows_including_header": 24,
+      "columns": 3,
+      "csv": "AIAの差し引く水準.csv",
+      "sha256": "8876cdca84c9fba66de229cda610b984fd035703f15cb23c2797cd5162681f6f",
+      "formula_cells": [],
+      "error_cells": []
+    },
+    {
+      "sheet": "診断",
+      "range": "A1:G24",
+      "rows_including_header": 24,
+      "columns": 7,
+      "csv": "診断.csv",
+      "sha256": "24310dd39903ce3cb02892fd74045b1b0c669112661e6d742d26b6b8f5f1db2e",
+      "formula_cells": [],
+      "error_cells": []
+    },
+    {
+      "sheet": "メタ",
+      "range": "A1:B107",
+      "rows_including_header": 107,
+      "columns": 2,
+      "csv": "メタ.csv",
+      "sha256": "912274c75eef517f4aa238d484d6f77ccc24663fea4d568c6f8392ad175b6dfa",
+      "formula_cells": [],
+      "error_cells": []
+    }
+  ],
+  "cohort_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27,
+    28
+  ],
+  "team_count": 23,
+  "pairwise_detail_rows_per_metric": 506,
+  "self_targets_excluded": true,
+  "outsider": {
+    "最終得点": {
+      "range": "最終得点!A16:O16",
+      "values": {
+        "総合順位": {
+          "value": "15",
+          "cell": "最終得点!A16"
+        },
+        "登録順": {
+          "value": "19",
+          "cell": "最終得点!B16"
+        },
+        "チーム名": {
+          "value": "アウトサイダー / outsider",
+          "cell": "最終得点!C16"
+        },
+        "予備戦コホート": {
+          "value": "24",
+          "cell": "最終得点!D16"
+        },
+        "本戦コホート": {
+          "value": "10",
+          "cell": "最終得点!E16"
+        },
+        "予備戦_総合": {
+          "value": "0.4223063973063974",
+          "cell": "最終得点!F16"
+        },
+        "本戦_総合": {
+          "value": "0.5561677379859198",
+          "cell": "最終得点!G16"
+        },
+        "最終_総合": {
+          "value": "0.5427816039179676",
+          "cell": "最終得点!H16"
+        },
+        "本戦のみの総合順位": {
+          "value": "15",
+          "cell": "最終得点!I16"
+        },
+        "攻撃力順位": {
+          "value": "16",
+          "cell": "最終得点!J16"
+        },
+        "予備戦_攻撃力": {
+          "value": "0.3406681446132232",
+          "cell": "最終得点!K16"
+        },
+        "本戦_攻撃力": {
+          "value": "0.1966605682146922",
+          "cell": "最終得点!L16"
+        },
+        "最終_攻撃力": {
+          "value": "0.2110613258545454",
+          "cell": "最終得点!M16"
+        },
+        "本戦のみの攻撃力順位": {
+          "value": "18",
+          "cell": "最終得点!N16"
+        },
+        "備考": {
+          "value": "",
+          "cell": "最終得点!O16"
+        }
+      }
+    },
+    "総括": {
+      "range": "総括!A12:S12",
+      "values": {
+        "コホート番号": {
+          "value": "10",
+          "cell": "総括!A12"
+        },
+        "チーム名": {
+          "value": "アウトサイダー / outsider",
+          "cell": "総括!B12"
+        },
+        "U": {
+          "value": "0.8745376811",
+          "cell": "総括!C12"
+        },
+        "U_gen": {
+          "value": "0.9200261447",
+          "cell": "総括!D12"
+        },
+        "U_spec": {
+          "value": "0.9280276668",
+          "cell": "総括!E12"
+        },
+        "U_rare": {
+          "value": "0.9669160992",
+          "cell": "総括!F12"
+        },
+        "U_valid": {
+          "value": "0.8745376811",
+          "cell": "総括!G12"
+        },
+        "beta_raw": {
+          "value": "0.1086169386169386",
+          "cell": "総括!H12"
+        },
+        "beta_chance": {
+          "value": "0.05979538979538981",
+          "cell": "総括!I12"
+        },
+        "beta": {
+          "value": "0.05882154882154882",
+          "cell": "総括!J12"
+        },
+        "MIA 成分": {
+          "value": "0.4438322620140802",
+          "cell": "総括!K12"
+        },
+        "AIA（φ を引く前）": {
+          "value": "0.2134831460674158",
+          "cell": "総括!L12"
+        },
+        "φ（差し引く水準）": {
+          "value": "0.0268870929621342",
+          "cell": "総括!M12"
+        },
+        "AIA 成分": {
+          "value": "0.1865960531052816",
+          "cell": "総括!N12"
+        },
+        "Anon": {
+          "value": "0.5561677379859198",
+          "cell": "総括!O12"
+        },
+        "総合得点": {
+          "value": "0.5561677379859198",
+          "cell": "総括!P12"
+        },
+        "総合順位": {
+          "value": "15",
+          "cell": "総括!Q12"
+        },
+        "攻撃力": {
+          "value": "0.1966605682146923",
+          "cell": "総括!R12"
+        },
+        "攻撃力の順位": {
+          "value": "18",
+          "cell": "総括!S12"
+        }
+      }
+    },
+    "AIAの差し引く水準": {
+      "range": "AIAの差し引く水準!A12:C12",
+      "values": {
+        "コホート番号": {
+          "value": "10",
+          "cell": "AIAの差し引く水準!A12"
+        },
+        "チーム名": {
+          "value": "アウトサイダー / outsider",
+          "cell": "AIAの差し引く水準!B12"
+        },
+        "差し引く水準 φ": {
+          "value": "0.0268870929621342",
+          "cell": "AIAの差し引く水準!C12"
+        }
+      }
+    }
+  },
+  "attack_components_from_published_details": {
+    "0": {
+      "MIA_mean_t_j": "0.14727272727272727272727272727272727272727272727273",
+      "AIA_mean_after_target_phi": "0.11280619820583177409090909090909090909090909090909",
+      "sum": "0.26007892547855904681818181818181818181818181818182",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "1": {
+      "MIA_mean_t_j": "0.060704480704480704090909090909090909090909090909091",
+      "AIA_mean_after_target_phi": "0.081674650349907051818181818181818181818181818181818",
+      "sum": "0.14237913105438775590909090909090909090909090909091",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "2": {
+      "MIA_mean_t_j": "0.17134421134421134363636363636363636363636363636364",
+      "AIA_mean_after_target_phi": "0.10964922319681799536363636363636363636363636363636",
+      "sum": "0.28099343454102933900000000000000000000000000000000",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "3": {
+      "MIA_mean_t_j": "0.12259259259259259227272727272727272727272727272727",
+      "AIA_mean_after_target_phi": "0.12444891107042501031818181818181818181818181818182",
+      "sum": "0.24704150366301760259090909090909090909090909090909",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "4": {
+      "MIA_mean_t_j": "0.14622377622377622363636363636363636363636363636364",
+      "AIA_mean_after_target_phi": "0.14965249869756854259090909090909090909090909090909",
+      "sum": "0.29587627492134476622727272727272727272727272727273",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "5": {
+      "MIA_mean_t_j": "0.086998186998186998181818181818181818181818181818182",
+      "AIA_mean_after_target_phi": "0.10219449472962525577272727272727272727272727272727",
+      "sum": "0.18919268172781225395454545454545454545454545454545",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "6": {
+      "MIA_mean_t_j": "0.13077441077441077409090909090909090909090909090909",
+      "AIA_mean_after_target_phi": "0.12637256986567770818181818181818181818181818181818",
+      "sum": "0.25714698064008848227272727272727272727272727272727",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "7": {
+      "MIA_mean_t_j": "0.25265734265734266181818181818181818181818181818182",
+      "AIA_mean_after_target_phi": "0.21596864570735796531818181818181818181818181818182",
+      "sum": "0.46862598836470062713636363636363636363636363636364",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "8": {
+      "MIA_mean_t_j": "0.11112406112406112409090909090909090909090909090909",
+      "AIA_mean_after_target_phi": "0.083032402637608557272727272727272727272727272727273",
+      "sum": "0.19415646376166968136363636363636363636363636363636",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "9": {
+      "MIA_mean_t_j": "0.089730639730639730454545454545454545454545454545455",
+      "AIA_mean_after_target_phi": "0.051913480512644532272727272727272727272727272727273",
+      "sum": "0.14164412024328426272727272727272727272727272727273",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "10": {
+      "MIA_mean_t_j": "0.11993006993006993",
+      "AIA_mean_after_target_phi": "0.076730498284622306363636363636363636363636363636364",
+      "sum": "0.19666056821469223636363636363636363636363636363636",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "11": {
+      "MIA_mean_t_j": "0.14672364672364672363636363636363636363636363636364",
+      "AIA_mean_after_target_phi": "0.094917321846312095772727272727272727272727272727273",
+      "sum": "0.24164096856995881940909090909090909090909090909091",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "12": {
+      "MIA_mean_t_j": "0.11129370629370629363636363636363636363636363636364",
+      "AIA_mean_after_target_phi": "0.11008516373775305909090909090909090909090909090909",
+      "sum": "0.22137887003145935272727272727272727272727272727273",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "13": {
+      "MIA_mean_t_j": "0.10174825174825174818181818181818181818181818181818",
+      "AIA_mean_after_target_phi": "0.19244598235719914986363636363636363636363636363636",
+      "sum": "0.29419423410545089804545454545454545454545454545454",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "14": {
+      "MIA_mean_t_j": "0.073512043512043509090909090909090909090909090909091",
+      "AIA_mean_after_target_phi": "0.094932981829614717590909090909090909090909090909091",
+      "sum": "0.16844502534165822668181818181818181818181818181818",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "15": {
+      "MIA_mean_t_j": "0.12699818699818699818181818181818181818181818181818",
+      "AIA_mean_after_target_phi": "0.14434652242906898668181818181818181818181818181818",
+      "sum": "0.27134470942725598486363636363636363636363636363636",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "16": {
+      "MIA_mean_t_j": "0.097138047138047137727272727272727272727272727272727",
+      "AIA_mean_after_target_phi": "0.099651763612101076681818181818181818181818181818182",
+      "sum": "0.19678981075014821440909090909090909090909090909091",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "17": {
+      "MIA_mean_t_j": "0.21959077959077959",
+      "AIA_mean_after_target_phi": "0.202186253162764105",
+      "sum": "0.421777032753543695",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "22": {
+      "MIA_mean_t_j": "0.10323232323232323181818181818181818181818181818182",
+      "AIA_mean_after_target_phi": "0.095341898625994434090909090909090909090909090909091",
+      "sum": "0.19857422185831766590909090909090909090909090909091",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "25": {
+      "MIA_mean_t_j": "0.11909090909090909090909090909090909090909090909091",
+      "AIA_mean_after_target_phi": "0.095424488303986494090909090909090909090909090909091",
+      "sum": "0.21451539739489558500000000000000000000000000000000",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "26": {
+      "MIA_mean_t_j": "0.13083636363636363690909090909090909090909090909091",
+      "AIA_mean_after_target_phi": "0.10727167458605285077272727272727272727272727272727",
+      "sum": "0.23810803822241648768181818181818181818181818181818",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "27": {
+      "MIA_mean_t_j": "0.13180782180782180681818181818181818181818181818182",
+      "AIA_mean_after_target_phi": "0.17227785119795428304545454545454545454545454545455",
+      "sum": "0.30408567300577608986363636363636363636363636363637",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    },
+    "28": {
+      "MIA_mean_t_j": "0.32545454545454545454545454545454545454545454545455",
+      "AIA_mean_after_target_phi": "0.19745456283880988077272727272727272727272727272727",
+      "sum": "0.52290910829335533531818181818181818181818181818182",
+      "target_count": 22,
+      "source": "攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    }
+  },
+  "checks": [
+    {
+      "check": "final_overall_weighted_0.1_prelim_plus_0.9_main",
+      "count": 23,
+      "max_absolute_difference": "1.4E-16",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "最終得点!F2:H24"
+    },
+    {
+      "check": "final_attack_weighted_0.1_prelim_plus_0.9_main",
+      "count": 23,
+      "max_absolute_difference": "1.0E-16",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "最終得点!K2:M24"
+    },
+    {
+      "check": "main_overall_same_between_sheets",
+      "count": 23,
+      "max_absolute_difference": "1E-16",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "最終得点!E2:G24; 総括!A2:P24"
+    },
+    {
+      "check": "main_attack_same_between_sheets",
+      "count": 23,
+      "max_absolute_difference": "1E-16",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "最終得点!E2:L24; 総括!A2:R24"
+    },
+    {
+      "check": "final_overall_official_ranks_match_competition_ranking",
+      "count": 23,
+      "max_absolute_difference": "0",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "最終得点!A2:H24"
+    },
+    {
+      "check": "final_attack_official_ranks_match_competition_ranking",
+      "count": 23,
+      "max_absolute_difference": "0",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "最終得点!J2:M24"
+    },
+    {
+      "check": "main_overall_official_ranks_match_competition_ranking",
+      "count": 23,
+      "max_absolute_difference": "0",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "総括!P2:Q24"
+    },
+    {
+      "check": "main_attack_official_ranks_match_competition_ranking",
+      "count": 23,
+      "max_absolute_difference": "0",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "総括!R2:S24"
+    },
+    {
+      "check": "main_U_equals_min_of_four_reported_components",
+      "count": 23,
+      "max_absolute_difference": "0E-10",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "総括!C2:G24"
+    },
+    {
+      "check": "main_Anon_equals_one_minus_max_MIA_AIA_losses",
+      "count": 23,
+      "max_absolute_difference": "1E-16",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "総括!K2:O24"
+    },
+    {
+      "check": "main_overall_equals_min_U_Anon",
+      "count": 23,
+      "max_absolute_difference": "0E-16",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "総括!C2:P24"
+    },
+    {
+      "check": "main_AIA_loss_equals_max_zero_raw_minus_phi",
+      "count": 23,
+      "max_absolute_difference": "1E-16",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "総括!L2:N24"
+    },
+    {
+      "check": "attack_power_reaggregated_from_published_details",
+      "count": 23,
+      "max_absolute_difference": "1.1772727272727272727272727272727273E-16",
+      "tolerance": "1E-12",
+      "passed": true,
+      "source": "総括!A2:R24; 攻撃_標的別_MIA!A2:G507; 攻撃_標的別_AIA!A2:J507; AIAの差し引く水準!A2:C24"
+    }
+  ],
+  "all_checks_passed": true
+}

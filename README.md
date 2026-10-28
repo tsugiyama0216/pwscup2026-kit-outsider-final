@@ -1,5 +1,7 @@
 # PWSCup2026 — 予備戦team24・本戦team10
 
+**大会終了：2026-10-26公開の[本戦・最終結果](main_round/results/20261026/README.md)を保存しました。** アウトサイダーは最終総合15位・最終攻撃力16位。公式Excel、全23チームの予測・正解、全9シートのCSVと検証記録を確認できます。
+
 予備戦の作業は **[`prelim/`](prelim/README.md)** に集約しました。本戦は [`main_round/`](main_round/README.md) で別管理します。
 
 **攻撃手法を模擬問題で比較する入口は [`main_round/mock_test/`](main_round/mock_test/README.md) です。** 複数の模擬問題を保存し、M・TSなどの手法を同じ問題へ適用できます。問題生成・採点はこの共通ツール、攻撃実装は各作業者のフォルダーに分けています。
